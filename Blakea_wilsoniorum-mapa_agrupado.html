@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8eea3aa3081d455ab847ef47c8301b60 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8eea3aa3081d455ab847ef47c8301b60" ></div>
+        
+</body>
+<script>    
+    
+            var map_8eea3aa3081d455ab847ef47c8301b60 = L.map(
+                "map_8eea3aa3081d455ab847ef47c8301b60",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_8eea3aa3081d455ab847ef47c8301b60);
+
+            
+
+        
+    
+            var tile_layer_b2d187401cfe47e196d539b791046d5c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8eea3aa3081d455ab847ef47c8301b60);
+        
+    
+            var tile_layer_880e406e2167402681477358cf7e0c56 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8eea3aa3081d455ab847ef47c8301b60);
+        
+    
+            var marker_cluster_c2ae05569f194188983b46a210e6e411 = L.markerClusterGroup(
+                {}
+            );
+            map_8eea3aa3081d455ab847ef47c8301b60.addLayer(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+            var marker_ed7b93ebcfe141a78a417acfb9dc3c38 = L.marker(
+                [8.769722, -82.67944399999999],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_878141fce0714cdbb72aa296e8f6a292 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6516312a619342ec9f8bfec6a53df9a1 = $(`<div id="html_6516312a619342ec9f8bfec6a53df9a1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Las Lagunas area W of El Hato del Volcán. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1982-08-23 00:00:00+00:00 <strong>Recolectores:</strong> Clem W. Hamilton|Henry Stockwell|Annette Aiello <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_878141fce0714cdbb72aa296e8f6a292.setContent(html_6516312a619342ec9f8bfec6a53df9a1);
+        
+
+        marker_ed7b93ebcfe141a78a417acfb9dc3c38.bindPopup(popup_878141fce0714cdbb72aa296e8f6a292)
+        ;
+
+        
+    
+    
+            var marker_91641202c98b4b8bb5f8dbb45195b96e = L.marker(
+                [8.766667, -82.95],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_d79551ccc54449f389726197fcadb98d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_662bf54f33ac4acbaba12f62d93091bc = $(`<div id="html_662bf54f33ac4acbaba12f62d93091bc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along main San Vito- Ciudad Neily road, ca. 0.8 km S of turnoff for Valle Azul. <strong>Elevación:</strong> 1130.0 m  <strong>Fecha:</strong> 1985-09-13 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Gerardo Herrera Ch.|José Berrocal|Pamela J. Sleeper <strong>Identificadores:</strong> F. Almeda, 2000 (CAS)</div>`)[0];
+            popup_d79551ccc54449f389726197fcadb98d.setContent(html_662bf54f33ac4acbaba12f62d93091bc);
+        
+
+        marker_91641202c98b4b8bb5f8dbb45195b96e.bindPopup(popup_d79551ccc54449f389726197fcadb98d)
+        ;
+
+        
+    
+    
+            var marker_76b2a17d10b94e22af072228734ad83f = L.marker(
+                [8.78, -82.95],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_5b3c2c28f1354986a5883da616196758 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_336de3cc230a4c939aba5e665b8f4ceb = $(`<div id="html_336de3cc230a4c939aba5e665b8f4ceb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> E.B. Las Cruces S of san Vito. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1977-07-28 00:00:00+00:00 <strong>Recolectores:</strong> Webster, Grady L. <strong>Identificadores:</strong> Almeda, Frank</div>`)[0];
+            popup_5b3c2c28f1354986a5883da616196758.setContent(html_336de3cc230a4c939aba5e665b8f4ceb);
+        
+
+        marker_76b2a17d10b94e22af072228734ad83f.bindPopup(popup_5b3c2c28f1354986a5883da616196758)
+        ;
+
+        
+    
+    
+            var marker_b233c88c1cd44331870a16c3dd9b3ee8 = L.marker(
+                [8.7667, -82.95],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_1ac5f73f656944cca9ad6a989d325186 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a881edbff5934a04a470221345c26d29 = $(`<div id="html_a881edbff5934a04a470221345c26d29" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along main San Vito-Ciudad Neily road, ca. 0.8 km S of turnoff for Valle Azul. <strong>Elevación:</strong> 1130.0 m  <strong>Fecha:</strong> 1985-09-13 00:00:00+00:00 <strong>Recolectores:</strong> M. H. Grayum, G. Herrera Ch., J. Berrocal & P. Sleeper <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1ac5f73f656944cca9ad6a989d325186.setContent(html_a881edbff5934a04a470221345c26d29);
+        
+
+        marker_b233c88c1cd44331870a16c3dd9b3ee8.bindPopup(popup_1ac5f73f656944cca9ad6a989d325186)
+        ;
+
+        
+    
+    
+            var marker_1d63e42648134f5f9389fad8f09c450e = L.marker(
+                [8.766667, -82.95],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_74359a3240b54176b10cc12e9641f200 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1121516064eb413eb63b8931c83580c4 = $(`<div id="html_1121516064eb413eb63b8931c83580c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along main San Vito-Ciudad Neily road, ca. 0.8 km S of turnoff for Valle Azul. <strong>Elevación:</strong> 1130.0 m  <strong>Fecha:</strong> 1985-09-01 00:00:00+00:00 <strong>Recolectores:</strong> Grayum, M. H.; Herrera, G.; Berrocal, J.; Sleeper, P. <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_74359a3240b54176b10cc12e9641f200.setContent(html_1121516064eb413eb63b8931c83580c4);
+        
+
+        marker_1d63e42648134f5f9389fad8f09c450e.bindPopup(popup_74359a3240b54176b10cc12e9641f200)
+        ;
+
+        
+    
+    
+            var marker_232cc599610943b58c7f65e861f683a1 = L.marker(
+                [8.784723, -82.949997],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_c0c264d0c3d34be69a0a3e443f1475ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23786c3831084e6ab705924f297f5a3d = $(`<div id="html_23786c3831084e6ab705924f297f5a3d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Las Cruces, S of San Vito. <strong>Elevación:</strong> 1143.0 m  <strong>Fecha:</strong> 1977-07-01 00:00:00+00:00 <strong>Recolectores:</strong> Webster, Grady L.; et al <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_c0c264d0c3d34be69a0a3e443f1475ae.setContent(html_23786c3831084e6ab705924f297f5a3d);
+        
+
+        marker_232cc599610943b58c7f65e861f683a1.bindPopup(popup_c0c264d0c3d34be69a0a3e443f1475ae)
+        ;
+
+        
+    
+    
+            var marker_0ee53aca01b544689c26842c5ad03b4d = L.marker(
+                [10.340833, -84.804333],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_ff154e7d1f364b26bc42637c215d9225 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c995e697c6d478bb9e27616c42b0a09 = $(`<div id="html_2c995e697c6d478bb9e27616c42b0a09" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road to Reserva Santa Elena at junction with Rio Negro, ca 1km from reserve entrance <strong>Elevación:</strong> 1520.0 m  <strong>Fecha:</strong> 1974-08-01 00:00:00+00:00 <strong>Recolectores:</strong> Croat, Thomas B. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ff154e7d1f364b26bc42637c215d9225.setContent(html_2c995e697c6d478bb9e27616c42b0a09);
+        
+
+        marker_0ee53aca01b544689c26842c5ad03b4d.bindPopup(popup_ff154e7d1f364b26bc42637c215d9225)
+        ;
+
+        
+    
+    
+            var marker_ccb4def1a41f4724a7fd783f4b0849c1 = L.marker(
+                [8.783333, -82.666667],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_5723849b5a624d6d9c2028a2b4fe6349 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d20708aed2fa41148112db61aaefa293 = $(`<div id="html_d20708aed2fa41148112db61aaefa293" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Las Lagunas area W of El Hato del Volcán <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1982-08-01 00:00:00+00:00 <strong>Recolectores:</strong> Hamilton, Clem; Stockwell, H.; Aiello, A. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_5723849b5a624d6d9c2028a2b4fe6349.setContent(html_d20708aed2fa41148112db61aaefa293);
+        
+
+        marker_ccb4def1a41f4724a7fd783f4b0849c1.bindPopup(popup_5723849b5a624d6d9c2028a2b4fe6349)
+        ;
+
+        
+    
+    
+            var marker_c666535a99394503be449cacd8118b2b = L.marker(
+                [10.0, -84.8333],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_e4a50bd1f3e14f3bb1997ae16763365e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36d00ec1b6b84c39845902f379b22b76 = $(`<div id="html_36d00ec1b6b84c39845902f379b22b76" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1966-02-14 00:00:00+00:00 <strong>Recolectores:</strong> C. E. Schnell <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_e4a50bd1f3e14f3bb1997ae16763365e.setContent(html_36d00ec1b6b84c39845902f379b22b76);
+        
+
+        marker_c666535a99394503be449cacd8118b2b.bindPopup(popup_e4a50bd1f3e14f3bb1997ae16763365e)
+        ;
+
+        
+    
+    
+            var marker_b2e6cf191a414a65b11f5a578a92125c = L.marker(
+                [8.7583, -82.9469],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_24e06f218db44426b885446c1bcbb966 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de0cc5f5ec864a6d8a6b6e8fc69e1ca6 = $(`<div id="html_de0cc5f5ec864a6d8a6b6e8fc69e1ca6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 4.7 km from the Wilson Botanical Garden on road to Ciudad Neily <strong>Elevación:</strong> 1070.0 m  <strong>Fecha:</strong> 2005-09-09 00:00:00+00:00 <strong>Recolectores:</strong> D. S. Penneys <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_24e06f218db44426b885446c1bcbb966.setContent(html_de0cc5f5ec864a6d8a6b6e8fc69e1ca6);
+        
+
+        marker_b2e6cf191a414a65b11f5a578a92125c.bindPopup(popup_24e06f218db44426b885446c1bcbb966)
+        ;
+
+        
+    
+    
+            var marker_47a26971b3474f5e98fbc62216a758a5 = L.marker(
+                [8.786111, -82.961111],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_e070fc044e80408e9b3add63c0dcc661 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f64379223a0a47099266b45e576dd848 = $(`<div id="html_f64379223a0a47099266b45e576dd848" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> Oviedo-Brenes, Federico</div>`)[0];
+            popup_e070fc044e80408e9b3add63c0dcc661.setContent(html_f64379223a0a47099266b45e576dd848);
+        
+
+        marker_47a26971b3474f5e98fbc62216a758a5.bindPopup(popup_e070fc044e80408e9b3add63c0dcc661)
+        ;
+
+        
+    
+    
+            var marker_2c72eabd016a41af8fd4f82a554dbf59 = L.marker(
+                [9.4778, -83.690278],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_81aa181d49c948ceb9470614304ef281 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df13b4c7cb264a7ba51bc695552d603c = $(`<div id="html_df13b4c7cb264a7ba51bc695552d603c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca Terraba-Sierpe. Rio Quebradas, a orillas de la carretera Interamericana, camino a Perez Zeledon <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-07-03 00:00:00+00:00 <strong>Recolectores:</strong> R. Kriebel <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_81aa181d49c948ceb9470614304ef281.setContent(html_df13b4c7cb264a7ba51bc695552d603c);
+        
+
+        marker_2c72eabd016a41af8fd4f82a554dbf59.bindPopup(popup_81aa181d49c948ceb9470614304ef281)
+        ;
+
+        
+    
+    
+            var marker_d8ac938972f74b3685b8e3c480caf218 = L.marker(
+                [8.784833, -82.960167],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_e9d4c5c088cd43079307a7b1db2bc1fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0316762d88745dbbe658cd651f60b3a = $(`<div id="html_b0316762d88745dbbe658cd651f60b3a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Wilson Botanical Garden <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 2005-09-07 00:00:00+00:00 <strong>Recolectores:</strong> Darin S. Penneys|Mario A. Blanco <strong>Identificadores:</strong> D. Penneys</div>`)[0];
+            popup_e9d4c5c088cd43079307a7b1db2bc1fe.setContent(html_b0316762d88745dbbe658cd651f60b3a);
+        
+
+        marker_d8ac938972f74b3685b8e3c480caf218.bindPopup(popup_e9d4c5c088cd43079307a7b1db2bc1fe)
+        ;
+
+        
+    
+    
+            var marker_54ab2fbf9f194bcbbe66285c891e6422 = L.marker(
+                [8.758333, -82.947],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_db51bdfd95c24a4094371f9ba059672b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe0340501ab549c088e07eddf1a08bcb = $(`<div id="html_fe0340501ab549c088e07eddf1a08bcb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 4.7 km from the Wilson Botanical Garden on road to Ciudad Neily. <strong>Elevación:</strong> 1070.0 m  <strong>Fecha:</strong> 2005-09-09 00:00:00+00:00 <strong>Recolectores:</strong> Darin S. Penneys <strong>Identificadores:</strong> D. Penneys</div>`)[0];
+            popup_db51bdfd95c24a4094371f9ba059672b.setContent(html_fe0340501ab549c088e07eddf1a08bcb);
+        
+
+        marker_54ab2fbf9f194bcbbe66285c891e6422.bindPopup(popup_db51bdfd95c24a4094371f9ba059672b)
+        ;
+
+        
+    
+    
+            var marker_4d0fbad39ad24161b844b5bce2d08ee9 = L.marker(
+                [8.857222, -82.880278],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_ec8490b4b06c4ba9981e8233b41a5b43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_447d96e0893c4a54b70fdeb2efc4174b = $(`<div id="html_447d96e0893c4a54b70fdeb2efc4174b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valley of the Río Negro between la Unión and Cortú, [elevation on label 50 meters] <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1974-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> F. Almeda (CAS)</div>`)[0];
+            popup_ec8490b4b06c4ba9981e8233b41a5b43.setContent(html_447d96e0893c4a54b70fdeb2efc4174b);
+        
+
+        marker_4d0fbad39ad24161b844b5bce2d08ee9.bindPopup(popup_ec8490b4b06c4ba9981e8233b41a5b43)
+        ;
+
+        
+    
+    
+            var marker_967f3a7aee734a479c7f52de40d838d5 = L.marker(
+                [8.79, -82.95],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_1256b0de38ac4c6b8dccb47d6d3ec8c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a33d8193f1949f1bfd417e7c7cc8b34 = $(`<div id="html_0a33d8193f1949f1bfd417e7c7cc8b34" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forest and forest edges on and around Wilson's Finca, 6 km south of San Vito de Java <strong>Elevación:</strong> 1219.2 m  <strong>Fecha:</strong> 1967-08-16 00:00:00+00:00 <strong>Recolectores:</strong> Peter H. Raven <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_1256b0de38ac4c6b8dccb47d6d3ec8c4.setContent(html_0a33d8193f1949f1bfd417e7c7cc8b34);
+        
+
+        marker_967f3a7aee734a479c7f52de40d838d5.bindPopup(popup_1256b0de38ac4c6b8dccb47d6d3ec8c4)
+        ;
+
+        
+    
+    
+            var marker_e7fd5114498f4ed2909621e1fb994e68 = L.marker(
+                [8.758333, -82.947],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_cc060792d8954ee68f46476d8f5180fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f4cb465775b48d1bab699f2c51f6b56 = $(`<div id="html_9f4cb465775b48d1bab699f2c51f6b56" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2005-09-09 00:00:00+00:00 <strong>Recolectores:</strong> Darin S. Penneys <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_cc060792d8954ee68f46476d8f5180fb.setContent(html_9f4cb465775b48d1bab699f2c51f6b56);
+        
+
+        marker_e7fd5114498f4ed2909621e1fb994e68.bindPopup(popup_cc060792d8954ee68f46476d8f5180fb)
+        ;
+
+        
+    
+    
+            var marker_8e652fa6b9ec467d87967d301814276e = L.marker(
+                [8.784833, -82.960167],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_7401868df7db475f8817651244d464d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_908ded87fd224be98416ff4d4a31cae8 = $(`<div id="html_908ded87fd224be98416ff4d4a31cae8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2005-09-07 00:00:00+00:00 <strong>Recolectores:</strong> Darin S. Penneys <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7401868df7db475f8817651244d464d6.setContent(html_908ded87fd224be98416ff4d4a31cae8);
+        
+
+        marker_8e652fa6b9ec467d87967d301814276e.bindPopup(popup_7401868df7db475f8817651244d464d6)
+        ;
+
+        
+    
+    
+            var marker_f1acea4dc949436e904aa99feface54b = L.marker(
+                [8.77, -82.95],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_d00e9c0fa4ff4ee69f1f152368774229 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_426aa02eaf73484baa7044a49fd9f0fc = $(`<div id="html_426aa02eaf73484baa7044a49fd9f0fc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along main San Vito- Ciudad Neily road, ca 0.8 km S of turnoff for Valle Azul <strong>Elevación:</strong> 1130.0 m  <strong>Fecha:</strong> 1985-09-13 00:00:00+00:00 <strong>Recolectores:</strong> M. H. Grayum <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d00e9c0fa4ff4ee69f1f152368774229.setContent(html_426aa02eaf73484baa7044a49fd9f0fc);
+        
+
+        marker_f1acea4dc949436e904aa99feface54b.bindPopup(popup_d00e9c0fa4ff4ee69f1f152368774229)
+        ;
+
+        
+    
+    
+            var marker_49bfd21f1c4e4a3b94e2cbd0c5b43e7d = L.marker(
+                [8.7847, -82.9603],
+                {}
+            ).addTo(marker_cluster_c2ae05569f194188983b46a210e6e411);
+        
+    
+        var popup_4fad0e9fc2bc4ff197b9c38fe02969bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49a5dbc7720746afb2e08986a33caae0 = $(`<div id="html_49a5dbc7720746afb2e08986a33caae0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Wilson botanical Garden <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 2005-09-07 00:00:00+00:00 <strong>Recolectores:</strong> D. S. Penneys <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_4fad0e9fc2bc4ff197b9c38fe02969bc.setContent(html_49a5dbc7720746afb2e08986a33caae0);
+        
+
+        marker_49bfd21f1c4e4a3b94e2cbd0c5b43e7d.bindPopup(popup_4fad0e9fc2bc4ff197b9c38fe02969bc)
+        ;
+
+        
+    
+    
+            var layer_control_16ca7610640440cfaf3158551ab1020f = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b2d187401cfe47e196d539b791046d5c,
+                    "ESRI World Imagery" : tile_layer_880e406e2167402681477358cf7e0c56,
+                },
+                overlays :  {
+                    "macro_element_c2ae05569f194188983b46a210e6e411" : marker_cluster_c2ae05569f194188983b46a210e6e411,
+                },
+            };
+            L.control.layers(
+                layer_control_16ca7610640440cfaf3158551ab1020f.base_layers,
+                layer_control_16ca7610640440cfaf3158551ab1020f.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_8eea3aa3081d455ab847ef47c8301b60);
+            tile_layer_880e406e2167402681477358cf7e0c56.remove();
+        
+</script>

@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_53c30e38f61e4077a9af9c0b7ccb3ea2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_53c30e38f61e4077a9af9c0b7ccb3ea2" ></div>
+        
+</body>
+<script>    
+    
+            var map_53c30e38f61e4077a9af9c0b7ccb3ea2 = L.map(
+                "map_53c30e38f61e4077a9af9c0b7ccb3ea2",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+
+            
+
+        
+    
+            var tile_layer_396bf424600b4dfe9cfa81cbbd7c0fb3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+            var tile_layer_adb09c9437f24a26bdbe158e59007134 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+            var circle_marker_b085b21fe9f04d4986d7a2d95a7fe989 = L.circleMarker(
+                [10.715833, -84.17416700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_2c135f95b09a4a87b03add0e728600c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e20423a26844a8db95951f26e9d237c = $(`<div id="html_0e20423a26844a8db95951f26e9d237c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Barry Hammel ; Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_2c135f95b09a4a87b03add0e728600c4.setContent(html_0e20423a26844a8db95951f26e9d237c);
+        
+
+        circle_marker_b085b21fe9f04d4986d7a2d95a7fe989.bindPopup(popup_2c135f95b09a4a87b03add0e728600c4)
+        ;
+
+        
+    
+    
+            var circle_marker_092a04f962ed4e78a29b8752ec3b0f7d = L.circleMarker(
+                [10.715833, -84.17416700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_f48684b3065144358420d943123abeb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dbc25f8aef44145b60567b180cf1285 = $(`<div id="html_6dbc25f8aef44145b60567b180cf1285" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Barry Hammel ; Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_f48684b3065144358420d943123abeb2.setContent(html_6dbc25f8aef44145b60567b180cf1285);
+        
+
+        circle_marker_092a04f962ed4e78a29b8752ec3b0f7d.bindPopup(popup_f48684b3065144358420d943123abeb2)
+        ;
+
+        
+    
+    
+            var circle_marker_36dcc29682044fb28376d04d90bad81d = L.circleMarker(
+                [10.715833, -84.17416700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_6cfce6e2fad74f5c81e86a0b17021e21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2aaeb6459b0847889a51cbf84250c32c = $(`<div id="html_2aaeb6459b0847889a51cbf84250c32c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Barry Hammel ; Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_6cfce6e2fad74f5c81e86a0b17021e21.setContent(html_2aaeb6459b0847889a51cbf84250c32c);
+        
+
+        circle_marker_36dcc29682044fb28376d04d90bad81d.bindPopup(popup_6cfce6e2fad74f5c81e86a0b17021e21)
+        ;
+
+        
+    
+    
+            var circle_marker_11e1e592aac643a4805eab8c4ff35970 = L.circleMarker(
+                [10.715833, -84.17416700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_65c370f1bba343a6a6ee027c3fad2e1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1a9227ee6ad449f940d8d2760a9755a = $(`<div id="html_e1a9227ee6ad449f940d8d2760a9755a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Barry Hammel ; Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_65c370f1bba343a6a6ee027c3fad2e1f.setContent(html_e1a9227ee6ad449f940d8d2760a9755a);
+        
+
+        circle_marker_11e1e592aac643a4805eab8c4ff35970.bindPopup(popup_65c370f1bba343a6a6ee027c3fad2e1f)
+        ;
+
+        
+    
+    
+            var circle_marker_33e1894854194149af8c6c358584c015 = L.circleMarker(
+                [10.690278, -84.18333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_83b9d0423b064ba7bf2ea79e7dd018cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_930ccc825e734b3ba8f2fcac5e1bc081 = $(`<div id="html_930ccc825e734b3ba8f2fcac5e1bc081" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada, camino a la Curena, 500 m despues de la Laguna de Lagarto Lodge, en potrero a orillas del camino. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_83b9d0423b064ba7bf2ea79e7dd018cc.setContent(html_930ccc825e734b3ba8f2fcac5e1bc081);
+        
+
+        circle_marker_33e1894854194149af8c6c358584c015.bindPopup(popup_83b9d0423b064ba7bf2ea79e7dd018cc)
+        ;
+
+        
+    
+    
+            var circle_marker_475c419057c74cc29e0526df80279091 = L.circleMarker(
+                [10.690278, -84.18333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_04f1b109a4674c89814e630f10f84e85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a5af465219141b7a23f733cfa1417c4 = $(`<div id="html_5a5af465219141b7a23f733cfa1417c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada, camino a la Curena, 500 m despues de la Laguna de Lagarto Lodge, en potrero a orillas del camino. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_04f1b109a4674c89814e630f10f84e85.setContent(html_5a5af465219141b7a23f733cfa1417c4);
+        
+
+        circle_marker_475c419057c74cc29e0526df80279091.bindPopup(popup_04f1b109a4674c89814e630f10f84e85)
+        ;
+
+        
+    
+    
+            var circle_marker_f78c43c2f3f843f5a99b8c78c410f264 = L.circleMarker(
+                [10.690278, -84.18333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_fd4c139518ca4447bda784673517733c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34f90870ea56451caf863fa50b667022 = $(`<div id="html_34f90870ea56451caf863fa50b667022" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada, camino a la Curena, 500 m despues de la Laguna de Lagarto Lodge, en potrero a orillas del camino. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_fd4c139518ca4447bda784673517733c.setContent(html_34f90870ea56451caf863fa50b667022);
+        
+
+        circle_marker_f78c43c2f3f843f5a99b8c78c410f264.bindPopup(popup_fd4c139518ca4447bda784673517733c)
+        ;
+
+        
+    
+    
+            var circle_marker_02177ca2b95442e3a75e84bccca4741b = L.circleMarker(
+                [10.690278, -84.18333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_b2e6f14d109247fba461f50e8d7abfde = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b52fb6036864abd93469da1a685b1d8 = $(`<div id="html_7b52fb6036864abd93469da1a685b1d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada, camino a la Curena, 500 m despues de la Laguna de Lagarto Lodge, en potrero a orillas del camino. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_b2e6f14d109247fba461f50e8d7abfde.setContent(html_7b52fb6036864abd93469da1a685b1d8);
+        
+
+        circle_marker_02177ca2b95442e3a75e84bccca4741b.bindPopup(popup_b2e6f14d109247fba461f50e8d7abfde)
+        ;
+
+        
+    
+    
+            var circle_marker_df550dcdb073495e87f793f6fa101ec3 = L.circleMarker(
+                [10.690278, -84.18333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_13e0b23f104b4fd4af02611bdfc734a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebea017317194265a7298476c1914bcb = $(`<div id="html_ebea017317194265a7298476c1914bcb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada, camino a la Curena, 500 m despues de la Laguna de Lagarto Lodge, en potrero a orillas del camino. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_13e0b23f104b4fd4af02611bdfc734a8.setContent(html_ebea017317194265a7298476c1914bcb);
+        
+
+        circle_marker_df550dcdb073495e87f793f6fa101ec3.bindPopup(popup_13e0b23f104b4fd4af02611bdfc734a8)
+        ;
+
+        
+    
+    
+            var circle_marker_df3541d8e20947d3bfb03717eeb8a0c2 = L.circleMarker(
+                [10.690278, -84.18333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_d0ff127a572c46989a298c9dc9751ed7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_316813afb83d4e4992fe068dff0b9323 = $(`<div id="html_316813afb83d4e4992fe068dff0b9323" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada, camino a la Curena, 500 m despues de la Laguna de Lagarto Lodge, en potrero a orillas del camino. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_d0ff127a572c46989a298c9dc9751ed7.setContent(html_316813afb83d4e4992fe068dff0b9323);
+        
+
+        circle_marker_df3541d8e20947d3bfb03717eeb8a0c2.bindPopup(popup_d0ff127a572c46989a298c9dc9751ed7)
+        ;
+
+        
+    
+    
+            var circle_marker_28e89bd7aec2492b8a504477c1d703f4 = L.circleMarker(
+                [10.690278, -84.18333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_002b50db3c1142dfa682609823787ccf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd7207e068024e48b896f1db0de689fb = $(`<div id="html_fd7207e068024e48b896f1db0de689fb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada, camino a la Curena, 500 m despues de la Laguna de Lagarto Lodge, en potrero a orillas del camino. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_002b50db3c1142dfa682609823787ccf.setContent(html_fd7207e068024e48b896f1db0de689fb);
+        
+
+        circle_marker_28e89bd7aec2492b8a504477c1d703f4.bindPopup(popup_002b50db3c1142dfa682609823787ccf)
+        ;
+
+        
+    
+    
+            var circle_marker_c3969d4092014b8697e29cab1601e0b8 = L.circleMarker(
+                [10.690278, -84.18333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_169b52f368c34674852cceaccf8650b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10b44067b53846329fe21c745ec77e59 = $(`<div id="html_10b44067b53846329fe21c745ec77e59" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada, camino a la Curena, 500 m despues de la Laguna de Lagarto Lodge, en potrero a orillas del camino. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_169b52f368c34674852cceaccf8650b2.setContent(html_10b44067b53846329fe21c745ec77e59);
+        
+
+        circle_marker_c3969d4092014b8697e29cab1601e0b8.bindPopup(popup_169b52f368c34674852cceaccf8650b2)
+        ;
+
+        
+    
+    
+            var circle_marker_7ae31e6f8994411ca989be043487bd36 = L.circleMarker(
+                [10.690278, -84.18333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_fce7be71715c42b68adcdfddcbd8404f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_489ec57b2f1b4b27b3c1f8ab38f422fe = $(`<div id="html_489ec57b2f1b4b27b3c1f8ab38f422fe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada, camino a la Curena, 500 m despues de la Laguna de Lagarto Lodge, en potrero a orillas del camino. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_fce7be71715c42b68adcdfddcbd8404f.setContent(html_489ec57b2f1b4b27b3c1f8ab38f422fe);
+        
+
+        circle_marker_7ae31e6f8994411ca989be043487bd36.bindPopup(popup_fce7be71715c42b68adcdfddcbd8404f)
+        ;
+
+        
+    
+    
+            var circle_marker_08a23ccbb996455c9e31179b8bc117ed = L.circleMarker(
+                [10.690278, -84.18333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_f98ce4f80a3849d7b2b486fdff0281a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86dda03ebfd2433f977f9518fcc24d92 = $(`<div id="html_86dda03ebfd2433f977f9518fcc24d92" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada, camino a la Curena, 500 m despues de la Laguna de Lagarto Lodge, en potrero a orillas del camino. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_f98ce4f80a3849d7b2b486fdff0281a8.setContent(html_86dda03ebfd2433f977f9518fcc24d92);
+        
+
+        circle_marker_08a23ccbb996455c9e31179b8bc117ed.bindPopup(popup_f98ce4f80a3849d7b2b486fdff0281a8)
+        ;
+
+        
+    
+    
+            var circle_marker_a429b9aaaf5b4a0bbbef1589d26192f2 = L.circleMarker(
+                [10.690278, -84.18333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_9deb175b2b5a4f31a1c65cfbb554c310 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cec627ec60c1479083f23a59f1e30415 = $(`<div id="html_cec627ec60c1479083f23a59f1e30415" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada, camino a la Curena, 500 m despues de la Laguna de Lagarto Lodge, en potrero a orillas del camino. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_9deb175b2b5a4f31a1c65cfbb554c310.setContent(html_cec627ec60c1479083f23a59f1e30415);
+        
+
+        circle_marker_a429b9aaaf5b4a0bbbef1589d26192f2.bindPopup(popup_9deb175b2b5a4f31a1c65cfbb554c310)
+        ;
+
+        
+    
+    
+            var circle_marker_9b17b60e7ce648bc972f18d0bfe971ed = L.circleMarker(
+                [10.647222, -84.204167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_48827a8c8a35491a9e269dda049e2bf2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41e67ae98cdd46fba115409c057e4eba = $(`<div id="html_41e67ae98cdd46fba115409c057e4eba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Yucatan, Finca Octubre 78. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1995-08-25 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_48827a8c8a35491a9e269dda049e2bf2.setContent(html_41e67ae98cdd46fba115409c057e4eba);
+        
+
+        circle_marker_9b17b60e7ce648bc972f18d0bfe971ed.bindPopup(popup_48827a8c8a35491a9e269dda049e2bf2)
+        ;
+
+        
+    
+    
+            var circle_marker_70e3817124374e9081d067ea29a6f973 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_ecd3b837e1f046449b01517a6053a5d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94c6bd773c7043aaade6e7c070fc254f = $(`<div id="html_94c6bd773c7043aaade6e7c070fc254f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 2005-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_ecd3b837e1f046449b01517a6053a5d6.setContent(html_94c6bd773c7043aaade6e7c070fc254f);
+        
+
+        circle_marker_70e3817124374e9081d067ea29a6f973.bindPopup(popup_ecd3b837e1f046449b01517a6053a5d6)
+        ;
+
+        
+    
+    
+            var circle_marker_6a1fca0235bc4bf99532c021bb0acd18 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_28140ca3aea148e3bf1c404a343f8513 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9569cb7e6b34fa68036fdd29c3b0be0 = $(`<div id="html_a9569cb7e6b34fa68036fdd29c3b0be0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 2005-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_28140ca3aea148e3bf1c404a343f8513.setContent(html_a9569cb7e6b34fa68036fdd29c3b0be0);
+        
+
+        circle_marker_6a1fca0235bc4bf99532c021bb0acd18.bindPopup(popup_28140ca3aea148e3bf1c404a343f8513)
+        ;
+
+        
+    
+    
+            var circle_marker_53b594ea0b504851b9f64079327a8009 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_0e71f89a780e42ebaa1344634c842025 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9698abbcfc6e4597a7a95be9a8292c66 = $(`<div id="html_9698abbcfc6e4597a7a95be9a8292c66" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 2005-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_0e71f89a780e42ebaa1344634c842025.setContent(html_9698abbcfc6e4597a7a95be9a8292c66);
+        
+
+        circle_marker_53b594ea0b504851b9f64079327a8009.bindPopup(popup_0e71f89a780e42ebaa1344634c842025)
+        ;
+
+        
+    
+    
+            var circle_marker_d4ff83e903ad43eca66c87a5bbb46b99 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_59c7ed83f07c40128d2b917121efa37f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0acb320427934657a3f35a6693453b7e = $(`<div id="html_0acb320427934657a3f35a6693453b7e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 2005-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_59c7ed83f07c40128d2b917121efa37f.setContent(html_0acb320427934657a3f35a6693453b7e);
+        
+
+        circle_marker_d4ff83e903ad43eca66c87a5bbb46b99.bindPopup(popup_59c7ed83f07c40128d2b917121efa37f)
+        ;
+
+        
+    
+    
+            var circle_marker_f3619bd528f3493cb8f7871a93830b10 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_ede0aa8ce8954d60b4dc68f883c150b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_731789ca8bd247f6a72177baa9eba477 = $(`<div id="html_731789ca8bd247f6a72177baa9eba477" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 2005-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_ede0aa8ce8954d60b4dc68f883c150b0.setContent(html_731789ca8bd247f6a72177baa9eba477);
+        
+
+        circle_marker_f3619bd528f3493cb8f7871a93830b10.bindPopup(popup_ede0aa8ce8954d60b4dc68f883c150b0)
+        ;
+
+        
+    
+    
+            var circle_marker_fe55e8f83fa9457f9278123c09afbebf = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_cd2f70871c7840f5996874b8f2778788 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_832eafcb194b470a90b9d71114ad39fd = $(`<div id="html_832eafcb194b470a90b9d71114ad39fd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 2005-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_cd2f70871c7840f5996874b8f2778788.setContent(html_832eafcb194b470a90b9d71114ad39fd);
+        
+
+        circle_marker_fe55e8f83fa9457f9278123c09afbebf.bindPopup(popup_cd2f70871c7840f5996874b8f2778788)
+        ;
+
+        
+    
+    
+            var circle_marker_2e90056020934616908271c3f21f664c = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_a46d35c192c74bdeab17fa1ff921d386 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8360bf934464a679c8952724e3146d9 = $(`<div id="html_d8360bf934464a679c8952724e3146d9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 2005-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_a46d35c192c74bdeab17fa1ff921d386.setContent(html_d8360bf934464a679c8952724e3146d9);
+        
+
+        circle_marker_2e90056020934616908271c3f21f664c.bindPopup(popup_a46d35c192c74bdeab17fa1ff921d386)
+        ;
+
+        
+    
+    
+            var circle_marker_102a8ce4202b4d369ccba3486947ddd5 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_d8153734d76544149609d62aa01f866a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a58203954bed4f8e82ff44f935261511 = $(`<div id="html_a58203954bed4f8e82ff44f935261511" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2004-11-09 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_d8153734d76544149609d62aa01f866a.setContent(html_a58203954bed4f8e82ff44f935261511);
+        
+
+        circle_marker_102a8ce4202b4d369ccba3486947ddd5.bindPopup(popup_d8153734d76544149609d62aa01f866a)
+        ;
+
+        
+    
+    
+            var circle_marker_24499fba3bcd488b9778af5e15dbf731 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_f023f9aa3b3947489fa40abbbbfa4b8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_753d65d8ecd44d149c66d0865faadbf5 = $(`<div id="html_753d65d8ecd44d149c66d0865faadbf5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández ; Israel Mena <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_f023f9aa3b3947489fa40abbbbfa4b8c.setContent(html_753d65d8ecd44d149c66d0865faadbf5);
+        
+
+        circle_marker_24499fba3bcd488b9778af5e15dbf731.bindPopup(popup_f023f9aa3b3947489fa40abbbbfa4b8c)
+        ;
+
+        
+    
+    
+            var circle_marker_0d61be9bcbbd4b428efd59af0f748359 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_aa55cf00acfa4e7cba61c281f5763dc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3507fb8e4e84c24940ab759aee87d4a = $(`<div id="html_a3507fb8e4e84c24940ab759aee87d4a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández ; Israel Mena <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_aa55cf00acfa4e7cba61c281f5763dc1.setContent(html_a3507fb8e4e84c24940ab759aee87d4a);
+        
+
+        circle_marker_0d61be9bcbbd4b428efd59af0f748359.bindPopup(popup_aa55cf00acfa4e7cba61c281f5763dc1)
+        ;
+
+        
+    
+    
+            var circle_marker_c5134be8259e49ea9f6f841bb82ff434 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_9c4dc7e613f545349bc0d9a005d2fa05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62f7672ed0c54a2ba3ab590cf88a4556 = $(`<div id="html_62f7672ed0c54a2ba3ab590cf88a4556" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández ; Israel Mena <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_9c4dc7e613f545349bc0d9a005d2fa05.setContent(html_62f7672ed0c54a2ba3ab590cf88a4556);
+        
+
+        circle_marker_c5134be8259e49ea9f6f841bb82ff434.bindPopup(popup_9c4dc7e613f545349bc0d9a005d2fa05)
+        ;
+
+        
+    
+    
+            var circle_marker_25bc725bb4674a38a3753aa233df9006 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_676549e4f0bb42cc832ab523e061600f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9081e47eab294c07b8d0b749a56b6e00 = $(`<div id="html_9081e47eab294c07b8d0b749a56b6e00" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández ; Israel Mena <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_676549e4f0bb42cc832ab523e061600f.setContent(html_9081e47eab294c07b8d0b749a56b6e00);
+        
+
+        circle_marker_25bc725bb4674a38a3753aa233df9006.bindPopup(popup_676549e4f0bb42cc832ab523e061600f)
+        ;
+
+        
+    
+    
+            var circle_marker_8e7e6efa4e484721a0da6ee011346040 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_774c42c85e214a67aaab81b10a7beb92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bdb467c6e94444f9dc87d15a99094d1 = $(`<div id="html_0bdb467c6e94444f9dc87d15a99094d1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández ; Israel Mena <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_774c42c85e214a67aaab81b10a7beb92.setContent(html_0bdb467c6e94444f9dc87d15a99094d1);
+        
+
+        circle_marker_8e7e6efa4e484721a0da6ee011346040.bindPopup(popup_774c42c85e214a67aaab81b10a7beb92)
+        ;
+
+        
+    
+    
+            var circle_marker_7fc77357bae347a09a704a1ddfaa8601 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_ea13983fdc714bffaef8538d471b1f6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eec261b059ac423bbe4551caa6035469 = $(`<div id="html_eec261b059ac423bbe4551caa6035469" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández ; Israel Mena <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_ea13983fdc714bffaef8538d471b1f6d.setContent(html_eec261b059ac423bbe4551caa6035469);
+        
+
+        circle_marker_7fc77357bae347a09a704a1ddfaa8601.bindPopup(popup_ea13983fdc714bffaef8538d471b1f6d)
+        ;
+
+        
+    
+    
+            var circle_marker_0b39df6c07434b6bae01b31df0adc942 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_cf25107f707a49d18eaa4d89f0a4280b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_040caa5d649149939d70fc9e2a8afe37 = $(`<div id="html_040caa5d649149939d70fc9e2a8afe37" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández ; Israel Mena <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_cf25107f707a49d18eaa4d89f0a4280b.setContent(html_040caa5d649149939d70fc9e2a8afe37);
+        
+
+        circle_marker_0b39df6c07434b6bae01b31df0adc942.bindPopup(popup_cf25107f707a49d18eaa4d89f0a4280b)
+        ;
+
+        
+    
+    
+            var circle_marker_5a04805bc1704dfea397710fd04510b8 = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_5a54742f7bb841a1a3a496fe6aed580b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0bd9de588044fed8f1b785f96ad94aa = $(`<div id="html_f0bd9de588044fed8f1b785f96ad94aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández ; Israel Mena <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_5a54742f7bb841a1a3a496fe6aed580b.setContent(html_f0bd9de588044fed8f1b785f96ad94aa);
+        
+
+        circle_marker_5a04805bc1704dfea397710fd04510b8.bindPopup(popup_5a54742f7bb841a1a3a496fe6aed580b)
+        ;
+
+        
+    
+    
+            var circle_marker_969e94dc0c814b25a318f4c299d9d5dc = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_f03072e908d746d79b77928bcebd7563 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6f9438d01314ebf8373e352fc41975c = $(`<div id="html_e6f9438d01314ebf8373e352fc41975c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández ; Israel Mena <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_f03072e908d746d79b77928bcebd7563.setContent(html_e6f9438d01314ebf8373e352fc41975c);
+        
+
+        circle_marker_969e94dc0c814b25a318f4c299d9d5dc.bindPopup(popup_f03072e908d746d79b77928bcebd7563)
+        ;
+
+        
+    
+    
+            var circle_marker_4e57564f559b4fd9a2fa4a1ef8b61e5e = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_78335c18148b45f8b0b8a24dbaba6fb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90f0f25339f5443b9f0dcb8cae2a5d69 = $(`<div id="html_90f0f25339f5443b9f0dcb8cae2a5d69" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández ; Israel Mena <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_78335c18148b45f8b0b8a24dbaba6fb8.setContent(html_90f0f25339f5443b9f0dcb8cae2a5d69);
+        
+
+        circle_marker_4e57564f559b4fd9a2fa4a1ef8b61e5e.bindPopup(popup_78335c18148b45f8b0b8a24dbaba6fb8)
+        ;
+
+        
+    
+    
+            var circle_marker_a6f68c412099483498bf45fa2ba2921d = L.circleMarker(
+                [10.689055999999999, -84.172167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_1a2b589d0aa44ecc9cd6e315c195fb64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9a0096cdff6427eb589fd5ff7ec18a6 = $(`<div id="html_d9a0096cdff6427eb589fd5ff7ec18a6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Vida Silvestre Mixto Maquenque. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-12-02 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Daniel Solano ; Israel Mena <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_1a2b589d0aa44ecc9cd6e315c195fb64.setContent(html_d9a0096cdff6427eb589fd5ff7ec18a6);
+        
+
+        circle_marker_a6f68c412099483498bf45fa2ba2921d.bindPopup(popup_1a2b589d0aa44ecc9cd6e315c195fb64)
+        ;
+
+        
+    
+    
+            var circle_marker_5cf1f6757e31460c8cbeea1cc2e3dee7 = L.circleMarker(
+                [10.689055999999999, -84.172167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_d7c89f04d2b34c319b0ec641ea93386d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e469105c30143029834d1b6ddcaf980 = $(`<div id="html_4e469105c30143029834d1b6ddcaf980" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Vida Silvestre Mixto Maquenque. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-12-02 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Daniel Solano ; Israel Mena <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_d7c89f04d2b34c319b0ec641ea93386d.setContent(html_4e469105c30143029834d1b6ddcaf980);
+        
+
+        circle_marker_5cf1f6757e31460c8cbeea1cc2e3dee7.bindPopup(popup_d7c89f04d2b34c319b0ec641ea93386d)
+        ;
+
+        
+    
+    
+            var circle_marker_363541954a124cccad9c51f57aa4666b = L.circleMarker(
+                [10.689055999999999, -84.172167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_5ed37848eb224a40b02bf9a4a6a0f5c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_203b251064a644518ee0117810f51f2a = $(`<div id="html_203b251064a644518ee0117810f51f2a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Vida Silvestre Mixto Maquenque. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-12-02 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Daniel Solano ; Israel Mena <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_5ed37848eb224a40b02bf9a4a6a0f5c1.setContent(html_203b251064a644518ee0117810f51f2a);
+        
+
+        circle_marker_363541954a124cccad9c51f57aa4666b.bindPopup(popup_5ed37848eb224a40b02bf9a4a6a0f5c1)
+        ;
+
+        
+    
+    
+            var circle_marker_c12791925c3a4475bc9d1e93e5f52aae = L.circleMarker(
+                [10.689055999999999, -84.172167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_9b6254020a1046bcb75cafe2915987f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39fcb357575249f78d3c2a3f03490a7b = $(`<div id="html_39fcb357575249f78d3c2a3f03490a7b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Vida Silvestre Mixto Maquenque. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-12-02 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Daniel Solano ; Israel Mena <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_9b6254020a1046bcb75cafe2915987f3.setContent(html_39fcb357575249f78d3c2a3f03490a7b);
+        
+
+        circle_marker_c12791925c3a4475bc9d1e93e5f52aae.bindPopup(popup_9b6254020a1046bcb75cafe2915987f3)
+        ;
+
+        
+    
+    
+            var circle_marker_9d9d7fed6f3c468abe4d6bf1c03758fe = L.circleMarker(
+                [10.689055999999999, -84.172167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_44d105316f684c88988e76ec8a4927fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa224d35d16141cdb2b91bd05876efad = $(`<div id="html_aa224d35d16141cdb2b91bd05876efad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Vida Silvestre Mixto Maquenque. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-12-02 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Daniel Solano ; Israel Mena <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_44d105316f684c88988e76ec8a4927fa.setContent(html_aa224d35d16141cdb2b91bd05876efad);
+        
+
+        circle_marker_9d9d7fed6f3c468abe4d6bf1c03758fe.bindPopup(popup_44d105316f684c88988e76ec8a4927fa)
+        ;
+
+        
+    
+    
+            var circle_marker_08761f92882d4fd59eab5a22cab0e040 = L.circleMarker(
+                [10.689055999999999, -84.172167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_5099424036c54993935c545bb9ce6ded = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7da8bcdd1cd3421d91309abf9689e221 = $(`<div id="html_7da8bcdd1cd3421d91309abf9689e221" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Vida Silvestre Mixto Maquenque. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-12-02 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Daniel Solano ; Israel Mena <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_5099424036c54993935c545bb9ce6ded.setContent(html_7da8bcdd1cd3421d91309abf9689e221);
+        
+
+        circle_marker_08761f92882d4fd59eab5a22cab0e040.bindPopup(popup_5099424036c54993935c545bb9ce6ded)
+        ;
+
+        
+    
+    
+            var circle_marker_834a5ba1e78d4da38bf8c771edcbb4fd = L.circleMarker(
+                [10.689055999999999, -84.172167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_c3fd16a6321e457884f4ac4b25f8e259 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c6e8437a6954e94bb23422d82e97b7d = $(`<div id="html_5c6e8437a6954e94bb23422d82e97b7d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Vida Silvestre Mixto Maquenque. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-12-02 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Daniel Solano ; Israel Mena <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_c3fd16a6321e457884f4ac4b25f8e259.setContent(html_5c6e8437a6954e94bb23422d82e97b7d);
+        
+
+        circle_marker_834a5ba1e78d4da38bf8c771edcbb4fd.bindPopup(popup_c3fd16a6321e457884f4ac4b25f8e259)
+        ;
+
+        
+    
+    
+            var circle_marker_ee7cba15825e47e49da9ce25ceba8356 = L.circleMarker(
+                [10.689055999999999, -84.172167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_f199031c89594d78aa266db35884bc46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25a2d7bc114e403fb3a9b5a22e0bf2b5 = $(`<div id="html_25a2d7bc114e403fb3a9b5a22e0bf2b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Vida Silvestre Mixto Maquenque. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-12-02 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Daniel Solano ; Israel Mena <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_f199031c89594d78aa266db35884bc46.setContent(html_25a2d7bc114e403fb3a9b5a22e0bf2b5);
+        
+
+        circle_marker_ee7cba15825e47e49da9ce25ceba8356.bindPopup(popup_f199031c89594d78aa266db35884bc46)
+        ;
+
+        
+    
+    
+            var circle_marker_0afbf231f6ed420a8e9ffcf9845add18 = L.circleMarker(
+                [10.647219999999999, -84.20416],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_f78a018ba8254e5b81de3b1f7a832ce3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a509aecfd99b4f51b6da8835f52bd2ad = $(`<div id="html_a509aecfd99b4f51b6da8835f52bd2ad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del San Carlos, Pital, Yucatan, Finca Octubre 78 <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1995-08-25 00:00:00+00:00 <strong>Recolectores:</strong> Nelson Zamora <strong>Identificadores:</strong> N. Zamora (INB), XII/</div>`)[0];
+            popup_f78a018ba8254e5b81de3b1f7a832ce3.setContent(html_a509aecfd99b4f51b6da8835f52bd2ad);
+        
+
+        circle_marker_0afbf231f6ed420a8e9ffcf9845add18.bindPopup(popup_f78a018ba8254e5b81de3b1f7a832ce3)
+        ;
+
+        
+    
+    
+            var circle_marker_97d30d0662b944e5861dc2629b09edee = L.circleMarker(
+                [10.71583, -84.17416],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_e86e6c017e124898a7803af0bbf47532 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9b465f534234ac087acdfa780633d6d = $(`<div id="html_b9b465f534234ac087acdfa780633d6d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de San Carlos. Cuenca del San Carlos Boca Tapada. Finca Aseradero. San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Nelson Zamora|Alexánder Rodríguez <strong>Identificadores:</strong> N. Zamora (INB), XII/</div>`)[0];
+            popup_e86e6c017e124898a7803af0bbf47532.setContent(html_b9b465f534234ac087acdfa780633d6d);
+        
+
+        circle_marker_97d30d0662b944e5861dc2629b09edee.bindPopup(popup_e86e6c017e124898a7803af0bbf47532)
+        ;
+
+        
+    
+    
+            var circle_marker_6d23ad7344df4937aa5545b6748bf2d5 = L.circleMarker(
+                [10.69, -84.18],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_81aa551bd2ff4968a58ca42a90bc3dda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d66614cb2824d8f99b41ccc00e649cd = $(`<div id="html_1d66614cb2824d8f99b41ccc00e649cd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alajuela: San Carlos. Cuanca del San Carlos. Boca Tapada. Alrededores de Laguna Lagarto Lodge <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 2005-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Solano, D.; Santamaria, D. <strong>Identificadores:</strong> Zamora, N.; Solano, D.S.</div>`)[0];
+            popup_81aa551bd2ff4968a58ca42a90bc3dda.setContent(html_1d66614cb2824d8f99b41ccc00e649cd);
+        
+
+        circle_marker_6d23ad7344df4937aa5545b6748bf2d5.bindPopup(popup_81aa551bd2ff4968a58ca42a90bc3dda)
+        ;
+
+        
+    
+    
+            var circle_marker_0cf5ce68434d4ecaba0cdd05153b0c2a = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_c14149a9d32f4f9fb3e944d28c0b8f01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f9bfa1ef32d4cc4b557a2e30fbee16d = $(`<div id="html_8f9bfa1ef32d4cc4b557a2e30fbee16d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca del San Carlos. Boca Tapada. Alrededores de Laguna Lagarto Lodge <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 2005-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano|Daniel Santamaría <strong>Identificadores:</strong> N. Zamora & D. Solano (INB)</div>`)[0];
+            popup_c14149a9d32f4f9fb3e944d28c0b8f01.setContent(html_8f9bfa1ef32d4cc4b557a2e30fbee16d);
+        
+
+        circle_marker_0cf5ce68434d4ecaba0cdd05153b0c2a.bindPopup(popup_c14149a9d32f4f9fb3e944d28c0b8f01)
+        ;
+
+        
+    
+    
+            var circle_marker_70584f5ee5b04492968f91e07823a18d = L.circleMarker(
+                [10.690278, -84.18333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_7e312c76a24648fbb54a9ecd9f0863b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_311a5dbe97274d73a1c93914a05de456 = $(`<div id="html_311a5dbe97274d73a1c93914a05de456" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida.  Cuenca del San Carlos.  Boca Tapada, camino a la Cuenca, 500 m despues de la Laguna de Lagarto Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Nelson Zamora|Mery Ocampo <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_7e312c76a24648fbb54a9ecd9f0863b0.setContent(html_311a5dbe97274d73a1c93914a05de456);
+        
+
+        circle_marker_70584f5ee5b04492968f91e07823a18d.bindPopup(popup_7e312c76a24648fbb54a9ecd9f0863b0)
+        ;
+
+        
+    
+    
+            var circle_marker_7e12f157642249748a1435456c31d9d1 = L.circleMarker(
+                [10.686111, -84.18056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_b963ea27e5c64119a14c8f4f5a869232 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f92bf85b49c47b3ac49d0f03944256c = $(`<div id="html_0f92bf85b49c47b3ac49d0f03944256c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boca Tapada, Alrededores de Laguna Lagarto Lodge.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2005-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_b963ea27e5c64119a14c8f4f5a869232.setContent(html_0f92bf85b49c47b3ac49d0f03944256c);
+        
+
+        circle_marker_7e12f157642249748a1435456c31d9d1.bindPopup(popup_b963ea27e5c64119a14c8f4f5a869232)
+        ;
+
+        
+    
+    
+            var circle_marker_9c2bc8147fc04e7ca7be81418cbe0dd9 = L.circleMarker(
+                [10.686111, -84.18056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_d44730561217472b93d6e97ea7514091 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db2f8d249e91484b82cb597747b491ed = $(`<div id="html_db2f8d249e91484b82cb597747b491ed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca del San Carlos. Laguna de Lagarto Lodge, sendero El Tucán. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2004-11-09 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano|B. Hernández <strong>Identificadores:</strong> D. Santamaría</div>`)[0];
+            popup_d44730561217472b93d6e97ea7514091.setContent(html_db2f8d249e91484b82cb597747b491ed);
+        
+
+        circle_marker_9c2bc8147fc04e7ca7be81418cbe0dd9.bindPopup(popup_d44730561217472b93d6e97ea7514091)
+        ;
+
+        
+    
+    
+            var circle_marker_f12920700112444f9f87e940b08a0bdd = L.circleMarker(
+                [10.686111, -84.18055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+        
+    
+        var popup_98273075d8fc4f8dbc72babcfadf74a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44f4ad5e0c0847f297b0b9b1e31cd0d4 = $(`<div id="html_44f4ad5e0c0847f297b0b9b1e31cd0d4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida.  Cuenca del San Carlos.  Alrededores de la Laguna del Lagarto Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano|B. Hernández|I. Mena <strong>Identificadores:</strong> D. Solano</div>`)[0];
+            popup_98273075d8fc4f8dbc72babcfadf74a4.setContent(html_44f4ad5e0c0847f297b0b9b1e31cd0d4);
+        
+
+        circle_marker_f12920700112444f9f87e940b08a0bdd.bindPopup(popup_98273075d8fc4f8dbc72babcfadf74a4)
+        ;
+
+        
+    
+    
+            var layer_control_b2023ebe18804dfba92f9bee562a994c = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_396bf424600b4dfe9cfa81cbbd7c0fb3,
+                    "ESRI World Imagery" : tile_layer_adb09c9437f24a26bdbe158e59007134,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_b2023ebe18804dfba92f9bee562a994c.base_layers,
+                layer_control_b2023ebe18804dfba92f9bee562a994c.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_53c30e38f61e4077a9af9c0b7ccb3ea2);
+            tile_layer_adb09c9437f24a26bdbe158e59007134.remove();
+        
+</script>

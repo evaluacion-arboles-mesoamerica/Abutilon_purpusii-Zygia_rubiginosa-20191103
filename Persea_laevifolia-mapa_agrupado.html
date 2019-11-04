@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_588bf4e37bf14a99925d4b902b4a5d9a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_588bf4e37bf14a99925d4b902b4a5d9a" ></div>
+        
+</body>
+<script>    
+    
+            var map_588bf4e37bf14a99925d4b902b4a5d9a = L.map(
+                "map_588bf4e37bf14a99925d4b902b4a5d9a",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_588bf4e37bf14a99925d4b902b4a5d9a);
+
+            
+
+        
+    
+            var tile_layer_6955b2fe8ed24647a5f8afe79d3a37bb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_588bf4e37bf14a99925d4b902b4a5d9a);
+        
+    
+            var tile_layer_71dabaeb8e8948d88baa2c9b5afa7fb8 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_588bf4e37bf14a99925d4b902b4a5d9a);
+        
+    
+            var marker_cluster_20458fb6be3048fd833593a2294326d3 = L.markerClusterGroup(
+                {}
+            );
+            map_588bf4e37bf14a99925d4b902b4a5d9a.addLayer(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+            var marker_65587b11f700401594ad5238837f7827 = L.marker(
+                [10.569444, -84.04722199999999],
+                {}
+            ).addTo(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+        var popup_8b9724e1d28f4434bf5673452a7ccae7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_875c50fc0a764a5fa192a2316119b953 = $(`<div id="html_875c50fc0a764a5fa192a2316119b953" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Lomas Sardinal; bosque intervenido y primario; ca. 15 km linea recta N de Puerto Viejo. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1997-01-19 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_8b9724e1d28f4434bf5673452a7ccae7.setContent(html_875c50fc0a764a5fa192a2316119b953);
+        
+
+        marker_65587b11f700401594ad5238837f7827.bindPopup(popup_8b9724e1d28f4434bf5673452a7ccae7)
+        ;
+
+        
+    
+    
+            var marker_7580e3107c5c4a5d8434f87836d37606 = L.marker(
+                [10.45, -84.06666700000001],
+                {}
+            ).addTo(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+        var popup_a731d9d7843d4737845064c0651e868a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4363c2bddf484fb3861d2917d4514d8f = $(`<div id="html_4363c2bddf484fb3861d2917d4514d8f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chilamate de Sarapiqui. En bosque primario de Selva Verde, en fila al sur del Rio Sarapiqui. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1989-05-09 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_a731d9d7843d4737845064c0651e868a.setContent(html_4363c2bddf484fb3861d2917d4514d8f);
+        
+
+        marker_7580e3107c5c4a5d8434f87836d37606.bindPopup(popup_a731d9d7843d4737845064c0651e868a)
+        ;
+
+        
+    
+    
+            var marker_260305568bc2466eb9ff16e90f77245b = L.marker(
+                [10.366667, -84.083333],
+                {}
+            ).addTo(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+        var popup_7300ac66b4684d33b26c62649e83acf6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_109f63d4ce5d4bac85a37c1e6592a10d = $(`<div id="html_109f63d4ce5d4bac85a37c1e6592a10d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chilamate. Albergue Selva Verde, Sendero El Nene. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1991-12-06 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_7300ac66b4684d33b26c62649e83acf6.setContent(html_109f63d4ce5d4bac85a37c1e6592a10d);
+        
+
+        marker_260305568bc2466eb9ff16e90f77245b.bindPopup(popup_7300ac66b4684d33b26c62649e83acf6)
+        ;
+
+        
+    
+    
+            var marker_974d28f397024584ae8c74cd099bb82a = L.marker(
+                [10.433333, -84.083333],
+                {}
+            ).addTo(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+        var popup_36a6d056ca6843f0b2f011f5e7e7ddc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cb3c93efa5540a59a59e5cae1989516 = $(`<div id="html_5cb3c93efa5540a59a59e5cae1989516" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chilamate, ca. 7 km W of Puerto Viejo, in primary forest on hills S of road and Rio Tirimbina. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1987-06-14 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_36a6d056ca6843f0b2f011f5e7e7ddc1.setContent(html_5cb3c93efa5540a59a59e5cae1989516);
+        
+
+        marker_974d28f397024584ae8c74cd099bb82a.bindPopup(popup_36a6d056ca6843f0b2f011f5e7e7ddc1)
+        ;
+
+        
+    
+    
+            var marker_9a578fe31c1947d7a72b208262edbe22 = L.marker(
+                [10.45, -84.06],
+                {}
+            ).addTo(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+        var popup_ee46e7bf544d43a4a6a31c891ebacd70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75d20668792742f99d98ebbe30b93979 = $(`<div id="html_75d20668792742f99d98ebbe30b93979" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chilamate de Sarapiquí En bosque primario de Selva Verde, en fila al sur del Río Sarapiquí. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1989-05-09 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Michael H. Grayum <strong>Identificadores:</strong> H. van der Werff</div>`)[0];
+            popup_ee46e7bf544d43a4a6a31c891ebacd70.setContent(html_75d20668792742f99d98ebbe30b93979);
+        
+
+        marker_9a578fe31c1947d7a72b208262edbe22.bindPopup(popup_ee46e7bf544d43a4a6a31c891ebacd70)
+        ;
+
+        
+    
+    
+            var marker_f358a2ef0c1449e2819fbcc56827f1a9 = L.marker(
+                [10.43, -84.08],
+                {}
+            ).addTo(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+        var popup_ab13027a20fc4e67a697177934e03e87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89f1838c06c846768c4766082a3e740c = $(`<div id="html_89f1838c06c846768c4766082a3e740c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chilamate, ca. 7 km W of Puerto Viejo, in primary forest on hills S of road and Río Tirimbina <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1987-06-14 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Isidro A. Chacón G. <strong>Identificadores:</strong> H. van der Werff (MO)</div>`)[0];
+            popup_ab13027a20fc4e67a697177934e03e87.setContent(html_89f1838c06c846768c4766082a3e740c);
+        
+
+        marker_f358a2ef0c1449e2819fbcc56827f1a9.bindPopup(popup_ab13027a20fc4e67a697177934e03e87)
+        ;
+
+        
+    
+    
+            var marker_76007b847da2418987a8278832a9c06e = L.marker(
+                [10.45, -84.06],
+                {}
+            ).addTo(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+        var popup_dd2fe7001436421697b62441f2126775 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66c5a58c9431437ab7d415d07a76f47c = $(`<div id="html_66c5a58c9431437ab7d415d07a76f47c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chilamate de Sarapiquí; south end of Cerros Sardinal; on hills south side of Río Sarapiquí. 10º27.5'N,84º04'W <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1985-07-03 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Michael H. Grayum|Thomas Ray <strong>Identificadores:</strong> H. van der Werff (MO)</div>`)[0];
+            popup_dd2fe7001436421697b62441f2126775.setContent(html_66c5a58c9431437ab7d415d07a76f47c);
+        
+
+        marker_76007b847da2418987a8278832a9c06e.bindPopup(popup_dd2fe7001436421697b62441f2126775)
+        ;
+
+        
+    
+    
+            var marker_34a24b3be81b4068b9f7223fbf7c429c = L.marker(
+                [10.45, -84.07],
+                {}
+            ).addTo(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+        var popup_f5010eda41264e84b35636f7fc32c953 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_faf3c2c4fd43473687a768f01eff31d0 = $(`<div id="html_faf3c2c4fd43473687a768f01eff31d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chilamate de Sarapiqí. Selva Verde, en fila al sur del Río Sarapiquí <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1989-05-09 00:00:00+00:00 <strong>Recolectores:</strong> B. E. Hammel <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f5010eda41264e84b35636f7fc32c953.setContent(html_faf3c2c4fd43473687a768f01eff31d0);
+        
+
+        marker_34a24b3be81b4068b9f7223fbf7c429c.bindPopup(popup_f5010eda41264e84b35636f7fc32c953)
+        ;
+
+        
+    
+    
+            var marker_33dc01301a0f4771a610e78ec174853f = L.marker(
+                [10.45, -84.06667],
+                {}
+            ).addTo(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+        var popup_0b7c3904c1cf430ea6c2eb78dcf8512e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c547dd66065426db2a782f060b68157 = $(`<div id="html_6c547dd66065426db2a782f060b68157" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chilamate de Sarapiquí. En bosque primario de Selva Verde, en fila al sur del Río Sarapiquí. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-05-09 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel & Michael Grayum <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0b7c3904c1cf430ea6c2eb78dcf8512e.setContent(html_6c547dd66065426db2a782f060b68157);
+        
+
+        marker_33dc01301a0f4771a610e78ec174853f.bindPopup(popup_0b7c3904c1cf430ea6c2eb78dcf8512e)
+        ;
+
+        
+    
+    
+            var marker_cbdad90d328c437fb3a171b3ed532e0f = L.marker(
+                [10.36, -84.08],
+                {}
+            ).addTo(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+        var popup_0b14d273b49d4f1e9aa7e3853dcb45ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b4816aee64e43c9ab0089fdf47ac853 = $(`<div id="html_9b4816aee64e43c9ab0089fdf47ac853" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Llanura de San Carlos. Chilamate. Albergue Selva Verde, Sendero El Nene. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1991-12-06 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> H. van der Werff (MO)</div>`)[0];
+            popup_0b14d273b49d4f1e9aa7e3853dcb45ba.setContent(html_9b4816aee64e43c9ab0089fdf47ac853);
+        
+
+        marker_cbdad90d328c437fb3a171b3ed532e0f.bindPopup(popup_0b14d273b49d4f1e9aa7e3853dcb45ba)
+        ;
+
+        
+    
+    
+            var marker_28609ff35f5a47779f95c1a5509214de = L.marker(
+                [10.45, -84.0],
+                {}
+            ).addTo(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+        var popup_62f85af8bfb44b7a80f106ed46c6dd97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb079ed14b434f668f9a2e9a1449d5d7 = $(`<div id="html_eb079ed14b434f668f9a2e9a1449d5d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho El Bejuco, near Puerto Viejo. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1996-08-15 00:00:00+00:00 <strong>Recolectores:</strong> H. van der Werff|Michael H. Grayum|Barry E. Hammel|Reinaldo Aguilar <strong>Identificadores:</strong> H. van der Werff</div>`)[0];
+            popup_62f85af8bfb44b7a80f106ed46c6dd97.setContent(html_eb079ed14b434f668f9a2e9a1449d5d7);
+        
+
+        marker_28609ff35f5a47779f95c1a5509214de.bindPopup(popup_62f85af8bfb44b7a80f106ed46c6dd97)
+        ;
+
+        
+    
+    
+            var marker_5ef3edb5521f4beca3c9b28982d9e60a = L.marker(
+                [10.45, -84.06666700000001],
+                {}
+            ).addTo(marker_cluster_20458fb6be3048fd833593a2294326d3);
+        
+    
+        var popup_605335dd30df4faf8ddc2cb3386b6ec8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60b6c3b80a6d4a6ab5dc2e56476a06eb = $(`<div id="html_60b6c3b80a6d4a6ab5dc2e56476a06eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chilamate de Sarapiq. Selva Verde, en fila al sur del Ro Sarapiqu <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-05-09 00:00:00+00:00 <strong>Recolectores:</strong> B. E. Hammel <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_605335dd30df4faf8ddc2cb3386b6ec8.setContent(html_60b6c3b80a6d4a6ab5dc2e56476a06eb);
+        
+
+        marker_5ef3edb5521f4beca3c9b28982d9e60a.bindPopup(popup_605335dd30df4faf8ddc2cb3386b6ec8)
+        ;
+
+        
+    
+    
+            var layer_control_e74c7649adef4ced9b4fbe349d755d57 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6955b2fe8ed24647a5f8afe79d3a37bb,
+                    "ESRI World Imagery" : tile_layer_71dabaeb8e8948d88baa2c9b5afa7fb8,
+                },
+                overlays :  {
+                    "macro_element_20458fb6be3048fd833593a2294326d3" : marker_cluster_20458fb6be3048fd833593a2294326d3,
+                },
+            };
+            L.control.layers(
+                layer_control_e74c7649adef4ced9b4fbe349d755d57.base_layers,
+                layer_control_e74c7649adef4ced9b4fbe349d755d57.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_588bf4e37bf14a99925d4b902b4a5d9a);
+            tile_layer_71dabaeb8e8948d88baa2c9b5afa7fb8.remove();
+        
+</script>

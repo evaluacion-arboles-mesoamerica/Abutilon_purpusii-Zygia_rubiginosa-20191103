@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5551a11a862d4da8ae77af60515b81a9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5551a11a862d4da8ae77af60515b81a9" ></div>
+        
+</body>
+<script>    
+    
+            var map_5551a11a862d4da8ae77af60515b81a9 = L.map(
+                "map_5551a11a862d4da8ae77af60515b81a9",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_5551a11a862d4da8ae77af60515b81a9);
+
+            
+
+        
+    
+            var tile_layer_b629d752d7fb4e40a283df17c85ba31f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5551a11a862d4da8ae77af60515b81a9);
+        
+    
+            var tile_layer_360734d036ea4296b7bf04bee61f48d4 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5551a11a862d4da8ae77af60515b81a9);
+        
+    
+            var marker_cluster_9396047db283449da1a6413c6f07af38 = L.markerClusterGroup(
+                {}
+            );
+            map_5551a11a862d4da8ae77af60515b81a9.addLayer(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+            var marker_20c7f59159aa4717ae9ba58d35fc3ab1 = L.marker(
+                [10.934649, -85.457633],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_8e7a17732d5a4d7dae16d10541431e38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf3eaba844914c41b5db5c2399984d2b = $(`<div id="html_bf3eaba844914c41b5db5c2399984d2b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A.C.G, Liberia, Pque Nal Guanacaste, Volcán Cacao <strong>Elevación:</strong> 1480.0 m  <strong>Fecha:</strong> 1997-01-05 00:00:00+00:00 <strong>Recolectores:</strong> Jose González; Manuel Angel Zumbado <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_8e7a17732d5a4d7dae16d10541431e38.setContent(html_bf3eaba844914c41b5db5c2399984d2b);
+        
+
+        marker_20c7f59159aa4717ae9ba58d35fc3ab1.bindPopup(popup_8e7a17732d5a4d7dae16d10541431e38)
+        ;
+
+        
+    
+    
+            var marker_259c9cacc7f245ceb4dfb760aa57239a = L.marker(
+                [10.934649, -85.457633],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_15333068ee214181afdbca1db5c59082 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e708901ecd9744edbd4ddf6fb85b5be6 = $(`<div id="html_e708901ecd9744edbd4ddf6fb85b5be6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A.C.G, Liberia, Pque Nal Guanacaste, Volcán Cacao <strong>Elevación:</strong> 1480.0 m  <strong>Fecha:</strong> 1997-01-05 00:00:00+00:00 <strong>Recolectores:</strong> Jose González; Manuel Angel Zumbado <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_15333068ee214181afdbca1db5c59082.setContent(html_e708901ecd9744edbd4ddf6fb85b5be6);
+        
+
+        marker_259c9cacc7f245ceb4dfb760aa57239a.bindPopup(popup_15333068ee214181afdbca1db5c59082)
+        ;
+
+        
+    
+    
+            var marker_0e57450790ec446ebbfbe46243b2413c = L.marker(
+                [10.934649, -85.457633],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_7e0b22daed074aba868b534637a530f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed0e9145f6e349d9bcc4f8aab4644d7c = $(`<div id="html_ed0e9145f6e349d9bcc4f8aab4644d7c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A.C.G, Liberia, Pque Nal Guanacaste, Volcán Cacao <strong>Elevación:</strong> 1480.0 m  <strong>Fecha:</strong> 1997-01-05 00:00:00+00:00 <strong>Recolectores:</strong> Jose González; Manuel Angel Zumbado <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_7e0b22daed074aba868b534637a530f7.setContent(html_ed0e9145f6e349d9bcc4f8aab4644d7c);
+        
+
+        marker_0e57450790ec446ebbfbe46243b2413c.bindPopup(popup_7e0b22daed074aba868b534637a530f7)
+        ;
+
+        
+    
+    
+            var marker_5fbcee4f82c94dbbab56f58b4408871b = L.marker(
+                [10.934649, -85.457633],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_efd3962586454588a110f1e3a029b749 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66e4a436d62d4c27b36a09e54c392c68 = $(`<div id="html_66e4a436d62d4c27b36a09e54c392c68" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A.C.G, Liberia, Pque Nal Guanacaste, Volcán Cacao <strong>Elevación:</strong> 1480.0 m  <strong>Fecha:</strong> 1997-01-05 00:00:00+00:00 <strong>Recolectores:</strong> Jose González; Manuel Angel Zumbado <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_efd3962586454588a110f1e3a029b749.setContent(html_66e4a436d62d4c27b36a09e54c392c68);
+        
+
+        marker_5fbcee4f82c94dbbab56f58b4408871b.bindPopup(popup_efd3962586454588a110f1e3a029b749)
+        ;
+
+        
+    
+    
+            var marker_e656e58d9a24477c838ce6b2a7bc6102 = L.marker(
+                [10.917222, -85.463889],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_53cb0aed934847e4a8cdaf33e1f2bff2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0831d37c28bd42fda0c0aee484e908a0 = $(`<div id="html_0831d37c28bd42fda0c0aee484e908a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcan Cacao, sendero hasta la cima del volcan. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1996-07-12 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_53cb0aed934847e4a8cdaf33e1f2bff2.setContent(html_0831d37c28bd42fda0c0aee484e908a0);
+        
+
+        marker_e656e58d9a24477c838ce6b2a7bc6102.bindPopup(popup_53cb0aed934847e4a8cdaf33e1f2bff2)
+        ;
+
+        
+    
+    
+            var marker_f353582bbd464cc3bda03352bbf0f698 = L.marker(
+                [10.333333, -84.833333],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_cabf44fc7d684e0f8f8f0b167c83d578 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3a29eb7e92d4eafb6c2d0d9e3892ab5 = $(`<div id="html_e3a29eb7e92d4eafb6c2d0d9e3892ab5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, upper San Luis Valley on Pacific slope, moist forest. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1985-10-12 00:00:00+00:00 <strong>Recolectores:</strong> William Haber; Erick Bello <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_cabf44fc7d684e0f8f8f0b167c83d578.setContent(html_e3a29eb7e92d4eafb6c2d0d9e3892ab5);
+        
+
+        marker_f353582bbd464cc3bda03352bbf0f698.bindPopup(popup_cabf44fc7d684e0f8f8f0b167c83d578)
+        ;
+
+        
+    
+    
+            var marker_9a38f010927648a8a70d02de571bbc59 = L.marker(
+                [10.333333, -84.75],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_bbc13b08da904d55abb566fd466b491d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2d0c39cf829400792a0440b8d6aa273 = $(`<div id="html_e2d0c39cf829400792a0440b8d6aa273" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Nuboso y El Brillante; bosque nublado y enano <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1984-07-14 00:00:00+00:00 <strong>Recolectores:</strong> John J. III Pipoly <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_bbc13b08da904d55abb566fd466b491d.setContent(html_e2d0c39cf829400792a0440b8d6aa273);
+        
+
+        marker_9a38f010927648a8a70d02de571bbc59.bindPopup(popup_bbc13b08da904d55abb566fd466b491d)
+        ;
+
+        
+    
+    
+            var marker_54b60f6533b040f4b2e6ab502d52de7c = L.marker(
+                [10.256944, -84.788889],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_b00149da1c8948d6b86b896948ca5902 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edfe7ad904114bf987f3124b4ae5b53f = $(`<div id="html_edfe7ad904114bf987f3124b4ae5b53f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis; Cerro Banquete, camino a Surtubal. Monteverde. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1994-03-22 00:00:00+00:00 <strong>Recolectores:</strong> Zobeida Fuentes <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_b00149da1c8948d6b86b896948ca5902.setContent(html_edfe7ad904114bf987f3124b4ae5b53f);
+        
+
+        marker_54b60f6533b040f4b2e6ab502d52de7c.bindPopup(popup_b00149da1c8948d6b86b896948ca5902)
+        ;
+
+        
+    
+    
+            var marker_51eaaa9a4d124424ada11f322d2c803e = L.marker(
+                [10.283333, -84.783334],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_d19eb0068dae42f892dee1697ebf8e76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f9d87fa807c408b9c2b4c64ade308c6 = $(`<div id="html_2f9d87fa807c408b9c2b4c64ade308c6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Brillante, division continental. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1989-03-13 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d19eb0068dae42f892dee1697ebf8e76.setContent(html_2f9d87fa807c408b9c2b4c64ade308c6);
+        
+
+        marker_51eaaa9a4d124424ada11f322d2c803e.bindPopup(popup_d19eb0068dae42f892dee1697ebf8e76)
+        ;
+
+        
+    
+    
+            var marker_b68e2625caec4a7b8fc912713dc391f1 = L.marker(
+                [10.3, -84.783334],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_87f144669ec74e578cf221fd57e42d9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6c2eb4d7c864860a473ee521cc1a94b = $(`<div id="html_e6c2eb4d7c864860a473ee521cc1a94b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Road to divide, swamp on continental divide (Sendero Pantanoso) and Sendero Chomogo. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1990-07-16 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_87f144669ec74e578cf221fd57e42d9f.setContent(html_e6c2eb4d7c864860a473ee521cc1a94b);
+        
+
+        marker_b68e2625caec4a7b8fc912713dc391f1.bindPopup(popup_87f144669ec74e578cf221fd57e42d9f)
+        ;
+
+        
+    
+    
+            var marker_d3612f1c2787455a9e84b1e796b1fd00 = L.marker(
+                [10.929167, -85.470834],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_555f317dbeea4ea490e07c55ad7493ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7bdb9914fc5447d9bff0781ddd58104 = $(`<div id="html_f7bdb9914fc5447d9bff0781ddd58104" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Cacao. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1990-11-25 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_555f317dbeea4ea490e07c55ad7493ea.setContent(html_f7bdb9914fc5447d9bff0781ddd58104);
+        
+
+        marker_d3612f1c2787455a9e84b1e796b1fd00.bindPopup(popup_555f317dbeea4ea490e07c55ad7493ea)
+        ;
+
+        
+    
+    
+            var marker_38a36db4cd624d8c9920fab619aeb9a9 = L.marker(
+                [10.928611, -85.469445],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_e0e63ae75ac34959b9367a15c1e2ccd7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca5d71f8138445fdbd064d9242e17073 = $(`<div id="html_ca5d71f8138445fdbd064d9242e17073" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Cacao; Cerro Cacao. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-02-10 00:00:00+00:00 <strong>Recolectores:</strong> Marcos Moraga <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e0e63ae75ac34959b9367a15c1e2ccd7.setContent(html_ca5d71f8138445fdbd064d9242e17073);
+        
+
+        marker_38a36db4cd624d8c9920fab619aeb9a9.bindPopup(popup_e0e63ae75ac34959b9367a15c1e2ccd7)
+        ;
+
+        
+    
+    
+            var marker_6648fa90678c4355bda52599f1039b24 = L.marker(
+                [10.333333, -84.75],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_8912c0d90ae946bd805d9112d7e615fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa5316a22e91464893659778b454bf83 = $(`<div id="html_fa5316a22e91464893659778b454bf83" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Nuboso y El Brillante; bosque nublado y enano <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1984-07-14 00:00:00+00:00 <strong>Recolectores:</strong> John J. III Pipoly <strong>Identificadores:</strong> Pipoly, John J. III</div>`)[0];
+            popup_8912c0d90ae946bd805d9112d7e615fa.setContent(html_fa5316a22e91464893659778b454bf83);
+        
+
+        marker_6648fa90678c4355bda52599f1039b24.bindPopup(popup_8912c0d90ae946bd805d9112d7e615fa)
+        ;
+
+        
+    
+    
+            var marker_4d9ff700bd914ffc8de64ce9bb7a4ff8 = L.marker(
+                [10.930121, -85.459903],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_4e2393e511bf4aaba13fa1c76dc7b999 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f9e14d6365c40c9bd158c0a147a9eb3 = $(`<div id="html_6f9e14d6365c40c9bd158c0a147a9eb3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Est. Cacao <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2003-03-18 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_4e2393e511bf4aaba13fa1c76dc7b999.setContent(html_6f9e14d6365c40c9bd158c0a147a9eb3);
+        
+
+        marker_4d9ff700bd914ffc8de64ce9bb7a4ff8.bindPopup(popup_4e2393e511bf4aaba13fa1c76dc7b999)
+        ;
+
+        
+    
+    
+            var marker_cbb7464c8d654d4f90344a1a03351a1f = L.marker(
+                [10.930121, -85.459903],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_a1c2f7dbfaee46bd9efd049c153c3774 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6090636791764f7088d0ad938c946db3 = $(`<div id="html_6090636791764f7088d0ad938c946db3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Est. Cacao <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2003-03-18 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_a1c2f7dbfaee46bd9efd049c153c3774.setContent(html_6090636791764f7088d0ad938c946db3);
+        
+
+        marker_cbb7464c8d654d4f90344a1a03351a1f.bindPopup(popup_a1c2f7dbfaee46bd9efd049c153c3774)
+        ;
+
+        
+    
+    
+            var marker_11ac2033ca61498cb5f3024c27fccc3c = L.marker(
+                [10.930121, -85.459903],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_52f2b6e131fc419abfdc98c9415d2a6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fa48066d3ad4fc4a9e3d4720f190f43 = $(`<div id="html_5fa48066d3ad4fc4a9e3d4720f190f43" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Est. Cacao <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2003-03-18 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_52f2b6e131fc419abfdc98c9415d2a6a.setContent(html_5fa48066d3ad4fc4a9e3d4720f190f43);
+        
+
+        marker_11ac2033ca61498cb5f3024c27fccc3c.bindPopup(popup_52f2b6e131fc419abfdc98c9415d2a6a)
+        ;
+
+        
+    
+    
+            var marker_2f24bbcd360243ac9f5325c193a66f30 = L.marker(
+                [10.930121, -85.459903],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_0e95460233b74ee88da1eb98f6931fbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8ddcca8ef4f4907ba4646e386823004 = $(`<div id="html_b8ddcca8ef4f4907ba4646e386823004" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Est. Cacao <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2003-03-18 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_0e95460233b74ee88da1eb98f6931fbb.setContent(html_b8ddcca8ef4f4907ba4646e386823004);
+        
+
+        marker_2f24bbcd360243ac9f5325c193a66f30.bindPopup(popup_0e95460233b74ee88da1eb98f6931fbb)
+        ;
+
+        
+    
+    
+            var marker_b761d992fdaa48a884c9c0bbe31312bb = L.marker(
+                [10.93269, -85.45872],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_bce1e479f31641678d9273965e17eeb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a5429fab2984ce6aa9cef7a641e334c = $(`<div id="html_6a5429fab2984ce6aa9cef7a641e334c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Guanacaste, sector Cacao. <strong>Elevación:</strong> 1445.0 m  <strong>Fecha:</strong> 2005-03-12 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_bce1e479f31641678d9273965e17eeb6.setContent(html_6a5429fab2984ce6aa9cef7a641e334c);
+        
+
+        marker_b761d992fdaa48a884c9c0bbe31312bb.bindPopup(popup_bce1e479f31641678d9273965e17eeb6)
+        ;
+
+        
+    
+    
+            var marker_600cbb35aa844731a46c692680d2abfd = L.marker(
+                [10.93269, -85.45872],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_91f47ffce39b47068d496f1af8684068 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3685fdd8be774a1497559472bcc911b3 = $(`<div id="html_3685fdd8be774a1497559472bcc911b3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Guanacaste, sector Cacao. <strong>Elevación:</strong> 1445.0 m  <strong>Fecha:</strong> 2005-03-12 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_91f47ffce39b47068d496f1af8684068.setContent(html_3685fdd8be774a1497559472bcc911b3);
+        
+
+        marker_600cbb35aa844731a46c692680d2abfd.bindPopup(popup_91f47ffce39b47068d496f1af8684068)
+        ;
+
+        
+    
+    
+            var marker_b89aa4f590b34c0ba8d0059f4553081a = L.marker(
+                [10.93269, -85.45872],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_9b31d3e41e4f42a28713627228d7c283 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf03556dc48843b2bac858d2a63230e3 = $(`<div id="html_bf03556dc48843b2bac858d2a63230e3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Guanacaste, sector Cacao. <strong>Elevación:</strong> 1445.0 m  <strong>Fecha:</strong> 2005-03-12 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_9b31d3e41e4f42a28713627228d7c283.setContent(html_bf03556dc48843b2bac858d2a63230e3);
+        
+
+        marker_b89aa4f590b34c0ba8d0059f4553081a.bindPopup(popup_9b31d3e41e4f42a28713627228d7c283)
+        ;
+
+        
+    
+    
+            var marker_5d82de8ce08049fdb1cc69e415514cd9 = L.marker(
+                [10.93269, -85.45872],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_e78cae520f444f94bdf8388b88bc3f8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1873977b789c43489aa25f4f55a6d492 = $(`<div id="html_1873977b789c43489aa25f4f55a6d492" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Guanacaste, sector Cacao. <strong>Elevación:</strong> 1445.0 m  <strong>Fecha:</strong> 2005-03-12 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e78cae520f444f94bdf8388b88bc3f8b.setContent(html_1873977b789c43489aa25f4f55a6d492);
+        
+
+        marker_5d82de8ce08049fdb1cc69e415514cd9.bindPopup(popup_e78cae520f444f94bdf8388b88bc3f8b)
+        ;
+
+        
+    
+    
+            var marker_2cac93cf5b0f46acab8e8f421a48aed0 = L.marker(
+                [10.676404, -85.022533],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_f7ce52da253049a1839994413b581997 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82555a8b932b48d0a2f624d0f0431457 = $(`<div id="html_82555a8b932b48d0a2f624d0f0431457" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Tenorio. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2003-07-19 00:00:00+00:00 <strong>Recolectores:</strong> Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_f7ce52da253049a1839994413b581997.setContent(html_82555a8b932b48d0a2f624d0f0431457);
+        
+
+        marker_2cac93cf5b0f46acab8e8f421a48aed0.bindPopup(popup_f7ce52da253049a1839994413b581997)
+        ;
+
+        
+    
+    
+            var marker_a2484f35b2584852a47de61fca5f5a08 = L.marker(
+                [10.676404, -85.022533],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_4585eaa326b746cabc97546bd3c8b9e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fcd7c8a88944c6eb2420f3ea5e2dc79 = $(`<div id="html_2fcd7c8a88944c6eb2420f3ea5e2dc79" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Tenorio. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2003-07-19 00:00:00+00:00 <strong>Recolectores:</strong> Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_4585eaa326b746cabc97546bd3c8b9e1.setContent(html_2fcd7c8a88944c6eb2420f3ea5e2dc79);
+        
+
+        marker_a2484f35b2584852a47de61fca5f5a08.bindPopup(popup_4585eaa326b746cabc97546bd3c8b9e1)
+        ;
+
+        
+    
+    
+            var marker_ab7d01f3d51e464f9eb7c7df430290fd = L.marker(
+                [10.676404, -85.022533],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_4f9d2dc026c64c7ea74bd2274343f9ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6164619c700246ba9a3d28e98cbf04d8 = $(`<div id="html_6164619c700246ba9a3d28e98cbf04d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Tenorio. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2003-07-19 00:00:00+00:00 <strong>Recolectores:</strong> Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_4f9d2dc026c64c7ea74bd2274343f9ad.setContent(html_6164619c700246ba9a3d28e98cbf04d8);
+        
+
+        marker_ab7d01f3d51e464f9eb7c7df430290fd.bindPopup(popup_4f9d2dc026c64c7ea74bd2274343f9ad)
+        ;
+
+        
+    
+    
+            var marker_35a7f05d7a38436f891145c27e084344 = L.marker(
+                [10.933333, -85.45277800000001],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_3309b7a8e08d4896860f3c16e83e66af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c5815d383cc4dc0b7e6ec394bbb033b = $(`<div id="html_6c5815d383cc4dc0b7e6ec394bbb033b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cacao, Camino a la cima. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2007-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Armando Soto; Michael H. Grayum <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_3309b7a8e08d4896860f3c16e83e66af.setContent(html_6c5815d383cc4dc0b7e6ec394bbb033b);
+        
+
+        marker_35a7f05d7a38436f891145c27e084344.bindPopup(popup_3309b7a8e08d4896860f3c16e83e66af)
+        ;
+
+        
+    
+    
+            var marker_5cba1929512545a891956b9e5300fa7d = L.marker(
+                [10.933333, -85.45277800000001],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_2f5b84f57baa43a0aeed1283a5e1c11b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea916887b60e4f1f9b5b7c8729c2623a = $(`<div id="html_ea916887b60e4f1f9b5b7c8729c2623a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cacao, Camino a la cima. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2007-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Armando Soto; Michael H. Grayum <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_2f5b84f57baa43a0aeed1283a5e1c11b.setContent(html_ea916887b60e4f1f9b5b7c8729c2623a);
+        
+
+        marker_5cba1929512545a891956b9e5300fa7d.bindPopup(popup_2f5b84f57baa43a0aeed1283a5e1c11b)
+        ;
+
+        
+    
+    
+            var marker_26edc80a705c456ca19c9d8b12575cb6 = L.marker(
+                [10.933333, -85.45277800000001],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_d55b1cb534294c248ace74ce7671f66c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf354808112e439c88209625435f9aad = $(`<div id="html_bf354808112e439c88209625435f9aad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cacao, Camino a la cima. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2007-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Armando Soto; Michael H. Grayum <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d55b1cb534294c248ace74ce7671f66c.setContent(html_bf354808112e439c88209625435f9aad);
+        
+
+        marker_26edc80a705c456ca19c9d8b12575cb6.bindPopup(popup_d55b1cb534294c248ace74ce7671f66c)
+        ;
+
+        
+    
+    
+            var marker_9963560f71c74eb9a18fd3528474d597 = L.marker(
+                [10.931389, -85.459722],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_b31ce4ab9e6149d7ae06d094091891ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4ac3d67335341238296e7bc90a02dba = $(`<div id="html_d4ac3d67335341238296e7bc90a02dba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> SW (Pacific) slope of Cerro Cacao, Cordillera de Guanacaste. <strong>Elevación:</strong> 1425.0 m  <strong>Fecha:</strong> 2007-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum; Armando Soto ; Daniel García <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_b31ce4ab9e6149d7ae06d094091891ff.setContent(html_d4ac3d67335341238296e7bc90a02dba);
+        
+
+        marker_9963560f71c74eb9a18fd3528474d597.bindPopup(popup_b31ce4ab9e6149d7ae06d094091891ff)
+        ;
+
+        
+    
+    
+            var marker_e75d9aee294844aebeceabffab9d1d1e = L.marker(
+                [10.976944, -85.48138900000001],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_4d286a01929947599e3e039983fff140 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_028c011c773743e09d536742d693fba6 = $(`<div id="html_028c011c773743e09d536742d693fba6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Guanacaste, estación Biológica Maritza, cima del Volcán Orosí, entre el base camp y sendero a Maritza. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2007-08-24 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_4d286a01929947599e3e039983fff140.setContent(html_028c011c773743e09d536742d693fba6);
+        
+
+        marker_e75d9aee294844aebeceabffab9d1d1e.bindPopup(popup_4d286a01929947599e3e039983fff140)
+        ;
+
+        
+    
+    
+            var marker_d94433f005ca4bd8b17993617abf23ad = L.marker(
+                [10.976944, -85.48138900000001],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_0b53422295234441a66d91d797e6f4ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68041d784e1b43ef9119300c8d59d08c = $(`<div id="html_68041d784e1b43ef9119300c8d59d08c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Guanacaste, estación Biológica Maritza, cima del Volcán Orosí, entre el base camp y sendero a Maritza. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2007-08-24 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_0b53422295234441a66d91d797e6f4ec.setContent(html_68041d784e1b43ef9119300c8d59d08c);
+        
+
+        marker_d94433f005ca4bd8b17993617abf23ad.bindPopup(popup_0b53422295234441a66d91d797e6f4ec)
+        ;
+
+        
+    
+    
+            var marker_50a78d8658664e5ba80e6ce07f2717c5 = L.marker(
+                [10.343861, -84.79597199999999],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_393bad4da0044fa78910e3a87c9a4c22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_716f269b848b42aea4f2c517b8d4cf9e = $(`<div id="html_716f269b848b42aea4f2c517b8d4cf9e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. Arenal-Monteverde. Reserva Sanmta Elena. <strong>Elevación:</strong> 1720.0 m  <strong>Fecha:</strong> 2010-04-14 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_393bad4da0044fa78910e3a87c9a4c22.setContent(html_716f269b848b42aea4f2c517b8d4cf9e);
+        
+
+        marker_50a78d8658664e5ba80e6ce07f2717c5.bindPopup(popup_393bad4da0044fa78910e3a87c9a4c22)
+        ;
+
+        
+    
+    
+            var marker_9b07a945d46d4086bff299b2bf2b1ebb = L.marker(
+                [10.343861, -84.79597199999999],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_226f4273aa09409aab490a4ef34ca553 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ece7ab5ee95c476da1555d0373599230 = $(`<div id="html_ece7ab5ee95c476da1555d0373599230" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. Arenal-Monteverde. Reserva Sanmta Elena. <strong>Elevación:</strong> 1720.0 m  <strong>Fecha:</strong> 2010-04-14 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_226f4273aa09409aab490a4ef34ca553.setContent(html_ece7ab5ee95c476da1555d0373599230);
+        
+
+        marker_9b07a945d46d4086bff299b2bf2b1ebb.bindPopup(popup_226f4273aa09409aab490a4ef34ca553)
+        ;
+
+        
+    
+    
+            var marker_100052051d374fed862752530c4f7f00 = L.marker(
+                [10.343861, -84.79597199999999],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_9a7fb460545d496db296da5db8f9a1b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_706d7c3365654af097752ad5b87542ca = $(`<div id="html_706d7c3365654af097752ad5b87542ca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. Arenal-Monteverde. Reserva Sanmta Elena. <strong>Elevación:</strong> 1720.0 m  <strong>Fecha:</strong> 2010-04-14 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_9a7fb460545d496db296da5db8f9a1b6.setContent(html_706d7c3365654af097752ad5b87542ca);
+        
+
+        marker_100052051d374fed862752530c4f7f00.bindPopup(popup_9a7fb460545d496db296da5db8f9a1b6)
+        ;
+
+        
+    
+    
+            var marker_0241f9d6571f42d5a0c0851830a052e4 = L.marker(
+                [10.343861, -84.79597199999999],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_9ea12920ceee4201b627c87ce2ebcbf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab8f5d0b40844dda804cf14637955e0f = $(`<div id="html_ab8f5d0b40844dda804cf14637955e0f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. Arenal-Monteverde. Reserva Sanmta Elena. <strong>Elevación:</strong> 1720.0 m  <strong>Fecha:</strong> 2010-04-14 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_9ea12920ceee4201b627c87ce2ebcbf4.setContent(html_ab8f5d0b40844dda804cf14637955e0f);
+        
+
+        marker_0241f9d6571f42d5a0c0851830a052e4.bindPopup(popup_9ea12920ceee4201b627c87ce2ebcbf4)
+        ;
+
+        
+    
+    
+            var marker_30a8158678d74aec970562eee840c79f = L.marker(
+                [10.343861, -84.79597199999999],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_842d06eb9ba043d2aeb345a9ee9597ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c59d7848ee84eb791b8687b52fd76c8 = $(`<div id="html_5c59d7848ee84eb791b8687b52fd76c8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. Arenal-Monteverde. Reserva Sanmta Elena. <strong>Elevación:</strong> 1720.0 m  <strong>Fecha:</strong> 2010-04-14 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_842d06eb9ba043d2aeb345a9ee9597ef.setContent(html_5c59d7848ee84eb791b8687b52fd76c8);
+        
+
+        marker_30a8158678d74aec970562eee840c79f.bindPopup(popup_842d06eb9ba043d2aeb345a9ee9597ef)
+        ;
+
+        
+    
+    
+            var marker_4fe2dfaa8e6044e1a4a97696d842a9c0 = L.marker(
+                [10.302639, -84.795167],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_2b1ed6d8f09e42c095f0107d28da0490 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0010ba53395b46c58461d4de29924574 = $(`<div id="html_0010ba53395b46c58461d4de29924574" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Nuboso, en las cercanías a la intersección con el sendero El Camino. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 2011-09-01 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Santamaría <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_2b1ed6d8f09e42c095f0107d28da0490.setContent(html_0010ba53395b46c58461d4de29924574);
+        
+
+        marker_4fe2dfaa8e6044e1a4a97696d842a9c0.bindPopup(popup_2b1ed6d8f09e42c095f0107d28da0490)
+        ;
+
+        
+    
+    
+            var marker_d2cbadc56eb64fc99ff02f1886a101dc = L.marker(
+                [10.302639, -84.795167],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_8534a411d17748a3a87378b65ea06f60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ddb7d2256f74c3fb0454be53086f060 = $(`<div id="html_0ddb7d2256f74c3fb0454be53086f060" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Nuboso, en las cercanías a la intersección con el sendero El Camino. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 2011-09-01 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Santamaría <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_8534a411d17748a3a87378b65ea06f60.setContent(html_0ddb7d2256f74c3fb0454be53086f060);
+        
+
+        marker_d2cbadc56eb64fc99ff02f1886a101dc.bindPopup(popup_8534a411d17748a3a87378b65ea06f60)
+        ;
+
+        
+    
+    
+            var marker_e8bcff0afe7d4e9d9b677650c86dbec3 = L.marker(
+                [10.302639, -84.795167],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_4e6c44bef2404ed49e90f6232d742732 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ba2926085e64872bd58706afc3c0d8d = $(`<div id="html_0ba2926085e64872bd58706afc3c0d8d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Nuboso, en las cercanías a la intersección con el sendero El Camino. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 2011-09-01 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Santamaría <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_4e6c44bef2404ed49e90f6232d742732.setContent(html_0ba2926085e64872bd58706afc3c0d8d);
+        
+
+        marker_e8bcff0afe7d4e9d9b677650c86dbec3.bindPopup(popup_4e6c44bef2404ed49e90f6232d742732)
+        ;
+
+        
+    
+    
+            var marker_7df4a5d8ca814df1a47bfb9a5e2bb363 = L.marker(
+                [10.931389, -85.459722],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_67e69946fd714e91bde2f2eebd6a0745 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2790d63dfac64b1ea1bab7f6558ac90d = $(`<div id="html_2790d63dfac64b1ea1bab7f6558ac90d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> SW (Pacific) slope of Cerro Cacao, Cordillera de Guanacaste. <strong>Elevación:</strong> 1425.0 m  <strong>Fecha:</strong> 2007-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Armando Soto|Daniel García <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_67e69946fd714e91bde2f2eebd6a0745.setContent(html_2790d63dfac64b1ea1bab7f6558ac90d);
+        
+
+        marker_7df4a5d8ca814df1a47bfb9a5e2bb363.bindPopup(popup_67e69946fd714e91bde2f2eebd6a0745)
+        ;
+
+        
+    
+    
+            var marker_3091a498efa247d8a86ccd4932f20ffe = L.marker(
+                [10.33, -84.75],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_7e1698b749894671b8f68095e04665ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_451160907c2749d490fb36a9e40adf14 = $(`<div id="html_451160907c2749d490fb36a9e40adf14" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán, Reserva Monteverde, Sendero Nuboso y El Brillante, bosque nublado y enano <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1984-07-14 00:00:00+00:00 <strong>Recolectores:</strong> John James Pipoly, III <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_7e1698b749894671b8f68095e04665ed.setContent(html_451160907c2749d490fb36a9e40adf14);
+        
+
+        marker_3091a498efa247d8a86ccd4932f20ffe.bindPopup(popup_7e1698b749894671b8f68095e04665ed)
+        ;
+
+        
+    
+    
+            var marker_d338ca486a564c248ba309e13f01e4b1 = L.marker(
+                [10.33, -84.75],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_7ee22dfbf4f44e39b869835e769284a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9b038ef6c69439798c356ec2e6883e1 = $(`<div id="html_b9b038ef6c69439798c356ec2e6883e1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán, Reserva Monteverde, Sendero Nuboso y El Brillante, bosque nublado y enano <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1984-07-14 00:00:00+00:00 <strong>Recolectores:</strong> John James Pipoly, III <strong>Identificadores:</strong> Pipoly</div>`)[0];
+            popup_7ee22dfbf4f44e39b869835e769284a8.setContent(html_b9b038ef6c69439798c356ec2e6883e1);
+        
+
+        marker_d338ca486a564c248ba309e13f01e4b1.bindPopup(popup_7ee22dfbf4f44e39b869835e769284a8)
+        ;
+
+        
+    
+    
+            var marker_7b06c840472d4015b59662b2e71d18e8 = L.marker(
+                [10.3, -84.783333],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_d2ca67b06597415d86f33c295807fbb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1215aab6c8647d68599288855b68111 = $(`<div id="html_c1215aab6c8647d68599288855b68111" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boundary between Provinces Puntarenas and Alajuela: Monte Verde Reserve, Cordillera de Tilarán, Cerros Centinelas. <strong>Elevación:</strong> 1575.0 m  <strong>Fecha:</strong> 1984-08-19 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Pamela J. Sleeper <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_d2ca67b06597415d86f33c295807fbb1.setContent(html_c1215aab6c8647d68599288855b68111);
+        
+
+        marker_7b06c840472d4015b59662b2e71d18e8.bindPopup(popup_d2ca67b06597415d86f33c295807fbb1)
+        ;
+
+        
+    
+    
+            var marker_75826041202840d182761354610c8004 = L.marker(
+                [10.333333, -84.8],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_e5e511b66302430eba72ca6ee93da22f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3da4afd8fd842fcb963cd45c2cd696f = $(`<div id="html_f3da4afd8fd842fcb963cd45c2cd696f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde.  Cloud forest at edge of continental divide and on Pacific side of slope.  Collected by H. Rodríguez. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1976-08-19 00:00:00+00:00 <strong>Recolectores:</strong> James C. Solomon <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_e5e511b66302430eba72ca6ee93da22f.setContent(html_f3da4afd8fd842fcb963cd45c2cd696f);
+        
+
+        marker_75826041202840d182761354610c8004.bindPopup(popup_e5e511b66302430eba72ca6ee93da22f)
+        ;
+
+        
+    
+    
+            var marker_85f3e1ce431845859e5e28b3f114dae4 = L.marker(
+                [10.3, -84.76],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_a635cb52eb6f42b494615bc8168fa436 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c2997b1a1b74befafde5d35d4d6656b = $(`<div id="html_6c2997b1a1b74befafde5d35d4d6656b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Evergreen cloud forest and wind-gap formations (lower montaneand premontane rain forest life zone) on and near the Continental Divide about to 2  to 5 km E and SE of Monteverde <strong>Elevación:</strong> 1640.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> Baker, Richard</div>`)[0];
+            popup_a635cb52eb6f42b494615bc8168fa436.setContent(html_6c2997b1a1b74befafde5d35d4d6656b);
+        
+
+        marker_85f3e1ce431845859e5e28b3f114dae4.bindPopup(popup_a635cb52eb6f42b494615bc8168fa436)
+        ;
+
+        
+    
+    
+            var marker_0eeeec76dcd148f59b555b60fbbdbb23 = L.marker(
+                [10.25, -84.78],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_25dbd7e0cd304c11bca0d11029aa374b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98c502d8de534e89ae3bea946836ec51 = $(`<div id="html_98c502d8de534e89ae3bea946836ec51" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis, Cerro Banquete, camino a Suturtubal <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1994-03-22 00:00:00+00:00 <strong>Recolectores:</strong> Fuentes, Zobeida <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_25dbd7e0cd304c11bca0d11029aa374b.setContent(html_98c502d8de534e89ae3bea946836ec51);
+        
+
+        marker_0eeeec76dcd148f59b555b60fbbdbb23.bindPopup(popup_25dbd7e0cd304c11bca0d11029aa374b)
+        ;
+
+        
+    
+    
+            var marker_9cfc404f077c4b0794b7bae80f20180f = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_746bc74462294705b4c29e9c62a89ad8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21d3f5fa065d451280aaf695d1bbb856 = $(`<div id="html_21d3f5fa065d451280aaf695d1bbb856" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1927-07-26 00:00:00+00:00 <strong>Recolectores:</strong> A. M. Brenes <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_746bc74462294705b4c29e9c62a89ad8.setContent(html_21d3f5fa065d451280aaf695d1bbb856);
+        
+
+        marker_9cfc404f077c4b0794b7bae80f20180f.bindPopup(popup_746bc74462294705b4c29e9c62a89ad8)
+        ;
+
+        
+    
+    
+            var marker_8e7d3d9bdc4b44d1808057727aa0adfd = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_c0475e5202374667826a1d350dfe83c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7eba0abb34454cb09954a456fa2c383b = $(`<div id="html_7eba0abb34454cb09954a456fa2c383b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1976-08-15 00:00:00+00:00 <strong>Recolectores:</strong> V. J. Dryer <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c0475e5202374667826a1d350dfe83c1.setContent(html_7eba0abb34454cb09954a456fa2c383b);
+        
+
+        marker_8e7d3d9bdc4b44d1808057727aa0adfd.bindPopup(popup_c0475e5202374667826a1d350dfe83c1)
+        ;
+
+        
+    
+    
+            var marker_2fb7f4175a4f429fba704bb7aa4019d1 = L.marker(
+                [10.3, -84.78],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_ee3e6a190c494adfa96733574ea6b304 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3e7faa34d4e4359a54a3f64e5fb7057 = $(`<div id="html_a3e7faa34d4e4359a54a3f64e5fb7057" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Monteverde; Cordillera de Tilarán. Road to divide, swamp on continental divide (Sendero Pantanoso) and Sendero Chomogo. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1990-07-16 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_ee3e6a190c494adfa96733574ea6b304.setContent(html_a3e7faa34d4e4359a54a3f64e5fb7057);
+        
+
+        marker_2fb7f4175a4f429fba704bb7aa4019d1.bindPopup(popup_ee3e6a190c494adfa96733574ea6b304)
+        ;
+
+        
+    
+    
+            var marker_6e6103fb3026485d9e5500e32738ab48 = L.marker(
+                [10.28333, -84.78333],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_a756143aa31d4b58bbf43893c110ae6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9b0e426b32442fa82113473cdee44cd = $(`<div id="html_c9b0e426b32442fa82113473cdee44cd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Sendero Brillante, división continental. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1989-03-13 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_a756143aa31d4b58bbf43893c110ae6e.setContent(html_c9b0e426b32442fa82113473cdee44cd);
+        
+
+        marker_6e6103fb3026485d9e5500e32738ab48.bindPopup(popup_a756143aa31d4b58bbf43893c110ae6e)
+        ;
+
+        
+    
+    
+            var marker_970ee85160584139b0a77bfccbb79d2a = L.marker(
+                [10.30888, -84.79083],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_3b12db84d0d84a00bec43a386afe4550 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4079f56ac5af4891ac5c54ee03d605b4 = $(`<div id="html_4079f56ac5af4891ac5c54ee03d605b4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Monteverde, Sendero Brillante <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1985-08-26 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_3b12db84d0d84a00bec43a386afe4550.setContent(html_4079f56ac5af4891ac5c54ee03d605b4);
+        
+
+        marker_970ee85160584139b0a77bfccbb79d2a.bindPopup(popup_3b12db84d0d84a00bec43a386afe4550)
+        ;
+
+        
+    
+    
+            var marker_1269f882c2d14bbeab53965bd2f40387 = L.marker(
+                [10.25, -84.78],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_ae2cd6e800aa4dd3bc9d5c32f03ced37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8adb33f30684484686acfd90fd619763 = $(`<div id="html_8adb33f30684484686acfd90fd619763" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. San Luis; Cerro Banquete, camino a Surtubal. Monteverde. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1994-03-22 00:00:00+00:00 <strong>Recolectores:</strong> Zobeida Fuentes <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_ae2cd6e800aa4dd3bc9d5c32f03ced37.setContent(html_8adb33f30684484686acfd90fd619763);
+        
+
+        marker_1269f882c2d14bbeab53965bd2f40387.bindPopup(popup_ae2cd6e800aa4dd3bc9d5c32f03ced37)
+        ;
+
+        
+    
+    
+            var marker_c65027f0b8cb4869bd2ba66eaec1a144 = L.marker(
+                [10.93269, -85.45872],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_195b2868e1c345b084ed280c13920111 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d42d6f6620d7474c865d16c0f33cf864 = $(`<div id="html_d42d6f6620d7474c865d16c0f33cf864" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Cacao. Trail to summit of Volcan Cacao. Wet montane forest on slopes below windswept ridge. Tenth ha. transect Cacao-2. Specimen preserved in 70% alcohol. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2005-03-12 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> J. Morales</div>`)[0];
+            popup_195b2868e1c345b084ed280c13920111.setContent(html_d42d6f6620d7474c865d16c0f33cf864);
+        
+
+        marker_c65027f0b8cb4869bd2ba66eaec1a144.bindPopup(popup_195b2868e1c345b084ed280c13920111)
+        ;
+
+        
+    
+    
+            var marker_d1b84e019d784cd79ca3053adf214d70 = L.marker(
+                [10.676404, -85.02253],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_3ba537db56a54d05bfc79c2ea032d379 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad82f2c882ae43a2b3be487d0d11a10e = $(`<div id="html_ad82f2c882ae43a2b3be487d0d11a10e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcan Tenorio.  Bosque primario de tipo Enano. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2003-07-19 00:00:00+00:00 <strong>Recolectores:</strong> J. A. Azofeifa <strong>Identificadores:</strong> J. Morales</div>`)[0];
+            popup_3ba537db56a54d05bfc79c2ea032d379.setContent(html_ad82f2c882ae43a2b3be487d0d11a10e);
+        
+
+        marker_d1b84e019d784cd79ca3053adf214d70.bindPopup(popup_3ba537db56a54d05bfc79c2ea032d379)
+        ;
+
+        
+    
+    
+            var marker_79aaa0b748c54764893b578c7ac14450 = L.marker(
+                [10.934649, -85.45763000000001],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_0fb4f7667587483ba3109d02f935b2d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68eb2e836b9743dd8c3c486f084210f6 = $(`<div id="html_68eb2e836b9743dd8c3c486f084210f6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Guanacaste, Volcan Cacao, bosques desde el Derrumbe hasta la cima del volcan. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1997-01-05 00:00:00+00:00 <strong>Recolectores:</strong> José Á. González R. <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_0fb4f7667587483ba3109d02f935b2d5.setContent(html_68eb2e836b9743dd8c3c486f084210f6);
+        
+
+        marker_79aaa0b748c54764893b578c7ac14450.bindPopup(popup_0fb4f7667587483ba3109d02f935b2d5)
+        ;
+
+        
+    
+    
+            var marker_f988507853004e65819250effcaa522d = L.marker(
+                [10.933333, -85.45278],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_73c88a757e304249b5b7776a45e5d8d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47271ceebfb6419880489328ad6b25ab = $(`<div id="html_47271ceebfb6419880489328ad6b25ab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cacao, camino a la cima.  <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2007-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Armando Soto <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_73c88a757e304249b5b7776a45e5d8d8.setContent(html_47271ceebfb6419880489328ad6b25ab);
+        
+
+        marker_f988507853004e65819250effcaa522d.bindPopup(popup_73c88a757e304249b5b7776a45e5d8d8)
+        ;
+
+        
+    
+    
+            var marker_36ffedf9b04d4d87b5beb38ed96ab098 = L.marker(
+                [10.930121, -85.4599],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_425e6f5073dd4f96aef1ef84cebe16d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8def0d606f944c79b4866e83a0ea4be = $(`<div id="html_a8def0d606f944c79b4866e83a0ea4be" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Area de Conservacion de Guanacaste. Volcan Cacao. Wet cloud forest approx. 1 km from summit. Montane wet Forest. Tenth ha transect Cacao -2. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2003-03-18 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_425e6f5073dd4f96aef1ef84cebe16d3.setContent(html_a8def0d606f944c79b4866e83a0ea4be);
+        
+
+        marker_36ffedf9b04d4d87b5beb38ed96ab098.bindPopup(popup_425e6f5073dd4f96aef1ef84cebe16d3)
+        ;
+
+        
+    
+    
+            var marker_dd2f0ade3cd54dffb38c1fe731c7ca27 = L.marker(
+                [10.302639, -84.79517],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_cf0cca30bd8c45e7834a0db1941bb976 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8cd2f19e0f54d37a4fd50e48be50c7b = $(`<div id="html_c8cd2f19e0f54d37a4fd50e48be50c7b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biologica Bosque Nuboso. Sendero Nuboso, en las cercanias a la interseccion con el sendero El Camino. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 2011-09-01 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Santamaría <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_cf0cca30bd8c45e7834a0db1941bb976.setContent(html_c8cd2f19e0f54d37a4fd50e48be50c7b);
+        
+
+        marker_dd2f0ade3cd54dffb38c1fe731c7ca27.bindPopup(popup_cf0cca30bd8c45e7834a0db1941bb976)
+        ;
+
+        
+    
+    
+            var marker_54d56ff2b7064e6e9ea7cb2890c59495 = L.marker(
+                [10.976944, -85.48139],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_62804b56b697455e9b5ccafd9d223c33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07ea754316714e51a0b8dc483e6f60ed = $(`<div id="html_07ea754316714e51a0b8dc483e6f60ed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Guanacaste, estacion Biologica Maritza, cima del Volcan Orosi, entre el base camp y sendero a Maritza, curva 1200. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2007-08-24 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_62804b56b697455e9b5ccafd9d223c33.setContent(html_07ea754316714e51a0b8dc483e6f60ed);
+        
+
+        marker_54d56ff2b7064e6e9ea7cb2890c59495.bindPopup(popup_62804b56b697455e9b5ccafd9d223c33)
+        ;
+
+        
+    
+    
+            var marker_c7fb7689a64c4002ac12cbd3af284410 = L.marker(
+                [10.343861, -84.79597],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_062297395c3846b4b91ac2c3ed2a5b5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6106b867dece410b8f42fc862945f654 = $(`<div id="html_6106b867dece410b8f42fc862945f654" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Arenal-Monteverde Protective Zone. Santa Elena Reserve. Surroundings of the entrance. <strong>Elevación:</strong> 1720.0 m  <strong>Fecha:</strong> 2010-04-14 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_062297395c3846b4b91ac2c3ed2a5b5a.setContent(html_6106b867dece410b8f42fc862945f654);
+        
+
+        marker_c7fb7689a64c4002ac12cbd3af284410.bindPopup(popup_062297395c3846b4b91ac2c3ed2a5b5a)
+        ;
+
+        
+    
+    
+            var marker_b2d3660b0e664dd2b32c4024513f8bdf = L.marker(
+                [10.341667, -84.80833299999999],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_7f97e5e3960445da82f780514c510ece = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1eba59b82d54074bf50e8f85ffa2bad = $(`<div id="html_a1eba59b82d54074bf50e8f85ffa2bad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, at edge of Continental divide and on Pacific side of slope <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1975-08-18 00:00:00+00:00 <strong>Recolectores:</strong> J. C. Solomon <strong>Identificadores:</strong> C. L. Lundell</div>`)[0];
+            popup_7f97e5e3960445da82f780514c510ece.setContent(html_a1eba59b82d54074bf50e8f85ffa2bad);
+        
+
+        marker_b2d3660b0e664dd2b32c4024513f8bdf.bindPopup(popup_7f97e5e3960445da82f780514c510ece)
+        ;
+
+        
+    
+    
+            var marker_0331cbe072e1459ea4190ed89e2f7c3a = L.marker(
+                [10.801116, -85.329178],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_a4623cefb2af47daafc7f14b2d62cc6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_803d587b5abb4dae94ce84a8d7df847c = $(`<div id="html_803d587b5abb4dae94ce84a8d7df847c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Liberia. Área de Conservación Guanacaste, Sector Hacienda Santa María, Sendero al cráter del Volcán Santa María. <strong>Elevación:</strong> 1560.0 m  <strong>Fecha:</strong> 2015-01-23 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza; Adrián Guadamuz <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_a4623cefb2af47daafc7f14b2d62cc6b.setContent(html_803d587b5abb4dae94ce84a8d7df847c);
+        
+
+        marker_0331cbe072e1459ea4190ed89e2f7c3a.bindPopup(popup_a4623cefb2af47daafc7f14b2d62cc6b)
+        ;
+
+        
+    
+    
+            var marker_4164ec9cc1dc47f984c4df2093081b5e = L.marker(
+                [10.801116, -85.329178],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_19d9c1ad56a145b49552e39df2b475f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4eb2c99158004e4ca008f56129844c22 = $(`<div id="html_4eb2c99158004e4ca008f56129844c22" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Liberia. Área de Conservación Guanacaste, Sector Hacienda Santa María, Sendero al cráter del Volcán Santa María. <strong>Elevación:</strong> 1560.0 m  <strong>Fecha:</strong> 2015-01-23 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza; Adrián Guadamuz <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_19d9c1ad56a145b49552e39df2b475f8.setContent(html_4eb2c99158004e4ca008f56129844c22);
+        
+
+        marker_4164ec9cc1dc47f984c4df2093081b5e.bindPopup(popup_19d9c1ad56a145b49552e39df2b475f8)
+        ;
+
+        
+    
+    
+            var marker_43917e5c385b4c43955645513ead9cd8 = L.marker(
+                [10.801116, -85.329178],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_809a2d34a21d43cab4240850e1d96c24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_820294746fff47c98dbd6bc98fe6187a = $(`<div id="html_820294746fff47c98dbd6bc98fe6187a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Liberia. Área de Conservación Guanacaste, Sector Hacienda Santa María, Sendero al cráter del Volcán Santa María. <strong>Elevación:</strong> 1560.0 m  <strong>Fecha:</strong> 2015-01-23 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza; Adrián Guadamuz <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_809a2d34a21d43cab4240850e1d96c24.setContent(html_820294746fff47c98dbd6bc98fe6187a);
+        
+
+        marker_43917e5c385b4c43955645513ead9cd8.bindPopup(popup_809a2d34a21d43cab4240850e1d96c24)
+        ;
+
+        
+    
+    
+            var marker_d309434f71b24e77b7e395863d5f03d6 = L.marker(
+                [10.283333, -84.783333],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_5248182b73bf4e219252ae302b3d353b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdf95d68cf2f4a26aa6d1d3331d4c4cb = $(`<div id="html_bdf95d68cf2f4a26aa6d1d3331d4c4cb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> PUNTARENAS: Reserva Biologica Monteverde Sendero Brillante, division continental. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1989-03-13 00:00:00+00:00 <strong>Recolectores:</strong> W. Haber <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_5248182b73bf4e219252ae302b3d353b.setContent(html_bdf95d68cf2f4a26aa6d1d3331d4c4cb);
+        
+
+        marker_d309434f71b24e77b7e395863d5f03d6.bindPopup(popup_5248182b73bf4e219252ae302b3d353b)
+        ;
+
+        
+    
+    
+            var marker_e536ab131a7449fb8f7c322305244905 = L.marker(
+                [10.917222, -85.463889],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_4d02f9a436874ef290441372c6ab2f4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f54444ef9cfc4ba582fb76948d45798e = $(`<div id="html_f54444ef9cfc4ba582fb76948d45798e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Canton de LIBERIA P.N. Guanacaste Cordillera de Guanacaste. Volcan Cacao.   sendero hasta la cima del volcan. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1996-07-12 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_4d02f9a436874ef290441372c6ab2f4b.setContent(html_f54444ef9cfc4ba582fb76948d45798e);
+        
+
+        marker_e536ab131a7449fb8f7c322305244905.bindPopup(popup_4d02f9a436874ef290441372c6ab2f4b)
+        ;
+
+        
+    
+    
+            var marker_83805b95ebcb474bbc384dd2894be042 = L.marker(
+                [10.67633, -85.225],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_bfb9c017285848fc9701b2a6563ff011 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73fd10e88ee64ddfb9c04fb03bebfbe4 = $(`<div id="html_73fd10e88ee64ddfb9c04fb03bebfbe4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio, Cuenca del Tempisque, Volcán Tenorio <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2003-07-19 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa <strong>Identificadores:</strong> Jon Ricketson (MO),</div>`)[0];
+            popup_bfb9c017285848fc9701b2a6563ff011.setContent(html_73fd10e88ee64ddfb9c04fb03bebfbe4);
+        
+
+        marker_83805b95ebcb474bbc384dd2894be042.bindPopup(popup_bfb9c017285848fc9701b2a6563ff011)
+        ;
+
+        
+    
+    
+            var marker_699d7670c92c401e828a6493422e9397 = L.marker(
+                [10.9325, -85.4585],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_199af52d82374afc9d9d665029aebbf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd6436384b4046f8bff20e5e28873d35 = $(`<div id="html_cd6436384b4046f8bff20e5e28873d35" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Guanacaste, cuenca del Temposque, sector Cacao, trail to summit of Volcán Cacao <strong>Elevación:</strong> 1445.0 m  <strong>Fecha:</strong> 2005-03-12 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Jon Ricketson (MO),</div>`)[0];
+            popup_199af52d82374afc9d9d665029aebbf4.setContent(html_cd6436384b4046f8bff20e5e28873d35);
+        
+
+        marker_699d7670c92c401e828a6493422e9397.bindPopup(popup_199af52d82374afc9d9d665029aebbf4)
+        ;
+
+        
+    
+    
+            var marker_6fedbd20e91e4a8db8cc58dc9bb8f518 = L.marker(
+                [10.9167, -85.4667],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_bc1c96a9e00e49bd94440f40c6d0d9eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8b97278ed084607b37b9d89b75c05aa = $(`<div id="html_f8b97278ed084607b37b9d89b75c05aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Guanacaste, Estación Cacao <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1990-11-25 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza <strong>Identificadores:</strong> Jon Ricketson (MO),</div>`)[0];
+            popup_bc1c96a9e00e49bd94440f40c6d0d9eb.setContent(html_f8b97278ed084607b37b9d89b75c05aa);
+        
+
+        marker_6fedbd20e91e4a8db8cc58dc9bb8f518.bindPopup(popup_bc1c96a9e00e49bd94440f40c6d0d9eb)
+        ;
+
+        
+    
+    
+            var marker_ef87fe0744b344e9bd79c6c2956e3daf = L.marker(
+                [10.3333, -84.8333],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_bf78329f73184abe9e2ab91f8c4cc0bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b02699291e724a8b899afaab7fdb01f1 = $(`<div id="html_b02699291e724a8b899afaab7fdb01f1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, upper San Luis valley on Pacific slope <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1985-10-20 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> Jon Ricketson (MO),</div>`)[0];
+            popup_bf78329f73184abe9e2ab91f8c4cc0bf.setContent(html_b02699291e724a8b899afaab7fdb01f1);
+        
+
+        marker_ef87fe0744b344e9bd79c6c2956e3daf.bindPopup(popup_bf78329f73184abe9e2ab91f8c4cc0bf)
+        ;
+
+        
+    
+    
+            var marker_4b57f68e39f7458cbce3c2b098f9a1ee = L.marker(
+                [10.91, -85.46],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_b213599ad05244598bf310fed3b0bdbd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89917a71a0dd4c3b8487c3b1b70535b8 = $(`<div id="html_89917a71a0dd4c3b8487c3b1b70535b8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcan Cacao, sendero hasta la cima del volcan. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-01-01 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_b213599ad05244598bf310fed3b0bdbd.setContent(html_89917a71a0dd4c3b8487c3b1b70535b8);
+        
+
+        marker_4b57f68e39f7458cbce3c2b098f9a1ee.bindPopup(popup_b213599ad05244598bf310fed3b0bdbd)
+        ;
+
+        
+    
+    
+            var marker_f4cff218b8034217b38b8d8dd3e7ee38 = L.marker(
+                [10.3, -84.79666],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_d91b967f69b34af5b92807325e3bd301 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5013fb58edbb4d56b40781ca118b4500 = $(`<div id="html_5013fb58edbb4d56b40781ca118b4500" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pasture adjoining main road and Chomogo Trail above Monte Verde, Chomogo Trail near headwaters of Río Guacimal. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1973-01-08 00:00:00+00:00 <strong>Recolectores:</strong> Donald E. Stone|A. L. Welden <strong>Identificadores:</strong> Jon Ricketson (MO), 2000 --TYPE</div>`)[0];
+            popup_d91b967f69b34af5b92807325e3bd301.setContent(html_5013fb58edbb4d56b40781ca118b4500);
+        
+
+        marker_f4cff218b8034217b38b8d8dd3e7ee38.bindPopup(popup_d91b967f69b34af5b92807325e3bd301)
+        ;
+
+        
+    
+    
+            var marker_81cbd742e7e64a7ba9d5cb6d42f4c0dd = L.marker(
+                [10.08, -84.44],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_0883de1a4ba342a684be4460cb67e080 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b1cfafa53874339a1f002780be71853 = $(`<div id="html_6b1cfafa53874339a1f002780be71853" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de San Antonio de San Ramón. <strong>Elevación:</strong> 1222.5 m  <strong>Fecha:</strong> 1927-07-26 00:00:00+00:00 <strong>Recolectores:</strong> Alberto M. Brenes <strong>Identificadores:</strong> Jon Ricketson (MO), 2000 --TYPE</div>`)[0];
+            popup_0883de1a4ba342a684be4460cb67e080.setContent(html_6b1cfafa53874339a1f002780be71853);
+        
+
+        marker_81cbd742e7e64a7ba9d5cb6d42f4c0dd.bindPopup(popup_0883de1a4ba342a684be4460cb67e080)
+        ;
+
+        
+    
+    
+            var marker_5b6d5711f8094a588008eb3ac157341e = L.marker(
+                [10.29, -84.78],
+                {}
+            ).addTo(marker_cluster_9396047db283449da1a6413c6f07af38);
+        
+    
+        var popup_321e55d9cc894af0a2939f8772b6bdbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91a61c3201d649518a3f670272a31630 = $(`<div id="html_91a61c3201d649518a3f670272a31630" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ALAJUELA-PUNTARENAS-GUANACASTE: Finca de Monteverde, Cordillera de Tilaran, al lado del camino por la ventana, Div. Continental. <strong>Elevación:</strong> 1570.0 m  <strong>Fecha:</strong> 1976-08-15 00:00:00+00:00 <strong>Recolectores:</strong> Valerie J. Dryer <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_321e55d9cc894af0a2939f8772b6bdbb.setContent(html_91a61c3201d649518a3f670272a31630);
+        
+
+        marker_5b6d5711f8094a588008eb3ac157341e.bindPopup(popup_321e55d9cc894af0a2939f8772b6bdbb)
+        ;
+
+        
+    
+    
+            var layer_control_c7f620d7e556498d98da5751da8cf1c9 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b629d752d7fb4e40a283df17c85ba31f,
+                    "ESRI World Imagery" : tile_layer_360734d036ea4296b7bf04bee61f48d4,
+                },
+                overlays :  {
+                    "macro_element_9396047db283449da1a6413c6f07af38" : marker_cluster_9396047db283449da1a6413c6f07af38,
+                },
+            };
+            L.control.layers(
+                layer_control_c7f620d7e556498d98da5751da8cf1c9.base_layers,
+                layer_control_c7f620d7e556498d98da5751da8cf1c9.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_5551a11a862d4da8ae77af60515b81a9);
+            tile_layer_360734d036ea4296b7bf04bee61f48d4.remove();
+        
+</script>

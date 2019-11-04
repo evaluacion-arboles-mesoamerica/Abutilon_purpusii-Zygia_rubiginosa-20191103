@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a36507f3fbd342fca6348b7e1f416edd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a36507f3fbd342fca6348b7e1f416edd" ></div>
+        
+</body>
+<script>    
+    
+            var map_a36507f3fbd342fca6348b7e1f416edd = L.map(
+                "map_a36507f3fbd342fca6348b7e1f416edd",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_a36507f3fbd342fca6348b7e1f416edd);
+
+            
+
+        
+    
+            var tile_layer_014a3ff0de344b94891dc743f09af27b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a36507f3fbd342fca6348b7e1f416edd);
+        
+    
+            var tile_layer_383b29f39dc14a2886a1ed4192bf6ecb = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a36507f3fbd342fca6348b7e1f416edd);
+        
+    
+            var marker_cluster_704f856a1aeb40d0b6e086e5708da887 = L.markerClusterGroup(
+                {}
+            );
+            map_a36507f3fbd342fca6348b7e1f416edd.addLayer(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+            var marker_26fd1446f4e947d3aa12ca6184ba9ba1 = L.marker(
+                [10.594444000000001, -83.8],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_75163dcff4804c068da178f85dbcf455 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_201d5eb6e29c47f1846d0988fb8d1e8e = $(`<div id="html_201d5eb6e29c47f1846d0988fb8d1e8e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Cocori.  Bosque primario. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-03-14 00:00:00+00:00 <strong>Recolectores:</strong> Elias Rojas <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_75163dcff4804c068da178f85dbcf455.setContent(html_201d5eb6e29c47f1846d0988fb8d1e8e);
+        
+
+        marker_26fd1446f4e947d3aa12ca6184ba9ba1.bindPopup(popup_75163dcff4804c068da178f85dbcf455)
+        ;
+
+        
+    
+    
+            var marker_87ad5df1804b4755a34de6d2b7e4f872 = L.marker(
+                [10.691667, -83.65],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_809527ba8617457ab88693f40aaf7eff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5279a25a9534f1687a81aa551c67d1f = $(`<div id="html_a5279a25a9534f1687a81aa551c67d1f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puerto Lindo, a orillas de montanas primarias. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1995-07-24 00:00:00+00:00 <strong>Recolectores:</strong> F. Araya <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_809527ba8617457ab88693f40aaf7eff.setContent(html_a5279a25a9534f1687a81aa551c67d1f);
+        
+
+        marker_87ad5df1804b4755a34de6d2b7e4f872.bindPopup(popup_809527ba8617457ab88693f40aaf7eff)
+        ;
+
+        
+    
+    
+            var marker_c1a8dec138f34e09b6dbee07af6a91a3 = L.marker(
+                [10.666667, -83.666667],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_3f6f0c72710e401aaabf1898ba2c61e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_372ba1f8fcc541c7ac2abe8ffbe88bb1 = $(`<div id="html_372ba1f8fcc541c7ac2abe8ffbe88bb1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills 2 airline km SSE of Islas Buena Vista in the Río Colorado, 14 airline km SW of Barra del Colorado <strong>Elevación:</strong> 65.0 m  <strong>Fecha:</strong> 1986-09-13 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_3f6f0c72710e401aaabf1898ba2c61e2.setContent(html_372ba1f8fcc541c7ac2abe8ffbe88bb1);
+        
+
+        marker_c1a8dec138f34e09b6dbee07af6a91a3.bindPopup(popup_3f6f0c72710e401aaabf1898ba2c61e2)
+        ;
+
+        
+    
+    
+            var marker_844f605090ac4af698a3c90911868fea = L.marker(
+                [10.666667, -83.666667],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_cefae591bca147faa233ffbf7f913942 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3dee3fd371e946c0b1b33f03ec4ab39e = $(`<div id="html_3dee3fd371e946c0b1b33f03ec4ab39e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills 2 airline km SSE of Islas Buena Vista in the Río Colorado, 14 airline km SW of Barra del Colorado <strong>Elevación:</strong> 65.0 m  <strong>Fecha:</strong> 1986-09-13 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_cefae591bca147faa233ffbf7f913942.setContent(html_3dee3fd371e946c0b1b33f03ec4ab39e);
+        
+
+        marker_844f605090ac4af698a3c90911868fea.bindPopup(popup_cefae591bca147faa233ffbf7f913942)
+        ;
+
+        
+    
+    
+            var marker_759c23d62e304946bd427ee7bb6ac571 = L.marker(
+                [10.666667, -83.666667],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_3a7a70f2193a4afe9068019c77a80769 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5db637513dcd48b9883ab39af4307f7b = $(`<div id="html_5db637513dcd48b9883ab39af4307f7b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills 2 airline km SSE of Islas Buena Vista in the Río Colorado, 14 airline km SW of Barra del Colorado. <strong>Elevación:</strong> 65.0 m  <strong>Fecha:</strong> 1986-09-13 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> J.L. Zarucchi (MO)</div>`)[0];
+            popup_3a7a70f2193a4afe9068019c77a80769.setContent(html_5db637513dcd48b9883ab39af4307f7b);
+        
+
+        marker_759c23d62e304946bd427ee7bb6ac571.bindPopup(popup_3a7a70f2193a4afe9068019c77a80769)
+        ;
+
+        
+    
+    
+            var marker_94b2dbb79d954692ba586955f99f7146 = L.marker(
+                [10.666667, -83.666667],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_721ae991bff44350a46098d64cc1e6ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_394bc15a58b24260a5d3b63eb640cf5e = $(`<div id="html_394bc15a58b24260a5d3b63eb640cf5e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1986-09-14 00:00:00+00:00 <strong>Recolectores:</strong> Stevens, W.D. <strong>Identificadores:</strong> Zarucchi, J.L.</div>`)[0];
+            popup_721ae991bff44350a46098d64cc1e6ec.setContent(html_394bc15a58b24260a5d3b63eb640cf5e);
+        
+
+        marker_94b2dbb79d954692ba586955f99f7146.bindPopup(popup_721ae991bff44350a46098d64cc1e6ec)
+        ;
+
+        
+    
+    
+            var marker_e9893078d65c4202a4132be5af4b5408 = L.marker(
+                [10.67, -83.67],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_5ed86785d6454f40b8783bac41fbc5b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a42e0b48842d4f6d9576f1bd652a46c2 = $(`<div id="html_a42e0b48842d4f6d9576f1bd652a46c2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills 2 airline km. south southeast of Islas Buena Vista in the Río Colorado, 14 airline km. southwest of Barra del Colorado <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1986-09-13 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_5ed86785d6454f40b8783bac41fbc5b5.setContent(html_a42e0b48842d4f6d9576f1bd652a46c2);
+        
+
+        marker_e9893078d65c4202a4132be5af4b5408.bindPopup(popup_5ed86785d6454f40b8783bac41fbc5b5)
+        ;
+
+        
+    
+    
+            var marker_2ec89595dd2441ebbb2d08b6ed48e22a = L.marker(
+                [10.66, -83.66],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_c2aa01ed64b8440a8adffa0b8e19f724 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd6f1651719640418c2a4c34f41ad87a = $(`<div id="html_fd6f1651719640418c2a4c34f41ad87a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Río Zapote, along and above new road within 1 km of Río Colorado. Tall evergreen forest and edge of Raphia swamp on gentle to moderate slopes. <strong>Elevación:</strong> 35.0 m  <strong>Fecha:</strong> 1986-09-13 00:00:00+00:00 <strong>Recolectores:</strong> Stevens, Warren D. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c2aa01ed64b8440a8adffa0b8e19f724.setContent(html_fd6f1651719640418c2a4c34f41ad87a);
+        
+
+        marker_2ec89595dd2441ebbb2d08b6ed48e22a.bindPopup(popup_c2aa01ed64b8440a8adffa0b8e19f724)
+        ;
+
+        
+    
+    
+            var marker_0c685cc98a6f47eaa69de401de083e21 = L.marker(
+                [10.66, -83.66],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_cfd76c9311f64ff88783f2d368e465b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0da8fb7799a74b629e34529d40623673 = $(`<div id="html_0da8fb7799a74b629e34529d40623673" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills Km SSE Islas buena Vista in the Río Colorado; 14 airline Km SW of Barra Colorado. Premontane wet forest on low hills. <strong>Elevación:</strong> 65.0 m  <strong>Fecha:</strong> 1986-09-13 00:00:00+00:00 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Zarucchi</div>`)[0];
+            popup_cfd76c9311f64ff88783f2d368e465b5.setContent(html_0da8fb7799a74b629e34529d40623673);
+        
+
+        marker_0c685cc98a6f47eaa69de401de083e21.bindPopup(popup_cfd76c9311f64ff88783f2d368e465b5)
+        ;
+
+        
+    
+    
+            var marker_6cc6dd5066ee456dad38cef76173d3a6 = L.marker(
+                [10.59, -83.8],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_fc86db16e4ef422ba05139651f46ab8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1cc023e060384d45ba9a7ee728a83d4a = $(`<div id="html_1cc023e060384d45ba9a7ee728a83d4a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. N. V. S. Barra del Colorado Llanura de Tortuguero. Sector Cocorí. Bosque primario. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-03-14 00:00:00+00:00 <strong>Recolectores:</strong> Rojas, Elías <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_fc86db16e4ef422ba05139651f46ab8d.setContent(html_1cc023e060384d45ba9a7ee728a83d4a);
+        
+
+        marker_6cc6dd5066ee456dad38cef76173d3a6.bindPopup(popup_fc86db16e4ef422ba05139651f46ab8d)
+        ;
+
+        
+    
+    
+            var marker_264b50ea490f40a3b65c7e617bfa8319 = L.marker(
+                [10.69, -83.65],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_d6f259477e6e49e6aadad71bc697598e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59f108f993124c17a7086890773ff680 = $(`<div id="html_59f108f993124c17a7086890773ff680" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. N. V. S. Barra del Colorado Llanura de Tortuguero. Puerto Lindo a orillas de montañas primarias. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1995-07-24 00:00:00+00:00 <strong>Recolectores:</strong> Araya, Flor <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_d6f259477e6e49e6aadad71bc697598e.setContent(html_59f108f993124c17a7086890773ff680);
+        
+
+        marker_264b50ea490f40a3b65c7e617bfa8319.bindPopup(popup_d6f259477e6e49e6aadad71bc697598e)
+        ;
+
+        
+    
+    
+            var marker_acaeb13f889244c9b5c9b22a778c9506 = L.marker(
+                [10.665999999999999, -83.666],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_38733054f5ca42e99462c5eff1d772e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24da7f79f7ba49368f44511fd8fa19e5 = $(`<div id="html_24da7f79f7ba49368f44511fd8fa19e5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills 2 airline km SSE of Islas Buena Vista in the Rio Colorado, 14 airline km SW of Barra del Colorado; Premontane wet forest on low hills <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1986-09-13 00:00:00+00:00 <strong>Recolectores:</strong> G.  Davidse <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_38733054f5ca42e99462c5eff1d772e6.setContent(html_24da7f79f7ba49368f44511fd8fa19e5);
+        
+
+        marker_acaeb13f889244c9b5c9b22a778c9506.bindPopup(popup_38733054f5ca42e99462c5eff1d772e6)
+        ;
+
+        
+    
+    
+            var marker_06aa5cac0af94570ace673368451f14a = L.marker(
+                [10.67, -83.67],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_c12d1cc215004276a9a589a2816b7958 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_520413161b2e497fae473918fc0cd231 = $(`<div id="html_520413161b2e497fae473918fc0cd231" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limon; hills 2 airline km SSE of Islas Buena Vista in the Rio Colorado, 14 airline km SW of Barra del Colorado <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1986-09-13 00:00:00+00:00 <strong>Recolectores:</strong> Davidse, G.; Herrera, G. <strong>Identificadores:</strong> Zarucchi, J.L.</div>`)[0];
+            popup_c12d1cc215004276a9a589a2816b7958.setContent(html_520413161b2e497fae473918fc0cd231);
+        
+
+        marker_06aa5cac0af94570ace673368451f14a.bindPopup(popup_c12d1cc215004276a9a589a2816b7958)
+        ;
+
+        
+    
+    
+            var marker_ac783f1c36634e7398a80aa9e30fa46c = L.marker(
+                [10.6667, -83.6667],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_d74ca8baa55246fd938712529661cda2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10a353ef446f4ad9849d7a94f0523f99 = $(`<div id="html_10a353ef446f4ad9849d7a94f0523f99" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills 2 airline km SSE of Islas Buena Vista in Rio Colorado, 14 airline km SW of Barra del Colorado. <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1986-09-13 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse & G. Herrera Ch. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d74ca8baa55246fd938712529661cda2.setContent(html_10a353ef446f4ad9849d7a94f0523f99);
+        
+
+        marker_ac783f1c36634e7398a80aa9e30fa46c.bindPopup(popup_d74ca8baa55246fd938712529661cda2)
+        ;
+
+        
+    
+    
+            var marker_f589cf75927b43b8b53793a1a3b6bfb3 = L.marker(
+                [10.666667, -83.666667],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_1ab1c69909574543b4681d50d95cde5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c83811a9d044f92a040d695bb317221 = $(`<div id="html_5c83811a9d044f92a040d695bb317221" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Río Zapote, along and above new road within 1 km of Río Colorado.  Collected with O.M. Montiel. <strong>Elevación:</strong> 25.0 m  <strong>Fecha:</strong> 1986-09-13 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> J.L. Zarucchi (MO)</div>`)[0];
+            popup_1ab1c69909574543b4681d50d95cde5c.setContent(html_5c83811a9d044f92a040d695bb317221);
+        
+
+        marker_f589cf75927b43b8b53793a1a3b6bfb3.bindPopup(popup_1ab1c69909574543b4681d50d95cde5c)
+        ;
+
+        
+    
+    
+            var marker_4b7ddae1a3d7421bbab7dceb9580b6b8 = L.marker(
+                [15.7, -86.85],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_c5438b2736554cd8ab368902890986c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53bd14d3449d4d70a02f012b01579136 = $(`<div id="html_53bd14d3449d4d70a02f012b01579136" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Base of N slope of Pico Bonito, E of new CURLA (Centro Universitario Regional del Litoral Atlantico) camp building on the Quebrada Grande, ca. 1/3 km above its confluence with the Río Bonito, ca. 10 km southwest of La Ceiba, Parque Nacional Pico Bonito. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1993-02-03 00:00:00+00:00 <strong>Recolectores:</strong> Randall J. Evans <strong>Identificadores:</strong> R. Grether, 1999 (UAMIZ)</div>`)[0];
+            popup_c5438b2736554cd8ab368902890986c6.setContent(html_53bd14d3449d4d70a02f012b01579136);
+        
+
+        marker_4b7ddae1a3d7421bbab7dceb9580b6b8.bindPopup(popup_c5438b2736554cd8ab368902890986c6)
+        ;
+
+        
+    
+    
+            var marker_c1d53d5365a340f686885db297b68c4d = L.marker(
+                [15.7, -86.85],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_600ec9a2ced94ad7adbc7ae38536f737 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6e21df291824f098665bceb883555de = $(`<div id="html_f6e21df291824f098665bceb883555de" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Base of N slope of Pico Bonito, in front of new CURLA (Centro Universitario Regional del Litoral Atlantico) camp building on Quebrada Grande, ca. 1/3 km above its confluence with the Río Bonito, ca. 10 km SW of La Ceiba, Parque Nacional Pico Bonito. <strong>Elevación:</strong> 140.0 m  <strong>Fecha:</strong> 1993-05-08 00:00:00+00:00 <strong>Recolectores:</strong> Randall J. Evans <strong>Identificadores:</strong> R. Grether, 1999 (UAMIZ)</div>`)[0];
+            popup_600ec9a2ced94ad7adbc7ae38536f737.setContent(html_f6e21df291824f098665bceb883555de);
+        
+
+        marker_c1d53d5365a340f686885db297b68c4d.bindPopup(popup_600ec9a2ced94ad7adbc7ae38536f737)
+        ;
+
+        
+    
+    
+            var marker_a9863230c11e409aac4db33dc15c42fa = L.marker(
+                [15.666667000000002, -86.833333],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_4c513057d8244b8ab97ce17b78505723 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97391390017a4a0f8aebc9f22ea8660c = $(`<div id="html_97391390017a4a0f8aebc9f22ea8660c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Ceiba. Villa L, San Francisco, 30 Km al Oeste de La Ceiba. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1991-11-28 00:00:00+00:00 <strong>Recolectores:</strong> Nelson Zamora <strong>Identificadores:</strong> N. Zamora, VIII</div>`)[0];
+            popup_4c513057d8244b8ab97ce17b78505723.setContent(html_97391390017a4a0f8aebc9f22ea8660c);
+        
+
+        marker_a9863230c11e409aac4db33dc15c42fa.bindPopup(popup_4c513057d8244b8ab97ce17b78505723)
+        ;
+
+        
+    
+    
+            var marker_a8ffb0319d63499f84cd92af2b121104 = L.marker(
+                [14.819222, -86.61914300000001],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_fcca43e263d34e15861bbb551639a203 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ce1de3f71284c708bed544834f5dba4 = $(`<div id="html_0ce1de3f71284c708bed544834f5dba4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> R. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fcca43e263d34e15861bbb551639a203.setContent(html_0ce1de3f71284c708bed544834f5dba4);
+        
+
+        marker_a8ffb0319d63499f84cd92af2b121104.bindPopup(popup_fcca43e263d34e15861bbb551639a203)
+        ;
+
+        
+    
+    
+            var marker_9e192966150147f1ab0855b09276ac0f = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_d8054efe9d6547ad99bce7cc81ea8ea3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce72156c196546b99ad9a91929b57178 = $(`<div id="html_ce72156c196546b99ad9a91929b57178" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1986-09-13 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d8054efe9d6547ad99bce7cc81ea8ea3.setContent(html_ce72156c196546b99ad9a91929b57178);
+        
+
+        marker_9e192966150147f1ab0855b09276ac0f.bindPopup(popup_d8054efe9d6547ad99bce7cc81ea8ea3)
+        ;
+
+        
+    
+    
+            var marker_9d69aef4d4944c80b6ecd3765f2e061e = L.marker(
+                [15.711110000000001, -86.91221999999999],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_6b46f479d60a41308d9af6c58aed74f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be753037c4e94e07882df785f1038714 = $(`<div id="html_be753037c4e94e07882df785f1038714" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aldea El Pino a 10 km de La Ceiba, faldas del cerro Pico Bonito <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1977-04-01 00:00:00+00:00 <strong>Recolectores:</strong> Carolina Alduvín <strong>Identificadores:</strong> J.L. Zarucchi (MO)</div>`)[0];
+            popup_6b46f479d60a41308d9af6c58aed74f8.setContent(html_be753037c4e94e07882df785f1038714);
+        
+
+        marker_9d69aef4d4944c80b6ecd3765f2e061e.bindPopup(popup_6b46f479d60a41308d9af6c58aed74f8)
+        ;
+
+        
+    
+    
+            var marker_ff96ad648ce14bf7b5e33d06a8f69a01 = L.marker(
+                [15.65, -88.58333],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_4794a604d50442e09dbc11885e232a57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93eaf371e59847208703cb17f0598648 = $(`<div id="html_93eaf371e59847208703cb17f0598648" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santo Tomás de Castilla, approx. 30 km southwest of town, Sinai <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1988-03-15 00:00:00+00:00 <strong>Recolectores:</strong> N.T. Marshall|Juan José Castillo Mont|E.W. Marshall <strong>Identificadores:</strong> R. Grether</div>`)[0];
+            popup_4794a604d50442e09dbc11885e232a57.setContent(html_93eaf371e59847208703cb17f0598648);
+        
+
+        marker_ff96ad648ce14bf7b5e33d06a8f69a01.bindPopup(popup_4794a604d50442e09dbc11885e232a57)
+        ;
+
+        
+    
+    
+            var marker_5fc4b43e713146ee922b5be65fc80010 = L.marker(
+                [14.819222, -86.61914300000001],
+                {}
+            ).addTo(marker_cluster_704f856a1aeb40d0b6e086e5708da887);
+        
+    
+        var popup_6e61847d986249698a9c51dec70ed737 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3066424c5cb4502907959c1baea0ef4 = $(`<div id="html_b3066424c5cb4502907959c1baea0ef4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> R. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6e61847d986249698a9c51dec70ed737.setContent(html_b3066424c5cb4502907959c1baea0ef4);
+        
+
+        marker_5fc4b43e713146ee922b5be65fc80010.bindPopup(popup_6e61847d986249698a9c51dec70ed737)
+        ;
+
+        
+    
+    
+            var layer_control_09440952ea94452881c4e0ab443b83fc = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_014a3ff0de344b94891dc743f09af27b,
+                    "ESRI World Imagery" : tile_layer_383b29f39dc14a2886a1ed4192bf6ecb,
+                },
+                overlays :  {
+                    "macro_element_704f856a1aeb40d0b6e086e5708da887" : marker_cluster_704f856a1aeb40d0b6e086e5708da887,
+                },
+            };
+            L.control.layers(
+                layer_control_09440952ea94452881c4e0ab443b83fc.base_layers,
+                layer_control_09440952ea94452881c4e0ab443b83fc.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a36507f3fbd342fca6348b7e1f416edd);
+            tile_layer_383b29f39dc14a2886a1ed4192bf6ecb.remove();
+        
+</script>

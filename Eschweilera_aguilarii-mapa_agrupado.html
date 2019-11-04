@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d7f9f06ab8af4110a69c9fc47caa289c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d7f9f06ab8af4110a69c9fc47caa289c" ></div>
+        
+</body>
+<script>    
+    
+            var map_d7f9f06ab8af4110a69c9fc47caa289c = L.map(
+                "map_d7f9f06ab8af4110a69c9fc47caa289c",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_d7f9f06ab8af4110a69c9fc47caa289c);
+
+            
+
+        
+    
+            var tile_layer_e645aabb74554f40bdbaecf0bfd83ac6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d7f9f06ab8af4110a69c9fc47caa289c);
+        
+    
+            var tile_layer_a3f268dbf394477c9b006c381f501174 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d7f9f06ab8af4110a69c9fc47caa289c);
+        
+    
+            var marker_cluster_a66ed8e4d833476a87740b9b824ffe6b = L.markerClusterGroup(
+                {}
+            );
+            map_d7f9f06ab8af4110a69c9fc47caa289c.addLayer(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+            var marker_65841ee07e80406e89f344f11dd9129d = L.marker(
+                [10.341667, -83.95],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_39705b5fd87f44518b7dd50234fd6a52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c1adcbafee24c15927e2bb3801cbcaa = $(`<div id="html_6c1adcbafee24c15927e2bb3801cbcaa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca El Manu S. A. Roger Jimenez. Camino Plasstico Horquetas. <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 1995-12-09 00:00:00+00:00 <strong>Recolectores:</strong> Orlando Vargas <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_39705b5fd87f44518b7dd50234fd6a52.setContent(html_6c1adcbafee24c15927e2bb3801cbcaa);
+        
+
+        marker_65841ee07e80406e89f344f11dd9129d.bindPopup(popup_39705b5fd87f44518b7dd50234fd6a52)
+        ;
+
+        
+    
+    
+            var marker_7bfd47a4fa874f00a1a190cc3e42fa51 = L.marker(
+                [10.384167, -84.05],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_a9c5cb6f636143ef828ebb27fc0307d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bbcc0e159274f31bd8bd534ea01e702 = $(`<div id="html_1bbcc0e159274f31bd8bd534ea01e702" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Magsasay. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-07-18 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_a9c5cb6f636143ef828ebb27fc0307d8.setContent(html_1bbcc0e159274f31bd8bd534ea01e702);
+        
+
+        marker_7bfd47a4fa874f00a1a190cc3e42fa51.bindPopup(popup_a9c5cb6f636143ef828ebb27fc0307d8)
+        ;
+
+        
+    
+    
+            var marker_3fcd38466ea94eacba39266f8341a719 = L.marker(
+                [8.7, -83.56666700000001],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_1776c15efee844fb9a536de89b37a733 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c20c6370dcc46329d65adbd183b8a9f = $(`<div id="html_7c20c6370dcc46329d65adbd183b8a9f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado. Finca de Delfin. Rincon. Bosque primario. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1991-01-24 00:00:00+00:00 <strong>Recolectores:</strong> Javier Quesada <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_1776c15efee844fb9a536de89b37a733.setContent(html_7c20c6370dcc46329d65adbd183b8a9f);
+        
+
+        marker_3fcd38466ea94eacba39266f8341a719.bindPopup(popup_1776c15efee844fb9a536de89b37a733)
+        ;
+
+        
+    
+    
+            var marker_2b963752501c49018bfa9370b749e71e = L.marker(
+                [8.730556, -83.551389],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_c79da6f7693746a996fcad6b2384aec0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26d59fb03b034a0c8353a95d6b57ddf6 = $(`<div id="html_26d59fb03b034a0c8353a95d6b57ddf6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Juan, cuenca superior del Rio San Juan, estribaciones Cerros Chocuaco. <strong>Elevación:</strong> 580.0 m  <strong>Fecha:</strong> 1991-01-29 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_c79da6f7693746a996fcad6b2384aec0.setContent(html_26d59fb03b034a0c8353a95d6b57ddf6);
+        
+
+        marker_2b963752501c49018bfa9370b749e71e.bindPopup(popup_c79da6f7693746a996fcad6b2384aec0)
+        ;
+
+        
+    
+    
+            var marker_f88518b0866a41dba080635bb53a3a01 = L.marker(
+                [8.772222, -83.377778],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_3fae689d09e3415fbfe73bebf351cec1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f23694071f1e4d77b1ecfd54b708856f = $(`<div id="html_f23694071f1e4d77b1ecfd54b708856f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Los Mogos. 25 km O de Chacarita por la carretera entre Rincon y Chacarita. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1991-07-10 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_3fae689d09e3415fbfe73bebf351cec1.setContent(html_f23694071f1e4d77b1ecfd54b708856f);
+        
+
+        marker_f88518b0866a41dba080635bb53a3a01.bindPopup(popup_3fae689d09e3415fbfe73bebf351cec1)
+        ;
+
+        
+    
+    
+            var marker_70d699b7b2c3484ab31ff885b273da2f = L.marker(
+                [8.666667, -83.56666700000001],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_7cd86e7df3b647b9a50abe3ae7329b24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f4b1742b58f41ec921d4e4b5da23920 = $(`<div id="html_0f4b1742b58f41ec921d4e4b5da23920" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado, ca. 15 km W of Rincon; along Quebrada Quebradon and ridge above it. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-06-04 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_7cd86e7df3b647b9a50abe3ae7329b24.setContent(html_0f4b1742b58f41ec921d4e4b5da23920);
+        
+
+        marker_70d699b7b2c3484ab31ff885b273da2f.bindPopup(popup_7cd86e7df3b647b9a50abe3ae7329b24)
+        ;
+
+        
+    
+    
+            var marker_9eb5d30d944a47319e1be78a7ec3a26d = L.marker(
+                [8.7, -83.594444],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_3fff765f37b146288e2bd7c0a15059d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd969d1063174c47a353faebc273c98a = $(`<div id="html_fd969d1063174c47a353faebc273c98a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado, en fila directamente al Oeste del pueblo; tierra del grupo de conservacionistas de Rancho Quemado. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1991-07-11 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_3fff765f37b146288e2bd7c0a15059d7.setContent(html_fd969d1063174c47a353faebc273c98a);
+        
+
+        marker_9eb5d30d944a47319e1be78a7ec3a26d.bindPopup(popup_3fff765f37b146288e2bd7c0a15059d7)
+        ;
+
+        
+    
+    
+            var marker_8317863cfef7488287a84503bc7a53c5 = L.marker(
+                [8.645833, -83.590278],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_8cb9421b44fc4808b8bb0a7cef65c86b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e16066cd21046989db1c80f3171042f = $(`<div id="html_2e16066cd21046989db1c80f3171042f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincon. Filas al margen izquierdo de Quebrada Vaquedano. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1990-07-21 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_8cb9421b44fc4808b8bb0a7cef65c86b.setContent(html_2e16066cd21046989db1c80f3171042f);
+        
+
+        marker_8317863cfef7488287a84503bc7a53c5.bindPopup(popup_8cb9421b44fc4808b8bb0a7cef65c86b)
+        ;
+
+        
+    
+    
+            var marker_5248ebe552ed4191853c5fa05658e265 = L.marker(
+                [8.766667, -83.366667],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_b768f7a276f041e5be0f74f11464076d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_101725f9e032449a8120928d508a9d53 = $(`<div id="html_101725f9e032449a8120928d508a9d53" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Chacarita y Rincon; ca. 25 km de Chacarita; area de Alto Los Mogos. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1990-12-16 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_b768f7a276f041e5be0f74f11464076d.setContent(html_101725f9e032449a8120928d508a9d53);
+        
+
+        marker_5248ebe552ed4191853c5fa05658e265.bindPopup(popup_b768f7a276f041e5be0f74f11464076d)
+        ;
+
+        
+    
+    
+            var marker_af4aaba0297c4c0794b498716dcee3dd = L.marker(
+                [8.733333, -83.6],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_5e98c8e9609d4cefa10b41dcfefbf100 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_076c863806184ccbae0a32f3759ed6f1 = $(`<div id="html_076c863806184ccbae0a32f3759ed6f1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila al oeste de Rancho Quemado. Bosque primario. <strong>Elevación:</strong> 150.5 m  <strong>Fecha:</strong> 1991-03-30 00:00:00+00:00 <strong>Recolectores:</strong> Juan Carlos Saborio <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_5e98c8e9609d4cefa10b41dcfefbf100.setContent(html_076c863806184ccbae0a32f3759ed6f1);
+        
+
+        marker_af4aaba0297c4c0794b498716dcee3dd.bindPopup(popup_5e98c8e9609d4cefa10b41dcfefbf100)
+        ;
+
+        
+    
+    
+            var marker_5252c539194e4eaeacba01aebd264c36 = L.marker(
+                [8.683333, -83.541667],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_05cf02d612544604b8171850acab3d64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3695c247b7a14754838b5c95c4bd4d27 = $(`<div id="html_3695c247b7a14754838b5c95c4bd4d27" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Banegas, camino a Rancho Quemado. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1999-06-08 00:00:00+00:00 <strong>Recolectores:</strong> Priscila Hurtado <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_05cf02d612544604b8171850acab3d64.setContent(html_3695c247b7a14754838b5c95c4bd4d27);
+        
+
+        marker_5252c539194e4eaeacba01aebd264c36.bindPopup(popup_05cf02d612544604b8171850acab3d64)
+        ;
+
+        
+    
+    
+            var marker_fff8f5c0383c4c8f88a04b6fcbe09cb6 = L.marker(
+                [8.683333, -83.541667],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_01238e482ca9441c94201c3c1b2674a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc7cecf25bdf4333b9ef4a589b4cb528 = $(`<div id="html_dc7cecf25bdf4333b9ef4a589b4cb528" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Banegas, camino a Rancho Quemado. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1999-06-08 00:00:00+00:00 <strong>Recolectores:</strong> Priscila Hurtado <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_01238e482ca9441c94201c3c1b2674a0.setContent(html_dc7cecf25bdf4333b9ef4a589b4cb528);
+        
+
+        marker_fff8f5c0383c4c8f88a04b6fcbe09cb6.bindPopup(popup_01238e482ca9441c94201c3c1b2674a0)
+        ;
+
+        
+    
+    
+            var marker_e65aca95cd9c45d296a9f32ba5dd3073 = L.marker(
+                [8.683333, -83.541667],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_0d46e599de694c6595aebeb87c2dbfc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02638141e6c540e08e45581c1cec6f1c = $(`<div id="html_02638141e6c540e08e45581c1cec6f1c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Banegas, camino a Rancho Quemado. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1999-06-08 00:00:00+00:00 <strong>Recolectores:</strong> Priscila Hurtado <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_0d46e599de694c6595aebeb87c2dbfc9.setContent(html_02638141e6c540e08e45581c1cec6f1c);
+        
+
+        marker_e65aca95cd9c45d296a9f32ba5dd3073.bindPopup(popup_0d46e599de694c6595aebeb87c2dbfc9)
+        ;
+
+        
+    
+    
+            var marker_a4fbad2a307741ea83be99062736ecd7 = L.marker(
+                [8.672538000000001, -83.244148],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_6254bc16ea7e4c279dee00de958e4f1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08952f3b27864bba99a7f3501b8f2d3c = $(`<div id="html_08952f3b27864bba99a7f3501b8f2d3c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero a San Josecito <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 2000-06-09 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez ; Gerardo Soto ; Geovanny Sancho ; Edgar Mora <strong>Identificadores:</strong> Mori, Scott A.</div>`)[0];
+            popup_6254bc16ea7e4c279dee00de958e4f1e.setContent(html_08952f3b27864bba99a7f3501b8f2d3c);
+        
+
+        marker_a4fbad2a307741ea83be99062736ecd7.bindPopup(popup_6254bc16ea7e4c279dee00de958e4f1e)
+        ;
+
+        
+    
+    
+            var marker_f5067dd9d9f94c0cb4884dfc9e45f9ab = L.marker(
+                [8.788889, -83.363972],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_73696fbeb8bc424f9ee93882cf82b2cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3df9c5dfb8c243ee83aefea306961b27 = $(`<div id="html_3df9c5dfb8c243ee83aefea306961b27" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce, Los Mogos, finca de Efraín López (propiedad del estado), de la escuela de Los Mogos, 5 km norte, rumbo al humedal. <strong>Elevación:</strong> 134.0 m  <strong>Fecha:</strong> 2014-05-09 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Soo-Yong Kim ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_73696fbeb8bc424f9ee93882cf82b2cd.setContent(html_3df9c5dfb8c243ee83aefea306961b27);
+        
+
+        marker_f5067dd9d9f94c0cb4884dfc9e45f9ab.bindPopup(popup_73696fbeb8bc424f9ee93882cf82b2cd)
+        ;
+
+        
+    
+    
+            var marker_80ea7460492d490f8a9a82cf668a2a6c = L.marker(
+                [8.788889, -83.363972],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_704fe242ecc44910ad7154e1f9607493 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abc8e261896246e0bce87d76d93036d2 = $(`<div id="html_abc8e261896246e0bce87d76d93036d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce, Los Mogos, finca de Efraín López (propiedad del estado), de la escuela de Los Mogos, 5 km norte, rumbo al humedal. <strong>Elevación:</strong> 134.0 m  <strong>Fecha:</strong> 2014-05-09 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Soo-Yong Kim ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_704fe242ecc44910ad7154e1f9607493.setContent(html_abc8e261896246e0bce87d76d93036d2);
+        
+
+        marker_80ea7460492d490f8a9a82cf668a2a6c.bindPopup(popup_704fe242ecc44910ad7154e1f9607493)
+        ;
+
+        
+    
+    
+            var marker_087b820f4344470db922681c2ff18aae = L.marker(
+                [8.788889, -83.363972],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_0c16b17178ef4ecbbda55e7d037eb5e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ac617abb9344e46b06c20174daaef0a = $(`<div id="html_4ac617abb9344e46b06c20174daaef0a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce, Los Mogos, finca de Efraín López (propiedad del estado), de la escuela de Los Mogos, 5 km norte, rumbo al humedal. <strong>Elevación:</strong> 134.0 m  <strong>Fecha:</strong> 2014-05-09 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Soo-Yong Kim ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_0c16b17178ef4ecbbda55e7d037eb5e5.setContent(html_4ac617abb9344e46b06c20174daaef0a);
+        
+
+        marker_087b820f4344470db922681c2ff18aae.bindPopup(popup_0c16b17178ef4ecbbda55e7d037eb5e5)
+        ;
+
+        
+    
+    
+            var marker_12c0a751f68e48a8a3cf13b9f3369b3a = L.marker(
+                [8.645833, -83.590278],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_fafbb78944c34a5598737c69ba08b36d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82b0de18374c47eb940581728224cc32 = $(`<div id="html_82b0de18374c47eb940581728224cc32" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón. Filas al margen izquierdo de Quebrada Vaquedano. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1990-07-21 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera C. <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_fafbb78944c34a5598737c69ba08b36d.setContent(html_82b0de18374c47eb940581728224cc32);
+        
+
+        marker_12c0a751f68e48a8a3cf13b9f3369b3a.bindPopup(popup_fafbb78944c34a5598737c69ba08b36d)
+        ;
+
+        
+    
+    
+            var marker_5afa7f37336d4344b9ec84cbd0cfe867 = L.marker(
+                [8.68333, -83.54166],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_5e4f0c32c90341cfbedb46727c9aa088 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ef18b1da9ed401b8a966f03ed4420d9 = $(`<div id="html_2ef18b1da9ed401b8a966f03ed4420d9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce. Península de Osa. Banegas, camino a Rancho Quemado <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1999-06-08 00:00:00+00:00 <strong>Recolectores:</strong> Priscilla Hurtado <strong>Identificadores:</strong> S.A. Mori (NY)</div>`)[0];
+            popup_5e4f0c32c90341cfbedb46727c9aa088.setContent(html_2ef18b1da9ed401b8a966f03ed4420d9);
+        
+
+        marker_5afa7f37336d4344b9ec84cbd0cfe867.bindPopup(popup_5e4f0c32c90341cfbedb46727c9aa088)
+        ;
+
+        
+    
+    
+            var marker_f5d07a105f044cdca0ef961ba8804f40 = L.marker(
+                [8.66, -83.56],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_974117220e664e23b1805adbcbdbf32e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b399c6d293f247a997a1a28da1b01522 = $(`<div id="html_b399c6d293f247a997a1a28da1b01522" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Osa Península, Rancho Quemado, ca. 15 km W of Rincón; along Quebrada Quebradón and ridge above it. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-06-04 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Gerardo Herrera Ch.|María Marta Chavarría <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_974117220e664e23b1805adbcbdbf32e.setContent(html_b399c6d293f247a997a1a28da1b01522);
+        
+
+        marker_f5d07a105f044cdca0ef961ba8804f40.bindPopup(popup_974117220e664e23b1805adbcbdbf32e)
+        ;
+
+        
+    
+    
+            var marker_0160f638ee864736a3717acf5e1de259 = L.marker(
+                [15.483329999999999, -87.61666],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_19e89427ffb8401da18917dd1c1957df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b3cfc53c56b41fd89a1b6a4a83a6e96 = $(`<div id="html_6b3cfc53c56b41fd89a1b6a4a83a6e96" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera Nombre de Dios, Cerro Aguacatales, along road between El Guaymon and San José de Texíguat. Montane rainforest. <strong>Elevación:</strong> 830.0 m  <strong>Fecha:</strong> 1991-05-18 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|Ramón Zúñiga|Paul R. House <strong>Identificadores:</strong> S.A. Mori, 17 Mar</div>`)[0];
+            popup_19e89427ffb8401da18917dd1c1957df.setContent(html_6b3cfc53c56b41fd89a1b6a4a83a6e96);
+        
+
+        marker_0160f638ee864736a3717acf5e1de259.bindPopup(popup_19e89427ffb8401da18917dd1c1957df)
+        ;
+
+        
+    
+    
+            var marker_5e106a4d28d842cab335cdf9597a5f94 = L.marker(
+                [8.7, -83.56666],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_b48d31d9da724d54a19537fecde1fae0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da2eccca5a89496681e6972f2600bcaa = $(`<div id="html_da2eccca5a89496681e6972f2600bcaa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado. Finca de Delfin. Rincón. Bosque primario <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1991-01-24 00:00:00+00:00 <strong>Recolectores:</strong> F. J. Quesada|María Marta Chavarría <strong>Identificadores:</strong> S.A. Mori (NY)</div>`)[0];
+            popup_b48d31d9da724d54a19537fecde1fae0.setContent(html_da2eccca5a89496681e6972f2600bcaa);
+        
+
+        marker_5e106a4d28d842cab335cdf9597a5f94.bindPopup(popup_b48d31d9da724d54a19537fecde1fae0)
+        ;
+
+        
+    
+    
+            var marker_e2ff01beb8eb48dcaea1301b4ada085c = L.marker(
+                [8.730556, -83.551389],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_33ba56ea2d8b45cfa2ef702b15fe6998 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1223db8905fc487cbba1030a55a9e263 = $(`<div id="html_1223db8905fc487cbba1030a55a9e263" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sierpe, San Juan, cuenca superior del Río San Juan, estribaciones Cerros Chocuaco. <strong>Elevación:</strong> 580.0 m  <strong>Fecha:</strong> 1991-01-29 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera C. <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_33ba56ea2d8b45cfa2ef702b15fe6998.setContent(html_1223db8905fc487cbba1030a55a9e263);
+        
+
+        marker_e2ff01beb8eb48dcaea1301b4ada085c.bindPopup(popup_33ba56ea2d8b45cfa2ef702b15fe6998)
+        ;
+
+        
+    
+    
+            var marker_926b30a710a94f9d9eacb4e40670553a = L.marker(
+                [10.3842, -84.05],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_ed3bc060084841abba8636f102b1cde2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d9eb8afd3644a53a2897beeaca4ef1f = $(`<div id="html_2d9eb8afd3644a53a2897beeaca4ef1f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nac. Braulio Carrillo, Estación Magsasay. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-07-18 00:00:00+00:00 <strong>Recolectores:</strong> B. E. Hammel <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_ed3bc060084841abba8636f102b1cde2.setContent(html_2d9eb8afd3644a53a2897beeaca4ef1f);
+        
+
+        marker_926b30a710a94f9d9eacb4e40670553a.bindPopup(popup_ed3bc060084841abba8636f102b1cde2)
+        ;
+
+        
+    
+    
+            var marker_98512b98f6894cfd8ab4d507220b2906 = L.marker(
+                [10.0, -84.8333],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_90673f235ed3467c816f8e4317f7dc3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd100c5f21d24a5684545f42d6b45f4b = $(`<div id="html_cd100c5f21d24a5684545f42d6b45f4b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-07-21 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera C. <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_90673f235ed3467c816f8e4317f7dc3c.setContent(html_cd100c5f21d24a5684545f42d6b45f4b);
+        
+
+        marker_98512b98f6894cfd8ab4d507220b2906.bindPopup(popup_90673f235ed3467c816f8e4317f7dc3c)
+        ;
+
+        
+    
+    
+            var marker_b9ba4f1eed294b47811dcad651d53add = L.marker(
+                [8.6978, -83.5931],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_519b649794c04ab0a9b33dd4aa874636 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92057ebedc8b4e45a73981e7618d589b = $(`<div id="html_92057ebedc8b4e45a73981e7618d589b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe; Reserva Forestal Golfo Dulce; Rancho Quemado, camino a Drake, parte mas elevada del camino <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 2008-04-04 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> R. Aguilar</div>`)[0];
+            popup_519b649794c04ab0a9b33dd4aa874636.setContent(html_92057ebedc8b4e45a73981e7618d589b);
+        
+
+        marker_b9ba4f1eed294b47811dcad651d53add.bindPopup(popup_519b649794c04ab0a9b33dd4aa874636)
+        ;
+
+        
+    
+    
+            var marker_7bd677d608e54d3fa5793d3d98a44101 = L.marker(
+                [8.6978, -83.5931],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_cab6b3934b2d45a9b61d812f8fec9e65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5dd7a9a3120240d4b479b899ee045a32 = $(`<div id="html_5dd7a9a3120240d4b479b899ee045a32" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe.  Reserva Forestal Golfo Dulce; Rancho Quemado, camino a Drake, parte mas elevada del camino <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 2001-09-05 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> R. Aguilar</div>`)[0];
+            popup_cab6b3934b2d45a9b61d812f8fec9e65.setContent(html_5dd7a9a3120240d4b479b899ee045a32);
+        
+
+        marker_7bd677d608e54d3fa5793d3d98a44101.bindPopup(popup_cab6b3934b2d45a9b61d812f8fec9e65)
+        ;
+
+        
+    
+    
+            var marker_6d0536d80b4f4e5d8ba8f0fcfb74ece5 = L.marker(
+                [8.73, -83.6],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_7268a3c05a73481eb831d84b7366a456 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df8ed59064604c1286bd7a2d4b7d7a18 = $(`<div id="html_df8ed59064604c1286bd7a2d4b7d7a18" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce. Fila al oeste de Rancho Quemado. <strong>Elevación:</strong> 150.5 m  <strong>Fecha:</strong> 1991-03-30 00:00:00+00:00 <strong>Recolectores:</strong> J. Saborío <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_7268a3c05a73481eb831d84b7366a456.setContent(html_df8ed59064604c1286bd7a2d4b7d7a18);
+        
+
+        marker_6d0536d80b4f4e5d8ba8f0fcfb74ece5.bindPopup(popup_7268a3c05a73481eb831d84b7366a456)
+        ;
+
+        
+    
+    
+            var marker_8c128d42404a478192c97c7db609f232 = L.marker(
+                [15.48, -87.62],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_5a214ca33f2540c293cf4a6eccb0bd2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_123929efeaa04442b428486616a259ba = $(`<div id="html_123929efeaa04442b428486616a259ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera Nombre de Díos, Cerro Aguacatales, along road between El Guaymon and San José de Texiguat. <strong>Elevación:</strong> 830.0 m  <strong>Fecha:</strong> 1991-05-18 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_5a214ca33f2540c293cf4a6eccb0bd2a.setContent(html_123929efeaa04442b428486616a259ba);
+        
+
+        marker_8c128d42404a478192c97c7db609f232.bindPopup(popup_5a214ca33f2540c293cf4a6eccb0bd2a)
+        ;
+
+        
+    
+    
+            var marker_c687c137f194457096e2ea46f5804d12 = L.marker(
+                [8.64, -83.59],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_cc8a9cbd74ef40cbb8220e5f495ec2f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45485a8ca9694153bfb19d341cf25b22 = $(`<div id="html_45485a8ca9694153bfb19d341cf25b22" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Rincón. Filas al margen izquierdo de Quebrada Vaquedano. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1990-07-21 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_cc8a9cbd74ef40cbb8220e5f495ec2f8.setContent(html_45485a8ca9694153bfb19d341cf25b22);
+        
+
+        marker_c687c137f194457096e2ea46f5804d12.bindPopup(popup_cc8a9cbd74ef40cbb8220e5f495ec2f8)
+        ;
+
+        
+    
+    
+            var marker_0d153b635f10439e948aea31cfd606c3 = L.marker(
+                [8.73, -83.55],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_cf30c5e8c6af4f8a8f3e6f0ea34bceae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5decd1d9288a4ba2857154149877c89a = $(`<div id="html_5decd1d9288a4ba2857154149877c89a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Sierpe, San Juan, cuenca superior del Río San Juan, estribaciones Cerros Chocuaco. <strong>Elevación:</strong> 580.0 m  <strong>Fecha:</strong> 1991-01-29 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> S.A. Mori (NY)</div>`)[0];
+            popup_cf30c5e8c6af4f8a8f3e6f0ea34bceae.setContent(html_5decd1d9288a4ba2857154149877c89a);
+        
+
+        marker_0d153b635f10439e948aea31cfd606c3.bindPopup(popup_cf30c5e8c6af4f8a8f3e6f0ea34bceae)
+        ;
+
+        
+    
+    
+            var marker_f243a674f78e4f5f9d12a74b10c879f8 = L.marker(
+                [10.38, -84.05],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_b198305d5e86471facd37ba4707bef3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9b58b1233b34d03aee10e674190af38 = $(`<div id="html_c9b58b1233b34d03aee10e674190af38" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo. Estación Magsasay. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-07-18 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Alwyn H. Gentry|Helen Kennedy <strong>Identificadores:</strong> S.A. Mori (NY)</div>`)[0];
+            popup_b198305d5e86471facd37ba4707bef3c.setContent(html_c9b58b1233b34d03aee10e674190af38);
+        
+
+        marker_f243a674f78e4f5f9d12a74b10c879f8.bindPopup(popup_b198305d5e86471facd37ba4707bef3c)
+        ;
+
+        
+    
+    
+            var marker_f89aaf4568074cb893fb22b78dab4557 = L.marker(
+                [8.73333, -83.6],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_40a0eb2f0ce14cffb24d5c9cb5220577 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25cb594c21364b01b52ca81b94cb8334 = $(`<div id="html_25cb594c21364b01b52ca81b94cb8334" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Fila al oeste de Rancho Quemado. Bosque primario. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1991-03-30 00:00:00+00:00 <strong>Recolectores:</strong> Juan C. Saborío|Barry E. Hammel|Reinaldo Aguilar <strong>Identificadores:</strong> S.A. Mori, 20 Feb</div>`)[0];
+            popup_40a0eb2f0ce14cffb24d5c9cb5220577.setContent(html_25cb594c21364b01b52ca81b94cb8334);
+        
+
+        marker_f89aaf4568074cb893fb22b78dab4557.bindPopup(popup_40a0eb2f0ce14cffb24d5c9cb5220577)
+        ;
+
+        
+    
+    
+            var marker_ab712784b0d54f2399745f2ac932e8e8 = L.marker(
+                [8.77, -83.37],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_0a0846ef7997429fb42fb533c4ffc8a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d323b8484bc44261af8af6f1d2fa783f = $(`<div id="html_d323b8484bc44261af8af6f1d2fa783f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. 25 km O de Chacarita por la carretera entre Rincón y Chacarita. Bosque primario. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1991-07-10 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> S.A. Mori (NY)</div>`)[0];
+            popup_0a0846ef7997429fb42fb533c4ffc8a6.setContent(html_d323b8484bc44261af8af6f1d2fa783f);
+        
+
+        marker_ab712784b0d54f2399745f2ac932e8e8.bindPopup(popup_0a0846ef7997429fb42fb533c4ffc8a6)
+        ;
+
+        
+    
+    
+            var marker_cb4a971755df4e65b351efedd0862d45 = L.marker(
+                [8.69, -83.55],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_f6eb7b10e2a944d5b0d7f2908d3053b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_970b406045f94a88aa04772c4e445a67 = $(`<div id="html_970b406045f94a88aa04772c4e445a67" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Rancho Quemado, en fila directamente al Oeste del pueblo; tierra del grupo de conservacionistas de Rancho Quemado. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1991-07-11 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Juan Marín|F. J. Quesada <strong>Identificadores:</strong> S.A. Mori (NY)</div>`)[0];
+            popup_f6eb7b10e2a944d5b0d7f2908d3053b8.setContent(html_970b406045f94a88aa04772c4e445a67);
+        
+
+        marker_cb4a971755df4e65b351efedd0862d45.bindPopup(popup_f6eb7b10e2a944d5b0d7f2908d3053b8)
+        ;
+
+        
+    
+    
+            var marker_281d5ae7dcdc48c9a99be3be34aee7b3 = L.marker(
+                [8.671667, -83.504722],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_de9e21815fc948c9aa357b6eeea5d91f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_151bedd291c14776b1f6e27341a5b9e0 = $(`<div id="html_151bedd291c14776b1f6e27341a5b9e0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sierpe. Canton Osa; Reseva Forestal Golfo Dulce; Rincón, cerca de Banegas Los Charcos, 1 km al Este del centro del pueblo Banegas, Estación Biológica Los Charcos de Osa, Cerro Guacas. <strong>Elevación:</strong> 49.0 m  <strong>Fecha:</strong> 2007-12-07 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> S.A. Mori</div>`)[0];
+            popup_de9e21815fc948c9aa357b6eeea5d91f.setContent(html_151bedd291c14776b1f6e27341a5b9e0);
+        
+
+        marker_281d5ae7dcdc48c9a99be3be34aee7b3.bindPopup(popup_de9e21815fc948c9aa357b6eeea5d91f)
+        ;
+
+        
+    
+    
+            var marker_478f1882da6847dc98b6c364a9906515 = L.marker(
+                [8.727222, -83.493889],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_80a6476c6f1741db985c86914b531e74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91dff88b7dcd41d3afa193a444d623a2 = $(`<div id="html_91dff88b7dcd41d3afa193a444d623a2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe; Reserva Forestal Golfo Dulce; Alto San Juan, frente a la escuela Alto San Juan, finca de Gerardo Mendes. <strong>Elevación:</strong> 190.0 m  <strong>Fecha:</strong> 2008-08-13 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> S.A. Mori</div>`)[0];
+            popup_80a6476c6f1741db985c86914b531e74.setContent(html_91dff88b7dcd41d3afa193a444d623a2);
+        
+
+        marker_478f1882da6847dc98b6c364a9906515.bindPopup(popup_80a6476c6f1741db985c86914b531e74)
+        ;
+
+        
+    
+    
+            var marker_329346909c2b4ec0843c31b85bb2a44e = L.marker(
+                [8.661667, -83.565556],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_57f95bd66bfe45f0b22a08021823be76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b66ccec2d7f64def9aacaf566d4de3ac = $(`<div id="html_b66ccec2d7f64def9aacaf566d4de3ac" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe; Reserva Forestal Golfo Dulce; Rancho Quemado, camino a Chiqueron empezando a subir la fila al Sur de Rancho Quemado. <strong>Elevación:</strong> 342.0 m  <strong>Fecha:</strong> 2008-07-23 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> S.A. Mori</div>`)[0];
+            popup_57f95bd66bfe45f0b22a08021823be76.setContent(html_b66ccec2d7f64def9aacaf566d4de3ac);
+        
+
+        marker_329346909c2b4ec0843c31b85bb2a44e.bindPopup(popup_57f95bd66bfe45f0b22a08021823be76)
+        ;
+
+        
+    
+    
+            var marker_23cb10152c61443db77652709370a7dc = L.marker(
+                [8.6925, -83.593055],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_029afdbeae07412fb39233760cf27050 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d06c11c6e37e4f2f97f19edb49f2cc80 = $(`<div id="html_d06c11c6e37e4f2f97f19edb49f2cc80" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe; Reserva Forestal Golfo Dulce; Rancho Quemado, camino a Drake, parte mas elevada del camino, 200 m. al Este de la torre del ICE, en una trocha que lleva al Tierra de Conservacion de Rancho Quemado. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2008-08-15 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> R. Aguilar</div>`)[0];
+            popup_029afdbeae07412fb39233760cf27050.setContent(html_d06c11c6e37e4f2f97f19edb49f2cc80);
+        
+
+        marker_23cb10152c61443db77652709370a7dc.bindPopup(popup_029afdbeae07412fb39233760cf27050)
+        ;
+
+        
+    
+    
+            var marker_d784fd61b8f54f0496e48ab60b671298 = L.marker(
+                [8.7308, -83.4083],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_564b21cf778441e7ba3a4d39d88124f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4372ddf4bed496f934cee946995e6da = $(`<div id="html_d4372ddf4bed496f934cee946995e6da" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce, Mogos, Punta Pargos a 29 km de Chacarita, Finca Pizotes Tropicales. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-08-31 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_564b21cf778441e7ba3a4d39d88124f0.setContent(html_d4372ddf4bed496f934cee946995e6da);
+        
+
+        marker_d784fd61b8f54f0496e48ab60b671298.bindPopup(popup_564b21cf778441e7ba3a4d39d88124f0)
+        ;
+
+        
+    
+    
+            var marker_14270f47bacf4a23b32e49701e28b3bc = L.marker(
+                [8.6925, -83.5931],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_51cf74ed0e4e40559b5b227f0bff8e94 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c424790669ed4833b220ddd3f347b947 = $(`<div id="html_c424790669ed4833b220ddd3f347b947" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Osa. Distrito: Sierpe; Reserva Forestal Golfo Dulce; Rancho Quemado, camino a Drake, parte mas elevada del camino, al Este de la torre del ICE, en una trocha que lleva al Tierra de Conservacion de Rancho Quemado. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2008-07-25 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_51cf74ed0e4e40559b5b227f0bff8e94.setContent(html_c424790669ed4833b220ddd3f347b947);
+        
+
+        marker_14270f47bacf4a23b32e49701e28b3bc.bindPopup(popup_51cf74ed0e4e40559b5b227f0bff8e94)
+        ;
+
+        
+    
+    
+            var marker_3be5dceed07a47c68a90b861ea665fdd = L.marker(
+                [8.7272, -83.4939],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_63363413294948bd8a09ee83fcfbd42b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53e6ca935ee5441d9b5bef9f41d2b5e1 = $(`<div id="html_53e6ca935ee5441d9b5bef9f41d2b5e1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Osa. Distrito: Sierpe; Reserva Forestal Golfo Dulce; Alto San Juan, frente a la escuela Alto San Juan, finca de Gerardo Mendes. <strong>Elevación:</strong> 190.0 m  <strong>Fecha:</strong> 2008-08-13 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_63363413294948bd8a09ee83fcfbd42b.setContent(html_53e6ca935ee5441d9b5bef9f41d2b5e1);
+        
+
+        marker_3be5dceed07a47c68a90b861ea665fdd.bindPopup(popup_63363413294948bd8a09ee83fcfbd42b)
+        ;
+
+        
+    
+    
+            var marker_b368b5a722114544b66f1d6a0fd298c6 = L.marker(
+                [8.716660000000001, -83.51666],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_44391c32391f43418a3773300b28ee0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cedcfb0ab2384e6f9287c0d8c6184309 = $(`<div id="html_cedcfb0ab2384e6f9287c0d8c6184309" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguanbuena, 3.5 km W of Rincón. Four hectare permanent sample plot 1 km N of BOSCOSA station in well drained undulating terrain with slopes 15-35º. Tall primary forest with many palms and large lianas. Characteristic species Symphonia, Carapa, Brosimum utile, Qualea, Otoba, Iriartea and Vantanea <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1993-06-18 00:00:00+00:00 <strong>Recolectores:</strong> Karsten Thomsen <strong>Identificadores:</strong> S.A. Mori (NY)</div>`)[0];
+            popup_44391c32391f43418a3773300b28ee0b.setContent(html_cedcfb0ab2384e6f9287c0d8c6184309);
+        
+
+        marker_b368b5a722114544b66f1d6a0fd298c6.bindPopup(popup_44391c32391f43418a3773300b28ee0b)
+        ;
+
+        
+    
+    
+            var marker_4e0caade896044b6b773bf73cc865694 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_524b27eef61845e5aaec2475f7cd2793 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bf6e8253ba5486b890261a0c3e3e805 = $(`<div id="html_3bf6e8253ba5486b890261a0c3e3e805" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-07-21 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera C. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_524b27eef61845e5aaec2475f7cd2793.setContent(html_3bf6e8253ba5486b890261a0c3e3e805);
+        
+
+        marker_4e0caade896044b6b773bf73cc865694.bindPopup(popup_524b27eef61845e5aaec2475f7cd2793)
+        ;
+
+        
+    
+    
+            var marker_062c6e0a81604b83866f486979712024 = L.marker(
+                [8.6717, -83.5047],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_ec273a089eeb4307a2fc82e1d2f9cd06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8ebf5e67865419fbc70fb09ee4c7888 = $(`<div id="html_e8ebf5e67865419fbc70fb09ee4c7888" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Canton Osa; Reserva Forestal Golfo Dulce; Rincón, cerca de Banegas Los Charcos, 1 km. al Este del centro del pueblo Banegas, Estación Biológica Los Charcos de Osa, Cerro Guacas <strong>Elevación:</strong> 49.0 m  <strong>Fecha:</strong> 2007-12-07 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_ec273a089eeb4307a2fc82e1d2f9cd06.setContent(html_e8ebf5e67865419fbc70fb09ee4c7888);
+        
+
+        marker_062c6e0a81604b83866f486979712024.bindPopup(popup_ec273a089eeb4307a2fc82e1d2f9cd06)
+        ;
+
+        
+    
+    
+            var marker_35a3fbf6f02c482b83fb8004fcc0374c = L.marker(
+                [8.7272, -83.4939],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_d36808fba4c042298fa07cc8cab2f5ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7eef4f727df9467e95ecc8684310e3c3 = $(`<div id="html_7eef4f727df9467e95ecc8684310e3c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe; Reserva Forestal Golfo Dulce; Alto San Juan, frente a la escuela Alto San Juan, finca de Gerardo Mendes <strong>Elevación:</strong> 190.0 m  <strong>Fecha:</strong> 2008-08-13 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_d36808fba4c042298fa07cc8cab2f5ab.setContent(html_7eef4f727df9467e95ecc8684310e3c3);
+        
+
+        marker_35a3fbf6f02c482b83fb8004fcc0374c.bindPopup(popup_d36808fba4c042298fa07cc8cab2f5ab)
+        ;
+
+        
+    
+    
+            var marker_6083fbdda43042e5a87979fe82e4b87b = L.marker(
+                [8.6925, -83.5931],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_416142256a884129bb12fbf8cf242c8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfda2b832e314dfd90a0d018906c289f = $(`<div id="html_dfda2b832e314dfd90a0d018906c289f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe; Reserva Forestal Golfo Dulce; Rancho Quemado, camino a Drake, parte mas elevada del camino, 200 m. al Este de la torre del ICE, en una trocha que lleva al Tierra de Conservacion de Rancho Quemado <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2008-07-25 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_416142256a884129bb12fbf8cf242c8a.setContent(html_dfda2b832e314dfd90a0d018906c289f);
+        
+
+        marker_6083fbdda43042e5a87979fe82e4b87b.bindPopup(popup_416142256a884129bb12fbf8cf242c8a)
+        ;
+
+        
+    
+    
+            var marker_c8c6513851c446108e5b88b294177602 = L.marker(
+                [8.6617, -83.5656],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_f3458af3ecf84406ae9749e003534290 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36c16ddd624c40309aa31638d870d5ae = $(`<div id="html_36c16ddd624c40309aa31638d870d5ae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe; Reserva Forestal Golfo Dulce; Rancho Quemado, camino a Chiqueron empezando a subir la fila al Sur de Rancho Quemado <strong>Elevación:</strong> 342.0 m  <strong>Fecha:</strong> 2008-07-23 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_f3458af3ecf84406ae9749e003534290.setContent(html_36c16ddd624c40309aa31638d870d5ae);
+        
+
+        marker_c8c6513851c446108e5b88b294177602.bindPopup(popup_f3458af3ecf84406ae9749e003534290)
+        ;
+
+        
+    
+    
+            var marker_03815b81b8fd467cbb10eafa2c54e3a3 = L.marker(
+                [8.7, -83.5944],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_7bb857a051494189b2659f4b945bf55e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d680cf7187cc44f2b2d97ed27d9f9a88 = $(`<div id="html_d680cf7187cc44f2b2d97ed27d9f9a88" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce, Rancho Quemado, en fila directamente al Oeste del pueblo, tierra del grupo de conservacionistas de rancho. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1991-07-11 00:00:00+00:00 <strong>Recolectores:</strong> B. E. Hammel <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_7bb857a051494189b2659f4b945bf55e.setContent(html_d680cf7187cc44f2b2d97ed27d9f9a88);
+        
+
+        marker_03815b81b8fd467cbb10eafa2c54e3a3.bindPopup(popup_7bb857a051494189b2659f4b945bf55e)
+        ;
+
+        
+    
+    
+            var marker_3036554882074801a307a5b2d502b84d = L.marker(
+                [8.6925, -83.5931],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_4ef80dd7823949a0bbe5a0f6dd15942e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c95cf0e19704918ab189c3656dc6096 = $(`<div id="html_6c95cf0e19704918ab189c3656dc6096" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe; Reserva Forestal Golfo Dulce; Rancho Quemado, camino a Drake, parte mas elevada del camino, 200 m. al Este de la torre del ICE, en una trocha que lleva al Tierra de Conservacion de Rancho Quemado <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2008-08-15 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> R. Aguilar</div>`)[0];
+            popup_4ef80dd7823949a0bbe5a0f6dd15942e.setContent(html_6c95cf0e19704918ab189c3656dc6096);
+        
+
+        marker_3036554882074801a307a5b2d502b84d.bindPopup(popup_4ef80dd7823949a0bbe5a0f6dd15942e)
+        ;
+
+        
+    
+    
+            var marker_f40c438ba20e4dd6904d92596d9918ee = L.marker(
+                [8.7272, -83.4939],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_43a38abdf7dc486b806451ec40def29f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3b4782102524ee7a081bf9cfad6b76e = $(`<div id="html_b3b4782102524ee7a081bf9cfad6b76e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe; Reserva Forestal Golfo Dulce; Alto San Juan, frente a la escuela Alto San Juan, finca de Gerardo Mendes <strong>Elevación:</strong> 190.0 m  <strong>Fecha:</strong> 2008-12-28 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_43a38abdf7dc486b806451ec40def29f.setContent(html_b3b4782102524ee7a081bf9cfad6b76e);
+        
+
+        marker_f40c438ba20e4dd6904d92596d9918ee.bindPopup(popup_43a38abdf7dc486b806451ec40def29f)
+        ;
+
+        
+    
+    
+            var marker_916a3a96bf1c4ceaa0222fc6ddfdfde2 = L.marker(
+                [8.71, -83.51],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_09803b290aa6408dbe52e96860a6d84c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7a3623cf31b48358badf11de9504f5e = $(`<div id="html_d7a3623cf31b48358badf11de9504f5e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena, 3.5 km W of Rincón. Four-hectare permanent sample plot 1 km N of BOSCOSA station in well-drained undulating terrain with slopes of 15-35º. Tall primary forest with many palms and large lianas. Characteristic species: Symphonia, Carapa, Brosimum utile, Qualea, Otoba, Iriartea and Vantanea <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1993-06-22 00:00:00+00:00 <strong>Recolectores:</strong> Karsten Thomsen <strong>Identificadores:</strong> S.A. Mori (NY)</div>`)[0];
+            popup_09803b290aa6408dbe52e96860a6d84c.setContent(html_d7a3623cf31b48358badf11de9504f5e);
+        
+
+        marker_916a3a96bf1c4ceaa0222fc6ddfdfde2.bindPopup(popup_09803b290aa6408dbe52e96860a6d84c)
+        ;
+
+        
+    
+    
+            var marker_707b2fc65710479a8c40cb0deaefd40e = L.marker(
+                [8.7272, -83.4939],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_732919caf78a4d8a964c0da16e42e42e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba9a5f07163e4c2fa5dff75722692969 = $(`<div id="html_ba9a5f07163e4c2fa5dff75722692969" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe; Reserva Forestal Golfo Dulce; Alto San Juan, frente a la escuela Alto San Juan, finca de Gerardo Mendes <strong>Elevación:</strong> 190.0 m  <strong>Fecha:</strong> 2008-08-13 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_732919caf78a4d8a964c0da16e42e42e.setContent(html_ba9a5f07163e4c2fa5dff75722692969);
+        
+
+        marker_707b2fc65710479a8c40cb0deaefd40e.bindPopup(popup_732919caf78a4d8a964c0da16e42e42e)
+        ;
+
+        
+    
+    
+            var marker_4ac87a5a12d24cf0a063d7f16ad0995b = L.marker(
+                [8.67, -83.57],
+                {}
+            ).addTo(marker_cluster_a66ed8e4d833476a87740b9b824ffe6b);
+        
+    
+        var popup_52f28f5f23d6442fb20bd2ae580e1c78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_721324c2315d4905b16547d98f746a26 = $(`<div id="html_721324c2315d4905b16547d98f746a26" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce, Osa Peninsula, Rancho Quemado, ca. 15 km W of Rincón; along quebrada Quebradón and ridge above it. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-06-04 00:00:00+00:00 <strong>Recolectores:</strong> B. E. Hammel <strong>Identificadores:</strong> S. A. Mori</div>`)[0];
+            popup_52f28f5f23d6442fb20bd2ae580e1c78.setContent(html_721324c2315d4905b16547d98f746a26);
+        
+
+        marker_4ac87a5a12d24cf0a063d7f16ad0995b.bindPopup(popup_52f28f5f23d6442fb20bd2ae580e1c78)
+        ;
+
+        
+    
+    
+            var layer_control_4739a65a33194afc965d810313fcc8d8 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e645aabb74554f40bdbaecf0bfd83ac6,
+                    "ESRI World Imagery" : tile_layer_a3f268dbf394477c9b006c381f501174,
+                },
+                overlays :  {
+                    "macro_element_a66ed8e4d833476a87740b9b824ffe6b" : marker_cluster_a66ed8e4d833476a87740b9b824ffe6b,
+                },
+            };
+            L.control.layers(
+                layer_control_4739a65a33194afc965d810313fcc8d8.base_layers,
+                layer_control_4739a65a33194afc965d810313fcc8d8.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_d7f9f06ab8af4110a69c9fc47caa289c);
+            tile_layer_a3f268dbf394477c9b006c381f501174.remove();
+        
+</script>

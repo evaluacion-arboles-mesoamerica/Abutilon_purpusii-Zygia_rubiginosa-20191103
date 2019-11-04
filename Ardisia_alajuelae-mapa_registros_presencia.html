@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c35c586eee6041339fd85f34fe4ba585 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c35c586eee6041339fd85f34fe4ba585" ></div>
+        
+</body>
+<script>    
+    
+            var map_c35c586eee6041339fd85f34fe4ba585 = L.map(
+                "map_c35c586eee6041339fd85f34fe4ba585",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_c35c586eee6041339fd85f34fe4ba585);
+
+            
+
+        
+    
+            var tile_layer_52ae59e69a69466bb6b4d6f2edf0a21f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c35c586eee6041339fd85f34fe4ba585);
+        
+    
+            var tile_layer_f503bc6977684ee09c4b10a8464cc8a7 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c35c586eee6041339fd85f34fe4ba585);
+        
+    
+            var circle_marker_1c5762ad75604dadbaa59836b28aa24d = L.circleMarker(
+                [12.916667, -86.3],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c35c586eee6041339fd85f34fe4ba585);
+        
+    
+        var popup_aec8b3d24bd445cf901c33b78474a4c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b84184c2f5974a0ab5bbf6216a88ed67 = $(`<div id="html_b84184c2f5974a0ab5bbf6216a88ed67" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Nicolás, El Barro, 5 km al SE de San Nicolás <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1984-01-12 00:00:00+00:00 <strong>Recolectores:</strong> P. P. Moreno <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_aec8b3d24bd445cf901c33b78474a4c4.setContent(html_b84184c2f5974a0ab5bbf6216a88ed67);
+        
+
+        circle_marker_1c5762ad75604dadbaa59836b28aa24d.bindPopup(popup_aec8b3d24bd445cf901c33b78474a4c4)
+        ;
+
+        
+    
+    
+            var layer_control_53c6816c7b6c49f4a58a936bb67f6fc9 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_52ae59e69a69466bb6b4d6f2edf0a21f,
+                    "ESRI World Imagery" : tile_layer_f503bc6977684ee09c4b10a8464cc8a7,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_53c6816c7b6c49f4a58a936bb67f6fc9.base_layers,
+                layer_control_53c6816c7b6c49f4a58a936bb67f6fc9.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c35c586eee6041339fd85f34fe4ba585);
+            tile_layer_f503bc6977684ee09c4b10a8464cc8a7.remove();
+        
+</script>

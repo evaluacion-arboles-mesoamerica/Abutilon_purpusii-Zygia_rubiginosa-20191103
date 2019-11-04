@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2452ff35a9bb4d9e88d25cc19c39e9d7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2452ff35a9bb4d9e88d25cc19c39e9d7" ></div>
+        
+</body>
+<script>    
+    
+            var map_2452ff35a9bb4d9e88d25cc19c39e9d7 = L.map(
+                "map_2452ff35a9bb4d9e88d25cc19c39e9d7",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_2452ff35a9bb4d9e88d25cc19c39e9d7);
+
+            
+
+        
+    
+            var tile_layer_f217a5da60f44fde96d95158e15945b2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2452ff35a9bb4d9e88d25cc19c39e9d7);
+        
+    
+            var tile_layer_d34369a2abda443aa11f1a4796e36654 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2452ff35a9bb4d9e88d25cc19c39e9d7);
+        
+    
+            var marker_cluster_e3a1eb712f954c7485367cde66aeb287 = L.markerClusterGroup(
+                {}
+            );
+            map_2452ff35a9bb4d9e88d25cc19c39e9d7.addLayer(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+            var marker_026757cbd6c5434f8ee72d5360f4ec8d = L.marker(
+                [9.891667, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_11df4e629cc2450d9cc1671966d504e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9080dac426146dc83eb72e924bb6058 = $(`<div id="html_e9080dac426146dc83eb72e924bb6058" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Los Espaveles. <strong>Elevación:</strong> 625.0 m  <strong>Fecha:</strong> 1991-12-04 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_11df4e629cc2450d9cc1671966d504e3.setContent(html_e9080dac426146dc83eb72e924bb6058);
+        
+
+        marker_026757cbd6c5434f8ee72d5360f4ec8d.bindPopup(popup_11df4e629cc2450d9cc1671966d504e3)
+        ;
+
+        
+    
+    
+            var marker_4f0ffbf0cc7343108fbfc3d6674b2f46 = L.marker(
+                [9.883333, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_48d92c481e9b45ca9f5b29c21893e71f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6aa04f33ac99478c805e66c39fc0395a = $(`<div id="html_6aa04f33ac99478c805e66c39fc0395a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrialba. Faldas del canon del Rio Reventazon, por Sendero Los Espaveles. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1989-05-16 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Poveda, Luis J.</div>`)[0];
+            popup_48d92c481e9b45ca9f5b29c21893e71f.setContent(html_6aa04f33ac99478c805e66c39fc0395a);
+        
+
+        marker_4f0ffbf0cc7343108fbfc3d6674b2f46.bindPopup(popup_48d92c481e9b45ca9f5b29c21893e71f)
+        ;
+
+        
+    
+    
+            var marker_c18dbe1b37484ba9a80b3b0d8bbcd7c8 = L.marker(
+                [10.0, -83.43333299999999],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_503db6c7929b41d4b68b27efb26ecafe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5505e22d0eff400195b963a5e2d9180f = $(`<div id="html_5505e22d0eff400195b963a5e2d9180f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Frente a confluencia del Rio Dantas con Rio Cano Seco, margen derecha, subiendo por la fila que da a la cuenca del Rio Barbilla. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1988-10-31 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> van der Werff, Henk</div>`)[0];
+            popup_503db6c7929b41d4b68b27efb26ecafe.setContent(html_5505e22d0eff400195b963a5e2d9180f);
+        
+
+        marker_c18dbe1b37484ba9a80b3b0d8bbcd7c8.bindPopup(popup_503db6c7929b41d4b68b27efb26ecafe)
+        ;
+
+        
+    
+    
+            var marker_4b5879a18ba346e094634654ee6d431e = L.marker(
+                [9.891667, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_a51801c780a24d05a1b0c64e67d80418 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce7713b5613a47009ab816a17e27dc6c = $(`<div id="html_ce7713b5613a47009ab816a17e27dc6c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Los Espaveles. <strong>Elevación:</strong> 625.0 m  <strong>Fecha:</strong> 1991-12-04 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_a51801c780a24d05a1b0c64e67d80418.setContent(html_ce7713b5613a47009ab816a17e27dc6c);
+        
+
+        marker_4b5879a18ba346e094634654ee6d431e.bindPopup(popup_a51801c780a24d05a1b0c64e67d80418)
+        ;
+
+        
+    
+    
+            var marker_67dce656da80474a9baa92f2293f8886 = L.marker(
+                [9.88, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_c367d69d78424397970b8ed81e3fed45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04c193fb67644467afbac4a374a7a082 = $(`<div id="html_04c193fb67644467afbac4a374a7a082" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrialba, CATIE, faldas del cañón del Río Reventazón, por el Sendero Los Espaveles <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1989-05-16 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|María Marta Chavarría|Michael H. Grayum|Nelson Zamora <strong>Identificadores:</strong> F. Lorea (XAL)</div>`)[0];
+            popup_c367d69d78424397970b8ed81e3fed45.setContent(html_04c193fb67644467afbac4a374a7a082);
+        
+
+        marker_67dce656da80474a9baa92f2293f8886.bindPopup(popup_c367d69d78424397970b8ed81e3fed45)
+        ;
+
+        
+    
+    
+            var marker_810497c5e25d4ad9aec4ef47357a8220 = L.marker(
+                [9.9, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_f0faf713200e415da20cfdb4f9e55d48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5d64fd81776431fbcd3b1f449b33546 = $(`<div id="html_c5d64fd81776431fbcd3b1f449b33546" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrialba, CATIE, in forest on steep slope along Río Reventazón, Sendero Los Espaveles <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1985-07-31 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Michael H. Grayum <strong>Identificadores:</strong> J. González (INB)</div>`)[0];
+            popup_f0faf713200e415da20cfdb4f9e55d48.setContent(html_c5d64fd81776431fbcd3b1f449b33546);
+        
+
+        marker_810497c5e25d4ad9aec4ef47357a8220.bindPopup(popup_f0faf713200e415da20cfdb4f9e55d48)
+        ;
+
+        
+    
+    
+            var marker_06d46d3bac9242b1ae79d1c08532440b = L.marker(
+                [10.0, -83.43],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_e93c2ef117844a3b8c4c105fb4b11cc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73f708ea1d254922aa103fdeb1d38238 = $(`<div id="html_73f708ea1d254922aa103fdeb1d38238" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca. Frente a confluencia del Río Dantas con Río Caño Seco, margen derecha, subiendo por la fila que da a la cuenca del Río Barbilla. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1988-10-31 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> F. Lorea (XAL)</div>`)[0];
+            popup_e93c2ef117844a3b8c4c105fb4b11cc9.setContent(html_73f708ea1d254922aa103fdeb1d38238);
+        
+
+        marker_06d46d3bac9242b1ae79d1c08532440b.bindPopup(popup_e93c2ef117844a3b8c4c105fb4b11cc9)
+        ;
+
+        
+    
+    
+            var marker_4b3ff38f66d64bfb93fd536fe3cf295c = L.marker(
+                [9.883333, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_8260a9331ea646d2adee5a915528ec0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6114709ef55a43068725a5d8fa9c9105 = $(`<div id="html_6114709ef55a43068725a5d8fa9c9105" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cartago: Turrialba, Catie Faldas del canon del Rio Reventazon, por el Sendero Los Espaveles. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-05-16 00:00:00+00:00 <strong>Recolectores:</strong> Hammel BE; Chavarr¡a MM; Grayum MH; Zamora NA <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_8260a9331ea646d2adee5a915528ec0f.setContent(html_6114709ef55a43068725a5d8fa9c9105);
+        
+
+        marker_4b3ff38f66d64bfb93fd536fe3cf295c.bindPopup(popup_8260a9331ea646d2adee5a915528ec0f)
+        ;
+
+        
+    
+    
+            var marker_847ee3836bad41cfbbdd2c93fd3050c3 = L.marker(
+                [9.88, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_e99e5d9411c14bbba95bec52a23dc352 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f69b7e8766b24b3db889ecbeb04e03ab = $(`<div id="html_f69b7e8766b24b3db889ecbeb04e03ab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> CATIE. Faldas del cañon del Río Reventazón, por el sendero Los Espaveles. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1989-05-16 00:00:00+00:00 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Poveda, Luis Jorge</div>`)[0];
+            popup_e99e5d9411c14bbba95bec52a23dc352.setContent(html_f69b7e8766b24b3db889ecbeb04e03ab);
+        
+
+        marker_847ee3836bad41cfbbdd2c93fd3050c3.bindPopup(popup_e99e5d9411c14bbba95bec52a23dc352)
+        ;
+
+        
+    
+    
+            var marker_fe3b28cb08614061ae8f4589c72015b8 = L.marker(
+                [9.88, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_696bd24e43ee4928bcb9bc77d2a1b93b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad1d8bce396e40268b99176f08ff6ce7 = $(`<div id="html_ad1d8bce396e40268b99176f08ff6ce7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> CATIE. Faldas del cañon del Río Reventazón, por el sendero Los Espaveles. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1989-05-16 00:00:00+00:00 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Poveda, Luis Jorge</div>`)[0];
+            popup_696bd24e43ee4928bcb9bc77d2a1b93b.setContent(html_ad1d8bce396e40268b99176f08ff6ce7);
+        
+
+        marker_fe3b28cb08614061ae8f4589c72015b8.bindPopup(popup_696bd24e43ee4928bcb9bc77d2a1b93b)
+        ;
+
+        
+    
+    
+            var marker_526b130b3d5d4fb99e1774523207bf50 = L.marker(
+                [9.89, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_0dfe4f77f58d4fe0b916c85782abfd5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b386cce39c5e46b6b8cd1258cd60bcc0 = $(`<div id="html_b386cce39c5e46b6b8cd1258cd60bcc0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> CATIE.  Sendero Los Espaveles. <strong>Elevación:</strong> 625.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Hammel, Barry & Zamora, Nelson</div>`)[0];
+            popup_0dfe4f77f58d4fe0b916c85782abfd5f.setContent(html_b386cce39c5e46b6b8cd1258cd60bcc0);
+        
+
+        marker_526b130b3d5d4fb99e1774523207bf50.bindPopup(popup_0dfe4f77f58d4fe0b916c85782abfd5f)
+        ;
+
+        
+    
+    
+            var marker_9cda8c88e27b44d59d6ea84877def7f2 = L.marker(
+                [9.89, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_284e11ca0d944cd682fbf9a3c7329e3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbe3ac9d6c444f338aad7b126e1b078f = $(`<div id="html_cbe3ac9d6c444f338aad7b126e1b078f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> CATIE.  Sendero Los Espaveles. <strong>Elevación:</strong> 625.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Hammel, Barry & Zamora, Nelson</div>`)[0];
+            popup_284e11ca0d944cd682fbf9a3c7329e3f.setContent(html_cbe3ac9d6c444f338aad7b126e1b078f);
+        
+
+        marker_9cda8c88e27b44d59d6ea84877def7f2.bindPopup(popup_284e11ca0d944cd682fbf9a3c7329e3f)
+        ;
+
+        
+    
+    
+            var marker_dcb41490d19b49e08e7129d243dd76d6 = L.marker(
+                [9.883333, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_fc1831f86eb54248ae9473e909057baa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d8aa5d7c77f498eae3ffe3f9d8d3bc4 = $(`<div id="html_9d8aa5d7c77f498eae3ffe3f9d8d3bc4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cartago: Turrialba, Catie Faldas del canon del Rio Reventazon, por el Sendero Los Espaveles. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-05-16 00:00:00+00:00 <strong>Recolectores:</strong> Hammel BE; Chavarr¡a MM; Grayum MH; Zamora NA <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fc1831f86eb54248ae9473e909057baa.setContent(html_9d8aa5d7c77f498eae3ffe3f9d8d3bc4);
+        
+
+        marker_dcb41490d19b49e08e7129d243dd76d6.bindPopup(popup_fc1831f86eb54248ae9473e909057baa)
+        ;
+
+        
+    
+    
+            var marker_8e4e38b283e5409d91397bccaf03609a = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_e43393ef288344c585ce3037a3e05d2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2032d81d3bfb4fe1b674615e4c032cff = $(`<div id="html_2032d81d3bfb4fe1b674615e4c032cff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1943-05-01 00:00:00+00:00 <strong>Recolectores:</strong> Bro. León <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e43393ef288344c585ce3037a3e05d2b.setContent(html_2032d81d3bfb4fe1b674615e4c032cff);
+        
+
+        marker_8e4e38b283e5409d91397bccaf03609a.bindPopup(popup_e43393ef288344c585ce3037a3e05d2b)
+        ;
+
+        
+    
+    
+            var marker_6b42fc4ffc9b460492fd17e61e16dc61 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_52512cbe55a049ff9e76b6f4a4fb7cfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30bfd8770ad8492684b1b8f121ef47b5 = $(`<div id="html_30bfd8770ad8492684b1b8f121ef47b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1943-05-01 00:00:00+00:00 <strong>Recolectores:</strong> Bro. León <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_52512cbe55a049ff9e76b6f4a4fb7cfd.setContent(html_30bfd8770ad8492684b1b8f121ef47b5);
+        
+
+        marker_6b42fc4ffc9b460492fd17e61e16dc61.bindPopup(popup_52512cbe55a049ff9e76b6f4a4fb7cfd)
+        ;
+
+        
+    
+    
+            var marker_ccd336cfb8cc45298c037b7a030b6be3 = L.marker(
+                [9.89166, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_f4bc4a8c2a9f4ec5ab06a96dd878e3bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99e0aa8633f24b7c8271f31b6b411e72 = $(`<div id="html_99e0aa8633f24b7c8271f31b6b411e72" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque Los Espaveles, CATIE, Valle del Reventazón, Sendero Los Espaveles <strong>Elevación:</strong> 625.0 m  <strong>Fecha:</strong> 1991-12-04 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Barry E. Hammel|Nelson Zamora <strong>Identificadores:</strong> Hammel & Zamora, XII</div>`)[0];
+            popup_f4bc4a8c2a9f4ec5ab06a96dd878e3bd.setContent(html_99e0aa8633f24b7c8271f31b6b411e72);
+        
+
+        marker_ccd336cfb8cc45298c037b7a030b6be3.bindPopup(popup_f4bc4a8c2a9f4ec5ab06a96dd878e3bd)
+        ;
+
+        
+    
+    
+            var marker_f00b3160866f4697adae72b099f6681f = L.marker(
+                [9.89166, -83.65],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_78073db16e454db5a482e5021482842d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20594ea704534c9ca16b6bacd16cb4cd = $(`<div id="html_20594ea704534c9ca16b6bacd16cb4cd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque Los Espaveles, CATIE, Valle del Reventazón, Sendero Los Espaveles <strong>Elevación:</strong> 625.0 m  <strong>Fecha:</strong> 1991-12-04 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Barry E. Hammel|Nelson Zamora <strong>Identificadores:</strong> Hammel & Zamora, XII</div>`)[0];
+            popup_78073db16e454db5a482e5021482842d.setContent(html_20594ea704534c9ca16b6bacd16cb4cd);
+        
+
+        marker_f00b3160866f4697adae72b099f6681f.bindPopup(popup_78073db16e454db5a482e5021482842d)
+        ;
+
+        
+    
+    
+            var marker_2025d8b9f739461f9d480576f9e0f956 = L.marker(
+                [12.311111, -85.22833299999999],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_22e8c835a9d64cbfa0b7eaec6fde4c68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a4a16ec9e924f35ae41e42f656c2168 = $(`<div id="html_6a4a16ec9e924f35ae41e42f656c2168" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 5.1 km NE of vado of Río Corozo along road to Betulia; gallery forest <strong>Elevación:</strong> 395.0 m  <strong>Fecha:</strong> 2011-05-13 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> H. van der Werff</div>`)[0];
+            popup_22e8c835a9d64cbfa0b7eaec6fde4c68.setContent(html_6a4a16ec9e924f35ae41e42f656c2168);
+        
+
+        marker_2025d8b9f739461f9d480576f9e0f956.bindPopup(popup_22e8c835a9d64cbfa0b7eaec6fde4c68)
+        ;
+
+        
+    
+    
+            var marker_d097048e437c465dacef7cab8c77dff3 = L.marker(
+                [16.125, -92.05833299999999],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_1485dbf75b714cecac6dede717684d5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2fefbc860ac420186d1e5d36e06a486 = $(`<div id="html_e2fefbc860ac420186d1e5d36e06a486" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 10 km ENE of Dos Lagos above Santa Elena <strong>Elevación:</strong> 585.0 m  <strong>Fecha:</strong> 1981-08-15 00:00:00+00:00 <strong>Recolectores:</strong> D.E. Breedlove <strong>Identificadores:</strong> NO DISPONIBLE</div>`)[0];
+            popup_1485dbf75b714cecac6dede717684d5d.setContent(html_e2fefbc860ac420186d1e5d36e06a486);
+        
+
+        marker_d097048e437c465dacef7cab8c77dff3.bindPopup(popup_1485dbf75b714cecac6dede717684d5d)
+        ;
+
+        
+    
+    
+            var marker_b6610fb8e2b643e9861699956c8dd592 = L.marker(
+                [16.109722, -91.616667],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_2617e71c4d804ae1bb4c0427a4846c44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c05b6aa622549b4a1a47e00a4a0061d = $(`<div id="html_2c05b6aa622549b4a1a47e00a4a0061d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colonia Cuauhtemoc, km 24 carretera Monte Bello-Santa Elena <strong>Elevación:</strong> 710.0 m  <strong>Fecha:</strong> 1985-06-15 00:00:00+00:00 <strong>Recolectores:</strong> A. Méndez G. (Alush Shilom Ton) <strong>Identificadores:</strong> F. Lorea H.</div>`)[0];
+            popup_2617e71c4d804ae1bb4c0427a4846c44.setContent(html_2c05b6aa622549b4a1a47e00a4a0061d);
+        
+
+        marker_b6610fb8e2b643e9861699956c8dd592.bindPopup(popup_2617e71c4d804ae1bb4c0427a4846c44)
+        ;
+
+        
+    
+    
+            var marker_7191a6dc191a46cc965f73908cc4fce8 = L.marker(
+                [13.283332999999999, -85.666667],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_6c9b3a75a25f408086e95bc8d50bb1ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cdc2459767b49d3867dd7bb128e378f = $(`<div id="html_4cdc2459767b49d3867dd7bb128e378f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio del Cua, Macizos del Cerro Peñas Blanca, Cerro El Tabaco <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1997-07-24 00:00:00+00:00 <strong>Recolectores:</strong> R.M. Rueda|I. Coronado G. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6c9b3a75a25f408086e95bc8d50bb1ed.setContent(html_4cdc2459767b49d3867dd7bb128e378f);
+        
+
+        marker_7191a6dc191a46cc965f73908cc4fce8.bindPopup(popup_6c9b3a75a25f408086e95bc8d50bb1ed)
+        ;
+
+        
+    
+    
+            var marker_88ef548602464ef0bdfd9e9182662543 = L.marker(
+                [13.166667000000002, -86.2],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_9552361effc14d86856e8eae005ca837 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6969c841bc494e97b7d7d7b66030b013 = $(`<div id="html_6969c841bc494e97b7d7d7b66030b013" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Natural Miraflor, Municipio de Esteli, Comunidad Los Volcancitos <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1999-07-10 00:00:00+00:00 <strong>Recolectores:</strong> R.M. Rueda|I. Coronado G.|W. Velásquez|M. Arróliga <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9552361effc14d86856e8eae005ca837.setContent(html_6969c841bc494e97b7d7d7b66030b013);
+        
+
+        marker_88ef548602464ef0bdfd9e9182662543.bindPopup(popup_9552361effc14d86856e8eae005ca837)
+        ;
+
+        
+    
+    
+            var marker_a64eb957b6be454a91d1e5fb22feb13d = L.marker(
+                [13.25, -86.216667],
+                {}
+            ).addTo(marker_cluster_e3a1eb712f954c7485367cde66aeb287);
+        
+    
+        var popup_f13413d521a34e83a59c6419408d375c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8934ce5ba0c453b80b5c227c2fdb601 = $(`<div id="html_d8934ce5ba0c453b80b5c227c2fdb601" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Natural Miraflor, Comarca los Volcancitos. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1999-08-26 00:00:00+00:00 <strong>Recolectores:</strong> R.M. Rueda <strong>Identificadores:</strong> H. van der Werff</div>`)[0];
+            popup_f13413d521a34e83a59c6419408d375c.setContent(html_d8934ce5ba0c453b80b5c227c2fdb601);
+        
+
+        marker_a64eb957b6be454a91d1e5fb22feb13d.bindPopup(popup_f13413d521a34e83a59c6419408d375c)
+        ;
+
+        
+    
+    
+            var layer_control_15863392d4e44539811ca0f9019c0096 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f217a5da60f44fde96d95158e15945b2,
+                    "ESRI World Imagery" : tile_layer_d34369a2abda443aa11f1a4796e36654,
+                },
+                overlays :  {
+                    "macro_element_e3a1eb712f954c7485367cde66aeb287" : marker_cluster_e3a1eb712f954c7485367cde66aeb287,
+                },
+            };
+            L.control.layers(
+                layer_control_15863392d4e44539811ca0f9019c0096.base_layers,
+                layer_control_15863392d4e44539811ca0f9019c0096.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2452ff35a9bb4d9e88d25cc19c39e9d7);
+            tile_layer_d34369a2abda443aa11f1a4796e36654.remove();
+        
+</script>

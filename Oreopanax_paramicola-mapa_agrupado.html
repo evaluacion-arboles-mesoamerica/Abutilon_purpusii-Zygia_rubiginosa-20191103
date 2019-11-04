@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6cf88b1a633d4f93965cca06e1cd2fcb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6cf88b1a633d4f93965cca06e1cd2fcb" ></div>
+        
+</body>
+<script>    
+    
+            var map_6cf88b1a633d4f93965cca06e1cd2fcb = L.map(
+                "map_6cf88b1a633d4f93965cca06e1cd2fcb",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_6cf88b1a633d4f93965cca06e1cd2fcb);
+
+            
+
+        
+    
+            var tile_layer_c51b5e999c8343e9926a662c1ed1e08c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6cf88b1a633d4f93965cca06e1cd2fcb);
+        
+    
+            var tile_layer_4b1ace0f1adc48b88e130d0052b9e463 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6cf88b1a633d4f93965cca06e1cd2fcb);
+        
+    
+            var marker_cluster_f96205b848a24e66bff18046ea064fdf = L.markerClusterGroup(
+                {}
+            );
+            map_6cf88b1a633d4f93965cca06e1cd2fcb.addLayer(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+            var marker_c1e93e2b67a64dc495e5eb31b8f06a85 = L.marker(
+                [9.555556, -83.758333],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_abbaffecdc5d425c837df1390112c2c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_985d4a8c6a584f0dae4c971d28e5415b = $(`<div id="html_985d4a8c6a584f0dae4c971d28e5415b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Paramo Buena Vista; paramo alterado en los alrededores de las torres del ICE <strong>Elevación:</strong> 3400.0 m  <strong>Fecha:</strong> 1993-10-19 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_abbaffecdc5d425c837df1390112c2c9.setContent(html_985d4a8c6a584f0dae4c971d28e5415b);
+        
+
+        marker_c1e93e2b67a64dc495e5eb31b8f06a85.bindPopup(popup_abbaffecdc5d425c837df1390112c2c9)
+        ;
+
+        
+    
+    
+            var marker_e1fa85c083da4a0eb3f49b4ffe4e7d56 = L.marker(
+                [9.519167, -84.045],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_14af03681c75401baf353b7a74e4fbee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb6cac3f0d2c40ddb859c8c0d23ce5ad = $(`<div id="html_eb6cac3f0d2c40ddb859c8c0d23ce5ad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faja Costena Quepos. Cerro San Isidro, Falda Sur en el camino hacia Esquipulas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 2010-11-18 00:00:00+00:00 <strong>Recolectores:</strong> Frank  Alonso González Brenes; Daniel Santamaría ; Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_14af03681c75401baf353b7a74e4fbee.setContent(html_eb6cac3f0d2c40ddb859c8c0d23ce5ad);
+        
+
+        marker_e1fa85c083da4a0eb3f49b4ffe4e7d56.bindPopup(popup_14af03681c75401baf353b7a74e4fbee)
+        ;
+
+        
+    
+    
+            var marker_808527e33d9b474ab730eb9fbb411d8b = L.marker(
+                [9.519167, -84.045],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_656c07ec9aeb48ba896a219d5cbd2c16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_493ca4c8aa59411d95e7f0dfae0c2e37 = $(`<div id="html_493ca4c8aa59411d95e7f0dfae0c2e37" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faja Costena Quepos. Cerro San Isidro, Falda Sur en el camino hacia Esquipulas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 2010-11-18 00:00:00+00:00 <strong>Recolectores:</strong> Frank  Alonso González Brenes; Daniel Santamaría ; Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_656c07ec9aeb48ba896a219d5cbd2c16.setContent(html_493ca4c8aa59411d95e7f0dfae0c2e37);
+        
+
+        marker_808527e33d9b474ab730eb9fbb411d8b.bindPopup(popup_656c07ec9aeb48ba896a219d5cbd2c16)
+        ;
+
+        
+    
+    
+            var marker_5aa9d33ca92f4c53a9f9ceef556297b8 = L.marker(
+                [9.519167, -84.045],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_d86e2488a8294071b4ed717718e19e6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_216bcf6f3d7541f39949425ce99b3839 = $(`<div id="html_216bcf6f3d7541f39949425ce99b3839" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faja Costena Quepos. Cerro San Isidro, Falda Sur en el camino hacia Esquipulas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 2010-11-18 00:00:00+00:00 <strong>Recolectores:</strong> Frank  Alonso González Brenes; Daniel Santamaría ; Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d86e2488a8294071b4ed717718e19e6b.setContent(html_216bcf6f3d7541f39949425ce99b3839);
+        
+
+        marker_5aa9d33ca92f4c53a9f9ceef556297b8.bindPopup(popup_d86e2488a8294071b4ed717718e19e6b)
+        ;
+
+        
+    
+    
+            var marker_df2e762c817d4ca9a587304b81d17ff0 = L.marker(
+                [9.519167, -84.045],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_46496e9e04db4016843375d09c882f0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e3d8aea66b7478ea8ab4bc199d1065a = $(`<div id="html_0e3d8aea66b7478ea8ab4bc199d1065a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faja Costena Quepos. Cerro San Isidro, Falda Sur en el camino hacia Esquipulas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 2010-11-18 00:00:00+00:00 <strong>Recolectores:</strong> Frank  Alonso González Brenes; Daniel Santamaría ; Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_46496e9e04db4016843375d09c882f0e.setContent(html_0e3d8aea66b7478ea8ab4bc199d1065a);
+        
+
+        marker_df2e762c817d4ca9a587304b81d17ff0.bindPopup(popup_46496e9e04db4016843375d09c882f0e)
+        ;
+
+        
+    
+    
+            var marker_ff1ef8b80e5f47ff8fa8227ad89c4b32 = L.marker(
+                [9.617778, -83.847778],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_608f60ff98fe47458684ed4c07279e2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a400ab9c375490e98a17ee8ca87772a = $(`<div id="html_8a400ab9c375490e98a17ee8ca87772a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Cerro Las Vueltas, Los Quetzales. <strong>Elevación:</strong> 2950.0 m  <strong>Fecha:</strong> 2012-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Frank  Alonso González Brenes; Juan Francisco Morales Quirós <strong>Identificadores:</strong> González Brenes, Frank  Alonso</div>`)[0];
+            popup_608f60ff98fe47458684ed4c07279e2f.setContent(html_8a400ab9c375490e98a17ee8ca87772a);
+        
+
+        marker_ff1ef8b80e5f47ff8fa8227ad89c4b32.bindPopup(popup_608f60ff98fe47458684ed4c07279e2f)
+        ;
+
+        
+    
+    
+            var marker_1ebed6ea3d1342aa840fde16b4bc894c = L.marker(
+                [9.617778, -83.847778],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_73a46cbc025c47a1a47f6e87ddf6065f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abaf92ad98804b2ab4b5fbe9dd3c5c01 = $(`<div id="html_abaf92ad98804b2ab4b5fbe9dd3c5c01" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Cerro Las Vueltas, Los Quetzales. <strong>Elevación:</strong> 2950.0 m  <strong>Fecha:</strong> 2012-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Frank  Alonso González Brenes; Juan Francisco Morales Quirós <strong>Identificadores:</strong> González Brenes, Frank  Alonso</div>`)[0];
+            popup_73a46cbc025c47a1a47f6e87ddf6065f.setContent(html_abaf92ad98804b2ab4b5fbe9dd3c5c01);
+        
+
+        marker_1ebed6ea3d1342aa840fde16b4bc894c.bindPopup(popup_73a46cbc025c47a1a47f6e87ddf6065f)
+        ;
+
+        
+    
+    
+            var marker_ea2b21f655794076a1baba6f1ab58734 = L.marker(
+                [9.617778, -83.847778],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_2defd2be46034748bbe36023dc3a5e4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76e2b85ce6814399bf237b535774dda7 = $(`<div id="html_76e2b85ce6814399bf237b535774dda7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Cerro Las Vueltas, Los Quetzales. <strong>Elevación:</strong> 2950.0 m  <strong>Fecha:</strong> 2012-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Frank  Alonso González Brenes; Juan Francisco Morales Quirós <strong>Identificadores:</strong> González Brenes, Frank  Alonso</div>`)[0];
+            popup_2defd2be46034748bbe36023dc3a5e4a.setContent(html_76e2b85ce6814399bf237b535774dda7);
+        
+
+        marker_ea2b21f655794076a1baba6f1ab58734.bindPopup(popup_2defd2be46034748bbe36023dc3a5e4a)
+        ;
+
+        
+    
+    
+            var marker_61de4cb2893447d28adc56af48d32903 = L.marker(
+                [9.617778, -83.847778],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_0a01e7dfee274a1e95bd4add7d2ee148 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4ad2f3b0e9345f9a863a2993316ff15 = $(`<div id="html_b4ad2f3b0e9345f9a863a2993316ff15" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Cerro Las Vueltas, Los Quetzales. <strong>Elevación:</strong> 2950.0 m  <strong>Fecha:</strong> 2012-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Frank  Alonso González Brenes; Juan Francisco Morales Quirós <strong>Identificadores:</strong> González Brenes, Frank  Alonso</div>`)[0];
+            popup_0a01e7dfee274a1e95bd4add7d2ee148.setContent(html_b4ad2f3b0e9345f9a863a2993316ff15);
+        
+
+        marker_61de4cb2893447d28adc56af48d32903.bindPopup(popup_0a01e7dfee274a1e95bd4add7d2ee148)
+        ;
+
+        
+    
+    
+            var marker_fcf2863a691244b797bb2998a32f03c5 = L.marker(
+                [9.090216999999999, -82.869867],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_78224aa8566d439295a8b534072b5fed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_659fdf9e840c49fbadd60d40ef4d2bba = $(`<div id="html_659fdf9e840c49fbadd60d40ef4d2bba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 12.3 km NE of Estación Pittier, SE slopes of Cerro Itamut, ridge above small quebrada running between Itamut and El Pyramide. <strong>Elevación:</strong> 2900.0 m  <strong>Fecha:</strong> 2006-03-14 00:00:00+00:00 <strong>Recolectores:</strong> Sandy Knapp|Alex K. Monro <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_78224aa8566d439295a8b534072b5fed.setContent(html_659fdf9e840c49fbadd60d40ef4d2bba);
+        
+
+        marker_fcf2863a691244b797bb2998a32f03c5.bindPopup(popup_78224aa8566d439295a8b534072b5fed)
+        ;
+
+        
+    
+    
+            var marker_1c8a991a76db4b96835d5e590cd57ecc = L.marker(
+                [9.025, -82.81666700000001],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_055c6a851f164710abd9dfa3beca7cab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4dd9fe5f7cda44bf80498cb7a4611e90 = $(`<div id="html_4dd9fe5f7cda44bf80498cb7a4611e90" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, upper slopes of Cerro Echandi. <strong>Elevación:</strong> 2850.0 m  <strong>Fecha:</strong> 1983-08-23 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|Luis Diego Gómez P.|Alfredo Grijalva P.|Isidro A. Chacón G.|Rafael Chacón|Gerardo Herrera Ch. <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_055c6a851f164710abd9dfa3beca7cab.setContent(html_4dd9fe5f7cda44bf80498cb7a4611e90);
+        
+
+        marker_1c8a991a76db4b96835d5e590cd57ecc.bindPopup(popup_055c6a851f164710abd9dfa3beca7cab)
+        ;
+
+        
+    
+    
+            var marker_aefbba214677472992ad1b34421aa73f = L.marker(
+                [9.566667, -83.666667],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_181e9e8bd879420bbdae87ef6f3be493 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ce93d2e67934339af7b507936b584f2 = $(`<div id="html_5ce93d2e67934339af7b507936b584f2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San José-Cartago, Cordillera de Talamanca, upper slopes, western ridge of Cerros Cuericí, trail along ridge. <strong>Elevación:</strong> 3160.0 m  <strong>Fecha:</strong> 1983-09-15 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_181e9e8bd879420bbdae87ef6f3be493.setContent(html_5ce93d2e67934339af7b507936b584f2);
+        
+
+        marker_aefbba214677472992ad1b34421aa73f.bindPopup(popup_181e9e8bd879420bbdae87ef6f3be493)
+        ;
+
+        
+    
+    
+            var marker_dceb813127ef46959d54fae1fb4dfd9c = L.marker(
+                [9.093722, -82.882944],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_4ea109d18d7e4e508140c334c2d8995d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96c508c0f95b4c79a6c0522d628fd044 = $(`<div id="html_96c508c0f95b4c79a6c0522d628fd044" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Between Itamut and Bine peaks, Fábrega massif. <strong>Elevación:</strong> 3200.0 m  <strong>Fecha:</strong> 1984-03-05 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Gómez P.|Isidro A. Chacón G.|Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_4ea109d18d7e4e508140c334c2d8995d.setContent(html_96c508c0f95b4c79a6c0522d628fd044);
+        
+
+        marker_dceb813127ef46959d54fae1fb4dfd9c.bindPopup(popup_4ea109d18d7e4e508140c334c2d8995d)
+        ;
+
+        
+    
+    
+            var marker_3d8de43d0c9b407e998702d7602f42ee = L.marker(
+                [9.65, -83.85],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_cc55582511584d948da766444a5d15b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_940da1ee2c394186bc62d8385d092a45 = $(`<div id="html_940da1ee2c394186bc62d8385d092a45" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca. Salsipuedes. Km 69, Carretera Interamericana. <strong>Elevación:</strong> 2610.0 m  <strong>Fecha:</strong> 1994-03-10 00:00:00+00:00 <strong>Recolectores:</strong> Víctor H. Ramírez|Barry E. Hammel <strong>Identificadores:</strong> J. F. Morales & A. Idárraga</div>`)[0];
+            popup_cc55582511584d948da766444a5d15b2.setContent(html_940da1ee2c394186bc62d8385d092a45);
+        
+
+        marker_3d8de43d0c9b407e998702d7602f42ee.bindPopup(popup_cc55582511584d948da766444a5d15b2)
+        ;
+
+        
+    
+    
+            var marker_d64cdf0a749b439789bf9ffab7dca013 = L.marker(
+                [9.53, -83.71],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_016e6ad386b64d518bd6925ac99df9b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ac4c296e61b4bc3ac08369346fdcb54 = $(`<div id="html_8ac4c296e61b4bc3ac08369346fdcb54" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca. Paramo Buena Vista; paramo alterado en los alrededores de las torres del ICE <strong>Elevación:</strong> 3400.0 m  <strong>Fecha:</strong> 1993-10-19 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales|Nelson Zamora|Eduardo Lépiz|Víctor H. Ramírez <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_016e6ad386b64d518bd6925ac99df9b0.setContent(html_8ac4c296e61b4bc3ac08369346fdcb54);
+        
+
+        marker_d64cdf0a749b439789bf9ffab7dca013.bindPopup(popup_016e6ad386b64d518bd6925ac99df9b0)
+        ;
+
+        
+    
+    
+            var marker_10044106787b4e10997b354d712229d7 = L.marker(
+                [9.693056, -83.867778],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_7689af7f9a1b4fddae51045921ca41e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c42c996492145e2a851852a7fb9d397 = $(`<div id="html_4c42c996492145e2a851852a7fb9d397" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Tapantí-Macizo de La Muerte. Cuenca del Reventazón. La Esperanza del Guarco, colectando en bosque. <strong>Elevación:</strong> 2840.0 m  <strong>Fecha:</strong> 1999-04-21 00:00:00+00:00 <strong>Recolectores:</strong> Milady Alfaro <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_7689af7f9a1b4fddae51045921ca41e2.setContent(html_4c42c996492145e2a851852a7fb9d397);
+        
+
+        marker_10044106787b4e10997b354d712229d7.bindPopup(popup_7689af7f9a1b4fddae51045921ca41e2)
+        ;
+
+        
+    
+    
+            var marker_d62908d970b34b90967e0f988e74c81d = L.marker(
+                [9.285, -83.00805600000001],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_e3db0721f1b7435bb610b8111e5d0088 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a10d49e3c0284b09bad51ca9dbde81b1 = $(`<div id="html_a10d49e3c0284b09bad51ca9dbde81b1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Amistad. Tararia. 3,5 km NE; del Cerro Kamuk. <strong>Elevación:</strong> 3000.0 m  <strong>Fecha:</strong> 2002-04-13 00:00:00+00:00 <strong>Recolectores:</strong> Luis A. González|Evelio Alfaro|A. Garita <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_e3db0721f1b7435bb610b8111e5d0088.setContent(html_a10d49e3c0284b09bad51ca9dbde81b1);
+        
+
+        marker_d62908d970b34b90967e0f988e74c81d.bindPopup(popup_e3db0721f1b7435bb610b8111e5d0088)
+        ;
+
+        
+    
+    
+            var marker_c265647e44f04e27bdcc5142f411d843 = L.marker(
+                [8.803056, -82.52583299999999],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_5294775edc0b47a99ed429a3c0c418a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6cb642746a3441593ae10101b6233aa = $(`<div id="html_a6cb642746a3441593ae10101b6233aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino de acceso al Parque Nacional Volcán Barú (vertiente oriental). <strong>Elevación:</strong> 2950.0 m  <strong>Fecha:</strong> 1992-01-15 00:00:00+00:00 <strong>Recolectores:</strong> Maritza Vega|Ricardo Rincón <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_5294775edc0b47a99ed429a3c0c418a6.setContent(html_a6cb642746a3441593ae10101b6233aa);
+        
+
+        marker_c265647e44f04e27bdcc5142f411d843.bindPopup(popup_5294775edc0b47a99ed429a3c0c418a6)
+        ;
+
+        
+    
+    
+            var marker_7a7b2806b81e4b4bbf023de2e0bc5e4d = L.marker(
+                [8.809722, -82.529167],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_79b34e7a82e34c3aa2523488fc57ed34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acfa3b9feb8e461bbc87df0b5b2e3e82 = $(`<div id="html_acfa3b9feb8e461bbc87df0b5b2e3e82" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Vólcan Barú, just SE of La Nivera. <strong>Elevación:</strong> 3048.0 m  <strong>Fecha:</strong> 1979-03-15 00:00:00+00:00 <strong>Recolectores:</strong> William G. D'Arcy|Barry E. Hammel <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_79b34e7a82e34c3aa2523488fc57ed34.setContent(html_acfa3b9feb8e461bbc87df0b5b2e3e82);
+        
+
+        marker_7a7b2806b81e4b4bbf023de2e0bc5e4d.bindPopup(popup_79b34e7a82e34c3aa2523488fc57ed34)
+        ;
+
+        
+    
+    
+            var marker_c5ba38efd1b64d869107ed543fbb9b66 = L.marker(
+                [8.806667, -82.525],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_162a86a058344235b430df0cf01dcd19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e7d9c2874ed48ca963a31b5f01e5352 = $(`<div id="html_9e7d9c2874ed48ca963a31b5f01e5352" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> E side of Volcán Barú, on road from Boquete to near summit. Ericaceae-dominated elfin forest from ca. 3000 m to just below the summit. Elevation on original label: 3000 m] <strong>Elevación:</strong> 3200.0 m  <strong>Fecha:</strong> 1975-07-24 00:00:00+00:00 <strong>Recolectores:</strong> Scott A. Mori|A. Bolten <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_162a86a058344235b430df0cf01dcd19.setContent(html_9e7d9c2874ed48ca963a31b5f01e5352);
+        
+
+        marker_c5ba38efd1b64d869107ed543fbb9b66.bindPopup(popup_162a86a058344235b430df0cf01dcd19)
+        ;
+
+        
+    
+    
+            var marker_b8ac69d4c0f64f2dba7961ec083b4ab5 = L.marker(
+                [8.801667, -82.523333],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_bfa6baf5caa74acabf404eee1f2395cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_967594a0e7914ed4bb6487f0af63132f = $(`<div id="html_967594a0e7914ed4bb6487f0af63132f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Muleto to Summit of El Barú. <strong>Elevación:</strong> 3150.0 m  <strong>Fecha:</strong> 1975-11-27 00:00:00+00:00 <strong>Recolectores:</strong> William G. D'Arcy <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_bfa6baf5caa74acabf404eee1f2395cc.setContent(html_967594a0e7914ed4bb6487f0af63132f);
+        
+
+        marker_b8ac69d4c0f64f2dba7961ec083b4ab5.bindPopup(popup_bfa6baf5caa74acabf404eee1f2395cc)
+        ;
+
+        
+    
+    
+            var marker_6c37cbaa2ee5446dad56bf35b7b1d8fd = L.marker(
+                [8.7925, -82.52833299999999],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_ab418792448f4bae971b15d27bd89591 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fad2c3dc9bd42d5a6eba27ce79fce59 = $(`<div id="html_2fad2c3dc9bd42d5a6eba27ce79fce59" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Baru. In and near Potrero Muleto. <strong>Elevación:</strong> 2956.56 m  <strong>Fecha:</strong> 1978-11-17 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_ab418792448f4bae971b15d27bd89591.setContent(html_2fad2c3dc9bd42d5a6eba27ce79fce59);
+        
+
+        marker_6c37cbaa2ee5446dad56bf35b7b1d8fd.bindPopup(popup_ab418792448f4bae971b15d27bd89591)
+        ;
+
+        
+    
+    
+            var marker_99fbec6ef96e4d86a4280ae9b6007310 = L.marker(
+                [8.7925, -82.52833299999999],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_7b70132df9434925aef22ce993c730c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08ce48297a2f42ae810f9e62fc1f2540 = $(`<div id="html_08ce48297a2f42ae810f9e62fc1f2540" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Baru. In and near Potrero Muleto. <strong>Elevación:</strong> 2956.56 m  <strong>Fecha:</strong> 1978-11-17 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_7b70132df9434925aef22ce993c730c5.setContent(html_08ce48297a2f42ae810f9e62fc1f2540);
+        
+
+        marker_99fbec6ef96e4d86a4280ae9b6007310.bindPopup(popup_7b70132df9434925aef22ce993c730c5)
+        ;
+
+        
+    
+    
+            var marker_54c6d13fb2aa4c83a2e598956b9c2e93 = L.marker(
+                [9.5525, -83.71972],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_1922cf6ee0394224be1ed103bb8334f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a44de683f274b3096a11b26cd335030 = $(`<div id="html_8a44de683f274b3096a11b26cd335030" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Georgiana, Cerro de la Muerte <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1965-08-02 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_1922cf6ee0394224be1ed103bb8334f0.setContent(html_8a44de683f274b3096a11b26cd335030);
+        
+
+        marker_54c6d13fb2aa4c83a2e598956b9c2e93.bindPopup(popup_1922cf6ee0394224be1ed103bb8334f0)
+        ;
+
+        
+    
+    
+            var marker_1d5b8c2cd4454cbab1e6fc108c1b2928 = L.marker(
+                [9.099, -82.867333],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_cc76d878b05a476ab9fda032fabe4e57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a764ef52235248528900a21acbae4f28 = $(`<div id="html_a764ef52235248528900a21acbae4f28" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Fábrega: ca 1.5 km south east of peak. <strong>Elevación:</strong> 3200.0 m  <strong>Fecha:</strong> 2003-03-14 00:00:00+00:00 <strong>Recolectores:</strong> Alex K. Monro|Bente B. Klitgaard|José De Gracia <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_cc76d878b05a476ab9fda032fabe4e57.setContent(html_a764ef52235248528900a21acbae4f28);
+        
+
+        marker_1d5b8c2cd4454cbab1e6fc108c1b2928.bindPopup(popup_cc76d878b05a476ab9fda032fabe4e57)
+        ;
+
+        
+    
+    
+            var marker_770047b8c24d45b393a483abc9617d93 = L.marker(
+                [9.576739, -83.750219],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_24ba76abc73040b4a9ab92374cbfb209 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7895f6b105c74c50aeb3bc3ba8bd4656 = $(`<div id="html_7895f6b105c74c50aeb3bc3ba8bd4656" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Orosi.  P.N. Tapantí-Macizo Cerro de la Muerte, sector Cerro Asunción.  Camino a torre #63. <strong>Elevación:</strong> 3240.0 m  <strong>Fecha:</strong> 2017-05-29 00:00:00+00:00 <strong>Recolectores:</strong> Frank González|T. Alfaro <strong>Identificadores:</strong> E. Jiménez</div>`)[0];
+            popup_24ba76abc73040b4a9ab92374cbfb209.setContent(html_7895f6b105c74c50aeb3bc3ba8bd4656);
+        
+
+        marker_770047b8c24d45b393a483abc9617d93.bindPopup(popup_24ba76abc73040b4a9ab92374cbfb209)
+        ;
+
+        
+    
+    
+            var marker_541d29bd9f704fabbbbf079f55be1e9a = L.marker(
+                [9.62312, -83.862319],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_4c8ff9af8a0e47ceb18497e883bd3e7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87bbe0ab1060443eb1ad383fab42b572 = $(`<div id="html_87bbe0ab1060443eb1ad383fab42b572" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Copey.  R.B. Las Vueltas.  Orillas de camino y bordes de bosque (páramo-robledal). <strong>Elevación:</strong> 3092.0 m  <strong>Fecha:</strong> 2017-05-30 00:00:00+00:00 <strong>Recolectores:</strong> Frank González|T. Alfaro <strong>Identificadores:</strong> E. Jiménez</div>`)[0];
+            popup_4c8ff9af8a0e47ceb18497e883bd3e7b.setContent(html_87bbe0ab1060443eb1ad383fab42b572);
+        
+
+        marker_541d29bd9f704fabbbbf079f55be1e9a.bindPopup(popup_4c8ff9af8a0e47ceb18497e883bd3e7b)
+        ;
+
+        
+    
+    
+            var marker_6d62aba9b86845e79176654c5d86448f = L.marker(
+                [9.53, -83.57],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_53ecf14828604317bf7619526218b2f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a95818f022b54e66821a594c732192d6 = $(`<div id="html_a95818f022b54e66821a594c732192d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Chirripó, Cuenca Térraba-Sierpe, Sendero El Paso Los Indios <strong>Elevación:</strong> 3100.0 m  <strong>Fecha:</strong> 1997-05-01 00:00:00+00:00 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> J. F. Morales & A. Idárraga</div>`)[0];
+            popup_53ecf14828604317bf7619526218b2f8.setContent(html_a95818f022b54e66821a594c732192d6);
+        
+
+        marker_6d62aba9b86845e79176654c5d86448f.bindPopup(popup_53ecf14828604317bf7619526218b2f8)
+        ;
+
+        
+    
+    
+            var marker_41ee8d18764741dfb923d97c2c1d366f = L.marker(
+                [9.58, -83.8],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_3c6c63406dd949a5ac407dac85c862fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3cc2f02c3af4d59acb04b292742d201 = $(`<div id="html_b3cc2f02c3af4d59acb04b292742d201" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Los Santos, Cuenca del Savegre, camino viejo maderero entrada a 200 m de Carretera Interamericana a mano izquierda de camino a Providencia <strong>Elevación:</strong> 2500.0 m  <strong>Fecha:</strong> 1997-07-19 00:00:00+00:00 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> J. F. Morales & A. Idárraga</div>`)[0];
+            popup_3c6c63406dd949a5ac407dac85c862fc.setContent(html_b3cc2f02c3af4d59acb04b292742d201);
+        
+
+        marker_41ee8d18764741dfb923d97c2c1d366f.bindPopup(popup_3c6c63406dd949a5ac407dac85c862fc)
+        ;
+
+        
+    
+    
+            var marker_1131ab0adc6d43d68531af402ff642f4 = L.marker(
+                [9.61, -83.81],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_7a18a8640f6041379f9203a4c8973ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_839b70b8e70340ff966a959b4084dc48 = $(`<div id="html_839b70b8e70340ff966a959b4084dc48" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Río Macho, Cuenca del Savegre, Estación Ojo de Agua, Sendero el Mascarilla <strong>Elevación:</strong> 2950.0 m  <strong>Fecha:</strong> 1996-01-12 00:00:00+00:00 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> J. F. Morales & A. Idárraga</div>`)[0];
+            popup_7a18a8640f6041379f9203a4c8973ef1.setContent(html_839b70b8e70340ff966a959b4084dc48);
+        
+
+        marker_1131ab0adc6d43d68531af402ff642f4.bindPopup(popup_7a18a8640f6041379f9203a4c8973ef1)
+        ;
+
+        
+    
+    
+            var marker_9cdeb169a3484150895f65c5faff1eec = L.marker(
+                [9.5, -83.53],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_a36d40b843124803bc198f9e152d46fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff4649a0fc124c529cfa04291c3f1ca3 = $(`<div id="html_ff4649a0fc124c529cfa04291c3f1ca3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along the trail from Canaán to Chirripó via Los Angeles, above (north of) the Río Talari,  on slopes and ridges. <strong>Elevación:</strong> 3150.0 m  <strong>Fecha:</strong> 1970-01-19 00:00:00+00:00 <strong>Recolectores:</strong> William C. Burger|Ronald L. Liesner <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_a36d40b843124803bc198f9e152d46fe.setContent(html_ff4649a0fc124c529cfa04291c3f1ca3);
+        
+
+        marker_9cdeb169a3484150895f65c5faff1eec.bindPopup(popup_a36d40b843124803bc198f9e152d46fe)
+        ;
+
+        
+    
+    
+            var marker_30629b651536458fa8ea3b6878679a55 = L.marker(
+                [9.5, -83.53],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_ff6378f97b6e498bbdee8cbb841bb976 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74bf25bd6f644004807002941e53023b = $(`<div id="html_74bf25bd6f644004807002941e53023b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> On slopes and ridges, along the trail from Canaán to Chirripó via Los Angeles, above (north of) the Río Talari <strong>Elevación:</strong> 3150.0 m  <strong>Fecha:</strong> 1971-08-24 00:00:00+00:00 <strong>Recolectores:</strong> William C. Burger <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_ff6378f97b6e498bbdee8cbb841bb976.setContent(html_74bf25bd6f644004807002941e53023b);
+        
+
+        marker_30629b651536458fa8ea3b6878679a55.bindPopup(popup_ff6378f97b6e498bbdee8cbb841bb976)
+        ;
+
+        
+    
+    
+            var marker_6e9ae32d6bfc4828bafb89dd763e7a15 = L.marker(
+                [9.093722, -82.882944],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_d229d48c452f43e284f56e0decf06b54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb161e83ba5b43f1949af561da1eb18c = $(`<div id="html_cb161e83ba5b43f1949af561da1eb18c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Between Itamut and Bine peaks, Fábrega massif. <strong>Elevación:</strong> 3200.0 m  <strong>Fecha:</strong> 1984-03-05 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Gómez P.|Isidro A. Chacón G.|Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_d229d48c452f43e284f56e0decf06b54.setContent(html_cb161e83ba5b43f1949af561da1eb18c);
+        
+
+        marker_6e9ae32d6bfc4828bafb89dd763e7a15.bindPopup(popup_d229d48c452f43e284f56e0decf06b54)
+        ;
+
+        
+    
+    
+            var marker_c87207745c8042eb8a45f7624114bc58 = L.marker(
+                [8.811944, -82.528611],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_3cbb5dc19d794ba485ffacff3dd8b00c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fb4489d265544c2b7c63b07d7490433 = $(`<div id="html_5fb4489d265544c2b7c63b07d7490433" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Eastern slope of Volcán de Chiriquí (Barú) above Boquete. <strong>Elevación:</strong> 3100.0 m  <strong>Fecha:</strong> 1975-11-20 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|William G. D'Arcy <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_3cbb5dc19d794ba485ffacff3dd8b00c.setContent(html_5fb4489d265544c2b7c63b07d7490433);
+        
+
+        marker_c87207745c8042eb8a45f7624114bc58.bindPopup(popup_3cbb5dc19d794ba485ffacff3dd8b00c)
+        ;
+
+        
+    
+    
+            var marker_9c7eccfb093e42c589ee734ba787d3d5 = L.marker(
+                [9.55, -83.66],
+                {}
+            ).addTo(marker_cluster_f96205b848a24e66bff18046ea064fdf);
+        
+    
+        var popup_0ad9306836e448fe8b304fe872e066bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a42948271f864903bd4137a13f1844c4 = $(`<div id="html_a42948271f864903bd4137a13f1844c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1000 km from Biological Station along gravel road.  Albergue Cuerici.  Upper montane forest. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 2000-07-08 00:00:00+00:00 <strong>Recolectores:</strong> Allison Miller <strong>Identificadores:</strong> J. F. Morales & A. Idárraga</div>`)[0];
+            popup_0ad9306836e448fe8b304fe872e066bf.setContent(html_a42948271f864903bd4137a13f1844c4);
+        
+
+        marker_9c7eccfb093e42c589ee734ba787d3d5.bindPopup(popup_0ad9306836e448fe8b304fe872e066bf)
+        ;
+
+        
+    
+    
+            var layer_control_b82b54e232a2480591a9c3cc656b41e5 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c51b5e999c8343e9926a662c1ed1e08c,
+                    "ESRI World Imagery" : tile_layer_4b1ace0f1adc48b88e130d0052b9e463,
+                },
+                overlays :  {
+                    "macro_element_f96205b848a24e66bff18046ea064fdf" : marker_cluster_f96205b848a24e66bff18046ea064fdf,
+                },
+            };
+            L.control.layers(
+                layer_control_b82b54e232a2480591a9c3cc656b41e5.base_layers,
+                layer_control_b82b54e232a2480591a9c3cc656b41e5.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6cf88b1a633d4f93965cca06e1cd2fcb);
+            tile_layer_4b1ace0f1adc48b88e130d0052b9e463.remove();
+        
+</script>

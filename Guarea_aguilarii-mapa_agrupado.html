@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6bcb3d057c7643d3baf5a84bdf767e7e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6bcb3d057c7643d3baf5a84bdf767e7e" ></div>
+        
+</body>
+<script>    
+    
+            var map_6bcb3d057c7643d3baf5a84bdf767e7e = L.map(
+                "map_6bcb3d057c7643d3baf5a84bdf767e7e",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_6bcb3d057c7643d3baf5a84bdf767e7e);
+
+            
+
+        
+    
+            var tile_layer_dc40671bbd5f4121b0d37f02b0aa3f8c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6bcb3d057c7643d3baf5a84bdf767e7e);
+        
+    
+            var tile_layer_437363433fec4faa89baaa59243ef8f6 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6bcb3d057c7643d3baf5a84bdf767e7e);
+        
+    
+            var marker_cluster_c331b0b7b1b14d0faef314ec3aac2103 = L.markerClusterGroup(
+                {}
+            );
+            map_6bcb3d057c7643d3baf5a84bdf767e7e.addLayer(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+            var marker_c06fa0de4cd1471a87cd7862d2e4b2f1 = L.marker(
+                [8.73059, -83.45491899999999],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_40f357e5a3a34ab0aab66d95d0775103 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6b0252cd53246bebc1a1a61f3ec0baf = $(`<div id="html_d6b0252cd53246bebc1a1a61f3ec0baf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal, entrada Chocuaco <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1996-07-31 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_40f357e5a3a34ab0aab66d95d0775103.setContent(html_d6b0252cd53246bebc1a1a61f3ec0baf);
+        
+
+        marker_c06fa0de4cd1471a87cd7862d2e4b2f1.bindPopup(popup_40f357e5a3a34ab0aab66d95d0775103)
+        ;
+
+        
+    
+    
+            var marker_7623b69d46c1495c8cc524a8fe61335f = L.marker(
+                [8.73059, -83.45491899999999],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_306ca8afbfda40baa3f54033e3b572ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a765d5e236849ef8c1aa96808cfdba0 = $(`<div id="html_7a765d5e236849ef8c1aa96808cfdba0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal, entrada Chocuaco <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1996-07-31 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_306ca8afbfda40baa3f54033e3b572ee.setContent(html_7a765d5e236849ef8c1aa96808cfdba0);
+        
+
+        marker_7623b69d46c1495c8cc524a8fe61335f.bindPopup(popup_306ca8afbfda40baa3f54033e3b572ee)
+        ;
+
+        
+    
+    
+            var marker_ef5e28446f724f58930f94a8ddd2ae45 = L.marker(
+                [8.73059, -83.45491899999999],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_3d3efc0f3dc7414287494ee6e7b0ba75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f01bc52411504b0e87df68510d34ecf6 = $(`<div id="html_f01bc52411504b0e87df68510d34ecf6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal, entrada Chocuaco <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1996-09-24 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_3d3efc0f3dc7414287494ee6e7b0ba75.setContent(html_f01bc52411504b0e87df68510d34ecf6);
+        
+
+        marker_ef5e28446f724f58930f94a8ddd2ae45.bindPopup(popup_3d3efc0f3dc7414287494ee6e7b0ba75)
+        ;
+
+        
+    
+    
+            var marker_e9bb2db7d4494286a9e8e1368d095936 = L.marker(
+                [8.73059, -83.45491899999999],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_181cc385452849e4be237de2f6683766 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9577c98f7e34d6ca141ffd70cdf7538 = $(`<div id="html_b9577c98f7e34d6ca141ffd70cdf7538" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal, entrada Chocuaco <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1996-09-24 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_181cc385452849e4be237de2f6683766.setContent(html_b9577c98f7e34d6ca141ffd70cdf7538);
+        
+
+        marker_e9bb2db7d4494286a9e8e1368d095936.bindPopup(popup_181cc385452849e4be237de2f6683766)
+        ;
+
+        
+    
+    
+            var marker_bb4a73e3996d430b83dafe27279df567 = L.marker(
+                [8.7, -83.55],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_97b36ea6ced74c1aa80f31367dd1419b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62f9c566535c4a8eae06f58eb9353c8b = $(`<div id="html_62f9c566535c4a8eae06f58eb9353c8b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila before Rancho Quemado, near Rincon. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1993-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn Howard Gentry <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_97b36ea6ced74c1aa80f31367dd1419b.setContent(html_62f9c566535c4a8eae06f58eb9353c8b);
+        
+
+        marker_bb4a73e3996d430b83dafe27279df567.bindPopup(popup_97b36ea6ced74c1aa80f31367dd1419b)
+        ;
+
+        
+    
+    
+            var marker_3adfb467bdf44874bf8ad2b86e828570 = L.marker(
+                [8.6, -83.733333],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_929676b70a224f0791c84c7b096a1447 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18d550fc37e94c8ea9cdde5eaae5427a = $(`<div id="html_18d550fc37e94c8ea9cdde5eaae5427a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Llorona to Los Planes. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-25 00:00:00+00:00 <strong>Recolectores:</strong> C. Kernan <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_929676b70a224f0791c84c7b096a1447.setContent(html_18d550fc37e94c8ea9cdde5eaae5427a);
+        
+
+        marker_3adfb467bdf44874bf8ad2b86e828570.bindPopup(popup_929676b70a224f0791c84c7b096a1447)
+        ;
+
+        
+    
+    
+            var marker_e105931aef414971b9249cf5ff333f2e = L.marker(
+                [8.575, -83.575],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_19f035db0d964f97bbedadf8773b495d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee94baaea7964609b626db92371740df = $(`<div id="html_ee94baaea7964609b626db92371740df" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Estero Guerra. Sierpe. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1991-09-27 00:00:00+00:00 <strong>Recolectores:</strong> Juan Marin <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_19f035db0d964f97bbedadf8773b495d.setContent(html_ee94baaea7964609b626db92371740df);
+        
+
+        marker_e105931aef414971b9249cf5ff333f2e.bindPopup(popup_19f035db0d964f97bbedadf8773b495d)
+        ;
+
+        
+    
+    
+            var marker_dfe3855fe06147c8807cd75e182ead54 = L.marker(
+                [8.675, -83.522222],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_fa31692f384e4856b779e0f3ee470d03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fd9d1f434d4459ca92155aca10ddbee = $(`<div id="html_3fd9d1f434d4459ca92155aca10ddbee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Banegas. Aguabuena. <strong>Elevación:</strong> 70.0 m  <strong>Fecha:</strong> 1991-09-25 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_fa31692f384e4856b779e0f3ee470d03.setContent(html_3fd9d1f434d4459ca92155aca10ddbee);
+        
+
+        marker_dfe3855fe06147c8807cd75e182ead54.bindPopup(popup_fa31692f384e4856b779e0f3ee470d03)
+        ;
+
+        
+    
+    
+            var marker_2f57f9f85f954837842af4223adaf0e3 = L.marker(
+                [8.770556, -83.50666700000001],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_09c2db3205d64b24b9dbc8151b177521 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dee5455c95d8435980bd349c49356742 = $(`<div id="html_dee5455c95d8435980bd349c49356742" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón, entrada a Bajo San Juan. <strong>Elevación:</strong> 128.0 m  <strong>Fecha:</strong> 2003-05-31 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; H.H.C. Raaijmakers <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_09c2db3205d64b24b9dbc8151b177521.setContent(html_dee5455c95d8435980bd349c49356742);
+        
+
+        marker_2f57f9f85f954837842af4223adaf0e3.bindPopup(popup_09c2db3205d64b24b9dbc8151b177521)
+        ;
+
+        
+    
+    
+            var marker_559890a133c94b64a7614f22efb14649 = L.marker(
+                [8.770556, -83.50666700000001],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_1e7ab082de6441298fef22940c4a87a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_693a77fee9a4404892773e67fd361906 = $(`<div id="html_693a77fee9a4404892773e67fd361906" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón, entrada a Bajo San Juan. <strong>Elevación:</strong> 128.0 m  <strong>Fecha:</strong> 2003-05-31 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; H.H.C. Raaijmakers <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_1e7ab082de6441298fef22940c4a87a6.setContent(html_693a77fee9a4404892773e67fd361906);
+        
+
+        marker_559890a133c94b64a7614f22efb14649.bindPopup(popup_1e7ab082de6441298fef22940c4a87a6)
+        ;
+
+        
+    
+    
+            var marker_e76daca73b9b452aa5fcde34f75d1397 = L.marker(
+                [8.770556, -83.50666700000001],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_a8fc12b66d344f6389c3e349b3beafee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d1d979bf6524a5e997cd15febe3725c = $(`<div id="html_4d1d979bf6524a5e997cd15febe3725c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón, entrada a Bajo San Juan. <strong>Elevación:</strong> 128.0 m  <strong>Fecha:</strong> 2003-05-31 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; H.H.C. Raaijmakers <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_a8fc12b66d344f6389c3e349b3beafee.setContent(html_4d1d979bf6524a5e997cd15febe3725c);
+        
+
+        marker_e76daca73b9b452aa5fcde34f75d1397.bindPopup(popup_a8fc12b66d344f6389c3e349b3beafee)
+        ;
+
+        
+    
+    
+            var marker_58534dd4c1f647ea92b3c8ac6c92eb9a = L.marker(
+                [8.770556, -83.50666700000001],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_55f913ca4c1b4142b59063f72767743c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e00268bef6f94b9a96289f179bdfb801 = $(`<div id="html_e00268bef6f94b9a96289f179bdfb801" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón, entrada a Bajo San Juan. <strong>Elevación:</strong> 128.0 m  <strong>Fecha:</strong> 2003-05-31 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; H.H.C. Raaijmakers <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_55f913ca4c1b4142b59063f72767743c.setContent(html_e00268bef6f94b9a96289f179bdfb801);
+        
+
+        marker_58534dd4c1f647ea92b3c8ac6c92eb9a.bindPopup(popup_55f913ca4c1b4142b59063f72767743c)
+        ;
+
+        
+    
+    
+            var marker_0cf4224e099044f28727d644ef17e4a1 = L.marker(
+                [8.770556, -83.50666700000001],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_167947a01f874dc1b6fef3d11b00bbd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4592c8dfc07e450daaa6ab261120f3f5 = $(`<div id="html_4592c8dfc07e450daaa6ab261120f3f5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón, entrada a Bajo San Juan. <strong>Elevación:</strong> 128.0 m  <strong>Fecha:</strong> 2003-05-31 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; H.H.C. Raaijmakers <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_167947a01f874dc1b6fef3d11b00bbd3.setContent(html_4592c8dfc07e450daaa6ab261120f3f5);
+        
+
+        marker_0cf4224e099044f28727d644ef17e4a1.bindPopup(popup_167947a01f874dc1b6fef3d11b00bbd3)
+        ;
+
+        
+    
+    
+            var marker_d1d58598886d42ad92746e2ecb321f3c = L.marker(
+                [8.770556, -83.50667],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_9dd1a66a63b642b7a7ad7c6ae04c9104 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_396c85fad2144536a41eb4e58b4d8b65 = $(`<div id="html_396c85fad2144536a41eb4e58b4d8b65" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Bajo San Juan. Bosque aleda?os al camino. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2003-05-31 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> A. Rodriguez</div>`)[0];
+            popup_9dd1a66a63b642b7a7ad7c6ae04c9104.setContent(html_396c85fad2144536a41eb4e58b4d8b65);
+        
+
+        marker_d1d58598886d42ad92746e2ecb321f3c.bindPopup(popup_9dd1a66a63b642b7a7ad7c6ae04c9104)
+        ;
+
+        
+    
+    
+            var marker_3c2cbb67d4194fb4a46a9c36a11b060e = L.marker(
+                [8.770556, -83.50667],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_05151d8d814847e29b9c8876a9b222e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2e61d549d67450db28a258e0a279b33 = $(`<div id="html_a2e61d549d67450db28a258e0a279b33" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce. Cuenca Térraba-Sierpe. Camino a Bajo San Juan. Bosque aledaños al camino. <strong>Elevación:</strong> 128.0 m  <strong>Fecha:</strong> 2003-05-31 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Rodríguez|H. H. C. Raaijmakers <strong>Identificadores:</strong> A. Rodríguez</div>`)[0];
+            popup_05151d8d814847e29b9c8876a9b222e4.setContent(html_a2e61d549d67450db28a258e0a279b33);
+        
+
+        marker_3c2cbb67d4194fb4a46a9c36a11b060e.bindPopup(popup_05151d8d814847e29b9c8876a9b222e4)
+        ;
+
+        
+    
+    
+            var marker_6b9dfdd9cba14779a9f228d05872500c = L.marker(
+                [8.67, -83.52],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_8979282bc2974d4c9c9174ad596929b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e26ee34f2bf84f299dc1a0875a829713 = $(`<div id="html_e26ee34f2bf84f299dc1a0875a829713" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Rincón de Osa. Quebrada Banegas. <strong>Elevación:</strong> 70.0 m  <strong>Fecha:</strong> 1991-09-25 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> A. Rodríguez (INB)</div>`)[0];
+            popup_8979282bc2974d4c9c9174ad596929b0.setContent(html_e26ee34f2bf84f299dc1a0875a829713);
+        
+
+        marker_6b9dfdd9cba14779a9f228d05872500c.bindPopup(popup_8979282bc2974d4c9c9174ad596929b0)
+        ;
+
+        
+    
+    
+            var marker_7743e0b4b3564112999c7c1d9bf27bce = L.marker(
+                [8.7, -83.55],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_2de93a324dc147ff87bf1f6c93115a65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfd44cf44df041f19d1ec2cc36d490e2 = $(`<div id="html_bfd44cf44df041f19d1ec2cc36d490e2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila before Rancho Quemada, near Rincon, Osa Peninsula. Transect 2. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1993-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Rosa Ortiz|Irene Shonle|Jason C. Bradford|P. Anderson <strong>Identificadores:</strong> A. Rodríguez</div>`)[0];
+            popup_2de93a324dc147ff87bf1f6c93115a65.setContent(html_bfd44cf44df041f19d1ec2cc36d490e2);
+        
+
+        marker_7743e0b4b3564112999c7c1d9bf27bce.bindPopup(popup_2de93a324dc147ff87bf1f6c93115a65)
+        ;
+
+        
+    
+    
+            var marker_9978ebae6a2d43afaf75ada77bf44ae5 = L.marker(
+                [8.6, -83.73],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_690395d375da46a5a1c82ba7750c5d19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42ac1cdf79174b8fa3548997feed6cdc = $(`<div id="html_42ac1cdf79174b8fa3548997feed6cdc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Corcovado Llorona to Los Planes. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-25 00:00:00+00:00 <strong>Recolectores:</strong> Christopher Kernan|Pamela Phillips <strong>Identificadores:</strong> A. Rodríguez</div>`)[0];
+            popup_690395d375da46a5a1c82ba7750c5d19.setContent(html_42ac1cdf79174b8fa3548997feed6cdc);
+        
+
+        marker_9978ebae6a2d43afaf75ada77bf44ae5.bindPopup(popup_690395d375da46a5a1c82ba7750c5d19)
+        ;
+
+        
+    
+    
+            var marker_846d594c9d924354a4437be1e2b2add4 = L.marker(
+                [8.57, -83.57],
+                {}
+            ).addTo(marker_cluster_c331b0b7b1b14d0faef314ec3aac2103);
+        
+    
+        var popup_057c4a919e9b4751bff38847ddbe701f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecb1f42c8b6345d1855df24d18ce6834 = $(`<div id="html_ecb1f42c8b6345d1855df24d18ce6834" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Estero Guerra. Sierpe. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1991-09-27 00:00:00+00:00 <strong>Recolectores:</strong> Juan Marín <strong>Identificadores:</strong> A. Rodríguez (INB)</div>`)[0];
+            popup_057c4a919e9b4751bff38847ddbe701f.setContent(html_ecb1f42c8b6345d1855df24d18ce6834);
+        
+
+        marker_846d594c9d924354a4437be1e2b2add4.bindPopup(popup_057c4a919e9b4751bff38847ddbe701f)
+        ;
+
+        
+    
+    
+            var layer_control_6d4f65fae851473d81ff9d3ebcefda34 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_dc40671bbd5f4121b0d37f02b0aa3f8c,
+                    "ESRI World Imagery" : tile_layer_437363433fec4faa89baaa59243ef8f6,
+                },
+                overlays :  {
+                    "macro_element_c331b0b7b1b14d0faef314ec3aac2103" : marker_cluster_c331b0b7b1b14d0faef314ec3aac2103,
+                },
+            };
+            L.control.layers(
+                layer_control_6d4f65fae851473d81ff9d3ebcefda34.base_layers,
+                layer_control_6d4f65fae851473d81ff9d3ebcefda34.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6bcb3d057c7643d3baf5a84bdf767e7e);
+            tile_layer_437363433fec4faa89baaa59243ef8f6.remove();
+        
+</script>

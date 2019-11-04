@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0e96cc23ae0a4debafa27afbbb8f0cbc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0e96cc23ae0a4debafa27afbbb8f0cbc" ></div>
+        
+</body>
+<script>    
+    
+            var map_0e96cc23ae0a4debafa27afbbb8f0cbc = L.map(
+                "map_0e96cc23ae0a4debafa27afbbb8f0cbc",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_0e96cc23ae0a4debafa27afbbb8f0cbc);
+
+            
+
+        
+    
+            var tile_layer_0bbc88defbdb49b9bdd1fdc34b476460 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0e96cc23ae0a4debafa27afbbb8f0cbc);
+        
+    
+            var tile_layer_332a835cd7e74e529fbdaa072f3b600a = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0e96cc23ae0a4debafa27afbbb8f0cbc);
+        
+    
+            var marker_cluster_a2d84933d65c47258c26462b6087da78 = L.markerClusterGroup(
+                {}
+            );
+            map_0e96cc23ae0a4debafa27afbbb8f0cbc.addLayer(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+            var marker_4438e233073742c4a5bec197a1dc0fed = L.marker(
+                [9.124422000000001, -83.074861],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_fa9173acc6f44bb0b3292411a8d5dc30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b86158f62d144aba2caa790ae5a303e = $(`<div id="html_7b86158f62d144aba2caa790ae5a303e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puesto Tres Colinas, Orillas del Rio Guineal. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1996-09-17 00:00:00+00:00 <strong>Recolectores:</strong> Billen Gamboa R.; Annia Picado <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_fa9173acc6f44bb0b3292411a8d5dc30.setContent(html_7b86158f62d144aba2caa790ae5a303e);
+        
+
+        marker_4438e233073742c4a5bec197a1dc0fed.bindPopup(popup_fa9173acc6f44bb0b3292411a8d5dc30)
+        ;
+
+        
+    
+    
+            var marker_176c4aeea8854d69906ab35cd600ad58 = L.marker(
+                [9.124422000000001, -83.074861],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_9d3816a0708a4e04a465a59ad0d471da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f63281e3d0334c17b768399eaeca0f97 = $(`<div id="html_f63281e3d0334c17b768399eaeca0f97" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puesto Tres Colinas, Orillas del Rio Guineal. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1996-09-17 00:00:00+00:00 <strong>Recolectores:</strong> Billen Gamboa R.; Annia Picado <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_9d3816a0708a4e04a465a59ad0d471da.setContent(html_f63281e3d0334c17b768399eaeca0f97);
+        
+
+        marker_176c4aeea8854d69906ab35cd600ad58.bindPopup(popup_9d3816a0708a4e04a465a59ad0d471da)
+        ;
+
+        
+    
+    
+            var marker_b551eb37507b49d1a44628eb7284aaec = L.marker(
+                [9.124422000000001, -83.074861],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_fe50abe9cce5410cb62d9406149b2e0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33df7d4ce0aa4e289307f7fc874a6851 = $(`<div id="html_33df7d4ce0aa4e289307f7fc874a6851" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puesto Tres Colinas, Orillas del Rio Guineal. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1996-09-17 00:00:00+00:00 <strong>Recolectores:</strong> Billen Gamboa R.; Annia Picado <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_fe50abe9cce5410cb62d9406149b2e0c.setContent(html_33df7d4ce0aa4e289307f7fc874a6851);
+        
+
+        marker_b551eb37507b49d1a44628eb7284aaec.bindPopup(popup_fe50abe9cce5410cb62d9406149b2e0c)
+        ;
+
+        
+    
+    
+            var marker_01a08d0d0e644daba49b35115b0e9f94 = L.marker(
+                [10.816667, -84.95],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_47a337717e3c4e52aa716f8856f3695d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9e365f6e95746f18de5f14ae0a082c3 = $(`<div id="html_d9e365f6e95746f18de5f14ae0a082c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Pilon. Cabeceras del Rio Celeste Bijagua. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1987-11-17 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_47a337717e3c4e52aa716f8856f3695d.setContent(html_d9e365f6e95746f18de5f14ae0a082c3);
+        
+
+        marker_01a08d0d0e644daba49b35115b0e9f94.bindPopup(popup_47a337717e3c4e52aa716f8856f3695d)
+        ;
+
+        
+    
+    
+            var marker_131bfd1d22de4d39809a2122fa8d5f6c = L.marker(
+                [10.720833, -85.005556],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_f9b0e49ad34e4519a3445e6905abae61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8e3c1210e7e437a9ceda115453f7caf = $(`<div id="html_a8e3c1210e7e437a9ceda115453f7caf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Pilon, Cerro La Carmela, entre Rio Celeste y cabeceras del Rio Chimurria. Bijagua. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1988-07-07 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_f9b0e49ad34e4519a3445e6905abae61.setContent(html_a8e3c1210e7e437a9ceda115453f7caf);
+        
+
+        marker_131bfd1d22de4d39809a2122fa8d5f6c.bindPopup(popup_f9b0e49ad34e4519a3445e6905abae61)
+        ;
+
+        
+    
+    
+            var marker_a52c2ffe6b0c4530a9a1e03573f9cc9c = L.marker(
+                [10.704603, -84.992304],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_7fd3069d8a74425cb9eca9f9227a9155 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c08a157a54f496890db445cf3800c84 = $(`<div id="html_1c08a157a54f496890db445cf3800c84" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Sector El Pilón. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2001-06-21 00:00:00+00:00 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_7fd3069d8a74425cb9eca9f9227a9155.setContent(html_1c08a157a54f496890db445cf3800c84);
+        
+
+        marker_a52c2ffe6b0c4530a9a1e03573f9cc9c.bindPopup(popup_7fd3069d8a74425cb9eca9f9227a9155)
+        ;
+
+        
+    
+    
+            var marker_04eb7ecb91ce4fdfbb05987754eeec17 = L.marker(
+                [10.704603, -84.992304],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_66ba4ab70dcc4e14a921f4d46cd7eb37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e207768166634bfe998dfa8c19c75ab0 = $(`<div id="html_e207768166634bfe998dfa8c19c75ab0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Sector El Pilón. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2001-06-21 00:00:00+00:00 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_66ba4ab70dcc4e14a921f4d46cd7eb37.setContent(html_e207768166634bfe998dfa8c19c75ab0);
+        
+
+        marker_04eb7ecb91ce4fdfbb05987754eeec17.bindPopup(popup_66ba4ab70dcc4e14a921f4d46cd7eb37)
+        ;
+
+        
+    
+    
+            var marker_27b4c393bced46658d204f2ee57a7688 = L.marker(
+                [10.704603, -84.992304],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_e691860eba0a46bdba99073ad829fd25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e67f6974ce44431bb2d25caacca8ca0c = $(`<div id="html_e67f6974ce44431bb2d25caacca8ca0c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Sector El Pilón. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2001-06-21 00:00:00+00:00 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e691860eba0a46bdba99073ad829fd25.setContent(html_e67f6974ce44431bb2d25caacca8ca0c);
+        
+
+        marker_27b4c393bced46658d204f2ee57a7688.bindPopup(popup_e691860eba0a46bdba99073ad829fd25)
+        ;
+
+        
+    
+    
+            var marker_376ac3a0f4454503a53d91fec1923963 = L.marker(
+                [10.704603, -84.992304],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_e9ee2d63659c43d59856fddb200f59e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_761b0458ab6b4bb1a2b6b0d415bf09ba = $(`<div id="html_761b0458ab6b4bb1a2b6b0d415bf09ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Sector El Pilón. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2001-06-21 00:00:00+00:00 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e9ee2d63659c43d59856fddb200f59e3.setContent(html_761b0458ab6b4bb1a2b6b0d415bf09ba);
+        
+
+        marker_376ac3a0f4454503a53d91fec1923963.bindPopup(popup_e9ee2d63659c43d59856fddb200f59e3)
+        ;
+
+        
+    
+    
+            var marker_cdfad176866a4a698e330933fece8b2c = L.marker(
+                [10.704603, -84.992304],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_18ac98bb031c4a6f86e8c317614601e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7504dba52c134c1abfe37b02ce925d04 = $(`<div id="html_7504dba52c134c1abfe37b02ce925d04" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Sector El Pilón. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2001-06-21 00:00:00+00:00 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_18ac98bb031c4a6f86e8c317614601e2.setContent(html_7504dba52c134c1abfe37b02ce925d04);
+        
+
+        marker_cdfad176866a4a698e330933fece8b2c.bindPopup(popup_18ac98bb031c4a6f86e8c317614601e2)
+        ;
+
+        
+    
+    
+            var marker_2e6564bde8c2483cbf5c8e62674af597 = L.marker(
+                [9.105556, -83.06666700000001],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_63f605f107d8421e9b8820f477cd6415 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d28127f6248246909532c451ed1bf4d3 = $(`<div id="html_d28127f6248246909532c451ed1bf4d3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tres Colinas. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2006-04-25 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Daniel Solano ; Daniel Santamaría <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_63f605f107d8421e9b8820f477cd6415.setContent(html_d28127f6248246909532c451ed1bf4d3);
+        
+
+        marker_2e6564bde8c2483cbf5c8e62674af597.bindPopup(popup_63f605f107d8421e9b8820f477cd6415)
+        ;
+
+        
+    
+    
+            var marker_9b3ca592379542958b459ba1bdc7ed7c = L.marker(
+                [9.105556, -83.06666700000001],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_9f3d49589d994029a093c6b1bdd5178d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_660a2fbcbe914b4db364b7a45e6adb71 = $(`<div id="html_660a2fbcbe914b4db364b7a45e6adb71" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tres Colinas. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2006-04-25 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Daniel Solano ; Daniel Santamaría <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_9f3d49589d994029a093c6b1bdd5178d.setContent(html_660a2fbcbe914b4db364b7a45e6adb71);
+        
+
+        marker_9b3ca592379542958b459ba1bdc7ed7c.bindPopup(popup_9f3d49589d994029a093c6b1bdd5178d)
+        ;
+
+        
+    
+    
+            var marker_eac9f950657f428da348dfd1f69ea41d = L.marker(
+                [9.105556, -83.06666700000001],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_246e965b194c4502ab195a1b978dd9d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdd01cf18fd14a479d62c37596e86532 = $(`<div id="html_cdd01cf18fd14a479d62c37596e86532" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tres Colinas. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2006-04-25 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Daniel Solano ; Daniel Santamaría <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_246e965b194c4502ab195a1b978dd9d5.setContent(html_cdd01cf18fd14a479d62c37596e86532);
+        
+
+        marker_eac9f950657f428da348dfd1f69ea41d.bindPopup(popup_246e965b194c4502ab195a1b978dd9d5)
+        ;
+
+        
+    
+    
+            var marker_124bc8ee893c46adab03e7505ac30f4d = L.marker(
+                [9.105556, -83.06666700000001],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_9c530b1e0dc64b25b2af88cd7cacc96b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1724e37c39bb42be9777cd70dd8d7d45 = $(`<div id="html_1724e37c39bb42be9777cd70dd8d7d45" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tres Colinas. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2006-04-25 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Daniel Solano ; Daniel Santamaría <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_9c530b1e0dc64b25b2af88cd7cacc96b.setContent(html_1724e37c39bb42be9777cd70dd8d7d45);
+        
+
+        marker_124bc8ee893c46adab03e7505ac30f4d.bindPopup(popup_9c530b1e0dc64b25b2af88cd7cacc96b)
+        ;
+
+        
+    
+    
+            var marker_557168c0e769403eb04b64128b78eb61 = L.marker(
+                [9.105556, -83.06666700000001],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_dfd0ac1a8ad548fa9cff3fb4ea9de2b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a36dd84bff964ebc8f638352c6a293a3 = $(`<div id="html_a36dd84bff964ebc8f638352c6a293a3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tres Colinas. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2006-04-25 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Daniel Solano ; Daniel Santamaría <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_dfd0ac1a8ad548fa9cff3fb4ea9de2b8.setContent(html_a36dd84bff964ebc8f638352c6a293a3);
+        
+
+        marker_557168c0e769403eb04b64128b78eb61.bindPopup(popup_dfd0ac1a8ad548fa9cff3fb4ea9de2b8)
+        ;
+
+        
+    
+    
+            var marker_c0a47d6eaa0e4060ad7c100753516422 = L.marker(
+                [10.706123, -84.992889],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_afb221548de9419599be8bb6eb094aed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_282e09582e024c7f857051a7e82385ee = $(`<div id="html_282e09582e024c7f857051a7e82385ee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Punto 1: Catarata Río Buenavista. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2009-12-18 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_afb221548de9419599be8bb6eb094aed.setContent(html_282e09582e024c7f857051a7e82385ee);
+        
+
+        marker_c0a47d6eaa0e4060ad7c100753516422.bindPopup(popup_afb221548de9419599be8bb6eb094aed)
+        ;
+
+        
+    
+    
+            var marker_fcde03d8e0f04cdcb833b1dd67e6df62 = L.marker(
+                [10.698039, -85.00832],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_7b675543b0ec4285b49cbd8f783dcef6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4288fae9a94a483b95ad688a376f7b3e = $(`<div id="html_4288fae9a94a483b95ad688a376f7b3e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alajuela. Área de Conservación Arenal-Tempisque, P. N. Tenorio. El Piedrero Site, at the foothill of Cerro Montezuma. <strong>Elevación:</strong> 840.0 m  <strong>Fecha:</strong> 2012-06-22 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Alejandro Azofeifa Zúñiga ; Soo-Yong Kim <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_7b675543b0ec4285b49cbd8f783dcef6.setContent(html_4288fae9a94a483b95ad688a376f7b3e);
+        
+
+        marker_fcde03d8e0f04cdcb833b1dd67e6df62.bindPopup(popup_7b675543b0ec4285b49cbd8f783dcef6)
+        ;
+
+        
+    
+    
+            var marker_3bc73587eb4d467a9be63a4c5e705f59 = L.marker(
+                [10.698039, -85.00832],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_c157464a1baa454f9b7e86a4571d7a17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46fa6351035646919617a7c3aed0d4fe = $(`<div id="html_46fa6351035646919617a7c3aed0d4fe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alajuela. Área de Conservación Arenal-Tempisque, P. N. Tenorio. El Piedrero Site, at the foothill of Cerro Montezuma. <strong>Elevación:</strong> 840.0 m  <strong>Fecha:</strong> 2012-06-22 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Alejandro Azofeifa Zúñiga ; Soo-Yong Kim <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_c157464a1baa454f9b7e86a4571d7a17.setContent(html_46fa6351035646919617a7c3aed0d4fe);
+        
+
+        marker_3bc73587eb4d467a9be63a4c5e705f59.bindPopup(popup_c157464a1baa454f9b7e86a4571d7a17)
+        ;
+
+        
+    
+    
+            var marker_93ad458d6573478daf012bec3130101f = L.marker(
+                [10.698039, -85.00832],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_6e8bac2aee1749cfa72ca79f94156ba1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3895ac3440840af98f9c4c869ab4086 = $(`<div id="html_b3895ac3440840af98f9c4c869ab4086" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alajuela. Área de Conservación Arenal-Tempisque, P. N. Tenorio. El Piedrero Site, at the foothill of Cerro Montezuma. <strong>Elevación:</strong> 840.0 m  <strong>Fecha:</strong> 2012-06-22 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Alejandro Azofeifa Zúñiga ; Soo-Yong Kim <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_6e8bac2aee1749cfa72ca79f94156ba1.setContent(html_b3895ac3440840af98f9c4c869ab4086);
+        
+
+        marker_93ad458d6573478daf012bec3130101f.bindPopup(popup_6e8bac2aee1749cfa72ca79f94156ba1)
+        ;
+
+        
+    
+    
+            var marker_261717e109294e6bae8f38e529fe4882 = L.marker(
+                [10.698039, -85.00832],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_465827e4477d40338165bb470319c84f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_739c076cd5394aebad402018cfeea793 = $(`<div id="html_739c076cd5394aebad402018cfeea793" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alajuela. Área de Conservación Arenal-Tempisque, P. N. Tenorio. El Piedrero Site, at the foothill of Cerro Montezuma. <strong>Elevación:</strong> 840.0 m  <strong>Fecha:</strong> 2012-06-22 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Alejandro Azofeifa Zúñiga ; Soo-Yong Kim <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_465827e4477d40338165bb470319c84f.setContent(html_739c076cd5394aebad402018cfeea793);
+        
+
+        marker_261717e109294e6bae8f38e529fe4882.bindPopup(popup_465827e4477d40338165bb470319c84f)
+        ;
+
+        
+    
+    
+            var marker_43b37c34a7a341b09d17e376f921f9c8 = L.marker(
+                [10.333333, -84.666667],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_5764a0efbdf9410eaaa690a4500cc05a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d941f4be508437fb52e5336024c63ae = $(`<div id="html_2d941f4be508437fb52e5336024c63ae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde Cloud Forest Reserve, Peñas Blancas river valley, Atlantic slope. <strong>Elevación:</strong> 840.0 m  <strong>Fecha:</strong> 1986-07-24 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C.|April Clagget <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_5764a0efbdf9410eaaa690a4500cc05a.setContent(html_2d941f4be508437fb52e5336024c63ae);
+        
+
+        marker_43b37c34a7a341b09d17e376f921f9c8.bindPopup(popup_5764a0efbdf9410eaaa690a4500cc05a)
+        ;
+
+        
+    
+    
+            var marker_94abdb2764b44553940490cb3b5f27cf = L.marker(
+                [10.5, -84.5],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_6002f32cc6114fbd83bb7b2a8cc5b441 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d8c7daf69d548dcb980c7e9152f21d7 = $(`<div id="html_7d8c7daf69d548dcb980c7e9152f21d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1994-10-15 00:00:00+00:00 <strong>Recolectores:</strong> J. Sanchez <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_6002f32cc6114fbd83bb7b2a8cc5b441.setContent(html_7d8c7daf69d548dcb980c7e9152f21d7);
+        
+
+        marker_94abdb2764b44553940490cb3b5f27cf.bindPopup(popup_6002f32cc6114fbd83bb7b2a8cc5b441)
+        ;
+
+        
+    
+    
+            var marker_7a15f69a7d9d41d3af8cbc88186612f4 = L.marker(
+                [9.8333, -83.75],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_c94911cead7a435eb217a2ce785586a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85538e891e5648ef848b50b88fae47f8 = $(`<div id="html_85538e891e5648ef848b50b88fae47f8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1969-06-15 00:00:00+00:00 <strong>Recolectores:</strong> R. W. Lent <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c94911cead7a435eb217a2ce785586a8.setContent(html_85538e891e5648ef848b50b88fae47f8);
+        
+
+        marker_7a15f69a7d9d41d3af8cbc88186612f4.bindPopup(popup_c94911cead7a435eb217a2ce785586a8)
+        ;
+
+        
+    
+    
+            var marker_73b36ca8b21b495dbb3cbf712d627c5b = L.marker(
+                [10.7, -84.98],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_b60a9957abc440e4b68244074b1de0b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed39fda5b86c48abadb3781674db0b8a = $(`<div id="html_ed39fda5b86c48abadb3781674db0b8a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Flora de Costa Rica. Alajuela: Guatuso. P. N. Volcán Tenorio. Cuenca del Río Frío. Sendero Misterios del Tenorio. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2001-06-21 00:00:00+00:00 <strong>Recolectores:</strong> J. L. Chaves <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b60a9957abc440e4b68244074b1de0b5.setContent(html_ed39fda5b86c48abadb3781674db0b8a);
+        
+
+        marker_73b36ca8b21b495dbb3cbf712d627c5b.bindPopup(popup_b60a9957abc440e4b68244074b1de0b5)
+        ;
+
+        
+    
+    
+            var marker_eb8fdb16d917421c91ef1190fa056a6f = L.marker(
+                [10.72, -85.005556],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_6ce88bfa8c1045c781a77db19ca4f747 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91e15a6b19b142219b611bb8463f0da9 = $(`<div id="html_91e15a6b19b142219b611bb8463f0da9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bijagua El Pilón, Cerro La Carmela, entre Río Celeste y cabeceras del Río Chimurria. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1988-07-07 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_6ce88bfa8c1045c781a77db19ca4f747.setContent(html_91e15a6b19b142219b611bb8463f0da9);
+        
+
+        marker_eb8fdb16d917421c91ef1190fa056a6f.bindPopup(popup_6ce88bfa8c1045c781a77db19ca4f747)
+        ;
+
+        
+    
+    
+            var marker_ffb2f970744f423c99ee5a7c013139e7 = L.marker(
+                [10.81, -84.95],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_8e3ae104cc2c43dfbee595406a1aedc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b8f72cb7d7c415bb6aa5490e5791ae7 = $(`<div id="html_2b8f72cb7d7c415bb6aa5490e5791ae7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bijagua, El Pilón, Cabeceras del Río Celeste. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1987-11-17 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_8e3ae104cc2c43dfbee595406a1aedc8.setContent(html_2b8f72cb7d7c415bb6aa5490e5791ae7);
+        
+
+        marker_ffb2f970744f423c99ee5a7c013139e7.bindPopup(popup_8e3ae104cc2c43dfbee595406a1aedc8)
+        ;
+
+        
+    
+    
+            var marker_1bf4337f25624b209a65de5d89530273 = L.marker(
+                [10.82, -84.45],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_d812a276f4864c4287b12b7cfc78b4c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76589d3e31c14e288798cc4aca2cfddd = $(`<div id="html_76589d3e31c14e288798cc4aca2cfddd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upala. Bijagua, El Pilón. Cabeceras del Río Celeste. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1987-11-17 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d812a276f4864c4287b12b7cfc78b4c7.setContent(html_76589d3e31c14e288798cc4aca2cfddd);
+        
+
+        marker_1bf4337f25624b209a65de5d89530273.bindPopup(popup_d812a276f4864c4287b12b7cfc78b4c7)
+        ;
+
+        
+    
+    
+            var marker_dad4fcadd9d24722add86dbef09273e8 = L.marker(
+                [10.7208, -85.0056],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_e0a5c5a3dcfa49ef81afbb09374b247c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d10982b4d90444ba3de06fcd97d85d2 = $(`<div id="html_4d10982b4d90444ba3de06fcd97d85d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upala, Bijagua. El Pilón, Cerro La Carmela, entre Río Celeste y cabeceras del Río Chimurria. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1988-07-07 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e0a5c5a3dcfa49ef81afbb09374b247c.setContent(html_4d10982b4d90444ba3de06fcd97d85d2);
+        
+
+        marker_dad4fcadd9d24722add86dbef09273e8.bindPopup(popup_e0a5c5a3dcfa49ef81afbb09374b247c)
+        ;
+
+        
+    
+    
+            var marker_2ba450b970b1448da58d703a9a163a62 = L.marker(
+                [10.5, -84.5],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_bb3bbc24b15e48ed9f0616313c31f0ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7ac117123404cde8071b7a9679583f8 = $(`<div id="html_d7ac117123404cde8071b7a9679583f8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1988-07-07 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera C. <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_bb3bbc24b15e48ed9f0616313c31f0ea.setContent(html_d7ac117123404cde8071b7a9679583f8);
+        
+
+        marker_2ba450b970b1448da58d703a9a163a62.bindPopup(popup_bb3bbc24b15e48ed9f0616313c31f0ea)
+        ;
+
+        
+    
+    
+            var marker_0ebc579081f94b35968d44642edb97c3 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_fb092e580ac142e4bbb5c965cb71c592 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8d2a52f05bd43ea9fc86ab703ea375c = $(`<div id="html_e8d2a52f05bd43ea9fc86ab703ea375c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1946-04-28 00:00:00+00:00 <strong>Recolectores:</strong> J. A. Echeverria <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_fb092e580ac142e4bbb5c965cb71c592.setContent(html_e8d2a52f05bd43ea9fc86ab703ea375c);
+        
+
+        marker_0ebc579081f94b35968d44642edb97c3.bindPopup(popup_fb092e580ac142e4bbb5c965cb71c592)
+        ;
+
+        
+    
+    
+            var marker_07ca8a96b51f403a8c60e62cf4d87c0e = L.marker(
+                [10.70433, -84.99216],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_48f8faa779e446879d6d4a8d005f2082 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa7b9caa0d02475ba15aa9ba817c391d = $(`<div id="html_aa7b9caa0d02475ba15aa9ba817c391d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio, cuenca del Río Frío, Sendero Misterios del Tenorio <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2001-06-21 00:00:00+00:00 <strong>Recolectores:</strong> José Luis Chaves <strong>Identificadores:</strong> Jon Ricketson (MO),</div>`)[0];
+            popup_48f8faa779e446879d6d4a8d005f2082.setContent(html_aa7b9caa0d02475ba15aa9ba817c391d);
+        
+
+        marker_07ca8a96b51f403a8c60e62cf4d87c0e.bindPopup(popup_48f8faa779e446879d6d4a8d005f2082)
+        ;
+
+        
+    
+    
+            var marker_f3087870f7ba407d8bcfa0b294fd6649 = L.marker(
+                [9.95, -83.77],
+                {}
+            ).addTo(marker_cluster_a2d84933d65c47258c26462b6087da78);
+        
+    
+        var popup_adfac8d5edd5482cae126c486bc6f00b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d74559b7fab41839b4ee7d551a447ec = $(`<div id="html_4d74559b7fab41839b4ee7d551a447ec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Edge of pasture above Río Turrialba, 2.5 km east of Trinidad <strong>Elevación:</strong> 1680.0 m  <strong>Fecha:</strong> 1969-06-15 00:00:00+00:00 <strong>Recolectores:</strong> Roy W. Lent <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_adfac8d5edd5482cae126c486bc6f00b.setContent(html_4d74559b7fab41839b4ee7d551a447ec);
+        
+
+        marker_f3087870f7ba407d8bcfa0b294fd6649.bindPopup(popup_adfac8d5edd5482cae126c486bc6f00b)
+        ;
+
+        
+    
+    
+            var layer_control_307a85a37b7b4981b51c388d4e34bb7f = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0bbc88defbdb49b9bdd1fdc34b476460,
+                    "ESRI World Imagery" : tile_layer_332a835cd7e74e529fbdaa072f3b600a,
+                },
+                overlays :  {
+                    "macro_element_a2d84933d65c47258c26462b6087da78" : marker_cluster_a2d84933d65c47258c26462b6087da78,
+                },
+            };
+            L.control.layers(
+                layer_control_307a85a37b7b4981b51c388d4e34bb7f.base_layers,
+                layer_control_307a85a37b7b4981b51c388d4e34bb7f.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_0e96cc23ae0a4debafa27afbbb8f0cbc);
+            tile_layer_332a835cd7e74e529fbdaa072f3b600a.remove();
+        
+</script>

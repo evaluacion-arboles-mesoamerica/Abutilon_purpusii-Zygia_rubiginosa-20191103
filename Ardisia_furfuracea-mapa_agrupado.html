@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cefaeb05f9f249658b33ee23a1d7ebf0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_cefaeb05f9f249658b33ee23a1d7ebf0" ></div>
+        
+</body>
+<script>    
+    
+            var map_cefaeb05f9f249658b33ee23a1d7ebf0 = L.map(
+                "map_cefaeb05f9f249658b33ee23a1d7ebf0",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_cefaeb05f9f249658b33ee23a1d7ebf0);
+
+            
+
+        
+    
+            var tile_layer_04ed04f25b3b4824873dcb25c274a28a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cefaeb05f9f249658b33ee23a1d7ebf0);
+        
+    
+            var tile_layer_3a15542a23f942fba05dce7f86b1499c = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cefaeb05f9f249658b33ee23a1d7ebf0);
+        
+    
+            var marker_cluster_12477b89341f4b0ab7e5530f7024e30f = L.markerClusterGroup(
+                {}
+            );
+            map_cefaeb05f9f249658b33ee23a1d7ebf0.addLayer(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+            var marker_f39aa70388ac414aac39e85d68ce6663 = L.marker(
+                [10.216667, -84.083333],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_3416e8ab24434056b2ca241bca3186e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf8347fb11244fda9047112a6c0a6da9 = $(`<div id="html_bf8347fb11244fda9047112a6c0a6da9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Rafael, Primary forest along Rio San Rafael, Atlantic slope of Volcan Barva. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1986-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_3416e8ab24434056b2ca241bca3186e1.setContent(html_bf8347fb11244fda9047112a6c0a6da9);
+        
+
+        marker_f39aa70388ac414aac39e85d68ce6663.bindPopup(popup_3416e8ab24434056b2ca241bca3186e1)
+        ;
+
+        
+    
+    
+            var marker_e8d29fdc1af942c8bb6c282c92195f01 = L.marker(
+                [10.072222, -83.844445],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_ae2c2da4641e4e788358c17222219cc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ef75f9c2fd34116b40bf59781297d67 = $(`<div id="html_1ef75f9c2fd34116b40bf59781297d67" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Los Angeles, San Miguel. Siguiendo el camino al Volcan Irazu, cabeceras del Rio Blanco y Rio Blanquito. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1996-01-15 00:00:00+00:00 <strong>Recolectores:</strong> Jorge Chinchilla; Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_ae2c2da4641e4e788358c17222219cc6.setContent(html_1ef75f9c2fd34116b40bf59781297d67);
+        
+
+        marker_e8d29fdc1af942c8bb6c282c92195f01.bindPopup(popup_ae2c2da4641e4e788358c17222219cc6)
+        ;
+
+        
+    
+    
+            var marker_3822b0da62b1429aa9422412019bd528 = L.marker(
+                [9.755556, -83.783334],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_b37f669b3a2e4be99782100e1e6d6f84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44229ea4fec34d53baa6694b749e775e = $(`<div id="html_44229ea4fec34d53baa6694b749e775e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Dos Amigos. Sendero Rancho Negro. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1994-07-20 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Mora <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_b37f669b3a2e4be99782100e1e6d6f84.setContent(html_44229ea4fec34d53baa6694b749e775e);
+        
+
+        marker_3822b0da62b1429aa9422412019bd528.bindPopup(popup_b37f669b3a2e4be99782100e1e6d6f84)
+        ;
+
+        
+    
+    
+            var marker_43164ad200c7435a81ad77cb4ecd9926 = L.marker(
+                [9.984722, -84.061111],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_49cbac95b2984afdbd3d5618b72b17d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f62fbcf554044928ab4c098e4f162aa = $(`<div id="html_2f62fbcf554044928ab4c098e4f162aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque secundario en las margenes del antiguo camino al Bajo La Hondura. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1978-02-24 00:00:00+00:00 <strong>Recolectores:</strong> Robert L. Wilbur <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_49cbac95b2984afdbd3d5618b72b17d2.setContent(html_2f62fbcf554044928ab4c098e4f162aa);
+        
+
+        marker_43164ad200c7435a81ad77cb4ecd9926.bindPopup(popup_49cbac95b2984afdbd3d5618b72b17d2)
+        ;
+
+        
+    
+    
+            var marker_3b98bc2b0f8b491181d7c3cf3a188ea7 = L.marker(
+                [10.061111, -84.016667],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_dd8301684ba647f9ab4a6f9b85dcf55f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a32e7085964349f396374427ef5fefcd = $(`<div id="html_a32e7085964349f396374427ef5fefcd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zurqui Station. Just above Los Guarumos trail, nearly at high point. Primary wet montane forest. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2000-03-01 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_dd8301684ba647f9ab4a6f9b85dcf55f.setContent(html_a32e7085964349f396374427ef5fefcd);
+        
+
+        marker_3b98bc2b0f8b491181d7c3cf3a188ea7.bindPopup(popup_dd8301684ba647f9ab4a6f9b85dcf55f)
+        ;
+
+        
+    
+    
+            var marker_d5297a413cf9444086dea901dc189fa1 = L.marker(
+                [10.061111, -84.016667],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_e294cf3d83754621ad5e027ddaf917ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d46def2ef8a14d70a1aef115088eaf2f = $(`<div id="html_d46def2ef8a14d70a1aef115088eaf2f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zurqui Station. Just above Los Guarumos trail, nearly at high point. Primary wet montane forest. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2000-03-01 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e294cf3d83754621ad5e027ddaf917ac.setContent(html_d46def2ef8a14d70a1aef115088eaf2f);
+        
+
+        marker_d5297a413cf9444086dea901dc189fa1.bindPopup(popup_e294cf3d83754621ad5e027ddaf917ac)
+        ;
+
+        
+    
+    
+            var marker_321d68440ae542fdad731952ec8acc90 = L.marker(
+                [10.087344, -83.902711],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_46edb6860d8846bd9b8bd7b016daffc5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9f0ed84a5c74c17bf08b0488d19bca8 = $(`<div id="html_c9f0ed84a5c74c17bf08b0488d19bca8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Irazú - Braulio Carrillo. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2004-06-05 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_46edb6860d8846bd9b8bd7b016daffc5.setContent(html_c9f0ed84a5c74c17bf08b0488d19bca8);
+        
+
+        marker_321d68440ae542fdad731952ec8acc90.bindPopup(popup_46edb6860d8846bd9b8bd7b016daffc5)
+        ;
+
+        
+    
+    
+            var marker_334c355b5290414c9e7c634c7c93692c = L.marker(
+                [10.087344, -83.902711],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_98a77564249d46e19db3f2c92fb1b7a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be7c221988fa46f98db47ad80b46fdea = $(`<div id="html_be7c221988fa46f98db47ad80b46fdea" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Irazú - Braulio Carrillo. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2004-06-05 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_98a77564249d46e19db3f2c92fb1b7a8.setContent(html_be7c221988fa46f98db47ad80b46fdea);
+        
+
+        marker_334c355b5290414c9e7c634c7c93692c.bindPopup(popup_98a77564249d46e19db3f2c92fb1b7a8)
+        ;
+
+        
+    
+    
+            var marker_9412e7b1f5af46fc9530c42d8015b7b2 = L.marker(
+                [10.087344, -83.902711],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_ad87264953b84363b5bc390925e7c564 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a12d9f1fb7141cd9408432bcbe1338b = $(`<div id="html_3a12d9f1fb7141cd9408432bcbe1338b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Irazú - Braulio Carrillo. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2004-06-05 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_ad87264953b84363b5bc390925e7c564.setContent(html_3a12d9f1fb7141cd9408432bcbe1338b);
+        
+
+        marker_9412e7b1f5af46fc9530c42d8015b7b2.bindPopup(popup_ad87264953b84363b5bc390925e7c564)
+        ;
+
+        
+    
+    
+            var marker_fffb2703c61d427886ba3e41f187f2a4 = L.marker(
+                [10.184167, -84.1075],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_914266de395a40b29b38f84fac7ea637 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0a7d78bd42149909986310ccef8adea = $(`<div id="html_d0a7d78bd42149909986310ccef8adea" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Sendero del Transecto, flat area immediately to left of trail ca. 50 minutes walk below refugio at 2070 m. <strong>Elevación:</strong> 1990.0 m  <strong>Fecha:</strong> 1992-09-02 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle|Neil W. Snow <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_914266de395a40b29b38f84fac7ea637.setContent(html_d0a7d78bd42149909986310ccef8adea);
+        
+
+        marker_fffb2703c61d427886ba3e41f187f2a4.bindPopup(popup_914266de395a40b29b38f84fac7ea637)
+        ;
+
+        
+    
+    
+            var marker_5bdbebffb8d14c92abb664c5bed61f1d = L.marker(
+                [10.18277, -84.10665999999999],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_b0479eec016d410089342078a6c5f22f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5102572b1a1e4722ab306a9ba9beb495 = $(`<div id="html_5102572b1a1e4722ab306a9ba9beb495" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Sendero del Transecto, flat area to right of trail, primary Montane Wet Forest, Treeplot 2000 - 1 <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1992-06-20 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle|C. Godt <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_b0479eec016d410089342078a6c5f22f.setContent(html_5102572b1a1e4722ab306a9ba9beb495);
+        
+
+        marker_5bdbebffb8d14c92abb664c5bed61f1d.bindPopup(popup_b0479eec016d410089342078a6c5f22f)
+        ;
+
+        
+    
+    
+            var marker_fa424978a24a4a688a3b6ea104183a0d = L.marker(
+                [10.216667, -84.083333],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_60ea715eb04e40669dc6367d1c946830 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e61f7079e0f4e9ca2163bedc5144d9f = $(`<div id="html_7e61f7079e0f4e9ca2163bedc5144d9f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Río San Rafael, Atlantic slope of Volcán Barva. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1986-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_60ea715eb04e40669dc6367d1c946830.setContent(html_7e61f7079e0f4e9ca2163bedc5144d9f);
+        
+
+        marker_fa424978a24a4a688a3b6ea104183a0d.bindPopup(popup_60ea715eb04e40669dc6367d1c946830)
+        ;
+
+        
+    
+    
+            var marker_446f7dd6a5c148379c2c8ebefa8651b2 = L.marker(
+                [10.087344, -83.90271],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_a1b8b40fcedf4da68268c29f88fb3a30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08a2a711ffbe41bbae16ae1ae0e6b2b7 = $(`<div id="html_08a2a711ffbe41bbae16ae1ae0e6b2b7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ruta Volcan Irazu-Quebrada Gonzalez. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2004-06-05 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_a1b8b40fcedf4da68268c29f88fb3a30.setContent(html_08a2a711ffbe41bbae16ae1ae0e6b2b7);
+        
+
+        marker_446f7dd6a5c148379c2c8ebefa8651b2.bindPopup(popup_a1b8b40fcedf4da68268c29f88fb3a30)
+        ;
+
+        
+    
+    
+            var marker_0450f41ad45741edb39dd9d2c577663e = L.marker(
+                [10.058333, -84.025],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_ceb67644749c42e4b98202ce505a5464 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_837411eea0234a9999c2c2b5def8c7c3 = $(`<div id="html_837411eea0234a9999c2c2b5def8c7c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along the Río Para Blanca (Pacific dreinage) Cerros de Zurqui, Heredia And San Jose <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1977-02-06 00:00:00+00:00 <strong>Recolectores:</strong> W. C. Burger; G. Visconti; J. L. Gentry Jr. <strong>Identificadores:</strong> C. L. Lundell</div>`)[0];
+            popup_ceb67644749c42e4b98202ce505a5464.setContent(html_837411eea0234a9999c2c2b5def8c7c3);
+        
+
+        marker_0450f41ad45741edb39dd9d2c577663e.bindPopup(popup_ceb67644749c42e4b98202ce505a5464)
+        ;
+
+        
+    
+    
+            var marker_3350cf0b7c1248c9ade6c7d0c4597158 = L.marker(
+                [8.5364, -83.4253],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_d21f83ac0b744cf49d4abd55b64ca86d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_566ec8cf01ae412abdc2eb87b18c43c6 = $(`<div id="html_566ec8cf01ae412abdc2eb87b18c43c6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puntarenas: Golfito. R.F. Golfo Dulce. Península de Osa. Río Agujas. Estación Agujas. Sendero Ajo <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1997-10-04 00:00:00+00:00 <strong>Recolectores:</strong> M. Lobo <strong>Identificadores:</strong> J. Morales</div>`)[0];
+            popup_d21f83ac0b744cf49d4abd55b64ca86d.setContent(html_566ec8cf01ae412abdc2eb87b18c43c6);
+        
+
+        marker_3350cf0b7c1248c9ade6c7d0c4597158.bindPopup(popup_d21f83ac0b744cf49d4abd55b64ca86d)
+        ;
+
+        
+    
+    
+            var marker_a008b3e814594c79afd0ba413b66b59b = L.marker(
+                [10.22, -84.08],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_20254ce1f5e44b448f4ff7ef7fbe59c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9be50a7e48ee4e24b5b55d714e3caa8c = $(`<div id="html_9be50a7e48ee4e24b5b55d714e3caa8c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Primary forest along Río San Rafael, Atlantic slope of Volcán Barva. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1986-04-12 00:00:00+00:00 <strong>Recolectores:</strong> M. H. Grayum <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_20254ce1f5e44b448f4ff7ef7fbe59c9.setContent(html_9be50a7e48ee4e24b5b55d714e3caa8c);
+        
+
+        marker_a008b3e814594c79afd0ba413b66b59b.bindPopup(popup_20254ce1f5e44b448f4ff7ef7fbe59c9)
+        ;
+
+        
+    
+    
+            var marker_b98eaa0138af4afa8bfa2a9953f87d4a = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_86054417beac4c9ea6e5832de626722b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d91b3a67b9d446129676a3e96aafc153 = $(`<div id="html_d91b3a67b9d446129676a3e96aafc153" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1977-02-06 00:00:00+00:00 <strong>Recolectores:</strong> W. C. Burger et al. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_86054417beac4c9ea6e5832de626722b.setContent(html_d91b3a67b9d446129676a3e96aafc153);
+        
+
+        marker_b98eaa0138af4afa8bfa2a9953f87d4a.bindPopup(popup_86054417beac4c9ea6e5832de626722b)
+        ;
+
+        
+    
+    
+            var marker_c1e10ade6e1d4df098e7dd71e47ddd40 = L.marker(
+                [8.785055999999999, -82.98861099999999],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_2860e21e5a544ab8a63ffa1e7b14c704 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_163c5bad809744afa0a2886eb0bff97a = $(`<div id="html_163c5bad809744afa0a2886eb0bff97a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> -</div>`)[0];
+            popup_2860e21e5a544ab8a63ffa1e7b14c704.setContent(html_163c5bad809744afa0a2886eb0bff97a);
+        
+
+        marker_c1e10ade6e1d4df098e7dd71e47ddd40.bindPopup(popup_2860e21e5a544ab8a63ffa1e7b14c704)
+        ;
+
+        
+    
+    
+            var marker_809836ded790484bbd71692b31790e33 = L.marker(
+                [10.216667, -84.083333],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_aa9d6634c39d4cdd91beaf4ab0229571 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bd3c510792e48039df4f4088de7d8a4 = $(`<div id="html_6bd3c510792e48039df4f4088de7d8a4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> PROV, HEREDIA: Primary forest along. Rio San Rafael, Atlantic slope of Volcan Barva. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1986-04-12 00:00:00+00:00 <strong>Recolectores:</strong> M. Grayum <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_aa9d6634c39d4cdd91beaf4ab0229571.setContent(html_6bd3c510792e48039df4f4088de7d8a4);
+        
+
+        marker_809836ded790484bbd71692b31790e33.bindPopup(popup_aa9d6634c39d4cdd91beaf4ab0229571)
+        ;
+
+        
+    
+    
+            var marker_9d5823e328cb4306a52d618fbf8604f3 = L.marker(
+                [10.184167, -84.1075],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_aace7c8bc4394c91868c37d81bcaf1d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93d9ca3f5dc94e468d5d0ef173bb1494 = $(`<div id="html_93d9ca3f5dc94e468d5d0ef173bb1494" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Treeplot 2000-2 HEREDIA: Pargue Nal. Braulio Carrillo Sendero del Transecto, Flat area immediately to left, of trail ca. 50 minutes walk below refugio at. 2070 m, <strong>Elevación:</strong> 2070.0 m  <strong>Fecha:</strong> 1992-09-02 00:00:00+00:00 <strong>Recolectores:</strong> B. Boyle <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_aace7c8bc4394c91868c37d81bcaf1d2.setContent(html_93d9ca3f5dc94e468d5d0ef173bb1494);
+        
+
+        marker_9d5823e328cb4306a52d618fbf8604f3.bindPopup(popup_aace7c8bc4394c91868c37d81bcaf1d2)
+        ;
+
+        
+    
+    
+            var marker_f6e09b02cf8a438bb9c320e25cb06e11 = L.marker(
+                [10.182777999999999, -84.106667],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_55158a633f314f86b61db18311de0f57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4595e313b9ae439db18c23c881be8f0d = $(`<div id="html_4595e313b9ae439db18c23c881be8f0d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> HEREDIA: Parque Nal. Braulio Carrillo Sendero del Transecto. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1992-06-20 00:00:00+00:00 <strong>Recolectores:</strong> B. Boyle <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_55158a633f314f86b61db18311de0f57.setContent(html_4595e313b9ae439db18c23c881be8f0d);
+        
+
+        marker_f6e09b02cf8a438bb9c320e25cb06e11.bindPopup(popup_55158a633f314f86b61db18311de0f57)
+        ;
+
+        
+    
+    
+            var marker_ae2cafc3c2db495aa8655ed4716db824 = L.marker(
+                [10.184167, -84.1075],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_2162a36090b94baa919414104bc53648 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4bd4e3f5a83473bb07166f78e7080e1 = $(`<div id="html_f4bd4e3f5a83473bb07166f78e7080e1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nal. Braulio Carrillo Sendero del Tr.ansecto. Flat area immediately to left of trail. ca. 50 minutes walk below refugio at 2070 m. <strong>Elevación:</strong> 1990.0 m  <strong>Fecha:</strong> 1992-09-02 00:00:00+00:00 <strong>Recolectores:</strong> B. Boyle <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2162a36090b94baa919414104bc53648.setContent(html_f4bd4e3f5a83473bb07166f78e7080e1);
+        
+
+        marker_ae2cafc3c2db495aa8655ed4716db824.bindPopup(popup_2162a36090b94baa919414104bc53648)
+        ;
+
+        
+    
+    
+            var marker_085bd5504c66403c9d9157d15b2e0200 = L.marker(
+                [10.216667, -84.083333],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_8e6fb8e775634022ae22832534fab85b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12e5b75835b14b778727d287fbb92ebc = $(`<div id="html_12e5b75835b14b778727d287fbb92ebc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Río San Rafael, Atlantic slope of Volcán Barva. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1986-04-12 00:00:00+00:00 <strong>Recolectores:</strong> M. Grayum <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_8e6fb8e775634022ae22832534fab85b.setContent(html_12e5b75835b14b778727d287fbb92ebc);
+        
+
+        marker_085bd5504c66403c9d9157d15b2e0200.bindPopup(popup_8e6fb8e775634022ae22832534fab85b)
+        ;
+
+        
+    
+    
+            var marker_99c183a200fc4720a25f488282191965 = L.marker(
+                [9.771111, -83.771389],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_58172c308f854ccf9fdedd7a0c7d5650 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36e05aa0b65f47c092f13768862073e9 = $(`<div id="html_36e05aa0b65f47c092f13768862073e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tapantí Reserve, Cartago <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1982-12-07 00:00:00+00:00 <strong>Recolectores:</strong> L. D. Gómez <strong>Identificadores:</strong> Lundell</div>`)[0];
+            popup_58172c308f854ccf9fdedd7a0c7d5650.setContent(html_36e05aa0b65f47c092f13768862073e9);
+        
+
+        marker_99c183a200fc4720a25f488282191965.bindPopup(popup_58172c308f854ccf9fdedd7a0c7d5650)
+        ;
+
+        
+    
+    
+            var marker_2f25aaed873d490ea37603863c2a1ac3 = L.marker(
+                [9.75, -83.7833],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_c60741efb2914899acd951b379ce4935 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6dce1792d4747219373b426f5ccb779 = $(`<div id="html_d6dce1792d4747219373b426f5ccb779" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tapantí, Valle del Reventazón, Sector Dos Amigos, Sendero Rancho Negro <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1994-07-20 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Mora <strong>Identificadores:</strong> Jon Ricketson (MO),</div>`)[0];
+            popup_c60741efb2914899acd951b379ce4935.setContent(html_d6dce1792d4747219373b426f5ccb779);
+        
+
+        marker_2f25aaed873d490ea37603863c2a1ac3.bindPopup(popup_c60741efb2914899acd951b379ce4935)
+        ;
+
+        
+    
+    
+            var marker_d84880399db8433d9b4c85398809f075 = L.marker(
+                [10.05, -83.98],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_3ec3be71d3df496085be56e5045c9c25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7304496c20f49ba896ca22a6fa2a46b = $(`<div id="html_c7304496c20f49ba896ca22a6fa2a46b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Roadside leading from Alto La Palma to Bajo La Hondura, ca. 10 km NE of San Vincente de Moravia. <strong>Elevación:</strong> 1405.0 m  <strong>Fecha:</strong> 1978-02-24 00:00:00+00:00 <strong>Recolectores:</strong> Robert L. Wilbur <strong>Identificadores:</strong> Jon Ricketson (MO), 2000 --TYPE</div>`)[0];
+            popup_3ec3be71d3df496085be56e5045c9c25.setContent(html_c7304496c20f49ba896ca22a6fa2a46b);
+        
+
+        marker_d84880399db8433d9b4c85398809f075.bindPopup(popup_3ec3be71d3df496085be56e5045c9c25)
+        ;
+
+        
+    
+    
+            var marker_304ee288007145d59ad68d46676e4fa3 = L.marker(
+                [10.05, -84.01],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_738b1dae13e14288827058b70af943e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4504e30453114cbc9fdb49757e5c0a53 = $(`<div id="html_4504e30453114cbc9fdb49757e5c0a53" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Heredia and San José Provinces, open pasture and remnants of lower montane rain forest formations on ridges and steep slopes along the Río Para Blanca (Pacific drainage), Cerros de Zurquí <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1977-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William C. Burger|Gary Visconti|Johnnie L. Gentry, Jr. <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_738b1dae13e14288827058b70af943e7.setContent(html_4504e30453114cbc9fdb49757e5c0a53);
+        
+
+        marker_304ee288007145d59ad68d46676e4fa3.bindPopup(popup_738b1dae13e14288827058b70af943e7)
+        ;
+
+        
+    
+    
+            var marker_931344f641934b7082c9d1c9b5ae81b3 = L.marker(
+                [10.07, -84.05],
+                {}
+            ).addTo(marker_cluster_12477b89341f4b0ab7e5530f7024e30f);
+        
+    
+        var popup_c4ca346de20e4b1fa9832a325ae0103d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e38b004efec45ba9745c4d72760bef1 = $(`<div id="html_3e38b004efec45ba9745c4d72760bef1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de Las Lajas, north of San Isidro <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1926-03-07 00:00:00+00:00 <strong>Recolectores:</strong> Paul C. Standley|Juvenal Valerio R. <strong>Identificadores:</strong> Jon Ricketson (MO), 2000 --TYPE</div>`)[0];
+            popup_c4ca346de20e4b1fa9832a325ae0103d.setContent(html_3e38b004efec45ba9745c4d72760bef1);
+        
+
+        marker_931344f641934b7082c9d1c9b5ae81b3.bindPopup(popup_c4ca346de20e4b1fa9832a325ae0103d)
+        ;
+
+        
+    
+    
+            var layer_control_2bbd6bccc225444b98ce700b7ef69129 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_04ed04f25b3b4824873dcb25c274a28a,
+                    "ESRI World Imagery" : tile_layer_3a15542a23f942fba05dce7f86b1499c,
+                },
+                overlays :  {
+                    "macro_element_12477b89341f4b0ab7e5530f7024e30f" : marker_cluster_12477b89341f4b0ab7e5530f7024e30f,
+                },
+            };
+            L.control.layers(
+                layer_control_2bbd6bccc225444b98ce700b7ef69129.base_layers,
+                layer_control_2bbd6bccc225444b98ce700b7ef69129.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_cefaeb05f9f249658b33ee23a1d7ebf0);
+            tile_layer_3a15542a23f942fba05dce7f86b1499c.remove();
+        
+</script>

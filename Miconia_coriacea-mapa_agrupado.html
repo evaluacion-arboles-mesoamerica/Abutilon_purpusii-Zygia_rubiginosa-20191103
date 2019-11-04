@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6a39b7dab6994d00be9019966113067d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6a39b7dab6994d00be9019966113067d" ></div>
+        
+</body>
+<script>    
+    
+            var map_6a39b7dab6994d00be9019966113067d = L.map(
+                "map_6a39b7dab6994d00be9019966113067d",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_6a39b7dab6994d00be9019966113067d);
+
+            
+
+        
+    
+            var tile_layer_0ef341094d8d4c418805b83f66c0ed17 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6a39b7dab6994d00be9019966113067d);
+        
+    
+            var tile_layer_5d0c11a87db2442f8d1620d92985a4f0 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6a39b7dab6994d00be9019966113067d);
+        
+    
+            var marker_cluster_b41c20a5238848d8bc39337bc7d0dd67 = L.markerClusterGroup(
+                {}
+            );
+            map_6a39b7dab6994d00be9019966113067d.addLayer(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+            var marker_943b5bc7089945a99db92a1bc2e38d98 = L.marker(
+                [10.917222, -85.463889],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_b75b9881c3db40cc9f0097b3140a879c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7c1fcdbb8dc46bd8ddb065470de0fac = $(`<div id="html_a7c1fcdbb8dc46bd8ddb065470de0fac" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcan Cacao, sendero hasta la cima del volcan. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1996-07-12 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_b75b9881c3db40cc9f0097b3140a879c.setContent(html_a7c1fcdbb8dc46bd8ddb065470de0fac);
+        
+
+        marker_943b5bc7089945a99db92a1bc2e38d98.bindPopup(popup_b75b9881c3db40cc9f0097b3140a879c)
+        ;
+
+        
+    
+    
+            var marker_ca7c878a444e493c8b6d47f63654be2b = L.marker(
+                [10.316667, -84.8],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_73d47c82bb494d778ccad154b35046b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b9af2f2c8d94928b2d7909fa6763708 = $(`<div id="html_3b9af2f2c8d94928b2d7909fa6763708" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> TV towers on Cerro Amigos, Lower montane rain forest. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1993-01-02 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Almeda, Frank</div>`)[0];
+            popup_73d47c82bb494d778ccad154b35046b4.setContent(html_3b9af2f2c8d94928b2d7909fa6763708);
+        
+
+        marker_ca7c878a444e493c8b6d47f63654be2b.bindPopup(popup_73d47c82bb494d778ccad154b35046b4)
+        ;
+
+        
+    
+    
+            var marker_4cfae9786b9f4eecbc635dc78be38e59 = L.marker(
+                [10.316667, -84.8],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_79bcd8c7895a4c2ba6822b91c2a5c5cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_170ddcd4c3114876a8f700779ae91b3a = $(`<div id="html_170ddcd4c3114876a8f700779ae91b3a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Area around TV towers and access road. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1990-12-20 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Almeda, Frank</div>`)[0];
+            popup_79bcd8c7895a4c2ba6822b91c2a5c5cc.setContent(html_170ddcd4c3114876a8f700779ae91b3a);
+        
+
+        marker_4cfae9786b9f4eecbc635dc78be38e59.bindPopup(popup_79bcd8c7895a4c2ba6822b91c2a5c5cc)
+        ;
+
+        
+    
+    
+            var marker_ea377354a53143979a6ecfeb212122e7 = L.marker(
+                [9.3401, -83.23048],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_2b31999cbf1f4093b9bd928a1a228ffa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33f6c97ede284fb685da74b1c3715150 = $(`<div id="html_33f6c97ede284fb685da74b1c3715150" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Transtalamanca, Ujarrás-San José Cabécar. <strong>Elevación:</strong> 2181.5 m  <strong>Fecha:</strong> 2007-02-24 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_2b31999cbf1f4093b9bd928a1a228ffa.setContent(html_33f6c97ede284fb685da74b1c3715150);
+        
+
+        marker_ea377354a53143979a6ecfeb212122e7.bindPopup(popup_2b31999cbf1f4093b9bd928a1a228ffa)
+        ;
+
+        
+    
+    
+            var marker_e8b7b99762634f1f82a5411ca4abc45e = L.marker(
+                [9.3401, -83.23048],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_0c29ec3301d44507bf145817e444d74f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4e721a15c2d44b597bf0941c657b31f = $(`<div id="html_f4e721a15c2d44b597bf0941c657b31f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Transtalamanca, Ujarrás-San José Cabécar. <strong>Elevación:</strong> 2181.5 m  <strong>Fecha:</strong> 2007-02-24 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_0c29ec3301d44507bf145817e444d74f.setContent(html_f4e721a15c2d44b597bf0941c657b31f);
+        
+
+        marker_e8b7b99762634f1f82a5411ca4abc45e.bindPopup(popup_0c29ec3301d44507bf145817e444d74f)
+        ;
+
+        
+    
+    
+            var marker_f96be75a37cc4871a2bc4c4357aa8396 = L.marker(
+                [9.3401, -83.23048],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_4c568354b41c428a9bfb8509de71c7dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d87f2aa267014c1795861cb9ef308e73 = $(`<div id="html_d87f2aa267014c1795861cb9ef308e73" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Transtalamanca, Ujarrás-San José Cabécar. <strong>Elevación:</strong> 2181.5 m  <strong>Fecha:</strong> 2007-02-24 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_4c568354b41c428a9bfb8509de71c7dc.setContent(html_d87f2aa267014c1795861cb9ef308e73);
+        
+
+        marker_f96be75a37cc4871a2bc4c4357aa8396.bindPopup(popup_4c568354b41c428a9bfb8509de71c7dc)
+        ;
+
+        
+    
+    
+            var marker_c937419433754007a156837263d5506b = L.marker(
+                [10.326889999999999, -84.805824],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_97be89c5189b4b05ac033c1d860d5a4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea116263ba7248a28dc946fe0138d734 = $(`<div id="html_ea116263ba7248a28dc946fe0138d734" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, San Luis, Cerro Chomogo. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 2010-01-17 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel; Manuel Angel Zumbado <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_97be89c5189b4b05ac033c1d860d5a4e.setContent(html_ea116263ba7248a28dc946fe0138d734);
+        
+
+        marker_c937419433754007a156837263d5506b.bindPopup(popup_97be89c5189b4b05ac033c1d860d5a4e)
+        ;
+
+        
+    
+    
+            var marker_e6edc4e0068b4ab593dc5aee025bf5cf = L.marker(
+                [10.174422999999999, -84.237512],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_0e59fa06a976459aa883d56b00a7451f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf4ad58d84d949cfb723f210d630aee3 = $(`<div id="html_bf4ad58d84d949cfb723f210d630aee3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcan Poas Nat. Pk <strong>Elevación:</strong> 2550.0 m  <strong>Fecha:</strong> 2012-07-06 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_0e59fa06a976459aa883d56b00a7451f.setContent(html_bf4ad58d84d949cfb723f210d630aee3);
+        
+
+        marker_e6edc4e0068b4ab593dc5aee025bf5cf.bindPopup(popup_0e59fa06a976459aa883d56b00a7451f)
+        ;
+
+        
+    
+    
+            var marker_7ae56553febb47f2b0af6c31a44e2abf = L.marker(
+                [10.174422999999999, -84.237512],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_28cfe775de264f6db991c8d87d68d360 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bb86cfa5d7e46b0a7893f98ccba053d = $(`<div id="html_7bb86cfa5d7e46b0a7893f98ccba053d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcan Poas Nat. Pk <strong>Elevación:</strong> 2550.0 m  <strong>Fecha:</strong> 2012-07-06 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_28cfe775de264f6db991c8d87d68d360.setContent(html_7bb86cfa5d7e46b0a7893f98ccba053d);
+        
+
+        marker_7ae56553febb47f2b0af6c31a44e2abf.bindPopup(popup_28cfe775de264f6db991c8d87d68d360)
+        ;
+
+        
+    
+    
+            var marker_198f1b09601441ed92fbe0552784e804 = L.marker(
+                [10.184667, -84.238],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_9fc4e3fae7204238a3a12ff0030305fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_627a7bf80e434e0b96b1edc9e5cce438 = $(`<div id="html_627a7bf80e434e0b96b1edc9e5cce438" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2005-08-22 00:00:00+00:00 <strong>Recolectores:</strong> Darin S. Penneys <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9fc4e3fae7204238a3a12ff0030305fa.setContent(html_627a7bf80e434e0b96b1edc9e5cce438);
+        
+
+        marker_198f1b09601441ed92fbe0552784e804.bindPopup(popup_9fc4e3fae7204238a3a12ff0030305fa)
+        ;
+
+        
+    
+    
+            var marker_ad7671ebb0f14c7083c88798e7b58fe3 = L.marker(
+                [15.3649, -61.3271],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_ffd291b994ab46108e1461731a1cf5d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_836c762096d7420e84cd63b2802642dc = $(`<div id="html_836c762096d7420e84cd63b2802642dc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Morne Trois Pitons, summit <strong>Elevación:</strong> 1341.0 m  <strong>Fecha:</strong> 1964-05-04 00:00:00+00:00 <strong>Recolectores:</strong> W. R. Ernst <strong>Identificadores:</strong> Sastre, C. H. L.</div>`)[0];
+            popup_ffd291b994ab46108e1461731a1cf5d7.setContent(html_836c762096d7420e84cd63b2802642dc);
+        
+
+        marker_ad7671ebb0f14c7083c88798e7b58fe3.bindPopup(popup_ffd291b994ab46108e1461731a1cf5d7)
+        ;
+
+        
+    
+    
+            var marker_3070ed78035940a993ba8b62ec2d95f5 = L.marker(
+                [10.31, -84.8],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_4c774a2c35284d259cfeb41df34802a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a67c992062f484c9e2f1dc0f9573db8 = $(`<div id="html_2a67c992062f484c9e2f1dc0f9573db8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Monteverde Cordillera de Tilarán. TV twers on Cerro Amigos, lower montane rain forest. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1993-01-02 00:00:00+00:00 <strong>Recolectores:</strong> Haber, William <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_4c774a2c35284d259cfeb41df34802a8.setContent(html_2a67c992062f484c9e2f1dc0f9573db8);
+        
+
+        marker_3070ed78035940a993ba8b62ec2d95f5.bindPopup(popup_4c774a2c35284d259cfeb41df34802a8)
+        ;
+
+        
+    
+    
+            var marker_06acbd2b98ed446187a0a7e9a5be5558 = L.marker(
+                [-18.906944, -43.431667],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_fe9c2796a4024ab290f7a3c1f2b2477b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bdc7315cd244c3abc89655c68cc10a3 = $(`<div id="html_1bdc7315cd244c3abc89655c68cc10a3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cava do Sapo <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 2011-11-01 00:00:00+00:00 <strong>Recolectores:</strong> Pena, FSR <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fe9c2796a4024ab290f7a3c1f2b2477b.setContent(html_1bdc7315cd244c3abc89655c68cc10a3);
+        
+
+        marker_06acbd2b98ed446187a0a7e9a5be5558.bindPopup(popup_fe9c2796a4024ab290f7a3c1f2b2477b)
+        ;
+
+        
+    
+    
+            var marker_16b4faf4ca4f4411b58d154562289901 = L.marker(
+                [-18.906944, -43.431667],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_a18e17a8249d4403a7350caed5a19839 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a7429f1961047338c8729653d8679ee = $(`<div id="html_5a7429f1961047338c8729653d8679ee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cava do Sapo <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 2011-11-01 00:00:00+00:00 <strong>Recolectores:</strong> Pena, FSR <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_a18e17a8249d4403a7350caed5a19839.setContent(html_5a7429f1961047338c8729653d8679ee);
+        
+
+        marker_16b4faf4ca4f4411b58d154562289901.bindPopup(popup_a18e17a8249d4403a7350caed5a19839)
+        ;
+
+        
+    
+    
+            var marker_a2b021f2b70c4f90b0aea4472cd1c8e2 = L.marker(
+                [-18.906944, -43.431667],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_ab589f35fd2942d6bec9f9535ab65f7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53ccd7e6aade492ca45d5fb51b80a375 = $(`<div id="html_53ccd7e6aade492ca45d5fb51b80a375" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cava do Sapo <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 2011-11-01 00:00:00+00:00 <strong>Recolectores:</strong> Pena, FSR <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ab589f35fd2942d6bec9f9535ab65f7c.setContent(html_53ccd7e6aade492ca45d5fb51b80a375);
+        
+
+        marker_a2b021f2b70c4f90b0aea4472cd1c8e2.bindPopup(popup_ab589f35fd2942d6bec9f9535ab65f7c)
+        ;
+
+        
+    
+    
+            var marker_acf73066a1d4491faeac5dd062f61594 = L.marker(
+                [10.185556, -84.241111],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_233cccdee70b4887a5770a3540f416f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb676a486e7843b29c91f83171894172 = $(`<div id="html_fb676a486e7843b29c91f83171894172" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcan Poas. Near crater. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2005-08-01 00:00:00+00:00 <strong>Recolectores:</strong> Penneys, Darin S.; Rivlin, Brynne <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_233cccdee70b4887a5770a3540f416f0.setContent(html_fb676a486e7843b29c91f83171894172);
+        
+
+        marker_acf73066a1d4491faeac5dd062f61594.bindPopup(popup_233cccdee70b4887a5770a3540f416f0)
+        ;
+
+        
+    
+    
+            var marker_9b23bc0d48bc48f2a1e3aaa9c9670232 = L.marker(
+                [10.933333, -85.45],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_7e8bf099e32d4710917f280fe8e7c6d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ef5b3b8a07641618f48f801f477441d = $(`<div id="html_9ef5b3b8a07641618f48f801f477441d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Prov. Alajuela/Guancaste, Cantón de Upala/La Cruz/Liberia, dwarf forest on summit ridge of Cerro Cacao, southeastward along continental divide for ca. 0.5 km (along boundary with Prov. Alajuela), Cordillera de Guanacaste. <strong>Elevación:</strong> 1645.0 m  <strong>Fecha:</strong> 2007-08-01 00:00:00+00:00 <strong>Recolectores:</strong> Grayum, M. H.; Soto, Armando; Espinoza, Roberto; Hernández, J.; Umaña, R.; García, Daniel; Calvo, J. A. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7e8bf099e32d4710917f280fe8e7c6d4.setContent(html_9ef5b3b8a07641618f48f801f477441d);
+        
+
+        marker_9b23bc0d48bc48f2a1e3aaa9c9670232.bindPopup(popup_7e8bf099e32d4710917f280fe8e7c6d4)
+        ;
+
+        
+    
+    
+            var marker_f7ca83a9d75a40268161b391cd15e7c6 = L.marker(
+                [3.291028, -75.36783299999999],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_1d731f5216ab42c99636508a10261e55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9fd2b0b26da461696091f82db37a633 = $(`<div id="html_d9fd2b0b26da461696091f82db37a633" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Diego <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2015-04-12 00:00:00+00:00 <strong>Recolectores:</strong> William Vargas <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1d731f5216ab42c99636508a10261e55.setContent(html_d9fd2b0b26da461696091f82db37a633);
+        
+
+        marker_f7ca83a9d75a40268161b391cd15e7c6.bindPopup(popup_1d731f5216ab42c99636508a10261e55)
+        ;
+
+        
+    
+    
+            var marker_9323488da8e346d390c162be2a6adccb = L.marker(
+                [10.31, -84.8],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_0f2f01bd36a7482c9de9d6301eb076d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_513154e93e6f4c879efe7592baffc71f = $(`<div id="html_513154e93e6f4c879efe7592baffc71f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Monteverde; Cordillera de Tilarán. Area around TV towers and access road. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1990-12-20 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_0f2f01bd36a7482c9de9d6301eb076d2.setContent(html_513154e93e6f4c879efe7592baffc71f);
+        
+
+        marker_9323488da8e346d390c162be2a6adccb.bindPopup(popup_0f2f01bd36a7482c9de9d6301eb076d2)
+        ;
+
+        
+    
+    
+            var marker_c67aab4733314e6a8e8c3cb57e06d9cd = L.marker(
+                [10.31, -84.8],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_90c8fcfd05174076a45b8a753a5674ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51b37fe7eaf54260b390dace3b7ea411 = $(`<div id="html_51b37fe7eaf54260b390dace3b7ea411" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Monteverde; Cordillera de Tilarán. TV towers on Cerro Amigos, Lower montane rain forest. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1993-01-02 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_90c8fcfd05174076a45b8a753a5674ae.setContent(html_51b37fe7eaf54260b390dace3b7ea411);
+        
+
+        marker_c67aab4733314e6a8e8c3cb57e06d9cd.bindPopup(popup_90c8fcfd05174076a45b8a753a5674ae)
+        ;
+
+        
+    
+    
+            var marker_0f4c1fdb4a6e470fb9fc26e386a9f307 = L.marker(
+                [10.801116, -85.329178],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_896eff8a1b42463b9b3aed199f547bf6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_040b11c9d9544f0bb4417272ad380a9a = $(`<div id="html_040b11c9d9544f0bb4417272ad380a9a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Liberia. Área de Conservación Guanacaste, Sector Hacienda Santa María, Sendero al cráter del Volcán Santa María. <strong>Elevación:</strong> 1560.0 m  <strong>Fecha:</strong> 2015-01-23 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza; Adrián Guadamuz <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_896eff8a1b42463b9b3aed199f547bf6.setContent(html_040b11c9d9544f0bb4417272ad380a9a);
+        
+
+        marker_0f4c1fdb4a6e470fb9fc26e386a9f307.bindPopup(popup_896eff8a1b42463b9b3aed199f547bf6)
+        ;
+
+        
+    
+    
+            var marker_2baf256fca3442a3b1517b386b773eee = L.marker(
+                [10.801116, -85.329178],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_289d8149045444488e877a78530783a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37a5d34ca92a4a0eb161f09090b51e79 = $(`<div id="html_37a5d34ca92a4a0eb161f09090b51e79" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Liberia. Área de Conservación Guanacaste, Sector Hacienda Santa María, Sendero al cráter del Volcán Santa María. <strong>Elevación:</strong> 1560.0 m  <strong>Fecha:</strong> 2015-01-23 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza; Adrián Guadamuz <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_289d8149045444488e877a78530783a4.setContent(html_37a5d34ca92a4a0eb161f09090b51e79);
+        
+
+        marker_2baf256fca3442a3b1517b386b773eee.bindPopup(popup_289d8149045444488e877a78530783a4)
+        ;
+
+        
+    
+    
+            var marker_295dd8b6e754466dbcb2b5b39d4bb5b5 = L.marker(
+                [10.801116, -85.329178],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_f2089472aea64493b63825898b4c6793 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7284db2ea5454abf89baac1778b2fc07 = $(`<div id="html_7284db2ea5454abf89baac1778b2fc07" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Liberia. Área de Conservación Guanacaste, Sector Hacienda Santa María, Sendero al cráter del Volcán Santa María. <strong>Elevación:</strong> 1560.0 m  <strong>Fecha:</strong> 2015-01-23 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza; Adrián Guadamuz <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_f2089472aea64493b63825898b4c6793.setContent(html_7284db2ea5454abf89baac1778b2fc07);
+        
+
+        marker_295dd8b6e754466dbcb2b5b39d4bb5b5.bindPopup(popup_f2089472aea64493b63825898b4c6793)
+        ;
+
+        
+    
+    
+            var marker_c0ece3199db4423a9e53d64c2e71c026 = L.marker(
+                [15.5049, -61.4034],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_661399cf8e0d46bdbcfe527dbf5d5646 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f6969ba9a5c4cad9d27caec49fa46e8 = $(`<div id="html_4f6969ba9a5c4cad9d27caec49fa46e8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Morne Diablotin <strong>Elevación:</strong> 1362.0 m  <strong>Fecha:</strong> 2007-05-05 00:00:00+00:00 <strong>Recolectores:</strong> C. M. S. Carrington & K. Sabir <strong>Identificadores:</strong> Strong, M. T., (US), Smithsonian Institution - National Museum of Natural History (UNITED STATES)</div>`)[0];
+            popup_661399cf8e0d46bdbcfe527dbf5d5646.setContent(html_4f6969ba9a5c4cad9d27caec49fa46e8);
+        
+
+        marker_c0ece3199db4423a9e53d64c2e71c026.bindPopup(popup_661399cf8e0d46bdbcfe527dbf5d5646)
+        ;
+
+        
+    
+    
+            var marker_bb538d8bcc944e5fbc5c586c73e16c43 = L.marker(
+                [10.91, -85.46],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_95ae44c87fb9492b8d1d1dd705550d8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37c9b08edde849169dcda77d42308263 = $(`<div id="html_37c9b08edde849169dcda77d42308263" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcan Cacao, sendero hasta la cima del volcan. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-01-01 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> R. Kriebel</div>`)[0];
+            popup_95ae44c87fb9492b8d1d1dd705550d8e.setContent(html_37c9b08edde849169dcda77d42308263);
+        
+
+        marker_bb538d8bcc944e5fbc5c586c73e16c43.bindPopup(popup_95ae44c87fb9492b8d1d1dd705550d8e)
+        ;
+
+        
+    
+    
+            var marker_1933aeef1d7e45ffbbec37e2b8ebd89e = L.marker(
+                [10.19416, -84.22944],
+                {}
+            ).addTo(marker_cluster_b41c20a5238848d8bc39337bc7d0dd67);
+        
+    
+        var popup_33be5c341ff04a2f846ee74f9654ef84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_951b4941a7d043aab1ffb039f29601ee = $(`<div id="html_951b4941a7d043aab1ffb039f29601ee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Póas; forest between crater and cold lake. <strong>Elevación:</strong> 2450.0 m  <strong>Fecha:</strong> 1968-08-03 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|Richard W. Pohl <strong>Identificadores:</strong> F. Almeda (CAS), Jan.</div>`)[0];
+            popup_33be5c341ff04a2f846ee74f9654ef84.setContent(html_951b4941a7d043aab1ffb039f29601ee);
+        
+
+        marker_1933aeef1d7e45ffbbec37e2b8ebd89e.bindPopup(popup_33be5c341ff04a2f846ee74f9654ef84)
+        ;
+
+        
+    
+    
+            var layer_control_512bb19475fe45a38f7bc46cc3f5a17d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0ef341094d8d4c418805b83f66c0ed17,
+                    "ESRI World Imagery" : tile_layer_5d0c11a87db2442f8d1620d92985a4f0,
+                },
+                overlays :  {
+                    "macro_element_b41c20a5238848d8bc39337bc7d0dd67" : marker_cluster_b41c20a5238848d8bc39337bc7d0dd67,
+                },
+            };
+            L.control.layers(
+                layer_control_512bb19475fe45a38f7bc46cc3f5a17d.base_layers,
+                layer_control_512bb19475fe45a38f7bc46cc3f5a17d.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6a39b7dab6994d00be9019966113067d);
+            tile_layer_5d0c11a87db2442f8d1620d92985a4f0.remove();
+        
+</script>

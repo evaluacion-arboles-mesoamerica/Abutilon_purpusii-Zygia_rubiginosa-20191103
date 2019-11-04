@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5a55929d611f4f42a8b5df77abe9dc5d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5a55929d611f4f42a8b5df77abe9dc5d" ></div>
+        
+</body>
+<script>    
+    
+            var map_5a55929d611f4f42a8b5df77abe9dc5d = L.map(
+                "map_5a55929d611f4f42a8b5df77abe9dc5d",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+
+            
+
+        
+    
+            var tile_layer_39e8a5ede3314be690a7ed68bf0db8ed = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+            var tile_layer_b60e1d05eb7a43adb7edfdd8cbfb9a6f = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+            var circle_marker_cc238940a1704a619c2d24f7f10cb823 = L.circleMarker(
+                [8.68333, -83.2167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_e111ab6681e64e1fa1f745a0d7eba962 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d91975436ec4f85b287ef391434422a = $(`<div id="html_3d91975436ec4f85b287ef391434422a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas, way between Tropenstation La Gamba and Esquinas Rainforest Lodge <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2001-12-24 00:00:00+00:00 <strong>Recolectores:</strong> Schaber Daniel <strong>Identificadores:</strong> Huber Werner</div>`)[0];
+            popup_e111ab6681e64e1fa1f745a0d7eba962.setContent(html_3d91975436ec4f85b287ef391434422a);
+        
+
+        circle_marker_cc238940a1704a619c2d24f7f10cb823.bindPopup(popup_e111ab6681e64e1fa1f745a0d7eba962)
+        ;
+
+        
+    
+    
+            var circle_marker_a5eaaaca137c47fcba440517abbf8a6e = L.circleMarker(
+                [8.68333, -83.2167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_8336dcb493f74c649e5c4f370ccc46c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1de63b9898948eb8d97a0c2b58b4daf = $(`<div id="html_b1de63b9898948eb8d97a0c2b58b4daf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas, way between Tropenstation La Gamba and Esquinas Rainforest Lodge <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2001-12-24 00:00:00+00:00 <strong>Recolectores:</strong> Schaber Daniel <strong>Identificadores:</strong> Huber Werner</div>`)[0];
+            popup_8336dcb493f74c649e5c4f370ccc46c7.setContent(html_b1de63b9898948eb8d97a0c2b58b4daf);
+        
+
+        circle_marker_a5eaaaca137c47fcba440517abbf8a6e.bindPopup(popup_8336dcb493f74c649e5c4f370ccc46c7)
+        ;
+
+        
+    
+    
+            var circle_marker_83e2c00016cb4452ab97f7ca2121cdab = L.circleMarker(
+                [8.68333, -83.2167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_08c842a284064eaa95f7e08ce7ece494 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec4463d44a9f4b91a1e8a9aca5bb94c2 = $(`<div id="html_ec4463d44a9f4b91a1e8a9aca5bb94c2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Esquinas, "Bosque de los Austriacos", Sendero Ozelot, forest in a gorge, near the Esquinas Rainforest Lodge, La Gamba <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 1998-01-30 00:00:00+00:00 <strong>Recolectores:</strong> Huber Werner, Weissenhofer Anton <strong>Identificadores:</strong> Huber Werner, Weissenhofer Anton</div>`)[0];
+            popup_08c842a284064eaa95f7e08ce7ece494.setContent(html_ec4463d44a9f4b91a1e8a9aca5bb94c2);
+        
+
+        circle_marker_83e2c00016cb4452ab97f7ca2121cdab.bindPopup(popup_08c842a284064eaa95f7e08ce7ece494)
+        ;
+
+        
+    
+    
+            var circle_marker_12fa5d3eccae418288c88ccdfa56a2c1 = L.circleMarker(
+                [10.875, -84.50694399999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_6f048561b85b49ff863e96f4731cb7ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22ee806662a243dfb12278a6063dd382 = $(`<div id="html_22ee806662a243dfb12278a6063dd382" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Escaleras, 8 km NE despues de Pavon, Finca Elky Maria. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-14 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_6f048561b85b49ff863e96f4731cb7ee.setContent(html_22ee806662a243dfb12278a6063dd382);
+        
+
+        circle_marker_12fa5d3eccae418288c88ccdfa56a2c1.bindPopup(popup_6f048561b85b49ff863e96f4731cb7ee)
+        ;
+
+        
+    
+    
+            var circle_marker_cad8600d18974c59b36d90ff33ad7de2 = L.circleMarker(
+                [10.875, -84.50694399999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_7da6261fdf174aad9ee7c92120ebea97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_671718bb812645d8aa2e2c5b2ad07fd0 = $(`<div id="html_671718bb812645d8aa2e2c5b2ad07fd0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Escaleras, 8 km NE despues de Pavon, Finca Elky Maria. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-14 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_7da6261fdf174aad9ee7c92120ebea97.setContent(html_671718bb812645d8aa2e2c5b2ad07fd0);
+        
+
+        circle_marker_cad8600d18974c59b36d90ff33ad7de2.bindPopup(popup_7da6261fdf174aad9ee7c92120ebea97)
+        ;
+
+        
+    
+    
+            var circle_marker_9aed16e2fef846a889dffb16f5c4f16f = L.circleMarker(
+                [10.875, -84.50694399999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_f30151435d774ec0a0c964a419610216 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dde4a41786ad409797fd304b8181de42 = $(`<div id="html_dde4a41786ad409797fd304b8181de42" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Escaleras, 8 km NE despues de Pavon, Finca Elky Maria. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-14 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Mery Ocampo <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_f30151435d774ec0a0c964a419610216.setContent(html_dde4a41786ad409797fd304b8181de42);
+        
+
+        circle_marker_9aed16e2fef846a889dffb16f5c4f16f.bindPopup(popup_f30151435d774ec0a0c964a419610216)
+        ;
+
+        
+    
+    
+            var circle_marker_0a97b0014d54495f84a631ec223cb152 = L.circleMarker(
+                [9.675, -83.025],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_38d51e7a625245a892f29df696515a11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7b5ed9c35214f88a31a79d2843c98ee = $(`<div id="html_a7b5ed9c35214f88a31a79d2843c98ee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alrededores de la Estacion. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-11-28 00:00:00+00:00 <strong>Recolectores:</strong> Alberth Moreno <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_38d51e7a625245a892f29df696515a11.setContent(html_a7b5ed9c35214f88a31a79d2843c98ee);
+        
+
+        circle_marker_0a97b0014d54495f84a631ec223cb152.bindPopup(popup_38d51e7a625245a892f29df696515a11)
+        ;
+
+        
+    
+    
+            var circle_marker_c4a8db3c308d466a97f6b41a10482107 = L.circleMarker(
+                [8.659722, -83.554167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_a3dee464d6cc4c8fb7b8440f4463bb1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b65650f25d5449ba557ecd562f02078 = $(`<div id="html_5b65650f25d5449ba557ecd562f02078" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincon, Chiqueron, Finca de Abelino Obando, luego de cruzar Rio Riyito. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1992-11-23 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_a3dee464d6cc4c8fb7b8440f4463bb1b.setContent(html_5b65650f25d5449ba557ecd562f02078);
+        
+
+        circle_marker_c4a8db3c308d466a97f6b41a10482107.bindPopup(popup_a3dee464d6cc4c8fb7b8440f4463bb1b)
+        ;
+
+        
+    
+    
+            var circle_marker_7b8076ff822743b6a62e3d66418024c8 = L.circleMarker(
+                [9.973333, -83.450556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_2b9d4323419842cf994748f279f3c301 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f507128327744d8880713d39af1fa681 = $(`<div id="html_f507128327744d8880713d39af1fa681" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero que lleva a Rio Danta. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-16 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_2b9d4323419842cf994748f279f3c301.setContent(html_f507128327744d8880713d39af1fa681);
+        
+
+        circle_marker_7b8076ff822743b6a62e3d66418024c8.bindPopup(popup_2b9d4323419842cf994748f279f3c301)
+        ;
+
+        
+    
+    
+            var circle_marker_dc06c9e26aad48ab965e79565e96fedc = L.circleMarker(
+                [9.973333, -83.450556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_bc56c52759fa41b3a776e1ce480b1e18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_389b686d57794002854e497c0bd001be = $(`<div id="html_389b686d57794002854e497c0bd001be" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero que lleva a Rio Danta. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-16 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_bc56c52759fa41b3a776e1ce480b1e18.setContent(html_389b686d57794002854e497c0bd001be);
+        
+
+        circle_marker_dc06c9e26aad48ab965e79565e96fedc.bindPopup(popup_bc56c52759fa41b3a776e1ce480b1e18)
+        ;
+
+        
+    
+    
+            var circle_marker_0b5db6f7e4384a998b0e199fb0945def = L.circleMarker(
+                [9.973333, -83.450556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_d91a94f2201d45339e82d3c899c55b62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc55f044d7be4c329df959bec595b487 = $(`<div id="html_fc55f044d7be4c329df959bec595b487" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero que lleva a Rio Danta. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-16 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_d91a94f2201d45339e82d3c899c55b62.setContent(html_fc55f044d7be4c329df959bec595b487);
+        
+
+        circle_marker_0b5db6f7e4384a998b0e199fb0945def.bindPopup(popup_d91a94f2201d45339e82d3c899c55b62)
+        ;
+
+        
+    
+    
+            var circle_marker_4e53dbacbde14501964af446584240c7 = L.circleMarker(
+                [9.973333, -83.450556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_69181dbb615c408d940a0f156626a4ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08273f585f3244fb84b400aed38fc965 = $(`<div id="html_08273f585f3244fb84b400aed38fc965" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero que lleva a Rio Danta. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-16 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_69181dbb615c408d940a0f156626a4ef.setContent(html_08273f585f3244fb84b400aed38fc965);
+        
+
+        circle_marker_4e53dbacbde14501964af446584240c7.bindPopup(popup_69181dbb615c408d940a0f156626a4ef)
+        ;
+
+        
+    
+    
+            var circle_marker_ace4274f34ac48dab250d57176284f7c = L.circleMarker(
+                [8.666667, -83.56666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_f6329aa5da234adfb09b18fde3c1a89a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd531f423c6c41feb40f2f1c05669761 = $(`<div id="html_fd531f423c6c41feb40f2f1c05669761" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado, ca. 15 km W of Rincon; in bottom of S end of valley along Rio Riyito. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_f6329aa5da234adfb09b18fde3c1a89a.setContent(html_fd531f423c6c41feb40f2f1c05669761);
+        
+
+        circle_marker_ace4274f34ac48dab250d57176284f7c.bindPopup(popup_f6329aa5da234adfb09b18fde3c1a89a)
+        ;
+
+        
+    
+    
+            var circle_marker_db853aeca53e4811bbe1a1cedc1985f0 = L.circleMarker(
+                [8.675, -83.2],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_7a2dafcd290e4cf894de3dc111b8f56b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7a7a177903a4aada1ab28b3212fd2b3 = $(`<div id="html_f7a7a177903a4aada1ab28b3212fd2b3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Both slopes of Fila Gamba and along crest of same, to ca. 0.7 km N of Golfito/Villa Briceno road. <strong>Elevación:</strong> 160.0 m  <strong>Fecha:</strong> 1988-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_7a2dafcd290e4cf894de3dc111b8f56b.setContent(html_f7a7a177903a4aada1ab28b3212fd2b3);
+        
+
+        circle_marker_db853aeca53e4811bbe1a1cedc1985f0.bindPopup(popup_7a2dafcd290e4cf894de3dc111b8f56b)
+        ;
+
+        
+    
+    
+            var circle_marker_4608ba85b0ad4a2b96a3696b1c624e63 = L.circleMarker(
+                [9.991667, -83.377778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_e2777c3161524d30b9da5a93174a7f68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a8294c686ed40ee9f9393b4320ddb4b = $(`<div id="html_5a8294c686ed40ee9f9393b4320ddb4b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Brisas de Pacuarito. Sendero principal, colecta junto al Río Dantas. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-03-03 00:00:00+00:00 <strong>Recolectores:</strong> Edgar Mora; Elias Rojas <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_e2777c3161524d30b9da5a93174a7f68.setContent(html_5a8294c686ed40ee9f9393b4320ddb4b);
+        
+
+        circle_marker_4608ba85b0ad4a2b96a3696b1c624e63.bindPopup(popup_e2777c3161524d30b9da5a93174a7f68)
+        ;
+
+        
+    
+    
+            var circle_marker_9c8eb3a2e34e4269968f1e12320bc439 = L.circleMarker(
+                [9.991667, -83.377778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_0982e190ae2544cf858b813dc44908b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43a2e61acd5d45459790b6524ca024a1 = $(`<div id="html_43a2e61acd5d45459790b6524ca024a1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Brisas de Pacuarito. Sendero principal, colecta junto al Río Dantas. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-03-03 00:00:00+00:00 <strong>Recolectores:</strong> Edgar Mora; Elias Rojas <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_0982e190ae2544cf858b813dc44908b6.setContent(html_43a2e61acd5d45459790b6524ca024a1);
+        
+
+        circle_marker_9c8eb3a2e34e4269968f1e12320bc439.bindPopup(popup_0982e190ae2544cf858b813dc44908b6)
+        ;
+
+        
+    
+    
+            var circle_marker_11e6e2ae5d6c4ae6af52841a047abf25 = L.circleMarker(
+                [9.991667, -83.377778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_a4671a7597f64b2a989b29e61dc10143 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e46f4981ffe4cdfab074f1d86acb8be = $(`<div id="html_8e46f4981ffe4cdfab074f1d86acb8be" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Brisas de Pacuarito. Sendero principal, colecta junto al Río Dantas. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-03-03 00:00:00+00:00 <strong>Recolectores:</strong> Edgar Mora; Elias Rojas <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_a4671a7597f64b2a989b29e61dc10143.setContent(html_8e46f4981ffe4cdfab074f1d86acb8be);
+        
+
+        circle_marker_11e6e2ae5d6c4ae6af52841a047abf25.bindPopup(popup_a4671a7597f64b2a989b29e61dc10143)
+        ;
+
+        
+    
+    
+            var circle_marker_f41e964fcfc84256bcfb9cda8b66ecc2 = L.circleMarker(
+                [9.991667, -83.377778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_c68784c1dc6a4005abf201f7f787cbeb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a5e2fee7e1146d489858a20c085dbe0 = $(`<div id="html_6a5e2fee7e1146d489858a20c085dbe0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Brisas de Pacuarito. Sendero principal, colecta junto al Río Dantas. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-03-03 00:00:00+00:00 <strong>Recolectores:</strong> Edgar Mora; Elias Rojas <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_c68784c1dc6a4005abf201f7f787cbeb.setContent(html_6a5e2fee7e1146d489858a20c085dbe0);
+        
+
+        circle_marker_f41e964fcfc84256bcfb9cda8b66ecc2.bindPopup(popup_c68784c1dc6a4005abf201f7f787cbeb)
+        ;
+
+        
+    
+    
+            var circle_marker_8301c67058f64fd9b15ae02f1c08efa3 = L.circleMarker(
+                [10.011111, -83.383333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_94565b94ab01459b83f589ea8009e7e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cdab43743bb444889ba289e69d4b872 = $(`<div id="html_2cdab43743bb444889ba289e69d4b872" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colonia Puriscaleña. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2000-08-02 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Edgar Mora ; Geovanny Sancho ; Gerardo Soto <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_94565b94ab01459b83f589ea8009e7e0.setContent(html_2cdab43743bb444889ba289e69d4b872);
+        
+
+        circle_marker_8301c67058f64fd9b15ae02f1c08efa3.bindPopup(popup_94565b94ab01459b83f589ea8009e7e0)
+        ;
+
+        
+    
+    
+            var circle_marker_2aa75b5ebb2f46daafde604abef0e21c = L.circleMarker(
+                [10.011111, -83.383333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_4d8dcd2c8ff54916bffaef639d9afcf5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae2c9ff99e9a4c9aaee05a62a7505797 = $(`<div id="html_ae2c9ff99e9a4c9aaee05a62a7505797" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colonia Puriscaleña. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2000-08-02 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Edgar Mora ; Geovanny Sancho ; Gerardo Soto <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_4d8dcd2c8ff54916bffaef639d9afcf5.setContent(html_ae2c9ff99e9a4c9aaee05a62a7505797);
+        
+
+        circle_marker_2aa75b5ebb2f46daafde604abef0e21c.bindPopup(popup_4d8dcd2c8ff54916bffaef639d9afcf5)
+        ;
+
+        
+    
+    
+            var circle_marker_6946715cb1284b268784b75fac3abe9e = L.circleMarker(
+                [9.640278, -83.1375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_ea1cf7eea0bd46c5a87f230ae691adc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7db4aaa0cbb47e5938c6358c2596f27 = $(`<div id="html_a7db4aaa0cbb47e5938c6358c2596f27" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Bitarkara. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 2006-11-24 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Marcos Moraga ; Billen Gamboa R. <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_ea1cf7eea0bd46c5a87f230ae691adc9.setContent(html_a7db4aaa0cbb47e5938c6358c2596f27);
+        
+
+        circle_marker_6946715cb1284b268784b75fac3abe9e.bindPopup(popup_ea1cf7eea0bd46c5a87f230ae691adc9)
+        ;
+
+        
+    
+    
+            var circle_marker_440f83c53b15419489d3d79719635c68 = L.circleMarker(
+                [9.15, -78.03333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_05291f40ca8e40bca4467f6ee65b852d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8e13a83d485442782d4c897e75432c0 = $(`<div id="html_f8e13a83d485442782d4c897e75432c0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ailigandi River <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> James A. Duke|Narciso Bristan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_05291f40ca8e40bca4467f6ee65b852d.setContent(html_f8e13a83d485442782d4c897e75432c0);
+        
+
+        circle_marker_440f83c53b15419489d3d79719635c68.bindPopup(popup_05291f40ca8e40bca4467f6ee65b852d)
+        ;
+
+        
+    
+    
+            var circle_marker_ba97c5726fa04ed4bf0324f0270ece2d = L.circleMarker(
+                [9.97333, -83.45055],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_0692dce324744be88cd8ae95d52cc2c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a013a1ed705441e83458af547298384 = $(`<div id="html_8a013a1ed705441e83458af547298384" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Barbilla, Cuenca del Matina, Sendero que lleva a Río Danta <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1996-07-16 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Rodríguez|Luis Diego Vargas <strong>Identificadores:</strong> Wm. S. Alverson, 2007 (F)</div>`)[0];
+            popup_0692dce324744be88cd8ae95d52cc2c7.setContent(html_8a013a1ed705441e83458af547298384);
+        
+
+        circle_marker_ba97c5726fa04ed4bf0324f0270ece2d.bindPopup(popup_0692dce324744be88cd8ae95d52cc2c7)
+        ;
+
+        
+    
+    
+            var circle_marker_ef8aae6d24504d138e4d860393cb8823 = L.circleMarker(
+                [8.659722, -83.554167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_09b2f25225614e0a80040adda7c7ea6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db983d2c31df49d1a427eb601f44e614 = $(`<div id="html_db983d2c31df49d1a427eb601f44e614" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Osa Rincón. Chiquerón, Finca de Abelino Obando, luego de cruzar 5 veces el Río Riyito. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1992-11-23 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar|F. J. Quesada <strong>Identificadores:</strong> W. S. Alverson</div>`)[0];
+            popup_09b2f25225614e0a80040adda7c7ea6e.setContent(html_db983d2c31df49d1a427eb601f44e614);
+        
+
+        circle_marker_ef8aae6d24504d138e4d860393cb8823.bindPopup(popup_09b2f25225614e0a80040adda7c7ea6e)
+        ;
+
+        
+    
+    
+            var circle_marker_4ad792fd7e064b03821b7710e91e52f7 = L.circleMarker(
+                [9.36, -79.66],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_9c78d50dd2f94ec5854e4cfbf64636f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec91708bf7f1473393ef6a99b444fbcb = $(`<div id="html_ec91708bf7f1473393ef6a99b444fbcb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Prov. Colon. Primary forest along Santa Rita ridge trail, beyond end of Danta Rita Ridge Road ( Pan. Hwy R20D), an est 20-25km ( by land) from Boyd - Roosevelt Hwy. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1982-10-21 00:00:00+00:00 <strong>Recolectores:</strong> Alverson, William S. <strong>Identificadores:</strong> Alverson, William S.</div>`)[0];
+            popup_9c78d50dd2f94ec5854e4cfbf64636f5.setContent(html_ec91708bf7f1473393ef6a99b444fbcb);
+        
+
+        circle_marker_4ad792fd7e064b03821b7710e91e52f7.bindPopup(popup_9c78d50dd2f94ec5854e4cfbf64636f5)
+        ;
+
+        
+    
+    
+            var circle_marker_3994aea53cb34a209533a553373be515 = L.circleMarker(
+                [9.33, -79.75],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_96679fce946c43c4903e819398f0210f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f947166023f847159b4e4c3a2165cbba = $(`<div id="html_f947166023f847159b4e4c3a2165cbba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Prov. Colón. Santa Rita Ridge, southeast of colón. alon ridge road 10-12 miles from Transisthmian Highway. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1986-03-20 00:00:00+00:00 <strong>Recolectores:</strong> McPherson, Gordon <strong>Identificadores:</strong> Alverson, William S.</div>`)[0];
+            popup_96679fce946c43c4903e819398f0210f.setContent(html_f947166023f847159b4e4c3a2165cbba);
+        
+
+        circle_marker_3994aea53cb34a209533a553373be515.bindPopup(popup_96679fce946c43c4903e819398f0210f)
+        ;
+
+        
+    
+    
+            var circle_marker_3cbaf9385cb3495f8d3a45b3c47def73 = L.circleMarker(
+                [9.36, -79.66],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_7ceb52971d2a4b49b54abe785411f808 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57335fcbbab84912a40990ab459bfd3f = $(`<div id="html_57335fcbbab84912a40990ab459bfd3f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Prov. Colon. Primary forest along Santa Rita ridge trail, beyond end of Danta Rita Ridge Road ( Pan. Hwy R20D), an est 20-25km ( by land) from Boyd - Roosevelt Hwy. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1982-10-21 00:00:00+00:00 <strong>Recolectores:</strong> Alverson, William S. <strong>Identificadores:</strong> Alverson, William S.</div>`)[0];
+            popup_7ceb52971d2a4b49b54abe785411f808.setContent(html_57335fcbbab84912a40990ab459bfd3f);
+        
+
+        circle_marker_3cbaf9385cb3495f8d3a45b3c47def73.bindPopup(popup_7ceb52971d2a4b49b54abe785411f808)
+        ;
+
+        
+    
+    
+            var circle_marker_5d8bf3d3e088459fa99f535d9732a4ee = L.circleMarker(
+                [8.66, -83.2],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_ea761c876a9746cc85d97c8487a1f35a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4df26896af1a4551a130c0281dcf6402 = $(`<div id="html_4df26896af1a4551a130c0281dcf6402" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.V.S. Golfito Both slopes of fila Gamba and along crest of same, to ca. 0.7 km N of Golfito/ Villa Briceño road. <strong>Elevación:</strong> 210.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Grayum, Michael <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_ea761c876a9746cc85d97c8487a1f35a.setContent(html_4df26896af1a4551a130c0281dcf6402);
+        
+
+        circle_marker_5d8bf3d3e088459fa99f535d9732a4ee.bindPopup(popup_ea761c876a9746cc85d97c8487a1f35a)
+        ;
+
+        
+    
+    
+            var circle_marker_9373b51e237b4fa7aadea8ea125f9496 = L.circleMarker(
+                [8.66, -83.56],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_8a1ac81712474727ba461a956c3dbca4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e85691608d294e83ab1a9611b15a20b4 = $(`<div id="html_e85691608d294e83ab1a9611b15a20b4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce Osa Península, Rancho Quemado, ca. 15 km W of rincón; in bottom of S end of Valley along Río Riyito. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Alverson, William S.</div>`)[0];
+            popup_8a1ac81712474727ba461a956c3dbca4.setContent(html_e85691608d294e83ab1a9611b15a20b4);
+        
+
+        circle_marker_9373b51e237b4fa7aadea8ea125f9496.bindPopup(popup_8a1ac81712474727ba461a956c3dbca4)
+        ;
+
+        
+    
+    
+            var circle_marker_2dd9e87d1a8243bba5bb2c76fd262a46 = L.circleMarker(
+                [8.74, -83.6],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_2e1e3fff65d7430c8a586485c53002a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e517003f593d473d999bfdc81b572828 = $(`<div id="html_e517003f593d473d999bfdc81b572828" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boca Ganado. Estribaciones de Fila Ganado. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1993-11-24 00:00:00+00:00 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Cascante, Alfredo</div>`)[0];
+            popup_2e1e3fff65d7430c8a586485c53002a5.setContent(html_e517003f593d473d999bfdc81b572828);
+        
+
+        circle_marker_2dd9e87d1a8243bba5bb2c76fd262a46.bindPopup(popup_2e1e3fff65d7430c8a586485c53002a5)
+        ;
+
+        
+    
+    
+            var circle_marker_4c9b2639486045d4b1fc123368baa2be = L.circleMarker(
+                [8.74, -83.6],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_d44fd4c7891145a79e01a2d89d57a92e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f98c7e4b7bc04398a639b49fc7b56caa = $(`<div id="html_f98c7e4b7bc04398a639b49fc7b56caa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boca Ganado. Estribaciones de Fila Ganado. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1993-11-22 00:00:00+00:00 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Cascante, Alfredo</div>`)[0];
+            popup_d44fd4c7891145a79e01a2d89d57a92e.setContent(html_f98c7e4b7bc04398a639b49fc7b56caa);
+        
+
+        circle_marker_4c9b2639486045d4b1fc123368baa2be.bindPopup(popup_d44fd4c7891145a79e01a2d89d57a92e)
+        ;
+
+        
+    
+    
+            var circle_marker_a7b8fddcb3db4b4b906858c284db2583 = L.circleMarker(
+                [8.73, -83.6],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_58c7a4a1b45d490abcc83c5fdee7d084 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79f4374b0f034cedbe19bcd92645f5e0 = $(`<div id="html_79f4374b0f034cedbe19bcd92645f5e0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boca Ganado. Fila Ganado. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1993-11-23 00:00:00+00:00 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Cascante, Alfredo</div>`)[0];
+            popup_58c7a4a1b45d490abcc83c5fdee7d084.setContent(html_79f4374b0f034cedbe19bcd92645f5e0);
+        
+
+        circle_marker_a7b8fddcb3db4b4b906858c284db2583.bindPopup(popup_58c7a4a1b45d490abcc83c5fdee7d084)
+        ;
+
+        
+    
+    
+            var circle_marker_c438953e28b34d5f97c744b437e90676 = L.circleMarker(
+                [9.65, -83.55],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_581ad27e85264a2a96fbe3f7cf3390c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_265c38d9d2fa4d17a05e0dadca5396a2 = $(`<div id="html_265c38d9d2fa4d17a05e0dadca5396a2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón. Chiquerón, Finca de Abelino Obando, luego de cruzar 5 veces el Río Riyito. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1992-11-23 00:00:00+00:00 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_581ad27e85264a2a96fbe3f7cf3390c4.setContent(html_265c38d9d2fa4d17a05e0dadca5396a2);
+        
+
+        circle_marker_c438953e28b34d5f97c744b437e90676.bindPopup(popup_581ad27e85264a2a96fbe3f7cf3390c4)
+        ;
+
+        
+    
+    
+            var circle_marker_65ef36d6d4554c1ea17ff780ed588891 = L.circleMarker(
+                [8.68, -83.21],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_347c683a75e34a6e8af6c54607df4975 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_037fb7aa4ab747b58457182190debf4e = $(`<div id="html_037fb7aa4ab747b58457182190debf4e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Esquinas. Sección "Bosque de los austriacos". Sendero Ozelot, forest in a gorge, near the Esquinas Rainforest lodge, La Gamba. <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 1998-01-30 00:00:00+00:00 <strong>Recolectores:</strong> Huber, Werner <strong>Identificadores:</strong> Huber, Werner & Weissenhofer, Anton</div>`)[0];
+            popup_347c683a75e34a6e8af6c54607df4975.setContent(html_037fb7aa4ab747b58457182190debf4e);
+        
+
+        circle_marker_65ef36d6d4554c1ea17ff780ed588891.bindPopup(popup_347c683a75e34a6e8af6c54607df4975)
+        ;
+
+        
+    
+    
+            var circle_marker_e9e12a19592a4c9abd1381402563897b = L.circleMarker(
+                [10.87, -84.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_68d215198c7c44e7823af381349ebd01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f9faf243856468eb252b0be40bebe9d = $(`<div id="html_2f9faf243856468eb252b0be40bebe9d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Los Chiles, Escaleras, finca Elky María. Cuenca del Pocosol. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-14 00:00:00+00:00 <strong>Recolectores:</strong> Zamora, Nelson <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_68d215198c7c44e7823af381349ebd01.setContent(html_2f9faf243856468eb252b0be40bebe9d);
+        
+
+        circle_marker_e9e12a19592a4c9abd1381402563897b.bindPopup(popup_68d215198c7c44e7823af381349ebd01)
+        ;
+
+        
+    
+    
+            var circle_marker_d4596237dde746e49c346885e3e125a0 = L.circleMarker(
+                [9.1667, -80.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_ffc3d56375644f2b8af870369c4a8958 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90aaeef2047545c3adf587c59f03598e = $(`<div id="html_90aaeef2047545c3adf587c59f03598e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1969-03-20 00:00:00+00:00 <strong>Recolectores:</strong> M. D. Corrêa A. <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_ffc3d56375644f2b8af870369c4a8958.setContent(html_90aaeef2047545c3adf587c59f03598e);
+        
+
+        circle_marker_d4596237dde746e49c346885e3e125a0.bindPopup(popup_ffc3d56375644f2b8af870369c4a8958)
+        ;
+
+        
+    
+    
+            var circle_marker_10dbd39293b44769bb8485060f657d6f = L.circleMarker(
+                [8.68333, -83.21667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_b02fb5f6eaa4412eb6f1e9da7d89bc25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b001dce1362495e940abcbabcd51a8c = $(`<div id="html_6b001dce1362495e940abcbabcd51a8c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puntarenas/Golfito; P.N. Piedras Blancas, way between Tropenstation La Gamba and Esquinas Rain Forest Lodge. 8°41' N, 83°13' W. 100 m. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2001-12-24 00:00:00+00:00 <strong>Recolectores:</strong> Schaber,D. <strong>Identificadores:</strong> W. Huber (WU)</div>`)[0];
+            popup_b02fb5f6eaa4412eb6f1e9da7d89bc25.setContent(html_6b001dce1362495e940abcbabcd51a8c);
+        
+
+        circle_marker_10dbd39293b44769bb8485060f657d6f.bindPopup(popup_b02fb5f6eaa4412eb6f1e9da7d89bc25)
+        ;
+
+        
+    
+    
+            var circle_marker_cbdb2b6f489e4a2c82a5484106166615 = L.circleMarker(
+                [8.65833, -77.45],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_3334c7a7765648449539014e721a09e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eea967aa65a141df9c5f749ab2b3844f = $(`<div id="html_eea967aa65a141df9c5f749ab2b3844f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In flood plain and hills along R|4io Armila, ca. 10 km WSW of Puerto Obaldía <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-06-22 00:00:00+00:00 <strong>Recolectores:</strong> Scott A. Mori|Kent P. Dumont|S.E. Carpenter|S.M. Carpenter <strong>Identificadores:</strong> Wm. Alverson</div>`)[0];
+            popup_3334c7a7765648449539014e721a09e1.setContent(html_eea967aa65a141df9c5f749ab2b3844f);
+        
+
+        circle_marker_cbdb2b6f489e4a2c82a5484106166615.bindPopup(popup_3334c7a7765648449539014e721a09e1)
+        ;
+
+        
+    
+    
+            var circle_marker_a32586faa06c446ebcf1dfa36574a927 = L.circleMarker(
+                [8.66, -83.56],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_856ec472760b461aa76680f490893ac4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e34574b3ed20403db2968398cdcfd74c = $(`<div id="html_e34574b3ed20403db2968398cdcfd74c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Osa Península, Rancho Quemado, ca. 15 km W of Rincón; in bottom of S end of valley along Río Riyito. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Gerardo Herrera Ch.|María Marta Chavarría|Ángel Solís <strong>Identificadores:</strong> W.S. Alverson</div>`)[0];
+            popup_856ec472760b461aa76680f490893ac4.setContent(html_e34574b3ed20403db2968398cdcfd74c);
+        
+
+        circle_marker_a32586faa06c446ebcf1dfa36574a927.bindPopup(popup_856ec472760b461aa76680f490893ac4)
+        ;
+
+        
+    
+    
+            var circle_marker_112bd1dd93be45b884db0259df4a2b3e = L.circleMarker(
+                [9.97028, -84.18806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_4e3a4743053440e3b4abaad00d189115 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6eaea7fc5b14d9faa9b67815a7be0c8 = $(`<div id="html_d6eaea7fc5b14d9faa9b67815a7be0c8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica - Rio Naranjo <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Tonduz, A. (Coll. Barbey-Boissier) <strong>Identificadores:</strong> Alverson, W. S. (1985)</div>`)[0];
+            popup_4e3a4743053440e3b4abaad00d189115.setContent(html_d6eaea7fc5b14d9faa9b67815a7be0c8);
+        
+
+        circle_marker_112bd1dd93be45b884db0259df4a2b3e.bindPopup(popup_4e3a4743053440e3b4abaad00d189115)
+        ;
+
+        
+    
+    
+            var circle_marker_160835ca97c54fb181f3bfbcd28175eb = L.circleMarker(
+                [9.383333, -79.68333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_72f13d20b26744c0a0ea6fbf34609b26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fba578b5866b4a22b6691ffc13faa556 = $(`<div id="html_fba578b5866b4a22b6691ffc13faa556" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Primary forest along "Santa Rita ridge trail," beyond end of Santa Rita Ridge Road (Pan. Hwy. R20D), an estimated 20-25 km (by land) from Boyd-Roosevelt Highway. [Coordinates on original label: 09º22'N, 079º40'W] <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1982-10-21 00:00:00+00:00 <strong>Recolectores:</strong> W. S. Alverson|David W. Roubik <strong>Identificadores:</strong> William S. Alverson</div>`)[0];
+            popup_72f13d20b26744c0a0ea6fbf34609b26.setContent(html_fba578b5866b4a22b6691ffc13faa556);
+        
+
+        circle_marker_160835ca97c54fb181f3bfbcd28175eb.bindPopup(popup_72f13d20b26744c0a0ea6fbf34609b26)
+        ;
+
+        
+    
+    
+            var circle_marker_660e824f58604173b32cc6d0abeb8547 = L.circleMarker(
+                [9.383333, -79.68333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_f439d61ca62941c0abf9c1f5cd1d7584 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c6199d6c25447b99f74c42270fbbdcc = $(`<div id="html_7c6199d6c25447b99f74c42270fbbdcc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Primary forest along "Santa Rita ridge trail," beyond end of Santa Rita Ridge Road (Pan. Hwy. R20D), an estimated 20-25 km (by land) from Boyd-Roosevelt Highway. [Coordinates on original label: 09º22'N, 079º40'W] <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1982-10-21 00:00:00+00:00 <strong>Recolectores:</strong> W. S. Alverson|David W. Roubik <strong>Identificadores:</strong> Alverson</div>`)[0];
+            popup_f439d61ca62941c0abf9c1f5cd1d7584.setContent(html_7c6199d6c25447b99f74c42270fbbdcc);
+        
+
+        circle_marker_660e824f58604173b32cc6d0abeb8547.bindPopup(popup_f439d61ca62941c0abf9c1f5cd1d7584)
+        ;
+
+        
+    
+    
+            var circle_marker_5c40852d665541aa94bddd7d15d4b1b3 = L.circleMarker(
+                [9.4, -83.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_c4227de008ec455d9e78558464c88962 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76514aaa547548b7a733454690c76932 = $(`<div id="html_76514aaa547548b7a733454690c76932" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Amistad Caribe, Limon, Alrededores de la Estacion. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-11-28 00:00:00+00:00 <strong>Recolectores:</strong> Moreno, Alberth 78 <strong>Identificadores:</strong> William Alverson</div>`)[0];
+            popup_c4227de008ec455d9e78558464c88962.setContent(html_76514aaa547548b7a733454690c76932);
+        
+
+        circle_marker_5c40852d665541aa94bddd7d15d4b1b3.bindPopup(popup_c4227de008ec455d9e78558464c88962)
+        ;
+
+        
+    
+    
+            var circle_marker_1cf99a5af9b540daaa90aad2240dd047 = L.circleMarker(
+                [10.87, -84.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_34cbb434f72e4e60b091a451f8afa687 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93bfb45003614d21adc6f8b8ac85e41d = $(`<div id="html_93bfb45003614d21adc6f8b8ac85e41d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del Pocosol, Los Chiles, Escaleras, Finca Elky Maria <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-14 00:00:00+00:00 <strong>Recolectores:</strong> Nelson Zamora|Mery Ocampo <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_34cbb434f72e4e60b091a451f8afa687.setContent(html_93bfb45003614d21adc6f8b8ac85e41d);
+        
+
+        circle_marker_1cf99a5af9b540daaa90aad2240dd047.bindPopup(popup_34cbb434f72e4e60b091a451f8afa687)
+        ;
+
+        
+    
+    
+            var circle_marker_b2f74cf222504ace97042bbc1b0c4087 = L.circleMarker(
+                [8.633333, -77.383333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_9674be43a8ee484bad3cc24b34a73d49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6079fb3f6ec3406e8eb1fd671ff9c471 = $(`<div id="html_6079fb3f6ec3406e8eb1fd671ff9c471" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mountains above Puerto Obaldía. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1971-08-18 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry <strong>Identificadores:</strong> W. S. Alverson (WIS)</div>`)[0];
+            popup_9674be43a8ee484bad3cc24b34a73d49.setContent(html_6079fb3f6ec3406e8eb1fd671ff9c471);
+        
+
+        circle_marker_b2f74cf222504ace97042bbc1b0c4087.bindPopup(popup_9674be43a8ee484bad3cc24b34a73d49)
+        ;
+
+        
+    
+    
+            var circle_marker_7c89ac72789141d79b79021a23faa943 = L.circleMarker(
+                [8.9, -77.76666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_72c18b4a80c1438c87651b7c7ff5502f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c681ab8eeb4453db4bd2a51a0ecc18e = $(`<div id="html_7c681ab8eeb4453db4bd2a51a0ecc18e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de San Blas, frente a la Isla de Tubualá; Camino a Río Masargandi, vertiente sur de Cerro Bo Yala <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1993-03-10 00:00:00+00:00 <strong>Recolectores:</strong> Heraclio Herrera|Prudencio González <strong>Identificadores:</strong> W.S. Alverson (WIS)</div>`)[0];
+            popup_72c18b4a80c1438c87651b7c7ff5502f.setContent(html_7c681ab8eeb4453db4bd2a51a0ecc18e);
+        
+
+        circle_marker_7c89ac72789141d79b79021a23faa943.bindPopup(popup_72c18b4a80c1438c87651b7c7ff5502f)
+        ;
+
+        
+    
+    
+            var circle_marker_17466ff4e61249c1928736bbe018a47e = L.circleMarker(
+                [8.783611, -82.186389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_bfc061c230d64c23b76062ada64ac7fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64d771721a6f485197e9574b522002a7 = $(`<div id="html_64d771721a6f485197e9574b522002a7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road above Chiriquí Grande. [Coordinates on orginal label: c. 8º45'N, 82º15'W]. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1985-10-25 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> W.S. Alverson (WIS)</div>`)[0];
+            popup_bfc061c230d64c23b76062ada64ac7fa.setContent(html_64d771721a6f485197e9574b522002a7);
+        
+
+        circle_marker_17466ff4e61249c1928736bbe018a47e.bindPopup(popup_bfc061c230d64c23b76062ada64ac7fa)
+        ;
+
+        
+    
+    
+            var circle_marker_32eef4f11dee4929979bf2d6720cad40 = L.circleMarker(
+                [9.333333, -78.966667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_0ac2b99cb42d459e87a0eff7a205e34e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f30a124221445199e555a49575c4f81 = $(`<div id="html_0f30a124221445199e555a49575c4f81" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Llano-Cartí Rd. Km 17.4. [Coordinates on original label: 9º19'N, 78º55'W]. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1985-07-01 00:00:00+00:00 <strong>Recolectores:</strong> Greg C. de Nevers <strong>Identificadores:</strong> Alverson 1987 (WIS)</div>`)[0];
+            popup_0ac2b99cb42d459e87a0eff7a205e34e.setContent(html_0f30a124221445199e555a49575c4f81);
+        
+
+        circle_marker_32eef4f11dee4929979bf2d6720cad40.bindPopup(popup_0ac2b99cb42d459e87a0eff7a205e34e)
+        ;
+
+        
+    
+    
+            var circle_marker_5eb9e4376cad418e8887c5b5d3ef6ef4 = L.circleMarker(
+                [9.35, -78.966667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_bca0d4cad0bd4ff29aa0f9675dbce528 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d5479f81496444cad9da33f78c67bc1 = $(`<div id="html_9d5479f81496444cad9da33f78c67bc1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along El Llano-Cartí Road. Forest W of road 13.8 km to 15.8 km from Interamerican Hwy. [Coordinates on original label: 09º19'N, 78º55'W] <strong>Elevación:</strong> 325.0 m  <strong>Fecha:</strong> 1984-08-24 00:00:00+00:00 <strong>Recolectores:</strong> Greg C. de Nevers|Ceremiro de León|Mickey Marcus <strong>Identificadores:</strong> Alverson 1987 (WIS)</div>`)[0];
+            popup_bca0d4cad0bd4ff29aa0f9675dbce528.setContent(html_9d5479f81496444cad9da33f78c67bc1);
+        
+
+        circle_marker_5eb9e4376cad418e8887c5b5d3ef6ef4.bindPopup(popup_bca0d4cad0bd4ff29aa0f9675dbce528)
+        ;
+
+        
+    
+    
+            var circle_marker_03fa24a96327414d82c347a1d74d568c = L.circleMarker(
+                [9.67, -83.02],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_716429fba5b74f0ea4320030306ad810 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a626f613e0414d65838c82490ea4218b = $(`<div id="html_a626f613e0414d65838c82490ea4218b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Res. Biológica Hitoy-Cerere Alrededores de la Estación. Valle de la Estrella. Bosque primario <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-11-28 00:00:00+00:00 <strong>Recolectores:</strong> Alberth Moreno <strong>Identificadores:</strong> W. S. Alverson</div>`)[0];
+            popup_716429fba5b74f0ea4320030306ad810.setContent(html_a626f613e0414d65838c82490ea4218b);
+        
+
+        circle_marker_03fa24a96327414d82c347a1d74d568c.bindPopup(popup_716429fba5b74f0ea4320030306ad810)
+        ;
+
+        
+    
+    
+            var circle_marker_9aa2fa47c09348fdac85883ff0441c38 = L.circleMarker(
+                [8.675, -83.2],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_6f170ba07c5f44ca9c34bab3cacbf313 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1ba6e8da38e4ff4aac9134bf97b4001 = $(`<div id="html_a1ba6e8da38e4ff4aac9134bf97b4001" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional Golfito Both slopes of Fila Gamba and along crest of same, to ca. 0.7 km N of Golfito/Villa Briceño road. <strong>Elevación:</strong> 210.0 m  <strong>Fecha:</strong> 1988-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Gerardo Herrera Ch. <strong>Identificadores:</strong> M.Grayum, 1988 W.S. Alverson</div>`)[0];
+            popup_6f170ba07c5f44ca9c34bab3cacbf313.setContent(html_a1ba6e8da38e4ff4aac9134bf97b4001);
+        
+
+        circle_marker_9aa2fa47c09348fdac85883ff0441c38.bindPopup(popup_6f170ba07c5f44ca9c34bab3cacbf313)
+        ;
+
+        
+    
+    
+            var circle_marker_5f872f2f13b04b54a7c96f10ca38b37a = L.circleMarker(
+                [9.366660000000001, -79.69166],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_890ef54957ab4bb091bd6571214ce597 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0de4e4c8c09f4cb9a1882af2cae08175 = $(`<div id="html_0de4e4c8c09f4cb9a1882af2cae08175" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road into Santa Rita, east of Agua Clara rain gauge <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1973-03-04 00:00:00+00:00 <strong>Recolectores:</strong> Helen Kennedy <strong>Identificadores:</strong> William S. Alverson</div>`)[0];
+            popup_890ef54957ab4bb091bd6571214ce597.setContent(html_0de4e4c8c09f4cb9a1882af2cae08175);
+        
+
+        circle_marker_5f872f2f13b04b54a7c96f10ca38b37a.bindPopup(popup_890ef54957ab4bb091bd6571214ce597)
+        ;
+
+        
+    
+    
+            var circle_marker_419334ca14ee48d5947a8d2191bffe53 = L.circleMarker(
+                [9.366667, -82.616667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_89f39afb95574ecf847e4ab7b6009be1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f79bd209a1f4c16aaee2bbececbfc69 = $(`<div id="html_8f79bd209a1f4c16aaee2bbececbfc69" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Teribe between Quebrada Huron and Quebrada Schlunjik. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1968-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr.|James A. Duke <strong>Identificadores:</strong> William S. Alverson</div>`)[0];
+            popup_89f39afb95574ecf847e4ab7b6009be1.setContent(html_8f79bd209a1f4c16aaee2bbececbfc69);
+        
+
+        circle_marker_419334ca14ee48d5947a8d2191bffe53.bindPopup(popup_89f39afb95574ecf847e4ab7b6009be1)
+        ;
+
+        
+    
+    
+            var circle_marker_1f04ee75c95a486a921aeb510f2140e4 = L.circleMarker(
+                [9.366667, -82.616667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_689c19834e2d4a7fb3eaef6aadfe76bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b3fe393e5a24581a1d0e99894afc607 = $(`<div id="html_7b3fe393e5a24581a1d0e99894afc607" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Teribe between Quebrada Huron and Quebrada Schlunjik. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1968-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr.|James A. Duke <strong>Identificadores:</strong> William S. Alverson</div>`)[0];
+            popup_689c19834e2d4a7fb3eaef6aadfe76bf.setContent(html_7b3fe393e5a24581a1d0e99894afc607);
+        
+
+        circle_marker_1f04ee75c95a486a921aeb510f2140e4.bindPopup(popup_689c19834e2d4a7fb3eaef6aadfe76bf)
+        ;
+
+        
+    
+    
+            var circle_marker_c740b1d405964665bf7e366896264dce = L.circleMarker(
+                [9.316667, -79.65],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_fb5c50b3aa9446f8aea049d8ce9117f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd4aac087bad44c382e8f2d5650a6a1d = $(`<div id="html_bd4aac087bad44c382e8f2d5650a6a1d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alrededores del la zona maderera de Santa Rita. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1969-03-20 00:00:00+00:00 <strong>Recolectores:</strong> Mireya D. Correa A.|Robert L. Dressler <strong>Identificadores:</strong> William S. Alverson</div>`)[0];
+            popup_fb5c50b3aa9446f8aea049d8ce9117f1.setContent(html_bd4aac087bad44c382e8f2d5650a6a1d);
+        
+
+        circle_marker_c740b1d405964665bf7e366896264dce.bindPopup(popup_fb5c50b3aa9446f8aea049d8ce9117f1)
+        ;
+
+        
+    
+    
+            var circle_marker_519d9433ff9448de8fae521087353219 = L.circleMarker(
+                [8.65833, -77.45],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_cb7097dd1e484e4b9a675b90a820f6a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9ef113ce23a4350930cdceea5eac3a1 = $(`<div id="html_c9ef113ce23a4350930cdceea5eac3a1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In flood plain and hills along R|4io Armila, ca. 10 km WSW of Puerto Obaldía <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-06-22 00:00:00+00:00 <strong>Recolectores:</strong> Scott A. Mori <strong>Identificadores:</strong> W.S. Alverson</div>`)[0];
+            popup_cb7097dd1e484e4b9a675b90a820f6a2.setContent(html_c9ef113ce23a4350930cdceea5eac3a1);
+        
+
+        circle_marker_519d9433ff9448de8fae521087353219.bindPopup(popup_cb7097dd1e484e4b9a675b90a820f6a2)
+        ;
+
+        
+    
+    
+            var circle_marker_2354e062f759497c94627144433c47c3 = L.circleMarker(
+                [9.32916, -79.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_5bf07813f0b4451791b0439d9d026a60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4340221ebd0d4ad0b076de297605326e = $(`<div id="html_4340221ebd0d4ad0b076de297605326e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rita lumber road, 15 km E of Colón <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1969-10-15 00:00:00+00:00 <strong>Recolectores:</strong> Robert L. Dressler <strong>Identificadores:</strong> William S. Alverson</div>`)[0];
+            popup_5bf07813f0b4451791b0439d9d026a60.setContent(html_4340221ebd0d4ad0b076de297605326e);
+        
+
+        circle_marker_2354e062f759497c94627144433c47c3.bindPopup(popup_5bf07813f0b4451791b0439d9d026a60)
+        ;
+
+        
+    
+    
+            var circle_marker_91433ecb0c7249a8ae041d6e502c86bc = L.circleMarker(
+                [9.366667, -82.616667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_b3e82b380fc34a4db97068ae0b26fa9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edd4842ff88440cea070d27265d5cca0 = $(`<div id="html_edd4842ff88440cea070d27265d5cca0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Teribe between Quebrada Huron and Quebrada Schlunjik. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1968-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr.|James A. Duke <strong>Identificadores:</strong> Wm. S. Alverson</div>`)[0];
+            popup_b3e82b380fc34a4db97068ae0b26fa9a.setContent(html_edd4842ff88440cea070d27265d5cca0);
+        
+
+        circle_marker_91433ecb0c7249a8ae041d6e502c86bc.bindPopup(popup_b3e82b380fc34a4db97068ae0b26fa9a)
+        ;
+
+        
+    
+    
+            var circle_marker_012a813ca6514b3f85bc0e43161eacae = L.circleMarker(
+                [9.35821, -79.7481],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+        
+    
+        var popup_ea9643f1240146d8a59b257287d08e54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac4115f5e4704af39f111cb8ef4cb9e7 = $(`<div id="html_ac4115f5e4704af39f111cb8ef4cb9e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rita. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2002-09-16 00:00:00+00:00 <strong>Recolectores:</strong> R. Perez & S. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ea9643f1240146d8a59b257287d08e54.setContent(html_ac4115f5e4704af39f111cb8ef4cb9e7);
+        
+
+        circle_marker_012a813ca6514b3f85bc0e43161eacae.bindPopup(popup_ea9643f1240146d8a59b257287d08e54)
+        ;
+
+        
+    
+    
+            var layer_control_3c64e45f61ee4b8a90484c854753f377 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_39e8a5ede3314be690a7ed68bf0db8ed,
+                    "ESRI World Imagery" : tile_layer_b60e1d05eb7a43adb7edfdd8cbfb9a6f,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_3c64e45f61ee4b8a90484c854753f377.base_layers,
+                layer_control_3c64e45f61ee4b8a90484c854753f377.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_5a55929d611f4f42a8b5df77abe9dc5d);
+            tile_layer_b60e1d05eb7a43adb7edfdd8cbfb9a6f.remove();
+        
+</script>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4817fa53fae743d6a96cc40d2c068774 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4817fa53fae743d6a96cc40d2c068774" ></div>
+        
+</body>
+<script>    
+    
+            var map_4817fa53fae743d6a96cc40d2c068774 = L.map(
+                "map_4817fa53fae743d6a96cc40d2c068774",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_4817fa53fae743d6a96cc40d2c068774);
+
+            
+
+        
+    
+            var tile_layer_92392ec028174e2ca6e202bad3d43075 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4817fa53fae743d6a96cc40d2c068774);
+        
+    
+            var tile_layer_d5509b72d96f464e847071b00a95b6ac = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4817fa53fae743d6a96cc40d2c068774);
+        
+    
+            var marker_cluster_f18272506e4948fa99c15042b2bbbcba = L.markerClusterGroup(
+                {}
+            );
+            map_4817fa53fae743d6a96cc40d2c068774.addLayer(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+            var marker_8cbde7868d884b5cb2404053cd41a286 = L.marker(
+                [9.419444, -83.05],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_59d923a261e849f985d1d8aed344d0b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91693827e77a423d8c7eec13080fdf89 = $(`<div id="html_91693827e77a423d8c7eec13080fdf89" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alto Lari, 50 m N de union Rios Dapari (Pare) y Lari. Entre Surayo y Dapari. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1992-02-25 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_59d923a261e849f985d1d8aed344d0b8.setContent(html_91693827e77a423d8c7eec13080fdf89);
+        
+
+        marker_8cbde7868d884b5cb2404053cd41a286.bindPopup(popup_59d923a261e849f985d1d8aed344d0b8)
+        ;
+
+        
+    
+    
+            var marker_60899c91a9644d56b1faf1500b3f3989 = L.marker(
+                [9.347222, -82.983333],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_12a544ccc2054fcc9d7c6af9ff4986d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5b48dec81674d139306c086cdd0f51a = $(`<div id="html_c5b48dec81674d139306c086cdd0f51a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Subiendo por la fila entre la margen derecha del Rio Uren y la Quebrada Crori, Crorina. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1989-07-17 00:00:00+00:00 <strong>Recolectores:</strong> Abelardo Chacon <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_12a544ccc2054fcc9d7c6af9ff4986d1.setContent(html_c5b48dec81674d139306c086cdd0f51a);
+        
+
+        marker_60899c91a9644d56b1faf1500b3f3989.bindPopup(popup_12a544ccc2054fcc9d7c6af9ff4986d1)
+        ;
+
+        
+    
+    
+            var marker_2990912d02fa4042a15cbc23db2d26c1 = L.marker(
+                [9.516667, -82.966667],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_8b29cd38f5d8438c87a981f60cd35405 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acfbcb9bff384a0f8e45b7fb8ac988eb = $(`<div id="html_acfbcb9bff384a0f8e45b7fb8ac988eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri; camino lastreado al suroeste del pueblo; bosque primario socolado para manejo de Geonoma congesta, la que se usa para empajar los ranchos. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-06-24 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_8b29cd38f5d8438c87a981f60cd35405.setContent(html_acfbcb9bff384a0f8e45b7fb8ac988eb);
+        
+
+        marker_2990912d02fa4042a15cbc23db2d26c1.bindPopup(popup_8b29cd38f5d8438c87a981f60cd35405)
+        ;
+
+        
+    
+    
+            var marker_5a353e94695d4f9c857c4769f2af2246 = L.marker(
+                [9.34, -82.98],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_ec53a2285ddc418e8665fc27a0563555 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c9d7b92d9a84937b7f0dd2221110cf0 = $(`<div id="html_3c9d7b92d9a84937b7f0dd2221110cf0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internac. La Amistad Subiendo por la fila entre la margen derecha del Río Uren y la Quebrada Crori, Croriña. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1989-07-17 00:00:00+00:00 <strong>Recolectores:</strong> Abelardo Chacón <strong>Identificadores:</strong> J.F. Morales, 2002 (INB)</div>`)[0];
+            popup_ec53a2285ddc418e8665fc27a0563555.setContent(html_3c9d7b92d9a84937b7f0dd2221110cf0);
+        
+
+        marker_5a353e94695d4f9c857c4769f2af2246.bindPopup(popup_ec53a2285ddc418e8665fc27a0563555)
+        ;
+
+        
+    
+    
+            var marker_22fcb14b4adf453c84222ee6ef49a7e4 = L.marker(
+                [9.51, -82.96],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_ebe2257e52ce47bdafbac957eed02aa7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1cd6ba998c44e8ebdd25971bdc26acb = $(`<div id="html_a1cd6ba998c44e8ebdd25971bdc26acb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Talamanca Amubri; camino lastreado al suroeste del pueblo; bosque primario socolado para manejo de Geonoma congesta, la que se usa para empajar los ranchos. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-06-24 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Abelardo Chacón|Gerardo Herrera Ch. <strong>Identificadores:</strong> J.F. Morales, 2002 (INB)</div>`)[0];
+            popup_ebe2257e52ce47bdafbac957eed02aa7.setContent(html_a1cd6ba998c44e8ebdd25971bdc26acb);
+        
+
+        marker_22fcb14b4adf453c84222ee6ef49a7e4.bindPopup(popup_ebe2257e52ce47bdafbac957eed02aa7)
+        ;
+
+        
+    
+    
+            var marker_38941955cd074751b14653316e9eff39 = L.marker(
+                [9.34, -82.98],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_477763136eed49c386e3d62b6c9889ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_072d1ee654094e5085bd17d27b3d638b = $(`<div id="html_072d1ee654094e5085bd17d27b3d638b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Talamanca Bratsi. Camino entre Quebrada Chaho y Croriña. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1989-07-25 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> J.L. Zarucchi (MO)</div>`)[0];
+            popup_477763136eed49c386e3d62b6c9889ad.setContent(html_072d1ee654094e5085bd17d27b3d638b);
+        
+
+        marker_38941955cd074751b14653316e9eff39.bindPopup(popup_477763136eed49c386e3d62b6c9889ad)
+        ;
+
+        
+    
+    
+            var marker_d93062f4355a4acda3415a91048f6fd6 = L.marker(
+                [9.25, -78.25],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_1f7679a2f27040889b6d969bedffefae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de1b3f0e55774966ad7c58e445a4f493 = $(`<div id="html_de1b3f0e55774966ad7c58e445a4f493" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tierra firme frente a Playón Chico, Río Grande (Ukupseni); caminando por el río un kilómetro antes de llegar al campamento de Neba Dummat. <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 1991-11-01 00:00:00+00:00 <strong>Recolectores:</strong> Heraclio Herrera|Johny Morris|Jimmy Mojica <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_1f7679a2f27040889b6d969bedffefae.setContent(html_de1b3f0e55774966ad7c58e445a4f493);
+        
+
+        marker_d93062f4355a4acda3415a91048f6fd6.bindPopup(popup_1f7679a2f27040889b6d969bedffefae)
+        ;
+
+        
+    
+    
+            var marker_a9978a30e37645bf8120d23b3f6c7017 = L.marker(
+                [9.25, -79.0],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_013cac355491482d9cce7e3ab3d1e922 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9408a12e10a648e79f78f88d95517ed4 = $(`<div id="html_9408a12e10a648e79f78f88d95517ed4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Llano-Cartí road, ca. 7 miles from Pan-American Highway. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1986-01-28 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson|Mary Merello <strong>Identificadores:</strong> paratype</div>`)[0];
+            popup_013cac355491482d9cce7e3ab3d1e922.setContent(html_9408a12e10a648e79f78f88d95517ed4);
+        
+
+        marker_a9978a30e37645bf8120d23b3f6c7017.bindPopup(popup_013cac355491482d9cce7e3ab3d1e922)
+        ;
+
+        
+    
+    
+            var marker_34a5fb11bd5c4de497c17c27a8072bf3 = L.marker(
+                [9.25, -79.0],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_3d434f1715d24d37a9db3e0e2b63cd91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c80bc2c4cb974dacbe5de0bfdd0e6e93 = $(`<div id="html_c80bc2c4cb974dacbe5de0bfdd0e6e93" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Llano-Cartí road, ca. 7 miles from Pan-American Highway. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1986-01-28 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson|Mary Merello <strong>Identificadores:</strong> paratype</div>`)[0];
+            popup_3d434f1715d24d37a9db3e0e2b63cd91.setContent(html_c80bc2c4cb974dacbe5de0bfdd0e6e93);
+        
+
+        marker_34a5fb11bd5c4de497c17c27a8072bf3.bindPopup(popup_3d434f1715d24d37a9db3e0e2b63cd91)
+        ;
+
+        
+    
+    
+            var marker_f0454bfdc2c34e06a519d546d71d1d58 = L.marker(
+                [9.41, -83.05],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_f093286a0ab5479d8a71723d54a490e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d96dacbd593e4463a1c199de84cd0561 = $(`<div id="html_d96dacbd593e4463a1c199de84cd0561" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bratsi. Alto Lari. Entre Surayo y Dapari 50 m N de la desembocadura del Río Dapari (Pare), junto al Río Lari. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1992-02-25 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> J.F. Morales, 2002 (INB)</div>`)[0];
+            popup_f093286a0ab5479d8a71723d54a490e8.setContent(html_d96dacbd593e4463a1c199de84cd0561);
+        
+
+        marker_f0454bfdc2c34e06a519d546d71d1d58.bindPopup(popup_f093286a0ab5479d8a71723d54a490e8)
+        ;
+
+        
+    
+    
+            var marker_776b59db58534b0b99b13a4b45ca3f5a = L.marker(
+                [9.51, -82.96],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_a369c7819b1a433e84c3a01ecc896792 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fbc88acdfde40b4ac59fa0730b929d3 = $(`<div id="html_7fbc88acdfde40b4ac59fa0730b929d3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri; camino lastreado al SO del pueblo; bosque primario socolado para manejo de Genoma congesta,la que se usa para empapar los ranchos. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-06-24 00:00:00+00:00 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_a369c7819b1a433e84c3a01ecc896792.setContent(html_7fbc88acdfde40b4ac59fa0730b929d3);
+        
+
+        marker_776b59db58534b0b99b13a4b45ca3f5a.bindPopup(popup_a369c7819b1a433e84c3a01ecc896792)
+        ;
+
+        
+    
+    
+            var marker_0adec2805141464491c04dce2a382095 = L.marker(
+                [9.25, -78.233333],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_b00a0aacb4db4e518a1b2355395a2b11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a682b2800f54d519c3069dcce4b1ce3 = $(`<div id="html_3a682b2800f54d519c3069dcce4b1ce3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Playón Chico, Campamento de Ilagandi. <strong>Elevación:</strong> 65.0 m  <strong>Fecha:</strong> 1994-08-27 00:00:00+00:00 <strong>Recolectores:</strong> Heraclio Herrera|L. Arosemena <strong>Identificadores:</strong> J.F. Morales, 2006 (INB)</div>`)[0];
+            popup_b00a0aacb4db4e518a1b2355395a2b11.setContent(html_3a682b2800f54d519c3069dcce4b1ce3);
+        
+
+        marker_0adec2805141464491c04dce2a382095.bindPopup(popup_b00a0aacb4db4e518a1b2355395a2b11)
+        ;
+
+        
+    
+    
+            var marker_8de3761b781c40e2858eeb7622a76478 = L.marker(
+                [9.25, -78.23],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_0e986e77ca054ff9bede22153b8edb03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf82a710d91a4b568323fb1f5116d2ac = $(`<div id="html_bf82a710d91a4b568323fb1f5116d2ac" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Comarca de San Blas, Río Playón Chico, Campamento de Ilagandi <strong>Elevación:</strong> 65.0 m  <strong>Fecha:</strong> 1994-08-27 00:00:00+00:00 <strong>Recolectores:</strong> H. Herrera & L. Arosemena <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0e986e77ca054ff9bede22153b8edb03.setContent(html_bf82a710d91a4b568323fb1f5116d2ac);
+        
+
+        marker_8de3761b781c40e2858eeb7622a76478.bindPopup(popup_0e986e77ca054ff9bede22153b8edb03)
+        ;
+
+        
+    
+    
+            var marker_fdf85c399d7741379fb64655a28e1e18 = L.marker(
+                [9.52, -82.97],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_744202b6ae6e45ceb6115b08a1f2ac8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcb7742bab9b4ffb92747401d4818f82 = $(`<div id="html_bcb7742bab9b4ffb92747401d4818f82" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri; camino lastreado al suroeste del pueblo <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-06-24 00:00:00+00:00 <strong>Recolectores:</strong> B. E. Hammel <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_744202b6ae6e45ceb6115b08a1f2ac8e.setContent(html_bcb7742bab9b4ffb92747401d4818f82);
+        
+
+        marker_fdf85c399d7741379fb64655a28e1e18.bindPopup(popup_744202b6ae6e45ceb6115b08a1f2ac8e)
+        ;
+
+        
+    
+    
+            var marker_68330cfcfc4d41789d77ecd22e525af2 = L.marker(
+                [9.297222, -78.934167],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_78b35830f53f4fa6bc5e074d7a262006 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5725c4a6bbb248a387864d39519442e2 = $(`<div id="html_5725c4a6bbb248a387864d39519442e2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Llano-Carti road, 18 km from Pan American Highway. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1975-02-14 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Scott A. Mori|Jacquelyn A. Kallunki <strong>Identificadores:</strong> fide Morales</div>`)[0];
+            popup_78b35830f53f4fa6bc5e074d7a262006.setContent(html_5725c4a6bbb248a387864d39519442e2);
+        
+
+        marker_68330cfcfc4d41789d77ecd22e525af2.bindPopup(popup_78b35830f53f4fa6bc5e074d7a262006)
+        ;
+
+        
+    
+    
+            var marker_4d88ff602bd74ef88475597c86d69ec0 = L.marker(
+                [9.275556, -78.930278],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_367777357e28458e83c220cda59f74bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a085d88e791c4136900a617815141937 = $(`<div id="html_a085d88e791c4136900a617815141937" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Llano-Carti road, 12 km from Pan American Highway. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1975-02-15 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry <strong>Identificadores:</strong> J.F. Morales (CR)</div>`)[0];
+            popup_367777357e28458e83c220cda59f74bd.setContent(html_a085d88e791c4136900a617815141937);
+        
+
+        marker_4d88ff602bd74ef88475597c86d69ec0.bindPopup(popup_367777357e28458e83c220cda59f74bd)
+        ;
+
+        
+    
+    
+            var marker_7233dbbef92b4355b0d27b1d978441ad = L.marker(
+                [9.29722, -78.94305],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_0af1c3f0976a4a81af5c8be5247e0685 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09dc430c20224cfb9555e2b4ffbdd048 = $(`<div id="html_09dc430c20224cfb9555e2b4ffbdd048" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 16 km above Pan-Am Highway on road from El Llano to Carti-Tupile. Tropical wet forest <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1973-02-13 00:00:00+00:00 <strong>Recolectores:</strong> Helen Kennedy|Robert L. Dressler|Anne Mahler <strong>Identificadores:</strong> J.L. Zarucchi (MO)</div>`)[0];
+            popup_0af1c3f0976a4a81af5c8be5247e0685.setContent(html_09dc430c20224cfb9555e2b4ffbdd048);
+        
+
+        marker_7233dbbef92b4355b0d27b1d978441ad.bindPopup(popup_0af1c3f0976a4a81af5c8be5247e0685)
+        ;
+
+        
+    
+    
+            var marker_52637538a271463c8bdb36e5db15c248 = L.marker(
+                [9.1925, -80.15055],
+                {}
+            ).addTo(marker_cluster_f18272506e4948fa99c15042b2bbbcba);
+        
+    
+        var popup_d26eb2a39ed1488d880939039ff2c2f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18c08313e9d4471886fee4dd0b1db934 = $(`<div id="html_18c08313e9d4471886fee4dd0b1db934" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colectado en Tres Brazos sawmill, Icacal, which is in between Salud y Boca de Río Indio <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1969-07-15 00:00:00+00:00 <strong>Recolectores:</strong> John H. Howell <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d26eb2a39ed1488d880939039ff2c2f2.setContent(html_18c08313e9d4471886fee4dd0b1db934);
+        
+
+        marker_52637538a271463c8bdb36e5db15c248.bindPopup(popup_d26eb2a39ed1488d880939039ff2c2f2)
+        ;
+
+        
+    
+    
+            var layer_control_6fe162d7ca4b4fe5b888240b4184df6e = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_92392ec028174e2ca6e202bad3d43075,
+                    "ESRI World Imagery" : tile_layer_d5509b72d96f464e847071b00a95b6ac,
+                },
+                overlays :  {
+                    "macro_element_f18272506e4948fa99c15042b2bbbcba" : marker_cluster_f18272506e4948fa99c15042b2bbbcba,
+                },
+            };
+            L.control.layers(
+                layer_control_6fe162d7ca4b4fe5b888240b4184df6e.base_layers,
+                layer_control_6fe162d7ca4b4fe5b888240b4184df6e.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_4817fa53fae743d6a96cc40d2c068774);
+            tile_layer_d5509b72d96f464e847071b00a95b6ac.remove();
+        
+</script>

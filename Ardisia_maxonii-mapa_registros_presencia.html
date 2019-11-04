@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f3a6d53827724e3795d7e0df72f08b7e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f3a6d53827724e3795d7e0df72f08b7e" ></div>
+        
+</body>
+<script>    
+    
+            var map_f3a6d53827724e3795d7e0df72f08b7e = L.map(
+                "map_f3a6d53827724e3795d7e0df72f08b7e",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+
+            
+
+        
+    
+            var tile_layer_ec82e26694ee4a4ca49d058af531c57a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+            var tile_layer_2fb0f634784c47f2804e20bf927b7d39 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+            var circle_marker_1690fa4e563c49e1a5639a6c918c354b = L.circleMarker(
+                [9.594439999999999, -83.89027],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_660f47bcf98346cba7542ba9396396a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e7547b0945841c988557196a171be69 = $(`<div id="html_2e7547b0945841c988557196a171be69" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos. Cuenca del Savegre. R.F. Los Santos. Alto Cañazo entre Providencia y Copey. <strong>Elevación:</strong> 2850.0 m  <strong>Fecha:</strong> 1999-07-18 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_660f47bcf98346cba7542ba9396396a7.setContent(html_2e7547b0945841c988557196a171be69);
+        
+
+        circle_marker_1690fa4e563c49e1a5639a6c918c354b.bindPopup(popup_660f47bcf98346cba7542ba9396396a7)
+        ;
+
+        
+    
+    
+            var circle_marker_b61bb616a84b43cc9905c1e4a7023d3f = L.circleMarker(
+                [9.369444999999999, -83.3],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_d4adc9b31fc04ea281a9ee205052f1d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adee3d4b10144cf5b3f618320fa77c9d = $(`<div id="html_adee3d4b10144cf5b3f618320fa77c9d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ujarrás, siguiendo la línea divisoria, base del macizo Dúrika, cabecera de Río Coén. <strong>Elevación:</strong> 2800.0 m  <strong>Fecha:</strong> 1989-10-11 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch.|J. Cordero <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_d4adc9b31fc04ea281a9ee205052f1d0.setContent(html_adee3d4b10144cf5b3f618320fa77c9d);
+        
+
+        circle_marker_b61bb616a84b43cc9905c1e4a7023d3f.bindPopup(popup_d4adc9b31fc04ea281a9ee205052f1d0)
+        ;
+
+        
+    
+    
+            var circle_marker_a39c5b59dad84696ba58878e3623e801 = L.circleMarker(
+                [8.833333, -82.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_c26d642e7f194f2a875a72d4bf6044fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_245c7f2e6e494745ae810dd0fd85e65d = $(`<div id="html_245c7f2e6e494745ae810dd0fd85e65d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Baru, east slope on road from Boquete. 8 km W of Boquete (air distance). Oak woodland. Elev. 1900 m. 82º30'W, 8º50'N. <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1983-01-08 00:00:00+00:00 <strong>Recolectores:</strong> Bruce A. Stein <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_c26d642e7f194f2a875a72d4bf6044fa.setContent(html_245c7f2e6e494745ae810dd0fd85e65d);
+        
+
+        circle_marker_a39c5b59dad84696ba58878e3623e801.bindPopup(popup_c26d642e7f194f2a875a72d4bf6044fa)
+        ;
+
+        
+    
+    
+            var circle_marker_5978dc6b77cf4a3587e132e6ab056696 = L.circleMarker(
+                [9.6667, -84.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_35fe57e7690940e7883023fde2c883f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_157d4151df8444fd86f4f64ae88fc09e = $(`<div id="html_157d4151df8444fd86f4f64ae88fc09e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1999-03-04 00:00:00+00:00 <strong>Recolectores:</strong> A. Molina R. <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_35fe57e7690940e7883023fde2c883f9.setContent(html_157d4151df8444fd86f4f64ae88fc09e);
+        
+
+        circle_marker_5978dc6b77cf4a3587e132e6ab056696.bindPopup(popup_35fe57e7690940e7883023fde2c883f9)
+        ;
+
+        
+    
+    
+            var circle_marker_cef195d813604c3e98d1212596e12ab2 = L.circleMarker(
+                [8.5714, -79.9106],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_1a8a5f72449f492287257272f81303d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af143147963a4a489a5e3e005cb82298 = $(`<div id="html_af143147963a4a489a5e3e005cb82298" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-11-19 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse & J. D'Arcy <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1a8a5f72449f492287257272f81303d5.setContent(html_af143147963a4a489a5e3e005cb82298);
+        
+
+        circle_marker_cef195d813604c3e98d1212596e12ab2.bindPopup(popup_1a8a5f72449f492287257272f81303d5)
+        ;
+
+        
+    
+    
+            var circle_marker_aa5d8ffbfa2d4fc98c06a3061333a06a = L.circleMarker(
+                [9.39, -83.16],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_e8a143d70ce7458a96a62f7125d53d70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1a4af195153412485b1f42b6a41f66b = $(`<div id="html_d1a4af195153412485b1f42b6a41f66b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Cordillera de Talamanca; Cordillera de Talamanca. Flanco NE y cumbre Cerro Biricuacua. Entre Ujarrás y San José Cabécar. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1993-04-02 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_e8a143d70ce7458a96a62f7125d53d70.setContent(html_d1a4af195153412485b1f42b6a41f66b);
+        
+
+        circle_marker_aa5d8ffbfa2d4fc98c06a3061333a06a.bindPopup(popup_e8a143d70ce7458a96a62f7125d53d70)
+        ;
+
+        
+    
+    
+            var circle_marker_7bc2a23a1ea04e26b9f48035ca75875d = L.circleMarker(
+                [9.70027, -84.18305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_124df3578cd94e9abceeffcbdb7dacdd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a60f792648424a65970b17adb4eb9a6f = $(`<div id="html_a60f792648424a65970b17adb4eb9a6f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Aguabuena. Hda. Tiquires. Bosque primario, robledales y potreros en la Fila Aguabuena cerca de la Laguna. <strong>Elevación:</strong> 2165.0 m  <strong>Fecha:</strong> 1995-06-02 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_124df3578cd94e9abceeffcbdb7dacdd.setContent(html_a60f792648424a65970b17adb4eb9a6f);
+        
+
+        circle_marker_7bc2a23a1ea04e26b9f48035ca75875d.bindPopup(popup_124df3578cd94e9abceeffcbdb7dacdd)
+        ;
+
+        
+    
+    
+            var circle_marker_43a34660766b46d48547185aeb8dd7db = L.circleMarker(
+                [8.866660000000001, -82.58333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_7fce8e68f54d4d379ffac5d50d5a64d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2eba5bba626498ea0c03dfb0522ca1b = $(`<div id="html_d2eba5bba626498ea0c03dfb0522ca1b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hill E of Audubon Cabin, S of Cerro Punta <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1983-07-12 00:00:00+00:00 <strong>Recolectores:</strong> Clem W. Hamilton|Karen Krager <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_7fce8e68f54d4d379ffac5d50d5a64d8.setContent(html_d2eba5bba626498ea0c03dfb0522ca1b);
+        
+
+        circle_marker_43a34660766b46d48547185aeb8dd7db.bindPopup(popup_7fce8e68f54d4d379ffac5d50d5a64d8)
+        ;
+
+        
+    
+    
+            var circle_marker_f8d35eb1aa8e4246b9df72f084fe25e9 = L.circleMarker(
+                [9.3694, -83.3],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_5fb05be26f9e44209abe6d7a4d9d4dab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08192b8d8f3749fb966727484d1cc361 = $(`<div id="html_08192b8d8f3749fb966727484d1cc361" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Buenos Aires Ujarrás, siguiendo la línea divisoria, base del macizo Dúrika, cabecera de Río Coén. <strong>Elevación:</strong> 2800.0 m  <strong>Fecha:</strong> 1989-10-11 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera & J. Cordero <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_5fb05be26f9e44209abe6d7a4d9d4dab.setContent(html_08192b8d8f3749fb966727484d1cc361);
+        
+
+        circle_marker_f8d35eb1aa8e4246b9df72f084fe25e9.bindPopup(popup_5fb05be26f9e44209abe6d7a4d9d4dab)
+        ;
+
+        
+    
+    
+            var circle_marker_4022c502ef4644c19590c48636287cb1 = L.circleMarker(
+                [8.793611, -82.905833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_f252f01d61214d1fbb5aefd651979a9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfe3f6545f6c4c9aa855dfd07e9967fa = $(`<div id="html_bfe3f6545f6c4c9aa855dfd07e9967fa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Windswept ridge 10 km N of Los Planes de Hornito. IRHE Fortuna Hydroelectric Project. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1982-06-18 00:00:00+00:00 <strong>Recolectores:</strong> Sandy Knapp|M.R. Vodicka <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_f252f01d61214d1fbb5aefd651979a9c.setContent(html_bfe3f6545f6c4c9aa855dfd07e9967fa);
+        
+
+        circle_marker_4022c502ef4644c19590c48636287cb1.bindPopup(popup_f252f01d61214d1fbb5aefd651979a9c)
+        ;
+
+        
+    
+    
+            var circle_marker_fffc9f824d9b4ef798e63e8d15d893cf = L.circleMarker(
+                [8.5714, -79.9106],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_ddd3011fc28a47f08894a60ab755891a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1aa890c6c83e47bb8fb32c05bd3bc8d4 = $(`<div id="html_1aa890c6c83e47bb8fb32c05bd3bc8d4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-11-21 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse & J. D'Arcy <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ddd3011fc28a47f08894a60ab755891a.setContent(html_1aa890c6c83e47bb8fb32c05bd3bc8d4);
+        
+
+        circle_marker_fffc9f824d9b4ef798e63e8d15d893cf.bindPopup(popup_ddd3011fc28a47f08894a60ab755891a)
+        ;
+
+        
+    
+    
+            var circle_marker_89443f3536ae41db800f6d4d726049d9 = L.circleMarker(
+                [9.6667, -84.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_177305fabc9f4d138e595663f86c35ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e16207ddb004699ae9b22b11c4b2e8b = $(`<div id="html_3e16207ddb004699ae9b22b11c4b2e8b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1979-08-26 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_177305fabc9f4d138e595663f86c35ed.setContent(html_3e16207ddb004699ae9b22b11c4b2e8b);
+        
+
+        circle_marker_89443f3536ae41db800f6d4d726049d9.bindPopup(popup_177305fabc9f4d138e595663f86c35ed)
+        ;
+
+        
+    
+    
+            var circle_marker_6ecdb61b66814e72ad531895201bdd16 = L.circleMarker(
+                [8.5714, -79.9106],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_35374b53901641e18a4ac49e55f1b673 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7d3f7d4f51345ecaeabeb7df9cf9113 = $(`<div id="html_a7d3f7d4f51345ecaeabeb7df9cf9113" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1974-12-18 00:00:00+00:00 <strong>Recolectores:</strong> S. A. Mori & et al. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_35374b53901641e18a4ac49e55f1b673.setContent(html_a7d3f7d4f51345ecaeabeb7df9cf9113);
+        
+
+        circle_marker_6ecdb61b66814e72ad531895201bdd16.bindPopup(popup_35374b53901641e18a4ac49e55f1b673)
+        ;
+
+        
+    
+    
+            var circle_marker_a490f6152acb469e8ad9dea45332e9e5 = L.circleMarker(
+                [8.933333, -82.801389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_aaa8a6ba5d634bff92785e4d5dcf6474 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50f2f5505a3c45bc9bca09fd8817168d = $(`<div id="html_50f2f5505a3c45bc9bca09fd8817168d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora Las Tablas, Cordillera de Talamanca, Estación Biológica Las Alturas <strong>Elevación:</strong> 1540.0 m  <strong>Fecha:</strong> 1996-04-22 00:00:00+00:00 <strong>Recolectores:</strong> Enia Navarro V. <strong>Identificadores:</strong> Jon Ricketson (MO),</div>`)[0];
+            popup_aaa8a6ba5d634bff92785e4d5dcf6474.setContent(html_50f2f5505a3c45bc9bca09fd8817168d);
+        
+
+        circle_marker_a490f6152acb469e8ad9dea45332e9e5.bindPopup(popup_aaa8a6ba5d634bff92785e4d5dcf6474)
+        ;
+
+        
+    
+    
+            var circle_marker_6b909883e7de43cf883809e5a9b501ea = L.circleMarker(
+                [9.5333, -83.5833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_7bb495c390984dc897be64c7493c9ad9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba5fd1728c874a569ed26400c8df6d01 = $(`<div id="html_ba5fd1728c874a569ed26400c8df6d01" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internaciónal La Amistad, Cordillera de Talamanca, Sobre el sendero Herradura-Uran <strong>Elevación:</strong> 2700.0 m  <strong>Fecha:</strong> 1995-04-07 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Jon Ricketson (MO),</div>`)[0];
+            popup_7bb495c390984dc897be64c7493c9ad9.setContent(html_ba5fd1728c874a569ed26400c8df6d01);
+        
+
+        circle_marker_6b909883e7de43cf883809e5a9b501ea.bindPopup(popup_7bb495c390984dc897be64c7493c9ad9)
+        ;
+
+        
+    
+    
+            var circle_marker_ef9aa50980584e6fa7eebf3642a138f2 = L.circleMarker(
+                [9.5333, -83.5833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_9bb1744cc472411d8244ea8115e7d834 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e05a512be43c4cc981cb4e04fec322e5 = $(`<div id="html_e05a512be43c4cc981cb4e04fec322e5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internaciónal La Amistad, Cordillera de Talamanca, Sobre el sendero Herradura-Uran <strong>Elevación:</strong> 2700.0 m  <strong>Fecha:</strong> 1995-04-07 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Jon Ricketson (MO),</div>`)[0];
+            popup_9bb1744cc472411d8244ea8115e7d834.setContent(html_e05a512be43c4cc981cb4e04fec322e5);
+        
+
+        circle_marker_ef9aa50980584e6fa7eebf3642a138f2.bindPopup(popup_9bb1744cc472411d8244ea8115e7d834)
+        ;
+
+        
+    
+    
+            var circle_marker_913b06db8cf943cba1472259b2d19d1b = L.circleMarker(
+                [9.5167, -83.5833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_ab0b8fdec0834045b5115e963b60529d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb6e1fe89aa04f2ba0ec3bb8bc51bda0 = $(`<div id="html_bb6e1fe89aa04f2ba0ec3bb8bc51bda0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internaciónal La Amistad, Cordillera de Talamanca, Sobre Herradura, que sube a fila Uran <strong>Elevación:</strong> 2700.0 m  <strong>Fecha:</strong> 1995-04-06 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Jon Ricketson (MO),</div>`)[0];
+            popup_ab0b8fdec0834045b5115e963b60529d.setContent(html_bb6e1fe89aa04f2ba0ec3bb8bc51bda0);
+        
+
+        circle_marker_913b06db8cf943cba1472259b2d19d1b.bindPopup(popup_ab0b8fdec0834045b5115e963b60529d)
+        ;
+
+        
+    
+    
+            var circle_marker_dd58947d48e74cc193ab55af453d1fcd = L.circleMarker(
+                [8.833333, -82.533333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_09e9c569fc6c49b2bca6be87433db7ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_146b7f561ed64764b05155123fedd745 = $(`<div id="html_146b7f561ed64764b05155123fedd745" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 3.7 km E of bridge NE of Cerro Punta on road through Bajo Grande. <strong>Elevación:</strong> 2325.0 m  <strong>Fecha:</strong> 1980-11-09 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_09e9c569fc6c49b2bca6be87433db7ba.setContent(html_146b7f561ed64764b05155123fedd745);
+        
+
+        circle_marker_dd58947d48e74cc193ab55af453d1fcd.bindPopup(popup_09e9c569fc6c49b2bca6be87433db7ba)
+        ;
+
+        
+    
+    
+            var circle_marker_e056a0c66de043f494d6663bde670447 = L.circleMarker(
+                [8.78916, -82.49472],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_38aba487b0344de5ad115bfe33852daf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6f33cdeae0f4b0d81a324922fa66f23 = $(`<div id="html_c6f33cdeae0f4b0d81a324922fa66f23" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Eastern slope of Volcán de Chiriquí (Barú), WNW of Boquete. Partially cleared slopes with patches of original oak forest and mostly secondary growth <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 1975-11-19 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|William G. D'Arcy <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_38aba487b0344de5ad115bfe33852daf.setContent(html_c6f33cdeae0f4b0d81a324922fa66f23);
+        
+
+        circle_marker_e056a0c66de043f494d6663bde670447.bindPopup(popup_38aba487b0344de5ad115bfe33852daf)
+        ;
+
+        
+    
+    
+            var circle_marker_8cb10ed74cd0434299b30749f7214858 = L.circleMarker(
+                [8.797222, -82.49],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_0e31b7ffe36841a2957918a0a11b7b41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4717e2fdc86a4e4dae80ac35687f68b4 = $(`<div id="html_4717e2fdc86a4e4dae80ac35687f68b4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 9 km by road WNW of Boquete. <strong>Elevación:</strong> 1870.0 m  <strong>Fecha:</strong> 1975-11-21 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|William G. D'Arcy <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_0e31b7ffe36841a2957918a0a11b7b41.setContent(html_4717e2fdc86a4e4dae80ac35687f68b4);
+        
+
+        circle_marker_8cb10ed74cd0434299b30749f7214858.bindPopup(popup_0e31b7ffe36841a2957918a0a11b7b41)
+        ;
+
+        
+    
+    
+            var circle_marker_37f346d702c345399a7910bbc95fec5f = L.circleMarker(
+                [8.63333, -82.2],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+        
+    
+        var popup_14978a1a3c5542f0b4ea2807a265bb5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94d6304bc8ac4183be76f7e87dc6b2c3 = $(`<div id="html_94d6304bc8ac4183be76f7e87dc6b2c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Los Planes de Hornito, beyond Gualaca, 2-3 km E of Finca Linare High hills, ca. 1400-1900 m. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1979-11-28 00:00:00+00:00 <strong>Recolectores:</strong> Thomas M. Antonio <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_14978a1a3c5542f0b4ea2807a265bb5a.setContent(html_94d6304bc8ac4183be76f7e87dc6b2c3);
+        
+
+        circle_marker_37f346d702c345399a7910bbc95fec5f.bindPopup(popup_14978a1a3c5542f0b4ea2807a265bb5a)
+        ;
+
+        
+    
+    
+            var layer_control_2c7ffe24be394f13ba5b44ab569afd7f = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ec82e26694ee4a4ca49d058af531c57a,
+                    "ESRI World Imagery" : tile_layer_2fb0f634784c47f2804e20bf927b7d39,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_2c7ffe24be394f13ba5b44ab569afd7f.base_layers,
+                layer_control_2c7ffe24be394f13ba5b44ab569afd7f.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f3a6d53827724e3795d7e0df72f08b7e);
+            tile_layer_2fb0f634784c47f2804e20bf927b7d39.remove();
+        
+</script>

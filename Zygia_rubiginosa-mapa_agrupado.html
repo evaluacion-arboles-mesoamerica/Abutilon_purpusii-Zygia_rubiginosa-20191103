@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_eda1cd39b75d4b2a8f7d246a0e2f529f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_eda1cd39b75d4b2a8f7d246a0e2f529f" ></div>
+        
+</body>
+<script>    
+    
+            var map_eda1cd39b75d4b2a8f7d246a0e2f529f = L.map(
+                "map_eda1cd39b75d4b2a8f7d246a0e2f529f",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_eda1cd39b75d4b2a8f7d246a0e2f529f);
+
+            
+
+        
+    
+            var tile_layer_f8a2a05855054042b99014dd1a00793a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_eda1cd39b75d4b2a8f7d246a0e2f529f);
+        
+    
+            var tile_layer_49b3825487104b47b90739133369b980 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_eda1cd39b75d4b2a8f7d246a0e2f529f);
+        
+    
+            var marker_cluster_0780445e2048475e890399bb16b890d8 = L.markerClusterGroup(
+                {}
+            );
+            map_eda1cd39b75d4b2a8f7d246a0e2f529f.addLayer(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+            var marker_4894a6669a004b0e8e386cd8f5e589d3 = L.marker(
+                [8.73059, -83.45491899999999],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_87ac37b6f1164542b2f0a816139ed306 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29d10ad1e9be464a8286bf6d03a58d92 = $(`<div id="html_29d10ad1e9be464a8286bf6d03a58d92" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal, entrada Chocuaco <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1996-07-18 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_87ac37b6f1164542b2f0a816139ed306.setContent(html_29d10ad1e9be464a8286bf6d03a58d92);
+        
+
+        marker_4894a6669a004b0e8e386cd8f5e589d3.bindPopup(popup_87ac37b6f1164542b2f0a816139ed306)
+        ;
+
+        
+    
+    
+            var marker_4c78b57a3e9a404bbb0f36d45a9683a6 = L.marker(
+                [8.73059, -83.45491899999999],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_c00adc1438dc4c6cafbe4ffb7ec04304 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30640632ea324907b8e647b977696555 = $(`<div id="html_30640632ea324907b8e647b977696555" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal, entrada Chocuaco <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1996-07-18 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_c00adc1438dc4c6cafbe4ffb7ec04304.setContent(html_30640632ea324907b8e647b977696555);
+        
+
+        marker_4c78b57a3e9a404bbb0f36d45a9683a6.bindPopup(popup_c00adc1438dc4c6cafbe4ffb7ec04304)
+        ;
+
+        
+    
+    
+            var marker_8881376c8dc243d6a16b3bdb8e49b256 = L.marker(
+                [8.783333, -83.366667],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_d0bc4e69f56147078edf303292351a2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a5749bc116546fc8e5adae02dff893b = $(`<div id="html_0a5749bc116546fc8e5adae02dff893b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alto Los Mogos, camino a Rincon de Osa <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-28 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Rico, Maria de Lourdes (Lu</div>`)[0];
+            popup_d0bc4e69f56147078edf303292351a2c.setContent(html_0a5749bc116546fc8e5adae02dff893b);
+        
+
+        marker_8881376c8dc243d6a16b3bdb8e49b256.bindPopup(popup_d0bc4e69f56147078edf303292351a2c)
+        ;
+
+        
+    
+    
+            var marker_7d6b55d12e604ba1b2c650c6a23d6fb9 = L.marker(
+                [8.722222, -83.44166700000001],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_ea7a4ad7b31c438181352f9f22866545 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_099e9b526c6c4bbf873737bc2188fe7b = $(`<div id="html_099e9b526c6c4bbf873737bc2188fe7b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Los Mogos; Bahia Chal. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1993-07-30 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_ea7a4ad7b31c438181352f9f22866545.setContent(html_099e9b526c6c4bbf873737bc2188fe7b);
+        
+
+        marker_7d6b55d12e604ba1b2c650c6a23d6fb9.bindPopup(popup_ea7a4ad7b31c438181352f9f22866545)
+        ;
+
+        
+    
+    
+            var marker_e6829d5fe3824b19b8ed9c2df0208419 = L.marker(
+                [8.752778, -83.322222],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_d96439ce5e18408198c5eafd8fdad932 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e9d18b0b8124d7bb116687b66fb01fc = $(`<div id="html_5e9d18b0b8124d7bb116687b66fb01fc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Chacarita y Rincon, ca. 11 km O de Chacarita. <strong>Elevación:</strong> 220.0 m  <strong>Fecha:</strong> 1992-01-31 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_d96439ce5e18408198c5eafd8fdad932.setContent(html_5e9d18b0b8124d7bb116687b66fb01fc);
+        
+
+        marker_e6829d5fe3824b19b8ed9c2df0208419.bindPopup(popup_d96439ce5e18408198c5eafd8fdad932)
+        ;
+
+        
+    
+    
+            var marker_7afec6e83a244acc8852b00a17909460 = L.marker(
+                [8.743056, -83.590278],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_68b634d7185e4775841a6970e44835ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d2b2d535b4946bda6b69f833e28f43b = $(`<div id="html_2d2b2d535b4946bda6b69f833e28f43b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincon, fila circundante a las cabeceras de Quebrada Salto. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-06-24 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Rico, Maria de Lourdes (Lu</div>`)[0];
+            popup_68b634d7185e4775841a6970e44835ff.setContent(html_2d2b2d535b4946bda6b69f833e28f43b);
+        
+
+        marker_7afec6e83a244acc8852b00a17909460.bindPopup(popup_68b634d7185e4775841a6970e44835ff)
+        ;
+
+        
+    
+    
+            var marker_c575b4fa34bb41e98f8fac139af2102f = L.marker(
+                [8.733333, -83.6],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_7eeed427878a46e9b6c9994acf564ad6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db41974bd69c4e3da8737aa6ee1641a8 = $(`<div id="html_db41974bd69c4e3da8737aa6ee1641a8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado; in forest on trail to Drake on ridge at N end of valley; on slope leading down to Guerra. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-05-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_7eeed427878a46e9b6c9994acf564ad6.setContent(html_db41974bd69c4e3da8737aa6ee1641a8);
+        
+
+        marker_c575b4fa34bb41e98f8fac139af2102f.bindPopup(popup_7eeed427878a46e9b6c9994acf564ad6)
+        ;
+
+        
+    
+    
+            var marker_0b073eacadde494ab8b28fa534addd74 = L.marker(
+                [8.730556, -83.552778],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_96f084e9ffb6420195c74ac1967a37cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d852fe0af1d4ad8bc788992368a9235 = $(`<div id="html_2d852fe0af1d4ad8bc788992368a9235" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Juan, cuenca superior de Rio San Juan. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1991-01-25 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_96f084e9ffb6420195c74ac1967a37cf.setContent(html_2d852fe0af1d4ad8bc788992368a9235);
+        
+
+        marker_0b073eacadde494ab8b28fa534addd74.bindPopup(popup_96f084e9ffb6420195c74ac1967a37cf)
+        ;
+
+        
+    
+    
+            var marker_dc4cadd884714e479e4534d9511f95f1 = L.marker(
+                [8.788889, -83.363972],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_89371263cd074892b2f49ddc698ada62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e471e67c82254137ae6d73d1ffb74307 = $(`<div id="html_e471e67c82254137ae6d73d1ffb74307" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce, Los Mogos, finca de Efraín López (propiedad del estado), de la escuela de Los Mogos, 5 km norte, rumbo al humedal. <strong>Elevación:</strong> 134.0 m  <strong>Fecha:</strong> 2014-05-09 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Soo-Yong Kim ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_89371263cd074892b2f49ddc698ada62.setContent(html_e471e67c82254137ae6d73d1ffb74307);
+        
+
+        marker_dc4cadd884714e479e4534d9511f95f1.bindPopup(popup_89371263cd074892b2f49ddc698ada62)
+        ;
+
+        
+    
+    
+            var marker_29b6601ea0894ed9b957c7a9f3d2ef8b = L.marker(
+                [8.788889, -83.363972],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_6cbb23bf790544fc82e447a3a75065e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fc109a1a021490c84f641fed6edf5ec = $(`<div id="html_3fc109a1a021490c84f641fed6edf5ec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce, Los Mogos, finca de Efraín López (propiedad del estado), de la escuela de Los Mogos, 5 km norte, rumbo al humedal. <strong>Elevación:</strong> 134.0 m  <strong>Fecha:</strong> 2014-05-09 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Soo-Yong Kim ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_6cbb23bf790544fc82e447a3a75065e0.setContent(html_3fc109a1a021490c84f641fed6edf5ec);
+        
+
+        marker_29b6601ea0894ed9b957c7a9f3d2ef8b.bindPopup(popup_6cbb23bf790544fc82e447a3a75065e0)
+        ;
+
+        
+    
+    
+            var marker_fd2bedd75bc742a2b90494451df9aba2 = L.marker(
+                [8.788889, -83.363972],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_dcb450121ccc4166b2c997e6f048b6df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57c32468939c4d13bcf39dd71c8a547a = $(`<div id="html_57c32468939c4d13bcf39dd71c8a547a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce, Los Mogos, finca de Efraín López (propiedad del estado), de la escuela de Los Mogos, 5 km norte, rumbo al humedal. <strong>Elevación:</strong> 134.0 m  <strong>Fecha:</strong> 2014-05-09 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Soo-Yong Kim ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_dcb450121ccc4166b2c997e6f048b6df.setContent(html_57c32468939c4d13bcf39dd71c8a547a);
+        
+
+        marker_fd2bedd75bc742a2b90494451df9aba2.bindPopup(popup_dcb450121ccc4166b2c997e6f048b6df)
+        ;
+
+        
+    
+    
+            var marker_ed6b251c01734b7d8c8336ffe24c0697 = L.marker(
+                [8.783333, -83.366667],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_27db8defcfda4d9ab0930b836bc908c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b93dac6ebf954de2960dd9b7422f6e0a = $(`<div id="html_b93dac6ebf954de2960dd9b7422f6e0a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva forestal de Golfo dulce. Alto Los Mogos, camino a Rincón de Osa <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-28 00:00:00+00:00 <strong>Recolectores:</strong> Quírico Jiménez <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_27db8defcfda4d9ab0930b836bc908c9.setContent(html_b93dac6ebf954de2960dd9b7422f6e0a);
+        
+
+        marker_ed6b251c01734b7d8c8336ffe24c0697.bindPopup(popup_27db8defcfda4d9ab0930b836bc908c9)
+        ;
+
+        
+    
+    
+            var marker_e83f23e2b6aa4609aa9d24a998fb93ce = L.marker(
+                [8.78, -83.36],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_a17a2f7c60ae42c389b44a539b12d13f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2638ebb411fe423db7402fd7de751fc3 = $(`<div id="html_2638ebb411fe423db7402fd7de751fc3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Golfo Dulce Alto de Los Mogos, camino a Rincón. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-28 00:00:00+00:00 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> L. Rico & Q. Jiménez</div>`)[0];
+            popup_a17a2f7c60ae42c389b44a539b12d13f.setContent(html_2638ebb411fe423db7402fd7de751fc3);
+        
+
+        marker_e83f23e2b6aa4609aa9d24a998fb93ce.bindPopup(popup_a17a2f7c60ae42c389b44a539b12d13f)
+        ;
+
+        
+    
+    
+            var marker_ee06228fe5634d7eb83539311ffa476e = L.marker(
+                [8.74, -83.59],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_04a39fa4e768426d848bd2b65ce63b5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3ee8900faf6486eb6b6fd930dbd2852 = $(`<div id="html_a3ee8900faf6486eb6b6fd930dbd2852" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón, fila circundante a las cabeceras de Quebrada Salto. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-06-24 00:00:00+00:00 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> L. Rico & Q. Jiménez</div>`)[0];
+            popup_04a39fa4e768426d848bd2b65ce63b5f.setContent(html_a3ee8900faf6486eb6b6fd930dbd2852);
+        
+
+        marker_ee06228fe5634d7eb83539311ffa476e.bindPopup(popup_04a39fa4e768426d848bd2b65ce63b5f)
+        ;
+
+        
+    
+    
+            var marker_fe3df499b3b04f66aacad76eab01d00e = L.marker(
+                [8.75, -83.32],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_bdaf0a82451147beba2492a1076f9f11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1dd520cee3434a9baf5f52597ed1dce2 = $(`<div id="html_1dd520cee3434a9baf5f52597ed1dce2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Golfo Dulce Península de Osa. Entre Chacarita y Rincón, ca. 11 km O de Chacarita. <strong>Elevación:</strong> 220.0 m  <strong>Fecha:</strong> 1992-01-31 00:00:00+00:00 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_bdaf0a82451147beba2492a1076f9f11.setContent(html_1dd520cee3434a9baf5f52597ed1dce2);
+        
+
+        marker_fe3df499b3b04f66aacad76eab01d00e.bindPopup(popup_bdaf0a82451147beba2492a1076f9f11)
+        ;
+
+        
+    
+    
+            var marker_34ff0460fd794e7983564e45cfd24868 = L.marker(
+                [8.72, -83.44],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_dfdf8517086241b2b27d9418e2e3c2ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b93c575179a84c0d81bf266b1ebc114d = $(`<div id="html_b93c575179a84c0d81bf266b1ebc114d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Golfo Dulce Península de Osa. Los Mogos. Bahía Chal. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1993-07-30 00:00:00+00:00 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_dfdf8517086241b2b27d9418e2e3c2ab.setContent(html_b93c575179a84c0d81bf266b1ebc114d);
+        
+
+        marker_34ff0460fd794e7983564e45cfd24868.bindPopup(popup_dfdf8517086241b2b27d9418e2e3c2ab)
+        ;
+
+        
+    
+    
+            var marker_b32fdde33bbf4378996961eb9cd07bdb = L.marker(
+                [8.78, -83.37],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_0a754b8786974cce8871cf04ee10e505 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e1f0457cb8047e49ec417c4fa7b3831 = $(`<div id="html_5e1f0457cb8047e49ec417c4fa7b3831" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puntarenas: Osa  Reserva Forestal de Golfo Dulce. Alto Los Mogos, camino al Rincón de Osa. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-28 00:00:00+00:00 <strong>Recolectores:</strong> Jiménez, Q. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0a754b8786974cce8871cf04ee10e505.setContent(html_5e1f0457cb8047e49ec417c4fa7b3831);
+        
+
+        marker_b32fdde33bbf4378996961eb9cd07bdb.bindPopup(popup_0a754b8786974cce8871cf04ee10e505)
+        ;
+
+        
+    
+    
+            var marker_4ae586dd5f874181ae98a8484e6ba537 = L.marker(
+                [8.74, -83.59],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_780b128793f843a88c297b8a629b223d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2aa93a827d4346e682c0df84cdb9cfd4 = $(`<div id="html_2aa93a827d4346e682c0df84cdb9cfd4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón, fila circundante a las cabeceras de Quebrada Salto <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-06-24 00:00:00+00:00 <strong>Recolectores:</strong> Herrera, G. <strong>Identificadores:</strong> L. Rico</div>`)[0];
+            popup_780b128793f843a88c297b8a629b223d.setContent(html_2aa93a827d4346e682c0df84cdb9cfd4);
+        
+
+        marker_4ae586dd5f874181ae98a8484e6ba537.bindPopup(popup_780b128793f843a88c297b8a629b223d)
+        ;
+
+        
+    
+    
+            var marker_5b1347031105473d8360587658b712e2 = L.marker(
+                [8.74, -83.59],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_1c59d833e0ac4b7f90e18ef152aaf344 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0486e1e013f3462b9638a4bd7ea09de6 = $(`<div id="html_0486e1e013f3462b9638a4bd7ea09de6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Rincón, fila circundante a las cabeceras de Quebrada Salto. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-06-24 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> L. Rico, VI/</div>`)[0];
+            popup_1c59d833e0ac4b7f90e18ef152aaf344.setContent(html_0486e1e013f3462b9638a4bd7ea09de6);
+        
+
+        marker_5b1347031105473d8360587658b712e2.bindPopup(popup_1c59d833e0ac4b7f90e18ef152aaf344)
+        ;
+
+        
+    
+    
+            var marker_90d8f4a14cd54dde8a117ca678bbf262 = L.marker(
+                [8.73, -83.55],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_5b8083587e4f4c3ea740add192509f92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b5742b543e24ae59298ccdd2fd092e0 = $(`<div id="html_3b5742b543e24ae59298ccdd2fd092e0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa.  San Juan, cuenca superior de Río San Juan. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1991-01-25 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_5b8083587e4f4c3ea740add192509f92.setContent(html_3b5742b543e24ae59298ccdd2fd092e0);
+        
+
+        marker_90d8f4a14cd54dde8a117ca678bbf262.bindPopup(popup_5b8083587e4f4c3ea740add192509f92)
+        ;
+
+        
+    
+    
+            var marker_c361a9838b9e4cc08325ecef14794740 = L.marker(
+                [8.73, -83.6],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_ee777bcbec6e4d529b12141babeb3a2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96cf2d7c41fe46669b329e2b42f02d8d = $(`<div id="html_96cf2d7c41fe46669b329e2b42f02d8d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Osa Península, Rancho Quemado; in forest on trail to Drake on ridge at N end of valley; on slope leading down to Guerra. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-05-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Rafael Robles|Juan Marín <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_ee777bcbec6e4d529b12141babeb3a2e.setContent(html_96cf2d7c41fe46669b329e2b42f02d8d);
+        
+
+        marker_c361a9838b9e4cc08325ecef14794740.bindPopup(popup_ee777bcbec6e4d529b12141babeb3a2e)
+        ;
+
+        
+    
+    
+            var marker_b88cf8faab834724b210533f2d09d2db = L.marker(
+                [8.722222, -83.44166700000001],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_38798757d91040368b9838e89734409f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8aee1ec7c17a4fbe824c0be0e1cf1455 = $(`<div id="html_8aee1ec7c17a4fbe824c0be0e1cf1455" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Los Mogos; Bahía Chal. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1993-07-30 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar|Marianela Segura <strong>Identificadores:</strong> N. Zamora (INBIO)</div>`)[0];
+            popup_38798757d91040368b9838e89734409f.setContent(html_8aee1ec7c17a4fbe824c0be0e1cf1455);
+        
+
+        marker_b88cf8faab834724b210533f2d09d2db.bindPopup(popup_38798757d91040368b9838e89734409f)
+        ;
+
+        
+    
+    
+            var marker_4e9d5dfcdcdf4b408d01fdeb3b12a3fc = L.marker(
+                [8.752778, -83.322222],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_b7bf6ac4357e4aeaa7a6a7941e19f9c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ddbd7996e0646958a26f622d5e1ba6a = $(`<div id="html_8ddbd7996e0646958a26f622d5e1ba6a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Entre Chacarita y Rincón, ca. 11 km O de Chacarita. <strong>Elevación:</strong> 220.0 m  <strong>Fecha:</strong> 1992-01-31 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Ulises Chavarría|Álvaro Fernández|Alberth Moreno <strong>Identificadores:</strong> Q. Jiménez & N. Zamora, 1994 & 2003</div>`)[0];
+            popup_b7bf6ac4357e4aeaa7a6a7941e19f9c5.setContent(html_8ddbd7996e0646958a26f622d5e1ba6a);
+        
+
+        marker_4e9d5dfcdcdf4b408d01fdeb3b12a3fc.bindPopup(popup_b7bf6ac4357e4aeaa7a6a7941e19f9c5)
+        ;
+
+        
+    
+    
+            var marker_f157d74c1e344190bd8e8a00cad97a6b = L.marker(
+                [8.783333, -83.366667],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_09d5fafb6718455fab6fe465c1f06cd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18f28856d23f4585a4e5176623bd4387 = $(`<div id="html_18f28856d23f4585a4e5176623bd4387" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal de Golfo Dulce. Alto Los Mogos, camino a Rincón de Osa. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-28 00:00:00+00:00 <strong>Recolectores:</strong> Quírico Jiménez|Bolivar Jaén <strong>Identificadores:</strong> L. Rico & Q. Jiménez</div>`)[0];
+            popup_09d5fafb6718455fab6fe465c1f06cd9.setContent(html_18f28856d23f4585a4e5176623bd4387);
+        
+
+        marker_f157d74c1e344190bd8e8a00cad97a6b.bindPopup(popup_09d5fafb6718455fab6fe465c1f06cd9)
+        ;
+
+        
+    
+    
+            var marker_74338c1507404f7696de6a1c2621b8ef = L.marker(
+                [8.71, -83.45],
+                {}
+            ).addTo(marker_cluster_0780445e2048475e890399bb16b890d8);
+        
+    
+        var popup_cf4168718aca48eea173a4f0f1205133 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e89b24c29f124afb814916d69e9df082 = $(`<div id="html_e89b24c29f124afb814916d69e9df082" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal, La Parcela. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1996-01-01 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> N. Zamora, X/</div>`)[0];
+            popup_cf4168718aca48eea173a4f0f1205133.setContent(html_e89b24c29f124afb814916d69e9df082);
+        
+
+        marker_74338c1507404f7696de6a1c2621b8ef.bindPopup(popup_cf4168718aca48eea173a4f0f1205133)
+        ;
+
+        
+    
+    
+            var layer_control_5cdd3d58e20249fab182307a97f652ab = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f8a2a05855054042b99014dd1a00793a,
+                    "ESRI World Imagery" : tile_layer_49b3825487104b47b90739133369b980,
+                },
+                overlays :  {
+                    "macro_element_0780445e2048475e890399bb16b890d8" : marker_cluster_0780445e2048475e890399bb16b890d8,
+                },
+            };
+            L.control.layers(
+                layer_control_5cdd3d58e20249fab182307a97f652ab.base_layers,
+                layer_control_5cdd3d58e20249fab182307a97f652ab.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_eda1cd39b75d4b2a8f7d246a0e2f529f);
+            tile_layer_49b3825487104b47b90739133369b980.remove();
+        
+</script>

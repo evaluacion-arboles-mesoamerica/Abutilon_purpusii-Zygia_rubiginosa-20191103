@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b5355e7b388a4351bebc9999fdd3133a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b5355e7b388a4351bebc9999fdd3133a" ></div>
+        
+</body>
+<script>    
+    
+            var map_b5355e7b388a4351bebc9999fdd3133a = L.map(
+                "map_b5355e7b388a4351bebc9999fdd3133a",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_b5355e7b388a4351bebc9999fdd3133a);
+
+            
+
+        
+    
+            var tile_layer_03bde5c452024d728739ad48d33ec1ce = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b5355e7b388a4351bebc9999fdd3133a);
+        
+    
+            var tile_layer_0858d5f38ea94563844c71bb17fa97cc = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b5355e7b388a4351bebc9999fdd3133a);
+        
+    
+            var marker_cluster_4d4697e8d8d841eeae9541ae008bb5de = L.markerClusterGroup(
+                {}
+            );
+            map_b5355e7b388a4351bebc9999fdd3133a.addLayer(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+            var marker_7a7665eda243428e84225b056c545906 = L.marker(
+                [9.05, -83.466667],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_cefdc6f9136245c8b26a89a83400a51d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_685fb6b0fb1242c996a031f6df371d78 = $(`<div id="html_685fb6b0fb1242c996a031f6df371d78" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Guadoral y Colinas Maiz de Los Uvas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1995-07-20 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_cefdc6f9136245c8b26a89a83400a51d.setContent(html_685fb6b0fb1242c996a031f6df371d78);
+        
+
+        marker_7a7665eda243428e84225b056c545906.bindPopup(popup_cefdc6f9136245c8b26a89a83400a51d)
+        ;
+
+        
+    
+    
+            var marker_1330b49173cb4011a19d873da0e2b0d0 = L.marker(
+                [9.05, -83.466667],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_9e83a6e4d1f048d6af6f4f85945ba534 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f484f3c153f444ada2541e50a89dcc7a = $(`<div id="html_f484f3c153f444ada2541e50a89dcc7a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Guadoral y Colinas Maiz de Los Uvas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1995-07-20 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_9e83a6e4d1f048d6af6f4f85945ba534.setContent(html_f484f3c153f444ada2541e50a89dcc7a);
+        
+
+        marker_1330b49173cb4011a19d873da0e2b0d0.bindPopup(popup_9e83a6e4d1f048d6af6f4f85945ba534)
+        ;
+
+        
+    
+    
+            var marker_76255fdb42ba4cf0bda3a2f79ac16377 = L.marker(
+                [9.05, -83.466667],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_242b1a6113de40409e0f6283bf050524 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f43e88932354b2e8cbe3aa7942947ab = $(`<div id="html_0f43e88932354b2e8cbe3aa7942947ab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Guadoral y Colinas Maiz de Los Uvas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1997-07-29 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_242b1a6113de40409e0f6283bf050524.setContent(html_0f43e88932354b2e8cbe3aa7942947ab);
+        
+
+        marker_76255fdb42ba4cf0bda3a2f79ac16377.bindPopup(popup_242b1a6113de40409e0f6283bf050524)
+        ;
+
+        
+    
+    
+            var marker_d44697b1791c404dbf068ad74123e685 = L.marker(
+                [9.05, -83.466667],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_ac9b8099750f4c3e9cf219243ca798e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7db3d6b612843a8b48ac61b6e4fb660 = $(`<div id="html_f7db3d6b612843a8b48ac61b6e4fb660" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Guadoral y Colinas Maiz de Los Uvas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1997-07-29 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_ac9b8099750f4c3e9cf219243ca798e5.setContent(html_f7db3d6b612843a8b48ac61b6e4fb660);
+        
+
+        marker_d44697b1791c404dbf068ad74123e685.bindPopup(popup_ac9b8099750f4c3e9cf219243ca798e5)
+        ;
+
+        
+    
+    
+            var marker_7a06e7d92f094f3c9d2f70b63d5d6504 = L.marker(
+                [9.05, -83.466667],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_24a073b825524e68bf61daac26a16a99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efd19cb91f2242659f4345c892639800 = $(`<div id="html_efd19cb91f2242659f4345c892639800" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Guadoral y Colinas Maiz de Los Uvas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1997-07-29 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_24a073b825524e68bf61daac26a16a99.setContent(html_efd19cb91f2242659f4345c892639800);
+        
+
+        marker_7a06e7d92f094f3c9d2f70b63d5d6504.bindPopup(popup_24a073b825524e68bf61daac26a16a99)
+        ;
+
+        
+    
+    
+            var marker_ebf8be1b1d214394a6576d12d125168c = L.marker(
+                [9.05, -83.466667],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_2c41c6e33a4e4c35813c4589f47db65c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ff255dac1344954a7b550c70cbca650 = $(`<div id="html_8ff255dac1344954a7b550c70cbca650" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Guadoral y Colinas Maiz de Los Uvas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1997-07-29 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_2c41c6e33a4e4c35813c4589f47db65c.setContent(html_8ff255dac1344954a7b550c70cbca650);
+        
+
+        marker_ebf8be1b1d214394a6576d12d125168c.bindPopup(popup_2c41c6e33a4e4c35813c4589f47db65c)
+        ;
+
+        
+    
+    
+            var marker_98a84cd8c2174fbdbb25beb2b17ab598 = L.marker(
+                [9.05, -83.466667],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_527356bbee0a41929811cc70ebe45689 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_293a4e16cd1b46d1bb15a61fcaeee11c = $(`<div id="html_293a4e16cd1b46d1bb15a61fcaeee11c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Guadoral y Colinas Maiz de Los Uvas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1997-07-29 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_527356bbee0a41929811cc70ebe45689.setContent(html_293a4e16cd1b46d1bb15a61fcaeee11c);
+        
+
+        marker_98a84cd8c2174fbdbb25beb2b17ab598.bindPopup(popup_527356bbee0a41929811cc70ebe45689)
+        ;
+
+        
+    
+    
+            var marker_17ac822c4ab04f5d9620d2aac6f19da8 = L.marker(
+                [8.984672, -83.22180999999999],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_a6ddf5264e654c4ba5a51ff978978f7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb003809e2cb42138affaac6ea2fbdec = $(`<div id="html_cb003809e2cb42138affaac6ea2fbdec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alto Cacao <strong>Elevación:</strong> 120.0 m  <strong>Fecha:</strong> 2000-03-07 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Reinaldo Aguilar ; Barry Hammel <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_a6ddf5264e654c4ba5a51ff978978f7c.setContent(html_cb003809e2cb42138affaac6ea2fbdec);
+        
+
+        marker_17ac822c4ab04f5d9620d2aac6f19da8.bindPopup(popup_a6ddf5264e654c4ba5a51ff978978f7c)
+        ;
+
+        
+    
+    
+            var marker_f05b856cb7154b8ab2b696292502f78f = L.marker(
+                [8.965278, -83.170833],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_57d8701062e846d99b90f9053badf11e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c28bf0f3825842c4bd24d3023f728317 = $(`<div id="html_c28bf0f3825842c4bd24d3023f728317" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vueltas. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 2000-02-22 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_57d8701062e846d99b90f9053badf11e.setContent(html_c28bf0f3825842c4bd24d3023f728317);
+        
+
+        marker_f05b856cb7154b8ab2b696292502f78f.bindPopup(popup_57d8701062e846d99b90f9053badf11e)
+        ;
+
+        
+    
+    
+            var marker_231eefc5fdf84e6999b0a4433e1dc4b6 = L.marker(
+                [8.965278, -83.170833],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_aaa477a437a3470aac5a6c775e152326 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4509051ab479490084855e5737f78bff = $(`<div id="html_4509051ab479490084855e5737f78bff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vueltas. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 2000-02-22 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_aaa477a437a3470aac5a6c775e152326.setContent(html_4509051ab479490084855e5737f78bff);
+        
+
+        marker_231eefc5fdf84e6999b0a4433e1dc4b6.bindPopup(popup_aaa477a437a3470aac5a6c775e152326)
+        ;
+
+        
+    
+    
+            var marker_fde1d6339c334c9f969a3a4c4b350510 = L.marker(
+                [9.07, -83.5],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_49d23bb85192469eb99353ee3de9c608 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c14967e15afe476cb3277220e40d0b85 = $(`<div id="html_c14967e15afe476cb3277220e40d0b85" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca. Entre Guadoral y Colinas (Maíz de las Uvas). <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1995-07-20 00:00:00+00:00 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_49d23bb85192469eb99353ee3de9c608.setContent(html_c14967e15afe476cb3277220e40d0b85);
+        
+
+        marker_fde1d6339c334c9f969a3a4c4b350510.bindPopup(popup_49d23bb85192469eb99353ee3de9c608)
+        ;
+
+        
+    
+    
+            var marker_80686fb651bb4885be56933804661e8d = L.marker(
+                [9.05, -83.46],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_5159013113c745ff98b0f17aed02cc6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d67041e14dfc49c4b827aef9bdb0c7d7 = $(`<div id="html_d67041e14dfc49c4b827aef9bdb0c7d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Guadoral y colinas de Maíz de Los Uvas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1997-07-29 00:00:00+00:00 <strong>Recolectores:</strong> Zamora, Nelson <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_5159013113c745ff98b0f17aed02cc6a.setContent(html_d67041e14dfc49c4b827aef9bdb0c7d7);
+        
+
+        marker_80686fb651bb4885be56933804661e8d.bindPopup(popup_5159013113c745ff98b0f17aed02cc6a)
+        ;
+
+        
+    
+    
+            var marker_e9588811065f4111af254863a3682710 = L.marker(
+                [8.965278, -83.170833],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_657fe94dedd24783bd86e26150e36669 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f5494ec6d89471aaedffdb488a73ea1 = $(`<div id="html_2f5494ec6d89471aaedffdb488a73ea1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida.  Cuenca Térraba-Sierpe.  Laguna Las Vueltas. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 2000-02-22 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_657fe94dedd24783bd86e26150e36669.setContent(html_2f5494ec6d89471aaedffdb488a73ea1);
+        
+
+        marker_e9588811065f4111af254863a3682710.bindPopup(popup_657fe94dedd24783bd86e26150e36669)
+        ;
+
+        
+    
+    
+            var marker_537189f8c69546fb9e2c776f2230a7b5 = L.marker(
+                [9.05, -83.46],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_c508e186cc30436b91dbda8dcb75ea02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_755b6496de6f4b64b7331e3cf76c0b8e = $(`<div id="html_755b6496de6f4b64b7331e3cf76c0b8e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Guadoral y Colinas Maiz de Los Uvas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1995-01-01 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> N. Zamora, 1996 (INB)</div>`)[0];
+            popup_c508e186cc30436b91dbda8dcb75ea02.setContent(html_755b6496de6f4b64b7331e3cf76c0b8e);
+        
+
+        marker_537189f8c69546fb9e2c776f2230a7b5.bindPopup(popup_c508e186cc30436b91dbda8dcb75ea02)
+        ;
+
+        
+    
+    
+            var marker_9f77c789f4714c649d4b84704fb9eed0 = L.marker(
+                [9.05, -83.46],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_52fd16fff936468baa7b348e31baf38a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66d2cbdd3c8441c08892af6f4a54870e = $(`<div id="html_66d2cbdd3c8441c08892af6f4a54870e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Guadoral y Colinas Maiz de Los Uvas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1995-01-01 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_52fd16fff936468baa7b348e31baf38a.setContent(html_66d2cbdd3c8441c08892af6f4a54870e);
+        
+
+        marker_9f77c789f4714c649d4b84704fb9eed0.bindPopup(popup_52fd16fff936468baa7b348e31baf38a)
+        ;
+
+        
+    
+    
+            var marker_a65ce4621b26470ab92b3427c0c187a6 = L.marker(
+                [9.05, -83.46],
+                {}
+            ).addTo(marker_cluster_4d4697e8d8d841eeae9541ae008bb5de);
+        
+    
+        var popup_ae2c26ae17bc4be59b641c6c05f56678 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d5b51514a044e68875350fe1e990e1f = $(`<div id="html_7d5b51514a044e68875350fe1e990e1f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Buenos Aires. Cuenca Terraba-Sierpe. Fila Costena. Entre Guadoral y Colinas Maíz de Los Uvas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1997-07-29 00:00:00+00:00 <strong>Recolectores:</strong> Nelson Zamora|Reinaldo Aguilar <strong>Identificadores:</strong> Nelson Zamora</div>`)[0];
+            popup_ae2c26ae17bc4be59b641c6c05f56678.setContent(html_7d5b51514a044e68875350fe1e990e1f);
+        
+
+        marker_a65ce4621b26470ab92b3427c0c187a6.bindPopup(popup_ae2c26ae17bc4be59b641c6c05f56678)
+        ;
+
+        
+    
+    
+            var layer_control_7aa346aabe4c4c7ba41774fdf574b514 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_03bde5c452024d728739ad48d33ec1ce,
+                    "ESRI World Imagery" : tile_layer_0858d5f38ea94563844c71bb17fa97cc,
+                },
+                overlays :  {
+                    "macro_element_4d4697e8d8d841eeae9541ae008bb5de" : marker_cluster_4d4697e8d8d841eeae9541ae008bb5de,
+                },
+            };
+            L.control.layers(
+                layer_control_7aa346aabe4c4c7ba41774fdf574b514.base_layers,
+                layer_control_7aa346aabe4c4c7ba41774fdf574b514.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b5355e7b388a4351bebc9999fdd3133a);
+            tile_layer_0858d5f38ea94563844c71bb17fa97cc.remove();
+        
+</script>

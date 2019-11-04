@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6f1a7043f45544d482a5bd4deb3e6455 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6f1a7043f45544d482a5bd4deb3e6455" ></div>
+        
+</body>
+<script>    
+    
+            var map_6f1a7043f45544d482a5bd4deb3e6455 = L.map(
+                "map_6f1a7043f45544d482a5bd4deb3e6455",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_6f1a7043f45544d482a5bd4deb3e6455);
+
+            
+
+        
+    
+            var tile_layer_649d048b13b74bceb1a7c1ecb2a90a5d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6f1a7043f45544d482a5bd4deb3e6455);
+        
+    
+            var tile_layer_bc151ae308224934b74aa7324902726e = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6f1a7043f45544d482a5bd4deb3e6455);
+        
+    
+            var marker_cluster_50012198439a4058933498aa549f774f = L.markerClusterGroup(
+                {}
+            );
+            map_6f1a7043f45544d482a5bd4deb3e6455.addLayer(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+            var marker_1ac8cddabc6d4aaca95880e3a9240465 = L.marker(
+                [10.766667, -85.31666700000001],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_7a89c00e567b4bbb9d36da950e68196d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_878be18fccf846d099f3bcdca06b9116 = $(`<div id="html_878be18fccf846d099f3bcdca06b9116" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cabeceras de Quebrada Rancho Grande, bosque circundante a Meseta Aguacatales. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1987-12-02 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Umaña, Gina</div>`)[0];
+            popup_7a89c00e567b4bbb9d36da950e68196d.setContent(html_878be18fccf846d099f3bcdca06b9116);
+        
+
+        marker_1ac8cddabc6d4aaca95880e3a9240465.bindPopup(popup_7a89c00e567b4bbb9d36da950e68196d)
+        ;
+
+        
+    
+    
+            var marker_f98b7e8b86e746c9bb1056bb93780bb7 = L.marker(
+                [10.213056, -84.101389],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_ebc4bc93b07446e58a881287aecb5d8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07b7b77138444fe481ec09479f20fa98 = $(`<div id="html_07b7b77138444fe481ec09479f20fa98" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero del Transecto. 0.5 km South of junction at 1730 m with trail to La Legua de Barva. Primary Pluvial Montane Forest. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1994-02-01 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Umaña, Gina</div>`)[0];
+            popup_ebc4bc93b07446e58a881287aecb5d8d.setContent(html_07b7b77138444fe481ec09479f20fa98);
+        
+
+        marker_f98b7e8b86e746c9bb1056bb93780bb7.bindPopup(popup_ebc4bc93b07446e58a881287aecb5d8d)
+        ;
+
+        
+    
+    
+            var marker_74c25aab5cf94b71bd4c8cb754db22c0 = L.marker(
+                [10.08844, -84.077881],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_e6c4fcc5fd5b4625a9d1c60b8a1250be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0a1513d37b34a58a5210419f349e22e = $(`<div id="html_c0a1513d37b34a58a5210419f349e22e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chompipe. <strong>Elevación:</strong> 2073.0 m  <strong>Fecha:</strong> 2002-05-30 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_e6c4fcc5fd5b4625a9d1c60b8a1250be.setContent(html_c0a1513d37b34a58a5210419f349e22e);
+        
+
+        marker_74c25aab5cf94b71bd4c8cb754db22c0.bindPopup(popup_e6c4fcc5fd5b4625a9d1c60b8a1250be)
+        ;
+
+        
+    
+    
+            var marker_1f5ccfa686234332901f3ce9b9453ef0 = L.marker(
+                [10.08844, -84.077881],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_41b56bf5cafa4941a53dea7e75d26504 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4624bea924b4af4ac82078d09993d7c = $(`<div id="html_a4624bea924b4af4ac82078d09993d7c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chompipe. <strong>Elevación:</strong> 2073.0 m  <strong>Fecha:</strong> 2002-05-30 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_41b56bf5cafa4941a53dea7e75d26504.setContent(html_a4624bea924b4af4ac82078d09993d7c);
+        
+
+        marker_1f5ccfa686234332901f3ce9b9453ef0.bindPopup(popup_41b56bf5cafa4941a53dea7e75d26504)
+        ;
+
+        
+    
+    
+            var marker_e4c2a484f9e9460bb8edc9f8b10792ed = L.marker(
+                [10.08844, -84.077881],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_246b1c12eb824ed6933f84e4ed479369 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a24fb5ff32f44ccbdc1e006ca11da36 = $(`<div id="html_8a24fb5ff32f44ccbdc1e006ca11da36" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chompipe. <strong>Elevación:</strong> 2073.0 m  <strong>Fecha:</strong> 2002-05-30 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_246b1c12eb824ed6933f84e4ed479369.setContent(html_8a24fb5ff32f44ccbdc1e006ca11da36);
+        
+
+        marker_e4c2a484f9e9460bb8edc9f8b10792ed.bindPopup(popup_246b1c12eb824ed6933f84e4ed479369)
+        ;
+
+        
+    
+    
+            var marker_c663a744915b45ac97dbad8ef0fb889e = L.marker(
+                [10.08844, -84.077881],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_710bea19b002421bb32382816780c955 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4151e3b784754b4ab6c35d919edb02d6 = $(`<div id="html_4151e3b784754b4ab6c35d919edb02d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chompipe. <strong>Elevación:</strong> 2073.0 m  <strong>Fecha:</strong> 2002-05-30 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_710bea19b002421bb32382816780c955.setContent(html_4151e3b784754b4ab6c35d919edb02d6);
+        
+
+        marker_c663a744915b45ac97dbad8ef0fb889e.bindPopup(popup_710bea19b002421bb32382816780c955)
+        ;
+
+        
+    
+    
+            var marker_5d3f64eb75034e8eb990d17f8f454327 = L.marker(
+                [10.086797, -84.05899699999999],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_0fef8a76de274013873668ca8367db68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1eaadd26b0bb4a499d61828289587cce = $(`<div id="html_1eaadd26b0bb4a499d61828289587cce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vara Blanca, Cerro Chompipe <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2002-07-06 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_0fef8a76de274013873668ca8367db68.setContent(html_1eaadd26b0bb4a499d61828289587cce);
+        
+
+        marker_5d3f64eb75034e8eb990d17f8f454327.bindPopup(popup_0fef8a76de274013873668ca8367db68)
+        ;
+
+        
+    
+    
+            var marker_926a663520f0490abc807eaeb57cb198 = L.marker(
+                [10.086797, -84.05899699999999],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_035b851bfd3f412684f8f2e9b464ec10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abf07a7930e24434b931cbe9151c06e1 = $(`<div id="html_abf07a7930e24434b931cbe9151c06e1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vara Blanca, Cerro Chompipe <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2002-07-06 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_035b851bfd3f412684f8f2e9b464ec10.setContent(html_abf07a7930e24434b931cbe9151c06e1);
+        
+
+        marker_926a663520f0490abc807eaeb57cb198.bindPopup(popup_035b851bfd3f412684f8f2e9b464ec10)
+        ;
+
+        
+    
+    
+            var marker_739d744b991048879369db3f5e4beff0 = L.marker(
+                [10.086797, -84.05899699999999],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_8503c8a6eb524181bb43fcb987cdc900 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4140a2c797554a6ea07179c09f68df3e = $(`<div id="html_4140a2c797554a6ea07179c09f68df3e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vara Blanca, Cerro Chompipe <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2002-07-06 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_8503c8a6eb524181bb43fcb987cdc900.setContent(html_4140a2c797554a6ea07179c09f68df3e);
+        
+
+        marker_739d744b991048879369db3f5e4beff0.bindPopup(popup_8503c8a6eb524181bb43fcb987cdc900)
+        ;
+
+        
+    
+    
+            var marker_38c9cc12b2d34acf9d1a072b063bdbef = L.marker(
+                [10.086797, -84.05899699999999],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_21b481c3ab6f42b4b23483240bbc7d37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f99477f361c44c44a318d554e827bef4 = $(`<div id="html_f99477f361c44c44a318d554e827bef4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vara Blanca, Cerro Chompipe <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2002-07-06 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_21b481c3ab6f42b4b23483240bbc7d37.setContent(html_f99477f361c44c44a318d554e827bef4);
+        
+
+        marker_38c9cc12b2d34acf9d1a072b063bdbef.bindPopup(popup_21b481c3ab6f42b4b23483240bbc7d37)
+        ;
+
+        
+    
+    
+            var marker_19a82a1c0d8c4233be37f0ea65d5c859 = L.marker(
+                [10.252778, -84.369444],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_1541a261c3a044229564e986dca7aaaf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f917129e23a64a3183b9ccefc6be7e91 = $(`<div id="html_f917129e23a64a3183b9ccefc6be7e91" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Juan Castro Blanco, cuenca alta del Rio La Vieja <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2005-09-24 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez ; Daniel Solano ; Clare Cerling <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_1541a261c3a044229564e986dca7aaaf.setContent(html_f917129e23a64a3183b9ccefc6be7e91);
+        
+
+        marker_19a82a1c0d8c4233be37f0ea65d5c859.bindPopup(popup_1541a261c3a044229564e986dca7aaaf)
+        ;
+
+        
+    
+    
+            var marker_2da2c5c2c71d471fb316725672407446 = L.marker(
+                [10.086944, -84.07305600000001],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_a8f6713f0efd4eecbc018a6391a02ea0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6748330dbef48c29c3805368ccffea3 = $(`<div id="html_b6748330dbef48c29c3805368ccffea3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chompipe. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2003-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_a8f6713f0efd4eecbc018a6391a02ea0.setContent(html_b6748330dbef48c29c3805368ccffea3);
+        
+
+        marker_2da2c5c2c71d471fb316725672407446.bindPopup(popup_a8f6713f0efd4eecbc018a6391a02ea0)
+        ;
+
+        
+    
+    
+            var marker_c99e74f3485848bb8e475d86df7882b2 = L.marker(
+                [10.086944, -84.07305600000001],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_35bdf1fc8a20475dad3c08e81362a963 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5a14c4fb6294261bc6f1da9140fea52 = $(`<div id="html_d5a14c4fb6294261bc6f1da9140fea52" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chompipe. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2003-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_35bdf1fc8a20475dad3c08e81362a963.setContent(html_d5a14c4fb6294261bc6f1da9140fea52);
+        
+
+        marker_c99e74f3485848bb8e475d86df7882b2.bindPopup(popup_35bdf1fc8a20475dad3c08e81362a963)
+        ;
+
+        
+    
+    
+            var marker_9becc47a444a48649ac7c3e54295505b = L.marker(
+                [10.086944, -84.07305600000001],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_0b31daf1852d4b44b6e7a2d0fa5ae257 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1df071c340049ccbc2c84723d681160 = $(`<div id="html_e1df071c340049ccbc2c84723d681160" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chompipe. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2003-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_0b31daf1852d4b44b6e7a2d0fa5ae257.setContent(html_e1df071c340049ccbc2c84723d681160);
+        
+
+        marker_9becc47a444a48649ac7c3e54295505b.bindPopup(popup_0b31daf1852d4b44b6e7a2d0fa5ae257)
+        ;
+
+        
+    
+    
+            var marker_7be09da63cbe41f58b2b056e9435dcea = L.marker(
+                [10.202778, -84.31944399999999],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_be0ad17bd5b442349fbc4714e777b4ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2511a6c887c4913a6e328b9f5addc9d = $(`<div id="html_e2511a6c887c4913a6e328b9f5addc9d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Quelital, Bajos del Toro. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2003-11-07 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós; Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_be0ad17bd5b442349fbc4714e777b4ef.setContent(html_e2511a6c887c4913a6e328b9f5addc9d);
+        
+
+        marker_7be09da63cbe41f58b2b056e9435dcea.bindPopup(popup_be0ad17bd5b442349fbc4714e777b4ef)
+        ;
+
+        
+    
+    
+            var marker_a288e3cd36074a2383d7439288b94280 = L.marker(
+                [10.202778, -84.31944399999999],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_d924956040794daaaa32571e402f250d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1abba0d8f421462fbf8e3b4032a85da5 = $(`<div id="html_1abba0d8f421462fbf8e3b4032a85da5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Quelital, Bajos del Toro. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2003-11-07 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós; Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d924956040794daaaa32571e402f250d.setContent(html_1abba0d8f421462fbf8e3b4032a85da5);
+        
+
+        marker_a288e3cd36074a2383d7439288b94280.bindPopup(popup_d924956040794daaaa32571e402f250d)
+        ;
+
+        
+    
+    
+            var marker_ab18482c036e4719b9235d93726e5df2 = L.marker(
+                [10.202778, -84.31944399999999],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_9fb77bab96424255bc44e1726bd8a5f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c47755a6e440462baad833f9bd1078e0 = $(`<div id="html_c47755a6e440462baad833f9bd1078e0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Quelital, Bajos del Toro. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2003-11-07 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós; Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_9fb77bab96424255bc44e1726bd8a5f2.setContent(html_c47755a6e440462baad833f9bd1078e0);
+        
+
+        marker_ab18482c036e4719b9235d93726e5df2.bindPopup(popup_9fb77bab96424255bc44e1726bd8a5f2)
+        ;
+
+        
+    
+    
+            var marker_b06a7e3eb6694fa29993b86d2d84927b = L.marker(
+                [10.202778, -84.31944399999999],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_3fce1763637841fd89cfcdfcecd8d2d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e784dccaf92a480eacc37875b3a0335a = $(`<div id="html_e784dccaf92a480eacc37875b3a0335a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Quelital, Bajos del Toro. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2003-11-07 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós; Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_3fce1763637841fd89cfcdfcecd8d2d5.setContent(html_e784dccaf92a480eacc37875b3a0335a);
+        
+
+        marker_b06a7e3eb6694fa29993b86d2d84927b.bindPopup(popup_3fce1763637841fd89cfcdfcecd8d2d5)
+        ;
+
+        
+    
+    
+            var marker_cd5906952909493ca0aa2b3db17a850a = L.marker(
+                [10.081111, -84.07],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_75360fac60694949a64a9e4480b39c3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1cd27f95fce467a8acb9604dd728d90 = $(`<div id="html_d1cd27f95fce467a8acb9604dd728d90" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerrro Dantas.  Camino que lleva al albergue. <strong>Elevación:</strong> 2128.0 m  <strong>Fecha:</strong> 2005-11-03 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Clare Cerling <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_75360fac60694949a64a9e4480b39c3a.setContent(html_d1cd27f95fce467a8acb9604dd728d90);
+        
+
+        marker_cd5906952909493ca0aa2b3db17a850a.bindPopup(popup_75360fac60694949a64a9e4480b39c3a)
+        ;
+
+        
+    
+    
+            var marker_ecdef1b240e3411ba3f5cc85c702b5ee = L.marker(
+                [10.081111, -84.07],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_41514f21a85548e29f08245a086405dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51127f8783764b1bb86fd8498daa4fd3 = $(`<div id="html_51127f8783764b1bb86fd8498daa4fd3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerrro Dantas.  Camino que lleva al albergue. <strong>Elevación:</strong> 2128.0 m  <strong>Fecha:</strong> 2005-11-03 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Clare Cerling <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_41514f21a85548e29f08245a086405dc.setContent(html_51127f8783764b1bb86fd8498daa4fd3);
+        
+
+        marker_ecdef1b240e3411ba3f5cc85c702b5ee.bindPopup(popup_41514f21a85548e29f08245a086405dc)
+        ;
+
+        
+    
+    
+            var marker_e0527899e31046b9b899615eba792221 = L.marker(
+                [10.081111, -84.07],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_c00aa2aa5180491099264aa73af6e05c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48d366c761cc421eb54fb888967900b0 = $(`<div id="html_48d366c761cc421eb54fb888967900b0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerrro Dantas.  Camino que lleva al albergue. <strong>Elevación:</strong> 2128.0 m  <strong>Fecha:</strong> 2005-11-03 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Clare Cerling <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_c00aa2aa5180491099264aa73af6e05c.setContent(html_48d366c761cc421eb54fb888967900b0);
+        
+
+        marker_e0527899e31046b9b899615eba792221.bindPopup(popup_c00aa2aa5180491099264aa73af6e05c)
+        ;
+
+        
+    
+    
+            var marker_19fb1884fcf8415f805306baeddc4424 = L.marker(
+                [10.695153999999999, -85.027602],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_7a83c87c655c4fb38767f51af208153a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d4c5261af6d41ff8ba41098da55603d = $(`<div id="html_7d4c5261af6d41ff8ba41098da55603d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Punto 4: Cerro Montezuma. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2010-01-24 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_7a83c87c655c4fb38767f51af208153a.setContent(html_7d4c5261af6d41ff8ba41098da55603d);
+        
+
+        marker_19fb1884fcf8415f805306baeddc4424.bindPopup(popup_7a83c87c655c4fb38767f51af208153a)
+        ;
+
+        
+    
+    
+            var marker_8dd9a3e2e7024d3197783888077ecc1b = L.marker(
+                [10.695153999999999, -85.027602],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_3cc41d6a6d45413797256abe6533efab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ed83893543147f79027b91fc5cc4f2a = $(`<div id="html_6ed83893543147f79027b91fc5cc4f2a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Punto 4: Cerro Montezuma. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2010-01-24 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_3cc41d6a6d45413797256abe6533efab.setContent(html_6ed83893543147f79027b91fc5cc4f2a);
+        
+
+        marker_8dd9a3e2e7024d3197783888077ecc1b.bindPopup(popup_3cc41d6a6d45413797256abe6533efab)
+        ;
+
+        
+    
+    
+            var marker_c199c2a4ba964df6a2db0f67c74771e9 = L.marker(
+                [10.2, -84.1],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_250f851bdc42414d9a6e6d22d5b10793 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1406fa775c32413e8be4d53995f76a5b = $(`<div id="html_1406fa775c32413e8be4d53995f76a5b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Sendero Transecto, Vara Blanca, bosque primario <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1989-01-31 00:00:00+00:00 <strong>Recolectores:</strong> Miguel Ballestero|Víctor Hugo Ballestero <strong>Identificadores:</strong> M. Ballestero</div>`)[0];
+            popup_250f851bdc42414d9a6e6d22d5b10793.setContent(html_1406fa775c32413e8be4d53995f76a5b);
+        
+
+        marker_c199c2a4ba964df6a2db0f67c74771e9.bindPopup(popup_250f851bdc42414d9a6e6d22d5b10793)
+        ;
+
+        
+    
+    
+            var marker_ac95b4c0799c4398ac24e05e4c18331c = L.marker(
+                [10.182777999999999, -84.106667],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_78d9c393f19645b49336ed77e869c2b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_399404cb22614c5e8794342fb8011c60 = $(`<div id="html_399404cb22614c5e8794342fb8011c60" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Sendero del Transecto, flat area to right of trail.  Treeplot 2000 - 1 <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1992-08-15 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> B. Boyle (MO)</div>`)[0];
+            popup_78d9c393f19645b49336ed77e869c2b7.setContent(html_399404cb22614c5e8794342fb8011c60);
+        
+
+        marker_ac95b4c0799c4398ac24e05e4c18331c.bindPopup(popup_78d9c393f19645b49336ed77e869c2b7)
+        ;
+
+        
+    
+    
+            var marker_385e78c292894035a91a89d0e043dfd4 = L.marker(
+                [10.0536, -84.0395],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_fb6ef740e1944fdf969bff85fb44997b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec7e1e26f2b7477cb30a991f0929cda6 = $(`<div id="html_ec7e1e26f2b7477cb30a991f0929cda6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Cordillera volcanica Central. Refugio Cerro Dantas, near entrance. Lower slopes of Cerro Chompipe <strong>Elevación:</strong> 2020.0 m  <strong>Fecha:</strong> 2005-09-13 00:00:00+00:00 <strong>Recolectores:</strong> D. S. Penneys <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fb6ef740e1944fdf969bff85fb44997b.setContent(html_ec7e1e26f2b7477cb30a991f0929cda6);
+        
+
+        marker_385e78c292894035a91a89d0e043dfd4.bindPopup(popup_fb6ef740e1944fdf969bff85fb44997b)
+        ;
+
+        
+    
+    
+            var marker_4c2f1cfa05b64b2881f8582533124f6a = L.marker(
+                [10.25, -84.3],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_3ce9ac02651048f3a50a3d52d61e7d4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bd690a49f1d4660b14a7ec764449d13 = $(`<div id="html_2bd690a49f1d4660b14a7ec764449d13" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila volcán Viejo. <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1986-11-13 00:00:00+00:00 <strong>Recolectores:</strong> Gómez Laurito, Jorge <strong>Identificadores:</strong> Gómez Laurito, Jorge</div>`)[0];
+            popup_3ce9ac02651048f3a50a3d52d61e7d4e.setContent(html_2bd690a49f1d4660b14a7ec764449d13);
+        
+
+        marker_4c2f1cfa05b64b2881f8582533124f6a.bindPopup(popup_3ce9ac02651048f3a50a3d52d61e7d4e)
+        ;
+
+        
+    
+    
+            var marker_3cab0f8c399743d297b235b4b22106e4 = L.marker(
+                [10.08, -84.07],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_d3beb6e5ea62479fb7e6c3e49c31f152 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61fa26653cc042d9bb7692ef4701cdea = $(`<div id="html_61fa26653cc042d9bb7692ef4701cdea" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Cerro Chompipe. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1994-05-26 00:00:00+00:00 <strong>Recolectores:</strong> Umaña, Gina <strong>Identificadores:</strong> Umaña, Gina</div>`)[0];
+            popup_d3beb6e5ea62479fb7e6c3e49c31f152.setContent(html_61fa26653cc042d9bb7692ef4701cdea);
+        
+
+        marker_3cab0f8c399743d297b235b4b22106e4.bindPopup(popup_d3beb6e5ea62479fb7e6c3e49c31f152)
+        ;
+
+        
+    
+    
+            var marker_9bf51f1cc5e146f5bfb1c36d105cad94 = L.marker(
+                [10.19, -84.62],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_cfa3572b32844b53a988f9b0ecb297b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41876cf909be443a96316078bea4d1d2 = $(`<div id="html_41876cf909be443a96316078bea4d1d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Alberto Manuel Brenes Siguiendo la fila Volcán Muerto hasta el Llano de Costa Rica. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1994-10-14 00:00:00+00:00 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Gómez Laurito, Jorge</div>`)[0];
+            popup_cfa3572b32844b53a988f9b0ecb297b8.setContent(html_41876cf909be443a96316078bea4d1d2);
+        
+
+        marker_9bf51f1cc5e146f5bfb1c36d105cad94.bindPopup(popup_cfa3572b32844b53a988f9b0ecb297b8)
+        ;
+
+        
+    
+    
+            var marker_bf20d754a72946b9bf67e071aa04c4d0 = L.marker(
+                [10.21, -84.3],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_ac932f75565f4e03b6d558b8fce5957d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1db13ae504f404cb87f990af3378902 = $(`<div id="html_f1db13ae504f404cb87f990af3378902" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos del Toro Amarillo. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1989-04-10 00:00:00+00:00 <strong>Recolectores:</strong> Umaña, Gina <strong>Identificadores:</strong> Umaña, Gina</div>`)[0];
+            popup_ac932f75565f4e03b6d558b8fce5957d.setContent(html_f1db13ae504f404cb87f990af3378902);
+        
+
+        marker_bf20d754a72946b9bf67e071aa04c4d0.bindPopup(popup_ac932f75565f4e03b6d558b8fce5957d)
+        ;
+
+        
+    
+    
+            var marker_2ff228ddce524517be8de0272e241c51 = L.marker(
+                [10.17, -84.11],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_01a328eebabf4184a4b81c1a3f78a0dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a2f5a7932da4207a44eba67eaf51713 = $(`<div id="html_9a2f5a7932da4207a44eba67eaf51713" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Sendero del transecto. On ridge between second and third creek crossing below refugio at 2070 m. Old secondary forest in Montane Wet Forest life zone. <strong>Elevación:</strong> 2080.0 m  <strong>Fecha:</strong> 1992-08-23 00:00:00+00:00 <strong>Recolectores:</strong> Boyle, Brad <strong>Identificadores:</strong> Umaña, Gina</div>`)[0];
+            popup_01a328eebabf4184a4b81c1a3f78a0dd.setContent(html_9a2f5a7932da4207a44eba67eaf51713);
+        
+
+        marker_2ff228ddce524517be8de0272e241c51.bindPopup(popup_01a328eebabf4184a4b81c1a3f78a0dd)
+        ;
+
+        
+    
+    
+            var marker_7d615553a5694072986bf24279c07a42 = L.marker(
+                [10.2, -84.31],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_3a80d486ff5646e28fa4c84e727bb271 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4180292bb790482d92719770d69ec512 = $(`<div id="html_4180292bb790482d92719770d69ec512" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos del Toro Amarillo. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1992-04-28 00:00:00+00:00 <strong>Recolectores:</strong> Umaña, Gina <strong>Identificadores:</strong> Umaña, Gina</div>`)[0];
+            popup_3a80d486ff5646e28fa4c84e727bb271.setContent(html_4180292bb790482d92719770d69ec512);
+        
+
+        marker_7d615553a5694072986bf24279c07a42.bindPopup(popup_3a80d486ff5646e28fa4c84e727bb271)
+        ;
+
+        
+    
+    
+            var marker_779d9ced3343458dae4dc92a45465c98 = L.marker(
+                [10.21, -84.3],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_d007a3b3f3fa4c619a9b01c20e279b63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff69a2af77684211a37618d7d7a2abf9 = $(`<div id="html_ff69a2af77684211a37618d7d7a2abf9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos del Toro Amarillo. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1989-04-10 00:00:00+00:00 <strong>Recolectores:</strong> Umaña, Gina <strong>Identificadores:</strong> Umaña, Gina</div>`)[0];
+            popup_d007a3b3f3fa4c619a9b01c20e279b63.setContent(html_ff69a2af77684211a37618d7d7a2abf9);
+        
+
+        marker_779d9ced3343458dae4dc92a45465c98.bindPopup(popup_d007a3b3f3fa4c619a9b01c20e279b63)
+        ;
+
+        
+    
+    
+            var marker_bcac95da15054883918fe43d4775d273 = L.marker(
+                [10.21, -84.3],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_74bd29afb5a14aefae31fb4ea3e70ec0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cbd4737db934f37aadfeae6a2658fc7 = $(`<div id="html_5cbd4737db934f37aadfeae6a2658fc7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos del Toro Amarillo. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1989-04-10 00:00:00+00:00 <strong>Recolectores:</strong> Umaña, Gina <strong>Identificadores:</strong> Umaña, Gina</div>`)[0];
+            popup_74bd29afb5a14aefae31fb4ea3e70ec0.setContent(html_5cbd4737db934f37aadfeae6a2658fc7);
+        
+
+        marker_bcac95da15054883918fe43d4775d273.bindPopup(popup_74bd29afb5a14aefae31fb4ea3e70ec0)
+        ;
+
+        
+    
+    
+            var marker_37884e69dff4455898229399c2f02a9f = L.marker(
+                [10.16, -84.1],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_814f156d640c433991927b5d155fc02a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fb739f92fd94d1284da8e25ad5f2d5b = $(`<div id="html_2fb739f92fd94d1284da8e25ad5f2d5b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Vara Blanca. Sendero Transecto de 2000 a 2600 m. Bosque primario y secundario. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1989-01-30 00:00:00+00:00 <strong>Recolectores:</strong> Ballestero, Miguel <strong>Identificadores:</strong> Ballestero, Miguel</div>`)[0];
+            popup_814f156d640c433991927b5d155fc02a.setContent(html_2fb739f92fd94d1284da8e25ad5f2d5b);
+        
+
+        marker_37884e69dff4455898229399c2f02a9f.bindPopup(popup_814f156d640c433991927b5d155fc02a)
+        ;
+
+        
+    
+    
+            var marker_adec25adabef4613b5b6c27c1ab11706 = L.marker(
+                [10.05, -84.0],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_5634bb7ed4924276961886de23dcb5b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d165320a1d534ce897088209b15c11f4 = $(`<div id="html_d165320a1d534ce897088209b15c11f4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Entre peaje y Alto de la Palma. Charrales. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1992-07-08 00:00:00+00:00 <strong>Recolectores:</strong> Ballestero, Miguel <strong>Identificadores:</strong> Ballestero, Miguel</div>`)[0];
+            popup_5634bb7ed4924276961886de23dcb5b4.setContent(html_d165320a1d534ce897088209b15c11f4);
+        
+
+        marker_adec25adabef4613b5b6c27c1ab11706.bindPopup(popup_5634bb7ed4924276961886de23dcb5b4)
+        ;
+
+        
+    
+    
+            var marker_d28174fcf9d64af3a8e1512974cdc922 = L.marker(
+                [10.21, -84.1],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_5523b1611590476a98af8b952fc3accc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d0d78c87fa14aab8e5406bd3fdd2752 = $(`<div id="html_1d0d78c87fa14aab8e5406bd3fdd2752" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Sendero del transecto. 0.5 km south of junction at 1730 m with trail to La Legua de Barva. Primary Pluvial Montane Forest. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1994-02-01 00:00:00+00:00 <strong>Recolectores:</strong> Boyle, Brad <strong>Identificadores:</strong> Umaña, Gina</div>`)[0];
+            popup_5523b1611590476a98af8b952fc3accc.setContent(html_1d0d78c87fa14aab8e5406bd3fdd2752);
+        
+
+        marker_d28174fcf9d64af3a8e1512974cdc922.bindPopup(popup_5523b1611590476a98af8b952fc3accc)
+        ;
+
+        
+    
+    
+            var marker_b54d56fabc28498f947a96a9276e9442 = L.marker(
+                [10.087497, -84.073616],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_b9189b12691d492c9eeb530790e5ac03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ceff6f56a64d427d971db44d8639b136 = $(`<div id="html_ceff6f56a64d427d971db44d8639b136" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Cerro Chompipe. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1994-05-01 00:00:00+00:00 <strong>Recolectores:</strong> Umaña, Gina; Chacon, R. <strong>Identificadores:</strong> G. Umana-D.</div>`)[0];
+            popup_b9189b12691d492c9eeb530790e5ac03.setContent(html_ceff6f56a64d427d971db44d8639b136);
+        
+
+        marker_b54d56fabc28498f947a96a9276e9442.bindPopup(popup_b9189b12691d492c9eeb530790e5ac03)
+        ;
+
+        
+    
+    
+            var marker_28e738d96b0141d88c7ca321ffdd2b37 = L.marker(
+                [10.086111, -84.072778],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_66b270a69df64cb79f44211897de7256 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d6a3c67063b4982bb7a6fef2e0a20e7 = $(`<div id="html_2d6a3c67063b4982bb7a6fef2e0a20e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Cordillera Volcanica Central.  Refugio Cerro Dantas, near entrance.  Lower slopes of Cerro Chompipe <strong>Elevación:</strong> 2060.0 m  <strong>Fecha:</strong> 2005-09-01 00:00:00+00:00 <strong>Recolectores:</strong> Penneys, Darin S.; Hammel, Barry <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_66b270a69df64cb79f44211897de7256.setContent(html_2d6a3c67063b4982bb7a6fef2e0a20e7);
+        
+
+        marker_28e738d96b0141d88c7ca321ffdd2b37.bindPopup(popup_66b270a69df64cb79f44211897de7256)
+        ;
+
+        
+    
+    
+            var marker_58e82b63de044a6cb471bc61c3fbb107 = L.marker(
+                [10.093333, -84.06666700000001],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_f0d9dbdf30054914b48d8a1e4a323b95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86693e558fc44691a9c8337c440e341f = $(`<div id="html_86693e558fc44691a9c8337c440e341f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Cordillera Volcanica Central.  Refugio Cerro Dantas, near entrance.  Lower slopes of Cerro Chompipe <strong>Elevación:</strong> 2020.0 m  <strong>Fecha:</strong> 2005-09-01 00:00:00+00:00 <strong>Recolectores:</strong> Penneys, Darin S.; Hammel, Barry <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f0d9dbdf30054914b48d8a1e4a323b95.setContent(html_86693e558fc44691a9c8337c440e341f);
+        
+
+        marker_58e82b63de044a6cb471bc61c3fbb107.bindPopup(popup_f0d9dbdf30054914b48d8a1e4a323b95)
+        ;
+
+        
+    
+    
+            var marker_259e9ee3d0f84d50ba622a4ca8c9ee10 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_62f5d79e421f490ab19fd29a138e05aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14a019af693145f1b04db4d15ed49321 = $(`<div id="html_14a019af693145f1b04db4d15ed49321" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Austin Smith <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_62f5d79e421f490ab19fd29a138e05aa.setContent(html_14a019af693145f1b04db4d15ed49321);
+        
+
+        marker_259e9ee3d0f84d50ba622a4ca8c9ee10.bindPopup(popup_62f5d79e421f490ab19fd29a138e05aa)
+        ;
+
+        
+    
+    
+            var marker_76d55571601e4737b8af7646663554a2 = L.marker(
+                [10.176389, -84.111111],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_a217fdaaa1944bf49b3144e218341e31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fc38e407e984e9dbc070ac4cc53f5aa = $(`<div id="html_6fc38e407e984e9dbc070ac4cc53f5aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Cordillera Central, Sendero del Transecto, on ridge between second and third creek crossing below refugio at 2070 m. <strong>Elevación:</strong> 2080.0 m  <strong>Fecha:</strong> 1992-08-23 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle|Peter Hibbs <strong>Identificadores:</strong> B. Boyle (MO)</div>`)[0];
+            popup_a217fdaaa1944bf49b3144e218341e31.setContent(html_6fc38e407e984e9dbc070ac4cc53f5aa);
+        
+
+        marker_76d55571601e4737b8af7646663554a2.bindPopup(popup_a217fdaaa1944bf49b3144e218341e31)
+        ;
+
+        
+    
+    
+            var marker_1fdd5cc3be6f4f45899540cc014947ea = L.marker(
+                [10.21, -84.1],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_cea17dcb96be4ef4a312ede13b61ec0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_113c1e283a394c31b92e3b9b5913c649 = $(`<div id="html_113c1e283a394c31b92e3b9b5913c649" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Cordillera Central, Sendero del Transecto, 0.5 km south of junction at 1730 m with trail to La Legua de Barva. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1994-02-01 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle|Alice Boyle <strong>Identificadores:</strong> G. Umaña (CR), IX</div>`)[0];
+            popup_cea17dcb96be4ef4a312ede13b61ec0e.setContent(html_113c1e283a394c31b92e3b9b5913c649);
+        
+
+        marker_1fdd5cc3be6f4f45899540cc014947ea.bindPopup(popup_cea17dcb96be4ef4a312ede13b61ec0e)
+        ;
+
+        
+    
+    
+            var marker_6112bd58a1b54331b15d7e7828e67438 = L.marker(
+                [10.79, -85.32],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_666bae5dc01a49f1a8c8d1f6f9027129 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe3e164d7bd942ebba8c508ad470fd3d = $(`<div id="html_fe3e164d7bd942ebba8c508ad470fd3d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Rincón de La Vieja. Cabeceras de Quebrada Rancho Grande, bosque circundante a Meseta Aguacatales. [original label coordinates: 10º46'N, 85º49'W] <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1987-12-02 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> G. Umaña</div>`)[0];
+            popup_666bae5dc01a49f1a8c8d1f6f9027129.setContent(html_fe3e164d7bd942ebba8c508ad470fd3d);
+        
+
+        marker_6112bd58a1b54331b15d7e7828e67438.bindPopup(popup_666bae5dc01a49f1a8c8d1f6f9027129)
+        ;
+
+        
+    
+    
+            var marker_8b1603419bca4d1a888423f102911b8c = L.marker(
+                [10.086667, -84.05888900000001],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_9451d62aafa144ab9e37453455f5e872 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db8a61cd72344c58aba5c0137c2ddc90 = $(`<div id="html_db8a61cd72344c58aba5c0137c2ddc90" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Cordillera Volcánica Central. Cuenca del Sarapiquí. Refugio Cerro Dantas, Cerro Chompipe. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2002-07-06 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> R. Kriebel</div>`)[0];
+            popup_9451d62aafa144ab9e37453455f5e872.setContent(html_db8a61cd72344c58aba5c0137c2ddc90);
+        
+
+        marker_8b1603419bca4d1a888423f102911b8c.bindPopup(popup_9451d62aafa144ab9e37453455f5e872)
+        ;
+
+        
+    
+    
+            var marker_d2b5a0979f7742d199d31b6a5d1b565c = L.marker(
+                [10.088333, -84.07777800000001],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_139c040228ad4c3da3d3dfa0f3d19212 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b55f39d5c91d4263b784bac11c35f5b5 = $(`<div id="html_b55f39d5c91d4263b784bac11c35f5b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.V.S. Jaguarandi. Cuenca del Tárcoles. Refugio Fundantas, Cerro Chompipe. <strong>Elevación:</strong> 2073.0 m  <strong>Fecha:</strong> 2002-05-30 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> R. Kriebel</div>`)[0];
+            popup_139c040228ad4c3da3d3dfa0f3d19212.setContent(html_b55f39d5c91d4263b784bac11c35f5b5);
+        
+
+        marker_d2b5a0979f7742d199d31b6a5d1b565c.bindPopup(popup_139c040228ad4c3da3d3dfa0f3d19212)
+        ;
+
+        
+    
+    
+            var marker_2b0917f1ccf64b5e820a64dbe8086e0c = L.marker(
+                [10.202778, -84.31944],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_77995ae06c87486085679bf08a30e146 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7872b13915894b1d90746a888740ce3a = $(`<div id="html_7872b13915894b1d90746a888740ce3a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Quelital, Bajos del Toro, camino a Zarcero. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2003-11-07 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> J. Morales</div>`)[0];
+            popup_77995ae06c87486085679bf08a30e146.setContent(html_7872b13915894b1d90746a888740ce3a);
+        
+
+        marker_2b0917f1ccf64b5e820a64dbe8086e0c.bindPopup(popup_77995ae06c87486085679bf08a30e146)
+        ;
+
+        
+    
+    
+            var marker_7922f80446954f0583a18d8d94490b31 = L.marker(
+                [10.0869, -84.0731],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_0f30ebe5aaf04776b58be5a224fe8398 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12a5625f3ed144bba6f77c1810b4ba96 = $(`<div id="html_12a5625f3ed144bba6f77c1810b4ba96" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Heredia: Heredia. R.F. Cordillera Volcánica Central. Cuenca del Sarapiquí. Calle Ramírez, entre Centro para la Conciencia y Fundantas (Revisar coordenada asignada) <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2003-03-11 00:00:00+00:00 <strong>Recolectores:</strong> R. Kriebel <strong>Identificadores:</strong> R. Kriebel</div>`)[0];
+            popup_0f30ebe5aaf04776b58be5a224fe8398.setContent(html_12a5625f3ed144bba6f77c1810b4ba96);
+        
+
+        marker_7922f80446954f0583a18d8d94490b31.bindPopup(popup_0f30ebe5aaf04776b58be5a224fe8398)
+        ;
+
+        
+    
+    
+            var marker_f69348d768a74e56b9067c93fbb078de = L.marker(
+                [10.0861, -84.0728],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_642d66fe31354ccc9be0bee4898f155c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67acf1b585bc45348d6fb1a776cf5bbc = $(`<div id="html_67acf1b585bc45348d6fb1a776cf5bbc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Cordillera: Volcanica Central. Refugio Cerro Dantas, near entrance. Lower slopes of Cerro Chompipe. <strong>Elevación:</strong> 2060.0 m  <strong>Fecha:</strong> 2005-09-13 00:00:00+00:00 <strong>Recolectores:</strong> D. S. Penneys & B. E. Hammel <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_642d66fe31354ccc9be0bee4898f155c.setContent(html_67acf1b585bc45348d6fb1a776cf5bbc);
+        
+
+        marker_f69348d768a74e56b9067c93fbb078de.bindPopup(popup_642d66fe31354ccc9be0bee4898f155c)
+        ;
+
+        
+    
+    
+            var marker_0c09817eeb7343a390dbe4ace4dc024d = L.marker(
+                [10.09, -84.05],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_3a1d6fd3bccb4c7bb3f0d2164e7d8cdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf1533fdae6148da87032419fc7a63c0 = $(`<div id="html_cf1533fdae6148da87032419fc7a63c0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Cerro Chompipe between Río Las Vueltas and the Río Nuevo about 12 km north-northeast of San Rafael <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1974-12-21 00:00:00+00:00 <strong>Recolectores:</strong> Robert L. Wilbur|James L. Luteyn <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_3a1d6fd3bccb4c7bb3f0d2164e7d8cdb.setContent(html_cf1533fdae6148da87032419fc7a63c0);
+        
+
+        marker_0c09817eeb7343a390dbe4ace4dc024d.bindPopup(popup_3a1d6fd3bccb4c7bb3f0d2164e7d8cdb)
+        ;
+
+        
+    
+    
+            var marker_621ba1f16d4646fb95f6e041fb58804e = L.marker(
+                [10.063880000000001, -84.0875],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_b9b14a12e0a34fc18a517285bab1c78b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e2607e2c3e74c24ba66e7c0049d60c1 = $(`<div id="html_8e2607e2c3e74c24ba66e7c0049d60c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> C.R. # 113, foot trail at road terminus, ca. 13 km north of San Rafael, slopes of Volcán Barba, abandoned pastureland with secondary growth <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1973-12-28 00:00:00+00:00 <strong>Recolectores:</strong> Frank Almeda|Margaret Flowers|Richard B. Primack|Robert E. Wyatt <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_b9b14a12e0a34fc18a517285bab1c78b.setContent(html_8e2607e2c3e74c24ba66e7c0049d60c1);
+        
+
+        marker_621ba1f16d4646fb95f6e041fb58804e.bindPopup(popup_b9b14a12e0a34fc18a517285bab1c78b)
+        ;
+
+        
+    
+    
+            var marker_f73cdac074f0470c8894ac5cea0c4054 = L.marker(
+                [10.063880000000001, -84.0875],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_9c12e60d88624253a9fd729057e6e042 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5de45771cf1347dd9b5228d8226b7593 = $(`<div id="html_5de45771cf1347dd9b5228d8226b7593" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> C.R. # 113, foot trail at road terminus, ca. 13 km north of San Rafael, slopes of Volcán Barba, abandoned pastureland with secondary growth <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1973-12-28 00:00:00+00:00 <strong>Recolectores:</strong> Frank Almeda|Margaret Flowers|Richard B. Primack|Robert E. Wyatt <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_9c12e60d88624253a9fd729057e6e042.setContent(html_5de45771cf1347dd9b5228d8226b7593);
+        
+
+        marker_f73cdac074f0470c8894ac5cea0c4054.bindPopup(popup_9c12e60d88624253a9fd729057e6e042)
+        ;
+
+        
+    
+    
+            var marker_67b5a76ac509455fbbc33098d4218031 = L.marker(
+                [10.0, -83.95],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_8d4c9cc3b32c499f84e77b3e18feba49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98baba7c213d43a18743ee7ec01fc1b0 = $(`<div id="html_98baba7c213d43a18743ee7ec01fc1b0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> C.R. #216 ca 3-6 km beyond Las Nubes in vicinity of Cascajal, open pastures with scattered trees on northwest flanks of Volcán Irazú <strong>Elevación:</strong> 1737.36 m  <strong>Fecha:</strong> 1975-12-10 00:00:00+00:00 <strong>Recolectores:</strong> Frank Almeda|M.B. Almeda|John F. Utley|K. Burt-Utley|Richard A. Baker <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_8d4c9cc3b32c499f84e77b3e18feba49.setContent(html_98baba7c213d43a18743ee7ec01fc1b0);
+        
+
+        marker_67b5a76ac509455fbbc33098d4218031.bindPopup(popup_8d4c9cc3b32c499f84e77b3e18feba49)
+        ;
+
+        
+    
+    
+            var marker_0a2c3d98d2d94b348a628ebaaded8595 = L.marker(
+                [10.09, -84.05],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_af3aa6924a3f47249c7f160757e0e4a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd603130fd17492d9af2aec6e093a7ca = $(`<div id="html_cd603130fd17492d9af2aec6e093a7ca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Cerro Chompipe between Río Las Vueltas and the Río Nuevo about 12 km north-northeast of San Rafael <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1974-12-21 00:00:00+00:00 <strong>Recolectores:</strong> Robert L. Wilbur|James L. Luteyn <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_af3aa6924a3f47249c7f160757e0e4a4.setContent(html_cd603130fd17492d9af2aec6e093a7ca);
+        
+
+        marker_0a2c3d98d2d94b348a628ebaaded8595.bindPopup(popup_af3aa6924a3f47249c7f160757e0e4a4)
+        ;
+
+        
+    
+    
+            var marker_4c4444407ea84bab87d4e23df6f9fbd2 = L.marker(
+                [10.19722, -84.62222],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_8aa8cdc2b3e6411c8277ab9d42129869 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab803de2ab364ea692290717264d2145 = $(`<div id="html_ab803de2ab364ea692290717264d2145" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Los Angeles, Reserva Biológica Alberto M. Brenes, Siguiendo la Fila Volcán Muerto hasta el Llano Costa Rica <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1994-10-14 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Hugo Pérez Z. <strong>Identificadores:</strong> J. Gómez-Laurito</div>`)[0];
+            popup_8aa8cdc2b3e6411c8277ab9d42129869.setContent(html_ab803de2ab364ea692290717264d2145);
+        
+
+        marker_4c4444407ea84bab87d4e23df6f9fbd2.bindPopup(popup_8aa8cdc2b3e6411c8277ab9d42129869)
+        ;
+
+        
+    
+    
+            var marker_892ffc1d93654d4cb937e4c493a824ba = L.marker(
+                [10.216660000000001, -84.3],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_ab21d4366c76482db87c8d08a31ee477 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db9a915c3cc742b1a55f727e38412a00 = $(`<div id="html_db9a915c3cc742b1a55f727e38412a00" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos del Toro Amarillo <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1989-04-10 00:00:00+00:00 <strong>Recolectores:</strong> Gina Umaña Dodero|Rafael Chacón <strong>Identificadores:</strong> G. Umaña-D.</div>`)[0];
+            popup_ab21d4366c76482db87c8d08a31ee477.setContent(html_db9a915c3cc742b1a55f727e38412a00);
+        
+
+        marker_892ffc1d93654d4cb937e4c493a824ba.bindPopup(popup_ab21d4366c76482db87c8d08a31ee477)
+        ;
+
+        
+    
+    
+            var marker_5c30ddd387714d96bf7903beb452e3ed = L.marker(
+                [10.07, -84.03],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_c297b408894c4c1387805f438f0ba6f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14d54c7a342b46d2a4df6591a6dcd91f = $(`<div id="html_14d54c7a342b46d2a4df6591a6dcd91f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de las Caricias, N of San Isidro <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1926-03-11 00:00:00+00:00 <strong>Recolectores:</strong> P. C. Standley & J. Valerio <strong>Identificadores:</strong> Almeda, F.</div>`)[0];
+            popup_c297b408894c4c1387805f438f0ba6f8.setContent(html_14d54c7a342b46d2a4df6591a6dcd91f);
+        
+
+        marker_5c30ddd387714d96bf7903beb452e3ed.bindPopup(popup_c297b408894c4c1387805f438f0ba6f8)
+        ;
+
+        
+    
+    
+            var marker_755ed7785b664e21bafd58ef668288f9 = L.marker(
+                [10.801116, -85.329178],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_1e54d37a3bd5447391ed1114485a2572 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86694d90477d4c6fa3c2b86f5f9e3692 = $(`<div id="html_86694d90477d4c6fa3c2b86f5f9e3692" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Liberia. Área de Conservación Guanacaste, Sector Hacienda Santa María, Sendero al cráter del Volcán Santa María. <strong>Elevación:</strong> 1560.0 m  <strong>Fecha:</strong> 2015-01-23 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza; Adrián Guadamuz <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_1e54d37a3bd5447391ed1114485a2572.setContent(html_86694d90477d4c6fa3c2b86f5f9e3692);
+        
+
+        marker_755ed7785b664e21bafd58ef668288f9.bindPopup(popup_1e54d37a3bd5447391ed1114485a2572)
+        ;
+
+        
+    
+    
+            var marker_1dc34c63772a4812bf1b1dbdbd941be5 = L.marker(
+                [10.801116, -85.329178],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_9bd40cf480e149c4a61972b84e333205 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd553aedd78442a99376d59fabd3bd10 = $(`<div id="html_cd553aedd78442a99376d59fabd3bd10" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Liberia. Área de Conservación Guanacaste, Sector Hacienda Santa María, Sendero al cráter del Volcán Santa María. <strong>Elevación:</strong> 1560.0 m  <strong>Fecha:</strong> 2015-01-23 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza; Adrián Guadamuz <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_9bd40cf480e149c4a61972b84e333205.setContent(html_cd553aedd78442a99376d59fabd3bd10);
+        
+
+        marker_1dc34c63772a4812bf1b1dbdbd941be5.bindPopup(popup_9bd40cf480e149c4a61972b84e333205)
+        ;
+
+        
+    
+    
+            var marker_85f9eb64565542f2850a5553cf2345f2 = L.marker(
+                [10.801116, -85.329178],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_01be02e5a573482dbe02b9780452573f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d4ac798851a44ddb8909b9452bf725d = $(`<div id="html_2d4ac798851a44ddb8909b9452bf725d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Liberia. Área de Conservación Guanacaste, Sector Hacienda Santa María, Sendero al cráter del Volcán Santa María. <strong>Elevación:</strong> 1560.0 m  <strong>Fecha:</strong> 2015-01-23 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza; Adrián Guadamuz <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_01be02e5a573482dbe02b9780452573f.setContent(html_2d4ac798851a44ddb8909b9452bf725d);
+        
+
+        marker_85f9eb64565542f2850a5553cf2345f2.bindPopup(popup_01be02e5a573482dbe02b9780452573f)
+        ;
+
+        
+    
+    
+            var marker_aae7b0dfca5642bba2583fda120e425e = L.marker(
+                [10.081111, -84.07],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_7e79225c58464cd782a62b40e8ae795c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c2a5386564949f88013cb80423ffbbf = $(`<div id="html_0c2a5386564949f88013cb80423ffbbf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera Volcanica Central. Cuenca del Sarapiqui. cerro Dantas. Camino que lleva al albergue <strong>Elevación:</strong> 2128.0 m  <strong>Fecha:</strong> 2005-11-03 00:00:00+00:00 <strong>Recolectores:</strong> D. Santamaría Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7e79225c58464cd782a62b40e8ae795c.setContent(html_0c2a5386564949f88013cb80423ffbbf);
+        
+
+        marker_aae7b0dfca5642bba2583fda120e425e.bindPopup(popup_7e79225c58464cd782a62b40e8ae795c)
+        ;
+
+        
+    
+    
+            var marker_9a8ca7ac6d814760943cc0544d5b95f9 = L.marker(
+                [10.0861, -84.0728],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_2923dc7b746443fab92944f24342c336 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e2073429855483a8fd92a84bc38fd6c = $(`<div id="html_0e2073429855483a8fd92a84bc38fd6c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Cordillera Volcanica Central. Refugio Cerro Dantas, near entrance. Lower slopes of Cerro Chompipe <strong>Elevación:</strong> 2060.0 m  <strong>Fecha:</strong> 2005-09-13 00:00:00+00:00 <strong>Recolectores:</strong> D. S. Penneys <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2923dc7b746443fab92944f24342c336.setContent(html_0e2073429855483a8fd92a84bc38fd6c);
+        
+
+        marker_9a8ca7ac6d814760943cc0544d5b95f9.bindPopup(popup_2923dc7b746443fab92944f24342c336)
+        ;
+
+        
+    
+    
+            var marker_2761705f17d3487d98b859ff480ec5fc = L.marker(
+                [10.086111, -84.072778],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_0004526d11c74fd0baf0d939074c9a70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72f8431275a14c58a9dd5c812d2cf0f1 = $(`<div id="html_72f8431275a14c58a9dd5c812d2cf0f1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Cordillera Volcanica Central. Refugio Cerro Dantas, near entrance. Lower slopes of Cerro Chompipe. <strong>Elevación:</strong> 2060.0 m  <strong>Fecha:</strong> 2005-09-13 00:00:00+00:00 <strong>Recolectores:</strong> Darin S. Penneys|Barry E. Hammel <strong>Identificadores:</strong> D. Penneys</div>`)[0];
+            popup_0004526d11c74fd0baf0d939074c9a70.setContent(html_72f8431275a14c58a9dd5c812d2cf0f1);
+        
+
+        marker_2761705f17d3487d98b859ff480ec5fc.bindPopup(popup_0004526d11c74fd0baf0d939074c9a70)
+        ;
+
+        
+    
+    
+            var marker_09ef880ad70e4fd9bd999dbb388451b3 = L.marker(
+                [10.091667, -84.05],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_2612e3a3107b428b92ee35e6f651bbcb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01edc3fa0eb5417a8b805222be9c85b5 = $(`<div id="html_01edc3fa0eb5417a8b805222be9c85b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Cordillera Volcanica Central. Refugio Cerro Dantas, near entrance. Lower slopes of Cerro Chompipe. <strong>Elevación:</strong> 2020.0 m  <strong>Fecha:</strong> 2005-09-13 00:00:00+00:00 <strong>Recolectores:</strong> Darin S. Penneys|Barry E. Hammel <strong>Identificadores:</strong> D. Penneys</div>`)[0];
+            popup_2612e3a3107b428b92ee35e6f651bbcb.setContent(html_01edc3fa0eb5417a8b805222be9c85b5);
+        
+
+        marker_09ef880ad70e4fd9bd999dbb388451b3.bindPopup(popup_2612e3a3107b428b92ee35e6f651bbcb)
+        ;
+
+        
+    
+    
+            var marker_ecee75ce34134129bb9be2399e82fc57 = L.marker(
+                [10.185830000000001, -84.39305],
+                {}
+            ).addTo(marker_cluster_50012198439a4058933498aa549f774f);
+        
+    
+        var popup_65442227a99c4ad58fbb24ff799562eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92cb0afb4cb44ff8813900db4828263f = $(`<div id="html_92cb0afb4cb44ff8813900db4828263f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Region of Zarcero <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1938-03-02 00:00:00+00:00 <strong>Recolectores:</strong> Austin Smith <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_65442227a99c4ad58fbb24ff799562eb.setContent(html_92cb0afb4cb44ff8813900db4828263f);
+        
+
+        marker_ecee75ce34134129bb9be2399e82fc57.bindPopup(popup_65442227a99c4ad58fbb24ff799562eb)
+        ;
+
+        
+    
+    
+            var layer_control_ee995c5706c646b2af8e1484100ca4cf = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_649d048b13b74bceb1a7c1ecb2a90a5d,
+                    "ESRI World Imagery" : tile_layer_bc151ae308224934b74aa7324902726e,
+                },
+                overlays :  {
+                    "macro_element_50012198439a4058933498aa549f774f" : marker_cluster_50012198439a4058933498aa549f774f,
+                },
+            };
+            L.control.layers(
+                layer_control_ee995c5706c646b2af8e1484100ca4cf.base_layers,
+                layer_control_ee995c5706c646b2af8e1484100ca4cf.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6f1a7043f45544d482a5bd4deb3e6455);
+            tile_layer_bc151ae308224934b74aa7324902726e.remove();
+        
+</script>

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_875f8d4d951242519a55de02d02591eb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_875f8d4d951242519a55de02d02591eb" ></div>
+        
+</body>
+<script>    
+    
+            var map_875f8d4d951242519a55de02d02591eb = L.map(
+                "map_875f8d4d951242519a55de02d02591eb",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_875f8d4d951242519a55de02d02591eb);
+
+            
+
+        
+    
+            var tile_layer_ef9ca657b9a54b26938c27f558310da5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+            var tile_layer_d87fa6402fa64d2182026c627ef664a4 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+            var circle_marker_900f88f27f6849dfb5a537c76a509522 = L.circleMarker(
+                [9.677778, -84.079167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_127ac4de52d74888a0dc5b327dd65d12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e75355be452b4cba89ff6f649fff683e = $(`<div id="html_e75355be452b4cba89ff6f649fff683e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Caraigres, Falda SE Fila Aguabuena, entre Quebrada Pilas y Quebrada Ceniza. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1996-12-26 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_127ac4de52d74888a0dc5b327dd65d12.setContent(html_e75355be452b4cba89ff6f649fff683e);
+        
+
+        circle_marker_900f88f27f6849dfb5a537c76a509522.bindPopup(popup_127ac4de52d74888a0dc5b327dd65d12)
+        ;
+
+        
+    
+    
+            var circle_marker_c1d57d08575244ae8713d56f37ac8264 = L.circleMarker(
+                [9.677778, -84.079167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_7f0043dbf82240a4926612f6013634d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_695daabaf2004488adbe2ac8d8bd8034 = $(`<div id="html_695daabaf2004488adbe2ac8d8bd8034" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Caraigres, Falda SE Fila Aguabuena, entre Quebrada Pilas y Quebrada Ceniza. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1996-12-26 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_7f0043dbf82240a4926612f6013634d8.setContent(html_695daabaf2004488adbe2ac8d8bd8034);
+        
+
+        circle_marker_c1d57d08575244ae8713d56f37ac8264.bindPopup(popup_7f0043dbf82240a4926612f6013634d8)
+        ;
+
+        
+    
+    
+            var circle_marker_d7a0d02fc3f84f9fb3020760f1c8b562 = L.circleMarker(
+                [9.677778, -84.079167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_e7745ee1a3244758b885a4860e677785 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45ef46ecf0624b17b2e3015b653abf24 = $(`<div id="html_45ef46ecf0624b17b2e3015b653abf24" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Caraigres, Falda SE Fila Aguabuena, entre Quebrada Pilas y Quebrada Ceniza. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1996-12-26 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e7745ee1a3244758b885a4860e677785.setContent(html_45ef46ecf0624b17b2e3015b653abf24);
+        
+
+        circle_marker_d7a0d02fc3f84f9fb3020760f1c8b562.bindPopup(popup_e7745ee1a3244758b885a4860e677785)
+        ;
+
+        
+    
+    
+            var circle_marker_abf1725ee37b4a01a7b49dbb0886dba0 = L.circleMarker(
+                [9.677778, -84.079167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_e56f23a4b5ec4be39e6fcdeb348d2b23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bedf67c0722b44fbb4e5efe5ff83f55d = $(`<div id="html_bedf67c0722b44fbb4e5efe5ff83f55d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Caraigres, Falda SE Fila Aguabuena, entre Quebrada Pilas y Quebrada Ceniza. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1996-12-26 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e56f23a4b5ec4be39e6fcdeb348d2b23.setContent(html_bedf67c0722b44fbb4e5efe5ff83f55d);
+        
+
+        circle_marker_abf1725ee37b4a01a7b49dbb0886dba0.bindPopup(popup_e56f23a4b5ec4be39e6fcdeb348d2b23)
+        ;
+
+        
+    
+    
+            var circle_marker_49e32a06df0f4e16b8ca0104317f0561 = L.circleMarker(
+                [9.659722, -84.19111099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_682fc7fa3bb54acba3db91f3319fed31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a817dc5157a544f0951bc840086dd764 = $(`<div id="html_a817dc5157a544f0951bc840086dd764" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosques remanentes y potreros, camino a Bajos de Bijagual, por Altos El Aguacate <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1995-02-21 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_682fc7fa3bb54acba3db91f3319fed31.setContent(html_a817dc5157a544f0951bc840086dd764);
+        
+
+        circle_marker_49e32a06df0f4e16b8ca0104317f0561.bindPopup(popup_682fc7fa3bb54acba3db91f3319fed31)
+        ;
+
+        
+    
+    
+            var circle_marker_b9018aefb8124b07898e2749cd147e92 = L.circleMarker(
+                [9.972222, -84.094445],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_205f2b75f6fc4831ba7dbda16de0f061 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32d9d94823c0473897f8d76342c36d41 = $(`<div id="html_32d9d94823c0473897f8d76342c36d41" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santo Domingo, camino al Inbio. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1997-09-24 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez; Armando Soto <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_205f2b75f6fc4831ba7dbda16de0f061.setContent(html_32d9d94823c0473897f8d76342c36d41);
+        
+
+        circle_marker_b9018aefb8124b07898e2749cd147e92.bindPopup(popup_205f2b75f6fc4831ba7dbda16de0f061)
+        ;
+
+        
+    
+    
+            var circle_marker_8c6d17248ef440aaa2fb322689cd16ac = L.circleMarker(
+                [9.651389, -84.181944],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_42d663f64fda43a18dc22a7d9e4ba4c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2bcec4092b64979be244cff81801166 = $(`<div id="html_e2bcec4092b64979be244cff81801166" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque secundario entre Altos El Aguacate y La Palma, camino a Bajos de Bijagual. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1995-02-03 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_42d663f64fda43a18dc22a7d9e4ba4c4.setContent(html_e2bcec4092b64979be244cff81801166);
+        
+
+        circle_marker_8c6d17248ef440aaa2fb322689cd16ac.bindPopup(popup_42d663f64fda43a18dc22a7d9e4ba4c4)
+        ;
+
+        
+    
+    
+            var circle_marker_c753cf083e7d43b190a94e9f2e331155 = L.circleMarker(
+                [9.668056, -84.152778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_f950a83973a94193b0f6d8a2661f7518 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9051be1d73154ab18dcb8ed72c5d4c0a = $(`<div id="html_9051be1d73154ab18dcb8ed72c5d4c0a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 2 km SO de Bajo Venegas, entre Quebrada Chilamate y Quebrada Pilas. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2002-12-14 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_f950a83973a94193b0f6d8a2661f7518.setContent(html_9051be1d73154ab18dcb8ed72c5d4c0a);
+        
+
+        circle_marker_c753cf083e7d43b190a94e9f2e331155.bindPopup(popup_f950a83973a94193b0f6d8a2661f7518)
+        ;
+
+        
+    
+    
+            var circle_marker_6fbf9860a4544a92b485ba956f9c4cf1 = L.circleMarker(
+                [9.668056, -84.152778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_3f735887451c411bace24548a7d5b164 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20b655bc4efd43dea4f627caa99e2c82 = $(`<div id="html_20b655bc4efd43dea4f627caa99e2c82" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 2 km SO de Bajo Venegas, entre Quebrada Chilamate y Quebrada Pilas. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2002-12-14 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_3f735887451c411bace24548a7d5b164.setContent(html_20b655bc4efd43dea4f627caa99e2c82);
+        
+
+        circle_marker_6fbf9860a4544a92b485ba956f9c4cf1.bindPopup(popup_3f735887451c411bace24548a7d5b164)
+        ;
+
+        
+    
+    
+            var circle_marker_a94c826b4ae14ef59849d7f748a4ae7d = L.circleMarker(
+                [9.668056, -84.152778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_2b9b1a2cbd9b433192d2cc76bdd23183 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad7a852255f8448e8955876c060d5478 = $(`<div id="html_ad7a852255f8448e8955876c060d5478" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 2 km SO de Bajo Venegas, entre Quebrada Chilamate y Quebrada Pilas. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2002-12-14 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_2b9b1a2cbd9b433192d2cc76bdd23183.setContent(html_ad7a852255f8448e8955876c060d5478);
+        
+
+        circle_marker_a94c826b4ae14ef59849d7f748a4ae7d.bindPopup(popup_2b9b1a2cbd9b433192d2cc76bdd23183)
+        ;
+
+        
+    
+    
+            var circle_marker_7c5df9194ccd40cc9ce227e5e8757987 = L.circleMarker(
+                [9.668056, -84.152778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_ec16414f9b924fa7aecd5d85dc3f5035 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b96b739dd04e4b7d85186989bd352eeb = $(`<div id="html_b96b739dd04e4b7d85186989bd352eeb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 2 km SO de Bajo Venegas, entre Quebrada Chilamate y Quebrada Pilas. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2002-12-14 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_ec16414f9b924fa7aecd5d85dc3f5035.setContent(html_b96b739dd04e4b7d85186989bd352eeb);
+        
+
+        circle_marker_7c5df9194ccd40cc9ce227e5e8757987.bindPopup(popup_ec16414f9b924fa7aecd5d85dc3f5035)
+        ;
+
+        
+    
+    
+            var circle_marker_1db3f5aea56e45f583660662a4b8c45d = L.circleMarker(
+                [9.668056, -84.152778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_c21b5e12a03946cbb833e42f9a2d09fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_948a1ca3ce3849eba1bfb2b61485250c = $(`<div id="html_948a1ca3ce3849eba1bfb2b61485250c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 2 km SO de Bajo Venegas, entre Quebrada Chilamate y Quebrada Pilas. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2002-12-14 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_c21b5e12a03946cbb833e42f9a2d09fa.setContent(html_948a1ca3ce3849eba1bfb2b61485250c);
+        
+
+        circle_marker_1db3f5aea56e45f583660662a4b8c45d.bindPopup(popup_c21b5e12a03946cbb833e42f9a2d09fa)
+        ;
+
+        
+    
+    
+            var circle_marker_6d50b583b23543db824d292e79740d72 = L.circleMarker(
+                [9.668056, -84.152778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_33b8aa83711a4018ba4d15e118d39beb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fde74cea2cf4925ac331a7394c61227 = $(`<div id="html_0fde74cea2cf4925ac331a7394c61227" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 2 km SO de Bajo Venegas, entre Quebrada Chilamate y Quebrada Pilas. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2002-12-14 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_33b8aa83711a4018ba4d15e118d39beb.setContent(html_0fde74cea2cf4925ac331a7394c61227);
+        
+
+        circle_marker_6d50b583b23543db824d292e79740d72.bindPopup(popup_33b8aa83711a4018ba4d15e118d39beb)
+        ;
+
+        
+    
+    
+            var circle_marker_76ce46f28d184ff0af90a91f3a7d40b6 = L.circleMarker(
+                [9.668056, -84.152778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_96e617ca0ffa47c9921319dd6cb46cb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b55c91b25c449a6bda490bf9c5f85bf = $(`<div id="html_3b55c91b25c449a6bda490bf9c5f85bf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 2 km SO de Bajo Venegas, entre Quebrada Chilamate y Quebrada Pilas. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2002-12-14 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_96e617ca0ffa47c9921319dd6cb46cb0.setContent(html_3b55c91b25c449a6bda490bf9c5f85bf);
+        
+
+        circle_marker_76ce46f28d184ff0af90a91f3a7d40b6.bindPopup(popup_96e617ca0ffa47c9921319dd6cb46cb0)
+        ;
+
+        
+    
+    
+            var circle_marker_c6116cf9eb5544f5b87c0a0cb7b09da9 = L.circleMarker(
+                [9.668056, -84.152778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_bbf9a1f6126341b7a18b4cad1466e973 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c81f8a626a9649c6b80fb97a189464b5 = $(`<div id="html_c81f8a626a9649c6b80fb97a189464b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 2 km SO de Bajo Venegas, entre Quebrada Chilamate y Quebrada Pilas. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2002-12-14 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_bbf9a1f6126341b7a18b4cad1466e973.setContent(html_c81f8a626a9649c6b80fb97a189464b5);
+        
+
+        circle_marker_c6116cf9eb5544f5b87c0a0cb7b09da9.bindPopup(popup_bbf9a1f6126341b7a18b4cad1466e973)
+        ;
+
+        
+    
+    
+            var circle_marker_1f8dbe8b3292487abef6b7101b2c00ee = L.circleMarker(
+                [9.668056, -84.152778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_532808ea663f4a468e40060eba9053ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64c8a0108c79482aacf9c3956ebd23e8 = $(`<div id="html_64c8a0108c79482aacf9c3956ebd23e8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 2 km SO de Bajo Venegas, entre Quebrada Chilamate y Quebrada Pilas. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2002-12-14 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_532808ea663f4a468e40060eba9053ac.setContent(html_64c8a0108c79482aacf9c3956ebd23e8);
+        
+
+        circle_marker_1f8dbe8b3292487abef6b7101b2c00ee.bindPopup(popup_532808ea663f4a468e40060eba9053ac)
+        ;
+
+        
+    
+    
+            var circle_marker_e84c5fe075f8458594ce6f1ac06e7a4b = L.circleMarker(
+                [8.53, -81.12],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_69931894a6f74556bbcb1f25b275e11d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3eff34fb6336450dbfcf86043fbccf86 = $(`<div id="html_3eff34fb6336450dbfcf86043fbccf86" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Cuchillo, near Cerro Tute, up from Santa Fe <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1982-09-08 00:00:00+00:00 <strong>Recolectores:</strong> C. W. Hamilton <strong>Identificadores:</strong> R. C. Barneby</div>`)[0];
+            popup_69931894a6f74556bbcb1f25b275e11d.setContent(html_3eff34fb6336450dbfcf86043fbccf86);
+        
+
+        circle_marker_e84c5fe075f8458594ce6f1ac06e7a4b.bindPopup(popup_69931894a6f74556bbcb1f25b275e11d)
+        ;
+
+        
+    
+    
+            var circle_marker_88e6b9b92947448c925a3f7cb6841698 = L.circleMarker(
+                [9.65, -84.18],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_76a9973a64af43acbf2981282ddcd82c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c59af5ecb5cb4b2a8a69ca2f2b49f321 = $(`<div id="html_c59af5ecb5cb4b2a8a69ca2f2b49f321" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Bustamante, bosque secundario entre Altos El Aguacate y La Palma, camino a Bajos Bijagual. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1995-02-03 00:00:00+00:00 <strong>Recolectores:</strong> Morales, Juan Francisco <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_76a9973a64af43acbf2981282ddcd82c.setContent(html_c59af5ecb5cb4b2a8a69ca2f2b49f321);
+        
+
+        circle_marker_88e6b9b92947448c925a3f7cb6841698.bindPopup(popup_76a9973a64af43acbf2981282ddcd82c)
+        ;
+
+        
+    
+    
+            var circle_marker_cc05d7b5d6324966a76667280a18eb99 = L.circleMarker(
+                [9.71, -84.1],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_61b26076c20747d2af97f465e4b214de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9e5ff919d3e43479f467ad5156a6b1e = $(`<div id="html_b9e5ff919d3e43479f467ad5156a6b1e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Caraigres Cerros Caraigres, Falda SE Fila Aguabuena, entre Quebrada Pilas y quebrada Ceniza. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Morales, Juan Francisco <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_61b26076c20747d2af97f465e4b214de.setContent(html_b9e5ff919d3e43479f467ad5156a6b1e);
+        
+
+        circle_marker_cc05d7b5d6324966a76667280a18eb99.bindPopup(popup_61b26076c20747d2af97f465e4b214de)
+        ;
+
+        
+    
+    
+            var circle_marker_8a29eaf52b98454788dee4dc5090efa2 = L.circleMarker(
+                [8.4833, -80.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_71a6d7dbd9364253b364121bac8c03b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d739c2c870284f419549a3fc824c71f6 = $(`<div id="html_d739c2c870284f419549a3fc824c71f6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1942-01-13 00:00:00+00:00 <strong>Recolectores:</strong> P. H. Allen <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_71a6d7dbd9364253b364121bac8c03b2.setContent(html_d739c2c870284f419549a3fc824c71f6);
+        
+
+        circle_marker_8a29eaf52b98454788dee4dc5090efa2.bindPopup(popup_71a6d7dbd9364253b364121bac8c03b2)
+        ;
+
+        
+    
+    
+            var circle_marker_d5601b0cdb8d474c8d6fa5d4e5ae1866 = L.circleMarker(
+                [8.533333, -81.116667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_81e6750ae5f844acad6b0505cb51983e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73e88074a58049d08b711c979f1ec0ff = $(`<div id="html_73e88074a58049d08b711c979f1ec0ff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Cuchillo, near Cerro Tute, up from Santa Fe. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1982-09-08 00:00:00+00:00 <strong>Recolectores:</strong> Clem W. Hamilton|William G. D'Arcy|David W. Roubik <strong>Identificadores:</strong> R. Barneby</div>`)[0];
+            popup_81e6750ae5f844acad6b0505cb51983e.setContent(html_73e88074a58049d08b711c979f1ec0ff);
+        
+
+        circle_marker_d5601b0cdb8d474c8d6fa5d4e5ae1866.bindPopup(popup_81e6750ae5f844acad6b0505cb51983e)
+        ;
+
+        
+    
+    
+            var circle_marker_405c7f34c1b3414eab8bf93e11817dac = L.circleMarker(
+                [9.65, -84.18],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_994ede6548d84e6d91924fb38f9350ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c2faf76bc394964ac5d9549293c6d53 = $(`<div id="html_2c2faf76bc394964ac5d9549293c6d53" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Bustamante. Bosque secundaRío entre Altos El Aguacate y La Palma, camino a Bajos de Bijagual. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1995-02-03 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales|R. J. Abarca <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_994ede6548d84e6d91924fb38f9350ea.setContent(html_2c2faf76bc394964ac5d9549293c6d53);
+        
+
+        circle_marker_405c7f34c1b3414eab8bf93e11817dac.bindPopup(popup_994ede6548d84e6d91924fb38f9350ea)
+        ;
+
+        
+    
+    
+            var circle_marker_47f0a1fd4e864d9dab9cd045c44fc091 = L.circleMarker(
+                [9.65, -84.19],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_cd6dafda9ea549839e9ede08165b3146 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0067a67ca0d745c983fcfc7921482250 = $(`<div id="html_0067a67ca0d745c983fcfc7921482250" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Aguabuena. Bosques remanentes y potreros, camino a Bajos de Bijagual, por Altos El Aguacate <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1995-02-21 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales|Víctor H. Ramírez <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_cd6dafda9ea549839e9ede08165b3146.setContent(html_0067a67ca0d745c983fcfc7921482250);
+        
+
+        circle_marker_47f0a1fd4e864d9dab9cd045c44fc091.bindPopup(popup_cd6dafda9ea549839e9ede08165b3146)
+        ;
+
+        
+    
+    
+            var circle_marker_f2c399edbda14d62a69a91d556a26e5c = L.circleMarker(
+                [9.668056, -84.15278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_d2e56c84fc7d42a7aab194cd0dfeb378 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2725e8cffccc4231b3e2e21b2584ea81 = $(`<div id="html_2725e8cffccc4231b3e2e21b2584ea81" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida.  Cuenca del Pirrís-Damas.  Aserrí, camino a Bajos de Bijagual, La Palma. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2002-12-14 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> D. Santamaría</div>`)[0];
+            popup_d2e56c84fc7d42a7aab194cd0dfeb378.setContent(html_2725e8cffccc4231b3e2e21b2584ea81);
+        
+
+        circle_marker_f2c399edbda14d62a69a91d556a26e5c.bindPopup(popup_d2e56c84fc7d42a7aab194cd0dfeb378)
+        ;
+
+        
+    
+    
+            var circle_marker_a9d6627299774a99801a99f2c0bdc93a = L.circleMarker(
+                [8.623611, -80.12916700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_ab19a50798d14dc4b1da831d67579295 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3409b364f224749aa404d4363227bb9 = $(`<div id="html_c3409b364f224749aa404d4363227bb9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of El Valle. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1938-12-08 00:00:00+00:00 <strong>Recolectores:</strong> Paul H. Allen <strong>Identificadores:</strong> R. Barneby</div>`)[0];
+            popup_ab19a50798d14dc4b1da831d67579295.setContent(html_c3409b364f224749aa404d4363227bb9);
+        
+
+        circle_marker_a9d6627299774a99801a99f2c0bdc93a.bindPopup(popup_ab19a50798d14dc4b1da831d67579295)
+        ;
+
+        
+    
+    
+            var circle_marker_1cbfd93622f345f397c191f84b3b8f88 = L.circleMarker(
+                [8.6925, -79.90694],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_5958dade56c54037a01a54596e5243ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84e7f442d10a40919b3337ec27434084 = $(`<div id="html_84e7f442d10a40919b3337ec27434084" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> On road to Cerro Campana (the mountain), 6 km from Inter-American Hwy <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1974-12-07 00:00:00+00:00 <strong>Recolectores:</strong> Scott A. Mori|Jacquelyn A. Kallunki <strong>Identificadores:</strong> R. Barneby</div>`)[0];
+            popup_5958dade56c54037a01a54596e5243ae.setContent(html_84e7f442d10a40919b3337ec27434084);
+        
+
+        circle_marker_1cbfd93622f345f397c191f84b3b8f88.bindPopup(popup_5958dade56c54037a01a54596e5243ae)
+        ;
+
+        
+    
+    
+            var circle_marker_fe245baf584040d6b7c7c1950ce6a65f = L.circleMarker(
+                [8.716667, -82.266667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_c77f64be2c36452e92c798711a7f4f7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_437c550db6594d479181ddc35591f0b7 = $(`<div id="html_437c550db6594d479181ddc35591f0b7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chiriquí Trail, between Pinola and Quebrada Seco on the Chiriquicito-Caldera Trail. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1968-04-21 00:00:00+00:00 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr.|James A. Duke <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c77f64be2c36452e92c798711a7f4f7d.setContent(html_437c550db6594d479181ddc35591f0b7);
+        
+
+        circle_marker_fe245baf584040d6b7c7c1950ce6a65f.bindPopup(popup_c77f64be2c36452e92c798711a7f4f7d)
+        ;
+
+        
+    
+    
+            var circle_marker_9367f349587b47a8a20c15882bc8e78d = L.circleMarker(
+                [8.8, -82.43333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_dd7e97c91ba34d58bb4fac6fab877e4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5807483b673f4367a035f2d25d653759 = $(`<div id="html_5807483b673f4367a035f2d25d653759" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boquete <strong>Elevación:</strong> 1219.2 m  <strong>Fecha:</strong> 1938-06-30 00:00:00+00:00 <strong>Recolectores:</strong> Mary E. Davidson <strong>Identificadores:</strong> R. Barneby</div>`)[0];
+            popup_dd7e97c91ba34d58bb4fac6fab877e4a.setContent(html_5807483b673f4367a035f2d25d653759);
+        
+
+        circle_marker_9367f349587b47a8a20c15882bc8e78d.bindPopup(popup_dd7e97c91ba34d58bb4fac6fab877e4a)
+        ;
+
+        
+    
+    
+            var circle_marker_68ba95570ebf432a853e5a24367002b8 = L.circleMarker(
+                [8.575, -80.11666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_0b03c9d888dd4f18b41e2d0e026d0f23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_def288c9966b4405a056b0d59c4156af = $(`<div id="html_def288c9966b4405a056b0d59c4156af" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> South rim of El Valle de Antón <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1941-01-13 00:00:00+00:00 <strong>Recolectores:</strong> Paul H. Allen <strong>Identificadores:</strong> R. Barneby</div>`)[0];
+            popup_0b03c9d888dd4f18b41e2d0e026d0f23.setContent(html_def288c9966b4405a056b0d59c4156af);
+        
+
+        circle_marker_68ba95570ebf432a853e5a24367002b8.bindPopup(popup_0b03c9d888dd4f18b41e2d0e026d0f23)
+        ;
+
+        
+    
+    
+            var circle_marker_55ecb4976469497891b9696964d334cf = L.circleMarker(
+                [8.70111, -79.90111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_66b6e34004b447bab672f8a08de4fa95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3d5eb4735cc4844ac4936614596583f = $(`<div id="html_f3d5eb4735cc4844ac4936614596583f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road to Cerro Campana <strong>Elevación:</strong> 457.2 m  <strong>Fecha:</strong> 1971-11-20 00:00:00+00:00 <strong>Recolectores:</strong> Edwin L. Tyson <strong>Identificadores:</strong> R. Barneby</div>`)[0];
+            popup_66b6e34004b447bab672f8a08de4fa95.setContent(html_f3d5eb4735cc4844ac4936614596583f);
+        
+
+        circle_marker_55ecb4976469497891b9696964d334cf.bindPopup(popup_66b6e34004b447bab672f8a08de4fa95)
+        ;
+
+        
+    
+    
+            var circle_marker_41f984865c1c405ba9466c474208eb02 = L.circleMarker(
+                [8.653333, -82.21],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_8b7c49b22b094fb297be8db3404679d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c06e3386ee54e3a9f9d32ef9f5dd131 = $(`<div id="html_9c06e3386ee54e3a9f9d32ef9f5dd131" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Between Los Planes de Hornito and Fortuna Lake. Near road. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1985-03-04 00:00:00+00:00 <strong>Recolectores:</strong> Rachel J. Hampshire|Caroline Whitefoord <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_8b7c49b22b094fb297be8db3404679d9.setContent(html_9c06e3386ee54e3a9f9d32ef9f5dd131);
+        
+
+        circle_marker_41f984865c1c405ba9466c474208eb02.bindPopup(popup_8b7c49b22b094fb297be8db3404679d9)
+        ;
+
+        
+    
+    
+            var circle_marker_f400cc70478b41c6bb234e2a2dff8439 = L.circleMarker(
+                [8.66666, -80.78333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_8d8af370433d4814a1a723b22ed8dd2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29231c23740c496ea894003c4b46ee59 = $(`<div id="html_29231c23740c496ea894003c4b46ee59" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En Valle de Antón, along Río Indio trail. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1935-01-30 00:00:00+00:00 <strong>Recolectores:</strong> Abel A. Hunter|Paul H. Allen <strong>Identificadores:</strong> R. Barneby</div>`)[0];
+            popup_8d8af370433d4814a1a723b22ed8dd2e.setContent(html_29231c23740c496ea894003c4b46ee59);
+        
+
+        circle_marker_f400cc70478b41c6bb234e2a2dff8439.bindPopup(popup_8d8af370433d4814a1a723b22ed8dd2e)
+        ;
+
+        
+    
+    
+            var circle_marker_053f7d7f57b04ab5ac445a4ba1fcee49 = L.circleMarker(
+                [8.68333, -79.9],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_f94599fe78cd49849da6c2c51ccdeb48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c358f9cc5bb4bd4b09a3c84dc89b47e = $(`<div id="html_8c358f9cc5bb4bd4b09a3c84dc89b47e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Campana. Humid margin of forest on south side, roadside <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1966-11-29 00:00:00+00:00 <strong>Recolectores:</strong> Sidney T. McDaniel <strong>Identificadores:</strong> R. Barneby</div>`)[0];
+            popup_f94599fe78cd49849da6c2c51ccdeb48.setContent(html_8c358f9cc5bb4bd4b09a3c84dc89b47e);
+        
+
+        circle_marker_053f7d7f57b04ab5ac445a4ba1fcee49.bindPopup(popup_f94599fe78cd49849da6c2c51ccdeb48)
+        ;
+
+        
+    
+    
+            var circle_marker_3696904761934b7f80c31ca2fa419efe = L.circleMarker(
+                [8.716667, -82.266667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_120decbb0d314d31808772d59d857ae4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcf6f15acec14723934bbbd15768a98c = $(`<div id="html_dcf6f15acec14723934bbbd15768a98c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chiriquí Trail, between Pinola and Quebrada Seco on the Chiriquicito-Caldera Trail. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1968-04-21 00:00:00+00:00 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr.|James A. Duke <strong>Identificadores:</strong> R. Barneby</div>`)[0];
+            popup_120decbb0d314d31808772d59d857ae4.setContent(html_dcf6f15acec14723934bbbd15768a98c);
+        
+
+        circle_marker_3696904761934b7f80c31ca2fa419efe.bindPopup(popup_120decbb0d314d31808772d59d857ae4)
+        ;
+
+        
+    
+    
+            var circle_marker_a05f06d7384d4b189bdef1d452e0ad89 = L.circleMarker(
+                [8.716667, -82.266667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_5031beb2d3584cdcb051489f9a27588d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a25cc1a7e1474970baa8fb795e56f96e = $(`<div id="html_a25cc1a7e1474970baa8fb795e56f96e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chiriquí Trail, between Pinola and Quebrada Seco on the Chiriquicito-Caldera Trail. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1968-04-21 00:00:00+00:00 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr.|James A. Duke <strong>Identificadores:</strong> R. Barneby</div>`)[0];
+            popup_5031beb2d3584cdcb051489f9a27588d.setContent(html_a25cc1a7e1474970baa8fb795e56f96e);
+        
+
+        circle_marker_a05f06d7384d4b189bdef1d452e0ad89.bindPopup(popup_5031beb2d3584cdcb051489f9a27588d)
+        ;
+
+        
+    
+    
+            var circle_marker_4f2184c8fd244e6dac2f92b230176267 = L.circleMarker(
+                [9.67, -84.07],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_a6a87371bd9f4514b68704df392a413e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4224f66b4e554f4f923b31ca7f242cec = $(`<div id="html_4224f66b4e554f4f923b31ca7f242cec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Caraigres, Falda SE Fila Aguabuena, entre Quebrada Pilas y Quebrada Ceniza. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1996-12-26 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> N. Zamora, Sep. 2008 (INB)</div>`)[0];
+            popup_a6a87371bd9f4514b68704df392a413e.setContent(html_4224f66b4e554f4f923b31ca7f242cec);
+        
+
+        circle_marker_4f2184c8fd244e6dac2f92b230176267.bindPopup(popup_a6a87371bd9f4514b68704df392a413e)
+        ;
+
+        
+    
+    
+            var circle_marker_b64d8471313e4fd19a23e924a920ef5f = L.circleMarker(
+                [8.591667, -80.141667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+        
+    
+        var popup_6d705c5c6f954b04b71df311276ccb97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ff2e4a49dbf4604895e9422663d8969 = $(`<div id="html_4ff2e4a49dbf4604895e9422663d8969" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of El Valle, lower Río Antón. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1936-12-30 00:00:00+00:00 <strong>Recolectores:</strong> Paul H. Allen <strong>Identificadores:</strong> R. Barneby</div>`)[0];
+            popup_6d705c5c6f954b04b71df311276ccb97.setContent(html_4ff2e4a49dbf4604895e9422663d8969);
+        
+
+        circle_marker_b64d8471313e4fd19a23e924a920ef5f.bindPopup(popup_6d705c5c6f954b04b71df311276ccb97)
+        ;
+
+        
+    
+    
+            var layer_control_8c1eb76ab50246ec98bcc6f030607afb = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ef9ca657b9a54b26938c27f558310da5,
+                    "ESRI World Imagery" : tile_layer_d87fa6402fa64d2182026c627ef664a4,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_8c1eb76ab50246ec98bcc6f030607afb.base_layers,
+                layer_control_8c1eb76ab50246ec98bcc6f030607afb.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_875f8d4d951242519a55de02d02591eb);
+            tile_layer_d87fa6402fa64d2182026c627ef664a4.remove();
+        
+</script>

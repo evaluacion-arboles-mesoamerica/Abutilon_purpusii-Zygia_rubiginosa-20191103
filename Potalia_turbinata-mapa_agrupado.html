@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c7c5e1053fc745c6bb680f7ccfcc2419 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c7c5e1053fc745c6bb680f7ccfcc2419" ></div>
+        
+</body>
+<script>    
+    
+            var map_c7c5e1053fc745c6bb680f7ccfcc2419 = L.map(
+                "map_c7c5e1053fc745c6bb680f7ccfcc2419",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_c7c5e1053fc745c6bb680f7ccfcc2419);
+
+            
+
+        
+    
+            var tile_layer_875a994c33a0461f847ad7a313157f64 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c7c5e1053fc745c6bb680f7ccfcc2419);
+        
+    
+            var tile_layer_0cf5256e52a943918eaf447357b9fb88 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c7c5e1053fc745c6bb680f7ccfcc2419);
+        
+    
+            var marker_cluster_aa2890c5f2b8424389aed509046d4863 = L.markerClusterGroup(
+                {}
+            );
+            map_c7c5e1053fc745c6bb680f7ccfcc2419.addLayer(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+            var marker_4a40d46b6d404ca4b77e79e79968d193 = L.marker(
+                [10.748333, -84.168611],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_67324fa4e1d7454b9583847513a70e3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38c7934a74e7412fa492abafd9b0457a = $(`<div id="html_38c7934a74e7412fa492abafd9b0457a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 13 km NE de Boca Tapada. Finca Aserradero, San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_67324fa4e1d7454b9583847513a70e3f.setContent(html_38c7934a74e7412fa492abafd9b0457a);
+        
+
+        marker_4a40d46b6d404ca4b77e79e79968d193.bindPopup(popup_67324fa4e1d7454b9583847513a70e3f)
+        ;
+
+        
+    
+    
+            var marker_bb13ddf69c7e48c1bfb46ebaa09c1f52 = L.marker(
+                [10.409722, -83.9],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_492896616bcb4fbe949b9e5c131c2f93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0113a18047664c3abf8b460942fc29f7 = $(`<div id="html_0113a18047664c3abf8b460942fc29f7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Virgen. <strong>Elevación:</strong> 220.0 m  <strong>Fecha:</strong> 1996-10-18 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_492896616bcb4fbe949b9e5c131c2f93.setContent(html_0113a18047664c3abf8b460942fc29f7);
+        
+
+        marker_bb13ddf69c7e48c1bfb46ebaa09c1f52.bindPopup(popup_492896616bcb4fbe949b9e5c131c2f93)
+        ;
+
+        
+    
+    
+            var marker_0d4c298bf20b48aaada631b707c93d9f = L.marker(
+                [10.766667, -84.18333299999999],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_9e750d63f3044995b5b5b6ec82d4cba2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dbf5c4568ec4ec394bdd1721bfd057b = $(`<div id="html_6dbf5c4568ec4ec394bdd1721bfd057b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital Finca Hiloba. 18 Km N. Boca Tapada <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1995-04-01 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_9e750d63f3044995b5b5b6ec82d4cba2.setContent(html_6dbf5c4568ec4ec394bdd1721bfd057b);
+        
+
+        marker_0d4c298bf20b48aaada631b707c93d9f.bindPopup(popup_9e750d63f3044995b5b5b6ec82d4cba2)
+        ;
+
+        
+    
+    
+            var marker_d83d2f0636f34aea9951ba15c9568a56 = L.marker(
+                [10.45, -84.06666700000001],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_c704527510c04b0f91fe83efa5bae111 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_063f46646d98461ea38e5220428cd506 = $(`<div id="html_063f46646d98461ea38e5220428cd506" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chilamate, Finca Bejuco. Remanente de bosque primario en Cerros Sardinales. <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 1994-11-23 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_c704527510c04b0f91fe83efa5bae111.setContent(html_063f46646d98461ea38e5220428cd506);
+        
+
+        marker_d83d2f0636f34aea9951ba15c9568a56.bindPopup(popup_c704527510c04b0f91fe83efa5bae111)
+        ;
+
+        
+    
+    
+            var marker_0807407ef1a846e2871e273717fdc128 = L.marker(
+                [10.466667, -84.0],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_041d44f4f2fe4712af46fe938a5c89ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df759b8f5d6b46638b6de483188a1a19 = $(`<div id="html_df759b8f5d6b46638b6de483188a1a19" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puerto Viejo <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-08-31 00:00:00+00:00 <strong>Recolectores:</strong> Orlando Vargas <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_041d44f4f2fe4712af46fe938a5c89ac.setContent(html_df759b8f5d6b46638b6de483188a1a19);
+        
+
+        marker_0807407ef1a846e2871e273717fdc128.bindPopup(popup_041d44f4f2fe4712af46fe938a5c89ac)
+        ;
+
+        
+    
+    
+            var marker_75ed9fa30e5843589f16b9ebcb11d275 = L.marker(
+                [10.055556, -83.525],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_d0b4e29dc4424533a0ae14091ff28402 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9437f3f4b0ed4a599016846b5b6d43da = $(`<div id="html_9437f3f4b0ed4a599016846b5b6d43da" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guayacan. Alto de Guayacan. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1995-11-25 00:00:00+00:00 <strong>Recolectores:</strong> Armando Estrada <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_d0b4e29dc4424533a0ae14091ff28402.setContent(html_9437f3f4b0ed4a599016846b5b6d43da);
+        
+
+        marker_75ed9fa30e5843589f16b9ebcb11d275.bindPopup(popup_d0b4e29dc4424533a0ae14091ff28402)
+        ;
+
+        
+    
+    
+            var marker_646aaedcb2e1471b968ac9e6a087f8a1 = L.marker(
+                [10.722222, -84.197222],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_84d62691ce6648f7ba127dd41b5b7bbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cebb6ab5154421aa6a7e5143964ee26 = $(`<div id="html_8cebb6ab5154421aa6a7e5143964ee26" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boca Tapada. Finca La Monalisa. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1995-05-23 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_84d62691ce6648f7ba127dd41b5b7bbb.setContent(html_8cebb6ab5154421aa6a7e5143964ee26);
+        
+
+        marker_646aaedcb2e1471b968ac9e6a087f8a1.bindPopup(popup_84d62691ce6648f7ba127dd41b5b7bbb)
+        ;
+
+        
+    
+    
+            var marker_23650294abf04523b48f388a64c8d147 = L.marker(
+                [10.705556, -84.188889],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_c20109695ab74dfabbea4861c565718f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62cb0feb83234b4c93581eb94787b915 = $(`<div id="html_62cb0feb83234b4c93581eb94787b915" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boca Tapada, Finca Hogar de Ancianos. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1999-02-25 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_c20109695ab74dfabbea4861c565718f.setContent(html_62cb0feb83234b4c93581eb94787b915);
+        
+
+        marker_23650294abf04523b48f388a64c8d147.bindPopup(popup_c20109695ab74dfabbea4861c565718f)
+        ;
+
+        
+    
+    
+            var marker_1b4ba1a1b2af4cb7bba21e44c5da3506 = L.marker(
+                [10.705556, -84.188889],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_b37db66d445d4daeb877e947b851f406 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a905aeac913349278e38749e07fe24e7 = $(`<div id="html_a905aeac913349278e38749e07fe24e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boca Tapada, Finca Hogar de Ancianos. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1999-02-25 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_b37db66d445d4daeb877e947b851f406.setContent(html_a905aeac913349278e38749e07fe24e7);
+        
+
+        marker_1b4ba1a1b2af4cb7bba21e44c5da3506.bindPopup(popup_b37db66d445d4daeb877e947b851f406)
+        ;
+
+        
+    
+    
+            var marker_896bbde664f2440a95694197bb3de71c = L.marker(
+                [10.516667, -83.5],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_478f12a74a4c4df7bba33bde85a8f764 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22efb3a2a91d48368d0cd626c3a5dc99 = $(`<div id="html_22efb3a2a91d48368d0cd626c3a5dc99" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 2 Km al Sur de Tortuguero. Bosque inundable a la orilla de la laguna. <strong>Elevación:</strong> 3.0 m  <strong>Fecha:</strong> 1988-11-04 00:00:00+00:00 <strong>Recolectores:</strong> Rafael Robles <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_478f12a74a4c4df7bba33bde85a8f764.setContent(html_22efb3a2a91d48368d0cd626c3a5dc99);
+        
+
+        marker_896bbde664f2440a95694197bb3de71c.bindPopup(popup_478f12a74a4c4df7bba33bde85a8f764)
+        ;
+
+        
+    
+    
+            var marker_0ae62ac0d9e94913b8f1c51393987afc = L.marker(
+                [10.033333, -83.43333299999999],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_0045220d2de5401f833b381b16dae428 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2c402844e7842be9b072bc35e6d82d9 = $(`<div id="html_f2c402844e7842be9b072bc35e6d82d9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ridge separating Quebrada Canabral from Rio Barbilla, and slope leading down to the latter. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-09-04 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_0045220d2de5401f833b381b16dae428.setContent(html_f2c402844e7842be9b072bc35e6d82d9);
+        
+
+        marker_0ae62ac0d9e94913b8f1c51393987afc.bindPopup(popup_0045220d2de5401f833b381b16dae428)
+        ;
+
+        
+    
+    
+            var marker_615c368feca648dca7bb9c2abef8574e = L.marker(
+                [10.011111, -83.383333],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_3710c0d085d8415cae696d5b1d9f1589 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7bf55ecc54c4b7292ce9217c4f49a42 = $(`<div id="html_f7bf55ecc54c4b7292ce9217c4f49a42" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colonia Puriscaleña. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2000-08-02 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Edgar Mora ; Geovanny Sancho ; Gerardo Soto <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_3710c0d085d8415cae696d5b1d9f1589.setContent(html_f7bf55ecc54c4b7292ce9217c4f49a42);
+        
+
+        marker_615c368feca648dca7bb9c2abef8574e.bindPopup(popup_3710c0d085d8415cae696d5b1d9f1589)
+        ;
+
+        
+    
+    
+            var marker_a9046cb8dbf24c7fa9115640d9c90bad = L.marker(
+                [10.011111, -83.383333],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_db140f3c229d4db6aa91c741a502d0cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd985b5240cc4b64a2bdd464297329cf = $(`<div id="html_bd985b5240cc4b64a2bdd464297329cf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colonia Puriscaleña. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2000-08-02 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Edgar Mora ; Geovanny Sancho ; Gerardo Soto <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_db140f3c229d4db6aa91c741a502d0cf.setContent(html_bd985b5240cc4b64a2bdd464297329cf);
+        
+
+        marker_a9046cb8dbf24c7fa9115640d9c90bad.bindPopup(popup_db140f3c229d4db6aa91c741a502d0cf)
+        ;
+
+        
+    
+    
+            var marker_b76c1094ed534416b8caf616a3d3f6f5 = L.marker(
+                [10.665885000000001, -84.204712],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_8ab0fe9f562f4affac13c00c65d1dd7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b621dda223f7417cb6c95b8f6ade8759 = $(`<div id="html_b621dda223f7417cb6c95b8f6ade8759" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Carlos, Pital, Boca Tapada, Finca de Sergio Murillo. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2004-05-25 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_8ab0fe9f562f4affac13c00c65d1dd7f.setContent(html_b621dda223f7417cb6c95b8f6ade8759);
+        
+
+        marker_b76c1094ed534416b8caf616a3d3f6f5.bindPopup(popup_8ab0fe9f562f4affac13c00c65d1dd7f)
+        ;
+
+        
+    
+    
+            var marker_37c9c3029cd040a7b86479d20afd8bce = L.marker(
+                [10.665885000000001, -84.204712],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_c6e1f6b22ee043fcb6d27fad6e93846d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fc91a4b16af4451b8c7a45a38d2d12e = $(`<div id="html_8fc91a4b16af4451b8c7a45a38d2d12e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Carlos, Pital, Boca Tapada, Finca de Sergio Murillo. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2004-05-25 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Braulio Hernández <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_c6e1f6b22ee043fcb6d27fad6e93846d.setContent(html_8fc91a4b16af4451b8c7a45a38d2d12e);
+        
+
+        marker_37c9c3029cd040a7b86479d20afd8bce.bindPopup(popup_c6e1f6b22ee043fcb6d27fad6e93846d)
+        ;
+
+        
+    
+    
+            var marker_f5807b89ce4c46f3af6dd026f8835360 = L.marker(
+                [10.683869, -84.185365],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_03a680f5637045f5a1340344ce2d9342 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f7ee92c148f43298166767b5026ae6d = $(`<div id="html_8f7ee92c148f43298166767b5026ae6d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Carlos.  Boca Tapada.  Parcela Hiloba # 7. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-07-05 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Santamaría; Alexánder Francisco Rodríguez González ; Daniel Solano ; Armando Soto ; Braulio Hernández <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_03a680f5637045f5a1340344ce2d9342.setContent(html_8f7ee92c148f43298166767b5026ae6d);
+        
+
+        marker_f5807b89ce4c46f3af6dd026f8835360.bindPopup(popup_03a680f5637045f5a1340344ce2d9342)
+        ;
+
+        
+    
+    
+            var marker_3a630687067c46b2b931906a682ff9a4 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_99bd8fc79ab944e6b217476c28f57964 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a185edfe245a409a93afbdab60148b5f = $(`<div id="html_a185edfe245a409a93afbdab60148b5f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1983-04-21 00:00:00+00:00 <strong>Recolectores:</strong> Isidro A. Chacón G. <strong>Identificadores:</strong> C.M. taylor</div>`)[0];
+            popup_99bd8fc79ab944e6b217476c28f57964.setContent(html_a185edfe245a409a93afbdab60148b5f);
+        
+
+        marker_3a630687067c46b2b931906a682ff9a4.bindPopup(popup_99bd8fc79ab944e6b217476c28f57964)
+        ;
+
+        
+    
+    
+            var marker_7c69ec80e82c4cb489d6b781fba01380 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_0685c2aa04204230abb4c7275b4caa0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e312fb5305724fe5b3155038cfbb45bb = $(`<div id="html_e312fb5305724fe5b3155038cfbb45bb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. Sendero: SR 3030m. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2003-11-19 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> N. Zamora, 11/19/</div>`)[0];
+            popup_0685c2aa04204230abb4c7275b4caa0c.setContent(html_e312fb5305724fe5b3155038cfbb45bb);
+        
+
+        marker_7c69ec80e82c4cb489d6b781fba01380.bindPopup(popup_0685c2aa04204230abb4c7275b4caa0c)
+        ;
+
+        
+    
+    
+            var marker_7cde3756438146bf93cd85d0b15f3ef5 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_886fac666cdc4336887889e3b69532c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38d5b102ef544b85b2d8b6c9091d97a4 = $(`<div id="html_38d5b102ef544b85b2d8b6c9091d97a4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. Cantarrana, alrededor de la estación. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2004-04-15 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> R. Aguilar, 4/15/</div>`)[0];
+            popup_886fac666cdc4336887889e3b69532c9.setContent(html_38d5b102ef544b85b2d8b6c9091d97a4);
+        
+
+        marker_7cde3756438146bf93cd85d0b15f3ef5.bindPopup(popup_886fac666cdc4336887889e3b69532c9)
+        ;
+
+        
+    
+    
+            var marker_ba7378b9e36d49a5ab815379ef80d01d = L.marker(
+                [10.675, -83.658333],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_2372090c45014b558c76d66886b49957 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ace5c65273ee4294a1b3ef894950aff8 = $(`<div id="html_ace5c65273ee4294a1b3ef894950aff8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Southwestern-most ridge of Cerro Coronel, NW-facing slope, just S of the Río Colorado. <strong>Elevación:</strong> 45.0 m  <strong>Fecha:</strong> 1986-09-17 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> R. Liesner (MO)</div>`)[0];
+            popup_2372090c45014b558c76d66886b49957.setContent(html_ace5c65273ee4294a1b3ef894950aff8);
+        
+
+        marker_ba7378b9e36d49a5ab815379ef80d01d.bindPopup(popup_2372090c45014b558c76d66886b49957)
+        ;
+
+        
+    
+    
+            var marker_d6151e1b15f34b21bdd0333051e38c89 = L.marker(
+                [10.666667, -83.666667],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_afcfc28eaf0c48b593c84b897a36f3ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27ba580e4ff54f44915d4048ecd8164f = $(`<div id="html_27ba580e4ff54f44915d4048ecd8164f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Río Zapote, along and above new road within 1 km of Río Colorado.  Collected with O.M. Montiel. <strong>Elevación:</strong> 25.0 m  <strong>Fecha:</strong> 1986-09-13 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> L. Struwe & V.A. Albert, 1998 (NY)</div>`)[0];
+            popup_afcfc28eaf0c48b593c84b897a36f3ac.setContent(html_27ba580e4ff54f44915d4048ecd8164f);
+        
+
+        marker_d6151e1b15f34b21bdd0333051e38c89.bindPopup(popup_afcfc28eaf0c48b593c84b897a36f3ac)
+        ;
+
+        
+    
+    
+            var marker_a7173117315a4adba03945a8a5c81270 = L.marker(
+                [10.85, -83.616667],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_030f72253b154c9c9a19c5e760502434 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa5dbf5a03c24304bdc49ea92d6a6658 = $(`<div id="html_aa5dbf5a03c24304bdc49ea92d6a6658" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> along shore of Laguna de Enmedio, NNE of Barra del Colorado. 10º47-51'N 83º36-37'W 0-2 m <strong>Elevación:</strong> 2.0 m  <strong>Fecha:</strong> 1987-03-18 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens|Gerardo Herrera Ch.|O.M. Montiel J. <strong>Identificadores:</strong> L. Struwe & V.A. Albert, 1998 (NY)</div>`)[0];
+            popup_030f72253b154c9c9a19c5e760502434.setContent(html_aa5dbf5a03c24304bdc49ea92d6a6658);
+        
+
+        marker_a7173117315a4adba03945a8a5c81270.bindPopup(popup_030f72253b154c9c9a19c5e760502434)
+        ;
+
+        
+    
+    
+            var marker_84449026a8744b10b6ec1f8a2d73bb94 = L.marker(
+                [10.666667, -83.666667],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_b8e83bbe87af42bebbbe6d8b16cf751b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8867e3b7a70943e1ae96c5b3713efdcb = $(`<div id="html_8867e3b7a70943e1ae96c5b3713efdcb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Río Zapote, from E of new road to Raphia swamp, within 1 km of Río Colorado. <strong>Elevación:</strong> 25.0 m  <strong>Fecha:</strong> 1987-03-12 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens|Gerardo Herrera Ch.|O.M. Montiel J. <strong>Identificadores:</strong> L. Struwe & V.A. Albert, 1998 (NY)</div>`)[0];
+            popup_b8e83bbe87af42bebbbe6d8b16cf751b.setContent(html_8867e3b7a70943e1ae96c5b3713efdcb);
+        
+
+        marker_84449026a8744b10b6ec1f8a2d73bb94.bindPopup(popup_b8e83bbe87af42bebbbe6d8b16cf751b)
+        ;
+
+        
+    
+    
+            var marker_f9161fe097204504ab97a2f0b3b76f5d = L.marker(
+                [10.683333, -83.633333],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_2b830976ad484b9a8cd64dad383d1100 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_031f9be25bc942c7a150880b3772a44b = $(`<div id="html_031f9be25bc942c7a150880b3772a44b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1986-09-15 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens|O.M. Montiel J. <strong>Identificadores:</strong> L. Struwe & V.A. Albert, 1998 (NY)</div>`)[0];
+            popup_2b830976ad484b9a8cd64dad383d1100.setContent(html_031f9be25bc942c7a150880b3772a44b);
+        
+
+        marker_f9161fe097204504ab97a2f0b3b76f5d.bindPopup(popup_2b830976ad484b9a8cd64dad383d1100)
+        ;
+
+        
+    
+    
+            var marker_49a9e49d5abf48c9b7bfa46611207240 = L.marker(
+                [10.45, -84.06666700000001],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_156bb1462df9476795f231476bd7eab0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd005beb1417412cbd4c6a0a0bc92951 = $(`<div id="html_bd005beb1417412cbd4c6a0a0bc92951" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca El Bejuco, at southern end of Cerros Sardinal (N of Río Sarapiquí), Chilamate de Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1984-12-14 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Andrew J. Henderson|Thomas A. Ranker <strong>Identificadores:</strong> R. Liesner (MO)</div>`)[0];
+            popup_156bb1462df9476795f231476bd7eab0.setContent(html_bd005beb1417412cbd4c6a0a0bc92951);
+        
+
+        marker_49a9e49d5abf48c9b7bfa46611207240.bindPopup(popup_156bb1462df9476795f231476bd7eab0)
+        ;
+
+        
+    
+    
+            var marker_65ecadb1a80f4ba4a41f45942095fa1b = L.marker(
+                [10.033333, -83.43333299999999],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_d17718e2499b4b71b126f31e0cd2b1c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_336a33a87b4145e39a27c1464951e801 = $(`<div id="html_336a33a87b4145e39a27c1464951e801" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, ridge separating Quebrada Cañabral from Río Barbilla, and slope leading down to the latter. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1988-09-04 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Gerardo Herrera Ch.|Rafael Robles <strong>Identificadores:</strong> L. Struwe & V.A. Albert, 1998 (NY)</div>`)[0];
+            popup_d17718e2499b4b71b126f31e0cd2b1c3.setContent(html_336a33a87b4145e39a27c1464951e801);
+        
+
+        marker_65ecadb1a80f4ba4a41f45942095fa1b.bindPopup(popup_d17718e2499b4b71b126f31e0cd2b1c3)
+        ;
+
+        
+    
+    
+            var marker_799faab818e841799d6bc467f44729d2 = L.marker(
+                [8.866667, -82.18333299999999],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_ac9af2c1191d4aa3bead25deaa6e7913 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8e11ea4c4ce46c5a0d0c19f3c47efb2 = $(`<div id="html_e8e11ea4c4ce46c5a0d0c19f3c47efb2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along oleoducto road between continaental divide and Chiriquí Grande; 2nd bridge over Río Guabo? along dirt acces road. [Coordinates on orginal label: 8º50-55'N, 82º9-15'W] <strong>Elevación:</strong> 160.0 m  <strong>Fecha:</strong> 1985-05-01 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> L. Struwe & V.A. Albert, 2002 (NY)</div>`)[0];
+            popup_ac9af2c1191d4aa3bead25deaa6e7913.setContent(html_e8e11ea4c4ce46c5a0d0c19f3c47efb2);
+        
+
+        marker_799faab818e841799d6bc467f44729d2.bindPopup(popup_ac9af2c1191d4aa3bead25deaa6e7913)
+        ;
+
+        
+    
+    
+            var marker_d0968a4d732143e28f143712b962d3a5 = L.marker(
+                [9.149722, -82.033056],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_75fac62362924feaa20f628ffc5247a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d41fdf3ef91d4f52ad84e1731286886b = $(`<div id="html_d41fdf3ef91d4f52ad84e1731286886b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chiriquí Lagoon, on Cayo Agua. <strong>Elevación:</strong> 5.0 m  <strong>Fecha:</strong> 1987-08-11 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> L. Struwe & V.A. Albert, 2002 (NY)</div>`)[0];
+            popup_75fac62362924feaa20f628ffc5247a4.setContent(html_d41fdf3ef91d4f52ad84e1731286886b);
+        
+
+        marker_d0968a4d732143e28f143712b962d3a5.bindPopup(popup_75fac62362924feaa20f628ffc5247a4)
+        ;
+
+        
+    
+    
+            var marker_27f8eae2f27e41e7b4f9a2e72e625fb5 = L.marker(
+                [10.938031, -83.733408],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_369bdb7414644238a3432d1850bd763a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3101a7e0d01c4bcd9f3a3accdccccb94 = $(`<div id="html_3101a7e0d01c4bcd9f3a3accdccccb94" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2016-03-14 12:16:00+00:00 <strong>Recolectores:</strong> Lena Struwe <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_369bdb7414644238a3432d1850bd763a.setContent(html_3101a7e0d01c4bcd9f3a3accdccccb94);
+        
+
+        marker_27f8eae2f27e41e7b4f9a2e72e625fb5.bindPopup(popup_369bdb7414644238a3432d1850bd763a)
+        ;
+
+        
+    
+    
+            var marker_b4e7b9db7b524eee97cdd70c7c199b6d = L.marker(
+                [10.363242999999999, -84.103566],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_90ab64cd8a4a4473be1ffe11b557aa0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d513e79d07d4fa2974bd3003e7eb22c = $(`<div id="html_3d513e79d07d4fa2974bd3003e7eb22c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2018-03-11 14:11:00+00:00 <strong>Recolectores:</strong> Lena Struwe <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_90ab64cd8a4a4473be1ffe11b557aa0b.setContent(html_3d513e79d07d4fa2974bd3003e7eb22c);
+        
+
+        marker_b4e7b9db7b524eee97cdd70c7c199b6d.bindPopup(popup_90ab64cd8a4a4473be1ffe11b557aa0b)
+        ;
+
+        
+    
+    
+            var marker_52838e7ae0c64a95b72c69d38307760d = L.marker(
+                [10.363242999999999, -84.103566],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_74aeecde79a041a68047b0881ea7b707 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46e0f651601f46fdb50cce8fb67efece = $(`<div id="html_46e0f651601f46fdb50cce8fb67efece" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2018-03-11 14:22:00+00:00 <strong>Recolectores:</strong> Lena Struwe <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_74aeecde79a041a68047b0881ea7b707.setContent(html_46e0f651601f46fdb50cce8fb67efece);
+        
+
+        marker_52838e7ae0c64a95b72c69d38307760d.bindPopup(popup_74aeecde79a041a68047b0881ea7b707)
+        ;
+
+        
+    
+    
+            var marker_cb28564d4d174ac2bff05309c39900fa = L.marker(
+                [10.0, -83.8667],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_65bfc7fcfcb34714bad3b8512656a2e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c758a3dff3384fb782f23942930ffeca = $(`<div id="html_c758a3dff3384fb782f23942930ffeca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1986-09-17 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_65bfc7fcfcb34714bad3b8512656a2e5.setContent(html_c758a3dff3384fb782f23942930ffeca);
+        
+
+        marker_cb28564d4d174ac2bff05309c39900fa.bindPopup(popup_65bfc7fcfcb34714bad3b8512656a2e5)
+        ;
+
+        
+    
+    
+            var marker_abf78f6478fe485ca2a82f2771c0518e = L.marker(
+                [9.261667, -82.151389],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_46137c06f2a54406934cb30b0771c904 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43a763e722dd41efbf51478b546b9e11 = $(`<div id="html_43a763e722dd41efbf51478b546b9e11" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Salcreek. Parque Nacional Marino Isla Bastimento. <strong>Elevación:</strong> 41.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Carmen Galdames|R. Vergara E.|Laurencio Martínez|E. Brown <strong>Identificadores:</strong> C. Galdames</div>`)[0];
+            popup_46137c06f2a54406934cb30b0771c904.setContent(html_43a763e722dd41efbf51478b546b9e11);
+        
+
+        marker_abf78f6478fe485ca2a82f2771c0518e.bindPopup(popup_46137c06f2a54406934cb30b0771c904)
+        ;
+
+        
+    
+    
+            var marker_868e1ec1688145028f95d1b6a717c2c9 = L.marker(
+                [10.0, -83.8667],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_10d3f955d1ca4348a4b1b278b2a7edcb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d0875c535c84f26a5bbcc5a211e3078 = $(`<div id="html_5d0875c535c84f26a5bbcc5a211e3078" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1988-09-04 00:00:00+00:00 <strong>Recolectores:</strong> M. H. Grayum et al. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_10d3f955d1ca4348a4b1b278b2a7edcb.setContent(html_5d0875c535c84f26a5bbcc5a211e3078);
+        
+
+        marker_868e1ec1688145028f95d1b6a717c2c9.bindPopup(popup_10d3f955d1ca4348a4b1b278b2a7edcb)
+        ;
+
+        
+    
+    
+            var marker_b33a54609a4644878a74a699b56603dd = L.marker(
+                [10.74, -84.16],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_2cc525d166c242ae8690577ad05e9e40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb69fe9d761b4099bf894f709e4eb2bd = $(`<div id="html_cb69fe9d761b4099bf894f709e4eb2bd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Llanura de San Carlos, ca. 13 km NE de Boca Tapada, Finca Aserradero, San Jorge <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Alexánder Rodríguez|Nelson Zamora <strong>Identificadores:</strong> R. Liesner (MO)</div>`)[0];
+            popup_2cc525d166c242ae8690577ad05e9e40.setContent(html_cb69fe9d761b4099bf894f709e4eb2bd);
+        
+
+        marker_b33a54609a4644878a74a699b56603dd.bindPopup(popup_2cc525d166c242ae8690577ad05e9e40)
+        ;
+
+        
+    
+    
+            var marker_591d88cdc3574ed7b80530a4cdae4802 = L.marker(
+                [10.4, -83.9],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_77022af6c3ff44a2a2a351e269b502af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df6d758f591e452fab2c936336b6911d = $(`<div id="html_df6d758f591e452fab2c936336b6911d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Llanura de San Carlos. La Virgen <strong>Elevación:</strong> 220.0 m  <strong>Fecha:</strong> 1996-10-18 00:00:00+00:00 <strong>Recolectores:</strong> Nelson Zamora|D. Delgado|V. Herra <strong>Identificadores:</strong> R. Liesner (MO)</div>`)[0];
+            popup_77022af6c3ff44a2a2a351e269b502af.setContent(html_df6d758f591e452fab2c936336b6911d);
+        
+
+        marker_591d88cdc3574ed7b80530a4cdae4802.bindPopup(popup_77022af6c3ff44a2a2a351e269b502af)
+        ;
+
+        
+    
+    
+            var marker_b3a221c78cf4487c82d4bf2e2836e5b0 = L.marker(
+                [9.0, -82.23333000000001],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_390f686963bb4cba95dbc6c29fdfa5e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e786f551a9cc458bab4b9ada4065c35b = $(`<div id="html_e786f551a9cc458bab4b9ada4065c35b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fish Creek Mountains, vicinity of Chiriquí Lagoon <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1941-04-30 00:00:00+00:00 <strong>Recolectores:</strong> H. von Wedel <strong>Identificadores:</strong> M.J. Huft</div>`)[0];
+            popup_390f686963bb4cba95dbc6c29fdfa5e7.setContent(html_e786f551a9cc458bab4b9ada4065c35b);
+        
+
+        marker_b3a221c78cf4487c82d4bf2e2836e5b0.bindPopup(popup_390f686963bb4cba95dbc6c29fdfa5e7)
+        ;
+
+        
+    
+    
+            var marker_b65359252d5340759ba035d33bc61696 = L.marker(
+                [9.59, -82.87],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_3d24f838d80a4c91982a2cbdf37fc778 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff986969f64841f6a6f77d75a8c0f4c5 = $(`<div id="html_ff986969f64841f6a6f77d75a8c0f4c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 7 km SW of Bribrí. <strong>Elevación:</strong> 175.0 m  <strong>Fecha:</strong> 1983-05-04 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Gómez P.|Ronald L. Liesner|Emmet J. Judziewicz <strong>Identificadores:</strong> L. Struwe & V.A. Albert, 1998 (NY)</div>`)[0];
+            popup_3d24f838d80a4c91982a2cbdf37fc778.setContent(html_ff986969f64841f6a6f77d75a8c0f4c5);
+        
+
+        marker_b65359252d5340759ba035d33bc61696.bindPopup(popup_3d24f838d80a4c91982a2cbdf37fc778)
+        ;
+
+        
+    
+    
+            var marker_13556c28b1c948aaaf1b51e0819b5dad = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_d099872e996c4aa98540b9ee823ded9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acad0dac0d58416cba8dbeb96998086e = $(`<div id="html_acad0dac0d58416cba8dbeb96998086e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1984-07-26 00:00:00+00:00 <strong>Recolectores:</strong> Brian Jacobs <strong>Identificadores:</strong> L. Struwe & V.A. Albert, 1998 (NY)</div>`)[0];
+            popup_d099872e996c4aa98540b9ee823ded9f.setContent(html_acad0dac0d58416cba8dbeb96998086e);
+        
+
+        marker_13556c28b1c948aaaf1b51e0819b5dad.bindPopup(popup_d099872e996c4aa98540b9ee823ded9f)
+        ;
+
+        
+    
+    
+            var marker_22cfaa6f5bb44d50a0a456bb5793bcc8 = L.marker(
+                [10.08, -83.53],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_fdf301aa239842a494747f4d763a9675 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b97818423d9a4cccb70c8439dc062cb3 = $(`<div id="html_b97818423d9a4cccb70c8439dc062cb3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Above unnamed tributary of Río Siquirres <strong>Elevación:</strong> 210.0 m  <strong>Fecha:</strong> 1929-12-04 00:00:00+00:00 <strong>Recolectores:</strong> Carroll W. Dodge|George Catt|W. S. Thomas <strong>Identificadores:</strong> M.J. Huft</div>`)[0];
+            popup_fdf301aa239842a494747f4d763a9675.setContent(html_b97818423d9a4cccb70c8439dc062cb3);
+        
+
+        marker_22cfaa6f5bb44d50a0a456bb5793bcc8.bindPopup(popup_fdf301aa239842a494747f4d763a9675)
+        ;
+
+        
+    
+    
+            var marker_fd75e5d67a244abf8c1e8da3b5a57693 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_18f95e03ca58432c811a8d064071dbb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29c0acb260a941469e18d298203071a1 = $(`<div id="html_29c0acb260a941469e18d298203071a1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-03-27 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> CMT</div>`)[0];
+            popup_18f95e03ca58432c811a8d064071dbb8.setContent(html_29c0acb260a941469e18d298203071a1);
+        
+
+        marker_fd75e5d67a244abf8c1e8da3b5a57693.bindPopup(popup_18f95e03ca58432c811a8d064071dbb8)
+        ;
+
+        
+    
+    
+            var marker_e60dc419facc4e84ba7aa9c08d7107ab = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_aa2890c5f2b8424389aed509046d4863);
+        
+    
+        var popup_a4fc8b70016f4151b9703cd219b8e72a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eed3206e8cb0475aabce5865399e2d3f = $(`<div id="html_eed3206e8cb0475aabce5865399e2d3f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-05-03 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_a4fc8b70016f4151b9703cd219b8e72a.setContent(html_eed3206e8cb0475aabce5865399e2d3f);
+        
+
+        marker_e60dc419facc4e84ba7aa9c08d7107ab.bindPopup(popup_a4fc8b70016f4151b9703cd219b8e72a)
+        ;
+
+        
+    
+    
+            var layer_control_d61e4a608cc1441786697884955af5be = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_875a994c33a0461f847ad7a313157f64,
+                    "ESRI World Imagery" : tile_layer_0cf5256e52a943918eaf447357b9fb88,
+                },
+                overlays :  {
+                    "macro_element_aa2890c5f2b8424389aed509046d4863" : marker_cluster_aa2890c5f2b8424389aed509046d4863,
+                },
+            };
+            L.control.layers(
+                layer_control_d61e4a608cc1441786697884955af5be.base_layers,
+                layer_control_d61e4a608cc1441786697884955af5be.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c7c5e1053fc745c6bb680f7ccfcc2419);
+            tile_layer_0cf5256e52a943918eaf447357b9fb88.remove();
+        
+</script>

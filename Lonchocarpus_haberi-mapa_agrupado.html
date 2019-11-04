@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_884a77295b654ae1ac6f08d5de17e2d4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_884a77295b654ae1ac6f08d5de17e2d4" ></div>
+        
+</body>
+<script>    
+    
+            var map_884a77295b654ae1ac6f08d5de17e2d4 = L.map(
+                "map_884a77295b654ae1ac6f08d5de17e2d4",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_884a77295b654ae1ac6f08d5de17e2d4);
+
+            
+
+        
+    
+            var tile_layer_0237fcd0cb8e4227b9e4585471ac6666 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_884a77295b654ae1ac6f08d5de17e2d4);
+        
+    
+            var tile_layer_c50bba784bd74cd69c092812920d9e30 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_884a77295b654ae1ac6f08d5de17e2d4);
+        
+    
+            var marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5 = L.markerClusterGroup(
+                {}
+            );
+            map_884a77295b654ae1ac6f08d5de17e2d4.addLayer(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+            var marker_f3e0b9b7ef8f49fc981fa416900cd4fb = L.marker(
+                [10.260556, -84.826389],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_c86225582f674fd8bdcc418e3e1cdfc0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01e9fd983a174ee98aaa8fc475e17472 = $(`<div id="html_01e9fd983a174ee98aaa8fc475e17472" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis; Monteverde. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1994-04-13 00:00:00+00:00 <strong>Recolectores:</strong> Zobeida Fuentes <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_c86225582f674fd8bdcc418e3e1cdfc0.setContent(html_01e9fd983a174ee98aaa8fc475e17472);
+        
+
+        marker_f3e0b9b7ef8f49fc981fa416900cd4fb.bindPopup(popup_c86225582f674fd8bdcc418e3e1cdfc0)
+        ;
+
+        
+    
+    
+            var marker_98fe7d04ec6446089b022f43266832f0 = L.marker(
+                [10.266667, -84.81666700000001],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_fe8f635ab9da42e287822a272d6028e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa016cc72f3a4ac58d941ea5be63757f = $(`<div id="html_fa016cc72f3a4ac58d941ea5be63757f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 5-10 km SSW of Monteverde near village of San Luis. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1989-12-11 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_fe8f635ab9da42e287822a272d6028e0.setContent(html_fa016cc72f3a4ac58d941ea5be63757f);
+        
+
+        marker_98fe7d04ec6446089b022f43266832f0.bindPopup(popup_fe8f635ab9da42e287822a272d6028e0)
+        ;
+
+        
+    
+    
+            var marker_6992a2430b8c4d95a1dda2ee99e6e00d = L.marker(
+                [10.283333, -84.8],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_d3be3b5e0fbd4981a9822c16372ac0af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4573af708e845d69e0886658c1aa444 = $(`<div id="html_e4573af708e845d69e0886658c1aa444" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, Bajo Tigre Trail, Pacific slope, premontane moist forest. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1991-12-27 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_d3be3b5e0fbd4981a9822c16372ac0af.setContent(html_e4573af708e845d69e0886658c1aa444);
+        
+
+        marker_6992a2430b8c4d95a1dda2ee99e6e00d.bindPopup(popup_d3be3b5e0fbd4981a9822c16372ac0af)
+        ;
+
+        
+    
+    
+            var marker_87a8c818107347a5846979a6176ceb84 = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_919e026fe55641f7bea8aacdafe5113b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79614383c11545d9ac2a4536ed0df988 = $(`<div id="html_79614383c11545d9ac2a4536ed0df988" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, 1 km S of community, Bajo Tigre Resv, trail to Lindora Ridge between R. Guacimal and Queb. Maquina. Pac. slope, dry rocky ridge top. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1990-05-10 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_919e026fe55641f7bea8aacdafe5113b.setContent(html_79614383c11545d9ac2a4536ed0df988);
+        
+
+        marker_87a8c818107347a5846979a6176ceb84.bindPopup(popup_919e026fe55641f7bea8aacdafe5113b)
+        ;
+
+        
+    
+    
+            var marker_96cede4236aa4b56a672c921c767b3fa = L.marker(
+                [10.3, -84.833334],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_5b5df305c2184b0992322777f848fe9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec7aa08f8d3d41c7bc3035f37676fde3 = $(`<div id="html_ec7aa08f8d3d41c7bc3035f37676fde3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Lindora. Lado Pacifico. Rio Lagarto. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1991-08-05 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_5b5df305c2184b0992322777f848fe9e.setContent(html_ec7aa08f8d3d41c7bc3035f37676fde3);
+        
+
+        marker_96cede4236aa4b56a672c921c767b3fa.bindPopup(popup_5b5df305c2184b0992322777f848fe9e)
+        ;
+
+        
+    
+    
+            var marker_facbbb9cbf6244f0a71e89cdccfdb97c = L.marker(
+                [10.266667, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_b9beb252e6c04593960d18dc9b44edd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f0a4c9bb19440338bd56e1f0e03e9fa = $(`<div id="html_0f0a4c9bb19440338bd56e1f0e03e9fa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis. Finca de Chepe Rojas, al oeste del pueblo. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1988-06-24 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_b9beb252e6c04593960d18dc9b44edd3.setContent(html_0f0a4c9bb19440338bd56e1f0e03e9fa);
+        
+
+        marker_facbbb9cbf6244f0a71e89cdccfdb97c.bindPopup(popup_b9beb252e6c04593960d18dc9b44edd3)
+        ;
+
+        
+    
+    
+            var marker_aa6d933fd4ac43728ef20680a1be93b1 = L.marker(
+                [10.266667, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_76f51b5df75b4ea0a2ad345d3bde7e98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be851070275b4e0cb5aea6f4070218c8 = $(`<div id="html_be851070275b4e0cb5aea6f4070218c8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis. Finca de Chepe Rojas, al oeste del pueblo. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1988-06-24 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_76f51b5df75b4ea0a2ad345d3bde7e98.setContent(html_be851070275b4e0cb5aea6f4070218c8);
+        
+
+        marker_aa6d933fd4ac43728ef20680a1be93b1.bindPopup(popup_76f51b5df75b4ea0a2ad345d3bde7e98)
+        ;
+
+        
+    
+    
+            var marker_62d5b29f67d84df688bc218c337293a5 = L.marker(
+                [10.259996000000001, -84.796139],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_f37c3c9f7f774bc99216fa4505ae279d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ca160666d1c4f22a37b804c7bf5d170 = $(`<div id="html_4ca160666d1c4f22a37b804c7bf5d170" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis Monteverde, Finca Buen Amigo <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1987-03-11 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_f37c3c9f7f774bc99216fa4505ae279d.setContent(html_4ca160666d1c4f22a37b804c7bf5d170);
+        
+
+        marker_62d5b29f67d84df688bc218c337293a5.bindPopup(popup_f37c3c9f7f774bc99216fa4505ae279d)
+        ;
+
+        
+    
+    
+            var marker_342bdc78169a40c3b8ba6d4d6ca9f92e = L.marker(
+                [10.266667, -84.8],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_c7d6871eea7e492da2670282aaf5838a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00bf3ff7abb24a3eb57a3e1ea26ff2ad = $(`<div id="html_00bf3ff7abb24a3eb57a3e1ea26ff2ad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis de Monteverde, cerca del Rio San Luis, orillas del camino. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1995-02-14 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_c7d6871eea7e492da2670282aaf5838a.setContent(html_00bf3ff7abb24a3eb57a3e1ea26ff2ad);
+        
+
+        marker_342bdc78169a40c3b8ba6d4d6ca9f92e.bindPopup(popup_c7d6871eea7e492da2670282aaf5838a)
+        ;
+
+        
+    
+    
+            var marker_0684e43c9a734cecb7972e9d868a219f = L.marker(
+                [10.25, -84.844444],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_b2dbd500390d401a8af0cab80ba43554 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28fe1fee59c645eb94932d7a630920b5 = $(`<div id="html_28fe1fee59c645eb94932d7a630920b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, 12 km SW of Santa Elena on road to Interamerican Highway. Premontane moist forest life zone. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1992-11-12 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_b2dbd500390d401a8af0cab80ba43554.setContent(html_28fe1fee59c645eb94932d7a630920b5);
+        
+
+        marker_0684e43c9a734cecb7972e9d868a219f.bindPopup(popup_b2dbd500390d401a8af0cab80ba43554)
+        ;
+
+        
+    
+    
+            var marker_f5400ba85fde49e6b57975fcd5f86415 = L.marker(
+                [10.283333, -84.8],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_320a2756e3fe4a8e998284843b8872cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce892a1759fb400384511333850fa8af = $(`<div id="html_ce892a1759fb400384511333850fa8af" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle de Rio San Luis, Guacimal. Bosque muy humedo premontano. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1987-03-25 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_320a2756e3fe4a8e998284843b8872cc.setContent(html_ce892a1759fb400384511333850fa8af);
+        
+
+        marker_f5400ba85fde49e6b57975fcd5f86415.bindPopup(popup_320a2756e3fe4a8e998284843b8872cc)
+        ;
+
+        
+    
+    
+            var marker_faa1a9b688734f1da7300999e059a9db = L.marker(
+                [10.277778, -84.841667],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_ece82be48ea14703bbb8db93744a6e1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce8e412854d74c11859622329f06018d = $(`<div id="html_ce8e412854d74c11859622329f06018d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. Quebrada Guaria. Cerros. Alrededores de Finca de Cheche Nunez. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1991-11-27 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_ece82be48ea14703bbb8db93744a6e1b.setContent(html_ce8e412854d74c11859622329f06018d);
+        
+
+        marker_faa1a9b688734f1da7300999e059a9db.bindPopup(popup_ece82be48ea14703bbb8db93744a6e1b)
+        ;
+
+        
+    
+    
+            var marker_d94d736dad4e42e7b00d54a7dadaf074 = L.marker(
+                [10.297222, -84.82777800000001],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_88099611865945c481d857fc327b78e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92f9735b0979471698a4901ff0f4e15f = $(`<div id="html_92f9735b0979471698a4901ff0f4e15f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, Planta Electrica Lindora. Quebrada Sucia, sector La Paja. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1992-02-11 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_88099611865945c481d857fc327b78e0.setContent(html_92f9735b0979471698a4901ff0f4e15f);
+        
+
+        marker_d94d736dad4e42e7b00d54a7dadaf074.bindPopup(popup_88099611865945c481d857fc327b78e0)
+        ;
+
+        
+    
+    
+            var marker_cf59064ed1a245f7b33e2f0449a8775c = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_91eefa15263c4d97ba9539880dd40bc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f42328737ee14a69b4c3153d5402be7e = $(`<div id="html_f42328737ee14a69b4c3153d5402be7e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 5-10 km SW Monteverde on road from Santa Elena to Lagarto, Premontane moist forest habitat. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1992-10-31 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_91eefa15263c4d97ba9539880dd40bc9.setContent(html_f42328737ee14a69b4c3153d5402be7e);
+        
+
+        marker_cf59064ed1a245f7b33e2f0449a8775c.bindPopup(popup_91eefa15263c4d97ba9539880dd40bc9)
+        ;
+
+        
+    
+    
+            var marker_8858ebe40a5f4f189bc26f59d27bfc42 = L.marker(
+                [10.897222, -85.410833],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_8cd649bf970f4c0eaeed3c8e91b19f16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa2715ff1e964544a3b04144a2382923 = $(`<div id="html_aa2715ff1e964544a3b04144a2382923" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion San Ramon. Sector Gongora. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1995-04-26 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_8cd649bf970f4c0eaeed3c8e91b19f16.setContent(html_aa2715ff1e964544a3b04144a2382923);
+        
+
+        marker_8858ebe40a5f4f189bc26f59d27bfc42.bindPopup(popup_8cd649bf970f4c0eaeed3c8e91b19f16)
+        ;
+
+        
+    
+    
+            var marker_a0ade5688db94b0aabca11d58786f9d9 = L.marker(
+                [10.283333, -84.8],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_a577c6be5f1f4f73842498885c779974 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67f1a930ac5d4a67a6251a7eb423c2b9 = $(`<div id="html_67f1a930ac5d4a67a6251a7eb423c2b9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, Bajo Tigre Trail, Pacific slope, premontane moist forest. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1991-12-27 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_a577c6be5f1f4f73842498885c779974.setContent(html_67f1a930ac5d4a67a6251a7eb423c2b9);
+        
+
+        marker_a0ade5688db94b0aabca11d58786f9d9.bindPopup(popup_a577c6be5f1f4f73842498885c779974)
+        ;
+
+        
+    
+    
+            var marker_72945b82ecac413b8722ad6fa3035d10 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_acaab082d33e4ef382541f1bdd14f85a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3393ba6cdf2d4c20ac43afac477dbb40 = $(`<div id="html_3393ba6cdf2d4c20ac43afac477dbb40" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-07-15 00:00:00+00:00 <strong>Recolectores:</strong> William Haber; Willow Zuchowski <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_acaab082d33e4ef382541f1bdd14f85a.setContent(html_3393ba6cdf2d4c20ac43afac477dbb40);
+        
+
+        marker_72945b82ecac413b8722ad6fa3035d10.bindPopup(popup_acaab082d33e4ef382541f1bdd14f85a)
+        ;
+
+        
+    
+    
+            var marker_a3e07cf6465d4e7b97f53a012fb5616f = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_097a9f8f521f4f87bbee9c0c6f0e41a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ffdf68dc4c34c91807e6183999b1cb5 = $(`<div id="html_6ffdf68dc4c34c91807e6183999b1cb5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-07-15 00:00:00+00:00 <strong>Recolectores:</strong> William Haber; Willow Zuchowski <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_097a9f8f521f4f87bbee9c0c6f0e41a3.setContent(html_6ffdf68dc4c34c91807e6183999b1cb5);
+        
+
+        marker_a3e07cf6465d4e7b97f53a012fb5616f.bindPopup(popup_097a9f8f521f4f87bbee9c0c6f0e41a3)
+        ;
+
+        
+    
+    
+            var marker_7d4f3b6b082243ce87149cf5e6a0a032 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_035f9288c63c42bbb635bfcff8b301e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ddf9b0ef7754aebb4dea91bd91b6cee = $(`<div id="html_3ddf9b0ef7754aebb4dea91bd91b6cee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-07-15 00:00:00+00:00 <strong>Recolectores:</strong> William Haber; Willow Zuchowski <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_035f9288c63c42bbb635bfcff8b301e3.setContent(html_3ddf9b0ef7754aebb4dea91bd91b6cee);
+        
+
+        marker_7d4f3b6b082243ce87149cf5e6a0a032.bindPopup(popup_035f9288c63c42bbb635bfcff8b301e3)
+        ;
+
+        
+    
+    
+            var marker_048486bb5c254d559555d0d6cd24b477 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_ec116e21e85449c5bf6e52309a93f318 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4dd7875e74e5436dbd73fb596eaf1cd6 = $(`<div id="html_4dd7875e74e5436dbd73fb596eaf1cd6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-07-15 00:00:00+00:00 <strong>Recolectores:</strong> William Haber; Willow Zuchowski <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_ec116e21e85449c5bf6e52309a93f318.setContent(html_4dd7875e74e5436dbd73fb596eaf1cd6);
+        
+
+        marker_048486bb5c254d559555d0d6cd24b477.bindPopup(popup_ec116e21e85449c5bf6e52309a93f318)
+        ;
+
+        
+    
+    
+            var marker_12679b64fd984235ad91ff8a9d3dccfb = L.marker(
+                [10.283333, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_420d4c6a02854ff5b7bf3b8c16e84fb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3503981ae0f4878a2ee185b2c6db26a = $(`<div id="html_d3503981ae0f4878a2ee185b2c6db26a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. Los Cerros de Lindora. 7 km SW of Santa Elena on road to Inter American Highway. Pacific slope moist forest. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1997-01-22 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_420d4c6a02854ff5b7bf3b8c16e84fb4.setContent(html_d3503981ae0f4878a2ee185b2c6db26a);
+        
+
+        marker_12679b64fd984235ad91ff8a9d3dccfb.bindPopup(popup_420d4c6a02854ff5b7bf3b8c16e84fb4)
+        ;
+
+        
+    
+    
+            var marker_d8af8ce92668450591d13009b83bf83e = L.marker(
+                [10.283333, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_af0c5d01958b4260ba01cce179a054e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c279ba483374cdaac9c286f3e236a0e = $(`<div id="html_3c279ba483374cdaac9c286f3e236a0e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. Los Cerros de Lindora. 7 km SW of Santa Elena on road to Inter American Highway. Pacific slope moist forest. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1997-01-22 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_af0c5d01958b4260ba01cce179a054e8.setContent(html_3c279ba483374cdaac9c286f3e236a0e);
+        
+
+        marker_d8af8ce92668450591d13009b83bf83e.bindPopup(popup_af0c5d01958b4260ba01cce179a054e8)
+        ;
+
+        
+    
+    
+            var marker_5ff88d754752460db75d146fb51c6618 = L.marker(
+                [10.283333, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_98c5e817cf4743aca5a07e120035826d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed575ddac6f94dec87cab0f94597be6d = $(`<div id="html_ed575ddac6f94dec87cab0f94597be6d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. Los Cerros de Lindora. 7 km SW of Santa Elena on road to Inter American Highway. Pacific slope moist forest. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1997-01-22 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_98c5e817cf4743aca5a07e120035826d.setContent(html_ed575ddac6f94dec87cab0f94597be6d);
+        
+
+        marker_5ff88d754752460db75d146fb51c6618.bindPopup(popup_98c5e817cf4743aca5a07e120035826d)
+        ;
+
+        
+    
+    
+            var marker_8b25cfc1f9794ddcb3762a066b784f18 = L.marker(
+                [10.283333, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_122c3af1947a435aaf6a8463ceae5a68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da704049b8d648cf946036a812ace6ff = $(`<div id="html_da704049b8d648cf946036a812ace6ff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. Los Cerros de Lindora. 7 km SW of Santa Elena on road to Inter American Highway. Pacific slope moist forest. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1997-01-22 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_122c3af1947a435aaf6a8463ceae5a68.setContent(html_da704049b8d648cf946036a812ace6ff);
+        
+
+        marker_8b25cfc1f9794ddcb3762a066b784f18.bindPopup(popup_122c3af1947a435aaf6a8463ceae5a68)
+        ;
+
+        
+    
+    
+            var marker_4ec4b5ee091e41cc9fbc04c5669b6fbb = L.marker(
+                [10.283333, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_2e982deebb58484fb9b532e81e7f246a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d19e82ccf2c404baa7f199594f23bc0 = $(`<div id="html_4d19e82ccf2c404baa7f199594f23bc0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. Los Cerros de Lindora. 7 km SW of Santa Elena on road to Inter American Highway. Pacific slope moist forest. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1997-01-22 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_2e982deebb58484fb9b532e81e7f246a.setContent(html_4d19e82ccf2c404baa7f199594f23bc0);
+        
+
+        marker_4ec4b5ee091e41cc9fbc04c5669b6fbb.bindPopup(popup_2e982deebb58484fb9b532e81e7f246a)
+        ;
+
+        
+    
+    
+            var marker_f8fcf103bfb74f67a47e0bba7ad71ada = L.marker(
+                [10.26, -84.83],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_eeb17515d1804ae7a1d8a19ea4c5e01a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45d708e3092043f6bcc6f6cd47530756 = $(`<div id="html_45d708e3092043f6bcc6f6cd47530756" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis, Monteverde, Finca de Chepe Rojas, al oeste del pueblo. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1988-06-24 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello C.|William A. Haber|Barry E. Hammel <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_eeb17515d1804ae7a1d8a19ea4c5e01a.setContent(html_45d708e3092043f6bcc6f6cd47530756);
+        
+
+        marker_f8fcf103bfb74f67a47e0bba7ad71ada.bindPopup(popup_eeb17515d1804ae7a1d8a19ea4c5e01a)
+        ;
+
+        
+    
+    
+            var marker_2e8800ca29e24038971f150c22c64d27 = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_2faf17cbc1304d1bb515ee8e9841a3c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_650c91c4283e4572b24c86143112ace5 = $(`<div id="html_650c91c4283e4572b24c86143112ace5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, 1 km S of community, Bajo Tigre Reserve, trail to Lindora Ridge between Río Guacimal and Queb. Máquina. Pacific slope, dry rocky ridge top. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1990-05-10 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski|S. Daniel <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_2faf17cbc1304d1bb515ee8e9841a3c2.setContent(html_650c91c4283e4572b24c86143112ace5);
+        
+
+        marker_2e8800ca29e24038971f150c22c64d27.bindPopup(popup_2faf17cbc1304d1bb515ee8e9841a3c2)
+        ;
+
+        
+    
+    
+            var marker_7f24bf95a50d4054bdf944442e4ecb40 = L.marker(
+                [10.266667, -84.81666700000001],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_1b7453a026ec41399309c3c0bf8c6ce9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20c6678d9d70458cbbc1b92d5f7e92ca = $(`<div id="html_20c6678d9d70458cbbc1b92d5f7e92ca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Puntarenas 5-10 km SSW of Monteverde near village  of San Luis. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1989-12-11 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Hugh H. Iltis <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_1b7453a026ec41399309c3c0bf8c6ce9.setContent(html_20c6678d9d70458cbbc1b92d5f7e92ca);
+        
+
+        marker_7f24bf95a50d4054bdf944442e4ecb40.bindPopup(popup_1b7453a026ec41399309c3c0bf8c6ce9)
+        ;
+
+        
+    
+    
+            var marker_4a3276a0b80849799f50e0b96026eef1 = L.marker(
+                [10.283333, -84.85],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_51e45176957f42619037d5ce62bb3e15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e45c87eabc694fdebd5b623793b7af69 = $(`<div id="html_e45c87eabc694fdebd5b623793b7af69" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1/2 km below turnoff to San Luis on road to Monteverde (Santa Elena). <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1985-06-08 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Michael H. Grayum|Jill Trainer <strong>Identificadores:</strong> N. Zamora (INB), IX/</div>`)[0];
+            popup_51e45176957f42619037d5ce62bb3e15.setContent(html_e45c87eabc694fdebd5b623793b7af69);
+        
+
+        marker_4a3276a0b80849799f50e0b96026eef1.bindPopup(popup_51e45176957f42619037d5ce62bb3e15)
+        ;
+
+        
+    
+    
+            var marker_ef540bc505d04de0a5daadcba281a9ca = L.marker(
+                [10.285, -84.80416],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_5e1e8e93b19e46aca5184c46efd5826a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c788c43444c46b9abf68261e1808525 = $(`<div id="html_5c788c43444c46b9abf68261e1808525" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle de San Luis, Monteverde <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1985-08-29 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C.|Giovanni Bello C. <strong>Identificadores:</strong> M. Sousa S.</div>`)[0];
+            popup_5e1e8e93b19e46aca5184c46efd5826a.setContent(html_5c788c43444c46b9abf68261e1808525);
+        
+
+        marker_ef540bc505d04de0a5daadcba281a9ca.bindPopup(popup_5e1e8e93b19e46aca5184c46efd5826a)
+        ;
+
+        
+    
+    
+            var marker_fffd91016efe4a80a801529a91383653 = L.marker(
+                [10.283333, -84.8],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_b28b0466e73f471eb50b7c13064dec8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bafc349a3be40e5954251e0ce576366 = $(`<div id="html_6bafc349a3be40e5954251e0ce576366" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Valle de Río San Luis, Guacimal. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1987-03-25 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_b28b0466e73f471eb50b7c13064dec8f.setContent(html_6bafc349a3be40e5954251e0ce576366);
+        
+
+        marker_fffd91016efe4a80a801529a91383653.bindPopup(popup_b28b0466e73f471eb50b7c13064dec8f)
+        ;
+
+        
+    
+    
+            var marker_2f8c8e67a322485b8f25aead38338d99 = L.marker(
+                [10.3, -84.71666],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_63f80711ea3449039d414ab5c19e4d32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5ba185d324f47c79087bf7473e9a385 = $(`<div id="html_e5ba185d324f47c79087bf7473e9a385" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis, Monteverde Zona % rocosa. Bosque muy húmedo premontano. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1987-03-11 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_63f80711ea3449039d414ab5c19e4d32.setContent(html_e5ba185d324f47c79087bf7473e9a385);
+        
+
+        marker_2f8c8e67a322485b8f25aead38338d99.bindPopup(popup_63f80711ea3449039d414ab5c19e4d32)
+        ;
+
+        
+    
+    
+            var marker_df5e5b1c03704c9a976cbec6a2a9fd84 = L.marker(
+                [10.287778, -84.801389],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_b3754e7aa3ee4493bcd4155073bbeac1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e9d5df11f0b43f29cfc0698e881cae0 = $(`<div id="html_1e9d5df11f0b43f29cfc0698e881cae0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis valley. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1985-09-29 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> M. Sousa S.</div>`)[0];
+            popup_b3754e7aa3ee4493bcd4155073bbeac1.setContent(html_1e9d5df11f0b43f29cfc0698e881cae0);
+        
+
+        marker_df5e5b1c03704c9a976cbec6a2a9fd84.bindPopup(popup_b3754e7aa3ee4493bcd4155073bbeac1)
+        ;
+
+        
+    
+    
+            var marker_b11e84178bd04bb38b24fc79c8af6ac8 = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_e5c3da0e03dc48dbb6f6102947b39f79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d228e86b06104f5da8c871609b1a725d = $(`<div id="html_d228e86b06104f5da8c871609b1a725d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, upper San Luis. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1986-11-19 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> M. Sousa S.</div>`)[0];
+            popup_e5c3da0e03dc48dbb6f6102947b39f79.setContent(html_d228e86b06104f5da8c871609b1a725d);
+        
+
+        marker_b11e84178bd04bb38b24fc79c8af6ac8.bindPopup(popup_e5c3da0e03dc48dbb6f6102947b39f79)
+        ;
+
+        
+    
+    
+            var marker_15b69b703d134265855d9210e5d4cb4e = L.marker(
+                [10.287778, -84.801389],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_b6c81ef2780941ea86f1204fdad402ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a76b4ce516e440ebc9dab323184e0b6 = $(`<div id="html_0a76b4ce516e440ebc9dab323184e0b6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis valley. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1985-09-29 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> M. Sousa S.</div>`)[0];
+            popup_b6c81ef2780941ea86f1204fdad402ca.setContent(html_0a76b4ce516e440ebc9dab323184e0b6);
+        
+
+        marker_15b69b703d134265855d9210e5d4cb4e.bindPopup(popup_b6c81ef2780941ea86f1204fdad402ca)
+        ;
+
+        
+    
+    
+            var marker_8a27774a197a4d5f914b22ab76d90143 = L.marker(
+                [10.28, -84.8],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_21696b2bebd24776893a828e3c11b3a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_952db7778a314277b9e905fffb1cce5d = $(`<div id="html_952db7778a314277b9e905fffb1cce5d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Monteverde, Bajo Tigre Trail, Pacific slope, premontane moist forest. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1991-12-27 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|George E. Schatz|Heidi H. Schmidt <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_21696b2bebd24776893a828e3c11b3a6.setContent(html_952db7778a314277b9e905fffb1cce5d);
+        
+
+        marker_8a27774a197a4d5f914b22ab76d90143.bindPopup(popup_21696b2bebd24776893a828e3c11b3a6)
+        ;
+
+        
+    
+    
+            var marker_01ba5c3deda24ea294739c621ef72cfa = L.marker(
+                [10.272778, -84.82583299999999],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_ff2fb976e31a4802a6f3d82437174bdd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_009a31b594fe47a08ee5fd8b3eb62f7d = $(`<div id="html_009a31b594fe47a08ee5fd8b3eb62f7d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis village. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1985-06-06 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> J. Linares</div>`)[0];
+            popup_ff2fb976e31a4802a6f3d82437174bdd.setContent(html_009a31b594fe47a08ee5fd8b3eb62f7d);
+        
+
+        marker_01ba5c3deda24ea294739c621ef72cfa.bindPopup(popup_ff2fb976e31a4802a6f3d82437174bdd)
+        ;
+
+        
+    
+    
+            var marker_e89c6f81d90746cd995ed68fa1ef51c4 = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_179f2688dc544ee794e07b9961b89060 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63e5b1ff3a8d463d99157c6e3650cbf5 = $(`<div id="html_63e5b1ff3a8d463d99157c6e3650cbf5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. 5-10 km SW Monteverde on road from Santa Elena to Lagarto, Premontane moist moist forest habitat. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1992-10-31 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|K. Hoffman <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_179f2688dc544ee794e07b9961b89060.setContent(html_63e5b1ff3a8d463d99157c6e3650cbf5);
+        
+
+        marker_e89c6f81d90746cd995ed68fa1ef51c4.bindPopup(popup_179f2688dc544ee794e07b9961b89060)
+        ;
+
+        
+    
+    
+            var marker_1ba67beaf2b24da7ba27acbdeef408d3 = L.marker(
+                [10.25, -84.84],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_29459ad2621b4c1db500d24b4c0820d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9705902850f491383581d84a52ae408 = $(`<div id="html_f9705902850f491383581d84a52ae408" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Monteverde 12 km SW of Santa Elena on road to Interamerican Highway. Premontane moist forest life zone. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1992-11-12 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_29459ad2621b4c1db500d24b4c0820d9.setContent(html_f9705902850f491383581d84a52ae408);
+        
+
+        marker_1ba67beaf2b24da7ba27acbdeef408d3.bindPopup(popup_29459ad2621b4c1db500d24b4c0820d9)
+        ;
+
+        
+    
+    
+            var marker_30776830b29e4d03916fa04774285257 = L.marker(
+                [10.3, -84.83],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_3ba40a08643c4ccda02f82168da0853e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebbeca1fbcb74f2e8edbd18c2560782e = $(`<div id="html_ebbeca1fbcb74f2e8edbd18c2560782e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Monteverde; Cordillera de Tilarán. La Lindora. Lado Pacífico. Río Lagarto. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1991-08-05 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_3ba40a08643c4ccda02f82168da0853e.setContent(html_ebbeca1fbcb74f2e8edbd18c2560782e);
+        
+
+        marker_30776830b29e4d03916fa04774285257.bindPopup(popup_3ba40a08643c4ccda02f82168da0853e)
+        ;
+
+        
+    
+    
+            var marker_e2b00930dc9d4bc2a5ead7cc789d9d6e = L.marker(
+                [10.27, -84.84],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_c3da51022d5b4d36a941be1981244a49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_827bf4bee0cd406d8aa4cfbe1cffbc3f = $(`<div id="html_827bf4bee0cd406d8aa4cfbe1cffbc3f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Monteverde. Quebrada Guaria. Cerros. Alrededores de Finca de Cheché Núñez. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1991-11-27 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_c3da51022d5b4d36a941be1981244a49.setContent(html_827bf4bee0cd406d8aa4cfbe1cffbc3f);
+        
+
+        marker_e2b00930dc9d4bc2a5ead7cc789d9d6e.bindPopup(popup_c3da51022d5b4d36a941be1981244a49)
+        ;
+
+        
+    
+    
+            var marker_cede47b78c1347308e24f3dd4d389496 = L.marker(
+                [10.29, -84.82],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_322696c6eacc418abb48e0cc100c8a36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e14fad8c17244205ba55c56a42ff38ef = $(`<div id="html_e14fad8c17244205ba55c56a42ff38ef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Monteverde, Planta Eléctrica Lindora. Quebrada Sucia, sector La Paja. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1992-02-11 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_322696c6eacc418abb48e0cc100c8a36.setContent(html_e14fad8c17244205ba55c56a42ff38ef);
+        
+
+        marker_cede47b78c1347308e24f3dd4d389496.bindPopup(popup_322696c6eacc418abb48e0cc100c8a36)
+        ;
+
+        
+    
+    
+            var marker_6d873db1089c4b30a6e78f1100d06ade = L.marker(
+                [10.26, -84.82],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_8eb5a832a0044d488cd08d3446df9735 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b44b2675ff94c23b3bfa30121f656f4 = $(`<div id="html_9b44b2675ff94c23b3bfa30121f656f4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. San Luis; Monteverde. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1994-04-13 00:00:00+00:00 <strong>Recolectores:</strong> Zobeida Fuentes <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_8eb5a832a0044d488cd08d3446df9735.setContent(html_9b44b2675ff94c23b3bfa30121f656f4);
+        
+
+        marker_6d873db1089c4b30a6e78f1100d06ade.bindPopup(popup_8eb5a832a0044d488cd08d3446df9735)
+        ;
+
+        
+    
+    
+            var marker_bf4531abdf1144c8be5753a249457e0a = L.marker(
+                [10.266667, -84.8],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_e13dfac857164024bc4a17a0bfead46c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ccab1e4239d4c86b0aca3eee7d20e22 = $(`<div id="html_1ccab1e4239d4c86b0aca3eee7d20e22" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilaran. San Luis de Monteverde, cerca del Rio San Luis, orillas del camino. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1995-02-14 00:00:00+00:00 <strong>Recolectores:</strong> Nelson Zamora|María Marta Chavarría <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_e13dfac857164024bc4a17a0bfead46c.setContent(html_1ccab1e4239d4c86b0aca3eee7d20e22);
+        
+
+        marker_bf4531abdf1144c8be5753a249457e0a.bindPopup(popup_e13dfac857164024bc4a17a0bfead46c)
+        ;
+
+        
+    
+    
+            var marker_14876e9864a54b4f8e0bde59c7706996 = L.marker(
+                [10.897222, -85.410833],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_8499257e97d14cbdb27293723b63d036 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e853c3bc57d84d93833c35ec93743015 = $(`<div id="html_e853c3bc57d84d93833c35ec93743015" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Guanacaste, Cordillera de Guanacaste, Estación San Ramón, Sector Gongora <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1995-04-26 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza|M. Pereira|Adrián Guadamuz|A. Masís <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_8499257e97d14cbdb27293723b63d036.setContent(html_e853c3bc57d84d93833c35ec93743015);
+        
+
+        marker_14876e9864a54b4f8e0bde59c7706996.bindPopup(popup_8499257e97d14cbdb27293723b63d036)
+        ;
+
+        
+    
+    
+            var marker_5a5f7432c0d44af6821c52d642497157 = L.marker(
+                [10.283333, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_870e9ddae8f74ce8a1ed7fe91946ce61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cc0c1544a2b49beb8a9ae8afdc6a79d = $(`<div id="html_6cc0c1544a2b49beb8a9ae8afdc6a79d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuencas del Lagarto y Guacimal. Monteverde, 6 km SSW of Santa Elena on road to Lagarto, primary forest fragment at start of Quebrada La Guaria. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1997-01-22 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_870e9ddae8f74ce8a1ed7fe91946ce61.setContent(html_6cc0c1544a2b49beb8a9ae8afdc6a79d);
+        
+
+        marker_5a5f7432c0d44af6821c52d642497157.bindPopup(popup_870e9ddae8f74ce8a1ed7fe91946ce61)
+        ;
+
+        
+    
+    
+            var marker_f08c3d6a5a5445dcbf843e9266b22130 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_c8dd491d74294d378ca75fb7611b58f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da3647bd93f64740bb6f707036c5865c = $(`<div id="html_da3647bd93f64740bb6f707036c5865c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuencas del Lagarto y Guacimal. Monteverde,Bajo del Tigre Reserve. Pacific slope below community. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-07-15 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_c8dd491d74294d378ca75fb7611b58f3.setContent(html_da3647bd93f64740bb6f707036c5865c);
+        
+
+        marker_f08c3d6a5a5445dcbf843e9266b22130.bindPopup(popup_c8dd491d74294d378ca75fb7611b58f3)
+        ;
+
+        
+    
+    
+            var marker_5c4a145fc59240129756a6d0c83ca687 = L.marker(
+                [10.3, -84.83333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_434c17d494674573956775c14c8d1452 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd317157554243a7914e4f4d2a794fd9 = $(`<div id="html_cd317157554243a7914e4f4d2a794fd9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, Bajo del Tigre Reserve.  Pacific slope below community. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1996-07-15 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_434c17d494674573956775c14c8d1452.setContent(html_cd317157554243a7914e4f4d2a794fd9);
+        
+
+        marker_5c4a145fc59240129756a6d0c83ca687.bindPopup(popup_434c17d494674573956775c14c8d1452)
+        ;
+
+        
+    
+    
+            var marker_c436406bf32e43a5bbf8c370c2b2d753 = L.marker(
+                [10.283333, -84.83333],
+                {}
+            ).addTo(marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5);
+        
+    
+        var popup_0972a67e5ec9464f971007790bed276b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6a7ac0b493a493d852e6ce6ab4482e6 = $(`<div id="html_d6a7ac0b493a493d852e6ce6ab4482e6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, 6 Km SSW of Santa Elena on road to Lagarto, primary forest fragment at start of Quebrada La Guaria. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1997-01-22 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_0972a67e5ec9464f971007790bed276b.setContent(html_d6a7ac0b493a493d852e6ce6ab4482e6);
+        
+
+        marker_c436406bf32e43a5bbf8c370c2b2d753.bindPopup(popup_0972a67e5ec9464f971007790bed276b)
+        ;
+
+        
+    
+    
+            var layer_control_cae490a22fd041d78355f31c56c137c0 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0237fcd0cb8e4227b9e4585471ac6666,
+                    "ESRI World Imagery" : tile_layer_c50bba784bd74cd69c092812920d9e30,
+                },
+                overlays :  {
+                    "macro_element_3f8ce01b01d84756b5c1cb2f71990dd5" : marker_cluster_3f8ce01b01d84756b5c1cb2f71990dd5,
+                },
+            };
+            L.control.layers(
+                layer_control_cae490a22fd041d78355f31c56c137c0.base_layers,
+                layer_control_cae490a22fd041d78355f31c56c137c0.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_884a77295b654ae1ac6f08d5de17e2d4);
+            tile_layer_c50bba784bd74cd69c092812920d9e30.remove();
+        
+</script>

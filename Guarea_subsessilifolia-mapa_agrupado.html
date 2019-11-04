@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3ac8c3ef9a024a06bbf6a2c5a822578d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3ac8c3ef9a024a06bbf6a2c5a822578d" ></div>
+        
+</body>
+<script>    
+    
+            var map_3ac8c3ef9a024a06bbf6a2c5a822578d = L.map(
+                "map_3ac8c3ef9a024a06bbf6a2c5a822578d",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_3ac8c3ef9a024a06bbf6a2c5a822578d);
+
+            
+
+        
+    
+            var tile_layer_cbab2d0d6ea54a5c90385c797c65bb8c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3ac8c3ef9a024a06bbf6a2c5a822578d);
+        
+    
+            var tile_layer_ffda0ab30ce84999b1d1db9926a0aa1f = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3ac8c3ef9a024a06bbf6a2c5a822578d);
+        
+    
+            var marker_cluster_ac2c0323ab054d4a8efd0da295737a6b = L.markerClusterGroup(
+                {}
+            );
+            map_3ac8c3ef9a024a06bbf6a2c5a822578d.addLayer(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+            var marker_154aa5f22d304159b783f2734152622c = L.marker(
+                [9.791667, -84.475],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_70e890643bf84fcaa6effa11b3568429 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_754192f727ab4da5a9e254e3f2bea818 = $(`<div id="html_754192f727ab4da5a9e254e3f2bea818" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas del Cerro Bares. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1990-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Rodolfo Zúñiga <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_70e890643bf84fcaa6effa11b3568429.setContent(html_754192f727ab4da5a9e254e3f2bea818);
+        
+
+        marker_154aa5f22d304159b783f2734152622c.bindPopup(popup_70e890643bf84fcaa6effa11b3568429)
+        ;
+
+        
+    
+    
+            var marker_b213e42cced74eb0a64988d79324e502 = L.marker(
+                [9.783333, -84.483333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_2146c38d89944a6bb1eb76b87d0333f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f28a2ff4f3d4df2bb2164fad6758192 = $(`<div id="html_9f28a2ff4f3d4df2bb2164fad6758192" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> SW spur of Cerro Turrubares, ridge bet. N and S forks of Rio Carara. <strong>Elevación:</strong> 975.0 m  <strong>Fecha:</strong> 1993-04-06 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_2146c38d89944a6bb1eb76b87d0333f8.setContent(html_9f28a2ff4f3d4df2bb2164fad6758192);
+        
+
+        marker_b213e42cced74eb0a64988d79324e502.bindPopup(popup_2146c38d89944a6bb1eb76b87d0333f8)
+        ;
+
+        
+    
+    
+            var marker_1685af533ba141c996fba4fa860aadda = L.marker(
+                [10.304167, -84.811111],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_dfafd95e82554076b1792c5416a948b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49ccbc5061af47068707f8074b663b9d = $(`<div id="html_49ccbc5061af47068707f8074b663b9d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. 3 km west on road from Santa Elena to Lagarto, Pacific slope, headwaters of Rio Lagarto. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1993-11-04 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_dfafd95e82554076b1792c5416a948b4.setContent(html_49ccbc5061af47068707f8074b663b9d);
+        
+
+        marker_1685af533ba141c996fba4fa860aadda.bindPopup(popup_dfafd95e82554076b1792c5416a948b4)
+        ;
+
+        
+    
+    
+            var marker_1c668ce7948849ab9fe143958dcf2d12 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_6d65aac3f67a49889f3062784511022c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_532f32cad22c41fa9d6daf9950d84ea7 = $(`<div id="html_532f32cad22c41fa9d6daf9950d84ea7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-09-20 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_6d65aac3f67a49889f3062784511022c.setContent(html_532f32cad22c41fa9d6daf9950d84ea7);
+        
+
+        marker_1c668ce7948849ab9fe143958dcf2d12.bindPopup(popup_6d65aac3f67a49889f3062784511022c)
+        ;
+
+        
+    
+    
+            var marker_ecb5fcc8b80a41b29f92008716257adf = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_f65b47989db64346a74c421f35204f87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c15e5c9b06749b49f6216ebf164a4a5 = $(`<div id="html_3c15e5c9b06749b49f6216ebf164a4a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-09-20 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_f65b47989db64346a74c421f35204f87.setContent(html_3c15e5c9b06749b49f6216ebf164a4a5);
+        
+
+        marker_ecb5fcc8b80a41b29f92008716257adf.bindPopup(popup_f65b47989db64346a74c421f35204f87)
+        ;
+
+        
+    
+    
+            var marker_4263ebb7aeb54ad5b604de1dfdaa4940 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_252f8c1ee17a4dc0b43b5e132c0fd71b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8d3853b51064f41aa68ca0717c30f37 = $(`<div id="html_b8d3853b51064f41aa68ca0717c30f37" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-09-20 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_252f8c1ee17a4dc0b43b5e132c0fd71b.setContent(html_b8d3853b51064f41aa68ca0717c30f37);
+        
+
+        marker_4263ebb7aeb54ad5b604de1dfdaa4940.bindPopup(popup_252f8c1ee17a4dc0b43b5e132c0fd71b)
+        ;
+
+        
+    
+    
+            var marker_a27afc45d969477b8de50683b29e217d = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_00460b41dafd4f08bcccb7595c8941f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e941e837a3e5462d9121f9a4bd629183 = $(`<div id="html_e941e837a3e5462d9121f9a4bd629183" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-09-20 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_00460b41dafd4f08bcccb7595c8941f4.setContent(html_e941e837a3e5462d9121f9a4bd629183);
+        
+
+        marker_a27afc45d969477b8de50683b29e217d.bindPopup(popup_00460b41dafd4f08bcccb7595c8941f4)
+        ;
+
+        
+    
+    
+            var marker_8d2e0102d5f74b31b3d58abc943d4329 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_d1a85b254a4548a0bf667c901cb7d10e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_556a4ad251e24fa5bcdfbd23ae9cb7d3 = $(`<div id="html_556a4ad251e24fa5bcdfbd23ae9cb7d3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-09-20 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_d1a85b254a4548a0bf667c901cb7d10e.setContent(html_556a4ad251e24fa5bcdfbd23ae9cb7d3);
+        
+
+        marker_8d2e0102d5f74b31b3d58abc943d4329.bindPopup(popup_d1a85b254a4548a0bf667c901cb7d10e)
+        ;
+
+        
+    
+    
+            var marker_78dbe7fb7c7344fbae6eaff4be201abc = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_4f28d22b267843f1942e8e3ff8cf3064 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed9aec2be3404700b697a2148795865b = $(`<div id="html_ed9aec2be3404700b697a2148795865b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-09-20 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_4f28d22b267843f1942e8e3ff8cf3064.setContent(html_ed9aec2be3404700b697a2148795865b);
+        
+
+        marker_78dbe7fb7c7344fbae6eaff4be201abc.bindPopup(popup_4f28d22b267843f1942e8e3ff8cf3064)
+        ;
+
+        
+    
+    
+            var marker_2fbbcd33402a448d8a73f8f40c62b522 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_5f1b3fc5ac4e4b9f8e52698edf8a5d0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88ba046ad4d74353a80b154d7d1575f1 = $(`<div id="html_88ba046ad4d74353a80b154d7d1575f1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1996-09-20 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_5f1b3fc5ac4e4b9f8e52698edf8a5d0e.setContent(html_88ba046ad4d74353a80b154d7d1575f1);
+        
+
+        marker_2fbbcd33402a448d8a73f8f40c62b522.bindPopup(popup_5f1b3fc5ac4e4b9f8e52698edf8a5d0e)
+        ;
+
+        
+    
+    
+            var marker_d9a61c02ef9e4a199b8cae650aea974c = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_02a877a3b3be4637b77ab5c8c24d761b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bbd9cec69a642829a4f93d56d7ce1ad = $(`<div id="html_4bbd9cec69a642829a4f93d56d7ce1ad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_02a877a3b3be4637b77ab5c8c24d761b.setContent(html_4bbd9cec69a642829a4f93d56d7ce1ad);
+        
+
+        marker_d9a61c02ef9e4a199b8cae650aea974c.bindPopup(popup_02a877a3b3be4637b77ab5c8c24d761b)
+        ;
+
+        
+    
+    
+            var marker_a547eb8932eb4862a924a986760ed189 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_ea896fa5364142b887fbafbceaf270e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c9c57dd63eb4d6797ff0c96a743748e = $(`<div id="html_9c9c57dd63eb4d6797ff0c96a743748e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_ea896fa5364142b887fbafbceaf270e2.setContent(html_9c9c57dd63eb4d6797ff0c96a743748e);
+        
+
+        marker_a547eb8932eb4862a924a986760ed189.bindPopup(popup_ea896fa5364142b887fbafbceaf270e2)
+        ;
+
+        
+    
+    
+            var marker_9afe7b4f005b42bb9fdb7ae4b423a718 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_432296fbd49540d99f123b2b00b5b49a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3864d970afd34a7498905324e0a8b204 = $(`<div id="html_3864d970afd34a7498905324e0a8b204" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_432296fbd49540d99f123b2b00b5b49a.setContent(html_3864d970afd34a7498905324e0a8b204);
+        
+
+        marker_9afe7b4f005b42bb9fdb7ae4b423a718.bindPopup(popup_432296fbd49540d99f123b2b00b5b49a)
+        ;
+
+        
+    
+    
+            var marker_f578aa47d1584435bde28025d051225f = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_177c5dfd3d084c1daf743111334adee8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90ca850b68fe4842be4302aecea5bf9d = $(`<div id="html_90ca850b68fe4842be4302aecea5bf9d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_177c5dfd3d084c1daf743111334adee8.setContent(html_90ca850b68fe4842be4302aecea5bf9d);
+        
+
+        marker_f578aa47d1584435bde28025d051225f.bindPopup(popup_177c5dfd3d084c1daf743111334adee8)
+        ;
+
+        
+    
+    
+            var marker_42ad2e8acfdd44e3b7bebfd7b20c23f5 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_ef678933e1384dc48532769882510e9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cfb203cb7f5412cb6360e8c9b74e3b7 = $(`<div id="html_4cfb203cb7f5412cb6360e8c9b74e3b7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_ef678933e1384dc48532769882510e9e.setContent(html_4cfb203cb7f5412cb6360e8c9b74e3b7);
+        
+
+        marker_42ad2e8acfdd44e3b7bebfd7b20c23f5.bindPopup(popup_ef678933e1384dc48532769882510e9e)
+        ;
+
+        
+    
+    
+            var marker_3751dc7a0e2e49bb96413937afa580f2 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_17f42f07b4b4417caea095c6f78c7f35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cd8d9e3661b43e686d9b0673f5533fa = $(`<div id="html_8cd8d9e3661b43e686d9b0673f5533fa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_17f42f07b4b4417caea095c6f78c7f35.setContent(html_8cd8d9e3661b43e686d9b0673f5533fa);
+        
+
+        marker_3751dc7a0e2e49bb96413937afa580f2.bindPopup(popup_17f42f07b4b4417caea095c6f78c7f35)
+        ;
+
+        
+    
+    
+            var marker_91ba7031c07f400b8fa732003f3e9aad = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_977facf6fc044756be3d6c088b5e1a17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1db3664e51d4a39afcf81e4a1a60d3d = $(`<div id="html_c1db3664e51d4a39afcf81e4a1a60d3d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_977facf6fc044756be3d6c088b5e1a17.setContent(html_c1db3664e51d4a39afcf81e4a1a60d3d);
+        
+
+        marker_91ba7031c07f400b8fa732003f3e9aad.bindPopup(popup_977facf6fc044756be3d6c088b5e1a17)
+        ;
+
+        
+    
+    
+            var marker_6b29ab005a3c46349d5544ee40e3a779 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_d958bf6fab734791a8dcf7024f2c380d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f055370adf324bc18f5828aee76e9202 = $(`<div id="html_f055370adf324bc18f5828aee76e9202" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_d958bf6fab734791a8dcf7024f2c380d.setContent(html_f055370adf324bc18f5828aee76e9202);
+        
+
+        marker_6b29ab005a3c46349d5544ee40e3a779.bindPopup(popup_d958bf6fab734791a8dcf7024f2c380d)
+        ;
+
+        
+    
+    
+            var marker_e3f1e6daf7634ac9982d7f19188465bd = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_8c52133077f64c4f96be022da8bf9b31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96a0d56c167a48f6896d3d5abda9e2f4 = $(`<div id="html_96a0d56c167a48f6896d3d5abda9e2f4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_8c52133077f64c4f96be022da8bf9b31.setContent(html_96a0d56c167a48f6896d3d5abda9e2f4);
+        
+
+        marker_e3f1e6daf7634ac9982d7f19188465bd.bindPopup(popup_8c52133077f64c4f96be022da8bf9b31)
+        ;
+
+        
+    
+    
+            var marker_33a229b90d7a4c60ac5f1ad242661475 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_3a7a1b54ab4447e5bc0a815933d78fb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1faee5626e954c4a82b48784ea657d8e = $(`<div id="html_1faee5626e954c4a82b48784ea657d8e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_3a7a1b54ab4447e5bc0a815933d78fb1.setContent(html_1faee5626e954c4a82b48784ea657d8e);
+        
+
+        marker_33a229b90d7a4c60ac5f1ad242661475.bindPopup(popup_3a7a1b54ab4447e5bc0a815933d78fb1)
+        ;
+
+        
+    
+    
+            var marker_1ec1ce60389e447cae68e352c72b3731 = L.marker(
+                [10.3, -84.833333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_8bbe1d4ee79b4c468517930c3e8cddfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b11a970dc014888a1b7adc3282edfba = $(`<div id="html_4b11a970dc014888a1b7adc3282edfba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos de La Lindora, lado pacifico, Rio Guacimal. Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_8bbe1d4ee79b4c468517930c3e8cddfc.setContent(html_4b11a970dc014888a1b7adc3282edfba);
+        
+
+        marker_1ec1ce60389e447cae68e352c72b3731.bindPopup(popup_8bbe1d4ee79b4c468517930c3e8cddfc)
+        ;
+
+        
+    
+    
+            var marker_91df13842f16498cb89663b800c7ee84 = L.marker(
+                [9.797222, -84.45277800000001],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_e752f3a776e94c6f9306a00d278fd2c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb52af2cc38a41f58330ed90891ae8d6 = $(`<div id="html_eb52af2cc38a41f58330ed90891ae8d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis, Cerro Turrubares. <strong>Elevación:</strong> 1592.0 m  <strong>Fecha:</strong> 2001-12-24 00:00:00+00:00 <strong>Recolectores:</strong> Julio Bustamante <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_e752f3a776e94c6f9306a00d278fd2c8.setContent(html_eb52af2cc38a41f58330ed90891ae8d6);
+        
+
+        marker_91df13842f16498cb89663b800c7ee84.bindPopup(popup_e752f3a776e94c6f9306a00d278fd2c8)
+        ;
+
+        
+    
+    
+            var marker_f488a1dbe59e43af94a2e9abf7c1278d = L.marker(
+                [9.797222, -84.45277800000001],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_884a1bd708df415aafa2ef931c6d8a35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4649d0de7a0842f897362e2c2f4f5ef4 = $(`<div id="html_4649d0de7a0842f897362e2c2f4f5ef4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis, Cerro Turrubares. <strong>Elevación:</strong> 1592.0 m  <strong>Fecha:</strong> 2001-12-24 00:00:00+00:00 <strong>Recolectores:</strong> Julio Bustamante <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_884a1bd708df415aafa2ef931c6d8a35.setContent(html_4649d0de7a0842f897362e2c2f4f5ef4);
+        
+
+        marker_f488a1dbe59e43af94a2e9abf7c1278d.bindPopup(popup_884a1bd708df415aafa2ef931c6d8a35)
+        ;
+
+        
+    
+    
+            var marker_5e4a40303ec5488d86e3b39fcb19bb1e = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_73582780e63e49c49d35b212326e9ef2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5aee0cac625f4b1e8465b1d7c41eb573 = $(`<div id="html_5aee0cac625f4b1e8465b1d7c41eb573" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Estrada ; Rafael Chacón ; Daniel Solano ; Armando Soto <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_73582780e63e49c49d35b212326e9ef2.setContent(html_5aee0cac625f4b1e8465b1d7c41eb573);
+        
+
+        marker_5e4a40303ec5488d86e3b39fcb19bb1e.bindPopup(popup_73582780e63e49c49d35b212326e9ef2)
+        ;
+
+        
+    
+    
+            var marker_0a5b9c20f0904c86833495c9e013bd91 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_2f42b53b5dc34604bfb5082a18300319 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92b2d5f2c313427e938f45064d0868e9 = $(`<div id="html_92b2d5f2c313427e938f45064d0868e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Estrada ; Rafael Chacón ; Daniel Solano ; Armando Soto <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_2f42b53b5dc34604bfb5082a18300319.setContent(html_92b2d5f2c313427e938f45064d0868e9);
+        
+
+        marker_0a5b9c20f0904c86833495c9e013bd91.bindPopup(popup_2f42b53b5dc34604bfb5082a18300319)
+        ;
+
+        
+    
+    
+            var marker_f4037601e6874f169e2ceff075318bbf = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_b53d26e5f832417db41c5e9242ab96a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36682cde891e4e75bba3adda900b440b = $(`<div id="html_36682cde891e4e75bba3adda900b440b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Estrada ; Rafael Chacón ; Daniel Solano ; Armando Soto <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_b53d26e5f832417db41c5e9242ab96a9.setContent(html_36682cde891e4e75bba3adda900b440b);
+        
+
+        marker_f4037601e6874f169e2ceff075318bbf.bindPopup(popup_b53d26e5f832417db41c5e9242ab96a9)
+        ;
+
+        
+    
+    
+            var marker_5d19f2d6bf974721ad7d23a442450f46 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_135d1c2201b140a2b7b0f6ec73c773de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdd0f683cd7246a6a8c45002bd71dfc3 = $(`<div id="html_fdd0f683cd7246a6a8c45002bd71dfc3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Estrada ; Rafael Chacón ; Daniel Solano ; Armando Soto <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_135d1c2201b140a2b7b0f6ec73c773de.setContent(html_fdd0f683cd7246a6a8c45002bd71dfc3);
+        
+
+        marker_5d19f2d6bf974721ad7d23a442450f46.bindPopup(popup_135d1c2201b140a2b7b0f6ec73c773de)
+        ;
+
+        
+    
+    
+            var marker_6bdca587c87347509a49335607eb60b6 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_2bb3bda60bde439daadee05ac2575258 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4a099e941074f10bb7447449d51a269 = $(`<div id="html_e4a099e941074f10bb7447449d51a269" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Estrada ; Rafael Chacón ; Daniel Solano ; Armando Soto <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_2bb3bda60bde439daadee05ac2575258.setContent(html_e4a099e941074f10bb7447449d51a269);
+        
+
+        marker_6bdca587c87347509a49335607eb60b6.bindPopup(popup_2bb3bda60bde439daadee05ac2575258)
+        ;
+
+        
+    
+    
+            var marker_cfbc531bb5df42cf99f27af05bbbf34e = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_f821c3a215114cf696464c0f4d9d0962 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8906d492f1c347c5a5fb3fa838a8fb90 = $(`<div id="html_8906d492f1c347c5a5fb3fa838a8fb90" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Estrada ; Rafael Chacón ; Daniel Solano ; Armando Soto <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_f821c3a215114cf696464c0f4d9d0962.setContent(html_8906d492f1c347c5a5fb3fa838a8fb90);
+        
+
+        marker_cfbc531bb5df42cf99f27af05bbbf34e.bindPopup(popup_f821c3a215114cf696464c0f4d9d0962)
+        ;
+
+        
+    
+    
+            var marker_9f022d4906a846a0808bead512fc00ee = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_2454a11682204cb78e574e2497fe927a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e2f5c846ce4444babd7551ab72c30d8 = $(`<div id="html_6e2f5c846ce4444babd7551ab72c30d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Estrada ; Rafael Chacón ; Daniel Solano ; Armando Soto <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_2454a11682204cb78e574e2497fe927a.setContent(html_6e2f5c846ce4444babd7551ab72c30d8);
+        
+
+        marker_9f022d4906a846a0808bead512fc00ee.bindPopup(popup_2454a11682204cb78e574e2497fe927a)
+        ;
+
+        
+    
+    
+            var marker_286ece1e1857400c988d215bee5b4527 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_8eed469a04324644b3d963cdaf68f1a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5244567f4d05453881e23d66c8209dc0 = $(`<div id="html_5244567f4d05453881e23d66c8209dc0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_8eed469a04324644b3d963cdaf68f1a3.setContent(html_5244567f4d05453881e23d66c8209dc0);
+        
+
+        marker_286ece1e1857400c988d215bee5b4527.bindPopup(popup_8eed469a04324644b3d963cdaf68f1a3)
+        ;
+
+        
+    
+    
+            var marker_81b4572c99304bcc9c81f56e77f2f481 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_8d886fced580480a8e8fa98d6b184266 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9ec26fcfc384180882d53d38d7d51ff = $(`<div id="html_f9ec26fcfc384180882d53d38d7d51ff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_8d886fced580480a8e8fa98d6b184266.setContent(html_f9ec26fcfc384180882d53d38d7d51ff);
+        
+
+        marker_81b4572c99304bcc9c81f56e77f2f481.bindPopup(popup_8d886fced580480a8e8fa98d6b184266)
+        ;
+
+        
+    
+    
+            var marker_0adfcf1c8a4d42ad9d926374ccfefb72 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_3f819f48b6014cecbbdcc0edfb7eab23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51882ec93bad4d5dacb3a9dddb560d31 = $(`<div id="html_51882ec93bad4d5dacb3a9dddb560d31" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_3f819f48b6014cecbbdcc0edfb7eab23.setContent(html_51882ec93bad4d5dacb3a9dddb560d31);
+        
+
+        marker_0adfcf1c8a4d42ad9d926374ccfefb72.bindPopup(popup_3f819f48b6014cecbbdcc0edfb7eab23)
+        ;
+
+        
+    
+    
+            var marker_86098804482d4231afbce4aa864d6784 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_fc8c4f8ea595424683104a660f5a8bc5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4b2e6eb899a41b8b2d34cfe18d590e2 = $(`<div id="html_e4b2e6eb899a41b8b2d34cfe18d590e2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_fc8c4f8ea595424683104a660f5a8bc5.setContent(html_e4b2e6eb899a41b8b2d34cfe18d590e2);
+        
+
+        marker_86098804482d4231afbce4aa864d6784.bindPopup(popup_fc8c4f8ea595424683104a660f5a8bc5)
+        ;
+
+        
+    
+    
+            var marker_756598eabdb64b33895d593bdfa5be85 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_597bfc38c4024048b783a677ebb86c2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4dcab25c40c247e093c6830fae1277e7 = $(`<div id="html_4dcab25c40c247e093c6830fae1277e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_597bfc38c4024048b783a677ebb86c2a.setContent(html_4dcab25c40c247e093c6830fae1277e7);
+        
+
+        marker_756598eabdb64b33895d593bdfa5be85.bindPopup(popup_597bfc38c4024048b783a677ebb86c2a)
+        ;
+
+        
+    
+    
+            var marker_0771571e0df14c08be15a7e89f7a65ed = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_798f5178c9c74a8ba325c6f8e563443f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42a306e805ad4cbb9357e5ba308d6c07 = $(`<div id="html_42a306e805ad4cbb9357e5ba308d6c07" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_798f5178c9c74a8ba325c6f8e563443f.setContent(html_42a306e805ad4cbb9357e5ba308d6c07);
+        
+
+        marker_0771571e0df14c08be15a7e89f7a65ed.bindPopup(popup_798f5178c9c74a8ba325c6f8e563443f)
+        ;
+
+        
+    
+    
+            var marker_2f829c84fc1e4ef3b6493ee5c0df4efd = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_56fa974d7ecb4c3ca8f89d2e347d3116 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc5eb0a5f7124751a3ee21e542b51eef = $(`<div id="html_cc5eb0a5f7124751a3ee21e542b51eef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_56fa974d7ecb4c3ca8f89d2e347d3116.setContent(html_cc5eb0a5f7124751a3ee21e542b51eef);
+        
+
+        marker_2f829c84fc1e4ef3b6493ee5c0df4efd.bindPopup(popup_56fa974d7ecb4c3ca8f89d2e347d3116)
+        ;
+
+        
+    
+    
+            var marker_212fbd979f7246e9a50be82371a059eb = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_3937be20a6884d9fb5f6fb7fbfbe5283 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce3cf57751544e0db34ffc7161d28165 = $(`<div id="html_ce3cf57751544e0db34ffc7161d28165" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_3937be20a6884d9fb5f6fb7fbfbe5283.setContent(html_ce3cf57751544e0db34ffc7161d28165);
+        
+
+        marker_212fbd979f7246e9a50be82371a059eb.bindPopup(popup_3937be20a6884d9fb5f6fb7fbfbe5283)
+        ;
+
+        
+    
+    
+            var marker_ac33e4a3c38e4478ad6932442a8bc823 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_5d42d180397444159dff468897559a9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a0e0e277cea4881beac14c035266ad0 = $(`<div id="html_9a0e0e277cea4881beac14c035266ad0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_5d42d180397444159dff468897559a9a.setContent(html_9a0e0e277cea4881beac14c035266ad0);
+        
+
+        marker_ac33e4a3c38e4478ad6932442a8bc823.bindPopup(popup_5d42d180397444159dff468897559a9a)
+        ;
+
+        
+    
+    
+            var marker_41b63ecee7614095ad81550e7857dd0c = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_f63d02a77652484bb5a8af351fba8bf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef413c8b66774df29ea55d3d10253654 = $(`<div id="html_ef413c8b66774df29ea55d3d10253654" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_f63d02a77652484bb5a8af351fba8bf4.setContent(html_ef413c8b66774df29ea55d3d10253654);
+        
+
+        marker_41b63ecee7614095ad81550e7857dd0c.bindPopup(popup_f63d02a77652484bb5a8af351fba8bf4)
+        ;
+
+        
+    
+    
+            var marker_2bcc75eac8914e679eb5c9252b54029e = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_ebd029df785741f2bb37d018e149cf31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_843609615a8a424daa9df52126a0a38e = $(`<div id="html_843609615a8a424daa9df52126a0a38e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_ebd029df785741f2bb37d018e149cf31.setContent(html_843609615a8a424daa9df52126a0a38e);
+        
+
+        marker_2bcc75eac8914e679eb5c9252b54029e.bindPopup(popup_ebd029df785741f2bb37d018e149cf31)
+        ;
+
+        
+    
+    
+            var marker_5d5def6918014535a4b39aecb52ddce0 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_315c3c1776994487873ad34c1e204d81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_013822a469fc40b2981e89882e4aef78 = $(`<div id="html_013822a469fc40b2981e89882e4aef78" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_315c3c1776994487873ad34c1e204d81.setContent(html_013822a469fc40b2981e89882e4aef78);
+        
+
+        marker_5d5def6918014535a4b39aecb52ddce0.bindPopup(popup_315c3c1776994487873ad34c1e204d81)
+        ;
+
+        
+    
+    
+            var marker_d0db97f326d049f2acbaba146493ac23 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_ffa4e2bc29964378bd9e34b677076a1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edcb857edde5445cb9f897b9759768e4 = $(`<div id="html_edcb857edde5445cb9f897b9759768e4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_ffa4e2bc29964378bd9e34b677076a1f.setContent(html_edcb857edde5445cb9f897b9759768e4);
+        
+
+        marker_d0db97f326d049f2acbaba146493ac23.bindPopup(popup_ffa4e2bc29964378bd9e34b677076a1f)
+        ;
+
+        
+    
+    
+            var marker_e72efc86498e401e86771a5c32eb4e5f = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_cf5a74597b5641c996b701be056840d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3f6a4c19eab48728149c3d19407e595 = $(`<div id="html_c3f6a4c19eab48728149c3d19407e595" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_cf5a74597b5641c996b701be056840d0.setContent(html_c3f6a4c19eab48728149c3d19407e595);
+        
+
+        marker_e72efc86498e401e86771a5c32eb4e5f.bindPopup(popup_cf5a74597b5641c996b701be056840d0)
+        ;
+
+        
+    
+    
+            var marker_5e7df99096a144f28f0f657bb74f332a = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_39364a8005904150946284efe8bf5ab7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a5d44a4e7f045dcb94db7195b551d00 = $(`<div id="html_2a5d44a4e7f045dcb94db7195b551d00" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_39364a8005904150946284efe8bf5ab7.setContent(html_2a5d44a4e7f045dcb94db7195b551d00);
+        
+
+        marker_5e7df99096a144f28f0f657bb74f332a.bindPopup(popup_39364a8005904150946284efe8bf5ab7)
+        ;
+
+        
+    
+    
+            var marker_1b31f92d73aa457485eb7fbc8760ccf7 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_708dd1f8fecd4af38813a6c19535c37c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_384d03e325794adfbbeb2158c0c9d5d8 = $(`<div id="html_384d03e325794adfbbeb2158c0c9d5d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_708dd1f8fecd4af38813a6c19535c37c.setContent(html_384d03e325794adfbbeb2158c0c9d5d8);
+        
+
+        marker_1b31f92d73aa457485eb7fbc8760ccf7.bindPopup(popup_708dd1f8fecd4af38813a6c19535c37c)
+        ;
+
+        
+    
+    
+            var marker_0526edf92150496fb439031c47289ced = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_e5ade4bb9d264bad84dbbbf14ecc3552 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ba832cf1fa748ec90808ede72408228 = $(`<div id="html_6ba832cf1fa748ec90808ede72408228" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_e5ade4bb9d264bad84dbbbf14ecc3552.setContent(html_6ba832cf1fa748ec90808ede72408228);
+        
+
+        marker_0526edf92150496fb439031c47289ced.bindPopup(popup_e5ade4bb9d264bad84dbbbf14ecc3552)
+        ;
+
+        
+    
+    
+            var marker_d7f6ff7d2a7d47f48027b6b835b0c8d5 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_6e98c03c8a5240d0a5fb5696c88148b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8247ae70fedc4b71ab0e053fae40a7c1 = $(`<div id="html_8247ae70fedc4b71ab0e053fae40a7c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_6e98c03c8a5240d0a5fb5696c88148b1.setContent(html_8247ae70fedc4b71ab0e053fae40a7c1);
+        
+
+        marker_d7f6ff7d2a7d47f48027b6b835b0c8d5.bindPopup(popup_6e98c03c8a5240d0a5fb5696c88148b1)
+        ;
+
+        
+    
+    
+            var marker_4425ca519905452a93297c7740548265 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_61a8623b43ad4c769caf2a28441a2439 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45c922b851174b799b11f2252e563577 = $(`<div id="html_45c922b851174b799b11f2252e563577" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_61a8623b43ad4c769caf2a28441a2439.setContent(html_45c922b851174b799b11f2252e563577);
+        
+
+        marker_4425ca519905452a93297c7740548265.bindPopup(popup_61a8623b43ad4c769caf2a28441a2439)
+        ;
+
+        
+    
+    
+            var marker_4675be969f6a451da9160b858327a52f = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_20d933d0bd5d4d4ead6e6dc166956ec3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fab103a5a89c49378d251c912f75d02e = $(`<div id="html_fab103a5a89c49378d251c912f75d02e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_20d933d0bd5d4d4ead6e6dc166956ec3.setContent(html_fab103a5a89c49378d251c912f75d02e);
+        
+
+        marker_4675be969f6a451da9160b858327a52f.bindPopup(popup_20d933d0bd5d4d4ead6e6dc166956ec3)
+        ;
+
+        
+    
+    
+            var marker_d9de93da30d54652ac672afd496a70d6 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_7792e71d50344b91897b37f9272e6ca1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_737c023928e54c40a285cd04b6267011 = $(`<div id="html_737c023928e54c40a285cd04b6267011" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_7792e71d50344b91897b37f9272e6ca1.setContent(html_737c023928e54c40a285cd04b6267011);
+        
+
+        marker_d9de93da30d54652ac672afd496a70d6.bindPopup(popup_7792e71d50344b91897b37f9272e6ca1)
+        ;
+
+        
+    
+    
+            var marker_c33f7f7087ed4978888b815bd8dd9b8f = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_1185ed6b60ef4333b70f6a58f5c3fd63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd83cdb4321544a8b1eb651263a26910 = $(`<div id="html_cd83cdb4321544a8b1eb651263a26910" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_1185ed6b60ef4333b70f6a58f5c3fd63.setContent(html_cd83cdb4321544a8b1eb651263a26910);
+        
+
+        marker_c33f7f7087ed4978888b815bd8dd9b8f.bindPopup(popup_1185ed6b60ef4333b70f6a58f5c3fd63)
+        ;
+
+        
+    
+    
+            var marker_3ca779b2440a446c857fd56f006643e4 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_ff39de0eda004a5d8448a6846eaba458 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e5c0b46f884453e8a530c512f9839c8 = $(`<div id="html_1e5c0b46f884453e8a530c512f9839c8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_ff39de0eda004a5d8448a6846eaba458.setContent(html_1e5c0b46f884453e8a530c512f9839c8);
+        
+
+        marker_3ca779b2440a446c857fd56f006643e4.bindPopup(popup_ff39de0eda004a5d8448a6846eaba458)
+        ;
+
+        
+    
+    
+            var marker_5e767a41d3b54be1928e284f52927504 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_d2d0648d30d648499eb6eda10f0aa617 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46bf2ea497be4a2f94377ac9a2414960 = $(`<div id="html_46bf2ea497be4a2f94377ac9a2414960" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_d2d0648d30d648499eb6eda10f0aa617.setContent(html_46bf2ea497be4a2f94377ac9a2414960);
+        
+
+        marker_5e767a41d3b54be1928e284f52927504.bindPopup(popup_d2d0648d30d648499eb6eda10f0aa617)
+        ;
+
+        
+    
+    
+            var marker_2ad3f7b3c104499e88461f4d69807261 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_799270baecd9462a9f1ea4a06b06670c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ea4846b882e4004856652e02e47e8b8 = $(`<div id="html_8ea4846b882e4004856652e02e47e8b8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_799270baecd9462a9f1ea4a06b06670c.setContent(html_8ea4846b882e4004856652e02e47e8b8);
+        
+
+        marker_2ad3f7b3c104499e88461f4d69807261.bindPopup(popup_799270baecd9462a9f1ea4a06b06670c)
+        ;
+
+        
+    
+    
+            var marker_dc2952f6b3684d48b3ad5d4d6662aa8b = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_77702084fb6b4c9d93d201b40a5996e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8b293c1c6a942fabbd5808e5dde838c = $(`<div id="html_d8b293c1c6a942fabbd5808e5dde838c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_77702084fb6b4c9d93d201b40a5996e5.setContent(html_d8b293c1c6a942fabbd5808e5dde838c);
+        
+
+        marker_dc2952f6b3684d48b3ad5d4d6662aa8b.bindPopup(popup_77702084fb6b4c9d93d201b40a5996e5)
+        ;
+
+        
+    
+    
+            var marker_fc20b13f61ff4f6983045cbcfef66039 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_458101d8e2c24b40bec4df5b40f30795 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb7bc031cd0846edb438e4094b3a360c = $(`<div id="html_cb7bc031cd0846edb438e4094b3a360c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_458101d8e2c24b40bec4df5b40f30795.setContent(html_cb7bc031cd0846edb438e4094b3a360c);
+        
+
+        marker_fc20b13f61ff4f6983045cbcfef66039.bindPopup(popup_458101d8e2c24b40bec4df5b40f30795)
+        ;
+
+        
+    
+    
+            var marker_40820be39bf2452685e6434d1cf3f174 = L.marker(
+                [9.81, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_f214b88b7f6a40f1a7bfef88ad67af77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f45c3b2f608747309ede2af7abe0fdc6 = $(`<div id="html_f45c3b2f608747309ede2af7abe0fdc6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerros de Turrubares Cerro Turrubares. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1988-01-27 00:00:00+00:00 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Rodríguez, Alexánder</div>`)[0];
+            popup_f214b88b7f6a40f1a7bfef88ad67af77.setContent(html_f45c3b2f608747309ede2af7abe0fdc6);
+        
+
+        marker_40820be39bf2452685e6434d1cf3f174.bindPopup(popup_f214b88b7f6a40f1a7bfef88ad67af77)
+        ;
+
+        
+    
+    
+            var marker_1a2a58349c1847ada96a3adc731d31e6 = L.marker(
+                [10.3, -84.81],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_0aa61e24e9624af6a824cb745587a3cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92a3075a43774471a6c862f92547f19b = $(`<div id="html_92a3075a43774471a6c862f92547f19b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Monteverde. 3 km west on road from Santa Elena to Lagarto, Pacific slope, headwaters of Río Lagarto. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1993-11-04 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|C. Guindon|Danilo Brenes|Marvin Ramírez <strong>Identificadores:</strong> A. Rodríguez</div>`)[0];
+            popup_0aa61e24e9624af6a824cb745587a3cf.setContent(html_92a3075a43774471a6c862f92547f19b);
+        
+
+        marker_1a2a58349c1847ada96a3adc731d31e6.bindPopup(popup_0aa61e24e9624af6a824cb745587a3cf)
+        ;
+
+        
+    
+    
+            var marker_e3825b77639240ada65020f4b2084f7e = L.marker(
+                [9.783333, -84.483333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_21c2808c404c4f439b208a24d71cafb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45a0c8178ecf415c91f646a3ebb7d29e = $(`<div id="html_45a0c8178ecf415c91f646a3ebb7d29e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. Turrubares; Cuenca del Río Grande de Tárcoles; SW spur of Cerro Turrubares, ridge bet. N and S forks of Río Carara. <strong>Elevación:</strong> 975.0 m  <strong>Fecha:</strong> 1993-04-06 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Barry E. Hammel|Rodolfo Zúñiga <strong>Identificadores:</strong> A. Rodríguez (INB)</div>`)[0];
+            popup_21c2808c404c4f439b208a24d71cafb0.setContent(html_45a0c8178ecf415c91f646a3ebb7d29e);
+        
+
+        marker_e3825b77639240ada65020f4b2084f7e.bindPopup(popup_21c2808c404c4f439b208a24d71cafb0)
+        ;
+
+        
+    
+    
+            var marker_c57f067a9c4b4dbfbd5c4f799990ed78 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_5af4e55f9aa546b5821d08d73bf9b602 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c8e793e5c0d4b3fad539e1b6d3a13c3 = $(`<div id="html_7c8e793e5c0d4b3fad539e1b6d3a13c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerro de Turrubares. Cuenca del Tárcoles. Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> A. Rodríguez</div>`)[0];
+            popup_5af4e55f9aa546b5821d08d73bf9b602.setContent(html_7c8e793e5c0d4b3fad539e1b6d3a13c3);
+        
+
+        marker_c57f067a9c4b4dbfbd5c4f799990ed78.bindPopup(popup_5af4e55f9aa546b5821d08d73bf9b602)
+        ;
+
+        
+    
+    
+            var marker_83b74318be7041d0a5ead79a9a004720 = L.marker(
+                [10.3, -84.83333],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_5eb6c144bbd84d318483ef9122c7068c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebf8d5a2d5684e6cb66ae815992df7ed = $(`<div id="html_ebf8d5a2d5684e6cb66ae815992df7ed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuencas del Lagarto y Guacimal. 3.5 km W of Monteverde on road to Lagarto, Los Llanos. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> Alex Rodríguez</div>`)[0];
+            popup_5eb6c144bbd84d318483ef9122c7068c.setContent(html_ebf8d5a2d5684e6cb66ae815992df7ed);
+        
+
+        marker_83b74318be7041d0a5ead79a9a004720.bindPopup(popup_5eb6c144bbd84d318483ef9122c7068c)
+        ;
+
+        
+    
+    
+            var marker_60d9b06741da478283310c1ba175a5ba = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_5fb537edc82645b0b155a2cc61353bfb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d124d62e94f4b26b0e0d34ed997fea1 = $(`<div id="html_1d124d62e94f4b26b0e0d34ed997fea1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerro de Turrubares. Cuenca del Tárcoles. Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Rodríguez|Armando Estrada|Rafael Chacón|Daniel Solano|Armando Soto <strong>Identificadores:</strong> A. Rodríguez</div>`)[0];
+            popup_5fb537edc82645b0b155a2cc61353bfb.setContent(html_1d124d62e94f4b26b0e0d34ed997fea1);
+        
+
+        marker_60d9b06741da478283310c1ba175a5ba.bindPopup(popup_5fb537edc82645b0b155a2cc61353bfb)
+        ;
+
+        
+    
+    
+            var marker_91d909e4f5b24bbcbba15035f740e250 = L.marker(
+                [9.815278, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_085e284a6fed4cff81acff61c324eb03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_638cc0aea22d4183acd88068113d3c33 = $(`<div id="html_638cc0aea22d4183acd88068113d3c33" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerro de Turrubares. Cuenca del Tárcoles. Turrubares, San Luis. Faldas del Cerro Pelón. <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> A. Rodríguez</div>`)[0];
+            popup_085e284a6fed4cff81acff61c324eb03.setContent(html_638cc0aea22d4183acd88068113d3c33);
+        
+
+        marker_91d909e4f5b24bbcbba15035f740e250.bindPopup(popup_085e284a6fed4cff81acff61c324eb03)
+        ;
+
+        
+    
+    
+            var marker_77e605a690cb451b9e748762120378e2 = L.marker(
+                [9.791667, -84.475],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_ffda32824e754b2699a2b5294faeb36b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dae4c202f2024d0b996d3230bdc25447 = $(`<div id="html_dae4c202f2024d0b996d3230bdc25447" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. Cerros de Turrubares, Faldas del Cerro Bares. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1990-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Rodolfo Zúñiga|Gerardo Varela|Quírico Jiménez <strong>Identificadores:</strong> A. Rodríguez</div>`)[0];
+            popup_ffda32824e754b2699a2b5294faeb36b.setContent(html_dae4c202f2024d0b996d3230bdc25447);
+        
+
+        marker_77e605a690cb451b9e748762120378e2.bindPopup(popup_ffda32824e754b2699a2b5294faeb36b)
+        ;
+
+        
+    
+    
+            var marker_b8680e0c4e0c4c6bba4af7dd17b1bb77 = L.marker(
+                [9.8153, -84.48],
+                {}
+            ).addTo(marker_cluster_ac2c0323ab054d4a8efd0da295737a6b);
+        
+    
+        var popup_2148d448fad24dba979f714653b2c264 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbfbeaa3abf049c897ebb04accd5f8f7 = $(`<div id="html_bbfbeaa3abf049c897ebb04accd5f8f7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerro de Turrubares. Cuenca del Tárcoles. Turruares, San Luis. Faldas del Cerro Pelón <strong>Elevación:</strong> 1195.0 m  <strong>Fecha:</strong> 2004-05-19 00:00:00+00:00 <strong>Recolectores:</strong> A. Rodríguez González <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2148d448fad24dba979f714653b2c264.setContent(html_bbfbeaa3abf049c897ebb04accd5f8f7);
+        
+
+        marker_b8680e0c4e0c4c6bba4af7dd17b1bb77.bindPopup(popup_2148d448fad24dba979f714653b2c264)
+        ;
+
+        
+    
+    
+            var layer_control_e4f2041648f24bbbbff3330f9e90bed4 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_cbab2d0d6ea54a5c90385c797c65bb8c,
+                    "ESRI World Imagery" : tile_layer_ffda0ab30ce84999b1d1db9926a0aa1f,
+                },
+                overlays :  {
+                    "macro_element_ac2c0323ab054d4a8efd0da295737a6b" : marker_cluster_ac2c0323ab054d4a8efd0da295737a6b,
+                },
+            };
+            L.control.layers(
+                layer_control_e4f2041648f24bbbbff3330f9e90bed4.base_layers,
+                layer_control_e4f2041648f24bbbbff3330f9e90bed4.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_3ac8c3ef9a024a06bbf6a2c5a822578d);
+            tile_layer_ffda0ab30ce84999b1d1db9926a0aa1f.remove();
+        
+</script>

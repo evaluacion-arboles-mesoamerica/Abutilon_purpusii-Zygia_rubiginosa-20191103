@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bd33a130292445739e5de43e6ec24801 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bd33a130292445739e5de43e6ec24801" ></div>
+        
+</body>
+<script>    
+    
+            var map_bd33a130292445739e5de43e6ec24801 = L.map(
+                "map_bd33a130292445739e5de43e6ec24801",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_bd33a130292445739e5de43e6ec24801);
+
+            
+
+        
+    
+            var tile_layer_4d7284e0fa554737bd10778b78efd9a4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bd33a130292445739e5de43e6ec24801);
+        
+    
+            var tile_layer_00cfacdf41e34ebc9c63fbb0991845ed = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bd33a130292445739e5de43e6ec24801);
+        
+    
+            var marker_cluster_aafaab137265439c96311322ec3eb2d1 = L.markerClusterGroup(
+                {}
+            );
+            map_bd33a130292445739e5de43e6ec24801.addLayer(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+            var marker_3132aeb9f8d246d7b590c71289a6d19e = L.marker(
+                [8.480556, -83.591667],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_754488338ebe421195b3911a542c6038 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2716a21b7f7d4d699d102db27d979fbd = $(`<div id="html_2716a21b7f7d4d699d102db27d979fbd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Sirena. Sendero Laguna Sirena. <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1995-02-27 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_754488338ebe421195b3911a542c6038.setContent(html_2716a21b7f7d4d699d102db27d979fbd);
+        
+
+        marker_3132aeb9f8d246d7b590c71289a6d19e.bindPopup(popup_754488338ebe421195b3911a542c6038)
+        ;
+
+        
+    
+    
+            var marker_032a32eb320d422ca24dbf72f9e75c55 = L.marker(
+                [10.327778, -84.080556],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_7f1decddb1fd4509af582e6089f129ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61c4205e6e1045fca005d9669607c218 = $(`<div id="html_61c4205e6e1045fca005d9669607c218" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación El Ceibo. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1989-10-01 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Tejero; L. Sandoval ; Alexander Rojas <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_7f1decddb1fd4509af582e6089f129ed.setContent(html_61c4205e6e1045fca005d9669607c218);
+        
+
+        marker_032a32eb320d422ca24dbf72f9e75c55.bindPopup(popup_7f1decddb1fd4509af582e6089f129ed)
+        ;
+
+        
+    
+    
+            var marker_6bcb3a4ecc2b481c9b0d958c94988fb0 = L.marker(
+                [10.686111, -84.18055600000001],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_9c3e4e60be93408aadbbe5824a0a6107 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2e277ace4274c19b8d1d14dbddb8968 = $(`<div id="html_c2e277ace4274c19b8d1d14dbddb8968" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 2010-07-22 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_9c3e4e60be93408aadbbe5824a0a6107.setContent(html_c2e277ace4274c19b8d1d14dbddb8968);
+        
+
+        marker_6bcb3a4ecc2b481c9b0d958c94988fb0.bindPopup(popup_9c3e4e60be93408aadbbe5824a0a6107)
+        ;
+
+        
+    
+    
+            var marker_ab5e90a8877548d8a44dc8e13e295721 = L.marker(
+                [10.686111, -84.18055600000001],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_6b90cac24a904f14bc3a33e1d7347d18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dadb2b1d124040d587a410cd4e96ca4a = $(`<div id="html_dadb2b1d124040d587a410cd4e96ca4a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 7 km NE de Boca Tapada, Laguna del Lagarto Lodge. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 2010-07-22 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_6b90cac24a904f14bc3a33e1d7347d18.setContent(html_dadb2b1d124040d587a410cd4e96ca4a);
+        
+
+        marker_ab5e90a8877548d8a44dc8e13e295721.bindPopup(popup_6b90cac24a904f14bc3a33e1d7347d18)
+        ;
+
+        
+    
+    
+            var marker_2cecd5e19484432b998007181a111590 = L.marker(
+                [-2.8833330000000004, -59.97],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_216d93f7f02d4b1883a133585381cffa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcc15595af7b4c649aa466bea3886db6 = $(`<div id="html_bcc15595af7b4c649aa466bea3886db6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Florestal Adolfo Ducke, Igarapé Barro Branco. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1995-11-25 00:00:00+00:00 <strong>Recolectores:</strong> Mike Hopkins <strong>Identificadores:</strong> Prance, G.T.</div>`)[0];
+            popup_216d93f7f02d4b1883a133585381cffa.setContent(html_bcc15595af7b4c649aa466bea3886db6);
+        
+
+        marker_2cecd5e19484432b998007181a111590.bindPopup(popup_216d93f7f02d4b1883a133585381cffa)
+        ;
+
+        
+    
+    
+            var marker_eb2dce534d814901873ac3a7970cb235 = L.marker(
+                [-2.8833330000000004, -59.97],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_ffdd33286740496fa0c2e693573b4c2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8113ca03cf7f4db29919d1d8a629762e = $(`<div id="html_8113ca03cf7f4db29919d1d8a629762e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Florestal Adolfo Ducke, Igarapé do Barro Branco. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1997-05-21 00:00:00+00:00 <strong>Recolectores:</strong> Mike Hopkins <strong>Identificadores:</strong> Prance, G.T.</div>`)[0];
+            popup_ffdd33286740496fa0c2e693573b4c2c.setContent(html_8113ca03cf7f4db29919d1d8a629762e);
+        
+
+        marker_eb2dce534d814901873ac3a7970cb235.bindPopup(popup_ffdd33286740496fa0c2e693573b4c2c)
+        ;
+
+        
+    
+    
+            var marker_5753d2ebae3a40cdac3c9a07cf698d04 = L.marker(
+                [-9.0, -56.0],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_7ebc71c2c9f04dac8085f60ba663f487 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07b268acc7354e7f8aa76cf484eb5164 = $(`<div id="html_07b268acc7354e7f8aa76cf484eb5164" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Teles Pires, ilha perto da balsa do cajueiro e, Alagado, ilhas <strong>Elevación:</strong> 228.0 m  <strong>Fecha:</strong> 2016-09-01 00:00:00+00:00 <strong>Recolectores:</strong> Rocha-Filho, J.A.; Cabral, F.F.; Piva, J.; Piva, L.P. & Piva, T.P. <strong>Identificadores:</strong> Rocha-Filho, JA; Cabral, FF</div>`)[0];
+            popup_7ebc71c2c9f04dac8085f60ba663f487.setContent(html_07b268acc7354e7f8aa76cf484eb5164);
+        
+
+        marker_5753d2ebae3a40cdac3c9a07cf698d04.bindPopup(popup_7ebc71c2c9f04dac8085f60ba663f487)
+        ;
+
+        
+    
+    
+            var marker_c41d296b17944ea9aa11e29844d2f3c2 = L.marker(
+                [-2.88, -59.97],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_a5a84d06dbbc4988bbbe14cf2a47c7cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94b37a4ffdde4c11b6cdae3ffb28d6ef = $(`<div id="html_94b37a4ffdde4c11b6cdae3ffb28d6ef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1997-05-21 00:00:00+00:00 <strong>Recolectores:</strong> Cynthia A. Sothers|P. A. Costa Lima Assunção|C. Fernandes da Silva <strong>Identificadores:</strong> Prance G.T. 97</div>`)[0];
+            popup_a5a84d06dbbc4988bbbe14cf2a47c7cb.setContent(html_94b37a4ffdde4c11b6cdae3ffb28d6ef);
+        
+
+        marker_c41d296b17944ea9aa11e29844d2f3c2.bindPopup(popup_a5a84d06dbbc4988bbbe14cf2a47c7cb)
+        ;
+
+        
+    
+    
+            var marker_bcddc183390c445a9b7d78e096432109 = L.marker(
+                [5.33, -58.58],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_2b99745afeb64251a62ee8c88bdd0485 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_876fc8d7526c4f99b48a79ac75712a50 = $(`<div id="html_876fc8d7526c4f99b48a79ac75712a50" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1986-09-17 00:00:00+00:00 <strong>Recolectores:</strong> John James Pipoly, III|Rudolph Boyan <strong>Identificadores:</strong> G.T. Prance</div>`)[0];
+            popup_2b99745afeb64251a62ee8c88bdd0485.setContent(html_876fc8d7526c4f99b48a79ac75712a50);
+        
+
+        marker_bcddc183390c445a9b7d78e096432109.bindPopup(popup_2b99745afeb64251a62ee8c88bdd0485)
+        ;
+
+        
+    
+    
+            var marker_be27b27cc935404b88ffbd3be186c465 = L.marker(
+                [-2.41, -59.73],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_3b471e95f54a4ce6a4541a6a4c859293 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73688d6974564bc7a2704cf4fbc8900a = $(`<div id="html_73688d6974564bc7a2704cf4fbc8900a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 87.5 m  <strong>Fecha:</strong> 1990-07-15 00:00:00+00:00 <strong>Recolectores:</strong> Scott A. Mori <strong>Identificadores:</strong> G.T. Prance</div>`)[0];
+            popup_3b471e95f54a4ce6a4541a6a4c859293.setContent(html_73688d6974564bc7a2704cf4fbc8900a);
+        
+
+        marker_be27b27cc935404b88ffbd3be186c465.bindPopup(popup_3b471e95f54a4ce6a4541a6a4c859293)
+        ;
+
+        
+    
+    
+            var marker_5ff01a206719465aa2b258e866b40b30 = L.marker(
+                [3.0, -51.5],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_5020901af3a14ca1a4a6a22b78ba595f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9aaeb638994f4ba1aee3147a7e2198fe = $(`<div id="html_9aaeb638994f4ba1aee3147a7e2198fe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1984-12-06 00:00:00+00:00 <strong>Recolectores:</strong> Scott A. Mori|et al. <strong>Identificadores:</strong> G.T. Prance</div>`)[0];
+            popup_5020901af3a14ca1a4a6a22b78ba595f.setContent(html_9aaeb638994f4ba1aee3147a7e2198fe);
+        
+
+        marker_5ff01a206719465aa2b258e866b40b30.bindPopup(popup_5020901af3a14ca1a4a6a22b78ba595f)
+        ;
+
+        
+    
+    
+            var marker_3ab90ca85b8341fb8863ea12958a6f3d = L.marker(
+                [5.3333330000000005, -58.583332999999996],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_33a604ae6df34a428681fe7ca822cf6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3378063fb0604939bf5fe746ff5edecc = $(`<div id="html_3378063fb0604939bf5fe746ff5edecc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper demerara Region, Mabura hill, Eperu forest on deep white sands. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1986-09-17 00:00:00+00:00 <strong>Recolectores:</strong> Pipoly JJ; Boyan R <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_33a604ae6df34a428681fe7ca822cf6e.setContent(html_3378063fb0604939bf5fe746ff5edecc);
+        
+
+        marker_3ab90ca85b8341fb8863ea12958a6f3d.bindPopup(popup_33a604ae6df34a428681fe7ca822cf6e)
+        ;
+
+        
+    
+    
+            var marker_da9223279d4741dbb7bc6f9facf3d1aa = L.marker(
+                [3.0, -51.5],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_14f4925e652c4864b98701593a5dc762 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24c67c430f2744a0a7697dc3b7a01cd9 = $(`<div id="html_24c67c430f2744a0a7697dc3b7a01cd9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Oiapoque <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1984-12-06 00:00:00+00:00 <strong>Recolectores:</strong> Mori, S.A.; Cardoso, J. <strong>Identificadores:</strong> Prance, G.T.</div>`)[0];
+            popup_14f4925e652c4864b98701593a5dc762.setContent(html_24c67c430f2744a0a7697dc3b7a01cd9);
+        
+
+        marker_da9223279d4741dbb7bc6f9facf3d1aa.bindPopup(popup_14f4925e652c4864b98701593a5dc762)
+        ;
+
+        
+    
+    
+            var marker_4cc0e6bc51d4476fb56e9438359b72dd = L.marker(
+                [10.37, -84.03],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_b095e736cf294b5aba5918a00065c101 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5dbd14773c64a128f3c238f2398f1af = $(`<div id="html_c5dbd14773c64a128f3c238f2398f1af" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Estación El Ceibo, <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1989-10-01 00:00:00+00:00 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Prance, G.</div>`)[0];
+            popup_b095e736cf294b5aba5918a00065c101.setContent(html_c5dbd14773c64a128f3c238f2398f1af);
+        
+
+        marker_4cc0e6bc51d4476fb56e9438359b72dd.bindPopup(popup_b095e736cf294b5aba5918a00065c101)
+        ;
+
+        
+    
+    
+            var marker_ca8609ca053748c896e3162e12844541 = L.marker(
+                [8.48, -83.59],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_690339fc1ca1467ca669804c3dc0a000 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cfef5a1c3f443fe9d9f3398c1f7aa0a = $(`<div id="html_3cfef5a1c3f443fe9d9f3398c1f7aa0a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado Sirena, Sendero Espaveles <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1995-02-27 00:00:00+00:00 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_690339fc1ca1467ca669804c3dc0a000.setContent(html_3cfef5a1c3f443fe9d9f3398c1f7aa0a);
+        
+
+        marker_ca8609ca053748c896e3162e12844541.bindPopup(popup_690339fc1ca1467ca669804c3dc0a000)
+        ;
+
+        
+    
+    
+            var marker_7061c9d51a6f4d25beba58a3e54be165 = L.marker(
+                [8.73, -83.45],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_97786e7b145a48b096389f8ce7eeca4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0ea612be03348ce921175560a0a58d0 = $(`<div id="html_a0ea612be03348ce921175560a0a58d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Golfo Dulce Bahia Chal, junto a la estación. Cuenca Térraba- Sierpe. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_97786e7b145a48b096389f8ce7eeca4d.setContent(html_a0ea612be03348ce921175560a0a58d0);
+        
+
+        marker_7061c9d51a6f4d25beba58a3e54be165.bindPopup(popup_97786e7b145a48b096389f8ce7eeca4d)
+        ;
+
+        
+    
+    
+            var marker_440b1bbc822346d6abb5486a76bdcee0 = L.marker(
+                [5.3333330000000005, -58.583332999999996],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_f4f9015ba06649e59b2964a854b9b7f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d892b62a6da46479a80005af0422816 = $(`<div id="html_9d892b62a6da46479a80005af0422816" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No locality information available <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1986-09-17 00:00:00+00:00 <strong>Recolectores:</strong> J. J. Pipoly, with: Rudolf Boyan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f4f9015ba06649e59b2964a854b9b7f5.setContent(html_9d892b62a6da46479a80005af0422816);
+        
+
+        marker_440b1bbc822346d6abb5486a76bdcee0.bindPopup(popup_f4f9015ba06649e59b2964a854b9b7f5)
+        ;
+
+        
+    
+    
+            var marker_24b293a034e7463697b440083472090d = L.marker(
+                [5.33333, -58.5833],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_586d9d2f8ec54fd0a6ccb553d002de8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b134895d1e9d47819d1f483cf0ade7eb = $(`<div id="html_b134895d1e9d47819d1f483cf0ade7eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mabura  Hill <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1986-09-17 00:00:00+00:00 <strong>Recolectores:</strong> J. J. Pipoly & R. Boyan <strong>Identificadores:</strong> Prance, G. T.</div>`)[0];
+            popup_586d9d2f8ec54fd0a6ccb553d002de8b.setContent(html_b134895d1e9d47819d1f483cf0ade7eb);
+        
+
+        marker_24b293a034e7463697b440083472090d.bindPopup(popup_586d9d2f8ec54fd0a6ccb553d002de8b)
+        ;
+
+        
+    
+    
+            var marker_d19e4f0baa2d4b1f800ec879df521606 = L.marker(
+                [8.066934, -76.13508900000001],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_a55adf1ff3bd4442a3cb93b5c2696398 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3c3130584314f8f806aced91b0bac01 = $(`<div id="html_f3c3130584314f8f806aced91b0bac01" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Sinú, 3 horas en canoa desde Frasquillo <strong>Elevación:</strong> 120.0 m  <strong>Fecha:</strong> 1988-07-26 00:00:00+00:00 <strong>Recolectores:</strong> Hermes Cuadros; Alwyn Gentry <strong>Identificadores:</strong> G. Prance</div>`)[0];
+            popup_a55adf1ff3bd4442a3cb93b5c2696398.setContent(html_f3c3130584314f8f806aced91b0bac01);
+        
+
+        marker_d19e4f0baa2d4b1f800ec879df521606.bindPopup(popup_a55adf1ff3bd4442a3cb93b5c2696398)
+        ;
+
+        
+    
+    
+            var marker_dbbc86d51d3f462094ca354f11fe6fb9 = L.marker(
+                [3.0, -51.5],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_81d08bbf15744230ab667719ffae77dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_229fb4d71de84294a4cf43812d85175b = $(`<div id="html_229fb4d71de84294a4cf43812d85175b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Oiapoque, BR156, 109 km SSE of Oiapoque on road between Oiapoque and Calcoene <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1984-12-06 00:00:00+00:00 <strong>Recolectores:</strong> S. A. Mori & J. A. Cardoso <strong>Identificadores:</strong> G. T. Prance</div>`)[0];
+            popup_81d08bbf15744230ab667719ffae77dc.setContent(html_229fb4d71de84294a4cf43812d85175b);
+        
+
+        marker_dbbc86d51d3f462094ca354f11fe6fb9.bindPopup(popup_81d08bbf15744230ab667719ffae77dc)
+        ;
+
+        
+    
+    
+            var marker_08c43005aa314ff1b9a4d7ecd83b0a89 = L.marker(
+                [10.5, -84.0],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_af08849015ed4b2ead4e13166c7ffde0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bea69cbbd10a410d9a880276c9da9dbf = $(`<div id="html_bea69cbbd10a410d9a880276c9da9dbf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-10-01 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_af08849015ed4b2ead4e13166c7ffde0.setContent(html_bea69cbbd10a410d9a880276c9da9dbf);
+        
+
+        marker_08c43005aa314ff1b9a4d7ecd83b0a89.bindPopup(popup_af08849015ed4b2ead4e13166c7ffde0)
+        ;
+
+        
+    
+    
+            var marker_5aa452c653754753bd0683a46755a551 = L.marker(
+                [-5.0, -63.0],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_0dbb284d3cda469498d463371b56a6c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7f1862005cf4ac9a3114f7d1ad459ee = $(`<div id="html_a7f1862005cf4ac9a3114f7d1ad459ee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-07-15 00:00:00+00:00 <strong>Recolectores:</strong> S. A. Mori <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_0dbb284d3cda469498d463371b56a6c0.setContent(html_a7f1862005cf4ac9a3114f7d1ad459ee);
+        
+
+        marker_5aa452c653754753bd0683a46755a551.bindPopup(popup_0dbb284d3cda469498d463371b56a6c0)
+        ;
+
+        
+    
+    
+            var marker_61d0b6d52bbb444680aa2985620c5e60 = L.marker(
+                [9.72, -84.39],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_e860ebf6b6604d8396066b56503a53ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da9f5c14606648dda94a486256678aad = $(`<div id="html_da9f5c14606648dda94a486256678aad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 920.0 m  <strong>Fecha:</strong> 1995-04-20 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> G.T. Prance (K)</div>`)[0];
+            popup_e860ebf6b6604d8396066b56503a53ce.setContent(html_da9f5c14606648dda94a486256678aad);
+        
+
+        marker_61d0b6d52bbb444680aa2985620c5e60.bindPopup(popup_e860ebf6b6604d8396066b56503a53ce)
+        ;
+
+        
+    
+    
+            var marker_1d4495f4da7e436fa100e5b04021f4f8 = L.marker(
+                [3.0, -51.5],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_75e46ca935f8485a8b4fd76da197f25d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e98e74a9bab4a8d82623f745e022725 = $(`<div id="html_4e98e74a9bab4a8d82623f745e022725" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> BR156, 109 km SSE of Oiapoque on road between Oiapoque and Calçoene <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1984-12-06 00:00:00+00:00 <strong>Recolectores:</strong> S. A. Mori <strong>Identificadores:</strong> G. T. Prance</div>`)[0];
+            popup_75e46ca935f8485a8b4fd76da197f25d.setContent(html_4e98e74a9bab4a8d82623f745e022725);
+        
+
+        marker_1d4495f4da7e436fa100e5b04021f4f8.bindPopup(popup_75e46ca935f8485a8b4fd76da197f25d)
+        ;
+
+        
+    
+    
+            var marker_cf7dd16c0ffe4f109d97ba279375b129 = L.marker(
+                [-2.41625, -59.745830000000005],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_8bb0c2d72a02473eaa3f66078129cc63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efdc3e44eaa1455d98de31cfce0af5cc = $(`<div id="html_efdc3e44eaa1455d98de31cfce0af5cc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito Agropecuário, Reserve 1501 (Km 41) of the Smithsonian/INPA Biological Dynamics of Forest Fragments Project. <strong>Elevación:</strong> 87.5 m  <strong>Fecha:</strong> 1990-07-15 00:00:00+00:00 <strong>Recolectores:</strong> S. A. Mori <strong>Identificadores:</strong> G. T. Prance</div>`)[0];
+            popup_8bb0c2d72a02473eaa3f66078129cc63.setContent(html_efdc3e44eaa1455d98de31cfce0af5cc);
+        
+
+        marker_cf7dd16c0ffe4f109d97ba279375b129.bindPopup(popup_8bb0c2d72a02473eaa3f66078129cc63)
+        ;
+
+        
+    
+    
+            var marker_76f426b24ab04ed6905727fee9819d02 = L.marker(
+                [6.2, -58.57],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_215fd218a77b4edca5b13955e32c9d42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ecdc42933c24641b2589d53ae741c24 = $(`<div id="html_4ecdc42933c24641b2589d53ae741c24" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1929-08-28 00:00:00+00:00 <strong>Recolectores:</strong> Noel Y. Sandwith <strong>Identificadores:</strong> G.T. Prance</div>`)[0];
+            popup_215fd218a77b4edca5b13955e32c9d42.setContent(html_4ecdc42933c24641b2589d53ae741c24);
+        
+
+        marker_76f426b24ab04ed6905727fee9819d02.bindPopup(popup_215fd218a77b4edca5b13955e32c9d42)
+        ;
+
+        
+    
+    
+            var marker_5fbfd6646ee14cfb829af1ee5153a61a = L.marker(
+                [7.75, -60.12],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_e1a707d75ed545ac8d2e59ea875ad16b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a28c8572a0aa467a9680a098f5819ae0 = $(`<div id="html_a28c8572a0aa467a9680a098f5819ae0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1990-10-28 00:00:00+00:00 <strong>Recolectores:</strong> M. Polak|A.R.A. Görts-van Rijn|R.B. Balkisoon|S. Roberts|H. Steinecke <strong>Identificadores:</strong> G.T. Prance (NY)</div>`)[0];
+            popup_e1a707d75ed545ac8d2e59ea875ad16b.setContent(html_a28c8572a0aa467a9680a098f5819ae0);
+        
+
+        marker_5fbfd6646ee14cfb829af1ee5153a61a.bindPopup(popup_e1a707d75ed545ac8d2e59ea875ad16b)
+        ;
+
+        
+    
+    
+            var marker_c95a2cbe13754959b17f7752755b9310 = L.marker(
+                [8.85, -80.64],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_e0a36a3931dd4af89cbdd661256193dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09c4afd9fb09478d963b5b3a981ffe5f = $(`<div id="html_09c4afd9fb09478d963b5b3a981ffe5f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-08-29 00:00:00+00:00 <strong>Recolectores:</strong> N. Guerrero <strong>Identificadores:</strong> G. McPherson (MO)</div>`)[0];
+            popup_e0a36a3931dd4af89cbdd661256193dc.setContent(html_09c4afd9fb09478d963b5b3a981ffe5f);
+        
+
+        marker_c95a2cbe13754959b17f7752755b9310.bindPopup(popup_e0a36a3931dd4af89cbdd661256193dc)
+        ;
+
+        
+    
+    
+            var marker_1a1ec1658d9741ccab6eb074e08969bd = L.marker(
+                [5.25, -58.75],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_0f3f3f6b89794b48893e062a13018127 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_758439f69ca34f9e99937fdaf1517109 = $(`<div id="html_758439f69ca34f9e99937fdaf1517109" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-01-10 00:00:00+00:00 <strong>Recolectores:</strong> M. Polak <strong>Identificadores:</strong> G.T. Prance</div>`)[0];
+            popup_0f3f3f6b89794b48893e062a13018127.setContent(html_758439f69ca34f9e99937fdaf1517109);
+        
+
+        marker_1a1ec1658d9741ccab6eb074e08969bd.bindPopup(popup_0f3f3f6b89794b48893e062a13018127)
+        ;
+
+        
+    
+    
+            var marker_1d8b5e2673ab41fea87f247d05f34e38 = L.marker(
+                [5.33, -53.0],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_2065f7a82ad84810ae351559b52067a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3bed75656f54fd1bf1d91b0588e152b = $(`<div id="html_f3bed75656f54fd1bf1d91b0588e152b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-09-18 00:00:00+00:00 <strong>Recolectores:</strong> D. Sabatier <strong>Identificadores:</strong> G.T. Prance</div>`)[0];
+            popup_2065f7a82ad84810ae351559b52067a3.setContent(html_f3bed75656f54fd1bf1d91b0588e152b);
+        
+
+        marker_1d8b5e2673ab41fea87f247d05f34e38.bindPopup(popup_2065f7a82ad84810ae351559b52067a3)
+        ;
+
+        
+    
+    
+            var marker_c7fbf8438523477ba643916807276692 = L.marker(
+                [-9.891389, -55.995943999999994],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_858dfed7e9cd4ec6af771d5916f1da3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d82050fb257143ff83a97b731707ef53 = $(`<div id="html_d82050fb257143ff83a97b731707ef53" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fragmento III, Terra firme. <strong>Elevación:</strong> 285.0 m  <strong>Fecha:</strong> 2014-01-30 00:00:00+00:00 <strong>Recolectores:</strong> Spletozer, A. .G.; Santos, E. .A.; Rodrigues, L.; Oliveira, O. .F. & <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_858dfed7e9cd4ec6af771d5916f1da3a.setContent(html_d82050fb257143ff83a97b731707ef53);
+        
+
+        marker_c7fbf8438523477ba643916807276692.bindPopup(popup_858dfed7e9cd4ec6af771d5916f1da3a)
+        ;
+
+        
+    
+    
+            var marker_7dd1591704c34cc5ba6b5f15bf603f84 = L.marker(
+                [3.0, -51.5],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_b7e5f5beaa5c47b499d4195b32187e84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7132834949bf42579b826779c35a1c57 = $(`<div id="html_7132834949bf42579b826779c35a1c57" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> BR156, 109km SSE of Oiapoque on road between Oiapoque and Calçoene <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1984-12-06 00:00:00+00:00 <strong>Recolectores:</strong> S. A. Mori, J. Cardoso & J. Reitsma <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b7e5f5beaa5c47b499d4195b32187e84.setContent(html_7132834949bf42579b826779c35a1c57);
+        
+
+        marker_7dd1591704c34cc5ba6b5f15bf603f84.bindPopup(popup_b7e5f5beaa5c47b499d4195b32187e84)
+        ;
+
+        
+    
+    
+            var marker_1a4dc401120c484a8cfd133fb80ae9f8 = L.marker(
+                [5.33333, -58.583330000000004],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_7258a62e53e94b7caaf9666a921f9ce0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_759e043e38e044f2bb15f13a8dbf3b01 = $(`<div id="html_759e043e38e044f2bb15f13a8dbf3b01" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Demerara Region: Mabura Hill; Eperua forest on deep whtie sands. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1986-09-17 00:00:00+00:00 <strong>Recolectores:</strong> J.J. Pipoly; Rudolf Boyan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7258a62e53e94b7caaf9666a921f9ce0.setContent(html_759e043e38e044f2bb15f13a8dbf3b01);
+        
+
+        marker_1a4dc401120c484a8cfd133fb80ae9f8.bindPopup(popup_7258a62e53e94b7caaf9666a921f9ce0)
+        ;
+
+        
+    
+    
+            var marker_2a0256e472aa4c6f8b50e58dfe9484aa = L.marker(
+                [8.82, -75.85],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_343cefce45cc4d6c987ebeedbb922de3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_472b0569e2d0440d80a42a4169f62375 = $(`<div id="html_472b0569e2d0440d80a42a4169f62375" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 160.0 m  <strong>Fecha:</strong> 1988-07-26 00:00:00+00:00 <strong>Recolectores:</strong> Hermes Cuadros V. <strong>Identificadores:</strong> G.T. Prance (K)</div>`)[0];
+            popup_343cefce45cc4d6c987ebeedbb922de3.setContent(html_472b0569e2d0440d80a42a4169f62375);
+        
+
+        marker_2a0256e472aa4c6f8b50e58dfe9484aa.bindPopup(popup_343cefce45cc4d6c987ebeedbb922de3)
+        ;
+
+        
+    
+    
+            var marker_0ed33784bce348a18f9e5fdb6c309a3c = L.marker(
+                [8.46, -83.58],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_bfaec37f12d444d59b6add77de9d9c1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3572b45a649433a87e2f72e6e48d42f = $(`<div id="html_d3572b45a649433a87e2f72e6e48d42f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1995-01-01 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_bfaec37f12d444d59b6add77de9d9c1f.setContent(html_d3572b45a649433a87e2f72e6e48d42f);
+        
+
+        marker_0ed33784bce348a18f9e5fdb6c309a3c.bindPopup(popup_bfaec37f12d444d59b6add77de9d9c1f)
+        ;
+
+        
+    
+    
+            var marker_c00a47133ebc4fed8d536d1475eb7d97 = L.marker(
+                [10.37, -84.04],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_3e1ebe0a2411415fb8c9d92b1eefcfbd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa203357287842ca8322a920bd517f5a = $(`<div id="html_aa203357287842ca8322a920bd517f5a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1989-10-01 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> G.T. Prance</div>`)[0];
+            popup_3e1ebe0a2411415fb8c9d92b1eefcfbd.setContent(html_aa203357287842ca8322a920bd517f5a);
+        
+
+        marker_c00a47133ebc4fed8d536d1475eb7d97.bindPopup(popup_3e1ebe0a2411415fb8c9d92b1eefcfbd)
+        ;
+
+        
+    
+    
+            var marker_17f0840f0d794e9cacc68cf24dd2175e = L.marker(
+                [3.0, -51.5],
+                {}
+            ).addTo(marker_cluster_aafaab137265439c96311322ec3eb2d1);
+        
+    
+        var popup_c970061e3673430db87cf19d190ae541 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1c1ea13b3764b16a71bc74d2fb232ca = $(`<div id="html_f1c1ea13b3764b16a71bc74d2fb232ca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> BR 156, 109 km SSE of Oiapoque on road between Oiapoque and Calçoene. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1984-12-06 00:00:00+00:00 <strong>Recolectores:</strong> Mori, S.A. <strong>Identificadores:</strong> Prance, G.T.</div>`)[0];
+            popup_c970061e3673430db87cf19d190ae541.setContent(html_f1c1ea13b3764b16a71bc74d2fb232ca);
+        
+
+        marker_17f0840f0d794e9cacc68cf24dd2175e.bindPopup(popup_c970061e3673430db87cf19d190ae541)
+        ;
+
+        
+    
+    
+            var layer_control_a367231737cb4bf0a8f8f8fe60ebc8eb = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_4d7284e0fa554737bd10778b78efd9a4,
+                    "ESRI World Imagery" : tile_layer_00cfacdf41e34ebc9c63fbb0991845ed,
+                },
+                overlays :  {
+                    "macro_element_aafaab137265439c96311322ec3eb2d1" : marker_cluster_aafaab137265439c96311322ec3eb2d1,
+                },
+            };
+            L.control.layers(
+                layer_control_a367231737cb4bf0a8f8f8fe60ebc8eb.base_layers,
+                layer_control_a367231737cb4bf0a8f8f8fe60ebc8eb.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_bd33a130292445739e5de43e6ec24801);
+            tile_layer_00cfacdf41e34ebc9c63fbb0991845ed.remove();
+        
+</script>

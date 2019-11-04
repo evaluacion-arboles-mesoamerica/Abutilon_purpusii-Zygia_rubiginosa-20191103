@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_24574bd27f504d3c8c41383d81f4b925 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_24574bd27f504d3c8c41383d81f4b925" ></div>
+        
+</body>
+<script>    
+    
+            var map_24574bd27f504d3c8c41383d81f4b925 = L.map(
+                "map_24574bd27f504d3c8c41383d81f4b925",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_24574bd27f504d3c8c41383d81f4b925);
+
+            
+
+        
+    
+            var tile_layer_c472964adbc543f3ba3e5054dda175df = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_24574bd27f504d3c8c41383d81f4b925);
+        
+    
+            var tile_layer_59192daad54a481c8336ba3dc25428db = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_24574bd27f504d3c8c41383d81f4b925);
+        
+    
+            var marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4 = L.markerClusterGroup(
+                {}
+            );
+            map_24574bd27f504d3c8c41383d81f4b925.addLayer(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+            var marker_7348037a4d1d4a8aab5d770e3ee5052b = L.marker(
+                [9.715278, -84.231111],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_35dc8d549e7d4288bfc95b25540339a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_567eb46e1df74e35a435d21855b325b9 = $(`<div id="html_567eb46e1df74e35a435d21855b325b9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque primario residual en el Rio Tiquires, camino a Zoncuano. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1997-01-28 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Michael H. Grayum ; Juan Francisco Morales Quirós <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_35dc8d549e7d4288bfc95b25540339a4.setContent(html_567eb46e1df74e35a435d21855b325b9);
+        
+
+        marker_7348037a4d1d4a8aab5d770e3ee5052b.bindPopup(popup_35dc8d549e7d4288bfc95b25540339a4)
+        ;
+
+        
+    
+    
+            var marker_9e0277004bba4f3e8028dc4ab95a9b2e = L.marker(
+                [10.266667, -84.833333],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_ffe119c724ee45cfbe102c386dc24584 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54bdebacb6d741b0895c04da6c862378 = $(`<div id="html_54bdebacb6d741b0895c04da6c862378" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, San Luis Valley, 1-2 km downstream from village of San Luis along Rio Guacimal. Jose Rojas  farm. <strong>Elevación:</strong> 685.0 m  <strong>Fecha:</strong> 1992-05-30 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Evans, Randy</div>`)[0];
+            popup_ffe119c724ee45cfbe102c386dc24584.setContent(html_54bdebacb6d741b0895c04da6c862378);
+        
+
+        marker_9e0277004bba4f3e8028dc4ab95a9b2e.bindPopup(popup_ffe119c724ee45cfbe102c386dc24584)
+        ;
+
+        
+    
+    
+            var marker_db6b8df9a0c2437f9f47e11ca8eeeb9b = L.marker(
+                [8.966667, -83.458333],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_7381a9037adc4f579503e842138f3f5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_705a6c109b614a58bfbac65cb53ab1d6 = $(`<div id="html_705a6c109b614a58bfbac65cb53ab1d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> S slope of Fila Retinto, ca. 1.5 Km NNW of Palmar Norte. <strong>Elevación:</strong> 260.0 m  <strong>Fecha:</strong> 1990-07-09 00:00:00+00:00 <strong>Recolectores:</strong> Randy Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7381a9037adc4f579503e842138f3f5e.setContent(html_705a6c109b614a58bfbac65cb53ab1d6);
+        
+
+        marker_db6b8df9a0c2437f9f47e11ca8eeeb9b.bindPopup(popup_7381a9037adc4f579503e842138f3f5e)
+        ;
+
+        
+    
+    
+            var marker_f92cd2c81d8b4a068929752635c6cae1 = L.marker(
+                [8.683333, -82.93333299999999],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_a0a6d36b366846c0ba3d539b6bd9b8c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1655672c9a64917ad82de3ce64366ad = $(`<div id="html_c1655672c9a64917ad82de3ce64366ad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 8.2 km N of Ciudad Neily, NE slope of Fila de Cal. <strong>Elevación:</strong> 580.0 m  <strong>Fecha:</strong> 1989-09-19 00:00:00+00:00 <strong>Recolectores:</strong> Randy Evans <strong>Identificadores:</strong> Evans, Randy</div>`)[0];
+            popup_a0a6d36b366846c0ba3d539b6bd9b8c0.setContent(html_c1655672c9a64917ad82de3ce64366ad);
+        
+
+        marker_f92cd2c81d8b4a068929752635c6cae1.bindPopup(popup_a0a6d36b366846c0ba3d539b6bd9b8c0)
+        ;
+
+        
+    
+    
+            var marker_37c23771113b4d06b82f86cab504e87b = L.marker(
+                [9.822222, -84.563889],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_0e5a10021de142a7950db22518786fc5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2608043f3d94cb49f717261473cb923 = $(`<div id="html_c2608043f3d94cb49f717261473cb923" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1996-07-23 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez; Eduardo Lepiz ; Rodolfo Zúñiga <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_0e5a10021de142a7950db22518786fc5.setContent(html_c2608043f3d94cb49f717261473cb923);
+        
+
+        marker_37c23771113b4d06b82f86cab504e87b.bindPopup(popup_0e5a10021de142a7950db22518786fc5)
+        ;
+
+        
+    
+    
+            var marker_5be83f8bab294361a3f9aa523d95f318 = L.marker(
+                [9.822222, -84.563889],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_1a4675eeaba44230baa31df400185804 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b221a4962814c76b144fdf22718a3f4 = $(`<div id="html_6b221a4962814c76b144fdf22718a3f4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1996-07-23 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez; Eduardo Lepiz ; Rodolfo Zúñiga <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_1a4675eeaba44230baa31df400185804.setContent(html_6b221a4962814c76b144fdf22718a3f4);
+        
+
+        marker_5be83f8bab294361a3f9aa523d95f318.bindPopup(popup_1a4675eeaba44230baa31df400185804)
+        ;
+
+        
+    
+    
+            var marker_cc5bc6a005b345bf9cc1fd3b6534bc3f = L.marker(
+                [9.822222, -84.563889],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_355a1d28ad72461ba041a50644af8ae7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48b3257e2b2b40e4aa421e784cba2488 = $(`<div id="html_48b3257e2b2b40e4aa421e784cba2488" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1996-07-23 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez; Eduardo Lepiz ; Rodolfo Zúñiga <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_355a1d28ad72461ba041a50644af8ae7.setContent(html_48b3257e2b2b40e4aa421e784cba2488);
+        
+
+        marker_cc5bc6a005b345bf9cc1fd3b6534bc3f.bindPopup(popup_355a1d28ad72461ba041a50644af8ae7)
+        ;
+
+        
+    
+    
+            var marker_ce3b4089dc974afd89148d6a8641e72a = L.marker(
+                [9.822222, -84.563889],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_2a57dab4d20a4bc3a2f34387746276a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e1746b327a34654a2d0834e704f64dc = $(`<div id="html_3e1746b327a34654a2d0834e704f64dc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1996-07-23 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez; Eduardo Lepiz ; Rodolfo Zúñiga <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_2a57dab4d20a4bc3a2f34387746276a6.setContent(html_3e1746b327a34654a2d0834e704f64dc);
+        
+
+        marker_ce3b4089dc974afd89148d6a8641e72a.bindPopup(popup_2a57dab4d20a4bc3a2f34387746276a6)
+        ;
+
+        
+    
+    
+            var marker_15137e3c09a04687b544f498291b50c4 = L.marker(
+                [9.802778, -84.583333],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_dcaf229075f84f05bfd909687f43c564 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8b4b69063024857b023b54f2eb64c89 = $(`<div id="html_e8b4b69063024857b023b54f2eb64c89" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector camino a Coope-Carara, R. L. Sitio Quebrada Seca. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-08-28 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum; Quirico Jiménez ; Barry Hammel ; Eduardo Lepiz <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_dcaf229075f84f05bfd909687f43c564.setContent(html_e8b4b69063024857b023b54f2eb64c89);
+        
+
+        marker_15137e3c09a04687b544f498291b50c4.bindPopup(popup_dcaf229075f84f05bfd909687f43c564)
+        ;
+
+        
+    
+    
+            var marker_76a54258982943a28b561098690f2afe = L.marker(
+                [9.805556, -84.580556],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_b44f945fece348bcb038ef20a6403bcf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1d4fcbe1173425ebce4f88392b3ea41 = $(`<div id="html_c1d4fcbe1173425ebce4f88392b3ea41" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Coopecarara RL. Sitio Quebrada Alcantarilla. <strong>Elevación:</strong> 170.0 m  <strong>Fecha:</strong> 2000-03-29 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Acosta, L.</div>`)[0];
+            popup_b44f945fece348bcb038ef20a6403bcf.setContent(html_c1d4fcbe1173425ebce4f88392b3ea41);
+        
+
+        marker_76a54258982943a28b561098690f2afe.bindPopup(popup_b44f945fece348bcb038ef20a6403bcf)
+        ;
+
+        
+    
+    
+            var marker_bf90d8948a4e46e6a0ad8f5208f1e12b = L.marker(
+                [9.805556, -84.580556],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_00814180fd9d45829989cc32fd20188a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56cc3b0f9f604e1787817412c72cfe56 = $(`<div id="html_56cc3b0f9f604e1787817412c72cfe56" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Coopecarara RL. Sitio Quebrada Alcantarilla. <strong>Elevación:</strong> 170.0 m  <strong>Fecha:</strong> 2000-03-29 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Acosta, L.</div>`)[0];
+            popup_00814180fd9d45829989cc32fd20188a.setContent(html_56cc3b0f9f604e1787817412c72cfe56);
+        
+
+        marker_bf90d8948a4e46e6a0ad8f5208f1e12b.bindPopup(popup_00814180fd9d45829989cc32fd20188a)
+        ;
+
+        
+    
+    
+            var marker_2e2b49399b61495292bcc22098553227 = L.marker(
+                [9.805556, -84.580556],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_10571a413e5245068af0c1f039b48c0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3e4bf1153d84c5a92448d8cfab88323 = $(`<div id="html_a3e4bf1153d84c5a92448d8cfab88323" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Coopecarara RL. Sitio Quebrada Alcantarilla. <strong>Elevación:</strong> 170.0 m  <strong>Fecha:</strong> 2000-03-29 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Acosta, L.</div>`)[0];
+            popup_10571a413e5245068af0c1f039b48c0a.setContent(html_a3e4bf1153d84c5a92448d8cfab88323);
+        
+
+        marker_2e2b49399b61495292bcc22098553227.bindPopup(popup_10571a413e5245068af0c1f039b48c0a)
+        ;
+
+        
+    
+    
+            var marker_bfe359fb44b04771a2eded2823d91dbf = L.marker(
+                [9.715278, -84.238889],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_a88a77a3fd184ec5a68f0fdd4202c526 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a01dcfd7833e466da79bb0208d57f2c3 = $(`<div id="html_a01dcfd7833e466da79bb0208d57f2c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Acosta, Zoncuano, ro tiquires, cerca del puente, aguas arriba. <strong>Elevación:</strong> 575.0 m  <strong>Fecha:</strong> 2001-05-20 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_a88a77a3fd184ec5a68f0fdd4202c526.setContent(html_a01dcfd7833e466da79bb0208d57f2c3);
+        
+
+        marker_bfe359fb44b04771a2eded2823d91dbf.bindPopup(popup_a88a77a3fd184ec5a68f0fdd4202c526)
+        ;
+
+        
+    
+    
+            var marker_d533afd1c2954c61a7f7fe4257d479f2 = L.marker(
+                [9.715278, -84.238889],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_3d035dec899d44f581264ade0b5eee2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ce109a7e5a348bea37333d9116734e0 = $(`<div id="html_6ce109a7e5a348bea37333d9116734e0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Acosta, Zoncuano, ro tiquires, cerca del puente, aguas arriba. <strong>Elevación:</strong> 575.0 m  <strong>Fecha:</strong> 2001-05-20 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_3d035dec899d44f581264ade0b5eee2a.setContent(html_6ce109a7e5a348bea37333d9116734e0);
+        
+
+        marker_d533afd1c2954c61a7f7fe4257d479f2.bindPopup(popup_3d035dec899d44f581264ade0b5eee2a)
+        ;
+
+        
+    
+    
+            var marker_23be5bd00d13402d809e6ef48505d349 = L.marker(
+                [9.883366, -85.061358],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_01d690587ce44bc5a2c00da8e1ea3806 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbb77cdbe49244c48daa9b13add8fa34 = $(`<div id="html_fbb77cdbe49244c48daa9b13add8fa34" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Lepanto, Karen Mogensen, Sendero Perez. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2001-06-22 00:00:00+00:00 <strong>Recolectores:</strong> Ulises Chavarría; Jose González <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_01d690587ce44bc5a2c00da8e1ea3806.setContent(html_fbb77cdbe49244c48daa9b13add8fa34);
+        
+
+        marker_23be5bd00d13402d809e6ef48505d349.bindPopup(popup_01d690587ce44bc5a2c00da8e1ea3806)
+        ;
+
+        
+    
+    
+            var marker_b8cd7bb5be1f4e32826a8245688a0e29 = L.marker(
+                [9.86957, -85.053057],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_eb2742a4f5d64fc2a76eb2e1c0803b44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ca49bdd6755428582737c86d8589bf2 = $(`<div id="html_1ca49bdd6755428582737c86d8589bf2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. Priv. Karen Mogensen, Sendero Cima. <strong>Elevación:</strong> 317.0 m  <strong>Fecha:</strong> 2003-05-08 00:00:00+00:00 <strong>Recolectores:</strong> Jose González; Evelio Alfaro <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_eb2742a4f5d64fc2a76eb2e1c0803b44.setContent(html_1ca49bdd6755428582737c86d8589bf2);
+        
+
+        marker_b8cd7bb5be1f4e32826a8245688a0e29.bindPopup(popup_eb2742a4f5d64fc2a76eb2e1c0803b44)
+        ;
+
+        
+    
+    
+            var marker_da2638b9d6a24ff6934065f097c9a4f9 = L.marker(
+                [9.796139, -84.593722],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_fb808d12ada74b3f87baa64cc4833907 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03e966291f344ae287a828a1637494f2 = $(`<div id="html_03e966291f344ae287a828a1637494f2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Carara. Frente a Laguna Meándrica, sendero a las lomas. <strong>Elevación:</strong> 85.0 m  <strong>Fecha:</strong> 2006-08-09 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_fb808d12ada74b3f87baa64cc4833907.setContent(html_03e966291f344ae287a828a1637494f2);
+        
+
+        marker_da2638b9d6a24ff6934065f097c9a4f9.bindPopup(popup_fb808d12ada74b3f87baa64cc4833907)
+        ;
+
+        
+    
+    
+            var marker_a67fa47db82c4776b432ad4c18acc9b6 = L.marker(
+                [9.82222, -84.56388000000001],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_57b84e2dedd34ca7bdf5a1a884e2d018 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e77de6e67c2b49dbb68c7c79baaa7582 = $(`<div id="html_e77de6e67c2b49dbb68c7c79baaa7582" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Carara, Cuenca del Tárcoles, Faldas Lomas Entierros <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1996-07-23 00:00:00+00:00 <strong>Recolectores:</strong> Quírico Jiménez|Eduardo Lépiz|Rodolfo Zúñiga <strong>Identificadores:</strong> Michael Grayum</div>`)[0];
+            popup_57b84e2dedd34ca7bdf5a1a884e2d018.setContent(html_e77de6e67c2b49dbb68c7c79baaa7582);
+        
+
+        marker_a67fa47db82c4776b432ad4c18acc9b6.bindPopup(popup_57b84e2dedd34ca7bdf5a1a884e2d018)
+        ;
+
+        
+    
+    
+            var marker_2b835a5bc5424ea28151c83c2f5b9263 = L.marker(
+                [9.80555, -84.58055],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_ef2a8bab3d7d427581cdff229632f7b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e90ddc33c8304e699d057f69cb169eb5 = $(`<div id="html_e90ddc33c8304e699d057f69cb169eb5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Carara. Cuenca del Tárcoles. 3.5 km de la entrada del sendero Laguna Meandrica. <strong>Elevación:</strong> 170.0 m  <strong>Fecha:</strong> 2000-03-29 00:00:00+00:00 <strong>Recolectores:</strong> Luis Acosta <strong>Identificadores:</strong> L. Acosta, 30 Mar</div>`)[0];
+            popup_ef2a8bab3d7d427581cdff229632f7b5.setContent(html_e90ddc33c8304e699d057f69cb169eb5);
+        
+
+        marker_2b835a5bc5424ea28151c83c2f5b9263.bindPopup(popup_ef2a8bab3d7d427581cdff229632f7b5)
+        ;
+
+        
+    
+    
+            var marker_638eaab0d41349b08b703993fb8444c3 = L.marker(
+                [8.95, -83.325],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_999680158f784f06a899f981c96d1ffb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3683923884d4706b09e755b72ce0952 = $(`<div id="html_f3683923884d4706b09e755b72ce0952" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Carretera Interamericana near KM 240, in canyon of Río Grande de Térraba, ca. 0.5 km toward Palmar Norte from Quebrada Disciplina crossing. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1992-02-03 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Heidi H. Schmidt <strong>Identificadores:</strong> M. H. Grayum (MO)</div>`)[0];
+            popup_999680158f784f06a899f981c96d1ffb.setContent(html_f3683923884d4706b09e755b72ce0952);
+        
+
+        marker_638eaab0d41349b08b703993fb8444c3.bindPopup(popup_999680158f784f06a899f981c96d1ffb)
+        ;
+
+        
+    
+    
+            var marker_c28948617e2d4c1593eb0a56733939e6 = L.marker(
+                [8.683333, -82.94166700000001],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_66a78e3ed1414adaa7688f80d5d7769c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc347f4657b943e6a1499c25339f3362 = $(`<div id="html_dc347f4657b943e6a1499c25339f3362" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Northeastern slopes of Fila de Cal, between San Vito de Coto Brus and Ciudad Neily. <strong>Elevación:</strong> 560.0 m  <strong>Fecha:</strong> 1985-07-12 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Barry E. Hammel <strong>Identificadores:</strong> R. J. Evans (MO)</div>`)[0];
+            popup_66a78e3ed1414adaa7688f80d5d7769c.setContent(html_dc347f4657b943e6a1499c25339f3362);
+        
+
+        marker_c28948617e2d4c1593eb0a56733939e6.bindPopup(popup_66a78e3ed1414adaa7688f80d5d7769c)
+        ;
+
+        
+    
+    
+            var marker_3677f73170bb4456964987b5f072abe8 = L.marker(
+                [8.97, -83.4583],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_e615bb50c629485da70f76cc2488279f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9830fcaae904e5688ac2bac3cc04be2 = $(`<div id="html_f9830fcaae904e5688ac2bac3cc04be2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> South slope of Fila Retinto, ca. 1.5 km NNW of Palmar Norte <strong>Elevación:</strong> 260.0 m  <strong>Fecha:</strong> 1992-02-22 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e615bb50c629485da70f76cc2488279f.setContent(html_f9830fcaae904e5688ac2bac3cc04be2);
+        
+
+        marker_3677f73170bb4456964987b5f072abe8.bindPopup(popup_e615bb50c629485da70f76cc2488279f)
+        ;
+
+        
+    
+    
+            var marker_6ba5fb907ee04af292ee0c101259e4fd = L.marker(
+                [8.421667, -80.112778],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_4bf47bcd0638402986dc8fc1c76ffac2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_446f38d395f4489189856290b3b750f7 = $(`<div id="html_446f38d395f4489189856290b3b750f7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Panamá. <strong>Elevación:</strong> 580.0 m  <strong>Fecha:</strong> 1990-02-02 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans | R. Naczi | B. O´´Connor <strong>Identificadores:</strong> R. J. Evans</div>`)[0];
+            popup_4bf47bcd0638402986dc8fc1c76ffac2.setContent(html_446f38d395f4489189856290b3b750f7);
+        
+
+        marker_6ba5fb907ee04af292ee0c101259e4fd.bindPopup(popup_4bf47bcd0638402986dc8fc1c76ffac2)
+        ;
+
+        
+    
+    
+            var marker_e4030d40b1384cf88c01705b7ac7966e = L.marker(
+                [8.68, -82.93],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_61605912f0fc4706ba9bfc3659315385 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2205fa317004897a5bd99640aac8629 = $(`<div id="html_b2205fa317004897a5bd99640aac8629" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Northeastern slopes of Fila de Cal, between San vito de Coto Brus and Ciudad Neili. <strong>Elevación:</strong> 560.0 m  <strong>Fecha:</strong> 1985-07-12 00:00:00+00:00 <strong>Recolectores:</strong> Grayum, Michael <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_61605912f0fc4706ba9bfc3659315385.setContent(html_b2205fa317004897a5bd99640aac8629);
+        
+
+        marker_e4030d40b1384cf88c01705b7ac7966e.bindPopup(popup_61605912f0fc4706ba9bfc3659315385)
+        ;
+
+        
+    
+    
+            var marker_a2417b590b934bc3aed7ebadcdea5949 = L.marker(
+                [8.95, -83.32],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_67e57f032e5b412ea3b9c82e9cee0a55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a9e7e07189f4128b620a3c2fd1b7ffb = $(`<div id="html_2a9e7e07189f4128b620a3c2fd1b7ffb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Carretera Interamericana near KM 240, in canyon of Río Grande de Terrabá, ca. 0.5 km toward Palmar Norte from Quebrada Disciplina crossing. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1992-02-03 00:00:00+00:00 <strong>Recolectores:</strong> Grayum, Michael <strong>Identificadores:</strong> Evans, Randy</div>`)[0];
+            popup_67e57f032e5b412ea3b9c82e9cee0a55.setContent(html_2a9e7e07189f4128b620a3c2fd1b7ffb);
+        
+
+        marker_a2417b590b934bc3aed7ebadcdea5949.bindPopup(popup_67e57f032e5b412ea3b9c82e9cee0a55)
+        ;
+
+        
+    
+    
+            var marker_18e0396d5452426a9e977abb4b0146fa = L.marker(
+                [9.29, -83.77],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_c89a33a84ed340be801b10cd9c04c6db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78d9411c2bbf4a6ba543c1995e5eb998 = $(`<div id="html_78d9411c2bbf4a6ba543c1995e5eb998" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas tinamaste. Finca de los suizos. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1998-03-24 00:00:00+00:00 <strong>Recolectores:</strong> Valverde, Oscar <strong>Identificadores:</strong> Valverde, Oscar</div>`)[0];
+            popup_c89a33a84ed340be801b10cd9c04c6db.setContent(html_78d9411c2bbf4a6ba543c1995e5eb998);
+        
+
+        marker_18e0396d5452426a9e977abb4b0146fa.bindPopup(popup_c89a33a84ed340be801b10cd9c04c6db)
+        ;
+
+        
+    
+    
+            var marker_a410652a4c304adcad9a14ad73daa358 = L.marker(
+                [9.8, -84.58],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_3a518507ee5946cf89f5d567acaf715e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6efb99e54a3c4130982bd6d6edbfdb3d = $(`<div id="html_6efb99e54a3c4130982bd6d6edbfdb3d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Carara Cuenca del Tárcoles. 3.5 km de la entrada del sendero Laguna Meandrica. <strong>Elevación:</strong> 170.0 m  <strong>Fecha:</strong> 2000-03-29 00:00:00+00:00 <strong>Recolectores:</strong> Acosta, Luis <strong>Identificadores:</strong> Acosta, Luis</div>`)[0];
+            popup_3a518507ee5946cf89f5d567acaf715e.setContent(html_6efb99e54a3c4130982bd6d6edbfdb3d);
+        
+
+        marker_a410652a4c304adcad9a14ad73daa358.bindPopup(popup_3a518507ee5946cf89f5d567acaf715e)
+        ;
+
+        
+    
+    
+            var marker_fa7c0f0e6b944372901662ff05953ef6 = L.marker(
+                [8.68333, -82.93333],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_67a2172edda44582a0400bcd7880678c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bb529513b2244ceb7b1c01b02091f2f = $(`<div id="html_3bb529513b2244ceb7b1c01b02091f2f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NE Slope of Fila de Cal, ca. 1.5 km down from Ciudad Neily - San Vito de Coto Brus road, 8.2 km N of Ciudad Neily <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-09-19 00:00:00+00:00 <strong>Recolectores:</strong> R.J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_67a2172edda44582a0400bcd7880678c.setContent(html_3bb529513b2244ceb7b1c01b02091f2f);
+        
+
+        marker_fa7c0f0e6b944372901662ff05953ef6.bindPopup(popup_67a2172edda44582a0400bcd7880678c)
+        ;
+
+        
+    
+    
+            var marker_6be74e10cb28430da1d6e1d290317d14 = L.marker(
+                [8.68, -82.93],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_b608c6b3bd49495d9608ef1128714b72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6259bd373d374cf692ced15e7d289c5c = $(`<div id="html_6259bd373d374cf692ced15e7d289c5c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NE slope of Fila de Cal, ca. 35 m down from Ciudad Neily-San Vito de Coto Brus road, 8.2 km N of Ciudad Neily <strong>Elevación:</strong> 570.0 m  <strong>Fecha:</strong> 1989-09-19 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b608c6b3bd49495d9608ef1128714b72.setContent(html_6259bd373d374cf692ced15e7d289c5c);
+        
+
+        marker_6be74e10cb28430da1d6e1d290317d14.bindPopup(popup_b608c6b3bd49495d9608ef1128714b72)
+        ;
+
+        
+    
+    
+            var marker_4b57ae134109487f9852f2cbd55f64de = L.marker(
+                [8.97, -83.4583],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_b227071a661049978a5a990d1f9068fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_574cb3cf34fb43c18160c9ef57214ad3 = $(`<div id="html_574cb3cf34fb43c18160c9ef57214ad3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> South slope of Fila Retinto, ca. 1.5 km NNW of Palmar Norte <strong>Elevación:</strong> 260.0 m  <strong>Fecha:</strong> 1992-02-22 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b227071a661049978a5a990d1f9068fc.setContent(html_574cb3cf34fb43c18160c9ef57214ad3);
+        
+
+        marker_4b57ae134109487f9852f2cbd55f64de.bindPopup(popup_b227071a661049978a5a990d1f9068fc)
+        ;
+
+        
+    
+    
+            var marker_07b3a852c2d5489e80ac8febc0b5c64c = L.marker(
+                [8.966660000000001, -83.45],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_4a0f525aa3834fa8827dab0e0ccdf41e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_314d3d6a05744c98a20dfba41fcaeded = $(`<div id="html_314d3d6a05744c98a20dfba41fcaeded" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> S slope of Fila Retinto, ca 1.5 km NNW of Palmar Norte. Primary forest, on slope among limestone boulders and outcrops. <strong>Elevación:</strong> 260.0 m  <strong>Fecha:</strong> 1990-07-09 00:00:00+00:00 <strong>Recolectores:</strong> Randall J. Evans <strong>Identificadores:</strong> R. Evans</div>`)[0];
+            popup_4a0f525aa3834fa8827dab0e0ccdf41e.setContent(html_314d3d6a05744c98a20dfba41fcaeded);
+        
+
+        marker_07b3a852c2d5489e80ac8febc0b5c64c.bindPopup(popup_4a0f525aa3834fa8827dab0e0ccdf41e)
+        ;
+
+        
+    
+    
+            var marker_218fc6d98ef049f8b97da14032c77af2 = L.marker(
+                [8.966660000000001, -83.46666],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_057fe3145c1e40b587f71176605f703b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8082c66928c64ac79965f83833c35160 = $(`<div id="html_8082c66928c64ac79965f83833c35160" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> S slope of Fila Retinto, ca 1.5 km NNW of Palmar Norte. Primary forest, on steep slope among limestone boulders and outcrops. <strong>Elevación:</strong> 280.0 m  <strong>Fecha:</strong> 1988-12-09 00:00:00+00:00 <strong>Recolectores:</strong> Randall J. Evans <strong>Identificadores:</strong> R. Evans</div>`)[0];
+            popup_057fe3145c1e40b587f71176605f703b.setContent(html_8082c66928c64ac79965f83833c35160);
+        
+
+        marker_218fc6d98ef049f8b97da14032c77af2.bindPopup(popup_057fe3145c1e40b587f71176605f703b)
+        ;
+
+        
+    
+    
+            var marker_fbfb1007d1dc42e9be561d5d5162eb4c = L.marker(
+                [9.02, -83.23],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_ab87e5d5b7d3456e821f674b7160085a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3bba9d2e6644382aba7898389e23e67 = $(`<div id="html_d3bba9d2e6644382aba7898389e23e67" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Margins of Terraba River, km 216 Route 2, rocky and sandy bluffs <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1983-01-13 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Gómez P. <strong>Identificadores:</strong> R.J. Evans</div>`)[0];
+            popup_ab87e5d5b7d3456e821f674b7160085a.setContent(html_d3bba9d2e6644382aba7898389e23e67);
+        
+
+        marker_fbfb1007d1dc42e9be561d5d5162eb4c.bindPopup(popup_ab87e5d5b7d3456e821f674b7160085a)
+        ;
+
+        
+    
+    
+            var marker_3711b2e1452940648070a2f93aca4bc9 = L.marker(
+                [8.95, -83.33333],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_7cb8366c7b3644ca8bea565843715691 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_614d2c16cc5e4e9989fdd4f3a3b1678a = $(`<div id="html_614d2c16cc5e4e9989fdd4f3a3b1678a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Costa Rica Hwy. 2 (Interamerican Hwy, San Isidro-Palmar Norte) paralleling the Río Térraba at Km 240, ca 1/2 km SW of the bridge over Río (Quebrada) Disciplina, 9.5 km E of Palmar Norte. Secondary mostly shrubby vegetation, on dry, sandy, steep slope above highway. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1992-02-23 00:00:00+00:00 <strong>Recolectores:</strong> Randall J. Evans|Michael H. Grayum <strong>Identificadores:</strong> R. Evans</div>`)[0];
+            popup_7cb8366c7b3644ca8bea565843715691.setContent(html_614d2c16cc5e4e9989fdd4f3a3b1678a);
+        
+
+        marker_3711b2e1452940648070a2f93aca4bc9.bindPopup(popup_7cb8366c7b3644ca8bea565843715691)
+        ;
+
+        
+    
+    
+            var marker_62fc29c0af664c9db5b8595fe41e896f = L.marker(
+                [40.85, -73.866247],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_8e1284db3b9d43d79dc9cc81d2d6b0e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_197f60595ee0495a9b0bee7c0a4a34aa = $(`<div id="html_197f60595ee0495a9b0bee7c0a4a34aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1998-10-21 00:00:00+00:00 <strong>Recolectores:</strong> F. Chávez <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_8e1284db3b9d43d79dc9cc81d2d6b0e8.setContent(html_197f60595ee0495a9b0bee7c0a4a34aa);
+        
+
+        marker_62fc29c0af664c9db5b8595fe41e896f.bindPopup(popup_8e1284db3b9d43d79dc9cc81d2d6b0e8)
+        ;
+
+        
+    
+    
+            var marker_15c60ddf3ee144e2ac2d7bc04690671d = L.marker(
+                [8.68, -82.93],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_92fa2962259044608d5eb1e2088fec4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f726a2b15b2450594704bb44ccf6311 = $(`<div id="html_4f726a2b15b2450594704bb44ccf6311" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NE slope of Fila de Cal, Ciudad Neily-San Vito de Coto Brus road, N of Ciudad Neily. <strong>Elevación:</strong> 570.0 m  <strong>Fecha:</strong> 1989-09-19 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_92fa2962259044608d5eb1e2088fec4c.setContent(html_4f726a2b15b2450594704bb44ccf6311);
+        
+
+        marker_15c60ddf3ee144e2ac2d7bc04690671d.bindPopup(popup_92fa2962259044608d5eb1e2088fec4c)
+        ;
+
+        
+    
+    
+            var marker_3f634de2e6ed4f9093cabe6db0045ea2 = L.marker(
+                [9.8, -84.59],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_f82f709e98244746a298ceb0d494cefb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e08db15be8a4a66b0e76f4fbfa51584 = $(`<div id="html_2e08db15be8a4a66b0e76f4fbfa51584" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Carara. Along S side of Río Grande de Tárcoles, from Carretera Costanera to Río Carara. <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1996-08-28 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Quírico Jiménez|Barry E. Hammel|Eduardo Lépiz <strong>Identificadores:</strong> M. H. Grayum</div>`)[0];
+            popup_f82f709e98244746a298ceb0d494cefb.setContent(html_2e08db15be8a4a66b0e76f4fbfa51584);
+        
+
+        marker_3f634de2e6ed4f9093cabe6db0045ea2.bindPopup(popup_f82f709e98244746a298ceb0d494cefb)
+        ;
+
+        
+    
+    
+            var marker_a202af9b3b9f4f5fa2e7f1402a792d24 = L.marker(
+                [9.71, -84.23],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_eb81a4b9af444a54b65bbca1e4d541f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd8d0ad2fcad489f8493c5453194fa72 = $(`<div id="html_dd8d0ad2fcad489f8493c5453194fa72" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del Pirrís-Damas, entre el Río Tiquires y Zoncuano, a la par del camino <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1997-01-28 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Michael H. Grayum|J. F. Morales <strong>Identificadores:</strong> Hammel, 21 ABR</div>`)[0];
+            popup_eb81a4b9af444a54b65bbca1e4d541f7.setContent(html_dd8d0ad2fcad489f8493c5453194fa72);
+        
+
+        marker_a202af9b3b9f4f5fa2e7f1402a792d24.bindPopup(popup_eb81a4b9af444a54b65bbca1e4d541f7)
+        ;
+
+        
+    
+    
+            var marker_beba141571454da98817330a407cc8c8 = L.marker(
+                [8.68, -82.93],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_f47c5af4d98f4d4a9cbb3008e5a41b37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08c26afd8b3945bab75b22d640400779 = $(`<div id="html_08c26afd8b3945bab75b22d640400779" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NE slope of Fila de Cal, down from Ciudad Neily-San Vito de Coto Brus road, 8.2 km N of Ciudad Neily. Primary forest on steep slope among limestone boulders and outcrops. Common. <strong>Elevación:</strong> 580.0 m  <strong>Fecha:</strong> 1989-06-23 00:00:00+00:00 <strong>Recolectores:</strong> Randall J. Evans <strong>Identificadores:</strong> R. Evans, 1993 (MO)</div>`)[0];
+            popup_f47c5af4d98f4d4a9cbb3008e5a41b37.setContent(html_08c26afd8b3945bab75b22d640400779);
+        
+
+        marker_beba141571454da98817330a407cc8c8.bindPopup(popup_f47c5af4d98f4d4a9cbb3008e5a41b37)
+        ;
+
+        
+    
+    
+            var marker_e77828e25fb8498296a063dd9514996b = L.marker(
+                [8.68, -82.93],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_81d8bdebc5d84b479fa645e7eca996f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a88e83c32f64a2e9998e2c2cc3be386 = $(`<div id="html_0a88e83c32f64a2e9998e2c2cc3be386" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NE slope of Fila de Cal, ca. 15 m. down from Ciudad Neily-San Vito de Coto Brus road, 8.2 km N of Ciudad Neily. Primary forest, on steep slope among limestone boulders and outcrops. Common <strong>Elevación:</strong> 580.0 m  <strong>Fecha:</strong> 1989-09-19 00:00:00+00:00 <strong>Recolectores:</strong> Randall J. Evans <strong>Identificadores:</strong> R. Evans, 1993 (MO)</div>`)[0];
+            popup_81d8bdebc5d84b479fa645e7eca996f0.setContent(html_0a88e83c32f64a2e9998e2c2cc3be386);
+        
+
+        marker_e77828e25fb8498296a063dd9514996b.bindPopup(popup_81d8bdebc5d84b479fa645e7eca996f0)
+        ;
+
+        
+    
+    
+            var marker_f58ac631d0b54ed69a16fb82af91319e = L.marker(
+                [8.95, -83.325],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_97690337d54f4f259b6ac6f4c6d2e0a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65d542e7f8214d55a6a945865c2737c1 = $(`<div id="html_65d542e7f8214d55a6a945865c2737c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Costa Rica Hwy. 2 (Interamerican Hwy, San Isidro-Palmar Norte) paralleling the Rio Terraba SW of the beridge over Rio (Quebrada) Disciplina, E of Palmar Norte. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1992-02-24 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_97690337d54f4f259b6ac6f4c6d2e0a0.setContent(html_65d542e7f8214d55a6a945865c2737c1);
+        
+
+        marker_f58ac631d0b54ed69a16fb82af91319e.bindPopup(popup_97690337d54f4f259b6ac6f4c6d2e0a0)
+        ;
+
+        
+    
+    
+            var marker_56f4c89d11e94c7abbcb5a4ecda4843e = L.marker(
+                [8.97, -83.4583],
+                {}
+            ).addTo(marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4);
+        
+    
+        var popup_4a7d4877039d42d789eaa893725c628d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1380a4f0c6be484aa85a729ae305691b = $(`<div id="html_1380a4f0c6be484aa85a729ae305691b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> S slope of Fila Retinto, NNW pf Palmar Norte <strong>Elevación:</strong> 280.0 m  <strong>Fecha:</strong> 1988-12-09 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans, M. H. Grayum & G. Herrera Ch. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_4a7d4877039d42d789eaa893725c628d.setContent(html_1380a4f0c6be484aa85a729ae305691b);
+        
+
+        marker_56f4c89d11e94c7abbcb5a4ecda4843e.bindPopup(popup_4a7d4877039d42d789eaa893725c628d)
+        ;
+
+        
+    
+    
+            var layer_control_dc19155e8a644740a92cf0c368e9e8a3 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c472964adbc543f3ba3e5054dda175df,
+                    "ESRI World Imagery" : tile_layer_59192daad54a481c8336ba3dc25428db,
+                },
+                overlays :  {
+                    "macro_element_70a9a4cbea6e494db57fcd30f76a15e4" : marker_cluster_70a9a4cbea6e494db57fcd30f76a15e4,
+                },
+            };
+            L.control.layers(
+                layer_control_dc19155e8a644740a92cf0c368e9e8a3.base_layers,
+                layer_control_dc19155e8a644740a92cf0c368e9e8a3.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_24574bd27f504d3c8c41383d81f4b925);
+            tile_layer_59192daad54a481c8336ba3dc25428db.remove();
+        
+</script>

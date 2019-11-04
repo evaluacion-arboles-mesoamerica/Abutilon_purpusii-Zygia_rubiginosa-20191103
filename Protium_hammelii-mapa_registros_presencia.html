@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b44769bf535c47968ff7c289a9df9000 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b44769bf535c47968ff7c289a9df9000" ></div>
+        
+</body>
+<script>    
+    
+            var map_b44769bf535c47968ff7c289a9df9000 = L.map(
+                "map_b44769bf535c47968ff7c289a9df9000",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_b44769bf535c47968ff7c289a9df9000);
+
+            
+
+        
+    
+            var tile_layer_a8df4923b9a24160933a728d7e3d0b63 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+            var tile_layer_60b7957b9f0a4c858aecdd4b52b70f2f = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+            var circle_marker_2e9c37808992415da44bbbfad159ff83 = L.circleMarker(
+                [10.37, -83.52],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_0818bb2812334438a0b64c44550e6199 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ffea2fcb5bf46639df3c0595364bbc0 = $(`<div id="html_0ffea2fcb5bf46639df3c0595364bbc0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tortuguero.  5 km N de La Aurora, Guápiles.  Límite sur del Parque, junto Río Sierpe. <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1990-04-11 00:00:00+00:00 <strong>Recolectores:</strong> J. Solano <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0818bb2812334438a0b64c44550e6199.setContent(html_0ffea2fcb5bf46639df3c0595364bbc0);
+        
+
+        circle_marker_2e9c37808992415da44bbbfad159ff83.bindPopup(popup_0818bb2812334438a0b64c44550e6199)
+        ;
+
+        
+    
+    
+            var circle_marker_83bc5c7193fd436ebdc0b808b86d58b8 = L.circleMarker(
+                [10.431389, -84.00361099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_254eacb922fc4935b29148b2e78ba489 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_439c86dcf3b64d41aed4ddbffde53540 = $(`<div id="html_439c86dcf3b64d41aed4ddbffde53540" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. A orillas del río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-10-30 00:00:00+00:00 <strong>Recolectores:</strong> Nelson Zamora <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_254eacb922fc4935b29148b2e78ba489.setContent(html_439c86dcf3b64d41aed4ddbffde53540);
+        
+
+        circle_marker_83bc5c7193fd436ebdc0b808b86d58b8.bindPopup(popup_254eacb922fc4935b29148b2e78ba489)
+        ;
+
+        
+    
+    
+            var circle_marker_c03455af76b24a18a5fbf6f724ed7fbe = L.circleMarker(
+                [11.58, -83.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_7d275863bd63464a9058b5a79edafa27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5284962fe7714af8abe30ef6b88b7f8b = $(`<div id="html_5284962fe7714af8abe30ef6b88b7f8b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monkey Point, Caño El Pato, 1.5 km sobre la ribera del Caño. <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1981-10-25 00:00:00+00:00 <strong>Recolectores:</strong> P. Moreno <strong>Identificadores:</strong> D. C. Daly</div>`)[0];
+            popup_7d275863bd63464a9058b5a79edafa27.setContent(html_5284962fe7714af8abe30ef6b88b7f8b);
+        
+
+        circle_marker_c03455af76b24a18a5fbf6f724ed7fbe.bindPopup(popup_7d275863bd63464a9058b5a79edafa27)
+        ;
+
+        
+    
+    
+            var circle_marker_bbe72f17ccd64024b5f1e667e7cd47bd = L.circleMarker(
+                [11.6, -83.87],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_e8339425956645f79ced2ad8a57438d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4b6bb8abf05442387ff8f5238cfe535 = $(`<div id="html_e4b6bb8abf05442387ff8f5238cfe535" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Caño Montecristo, al Este del campamento Germán Pomares. <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1982-02-08 00:00:00+00:00 <strong>Recolectores:</strong> P. Moreno <strong>Identificadores:</strong> D. C. Daly</div>`)[0];
+            popup_e8339425956645f79ced2ad8a57438d7.setContent(html_e4b6bb8abf05442387ff8f5238cfe535);
+        
+
+        circle_marker_bbe72f17ccd64024b5f1e667e7cd47bd.bindPopup(popup_e8339425956645f79ced2ad8a57438d7)
+        ;
+
+        
+    
+    
+            var circle_marker_e90a8e42d8dc40fd99379ba906210edd = L.circleMarker(
+                [11.266667, -84.116667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_57699cc66b96476ab486ad1e4a14f17d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb051a9268d546529cdb739923bbc4be = $(`<div id="html_cb051a9268d546529cdb739923bbc4be" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A lo largo del Río Maíz <strong>Elevación:</strong> 37.5 m  <strong>Fecha:</strong> 1995-01-08 00:00:00+00:00 <strong>Recolectores:</strong> R.M. Rueda|B. Hernández|E. Palma <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_57699cc66b96476ab486ad1e4a14f17d.setContent(html_cb051a9268d546529cdb739923bbc4be);
+        
+
+        circle_marker_e90a8e42d8dc40fd99379ba906210edd.bindPopup(popup_57699cc66b96476ab486ad1e4a14f17d)
+        ;
+
+        
+    
+    
+            var circle_marker_ab77ad0c675b440a89cc945c1d7521b8 = L.circleMarker(
+                [10.8, -83.766667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_f7da6060fb434805ab2f9df68b7c4b28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_401742a4773b4c3fa3e30c8c5e99cb63 = $(`<div id="html_401742a4773b4c3fa3e30c8c5e99cb63" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio de San Juan del Norte, del Delta 1 km al este y despues 2 km al norte. <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 1995-07-08 00:00:00+00:00 <strong>Recolectores:</strong> R.M. Rueda|B. Hernández|E. Palma <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_f7da6060fb434805ab2f9df68b7c4b28.setContent(html_401742a4773b4c3fa3e30c8c5e99cb63);
+        
+
+        circle_marker_ab77ad0c675b440a89cc945c1d7521b8.bindPopup(popup_f7da6060fb434805ab2f9df68b7c4b28)
+        ;
+
+        
+    
+    
+            var circle_marker_92544dfbe9de45a981948adcc0dc696f = L.circleMarker(
+                [10.444444, -83.57777800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_5b50f3636e984276ba1065c7a911ce52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1e9c1cae34c4d15b5e0ea95bfe707ab = $(`<div id="html_a1e9c1cae34c4d15b5e0ea95bfe707ab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Tortuguero.  Llanura de Tortuguero.  Estación Agua Fría.  Sendero El Aguacate, a 500 m de la entrada. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1990-01-11 00:00:00+00:00 <strong>Recolectores:</strong> José Solano <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_5b50f3636e984276ba1065c7a911ce52.setContent(html_a1e9c1cae34c4d15b5e0ea95bfe707ab);
+        
+
+        circle_marker_92544dfbe9de45a981948adcc0dc696f.bindPopup(popup_5b50f3636e984276ba1065c7a911ce52)
+        ;
+
+        
+    
+    
+            var circle_marker_91bb085d22c0448f94f94aa6914777d7 = L.circleMarker(
+                [10.45, -83.57],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_ffc2ce80323c4442b5249641ae69b102 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ba5ddc9f27c4f969757d80f0ff7f443 = $(`<div id="html_6ba5ddc9f27c4f969757d80f0ff7f443" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tortuguero.  Estación Agua Fría:  rumbo Noreste, a orillas del Río Agua Fría. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1988-02-02 00:00:00+00:00 <strong>Recolectores:</strong> R. Robles <strong>Identificadores:</strong> D. C. Daly</div>`)[0];
+            popup_ffc2ce80323c4442b5249641ae69b102.setContent(html_6ba5ddc9f27c4f969757d80f0ff7f443);
+        
+
+        circle_marker_91bb085d22c0448f94f94aa6914777d7.bindPopup(popup_ffc2ce80323c4442b5249641ae69b102)
+        ;
+
+        
+    
+    
+            var circle_marker_1afe63a1345a4fddacd3a7594fb174b3 = L.circleMarker(
+                [12.150556, -84.87861099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_ede411961da4445bb41b33ab71834a58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_195c0c427e9147968fb252c57170dd51 = $(`<div id="html_195c0c427e9147968fb252c57170dd51" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road from Ciudad Sandino toward El Guabo, 0.7 km SW of El Porvenir; moist forest patch along stream <strong>Elevación:</strong> 345.0 m  <strong>Fecha:</strong> 2011-05-17 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_ede411961da4445bb41b33ab71834a58.setContent(html_195c0c427e9147968fb252c57170dd51);
+        
+
+        circle_marker_1afe63a1345a4fddacd3a7594fb174b3.bindPopup(popup_ede411961da4445bb41b33ab71834a58)
+        ;
+
+        
+    
+    
+            var circle_marker_0b4f698e8153498d9a4d6d9454b9e143 = L.circleMarker(
+                [10.333333, -84.06667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_67beb1ab6e1c492a9498e863918d2ffb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53a2091d81bb4755a24b890dca5e1475 = $(`<div id="html_53a2091d81bb4755a24b890dca5e1475" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion El Ceibo, Ecotonos boscosos en la periferia de la estacion. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2003-03-14 00:00:00+00:00 <strong>Recolectores:</strong> José Á. González R. <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_67beb1ab6e1c492a9498e863918d2ffb.setContent(html_53a2091d81bb4755a24b890dca5e1475);
+        
+
+        circle_marker_0b4f698e8153498d9a4d6d9454b9e143.bindPopup(popup_67beb1ab6e1c492a9498e863918d2ffb)
+        ;
+
+        
+    
+    
+            var circle_marker_181774e62ab943089545578e79b21042 = L.circleMarker(
+                [10.431389, -84.00361099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_26a748aea5f64def823db53ac2ca93b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_240653c7b00d492b95621df657f727b9 = $(`<div id="html_240653c7b00d492b95621df657f727b9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1981-03-08 00:00:00+00:00 <strong>Recolectores:</strong> James P. Folsom <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_26a748aea5f64def823db53ac2ca93b3.setContent(html_240653c7b00d492b95621df657f727b9);
+        
+
+        circle_marker_181774e62ab943089545578e79b21042.bindPopup(popup_26a748aea5f64def823db53ac2ca93b3)
+        ;
+
+        
+    
+    
+            var circle_marker_ad258917d36d4da49e45d9bbb2b63fbf = L.circleMarker(
+                [10.431389, -84.00361099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_a64974e9053f4e558881379209fc7eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8027164221048c7a36a8bfa1ceb749f = $(`<div id="html_c8027164221048c7a36a8bfa1ceb749f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1981-04-27 00:00:00+00:00 <strong>Recolectores:</strong> James P. Folsom <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_a64974e9053f4e558881379209fc7eb8.setContent(html_c8027164221048c7a36a8bfa1ceb749f);
+        
+
+        circle_marker_ad258917d36d4da49e45d9bbb2b63fbf.bindPopup(popup_a64974e9053f4e558881379209fc7eb8)
+        ;
+
+        
+    
+    
+            var circle_marker_d831e6d800a8431eb1903bc502a9cd45 = L.circleMarker(
+                [10.431389, -84.00361099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_366cb06334f3460d9bbd3ee65098896c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_739201617bfa4559aaa5a43db13039d5 = $(`<div id="html_739201617bfa4559aaa5a43db13039d5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1981-02-16 00:00:00+00:00 <strong>Recolectores:</strong> James P. Folsom <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_366cb06334f3460d9bbd3ee65098896c.setContent(html_739201617bfa4559aaa5a43db13039d5);
+        
+
+        circle_marker_d831e6d800a8431eb1903bc502a9cd45.bindPopup(popup_366cb06334f3460d9bbd3ee65098896c)
+        ;
+
+        
+    
+    
+            var circle_marker_94462d007ba14bd4b9e4bc70ecd10ba6 = L.circleMarker(
+                [10.431389, -84.00361099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_5d07db494f104333a3fb61c177bc1f86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3715fcfb893445578398a9a54a629583 = $(`<div id="html_3715fcfb893445578398a9a54a629583" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1984-06-28 00:00:00+00:00 <strong>Recolectores:</strong> Brian Jacobs <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_5d07db494f104333a3fb61c177bc1f86.setContent(html_3715fcfb893445578398a9a54a629583);
+        
+
+        circle_marker_94462d007ba14bd4b9e4bc70ecd10ba6.bindPopup(popup_5d07db494f104333a3fb61c177bc1f86)
+        ;
+
+        
+    
+    
+            var circle_marker_03a2fe8ceb44443bb1c45bfc526ec67b = L.circleMarker(
+                [11.57, -84.35],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_ee860a0ab54340139ae4e471cbefcc65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7ea2e2aae304fcaad42273d7559cdc9 = $(`<div id="html_a7ea2e2aae304fcaad42273d7559cdc9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 km de Colonia Serrano, Río Serrano. <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1982-07-31 00:00:00+00:00 <strong>Recolectores:</strong> J. C. Sandino <strong>Identificadores:</strong> D. C. Daly</div>`)[0];
+            popup_ee860a0ab54340139ae4e471cbefcc65.setContent(html_a7ea2e2aae304fcaad42273d7559cdc9);
+        
+
+        circle_marker_03a2fe8ceb44443bb1c45bfc526ec67b.bindPopup(popup_ee860a0ab54340139ae4e471cbefcc65)
+        ;
+
+        
+    
+    
+            var circle_marker_2d0abe1c96d3441887cc4219cef5c2f9 = L.circleMarker(
+                [14.066667, -84.56666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_755116135501425b8ba7c6e7374b04a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0db227c28c84480b93cd7513b18b96b = $(`<div id="html_e0db227c28c84480b93cd7513b18b96b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Bosawas, Municipio de Bonanza, Cerro Cola Blanca, entre el cacerio de Vitinia y empalme de la Comarca de Panamá. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1997-06-02 00:00:00+00:00 <strong>Recolectores:</strong> R.M. Rueda|I. Coronado G. <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_755116135501425b8ba7c6e7374b04a8.setContent(html_e0db227c28c84480b93cd7513b18b96b);
+        
+
+        circle_marker_2d0abe1c96d3441887cc4219cef5c2f9.bindPopup(popup_755116135501425b8ba7c6e7374b04a8)
+        ;
+
+        
+    
+    
+            var circle_marker_7366fd10e0114a03ab0a18559da722e6 = L.circleMarker(
+                [10.794444, -83.591667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_bc316cbde5704b499b8dbad3665e7d8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c90041653024ac3a4b856ed2d5eeefa = $(`<div id="html_6c90041653024ac3a4b856ed2d5eeefa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> North shore of the mouth of the Río Colorado at Barra del Colorado, between the village and the Caribbean Sea. <strong>Elevación:</strong> 3.0 m  <strong>Fecha:</strong> 1986-09-12 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_bc316cbde5704b499b8dbad3665e7d8e.setContent(html_6c90041653024ac3a4b856ed2d5eeefa);
+        
+
+        circle_marker_7366fd10e0114a03ab0a18559da722e6.bindPopup(popup_bc316cbde5704b499b8dbad3665e7d8e)
+        ;
+
+        
+    
+    
+            var circle_marker_4d539b260ef0430eab1113502ba169d7 = L.circleMarker(
+                [10.329722, -84.08],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_3f2fd8dfcc874006a6a79476461cc1f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57dad10afbfd4435b428cd4572af80c4 = $(`<div id="html_57dad10afbfd4435b428cd4572af80c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, bosque primario frente al Puesto La Ceiba <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1988-12-23 00:00:00+00:00 <strong>Recolectores:</strong> Miguel Ballestero <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_3f2fd8dfcc874006a6a79476461cc1f5.setContent(html_57dad10afbfd4435b428cd4572af80c4);
+        
+
+        circle_marker_4d539b260ef0430eab1113502ba169d7.bindPopup(popup_3f2fd8dfcc874006a6a79476461cc1f5)
+        ;
+
+        
+    
+    
+            var circle_marker_fb8bf11e5c9e4ab689586c5584e16ba9 = L.circleMarker(
+                [13.033333, -85.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_8e6706241f9d4dfcb8eb941b730269dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c25dfbf1163f4a22bb84c82c65691d67 = $(`<div id="html_c25dfbf1163f4a22bb84c82c65691d67" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Falda norte del Cerro Musún, frente a trocha a Wanawás. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1980-05-16 00:00:00+00:00 <strong>Recolectores:</strong> M. Araquistain|P. P. Moreno <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_8e6706241f9d4dfcb8eb941b730269dd.setContent(html_c25dfbf1163f4a22bb84c82c65691d67);
+        
+
+        circle_marker_fb8bf11e5c9e4ab689586c5584e16ba9.bindPopup(popup_8e6706241f9d4dfcb8eb941b730269dd)
+        ;
+
+        
+    
+    
+            var circle_marker_eab16311fa2b4207965de9739a5a15e2 = L.circleMarker(
+                [10.45, -83.56],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_343a4111ba044e47bac0d455135ac35b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd801c956b0d40938f0a96ac2746ff3b = $(`<div id="html_fd801c956b0d40938f0a96ac2746ff3b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tortuguero Estación Agua Fría: rumbo Noreste, a orillas del Río Agua Fría. Bosque perturbado. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1988-02-02 00:00:00+00:00 <strong>Recolectores:</strong> Rafael Robles <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_343a4111ba044e47bac0d455135ac35b.setContent(html_fd801c956b0d40938f0a96ac2746ff3b);
+        
+
+        circle_marker_eab16311fa2b4207965de9739a5a15e2.bindPopup(popup_343a4111ba044e47bac0d455135ac35b)
+        ;
+
+        
+    
+    
+            var circle_marker_28927762180f42ce927f601e4220e0fa = L.circleMarker(
+                [12.133333, -84.2],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_6f802709a885458ba4a74a0138976975 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31f9220952a84b2c9c8ff484e1cf0d61 = $(`<div id="html_31f9220952a84b2c9c8ff484e1cf0d61" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio de Rama, Loma Buena Vista. <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 1984-05-23 00:00:00+00:00 <strong>Recolectores:</strong> W. Robleto T. <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_6f802709a885458ba4a74a0138976975.setContent(html_31f9220952a84b2c9c8ff484e1cf0d61);
+        
+
+        circle_marker_28927762180f42ce927f601e4220e0fa.bindPopup(popup_6f802709a885458ba4a74a0138976975)
+        ;
+
+        
+    
+    
+            var circle_marker_80e6cf09d1ef46ab987e908ae61610ff = L.circleMarker(
+                [11.6, -83.866667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_7196d36e9c8948709f1786c4435291ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_080d90e5f61e4135a2c998fc9ec0d759 = $(`<div id="html_080d90e5f61e4135a2c998fc9ec0d759" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Caño Montecristo, al este del Campamento Germán Pomares <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1982-02-08 00:00:00+00:00 <strong>Recolectores:</strong> P. P. Moreno|J.C. Sandino <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_7196d36e9c8948709f1786c4435291ab.setContent(html_080d90e5f61e4135a2c998fc9ec0d759);
+        
+
+        circle_marker_80e6cf09d1ef46ab987e908ae61610ff.bindPopup(popup_7196d36e9c8948709f1786c4435291ab)
+        ;
+
+        
+    
+    
+            var circle_marker_75ddaafad8b8446bb1e72c160a8b1d88 = L.circleMarker(
+                [11.566667, -84.366667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_93090c536a3846fab881f31480b040cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2d750463c884a35917228027203b34d = $(`<div id="html_d2d750463c884a35917228027203b34d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 km de Colonia Serrano, Río Serrano <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1982-07-31 00:00:00+00:00 <strong>Recolectores:</strong> J.C. Sandino <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_93090c536a3846fab881f31480b040cb.setContent(html_d2d750463c884a35917228027203b34d);
+        
+
+        circle_marker_75ddaafad8b8446bb1e72c160a8b1d88.bindPopup(popup_93090c536a3846fab881f31480b040cb)
+        ;
+
+        
+    
+    
+            var circle_marker_4a1d63421bc44d79b281a301bccc660a = L.circleMarker(
+                [11.597222, -83.705556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_8027e8e366e94a598065056df9c8d3a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7eff9dfb4fce4ac0b2414ada636a03a5 = $(`<div id="html_7eff9dfb4fce4ac0b2414ada636a03a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monkey Point, Caño El Pato, 1.5 km sobre la ribera del Caño <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1981-10-25 00:00:00+00:00 <strong>Recolectores:</strong> P. P. Moreno <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_8027e8e366e94a598065056df9c8d3a1.setContent(html_7eff9dfb4fce4ac0b2414ada636a03a5);
+        
+
+        circle_marker_4a1d63421bc44d79b281a301bccc660a.bindPopup(popup_8027e8e366e94a598065056df9c8d3a1)
+        ;
+
+        
+    
+    
+            var circle_marker_a626d24df6654aaebf9efee3c3ae0d0c = L.circleMarker(
+                [10.4, -84.05],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_30252b981eff40c48276da0a89d32992 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20f24af3dc274f2eb313b9523045ef17 = $(`<div id="html_20f24af3dc274f2eb313b9523045ef17" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Magsasay, lowland wet forest, near La  Selva. Transect 9. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1990-07-16 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_30252b981eff40c48276da0a89d32992.setContent(html_20f24af3dc274f2eb313b9523045ef17);
+        
+
+        circle_marker_a626d24df6654aaebf9efee3c3ae0d0c.bindPopup(popup_30252b981eff40c48276da0a89d32992)
+        ;
+
+        
+    
+    
+            var circle_marker_86e112c97f9b4864b0239c96002db277 = L.circleMarker(
+                [10.433333, -84.016667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_0a02b0de035940aba6d30c7808a8b647 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ccf5fc9780245a29ea5918ab30d298a = $(`<div id="html_0ccf5fc9780245a29ea5918ab30d298a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva, Río Sarapiquí near Puerto Viejo, tropical wet forest, junction SSO and LOC Trails, Transect 1 <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-01-05 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Rosa Ortiz|Jason C. Bradford|Irene Shonle <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_0a02b0de035940aba6d30c7808a8b647.setContent(html_0ccf5fc9780245a29ea5918ab30d298a);
+        
+
+        circle_marker_86e112c97f9b4864b0239c96002db277.bindPopup(popup_0a02b0de035940aba6d30c7808a8b647)
+        ;
+
+        
+    
+    
+            var circle_marker_71cc38798cfd4bcda325ac57c1d093a2 = L.circleMarker(
+                [10.433333, -84.016667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_d540d33cd1d54f509a35ea3a7df1ba00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e15c1b20cdb34929b08f76efbe880828 = $(`<div id="html_e15c1b20cdb34929b08f76efbe880828" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva, Río Sarapiquí near Puerto Viejo, tropical wet forest, junction SSO and LOC Trails, Transect 1 <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-01-05 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Rosa Ortiz|Jason C. Bradford|Irene Shonle <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_d540d33cd1d54f509a35ea3a7df1ba00.setContent(html_e15c1b20cdb34929b08f76efbe880828);
+        
+
+        circle_marker_71cc38798cfd4bcda325ac57c1d093a2.bindPopup(popup_d540d33cd1d54f509a35ea3a7df1ba00)
+        ;
+
+        
+    
+    
+            var circle_marker_37a3ba3d65f04d9daac0a679d5ad7693 = L.circleMarker(
+                [10.433333, -84.016667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_ec9dab0893884108a2673c4e0f11325b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbcbe3a5eb2541f48a06580e80490af7 = $(`<div id="html_fbcbe3a5eb2541f48a06580e80490af7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva, Río Sarapiqui near Puerto Viejo, tropical wet forest, junction SSO and LOC Trails. Transect 2. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-01-05 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Rosa Ortiz <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_ec9dab0893884108a2673c4e0f11325b.setContent(html_fbcbe3a5eb2541f48a06580e80490af7);
+        
+
+        circle_marker_37a3ba3d65f04d9daac0a679d5ad7693.bindPopup(popup_ec9dab0893884108a2673c4e0f11325b)
+        ;
+
+        
+    
+    
+            var circle_marker_b2deaff6fb5a412fbe80ac4bc6545d83 = L.circleMarker(
+                [10.433333, -84.016667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_50433f68f950432c97d5ddd779e4c2b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6988ccdb264a44b6a19bcb93a080ed2f = $(`<div id="html_6988ccdb264a44b6a19bcb93a080ed2f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva, Río Sarapiqui near Puerto Viejo, tropical wet forest, junction SSO and LOC Trails. Transect 3. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-01-05 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Rosa Ortiz <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_50433f68f950432c97d5ddd779e4c2b7.setContent(html_6988ccdb264a44b6a19bcb93a080ed2f);
+        
+
+        circle_marker_b2deaff6fb5a412fbe80ac4bc6545d83.bindPopup(popup_50433f68f950432c97d5ddd779e4c2b7)
+        ;
+
+        
+    
+    
+            var circle_marker_bd77cb86e0ca4861869263d3ca0d1f17 = L.circleMarker(
+                [10.433333, -84.016667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_dc3dcc8947714455adf95d1d05581e1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2df39013fdea425883dc446b394bf76c = $(`<div id="html_2df39013fdea425883dc446b394bf76c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva, Río Sarapiquí near Puerto Viejo, tropical wet forest, junction SSO and LOC Trails, Transect 9 <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-01-08 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Rosa Ortiz <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_dc3dcc8947714455adf95d1d05581e1c.setContent(html_2df39013fdea425883dc446b394bf76c);
+        
+
+        circle_marker_bd77cb86e0ca4861869263d3ca0d1f17.bindPopup(popup_dc3dcc8947714455adf95d1d05581e1c)
+        ;
+
+        
+    
+    
+            var circle_marker_722939c5bc164e11bc10ca8e3564b186 = L.circleMarker(
+                [10.683333, -83.633333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_a0a0af488af1460bba4daf8b1c731807 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6244a50e52834298959757fc5e5a7e9e = $(`<div id="html_6244a50e52834298959757fc5e5a7e9e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto. <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 1987-03-16 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens|Gerardo Herrera Ch.|O.M. Montiel J. <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_a0a0af488af1460bba4daf8b1c731807.setContent(html_6244a50e52834298959757fc5e5a7e9e);
+        
+
+        circle_marker_722939c5bc164e11bc10ca8e3564b186.bindPopup(popup_a0a0af488af1460bba4daf8b1c731807)
+        ;
+
+        
+    
+    
+            var circle_marker_90b1fc0528f94dfba1286c23dd9caa0d = L.circleMarker(
+                [10.7, -83.65],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_c8390fbf29754f28bf309911a96fd01c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31c87937236f46fa9c64539984e26cdf = $(`<div id="html_31c87937236f46fa9c64539984e26cdf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, along Río Colorado at and below outflow of Laguna Danto; 10º42'N, 83º39'W, elev 5-10 m; patches of vegetation in flood plain anchored by large trees or on slopes above river bank <strong>Elevación:</strong> 7.5 m  <strong>Fecha:</strong> 1986-01-25 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_c8390fbf29754f28bf309911a96fd01c.setContent(html_31c87937236f46fa9c64539984e26cdf);
+        
+
+        circle_marker_90b1fc0528f94dfba1286c23dd9caa0d.bindPopup(popup_c8390fbf29754f28bf309911a96fd01c)
+        ;
+
+        
+    
+    
+            var circle_marker_111128181b3f4540ac19e9063936c926 = L.circleMarker(
+                [10.683333, -83.633333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_cd3cfb711c0e4c1082e54c85f7bcb48f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_950325675ab34afc9fa52954116cf474 = $(`<div id="html_950325675ab34afc9fa52954116cf474" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1986-01-16 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_cd3cfb711c0e4c1082e54c85f7bcb48f.setContent(html_950325675ab34afc9fa52954116cf474);
+        
+
+        circle_marker_111128181b3f4540ac19e9063936c926.bindPopup(popup_cd3cfb711c0e4c1082e54c85f7bcb48f)
+        ;
+
+        
+    
+    
+            var circle_marker_da6cf9f1e1ae4d1ca054eada60b4254c = L.circleMarker(
+                [10.683333, -83.633333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_0c5148f30d8f4aaeb41495d617e3c1c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_003620b4aca54b52aaa3a3d0bc5110d4 = $(`<div id="html_003620b4aca54b52aaa3a3d0bc5110d4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1986-01-16 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_0c5148f30d8f4aaeb41495d617e3c1c5.setContent(html_003620b4aca54b52aaa3a3d0bc5110d4);
+        
+
+        circle_marker_da6cf9f1e1ae4d1ca054eada60b4254c.bindPopup(popup_0c5148f30d8f4aaeb41495d617e3c1c5)
+        ;
+
+        
+    
+    
+            var circle_marker_00be2c55448e4b9987c208b97010e253 = L.circleMarker(
+                [10.36, -83.51],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_d2ab10cdc0cd4e00aad617776a579b02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a5fb2cee2e64fe2b50f7fc4b23c00d0 = $(`<div id="html_9a5fb2cee2e64fe2b50f7fc4b23c00d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tortuguero 5 Km N de La Aurora, Guápiles. Límite sur del Parque, junto Río Sierpe. Bosque primario. <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1990-04-11 00:00:00+00:00 <strong>Recolectores:</strong> José Solano <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_d2ab10cdc0cd4e00aad617776a579b02.setContent(html_9a5fb2cee2e64fe2b50f7fc4b23c00d0);
+        
+
+        circle_marker_00be2c55448e4b9987c208b97010e253.bindPopup(popup_d2ab10cdc0cd4e00aad617776a579b02)
+        ;
+
+        
+    
+    
+            var circle_marker_b1c3f866b13c4924bff49b11bb574bbe = L.circleMarker(
+                [10.444444, -83.57777800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_09c3c22e1ea245719d10dd767cf8ba84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca29955d3066424eb6771ed4fc2eba7f = $(`<div id="html_ca29955d3066424eb6771ed4fc2eba7f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Tortuguero.  Llanura de Tortuguero.  Estación Agua Fría.  Sendero El Aguacate, a 500 m de la entrada. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1990-01-11 00:00:00+00:00 <strong>Recolectores:</strong> José Solano <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_09c3c22e1ea245719d10dd767cf8ba84.setContent(html_ca29955d3066424eb6771ed4fc2eba7f);
+        
+
+        circle_marker_b1c3f866b13c4924bff49b11bb574bbe.bindPopup(popup_09c3c22e1ea245719d10dd767cf8ba84)
+        ;
+
+        
+    
+    
+            var circle_marker_068508aa2e0349b58e438c96a421c5e6 = L.circleMarker(
+                [12.666667, -83.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_466645267b6f43a5a073ac65c69be990 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_723e694276444012a15cc1bd86c7db21 = $(`<div id="html_723e694276444012a15cc1bd86c7db21" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio Laguna de Perla, Río Wawanshang, Bosque de FADCANIC. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2002-02-15 00:00:00+00:00 <strong>Recolectores:</strong> R.M. Rueda|R. Dolmus <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_466645267b6f43a5a073ac65c69be990.setContent(html_723e694276444012a15cc1bd86c7db21);
+        
+
+        circle_marker_068508aa2e0349b58e438c96a421c5e6.bindPopup(popup_466645267b6f43a5a073ac65c69be990)
+        ;
+
+        
+    
+    
+            var circle_marker_7c239e3b2fa345ee85dc71ef640d63aa = L.circleMarker(
+                [10.43138, -84.00361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_b770e49c1828452d95f32111012a3bb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6277a01568d847089553c5cb4c937988 = $(`<div id="html_6277a01568d847089553c5cb4c937988" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. Far Loop Trail. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1996-02-11 00:00:00+00:00 <strong>Recolectores:</strong> Robert L. Wilbur <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_b770e49c1828452d95f32111012a3bb6.setContent(html_6277a01568d847089553c5cb4c937988);
+        
+
+        circle_marker_7c239e3b2fa345ee85dc71ef640d63aa.bindPopup(popup_b770e49c1828452d95f32111012a3bb6)
+        ;
+
+        
+    
+    
+            var circle_marker_5000c15a7c1f46d5bdff9d069ee36b60 = L.circleMarker(
+                [10.51, -84.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_a71c901a78bd414db039788b1ae1a652 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ee457cff8b040ef81c5363771d6a796 = $(`<div id="html_9ee457cff8b040ef81c5363771d6a796" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forest remnants and second growth vegetation about 5 km north of Puerto Viejo along the road to El Muelle <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1967-01-08 00:00:00+00:00 <strong>Recolectores:</strong> William C. Burger|G. Mata U. <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_a71c901a78bd414db039788b1ae1a652.setContent(html_9ee457cff8b040ef81c5363771d6a796);
+        
+
+        circle_marker_5000c15a7c1f46d5bdff9d069ee36b60.bindPopup(popup_a71c901a78bd414db039788b1ae1a652)
+        ;
+
+        
+    
+    
+            var circle_marker_b26c4acb0ca040d7988a84e763ba0ed5 = L.circleMarker(
+                [10.246111, -83.455833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_85052b44c43345198b1a98ed279ac3e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6e73a8a72b743619caaf0bbb528e586 = $(`<div id="html_d6e73a8a72b743619caaf0bbb528e586" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near Río Parismina, 8 km W of Dos Bocas <strong>Elevación:</strong> 8.0 m  <strong>Fecha:</strong> 1972-03-31 00:00:00+00:00 <strong>Recolectores:</strong> Roy W. Lent <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_85052b44c43345198b1a98ed279ac3e4.setContent(html_d6e73a8a72b743619caaf0bbb528e586);
+        
+
+        circle_marker_b26c4acb0ca040d7988a84e763ba0ed5.bindPopup(popup_85052b44c43345198b1a98ed279ac3e4)
+        ;
+
+        
+    
+    
+            var circle_marker_d6c6cac32fd64d73b41b6ec4618843d0 = L.circleMarker(
+                [10.431389, -84.00361099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_421e34e199564ff189f85ce16d693189 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7805e8f89b8644b0a42ccfd6dca94bc9 = $(`<div id="html_7805e8f89b8644b0a42ccfd6dca94bc9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva arboretum #522. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1970-12-30 00:00:00+00:00 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_421e34e199564ff189f85ce16d693189.setContent(html_7805e8f89b8644b0a42ccfd6dca94bc9);
+        
+
+        circle_marker_d6c6cac32fd64d73b41b6ec4618843d0.bindPopup(popup_421e34e199564ff189f85ce16d693189)
+        ;
+
+        
+    
+    
+            var circle_marker_66e849f459b043e9ae1ef2bddcb91099 = L.circleMarker(
+                [10.433333, -84.016667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_0d1f179bc7524adaa6f49bb75b5eea9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1123ca6f05a549a6a8e3e98df4281b6d = $(`<div id="html_1123ca6f05a549a6a8e3e98df4281b6d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, Puerto Viejo. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1975-08-22 00:00:00+00:00 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_0d1f179bc7524adaa6f49bb75b5eea9c.setContent(html_1123ca6f05a549a6a8e3e98df4281b6d);
+        
+
+        circle_marker_66e849f459b043e9ae1ef2bddcb91099.bindPopup(popup_0d1f179bc7524adaa6f49bb75b5eea9c)
+        ;
+
+        
+    
+    
+            var circle_marker_8f8fa4e1f7d44dab9480f24bc6875a39 = L.circleMarker(
+                [10.433333, -84.016667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_d273258d6a4c41499362a58ba9d6cce9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60fc0fd146fa4a3bb32614877f7f1b3f = $(`<div id="html_60fc0fd146fa4a3bb32614877f7f1b3f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, Puerto Viejo. Arboretum tag #522, La Selva. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1970-12-30 00:00:00+00:00 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_d273258d6a4c41499362a58ba9d6cce9.setContent(html_60fc0fd146fa4a3bb32614877f7f1b3f);
+        
+
+        circle_marker_8f8fa4e1f7d44dab9480f24bc6875a39.bindPopup(popup_d273258d6a4c41499362a58ba9d6cce9)
+        ;
+
+        
+    
+    
+            var circle_marker_965c449d0c324095a08368a32adfcbd1 = L.circleMarker(
+                [10.51, -84.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_5902a14f9afd4b8c847fdabef363a786 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cd9bc0f48d948b7b1b7a67e93bcceb2 = $(`<div id="html_3cd9bc0f48d948b7b1b7a67e93bcceb2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forest remnants and second growth vegetation about 5 km north of Puerto Viejo along the road to El Muelle <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1967-01-08 00:00:00+00:00 <strong>Recolectores:</strong> William C. Burger|G. Mata U. <strong>Identificadores:</strong> D. Santamaria-Aguilar, 18 Jan</div>`)[0];
+            popup_5902a14f9afd4b8c847fdabef363a786.setContent(html_3cd9bc0f48d948b7b1b7a67e93bcceb2);
+        
+
+        circle_marker_965c449d0c324095a08368a32adfcbd1.bindPopup(popup_5902a14f9afd4b8c847fdabef363a786)
+        ;
+
+        
+    
+    
+            var circle_marker_d5f801a7f09244a39391075d64aad4ee = L.circleMarker(
+                [10.47, -83.97],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+        
+    
+        var popup_3679fb87222d482296246090ef4ea3dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6b2747d868b48468439765ad522e7c0 = $(`<div id="html_b6b2747d868b48468439765ad522e7c0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> about 5 km. north of Puerto Viejo along the road to El Muelle. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1967-01-08 00:00:00+00:00 <strong>Recolectores:</strong> W. C. Burger <strong>Identificadores:</strong> D. C. Daly</div>`)[0];
+            popup_3679fb87222d482296246090ef4ea3dc.setContent(html_b6b2747d868b48468439765ad522e7c0);
+        
+
+        circle_marker_d5f801a7f09244a39391075d64aad4ee.bindPopup(popup_3679fb87222d482296246090ef4ea3dc)
+        ;
+
+        
+    
+    
+            var layer_control_c65e90f41a5146ce823bf47ec4eeeaa0 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a8df4923b9a24160933a728d7e3d0b63,
+                    "ESRI World Imagery" : tile_layer_60b7957b9f0a4c858aecdd4b52b70f2f,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_c65e90f41a5146ce823bf47ec4eeeaa0.base_layers,
+                layer_control_c65e90f41a5146ce823bf47ec4eeeaa0.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b44769bf535c47968ff7c289a9df9000);
+            tile_layer_60b7957b9f0a4c858aecdd4b52b70f2f.remove();
+        
+</script>

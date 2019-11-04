@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_62fd6941fc0b4bb29738207a1ed33f81 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_62fd6941fc0b4bb29738207a1ed33f81" ></div>
+        
+</body>
+<script>    
+    
+            var map_62fd6941fc0b4bb29738207a1ed33f81 = L.map(
+                "map_62fd6941fc0b4bb29738207a1ed33f81",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_62fd6941fc0b4bb29738207a1ed33f81);
+
+            
+
+        
+    
+            var tile_layer_5f370e11870141759dfb670ce6aaf0d1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_62fd6941fc0b4bb29738207a1ed33f81);
+        
+    
+            var tile_layer_3ef0e319f74e4913918a7828b5525321 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_62fd6941fc0b4bb29738207a1ed33f81);
+        
+    
+            var marker_cluster_982b5e732a6740fd9493cc083b1be6ae = L.markerClusterGroup(
+                {}
+            );
+            map_62fd6941fc0b4bb29738207a1ed33f81.addLayer(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+            var marker_8ed3609c3c38403ab84c48d864e32fc6 = L.marker(
+                [8.999153, -82.825418],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_412994767d9d44b983d21b38d82d2c8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e345c9d12324963b32c1cbf718a444e = $(`<div id="html_5e345c9d12324963b32c1cbf718a444e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Las Tablas - Cerro Echandi <strong>Elevación:</strong> 2250.0 m  <strong>Fecha:</strong> 1997-08-11 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Hugo Alfaro ; Billen Gamboa R. ; Javier Quesada <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_412994767d9d44b983d21b38d82d2c8e.setContent(html_5e345c9d12324963b32c1cbf718a444e);
+        
+
+        marker_8ed3609c3c38403ab84c48d864e32fc6.bindPopup(popup_412994767d9d44b983d21b38d82d2c8e)
+        ;
+
+        
+    
+    
+            var marker_154ad232b1da4b75a2e6147b6535008c = L.marker(
+                [8.999153, -82.825418],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_a1ba36901f674937be7dd47450b8aa16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8e60536c87240fcbbe1eaa0ded3fbbe = $(`<div id="html_f8e60536c87240fcbbe1eaa0ded3fbbe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Las Tablas - Cerro Echandi <strong>Elevación:</strong> 2250.0 m  <strong>Fecha:</strong> 1997-08-11 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Hugo Alfaro ; Billen Gamboa R. ; Javier Quesada <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_a1ba36901f674937be7dd47450b8aa16.setContent(html_f8e60536c87240fcbbe1eaa0ded3fbbe);
+        
+
+        marker_154ad232b1da4b75a2e6147b6535008c.bindPopup(popup_a1ba36901f674937be7dd47450b8aa16)
+        ;
+
+        
+    
+    
+            var marker_e77c0bc345104c9792698a5f022e5963 = L.marker(
+                [8.999153, -82.825418],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_41dbca98d7064f60b5b0f759b5b9aaff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e47e72d60edc49c9b2165362ca2578e9 = $(`<div id="html_e47e72d60edc49c9b2165362ca2578e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Las Tablas - Cerro Echandi <strong>Elevación:</strong> 2250.0 m  <strong>Fecha:</strong> 1997-08-11 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Hugo Alfaro ; Billen Gamboa R. ; Javier Quesada <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_41dbca98d7064f60b5b0f759b5b9aaff.setContent(html_e47e72d60edc49c9b2165362ca2578e9);
+        
+
+        marker_e77c0bc345104c9792698a5f022e5963.bindPopup(popup_41dbca98d7064f60b5b0f759b5b9aaff)
+        ;
+
+        
+    
+    
+            var marker_a476bf5956d44431ad898d42cfb1089c = L.marker(
+                [9.529722, -83.591667],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_cc06fa1efddd4d989e75287d0bc611ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5df29b2b617b4d1695a86c46893fd9c2 = $(`<div id="html_5df29b2b617b4d1695a86c46893fd9c2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre las Nacientes de la quebrada Barranco y Rio Blanco. Finca San Carlos. <strong>Elevación:</strong> 2640.0 m  <strong>Fecha:</strong> 1995-04-09 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_cc06fa1efddd4d989e75287d0bc611ce.setContent(html_5df29b2b617b4d1695a86c46893fd9c2);
+        
+
+        marker_a476bf5956d44431ad898d42cfb1089c.bindPopup(popup_cc06fa1efddd4d989e75287d0bc611ce)
+        ;
+
+        
+    
+    
+            var marker_612e75dca3e242388cc1d2a44c86340d = L.marker(
+                [8.999153, -82.825418],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_5d17a915af554be2a25686117892172a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6c7ff1bc25e492eb1570bbfa34e3864 = $(`<div id="html_d6c7ff1bc25e492eb1570bbfa34e3864" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Las Tablas - Cerro Echandi <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 2001-11-13 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Alexander Alvarado Mendez <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_5d17a915af554be2a25686117892172a.setContent(html_d6c7ff1bc25e492eb1570bbfa34e3864);
+        
+
+        marker_612e75dca3e242388cc1d2a44c86340d.bindPopup(popup_5d17a915af554be2a25686117892172a)
+        ;
+
+        
+    
+    
+            var marker_70012c0ec69c4c9f8e5f286925413040 = L.marker(
+                [8.999153, -82.825418],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_6e2feefd1b1f4f76b5ee28496fe0549b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8f974093fbd469fab48c3fab2912bcf = $(`<div id="html_c8f974093fbd469fab48c3fab2912bcf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Las Tablas - Cerro Echandi <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 2001-11-13 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Alexander Alvarado Mendez <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_6e2feefd1b1f4f76b5ee28496fe0549b.setContent(html_c8f974093fbd469fab48c3fab2912bcf);
+        
+
+        marker_70012c0ec69c4c9f8e5f286925413040.bindPopup(popup_6e2feefd1b1f4f76b5ee28496fe0549b)
+        ;
+
+        
+    
+    
+            var marker_64d3fa53463b4f4f871bd47b1f722da0 = L.marker(
+                [8.999153, -82.825418],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_8c33e3c306c842ba9af887345c57616b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_421f3d477098466b84ad3ab5a5ac886b = $(`<div id="html_421f3d477098466b84ad3ab5a5ac886b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Las Tablas - Cerro Echandi <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 2001-11-13 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Alexander Alvarado Mendez <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_8c33e3c306c842ba9af887345c57616b.setContent(html_421f3d477098466b84ad3ab5a5ac886b);
+        
+
+        marker_64d3fa53463b4f4f871bd47b1f722da0.bindPopup(popup_8c33e3c306c842ba9af887345c57616b)
+        ;
+
+        
+    
+    
+            var marker_b27c43d59cf34df0b7f1a0aa0b98495c = L.marker(
+                [8.897222, -82.755556],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_c8c401cc5a0c415184fbefd60ea822a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7fd9956f43b4ac5af033a5593f8aa51 = $(`<div id="html_f7fd9956f43b4ac5af033a5593f8aa51" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Las Tablas, Sendero Quijada del diablo. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 2003-12-28 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel; Daniel Solano ; Evelio Alfaro <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_c8c401cc5a0c415184fbefd60ea822a9.setContent(html_f7fd9956f43b4ac5af033a5593f8aa51);
+        
+
+        marker_b27c43d59cf34df0b7f1a0aa0b98495c.bindPopup(popup_c8c401cc5a0c415184fbefd60ea822a9)
+        ;
+
+        
+    
+    
+            var marker_068d7705d9bc431296c89c7f69d3c82b = L.marker(
+                [8.897222, -82.755556],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_93e67211e3d34322a784aea6f2664b0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_652dfc8de6384aa5abd0818a37b71161 = $(`<div id="html_652dfc8de6384aa5abd0818a37b71161" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Las Tablas, Sendero Quijada del diablo. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 2003-12-28 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel; Daniel Solano ; Evelio Alfaro <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_93e67211e3d34322a784aea6f2664b0b.setContent(html_652dfc8de6384aa5abd0818a37b71161);
+        
+
+        marker_068d7705d9bc431296c89c7f69d3c82b.bindPopup(popup_93e67211e3d34322a784aea6f2664b0b)
+        ;
+
+        
+    
+    
+            var marker_0b0173b593374e26af15db11b5de8a87 = L.marker(
+                [8.897222, -82.755556],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_e435e73a0f7e42e3b9605ef4fb07abb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5494c8e98e3e40ddb82a2f21fb9e17d7 = $(`<div id="html_5494c8e98e3e40ddb82a2f21fb9e17d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Las Tablas, Sendero Quijada del diablo. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 2003-12-28 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel; Daniel Solano ; Evelio Alfaro <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_e435e73a0f7e42e3b9605ef4fb07abb2.setContent(html_5494c8e98e3e40ddb82a2f21fb9e17d7);
+        
+
+        marker_0b0173b593374e26af15db11b5de8a87.bindPopup(popup_e435e73a0f7e42e3b9605ef4fb07abb2)
+        ;
+
+        
+    
+    
+            var marker_7285a29bcde34d0eafcf3d7e7a947d3c = L.marker(
+                [9.141276, -83.069379],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_449b2ca81bb94d6e8532fa7f56e7a12e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_affd6502c30b40fa9ff372819356bde5 = $(`<div id="html_affd6502c30b40fa9ff372819356bde5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3-4 km de Tres Colinas. Cercanias del sendero a Cerro Kámuk. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Nelson A. Zamora Villalobos ; William Gamboa <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_449b2ca81bb94d6e8532fa7f56e7a12e.setContent(html_affd6502c30b40fa9ff372819356bde5);
+        
+
+        marker_7285a29bcde34d0eafcf3d7e7a947d3c.bindPopup(popup_449b2ca81bb94d6e8532fa7f56e7a12e)
+        ;
+
+        
+    
+    
+            var marker_0003d35cde984bf291bbfc5031eccf99 = L.marker(
+                [9.141276, -83.069379],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_dd1c2fb65e1543819a3745ca9f2ad28f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d9460a96ba74b30bb2d4c7e2bbe1c5c = $(`<div id="html_8d9460a96ba74b30bb2d4c7e2bbe1c5c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3-4 km de Tres Colinas. Cercanias del sendero a Cerro Kámuk. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Nelson A. Zamora Villalobos ; William Gamboa <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_dd1c2fb65e1543819a3745ca9f2ad28f.setContent(html_8d9460a96ba74b30bb2d4c7e2bbe1c5c);
+        
+
+        marker_0003d35cde984bf291bbfc5031eccf99.bindPopup(popup_dd1c2fb65e1543819a3745ca9f2ad28f)
+        ;
+
+        
+    
+    
+            var marker_3a30b769a99842cca65fe8f235cc4749 = L.marker(
+                [9.141276, -83.069379],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_baff28295fc94d938eaba42ddc3776b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ad1e047dfe14ff189373e9f255c554a = $(`<div id="html_4ad1e047dfe14ff189373e9f255c554a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3-4 km de Tres Colinas. Cercanias del sendero a Cerro Kámuk. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Nelson A. Zamora Villalobos ; William Gamboa <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_baff28295fc94d938eaba42ddc3776b8.setContent(html_4ad1e047dfe14ff189373e9f255c554a);
+        
+
+        marker_3a30b769a99842cca65fe8f235cc4749.bindPopup(popup_baff28295fc94d938eaba42ddc3776b8)
+        ;
+
+        
+    
+    
+            var marker_219df3fa710f48fba53b8760c01d73c0 = L.marker(
+                [8.533333, -81.81666700000001],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_24dc093a1afe4d5a9ec7a9ccfa62bec1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ea78a00ab59477bab851d7d1d67e368 = $(`<div id="html_8ea78a00ab59477bab851d7d1d67e368" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Colorado, above San Félix along mining road 18-27 miles off of Pan-American Highway (above Chame or turn- off to Escopeta). <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1976-03-12 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> John Pruski (MO)</div>`)[0];
+            popup_24dc093a1afe4d5a9ec7a9ccfa62bec1.setContent(html_8ea78a00ab59477bab851d7d1d67e368);
+        
+
+        marker_219df3fa710f48fba53b8760c01d73c0.bindPopup(popup_24dc093a1afe4d5a9ec7a9ccfa62bec1)
+        ;
+
+        
+    
+    
+            var marker_43ac3df21fcb475a97ca871e312bfe80 = L.marker(
+                [9.179167, -83.05833299999999],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_aabd19fdb91e497b809b05fdafe70a82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5f365741b6e42eb83baebdab711c0c8 = $(`<div id="html_a5f365741b6e42eb83baebdab711c0c8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, head- waters of the unnamed western branch of the Río Teribe, between the Río Sini and the continental divide at Cerro Bekom. <strong>Elevación:</strong> 2550.0 m  <strong>Fecha:</strong> 1984-03-21 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch.|Richard H. Warner <strong>Identificadores:</strong> H. Robinson</div>`)[0];
+            popup_aabd19fdb91e497b809b05fdafe70a82.setContent(html_a5f365741b6e42eb83baebdab711c0c8);
+        
+
+        marker_43ac3df21fcb475a97ca871e312bfe80.bindPopup(popup_aabd19fdb91e497b809b05fdafe70a82)
+        ;
+
+        
+    
+    
+            var marker_c56e1364eb7c4b99be4b0d0a71560b63 = L.marker(
+                [9.9, -82.8],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_0ec0dd19cacd472da5702a8ad67ed914 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b90deed7ef114371b0e88bddefb346a4 = $(`<div id="html_b90deed7ef114371b0e88bddefb346a4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, trail between headwaters of the Río BellaVista and Sitio Cotón (Cotonsito) on the río Cotón. Mixed oak forest. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1984-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Robinson, H.</div>`)[0];
+            popup_0ec0dd19cacd472da5702a8ad67ed914.setContent(html_b90deed7ef114371b0e88bddefb346a4);
+        
+
+        marker_c56e1364eb7c4b99be4b0d0a71560b63.bindPopup(popup_0ec0dd19cacd472da5702a8ad67ed914)
+        ;
+
+        
+    
+    
+            var marker_7125fd289a6044d889ab969240bff1ee = L.marker(
+                [9.02, -82.96],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_447de74d39804b17a52c25c1248c2bcf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c6077a2a82640298d4a6f0c7eef611f = $(`<div id="html_8c6077a2a82640298d4a6f0c7eef611f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.I. La Amistad Estación Pittier, sendero a Altamira. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1995-01-28 00:00:00+00:00 <strong>Recolectores:</strong> Alvarado, Francisco <strong>Identificadores:</strong> Rodríguez, Alexánder</div>`)[0];
+            popup_447de74d39804b17a52c25c1248c2bcf.setContent(html_8c6077a2a82640298d4a6f0c7eef611f);
+        
+
+        marker_7125fd289a6044d889ab969240bff1ee.bindPopup(popup_447de74d39804b17a52c25c1248c2bcf)
+        ;
+
+        
+    
+    
+            var marker_6814d8ddc517472c87ecbc1f5cdeb634 = L.marker(
+                [8.897222, -82.75556],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_5293f7fa5db84a9f9e96cf03b9aa5350 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4db87cbcdb074f358a742ac6528bbe25 = $(`<div id="html_4db87cbcdb074f358a742ac6528bbe25" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hacienda La Amistad. La Neblina. Acompa?an Eduardo y Frank Alfaro. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 2003-12-28 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> A. Rodriguez</div>`)[0];
+            popup_5293f7fa5db84a9f9e96cf03b9aa5350.setContent(html_4db87cbcdb074f358a742ac6528bbe25);
+        
+
+        marker_6814d8ddc517472c87ecbc1f5cdeb634.bindPopup(popup_5293f7fa5db84a9f9e96cf03b9aa5350)
+        ;
+
+        
+    
+    
+            var marker_dbdf502d3193491982b33c443a52947a = L.marker(
+                [8.816667, -82.533333],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_cd599777b2d2404c81cefed2a5c5e9b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_777fe05bf5454d098a2e1ca11b757034 = $(`<div id="html_777fe05bf5454d098a2e1ca11b757034" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> On trail above saddle of Cerro Respingo and Cerro Pavón-Fila Pavón. <strong>Elevación:</strong> 2804.16 m  <strong>Fecha:</strong> 1979-04-02 00:00:00+00:00 <strong>Recolectores:</strong> William G. D'Arcy|Barry E. Hammel|E.C. Hill|S. Schwartz|O. Wolcott|H. Wolcott <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_cd599777b2d2404c81cefed2a5c5e9b5.setContent(html_777fe05bf5454d098a2e1ca11b757034);
+        
+
+        marker_dbdf502d3193491982b33c443a52947a.bindPopup(popup_cd599777b2d2404c81cefed2a5c5e9b5)
+        ;
+
+        
+    
+    
+            var marker_3dd2be4e2e944a5493e35399994cff8f = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_f9818f95c7644c07850cc21b0188e226 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bf1a8f0a230439183550fa627e4802b = $(`<div id="html_6bf1a8f0a230439183550fa627e4802b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1890-02-06 00:00:00+00:00 <strong>Recolectores:</strong> H. F. Pittier <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f9818f95c7644c07850cc21b0188e226.setContent(html_6bf1a8f0a230439183550fa627e4802b);
+        
+
+        marker_3dd2be4e2e944a5493e35399994cff8f.bindPopup(popup_f9818f95c7644c07850cc21b0188e226)
+        ;
+
+        
+    
+    
+            var marker_4adc7e8b4a9e4625bbf67573b2bbf596 = L.marker(
+                [8.845833, -82.541667],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_7ff4cc44132d4142bc839f21e47a710f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bbeea75a1014b05a94d2656ccdfc6bc = $(`<div id="html_9bbeea75a1014b05a94d2656ccdfc6bc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Slopes of Las Cumbres near Cerro Punta. <strong>Elevación:</strong> 2350.0 m  <strong>Fecha:</strong> 1971-02-20 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7ff4cc44132d4142bc839f21e47a710f.setContent(html_9bbeea75a1014b05a94d2656ccdfc6bc);
+        
+
+        marker_4adc7e8b4a9e4625bbf67573b2bbf596.bindPopup(popup_7ff4cc44132d4142bc839f21e47a710f)
+        ;
+
+        
+    
+    
+            var marker_26cb042389d4445f9fc64b23a417d8de = L.marker(
+                [9.51, -83.58],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_62f4d91d175c41bab4efba2ae794deba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1446070ed61e43af8ca0155ecd02da4f = $(`<div id="html_1446070ed61e43af8ca0155ecd02da4f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internacional La Amistad, Cordillera de Talamanca, entre las Nacientes de la Quebrada Barranco y Río Blanco, Finca San Carlos. <strong>Elevación:</strong> 2640.0 m  <strong>Fecha:</strong> 1995-04-09 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar|Ó. [Esquivel] Garrote <strong>Identificadores:</strong> A. Rodriguez</div>`)[0];
+            popup_62f4d91d175c41bab4efba2ae794deba.setContent(html_1446070ed61e43af8ca0155ecd02da4f);
+        
+
+        marker_26cb042389d4445f9fc64b23a417d8de.bindPopup(popup_62f4d91d175c41bab4efba2ae794deba)
+        ;
+
+        
+    
+    
+            var marker_287e968767474a09b126a2c6f4b562a8 = L.marker(
+                [8.85, -82.51666],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_328d167b677e40bc89dbd590876368f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2715754915354af8b8770158c06ddf5d = $(`<div id="html_2715754915354af8b8770158c06ddf5d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajo Chorro. Rain forest <strong>Elevación:</strong> 1828.8 m  <strong>Fecha:</strong> 1938-02-09 00:00:00+00:00 <strong>Recolectores:</strong> Mary E. Davidson <strong>Identificadores:</strong> John Pruski (MO)</div>`)[0];
+            popup_328d167b677e40bc89dbd590876368f8.setContent(html_2715754915354af8b8770158c06ddf5d);
+        
+
+        marker_287e968767474a09b126a2c6f4b562a8.bindPopup(popup_328d167b677e40bc89dbd590876368f8)
+        ;
+
+        
+    
+    
+            var marker_ef1e6331faba422e9922d35777835b59 = L.marker(
+                [8.998889, -82.825278],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_36faab6225d3454db92d103e939a806b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad8ffc9598754d3c97b017df0b8aa2f8 = $(`<div id="html_ad8ffc9598754d3c97b017df0b8aa2f8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P.  Las Tablas, Cuenca Térraba-Sierpe, <strong>Elevación:</strong> 2250.0 m  <strong>Fecha:</strong> 1997-08-11 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro|H. Alfaro|Billen Gamboa R.|Joaquín Gamboa <strong>Identificadores:</strong> A. Rodriguez</div>`)[0];
+            popup_36faab6225d3454db92d103e939a806b.setContent(html_ad8ffc9598754d3c97b017df0b8aa2f8);
+        
+
+        marker_ef1e6331faba422e9922d35777835b59.bindPopup(popup_36faab6225d3454db92d103e939a806b)
+        ;
+
+        
+    
+    
+            var marker_445c796afaa14b91a2ca82ed17cc2f33 = L.marker(
+                [9.883, -82.792],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_fb14ce519c7f4a1493386b6a862f6697 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e440c63a4c34b44a5facc94fc169712 = $(`<div id="html_9e440c63a4c34b44a5facc94fc169712" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, trail between headwaters of the Río Bella Vista and Sitio Cotón (Cotonsito) on the Río Cotoón. Mixed oak forest <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1984-03-11 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse, L. Gomez, G. Herrera, C. Chacon & et al. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fb14ce519c7f4a1493386b6a862f6697.setContent(html_9e440c63a4c34b44a5facc94fc169712);
+        
+
+        marker_445c796afaa14b91a2ca82ed17cc2f33.bindPopup(popup_fb14ce519c7f4a1493386b6a862f6697)
+        ;
+
+        
+    
+    
+            var marker_7862f58c0be84327b1e0d8dadba8c471 = L.marker(
+                [9.1792, -83.0583],
+                {}
+            ).addTo(marker_cluster_982b5e732a6740fd9493cc083b1be6ae);
+        
+    
+        var popup_1d09d239d5864495a16e345e69fbf44c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24809ab590c34190a6f6582a109a0ae5 = $(`<div id="html_24809ab590c34190a6f6582a109a0ae5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, headwaters of the unnamed western branch of the Río Teribe, between the Río Sini and the continental divide at Cerro Bekom. Mixed oak forest along river with a clearing of kikuyu pasture <strong>Elevación:</strong> 2550.0 m  <strong>Fecha:</strong> 1984-03-21 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse, G. Herrera Ch. & R. Warner <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1d09d239d5864495a16e345e69fbf44c.setContent(html_24809ab590c34190a6f6582a109a0ae5);
+        
+
+        marker_7862f58c0be84327b1e0d8dadba8c471.bindPopup(popup_1d09d239d5864495a16e345e69fbf44c)
+        ;
+
+        
+    
+    
+            var layer_control_a8870c02990649d3a55873a36f5f50fd = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5f370e11870141759dfb670ce6aaf0d1,
+                    "ESRI World Imagery" : tile_layer_3ef0e319f74e4913918a7828b5525321,
+                },
+                overlays :  {
+                    "macro_element_982b5e732a6740fd9493cc083b1be6ae" : marker_cluster_982b5e732a6740fd9493cc083b1be6ae,
+                },
+            };
+            L.control.layers(
+                layer_control_a8870c02990649d3a55873a36f5f50fd.base_layers,
+                layer_control_a8870c02990649d3a55873a36f5f50fd.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_62fd6941fc0b4bb29738207a1ed33f81);
+            tile_layer_3ef0e319f74e4913918a7828b5525321.remove();
+        
+</script>

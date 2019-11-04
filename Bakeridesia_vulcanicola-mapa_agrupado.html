@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fc75ec18b9704d3eba507ff0e0eafbd4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fc75ec18b9704d3eba507ff0e0eafbd4" ></div>
+        
+</body>
+<script>    
+    
+            var map_fc75ec18b9704d3eba507ff0e0eafbd4 = L.map(
+                "map_fc75ec18b9704d3eba507ff0e0eafbd4",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_fc75ec18b9704d3eba507ff0e0eafbd4);
+
+            
+
+        
+    
+            var tile_layer_e2ea59ea482b47db98cc06196126dd5d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fc75ec18b9704d3eba507ff0e0eafbd4);
+        
+    
+            var tile_layer_6cafc44256794fdb8a5a4cc06b607634 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fc75ec18b9704d3eba507ff0e0eafbd4);
+        
+    
+            var marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1 = L.markerClusterGroup(
+                {}
+            );
+            map_fc75ec18b9704d3eba507ff0e0eafbd4.addLayer(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+            var marker_3ebced44e8ca4d989499bc767526ae9c = L.marker(
+                [9.703333, -84.130833],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_6e58cadfdf2e43758d428f68302be60d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c14e81d43af45be99de3c83bb6acb4e = $(`<div id="html_0c14e81d43af45be99de3c83bb6acb4e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Caraigres. Bosque secundario en la falda S, Quebrada Concha. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1996-02-04 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Fryxell, Paul Arnold</div>`)[0];
+            popup_6e58cadfdf2e43758d428f68302be60d.setContent(html_0c14e81d43af45be99de3c83bb6acb4e);
+        
+
+        marker_3ebced44e8ca4d989499bc767526ae9c.bindPopup(popup_6e58cadfdf2e43758d428f68302be60d)
+        ;
+
+        
+    
+    
+            var marker_26f3440651c94139a79a90a7680542be = L.marker(
+                [9.705, -84.130833],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_087d5134e7ac4eee851285f94c62ba68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f9e9e74300c4a16986384f7ecd7afaf = $(`<div id="html_9f9e9e74300c4a16986384f7ecd7afaf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Caraigres, Bosque secundario en la falda Sur, Quebrada Concha, camino viejo a Bijagual. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1995-02-03 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Fryxell, Paul Arnold</div>`)[0];
+            popup_087d5134e7ac4eee851285f94c62ba68.setContent(html_9f9e9e74300c4a16986384f7ecd7afaf);
+        
+
+        marker_26f3440651c94139a79a90a7680542be.bindPopup(popup_087d5134e7ac4eee851285f94c62ba68)
+        ;
+
+        
+    
+    
+            var marker_2683711dbb5541c083e17da630af1ae0 = L.marker(
+                [9.672222, -84.1625],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_e4ae3790bb41416a99f14aa72b33312e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f59f28dcfd5740f798b1ff974dfbbbc9 = $(`<div id="html_f59f28dcfd5740f798b1ff974dfbbbc9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas SE Fila Aguabuena, entre Quebrada Ceniza y Quebrada Sopapo, camino a Bijagual. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1999-01-09 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e4ae3790bb41416a99f14aa72b33312e.setContent(html_f59f28dcfd5740f798b1ff974dfbbbc9);
+        
+
+        marker_2683711dbb5541c083e17da630af1ae0.bindPopup(popup_e4ae3790bb41416a99f14aa72b33312e)
+        ;
+
+        
+    
+    
+            var marker_597c9012c6e1450e9ba84291e4a72302 = L.marker(
+                [9.672222, -84.1625],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_098b14f5fe3a45beb229dfb897fd85de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ab1d250ecc342539a0c19ff6c117c26 = $(`<div id="html_7ab1d250ecc342539a0c19ff6c117c26" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas SE Fila Aguabuena, entre Quebrada Ceniza y Quebrada Sopapo, camino a Bijagual. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1999-01-09 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_098b14f5fe3a45beb229dfb897fd85de.setContent(html_7ab1d250ecc342539a0c19ff6c117c26);
+        
+
+        marker_597c9012c6e1450e9ba84291e4a72302.bindPopup(popup_098b14f5fe3a45beb229dfb897fd85de)
+        ;
+
+        
+    
+    
+            var marker_0c127910fc6e414683a70db655c1176b = L.marker(
+                [9.672222, -84.1625],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_c81801ba9aa94574b9a8f3163683a32d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c454e4e9e9945289b25404b3b680bfe = $(`<div id="html_9c454e4e9e9945289b25404b3b680bfe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas SE Fila Aguabuena, entre Quebrada Ceniza y Quebrada Sopapo, camino a Bijagual. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1999-01-09 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_c81801ba9aa94574b9a8f3163683a32d.setContent(html_9c454e4e9e9945289b25404b3b680bfe);
+        
+
+        marker_0c127910fc6e414683a70db655c1176b.bindPopup(popup_c81801ba9aa94574b9a8f3163683a32d)
+        ;
+
+        
+    
+    
+            var marker_e54cbdc6106443f5b2c43de3fbf849f7 = L.marker(
+                [9.672222, -84.1625],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_feaecd5fcd474cab99a2aa89ed044d0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0c7a0635a144fc292cce866cbafd7a5 = $(`<div id="html_c0c7a0635a144fc292cce866cbafd7a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas SE Fila Aguabuena, entre Quebrada Ceniza y Quebrada Sopapo, camino a Bijagual. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1999-01-09 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_feaecd5fcd474cab99a2aa89ed044d0c.setContent(html_c0c7a0635a144fc292cce866cbafd7a5);
+        
+
+        marker_e54cbdc6106443f5b2c43de3fbf849f7.bindPopup(popup_feaecd5fcd474cab99a2aa89ed044d0c)
+        ;
+
+        
+    
+    
+            var marker_ba20f021ef1747edba98d02cfde737cc = L.marker(
+                [9.672222, -84.1625],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_3dfa6cc4d0994627888663fa4200313b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85d5114cf83a4f1287e90c1d49928fd8 = $(`<div id="html_85d5114cf83a4f1287e90c1d49928fd8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas SE Fila Aguabuena, entre Quebrada Ceniza y Quebrada Sopapo, camino a Bijagual. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1999-01-09 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_3dfa6cc4d0994627888663fa4200313b.setContent(html_85d5114cf83a4f1287e90c1d49928fd8);
+        
+
+        marker_ba20f021ef1747edba98d02cfde737cc.bindPopup(popup_3dfa6cc4d0994627888663fa4200313b)
+        ;
+
+        
+    
+    
+            var marker_7f9c74012c06443ab27d292ef006eac6 = L.marker(
+                [9.739444, -84.190833],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_bcf8ec77bf564ecb95bf51c2e4cfbfa6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56e1e59b5d17488baa0b893c5753fd7d = $(`<div id="html_56e1e59b5d17488baa0b893c5753fd7d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Caraigres, bosques remanentes, tacotales y potreros en la falda NW del Alto Reflis,camino a Alto El Triunfo. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2002-12-06 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel; Juan Francisco Morales Quirós ; Barry Hammel ; Isabel Pérez <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_bcf8ec77bf564ecb95bf51c2e4cfbfa6.setContent(html_56e1e59b5d17488baa0b893c5753fd7d);
+        
+
+        marker_7f9c74012c06443ab27d292ef006eac6.bindPopup(popup_bcf8ec77bf564ecb95bf51c2e4cfbfa6)
+        ;
+
+        
+    
+    
+            var marker_5b6b7e909a5346d786fecc74b4eaf53a = L.marker(
+                [9.739444, -84.190833],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_19498900df6c4d42883beb0e795d9317 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8185f42006f4b30933cb8e16cf1f4bc = $(`<div id="html_e8185f42006f4b30933cb8e16cf1f4bc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Caraigres, bosques remanentes, tacotales y potreros en la falda NW del Alto Reflis,camino a Alto El Triunfo. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2002-12-06 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel; Juan Francisco Morales Quirós ; Barry Hammel ; Isabel Pérez <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_19498900df6c4d42883beb0e795d9317.setContent(html_e8185f42006f4b30933cb8e16cf1f4bc);
+        
+
+        marker_5b6b7e909a5346d786fecc74b4eaf53a.bindPopup(popup_19498900df6c4d42883beb0e795d9317)
+        ;
+
+        
+    
+    
+            var marker_25a4617748c74328974a957bf7932348 = L.marker(
+                [9.676389, -84.158333],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_8d4bf8b2a7d64a038a5f998935080686 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0772a43b2f3a4e649f019ab243754f71 = $(`<div id="html_0772a43b2f3a4e649f019ab243754f71" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Altos El Aguacate y Bajo Venegas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2005-01-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_8d4bf8b2a7d64a038a5f998935080686.setContent(html_0772a43b2f3a4e649f019ab243754f71);
+        
+
+        marker_25a4617748c74328974a957bf7932348.bindPopup(popup_8d4bf8b2a7d64a038a5f998935080686)
+        ;
+
+        
+    
+    
+            var marker_6626566550f24e77b7a9be8002bbd067 = L.marker(
+                [9.676389, -84.158333],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_e51c372e432b4d71a8b895273f702dc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70b384e8ecdd43c1ae034398cbdff5dd = $(`<div id="html_70b384e8ecdd43c1ae034398cbdff5dd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Altos El Aguacate y Bajo Venegas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2005-01-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_e51c372e432b4d71a8b895273f702dc1.setContent(html_70b384e8ecdd43c1ae034398cbdff5dd);
+        
+
+        marker_6626566550f24e77b7a9be8002bbd067.bindPopup(popup_e51c372e432b4d71a8b895273f702dc1)
+        ;
+
+        
+    
+    
+            var marker_cbfecb2800794c0489615a95002b30f3 = L.marker(
+                [9.676389, -84.158333],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_d044d8e61d88414881bd26f57fc3f6cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2fd1b541e754f5193bd2cd6a0ad64f2 = $(`<div id="html_f2fd1b541e754f5193bd2cd6a0ad64f2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Altos El Aguacate y Bajo Venegas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2005-01-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_d044d8e61d88414881bd26f57fc3f6cb.setContent(html_f2fd1b541e754f5193bd2cd6a0ad64f2);
+        
+
+        marker_cbfecb2800794c0489615a95002b30f3.bindPopup(popup_d044d8e61d88414881bd26f57fc3f6cb)
+        ;
+
+        
+    
+    
+            var marker_1454efe8d92c4852b4569cefafea46b0 = L.marker(
+                [9.676389, -84.158333],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_dc99b18b83f04253b1b8e2ee5b62717e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d745020234f4cafbe48b3eca9b9a745 = $(`<div id="html_8d745020234f4cafbe48b3eca9b9a745" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Altos El Aguacate y Bajo Venegas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2005-01-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_dc99b18b83f04253b1b8e2ee5b62717e.setContent(html_8d745020234f4cafbe48b3eca9b9a745);
+        
+
+        marker_1454efe8d92c4852b4569cefafea46b0.bindPopup(popup_dc99b18b83f04253b1b8e2ee5b62717e)
+        ;
+
+        
+    
+    
+            var marker_1f0ac1555c664880a1e168e2ee4ced91 = L.marker(
+                [9.676389, -84.158333],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_508f9e32f8f2493abdf8c8ee62a49b2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90c47131d92a476f9002acf512de4099 = $(`<div id="html_90c47131d92a476f9002acf512de4099" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Altos El Aguacate y Bajo Venegas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2005-01-29 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Indira Hammel ; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_508f9e32f8f2493abdf8c8ee62a49b2f.setContent(html_90c47131d92a476f9002acf512de4099);
+        
+
+        marker_1f0ac1555c664880a1e168e2ee4ced91.bindPopup(popup_508f9e32f8f2493abdf8c8ee62a49b2f)
+        ;
+
+        
+    
+    
+            var marker_a25ba39d0009449d9584b57b866329f3 = L.marker(
+                [9.676389, -84.158333],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_e4a659ff460a4b8b8b2ba98c99caa71e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c925a6f2ed534b9d95b23e191ec5f912 = $(`<div id="html_c925a6f2ed534b9d95b23e191ec5f912" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Altos El Aguacate y Bajo Venegas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2005-01-29 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Indira Hammel ; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_e4a659ff460a4b8b8b2ba98c99caa71e.setContent(html_c925a6f2ed534b9d95b23e191ec5f912);
+        
+
+        marker_a25ba39d0009449d9584b57b866329f3.bindPopup(popup_e4a659ff460a4b8b8b2ba98c99caa71e)
+        ;
+
+        
+    
+    
+            var marker_fef16c428c364f5bbaccd9ce4c193802 = L.marker(
+                [9.676389, -84.158333],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_5f0312c63e994d32a4c6ae5f505d12d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2027cec61a14b2db68727150402f2b8 = $(`<div id="html_f2027cec61a14b2db68727150402f2b8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Altos El Aguacate y Bajo Venegas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2005-01-29 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Indira Hammel ; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_5f0312c63e994d32a4c6ae5f505d12d1.setContent(html_f2027cec61a14b2db68727150402f2b8);
+        
+
+        marker_fef16c428c364f5bbaccd9ce4c193802.bindPopup(popup_5f0312c63e994d32a4c6ae5f505d12d1)
+        ;
+
+        
+    
+    
+            var marker_a9072ba2686f48f683e5979da8362f2d = L.marker(
+                [9.676389, -84.158333],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_36e1983d0c2c4c0890a92725ed7f799b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f07a9f6b21db40449a0467961b5c7f3d = $(`<div id="html_f07a9f6b21db40449a0467961b5c7f3d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Altos El Aguacate y Bajo Venegas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2005-01-29 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Indira Hammel ; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_36e1983d0c2c4c0890a92725ed7f799b.setContent(html_f07a9f6b21db40449a0467961b5c7f3d);
+        
+
+        marker_a9072ba2686f48f683e5979da8362f2d.bindPopup(popup_36e1983d0c2c4c0890a92725ed7f799b)
+        ;
+
+        
+    
+    
+            var marker_17b0ae7b941843e1981e56e93e1c5e87 = L.marker(
+                [14.311805999999999, -89.142278],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_f5c1bc8a6e3d4839bbabcc968654395d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5055db5fb2a4456e9fd57a29f2ecfe4c = $(`<div id="html_5055db5fb2a4456e9fd57a29f2ecfe4c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2001-10-12 00:00:00+00:00 <strong>Recolectores:</strong> Sloot DM; Smeets MAJP; Reina A <strong>Identificadores:</strong> Sloot DM</div>`)[0];
+            popup_f5c1bc8a6e3d4839bbabcc968654395d.setContent(html_5055db5fb2a4456e9fd57a29f2ecfe4c);
+        
+
+        marker_17b0ae7b941843e1981e56e93e1c5e87.bindPopup(popup_f5c1bc8a6e3d4839bbabcc968654395d)
+        ;
+
+        
+    
+    
+            var marker_6b216e2363904ba5a02e5a23097b32d5 = L.marker(
+                [9.67, -84.16],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_ec929db177fc4ba2840764d1f2aa052d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b015d58825c460aaadf382759271b37 = $(`<div id="html_5b015d58825c460aaadf382759271b37" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas SE Fila Aguabuena, entre Quebrada Ceniza y Quebrada Sopapo, camino a Bijagual. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1999-01-09 00:00:00+00:00 <strong>Recolectores:</strong> Morales, Juan Francisco <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_ec929db177fc4ba2840764d1f2aa052d.setContent(html_5b015d58825c460aaadf382759271b37);
+        
+
+        marker_6b216e2363904ba5a02e5a23097b32d5.bindPopup(popup_ec929db177fc4ba2840764d1f2aa052d)
+        ;
+
+        
+    
+    
+            var marker_a9693e62f961460f96a2c779f8c36f85 = L.marker(
+                [9.676389, -84.15833],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_9ece17922f834366a422c70ed2578d6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1ffbab428b94d53a93a7cdcc403eaf5 = $(`<div id="html_b1ffbab428b94d53a93a7cdcc403eaf5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca del Pirrís-Damas. Entre Altos El Aguacate y Bajos de Vanegas. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2005-01-29 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Indira Hammel|Isabel Pérez <strong>Identificadores:</strong> B. Hammel</div>`)[0];
+            popup_9ece17922f834366a422c70ed2578d6b.setContent(html_b1ffbab428b94d53a93a7cdcc403eaf5);
+        
+
+        marker_a9693e62f961460f96a2c779f8c36f85.bindPopup(popup_9ece17922f834366a422c70ed2578d6b)
+        ;
+
+        
+    
+    
+            var marker_e3f97798941b4b1fa35c36a307e41a8d = L.marker(
+                [9.676389, -84.15833],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_64bc8eed269b484b9123419bac9f0ed7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf6e089a907a43a3a8ccd0f8a9a62e72 = $(`<div id="html_bf6e089a907a43a3a8ccd0f8a9a62e72" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca del Pirrís-Damas. Entre Altos El Aguacate y Bajos de Vanegas. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2005-01-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Isabel Pérez <strong>Identificadores:</strong> B. Hammel</div>`)[0];
+            popup_64bc8eed269b484b9123419bac9f0ed7.setContent(html_bf6e089a907a43a3a8ccd0f8a9a62e72);
+        
+
+        marker_e3f97798941b4b1fa35c36a307e41a8d.bindPopup(popup_64bc8eed269b484b9123419bac9f0ed7)
+        ;
+
+        
+    
+    
+            var marker_606e4740ff5049fbbdfe54839bab6400 = L.marker(
+                [15.7422, -90.1792],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_17073f264209433982f5255b328ed338 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aae1921b17c84572b0011f6743dd9797 = $(`<div id="html_aae1921b17c84572b0011f6743dd9797" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> J. A. Steyermark <strong>Identificadores:</strong> P. A. Fryxell</div>`)[0];
+            popup_17073f264209433982f5255b328ed338.setContent(html_aae1921b17c84572b0011f6743dd9797);
+        
+
+        marker_606e4740ff5049fbbdfe54839bab6400.bindPopup(popup_17073f264209433982f5255b328ed338)
+        ;
+
+        
+    
+    
+            var marker_702dd146ce214db69175535af34d340c = L.marker(
+                [9.676383, -84.158333],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_b59edc78a49f4bc5bf8fcad082827e3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b08aee37a17b4ebda1cf90b699b54866 = $(`<div id="html_b08aee37a17b4ebda1cf90b699b54866" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Wildstandort: Aserri, Cuenca del Pirris-Damas, entre Altors El Aguacate y Bajos de Vanegas <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2011-01-17 00:00:00+00:00 <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b59edc78a49f4bc5bf8fcad082827e3e.setContent(html_b08aee37a17b4ebda1cf90b699b54866);
+        
+
+        marker_702dd146ce214db69175535af34d340c.bindPopup(popup_b59edc78a49f4bc5bf8fcad082827e3e)
+        ;
+
+        
+    
+    
+            var marker_7aa70f766b8046faa5c70bdfe2a425f0 = L.marker(
+                [9.676383, -84.158333],
+                {}
+            ).addTo(marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1);
+        
+    
+        var popup_8c3f2348fd374def9618c8d3b943c0ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d7cf3c3c92a4420a9e43f5b3001b013 = $(`<div id="html_6d7cf3c3c92a4420a9e43f5b3001b013" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Wildstandort: Aserri, Cuenca del Pirris-Damas, entre Altors El Aguacate y Bajos de Vanegas <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2011-01-17 00:00:00+00:00 <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_8c3f2348fd374def9618c8d3b943c0ad.setContent(html_6d7cf3c3c92a4420a9e43f5b3001b013);
+        
+
+        marker_7aa70f766b8046faa5c70bdfe2a425f0.bindPopup(popup_8c3f2348fd374def9618c8d3b943c0ad)
+        ;
+
+        
+    
+    
+            var layer_control_956c77cd8f564caba7cb165d83195401 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e2ea59ea482b47db98cc06196126dd5d,
+                    "ESRI World Imagery" : tile_layer_6cafc44256794fdb8a5a4cc06b607634,
+                },
+                overlays :  {
+                    "macro_element_4d4b5d9022c648d4b2c2a480fa7885e1" : marker_cluster_4d4b5d9022c648d4b2c2a480fa7885e1,
+                },
+            };
+            L.control.layers(
+                layer_control_956c77cd8f564caba7cb165d83195401.base_layers,
+                layer_control_956c77cd8f564caba7cb165d83195401.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_fc75ec18b9704d3eba507ff0e0eafbd4);
+            tile_layer_6cafc44256794fdb8a5a4cc06b607634.remove();
+        
+</script>

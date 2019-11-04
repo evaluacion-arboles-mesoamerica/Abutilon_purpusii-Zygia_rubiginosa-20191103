@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1ee87287b0ec4da3996aaf160e4fbe26 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1ee87287b0ec4da3996aaf160e4fbe26" ></div>
+        
+</body>
+<script>    
+    
+            var map_1ee87287b0ec4da3996aaf160e4fbe26 = L.map(
+                "map_1ee87287b0ec4da3996aaf160e4fbe26",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_1ee87287b0ec4da3996aaf160e4fbe26);
+
+            
+
+        
+    
+            var tile_layer_ce931dee20bb4bee8a03b53097535574 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1ee87287b0ec4da3996aaf160e4fbe26);
+        
+    
+            var tile_layer_4e752ac0b63b4b88893d1c8314a9fdbc = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1ee87287b0ec4da3996aaf160e4fbe26);
+        
+    
+            var marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc = L.markerClusterGroup(
+                {}
+            );
+            map_1ee87287b0ec4da3996aaf160e4fbe26.addLayer(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+            var marker_eda6ab4b3bd342fc80c97e551e646615 = L.marker(
+                [10.402778, -84.05833299999999],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_b9763cd889d04007beae1b7f52eb1ef5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27539b190b1747b795d562f02ab84feb = $(`<div id="html_27539b190b1747b795d562f02ab84feb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Magsasay. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1991-06-16 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Smith, Damon</div>`)[0];
+            popup_b9763cd889d04007beae1b7f52eb1ef5.setContent(html_27539b190b1747b795d562f02ab84feb);
+        
+
+        marker_eda6ab4b3bd342fc80c97e551e646615.bindPopup(popup_b9763cd889d04007beae1b7f52eb1ef5)
+        ;
+
+        
+    
+    
+            var marker_e6540f6f1fe040d39309fa2f2ab70c8a = L.marker(
+                [10.433333, -84.01666800000001],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_b0c053a1d12b428d99793590363a399a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f52d06302aa41f6abc5495df0a3f72b = $(`<div id="html_4f52d06302aa41f6abc5495df0a3f72b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Biologica La Selva.; <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2003-06-28 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel; Nelson A. Zamora Villalobos ; Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_b0c053a1d12b428d99793590363a399a.setContent(html_4f52d06302aa41f6abc5495df0a3f72b);
+        
+
+        marker_e6540f6f1fe040d39309fa2f2ab70c8a.bindPopup(popup_b0c053a1d12b428d99793590363a399a)
+        ;
+
+        
+    
+    
+            var marker_9e7de9fad7b54d2192b74e73480fb3d4 = L.marker(
+                [10.433333, -84.01666800000001],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_db6b8c0a20be4298874b858e091c7caa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b168acf710b64d029fa0d9eac73abdda = $(`<div id="html_b168acf710b64d029fa0d9eac73abdda" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Biologica La Selva.; <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2003-06-28 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel; Nelson A. Zamora Villalobos ; Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_db6b8c0a20be4298874b858e091c7caa.setContent(html_b168acf710b64d029fa0d9eac73abdda);
+        
+
+        marker_9e7de9fad7b54d2192b74e73480fb3d4.bindPopup(popup_db6b8c0a20be4298874b858e091c7caa)
+        ;
+
+        
+    
+    
+            var marker_12ba651c49404e62b2a3c17801a5891c = L.marker(
+                [10.433333, -84.01666800000001],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_a6aa4280557147409f1a9c4084e7735f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56da6ae486e14012aa0e60ffee0700bd = $(`<div id="html_56da6ae486e14012aa0e60ffee0700bd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Biologica La Selva.; <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2003-06-28 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel; Nelson A. Zamora Villalobos ; Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_a6aa4280557147409f1a9c4084e7735f.setContent(html_56da6ae486e14012aa0e60ffee0700bd);
+        
+
+        marker_12ba651c49404e62b2a3c17801a5891c.bindPopup(popup_a6aa4280557147409f1a9c4084e7735f)
+        ;
+
+        
+    
+    
+            var marker_eab10de9939540949ef548a5a8d9082e = L.marker(
+                [10.235278, -84.117778],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_66ac3ed8d1cf4b178f856c0b2a36cc45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39d1b93e88d24b1fb15840005c6387f9 = $(`<div id="html_39d1b93e88d24b1fb15840005c6387f9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca de Oscar Murillo. <strong>Elevación:</strong> 1496.5 m  <strong>Fecha:</strong> 2005-04-06 00:00:00+00:00 <strong>Recolectores:</strong> Armando Soto; Frank  Alonso González Brenes <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_66ac3ed8d1cf4b178f856c0b2a36cc45.setContent(html_39d1b93e88d24b1fb15840005c6387f9);
+        
+
+        marker_eab10de9939540949ef548a5a8d9082e.bindPopup(popup_66ac3ed8d1cf4b178f856c0b2a36cc45)
+        ;
+
+        
+    
+    
+            var marker_7631bab656ba421fa350baded13f1905 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_1e2b3af7bc364e9da334e198319efa31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d61b108ec8c40198b291a40eedb3522 = $(`<div id="html_7d61b108ec8c40198b291a40eedb3522" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS Field Station on the Rio Puerto Viejo just E of its junciton with the Rio Sarapiqui. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1984-09-02 00:00:00+00:00 <strong>Recolectores:</strong> Damon A. Smith <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1e2b3af7bc364e9da334e198319efa31.setContent(html_7d61b108ec8c40198b291a40eedb3522);
+        
+
+        marker_7631bab656ba421fa350baded13f1905.bindPopup(popup_1e2b3af7bc364e9da334e198319efa31)
+        ;
+
+        
+    
+    
+            var marker_e682671796274b4cabb93c66037029c9 = L.marker(
+                [10.43, -84.01],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_40f6076975534c5d84879d501dab9fee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79c39f989fb442d5962cec3befe6cd88 = $(`<div id="html_79c39f989fb442d5962cec3befe6cd88" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> E.B. La Selva <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1973-08-31 00:00:00+00:00 <strong>Recolectores:</strong> Hartshorn, Gary S. <strong>Identificadores:</strong> D. Smith</div>`)[0];
+            popup_40f6076975534c5d84879d501dab9fee.setContent(html_79c39f989fb442d5962cec3befe6cd88);
+        
+
+        marker_e682671796274b4cabb93c66037029c9.bindPopup(popup_40f6076975534c5d84879d501dab9fee)
+        ;
+
+        
+    
+    
+            var marker_bf80b20f6cde4a25a6df7b36e5dae457 = L.marker(
+                [10.43, -84.01],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_4bb72d82e3dc4df8a073815a64bf6d78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1e0aa713b5041399bc2d0a6fa40e809 = $(`<div id="html_f1e0aa713b5041399bc2d0a6fa40e809" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> E.B. La Selva <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1973-08-31 00:00:00+00:00 <strong>Recolectores:</strong> Hartshorn, Gary S. <strong>Identificadores:</strong> D. Smith</div>`)[0];
+            popup_4bb72d82e3dc4df8a073815a64bf6d78.setContent(html_f1e0aa713b5041399bc2d0a6fa40e809);
+        
+
+        marker_bf80b20f6cde4a25a6df7b36e5dae457.bindPopup(popup_4bb72d82e3dc4df8a073815a64bf6d78)
+        ;
+
+        
+    
+    
+            var marker_6c18b8f81b154cd1a2757fe7e55c49f7 = L.marker(
+                [10.27, -84.08],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_2a35a489ae8247e29e22630b4254fa15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56eecce456c64d02a7d83c6d9fc6c0f7 = $(`<div id="html_56eecce456c64d02a7d83c6d9fc6c0f7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Sendero transecto. Inmediately to right of trail, one half hour below refugio at 1070 m. Primary premontane wet forest. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1992-11-25 00:00:00+00:00 <strong>Recolectores:</strong> Boyle, Brad <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_2a35a489ae8247e29e22630b4254fa15.setContent(html_56eecce456c64d02a7d83c6d9fc6c0f7);
+        
+
+        marker_6c18b8f81b154cd1a2757fe7e55c49f7.bindPopup(popup_2a35a489ae8247e29e22630b4254fa15)
+        ;
+
+        
+    
+    
+            var marker_21fec8ef701648c785b6e4387faca5d2 = L.marker(
+                [10.33, -83.6],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_35cccb6e5f2147abbad8559992c0c2c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8de88ea0925c4e2d80bf2dd6336f3b7c = $(`<div id="html_8de88ea0925c4e2d80bf2dd6336f3b7c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pueblo Nuevo. 17 Km NE of Guácimo, on the farm Bernardo Herrera M. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1994-09-09 00:00:00+00:00 <strong>Recolectores:</strong> Thomsen, Karsten <strong>Identificadores:</strong> Thomsen, Karsten</div>`)[0];
+            popup_35cccb6e5f2147abbad8559992c0c2c7.setContent(html_8de88ea0925c4e2d80bf2dd6336f3b7c);
+        
+
+        marker_21fec8ef701648c785b6e4387faca5d2.bindPopup(popup_35cccb6e5f2147abbad8559992c0c2c7)
+        ;
+
+        
+    
+    
+            var marker_5671db87b2e844598a0ae84ea7e5b82a = L.marker(
+                [10.66, -84.18],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_d38ef89343944c019cae550518cb2e04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c047e12cc701434fa16b21c81a75bf20 = $(`<div id="html_c047e12cc701434fa16b21c81a75bf20" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> SAn Carlos y Pital.Finca Ferlo <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-08-29 00:00:00+00:00 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_d38ef89343944c019cae550518cb2e04.setContent(html_c047e12cc701434fa16b21c81a75bf20);
+        
+
+        marker_5671db87b2e844598a0ae84ea7e5b82a.bindPopup(popup_d38ef89343944c019cae550518cb2e04)
+        ;
+
+        
+    
+    
+            var marker_bcf0730baddc422c95f9b062f041cd48 = L.marker(
+                [9.48, -83.96],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_d18417f596a944999b493271962b5443 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb5a5456f1f04aa3bccdf84dd7fb8fb3 = $(`<div id="html_cb5a5456f1f04aa3bccdf84dd7fb8fb3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos Camino a Tijerilla. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1998-04-16 00:00:00+00:00 <strong>Recolectores:</strong> Valverde, Oscar <strong>Identificadores:</strong> Valverde, Oscar</div>`)[0];
+            popup_d18417f596a944999b493271962b5443.setContent(html_cb5a5456f1f04aa3bccdf84dd7fb8fb3);
+        
+
+        marker_bcf0730baddc422c95f9b062f041cd48.bindPopup(popup_d18417f596a944999b493271962b5443)
+        ;
+
+        
+    
+    
+            var marker_3505f0c36bca46c2935dc596c808b6bf = L.marker(
+                [10.5, -84.0],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_ed23e286c765476aaf43f40283619310 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_513c13343a004cf19d7b57aadacbd6de = $(`<div id="html_513c13343a004cf19d7b57aadacbd6de" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1984-08-30 00:00:00+00:00 <strong>Recolectores:</strong> D. A. Smith <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_ed23e286c765476aaf43f40283619310.setContent(html_513c13343a004cf19d7b57aadacbd6de);
+        
+
+        marker_3505f0c36bca46c2935dc596c808b6bf.bindPopup(popup_ed23e286c765476aaf43f40283619310)
+        ;
+
+        
+    
+    
+            var marker_ccedc38722964eeebe2fe1cfda645801 = L.marker(
+                [10.5, -84.0],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_3a1a66515245452587385deaf85638f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b013e0bb0d924fd38000b0d8d090795c = $(`<div id="html_b013e0bb0d924fd38000b0d8d090795c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1985-05-26 00:00:00+00:00 <strong>Recolectores:</strong> B. Jacobs <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_3a1a66515245452587385deaf85638f0.setContent(html_b013e0bb0d924fd38000b0d8d090795c);
+        
+
+        marker_ccedc38722964eeebe2fe1cfda645801.bindPopup(popup_3a1a66515245452587385deaf85638f0)
+        ;
+
+        
+    
+    
+            var marker_98e9f52761d54232ba4edffbf9573c86 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_9afedc8fd1084f59ab28962fb35aa48b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59be788b4798466886319f9f1927572c = $(`<div id="html_59be788b4798466886319f9f1927572c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1980-04-06 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> D.A. Smith II</div>`)[0];
+            popup_9afedc8fd1084f59ab28962fb35aa48b.setContent(html_59be788b4798466886319f9f1927572c);
+        
+
+        marker_98e9f52761d54232ba4edffbf9573c86.bindPopup(popup_9afedc8fd1084f59ab28962fb35aa48b)
+        ;
+
+        
+    
+    
+            var marker_5f3b772a5435489d8641dac4cca1280f = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_2281aedd764e435e8776502db358ffbd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9589cc47eeb54d52a69ffdf5f5b59f82 = $(`<div id="html_9589cc47eeb54d52a69ffdf5f5b59f82" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1985-05-16 00:00:00+00:00 <strong>Recolectores:</strong> Brian Jacobs <strong>Identificadores:</strong> D.A. Smith</div>`)[0];
+            popup_2281aedd764e435e8776502db358ffbd.setContent(html_9589cc47eeb54d52a69ffdf5f5b59f82);
+        
+
+        marker_5f3b772a5435489d8641dac4cca1280f.bindPopup(popup_2281aedd764e435e8776502db358ffbd)
+        ;
+
+        
+    
+    
+            var marker_5d83db26efad4d8691eb7c8b9357bd67 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_8d7f225dc7134d938eb351268b30f1a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69413509cc494c878bb0ec1c16417a8d = $(`<div id="html_69413509cc494c878bb0ec1c16417a8d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-06-17 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Jill Trainer <strong>Identificadores:</strong> D.A. Smith</div>`)[0];
+            popup_8d7f225dc7134d938eb351268b30f1a1.setContent(html_69413509cc494c878bb0ec1c16417a8d);
+        
+
+        marker_5d83db26efad4d8691eb7c8b9357bd67.bindPopup(popup_8d7f225dc7134d938eb351268b30f1a1)
+        ;
+
+        
+    
+    
+            var marker_55acc5bc39cc47159502de5ac8541852 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_b33e55ba15544d12851b02906bf69e7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a83c61d34eb64212bd67689b2cd94956 = $(`<div id="html_a83c61d34eb64212bd67689b2cd94956" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1984-06-15 00:00:00+00:00 <strong>Recolectores:</strong> Brian Jacobs <strong>Identificadores:</strong> D.A. Smith</div>`)[0];
+            popup_b33e55ba15544d12851b02906bf69e7d.setContent(html_a83c61d34eb64212bd67689b2cd94956);
+        
+
+        marker_55acc5bc39cc47159502de5ac8541852.bindPopup(popup_b33e55ba15544d12851b02906bf69e7d)
+        ;
+
+        
+    
+    
+            var marker_744fe7c2d07b4d378e871aac5c0cb54d = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_0761903128a2417289590486cc14ff20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64e1e5d58c504d0a98fef50eb237995c = $(`<div id="html_64e1e5d58c504d0a98fef50eb237995c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1984-09-02 00:00:00+00:00 <strong>Recolectores:</strong> Damon A. Smith <strong>Identificadores:</strong> D.A. Smith</div>`)[0];
+            popup_0761903128a2417289590486cc14ff20.setContent(html_64e1e5d58c504d0a98fef50eb237995c);
+        
+
+        marker_744fe7c2d07b4d378e871aac5c0cb54d.bindPopup(popup_0761903128a2417289590486cc14ff20)
+        ;
+
+        
+    
+    
+            var marker_ab4137c741624b3bb448221c113beb9a = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_300520b864034bbf9631bca87997a90f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a0fb159dae1409a9400eb8a1ad43d7c = $(`<div id="html_4a0fb159dae1409a9400eb8a1ad43d7c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1983-05-18 00:00:00+00:00 <strong>Recolectores:</strong> Isidro A. Chacón G. <strong>Identificadores:</strong> D.A. Smith II</div>`)[0];
+            popup_300520b864034bbf9631bca87997a90f.setContent(html_4a0fb159dae1409a9400eb8a1ad43d7c);
+        
+
+        marker_ab4137c741624b3bb448221c113beb9a.bindPopup(popup_300520b864034bbf9631bca87997a90f)
+        ;
+
+        
+    
+    
+            var marker_359c86ac308d41c9b730def561164b65 = L.marker(
+                [10.433333, -84.016667],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_e357ddd42c9f45eb97b1039957a6494c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1dd856b7e40245df8c271bfc21e028b3 = $(`<div id="html_1dd856b7e40245df8c271bfc21e028b3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, Puerto Viejo. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1973-04-13 00:00:00+00:00 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> T. D. Pennington (K)</div>`)[0];
+            popup_e357ddd42c9f45eb97b1039957a6494c.setContent(html_1dd856b7e40245df8c271bfc21e028b3);
+        
+
+        marker_359c86ac308d41c9b730def561164b65.bindPopup(popup_e357ddd42c9f45eb97b1039957a6494c)
+        ;
+
+        
+    
+    
+            var marker_d39cecc7dcec4940b1c8ffd017bef0a0 = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_f7e31923543143ba98f037182a3dc37f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8863135db53b4c3595ad3e882b6e6fbd = $(`<div id="html_8863135db53b4c3595ad3e882b6e6fbd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1984-05-10 00:00:00+00:00 <strong>Recolectores:</strong> Robert L. Wilbur|Brian Jacobs <strong>Identificadores:</strong> T. D. Pennington (K)</div>`)[0];
+            popup_f7e31923543143ba98f037182a3dc37f.setContent(html_8863135db53b4c3595ad3e882b6e6fbd);
+        
+
+        marker_d39cecc7dcec4940b1c8ffd017bef0a0.bindPopup(popup_f7e31923543143ba98f037182a3dc37f)
+        ;
+
+        
+    
+    
+            var marker_80787ed78c2c4d538bf8a734ab6b8edd = L.marker(
+                [10.402778, -84.05833299999999],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_c99381d23b724f7192a4c0b0c2c7cf85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd035d88d2bf409fba02dfbc02c98c9d = $(`<div id="html_fd035d88d2bf409fba02dfbc02c98c9d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Estación Magsasay <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1991-06-16 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar|Molly Cummings|Harold F. Greeney <strong>Identificadores:</strong> T. D. Pennington (K)</div>`)[0];
+            popup_c99381d23b724f7192a4c0b0c2c7cf85.setContent(html_fd035d88d2bf409fba02dfbc02c98c9d);
+        
+
+        marker_80787ed78c2c4d538bf8a734ab6b8edd.bindPopup(popup_c99381d23b724f7192a4c0b0c2c7cf85)
+        ;
+
+        
+    
+    
+            var marker_44880e524e984922b0a038d140ad6a2d = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_1735bf568ce04f8c9e33800dd2c7ad69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2d9a1e6b63f4eef864df4fa82d65a82 = $(`<div id="html_a2d9a1e6b63f4eef864df4fa82d65a82" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-04-07 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> T. D. Pennington (K)</div>`)[0];
+            popup_1735bf568ce04f8c9e33800dd2c7ad69.setContent(html_a2d9a1e6b63f4eef864df4fa82d65a82);
+        
+
+        marker_44880e524e984922b0a038d140ad6a2d.bindPopup(popup_1735bf568ce04f8c9e33800dd2c7ad69)
+        ;
+
+        
+    
+    
+            var marker_cdb7ddf470984dacb1dea1f5bae526e9 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_d2e81cfd70ec4fc09dfe35bc2b2cccc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f970e18269e24da1a771cb91b08b11b5 = $(`<div id="html_f970e18269e24da1a771cb91b08b11b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-05-04 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> Damon Smith</div>`)[0];
+            popup_d2e81cfd70ec4fc09dfe35bc2b2cccc7.setContent(html_f970e18269e24da1a771cb91b08b11b5);
+        
+
+        marker_cdb7ddf470984dacb1dea1f5bae526e9.bindPopup(popup_d2e81cfd70ec4fc09dfe35bc2b2cccc7)
+        ;
+
+        
+    
+    
+            var marker_49a38580346d482e93faaccc0ca22ccf = L.marker(
+                [10.433333, -84.016667],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_55b79e7f107a407b946a04c2391f8d6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7196ea37890f40e6a42ecc53e74fba46 = $(`<div id="html_7196ea37890f40e6a42ecc53e74fba46" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, Puerto Viejo. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1970-03-07 00:00:00+00:00 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> T. D. Pennington (K)</div>`)[0];
+            popup_55b79e7f107a407b946a04c2391f8d6b.setContent(html_7196ea37890f40e6a42ecc53e74fba46);
+        
+
+        marker_49a38580346d482e93faaccc0ca22ccf.bindPopup(popup_55b79e7f107a407b946a04c2391f8d6b)
+        ;
+
+        
+    
+    
+            var marker_b2a6817df730447a9004d2a5d66acfa7 = L.marker(
+                [10.423055999999999, -83.992778],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_105f037aa3a5468696fc0c136bcf3c6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be50dff35384410ea3146948a22f0817 = $(`<div id="html_be50dff35384410ea3146948a22f0817" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bank of Río Puerto Viejo northwest of El Tigre, about 4-6 km southeast of Puerto Viejo <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1984-08-30 00:00:00+00:00 <strong>Recolectores:</strong> Damon A. Smith|Pete Lahanas|Nick Lahanas <strong>Identificadores:</strong> T. D. Pennington (K)</div>`)[0];
+            popup_105f037aa3a5468696fc0c136bcf3c6a.setContent(html_be50dff35384410ea3146948a22f0817);
+        
+
+        marker_b2a6817df730447a9004d2a5d66acfa7.bindPopup(popup_105f037aa3a5468696fc0c136bcf3c6a)
+        ;
+
+        
+    
+    
+            var marker_31d395e28a804b58bdaed4f2b30f815a = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_bc05a98a2e254698906d23d1992e41aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80f8f40911e7433388efda3d9d759406 = $(`<div id="html_80f8f40911e7433388efda3d9d759406" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1985-05-23 00:00:00+00:00 <strong>Recolectores:</strong> Brian Jacobs <strong>Identificadores:</strong> T. D. Pennington (K)</div>`)[0];
+            popup_bc05a98a2e254698906d23d1992e41aa.setContent(html_80f8f40911e7433388efda3d9d759406);
+        
+
+        marker_31d395e28a804b58bdaed4f2b30f815a.bindPopup(popup_bc05a98a2e254698906d23d1992e41aa)
+        ;
+
+        
+    
+    
+            var marker_32dfbee5dcca48459cc5a0378055dd5f = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_3d2ba5cc68094686908d1f545c0bd5b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e6a9a20c56142de849eb4f861501a95 = $(`<div id="html_6e6a9a20c56142de849eb4f861501a95" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1985-05-22 00:00:00+00:00 <strong>Recolectores:</strong> Robert L. Wilbur <strong>Identificadores:</strong> T. D. Pennington (K)</div>`)[0];
+            popup_3d2ba5cc68094686908d1f545c0bd5b1.setContent(html_6e6a9a20c56142de849eb4f861501a95);
+        
+
+        marker_32dfbee5dcca48459cc5a0378055dd5f.bindPopup(popup_3d2ba5cc68094686908d1f545c0bd5b1)
+        ;
+
+        
+    
+    
+            var marker_baeacc262e444c939cbe88109509c2b1 = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_01670c5a6a3a41ed910ca62054f556c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87d78fb821404d5ea537fd601227a518 = $(`<div id="html_87d78fb821404d5ea537fd601227a518" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1985-05-26 00:00:00+00:00 <strong>Recolectores:</strong> Brian Jacobs <strong>Identificadores:</strong> T. D. Pennington (K)</div>`)[0];
+            popup_01670c5a6a3a41ed910ca62054f556c3.setContent(html_87d78fb821404d5ea537fd601227a518);
+        
+
+        marker_baeacc262e444c939cbe88109509c2b1.bindPopup(popup_01670c5a6a3a41ed910ca62054f556c3)
+        ;
+
+        
+    
+    
+            var marker_01db914416c2416fa50854ba645fb1ca = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_30283af6db47436aa75758b0bc32e0b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffb61f0edcca4b4993bf73cff8b401a7 = $(`<div id="html_ffb61f0edcca4b4993bf73cff8b401a7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1978-05-27 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> D.A. Smith II</div>`)[0];
+            popup_30283af6db47436aa75758b0bc32e0b3.setContent(html_ffb61f0edcca4b4993bf73cff8b401a7);
+        
+
+        marker_01db914416c2416fa50854ba645fb1ca.bindPopup(popup_30283af6db47436aa75758b0bc32e0b3)
+        ;
+
+        
+    
+    
+            var marker_f99c37f06f96413ebb9ce3bb8d7d6090 = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc);
+        
+    
+        var popup_8d39bfdfeb044e43865c4fe26492f5e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a54c909c16f4f6ba40594a93b154da4 = $(`<div id="html_5a54c909c16f4f6ba40594a93b154da4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1985-05-25 00:00:00+00:00 <strong>Recolectores:</strong> Brian Jacobs <strong>Identificadores:</strong> T. D. Pennington (K)</div>`)[0];
+            popup_8d39bfdfeb044e43865c4fe26492f5e3.setContent(html_5a54c909c16f4f6ba40594a93b154da4);
+        
+
+        marker_f99c37f06f96413ebb9ce3bb8d7d6090.bindPopup(popup_8d39bfdfeb044e43865c4fe26492f5e3)
+        ;
+
+        
+    
+    
+            var layer_control_cd77350c99b34d3ab2074c7d8ba85c16 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ce931dee20bb4bee8a03b53097535574,
+                    "ESRI World Imagery" : tile_layer_4e752ac0b63b4b88893d1c8314a9fdbc,
+                },
+                overlays :  {
+                    "macro_element_5fd8d1633f9c4fe48152a79b6e7c8ffc" : marker_cluster_5fd8d1633f9c4fe48152a79b6e7c8ffc,
+                },
+            };
+            L.control.layers(
+                layer_control_cd77350c99b34d3ab2074c7d8ba85c16.base_layers,
+                layer_control_cd77350c99b34d3ab2074c7d8ba85c16.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_1ee87287b0ec4da3996aaf160e4fbe26);
+            tile_layer_4e752ac0b63b4b88893d1c8314a9fdbc.remove();
+        
+</script>

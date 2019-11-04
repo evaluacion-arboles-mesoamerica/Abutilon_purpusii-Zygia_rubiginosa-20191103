@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7359247bf3d841dabdc750df9a7f83b1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7359247bf3d841dabdc750df9a7f83b1" ></div>
+        
+</body>
+<script>    
+    
+            var map_7359247bf3d841dabdc750df9a7f83b1 = L.map(
+                "map_7359247bf3d841dabdc750df9a7f83b1",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_7359247bf3d841dabdc750df9a7f83b1);
+
+            
+
+        
+    
+            var tile_layer_309f4227d3134b1d914cbf3519dcf4a7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7359247bf3d841dabdc750df9a7f83b1);
+        
+    
+            var tile_layer_a496ce11f172494397f92b92f1d4cb2a = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7359247bf3d841dabdc750df9a7f83b1);
+        
+    
+            var marker_cluster_a3198b9a299141cf9cc5012727182a90 = L.markerClusterGroup(
+                {}
+            );
+            map_7359247bf3d841dabdc750df9a7f83b1.addLayer(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+            var marker_0eea0f6d4e5a430491a495a72ec2f16c = L.marker(
+                [9.583333, -83.65],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_d1a3548beecd4c7d902a767e5c331aff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6b43685ed26463d91ea275c3948c85b = $(`<div id="html_f6b43685ed26463d91ea275c3948c85b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Anai, at headwaters of Quebrada Mata de Limon, west of Mata de Limon (Sixaola region). Forest along upper central fork of Quebrada. <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1985-05-03 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_d1a3548beecd4c7d902a767e5c331aff.setContent(html_f6b43685ed26463d91ea275c3948c85b);
+        
+
+        marker_0eea0f6d4e5a430491a495a72ec2f16c.bindPopup(popup_d1a3548beecd4c7d902a767e5c331aff)
+        ;
+
+        
+    
+    
+            var marker_fdcf9b4dce6a464d988043e4dcd6254d = L.marker(
+                [9.633333, -82.769444],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_c5b976e06ccf449b8896346f6f853d42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9153f93a6425476798f4540ab3e0c4ff = $(`<div id="html_9153f93a6425476798f4540ab3e0c4ff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, 3-4 Km SO de Puerto Viejo. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-03-06 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_c5b976e06ccf449b8896346f6f853d42.setContent(html_9153f93a6425476798f4540ab3e0c4ff);
+        
+
+        marker_fdcf9b4dce6a464d988043e4dcd6254d.bindPopup(popup_c5b976e06ccf449b8896346f6f853d42)
+        ;
+
+        
+    
+    
+            var marker_bcdb7c9c162d4c259abbf206a9b52ad4 = L.marker(
+                [9.638419, -82.823483],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_248d4cc91ccb436788d213b7c84585e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01f749162ff647e4b4131fc386437372 = $(`<div id="html_01f749162ff647e4b4131fc386437372" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque residual a la orilla del Rio Sand box, del puente sobre la carretera a Bribri ca. 600 m aguas arriba. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-05-06 00:00:00+00:00 <strong>Recolectores:</strong> Jorge Gómez Laurito <strong>Identificadores:</strong> Gómez Laurito, Jorge</div>`)[0];
+            popup_248d4cc91ccb436788d213b7c84585e2.setContent(html_01f749162ff647e4b4131fc386437372);
+        
+
+        marker_bcdb7c9c162d4c259abbf206a9b52ad4.bindPopup(popup_248d4cc91ccb436788d213b7c84585e2)
+        ;
+
+        
+    
+    
+            var marker_cc1433c175d142b6bc9a8a3d3ad68886 = L.marker(
+                [9.597984, -82.605858],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_f93d9a0dbb6c4c4aa346b236b745050f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d08be3d76574944b5cb1963f494571b = $(`<div id="html_5d08be3d76574944b5cb1963f494571b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Refugio de Vida Silvestre Manzanillo-Gandoca <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 2000-10-05 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_f93d9a0dbb6c4c4aa346b236b745050f.setContent(html_5d08be3d76574944b5cb1963f494571b);
+        
+
+        marker_cc1433c175d142b6bc9a8a3d3ad68886.bindPopup(popup_f93d9a0dbb6c4c4aa346b236b745050f)
+        ;
+
+        
+    
+    
+            var marker_dca908af9e794928b04e25b18ef1d69c = L.marker(
+                [9.597984, -82.605858],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_e1cf923d0bac4c64acfa2e99b21b2791 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_217d203758c24953b262b81ca1eeee33 = $(`<div id="html_217d203758c24953b262b81ca1eeee33" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Refugio de Vida Silvestre Manzanillo-Gandoca <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 2000-10-05 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_e1cf923d0bac4c64acfa2e99b21b2791.setContent(html_217d203758c24953b262b81ca1eeee33);
+        
+
+        marker_dca908af9e794928b04e25b18ef1d69c.bindPopup(popup_e1cf923d0bac4c64acfa2e99b21b2791)
+        ;
+
+        
+    
+    
+            var marker_45374a772d3d4e84a09d849ece646c22 = L.marker(
+                [9.597984, -82.605858],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_c3d2d8d9429c4feab27fef2c85709267 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea6b7105dad84a539a782aed4d393695 = $(`<div id="html_ea6b7105dad84a539a782aed4d393695" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Refugio de Vida Silvestre Manzanillo-Gandoca <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 2000-10-05 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_c3d2d8d9429c4feab27fef2c85709267.setContent(html_ea6b7105dad84a539a782aed4d393695);
+        
+
+        marker_45374a772d3d4e84a09d849ece646c22.bindPopup(popup_c3d2d8d9429c4feab27fef2c85709267)
+        ;
+
+        
+    
+    
+            var marker_71470d7494c748c8bc8a838695654b7f = L.marker(
+                [9.597984, -82.605858],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_1433537c824e4f918a7e80734b570682 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbf0d030be014ae4a1b1df7fbbc620ba = $(`<div id="html_fbf0d030be014ae4a1b1df7fbbc620ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Refugio de Vida Silvestre Manzanillo-Gandoca <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 2000-10-05 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Alverson, William</div>`)[0];
+            popup_1433537c824e4f918a7e80734b570682.setContent(html_fbf0d030be014ae4a1b1df7fbbc620ba);
+        
+
+        marker_71470d7494c748c8bc8a838695654b7f.bindPopup(popup_1433537c824e4f918a7e80734b570682)
+        ;
+
+        
+    
+    
+            var marker_40515a2c005842c095f33fe6a195970b = L.marker(
+                [9.56666, -82.6],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_89a35c7ec43a46a6be608013474285f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fde954d0119f4c5194af20c27bef6093 = $(`<div id="html_fde954d0119f4c5194af20c27bef6093" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sixaola. Gandoca. Zona intermedia entre el Humedal del Sixaola y Laguna Gandoca. <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1995-03-25 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Bill McLarney <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_89a35c7ec43a46a6be608013474285f4.setContent(html_fde954d0119f4c5194af20c27bef6093);
+        
+
+        marker_40515a2c005842c095f33fe6a195970b.bindPopup(popup_89a35c7ec43a46a6be608013474285f4)
+        ;
+
+        
+    
+    
+            var marker_dd3b3620c7b549aea6308a340f2fc031 = L.marker(
+                [9.643889, -82.830277],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_498b7f924c2748bcacc6a1f4d20d23f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6dd4d68f604436ab68c38adc20bc88e = $(`<div id="html_d6dd4d68f604436ab68c38adc20bc88e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Sand Box, ca .5 km upstream from Bribri-Cahuita road (route 36) crossing where new bridge is almost completed, this 3 km ENE (by air) of Bribri (originally Cruce Bribri) and 7.2 km WSW (by air) of Puerto Viejo de Limon. South bank of W branch of river <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1983-10-28 00:00:00+00:00 <strong>Recolectores:</strong> W. S. Alverson <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_498b7f924c2748bcacc6a1f4d20d23f5.setContent(html_d6dd4d68f604436ab68c38adc20bc88e);
+        
+
+        marker_dd3b3620c7b549aea6308a340f2fc031.bindPopup(popup_498b7f924c2748bcacc6a1f4d20d23f5)
+        ;
+
+        
+    
+    
+            var marker_47f71ef707dc49eda5ace383ba6cc1fb = L.marker(
+                [9.64, -82.82],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_2392f752b3044250b12ac22a0df1ff2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da65163c24e04e2589ceefa2ac0c8235 = $(`<div id="html_da65163c24e04e2589ceefa2ac0c8235" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Sand Box, ca. 0.5 Km upstream from Bribrí-Cahuita road (route 36), crossing where new bridge is almost completes, this  Km ENE (by air) of Bribrí (originally Cruce Bribrí) and 7.2 Km WSW (by air) of Puerto Viejo. South bank of W branch of rover 15 m <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1983-10-28 00:00:00+00:00 <strong>Recolectores:</strong> Alverson, William S. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2392f752b3044250b12ac22a0df1ff2f.setContent(html_da65163c24e04e2589ceefa2ac0c8235);
+        
+
+        marker_47f71ef707dc49eda5ace383ba6cc1fb.bindPopup(popup_2392f752b3044250b12ac22a0df1ff2f)
+        ;
+
+        
+    
+    
+            var marker_584e55d701824d3c8316fac753550e3a = L.marker(
+                [9.62, -82.82],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_b2434cd9657e4456ab17907385bf7cca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2714b97bcc9e41acb2dd18ce8e731a64 = $(`<div id="html_2714b97bcc9e41acb2dd18ce8e731a64" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque residual a la orilla del Río Sand Box, del pueste sobre la carretera a Bri Bri, ca. 600 m aguas arriba. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-03-06 00:00:00+00:00 <strong>Recolectores:</strong> Gómez Laurito, Jorge <strong>Identificadores:</strong> Gómez Laurito, Jorge</div>`)[0];
+            popup_b2434cd9657e4456ab17907385bf7cca.setContent(html_2714b97bcc9e41acb2dd18ce8e731a64);
+        
+
+        marker_584e55d701824d3c8316fac753550e3a.bindPopup(popup_b2434cd9657e4456ab17907385bf7cca)
+        ;
+
+        
+    
+    
+            var marker_ca35c7e34b794d0e9a26f20a576676f1 = L.marker(
+                [9.63, -82.76],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_864868eaeb50407dac9d2f625ae3674c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_943c08687f694f1685daa3eae8fcd359 = $(`<div id="html_943c08687f694f1685daa3eae8fcd359" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.I. Coclés 3-4 km al SO de Puerto Viejo. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-03-06 00:00:00+00:00 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_864868eaeb50407dac9d2f625ae3674c.setContent(html_943c08687f694f1685daa3eae8fcd359);
+        
+
+        marker_ca35c7e34b794d0e9a26f20a576676f1.bindPopup(popup_864868eaeb50407dac9d2f625ae3674c)
+        ;
+
+        
+    
+    
+            var marker_79965d08b58f42eda016112c97a1f6d0 = L.marker(
+                [9.62, -82.82],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_37fa5ce92c0846bdaf1d2433db8556f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7cc8ffd9d0b443c89d7e36f1deebf9d = $(`<div id="html_d7cc8ffd9d0b443c89d7e36f1deebf9d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque residual a la orilla del Río Sand Box, del pueste sobre la carretera a Bri Bri, ca. 600 m aguas arriba. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-03-06 00:00:00+00:00 <strong>Recolectores:</strong> Gómez Laurito, Jorge <strong>Identificadores:</strong> Gómez Laurito, Jorge</div>`)[0];
+            popup_37fa5ce92c0846bdaf1d2433db8556f1.setContent(html_d7cc8ffd9d0b443c89d7e36f1deebf9d);
+        
+
+        marker_79965d08b58f42eda016112c97a1f6d0.bindPopup(popup_37fa5ce92c0846bdaf1d2433db8556f1)
+        ;
+
+        
+    
+    
+            var marker_ea3f032360cb49d4b977bdd6e318fbb0 = L.marker(
+                [9.63, -82.83],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_addf2f059a7e4908b209a6f2145ae30f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fae8ce3debab400e88fecf55f577c466 = $(`<div id="html_fae8ce3debab400e88fecf55f577c466" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Culebra. Carretera a Bribri desvío por camino rural 1.5 Km ca. Río Sandbox. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1992-02-12 00:00:00+00:00 <strong>Recolectores:</strong> Gómez Laurito, Jorge <strong>Identificadores:</strong> Gómez Laurito, Jorge</div>`)[0];
+            popup_addf2f059a7e4908b209a6f2145ae30f.setContent(html_fae8ce3debab400e88fecf55f577c466);
+        
+
+        marker_ea3f032360cb49d4b977bdd6e318fbb0.bindPopup(popup_addf2f059a7e4908b209a6f2145ae30f)
+        ;
+
+        
+    
+    
+            var marker_772a2ac304424d4cac29f5a1d1d22c0b = L.marker(
+                [9.56, -82.6],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_0bf6c8ca61a74a80bd59d85bab456dd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0adfe54fbf0a403aa97dcde148f43f21 = $(`<div id="html_0adfe54fbf0a403aa97dcde148f43f21" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Gandoca. Zona Intermedia entre el Humedal de Sixaola y Lagunna Gandoca. <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1995-03-25 00:00:00+00:00 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Cascante, Alfredo</div>`)[0];
+            popup_0bf6c8ca61a74a80bd59d85bab456dd3.setContent(html_0adfe54fbf0a403aa97dcde148f43f21);
+        
+
+        marker_772a2ac304424d4cac29f5a1d1d22c0b.bindPopup(popup_0bf6c8ca61a74a80bd59d85bab456dd3)
+        ;
+
+        
+    
+    
+            var marker_8fc43bb1ed8943ef954df3cbb68f567f = L.marker(
+                [9.65, -82.88],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_d8d9f14da10848ed8cd5a2da5d3dab58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4aae3284febf4f48ae7693ad491d7eb8 = $(`<div id="html_4aae3284febf4f48ae7693ad491d7eb8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bribri. 7 km Noreste del Pueblo, en dirección hacia la fila Carbón. Bosque aledaños a la nueva toma de agua. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1995-07-18 00:00:00+00:00 <strong>Recolectores:</strong> Cascante, Alfredo <strong>Identificadores:</strong> Cascante, Alfredo</div>`)[0];
+            popup_d8d9f14da10848ed8cd5a2da5d3dab58.setContent(html_4aae3284febf4f48ae7693ad491d7eb8);
+        
+
+        marker_8fc43bb1ed8943ef954df3cbb68f567f.bindPopup(popup_d8d9f14da10848ed8cd5a2da5d3dab58)
+        ;
+
+        
+    
+    
+            var marker_56c8ef2b52e54dbb96f82295fe4469ed = L.marker(
+                [9.63, -82.82],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_719f429d89344316a4a350fd344623f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3728c62ec503418eb58a897c80dfd94a = $(`<div id="html_3728c62ec503418eb58a897c80dfd94a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bri bri. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1996-10-06 00:00:00+00:00 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_719f429d89344316a4a350fd344623f6.setContent(html_3728c62ec503418eb58a897c80dfd94a);
+        
+
+        marker_56c8ef2b52e54dbb96f82295fe4469ed.bindPopup(popup_719f429d89344316a4a350fd344623f6)
+        ;
+
+        
+    
+    
+            var marker_3273dcb93fcc49a7871d75d78d97016c = L.marker(
+                [9.65, -82.82],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_95fafab4bb454882945184768c247a39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e053a0cc8d614491bd6a31543f129b9f = $(`<div id="html_e053a0cc8d614491bd6a31543f129b9f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Sand Box, ca. 0.5 km upstream from Bribrí-Cahuita road (route 36) crossing where new bridge is almost completed, this 3 km ENE (by air) of Bribrí (originally Cruce Bribrí) and 7.2 km WSW (by air) of Puerto Viejo de Limon.  More information given. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1983-10-28 00:00:00+00:00 <strong>Recolectores:</strong> Alverson, W.S. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_95fafab4bb454882945184768c247a39.setContent(html_e053a0cc8d614491bd6a31543f129b9f);
+        
+
+        marker_3273dcb93fcc49a7871d75d78d97016c.bindPopup(popup_95fafab4bb454882945184768c247a39)
+        ;
+
+        
+    
+    
+            var marker_6086af3d63f94c15bbdcfca9bd1e49f4 = L.marker(
+                [8.8333, -82.1667],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_2017785e6cfe4e5c8633727c53510dc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3a8b10b2ef34a4ea5acbf52f33ef542 = $(`<div id="html_c3a8b10b2ef34a4ea5acbf52f33ef542" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1971-01-22 00:00:00+00:00 <strong>Recolectores:</strong> R. L. Dressler <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_2017785e6cfe4e5c8633727c53510dc9.setContent(html_c3a8b10b2ef34a4ea5acbf52f33ef542);
+        
+
+        marker_6086af3d63f94c15bbdcfca9bd1e49f4.bindPopup(popup_2017785e6cfe4e5c8633727c53510dc9)
+        ;
+
+        
+    
+    
+            var marker_b79579a7440547bebd46078e2a43a3e6 = L.marker(
+                [9.6353, -82.8244],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_1244eb54fa24448db80ab6b67179503b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97e7a0f6815b421e84f0308a6fa00f77 = $(`<div id="html_97e7a0f6815b421e84f0308a6fa00f77" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Sand Box, ca. 5 km up stream from Bribrí-Cahuita road (route 36) crossing where new bridge is almost completed, this 3 km ENE (by air) of Bribrí (originally Cruce Bribrí) and 7.2 km WSW (by air) of Puerto Viejo de Limón. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1983-10-28 00:00:00+00:00 <strong>Recolectores:</strong> W. S. Alverson <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1244eb54fa24448db80ab6b67179503b.setContent(html_97e7a0f6815b421e84f0308a6fa00f77);
+        
+
+        marker_b79579a7440547bebd46078e2a43a3e6.bindPopup(popup_1244eb54fa24448db80ab6b67179503b)
+        ;
+
+        
+    
+    
+            var marker_c2a9fd4c210944c3a7658d0900ab3c5e = L.marker(
+                [9.65, -82.82],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_748d7ab1fa314f14bbd3170860bad033 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2107f61a6e9492cb0d51fb814b744ea = $(`<div id="html_c2107f61a6e9492cb0d51fb814b744ea" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, prov. Limon, Río Sand Box, c. 0.5 km. upstream from Bribrí-Cahuita road (route 36), 90 m. alt. 9°38'47''N, 82°49'28''W. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1983-10-28 00:00:00+00:00 <strong>Recolectores:</strong> W. S. Alverson <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_748d7ab1fa314f14bbd3170860bad033.setContent(html_c2107f61a6e9492cb0d51fb814b744ea);
+        
+
+        marker_c2a9fd4c210944c3a7658d0900ab3c5e.bindPopup(popup_748d7ab1fa314f14bbd3170860bad033)
+        ;
+
+        
+    
+    
+            var marker_c25aff8504ab4c7fb42b0d335c848aaa = L.marker(
+                [9.76, -83.25222],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_103a4954d51f42cbad37d0286cf05e33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7abf587a550409e8fea24807cf13979 = $(`<div id="html_f7abf587a550409e8fea24807cf13979" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón/Provincia de Limón <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1983-10-28 00:00:00+00:00 <strong>Recolectores:</strong> Alverson, W. S. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_103a4954d51f42cbad37d0286cf05e33.setContent(html_f7abf587a550409e8fea24807cf13979);
+        
+
+        marker_c25aff8504ab4c7fb42b0d335c848aaa.bindPopup(popup_103a4954d51f42cbad37d0286cf05e33)
+        ;
+
+        
+    
+    
+            var marker_6289d9b68dfc48a8998e92c5263009d7 = L.marker(
+                [9.5978, -82.6058],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_4d432a7e2f484dd4a4def32269e37174 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88c258de97104f3cae584b09fe9a6862 = $(`<div id="html_88c258de97104f3cae584b09fe9a6862" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón: Talamanca. R.V.S. Gandoca-Manzanillo. Caribe Sur. R.V.S. Gandoca-Manzanillo <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2000-10-05 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta, V. Ramírez, G. Soto & G. Sancho <strong>Identificadores:</strong> L. Acosta</div>`)[0];
+            popup_4d432a7e2f484dd4a4def32269e37174.setContent(html_88c258de97104f3cae584b09fe9a6862);
+        
+
+        marker_6289d9b68dfc48a8998e92c5263009d7.bindPopup(popup_4d432a7e2f484dd4a4def32269e37174)
+        ;
+
+        
+    
+    
+            var marker_b32c17877c494199ad16f84e9610754e = L.marker(
+                [9.35, -83.39],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_65f053c1757c402685573a55477b2b91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46a5b1cced734c8faa45ae25d9810301 = $(`<div id="html_46a5b1cced734c8faa45ae25d9810301" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Amistad Pacifico, Perez Zeledon, Finca Anai, at headwaters of Quebrada Mata de Limo <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1985-03-05 00:00:00+00:00 <strong>Recolectores:</strong> Grayum, Michael H. 5273 <strong>Identificadores:</strong> William Alverson</div>`)[0];
+            popup_65f053c1757c402685573a55477b2b91.setContent(html_46a5b1cced734c8faa45ae25d9810301);
+        
+
+        marker_b32c17877c494199ad16f84e9610754e.bindPopup(popup_65f053c1757c402685573a55477b2b91)
+        ;
+
+        
+    
+    
+            var marker_0b09459fcd314667a40a01e26910e537 = L.marker(
+                [9.6464, -82.8244],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_8e388cb5766d4b2db42b88d4d4fdd89d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbaf2a7679b24008b10b67144ce945a7 = $(`<div id="html_fbaf2a7679b24008b10b67144ce945a7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio sand box, ca. 0.5 km upstream from Bribri - Cahuita road (rt. 36), 3 km ENEof Bribrio & 7.2 km WSW of Puerto Viejo de Limon. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1983-10-28 00:00:00+00:00 <strong>Recolectores:</strong> W. S. Alverson <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_8e388cb5766d4b2db42b88d4d4fdd89d.setContent(html_fbaf2a7679b24008b10b67144ce945a7);
+        
+
+        marker_0b09459fcd314667a40a01e26910e537.bindPopup(popup_8e388cb5766d4b2db42b88d4d4fdd89d)
+        ;
+
+        
+    
+    
+            var marker_43e053f118e447bdb0e31dfe142846eb = L.marker(
+                [9.62, -82.83],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_645d5d2e9c3e497b9398776013237d7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9e4e1ef91c54cf9a370c1848628b61b = $(`<div id="html_f9e4e1ef91c54cf9a370c1848628b61b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bribri <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-10-16 00:00:00+00:00 <strong>Recolectores:</strong> Luis J. Poveda Álvarez <strong>Identificadores:</strong> W.S. Alverson, 1987 (WIS)</div>`)[0];
+            popup_645d5d2e9c3e497b9398776013237d7b.setContent(html_f9e4e1ef91c54cf9a370c1848628b61b);
+        
+
+        marker_43e053f118e447bdb0e31dfe142846eb.bindPopup(popup_645d5d2e9c3e497b9398776013237d7b)
+        ;
+
+        
+    
+    
+            var marker_bf874c4c56b64bafb1fde9f52b075150 = L.marker(
+                [9.64, -82.82],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_28787f8f77a54c55b2be33958cb2f47e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8003b83c0056436ba2195affecbbae7f = $(`<div id="html_8003b83c0056436ba2195affecbbae7f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Sand Box, ca. 0.5 km upstream from Bribrí-Cahuita road (route 36) crossing where new bridge is almost completed, this 3 km ENE (by air) of Bribrí (originally Cruce Bribrí) and 7.2 km WSW (by air) or Puerto Viejo de LImon. South bank of W branch of river 15 m beyond waterfall at junction of the river forks. Intact primary forest (Tropical Moist Forest, Holdridge System) above very clear river whose bed is composed of shale plates full of fossils, and of chunks of coal of various sizes and qualities <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1983-10-28 00:00:00+00:00 <strong>Recolectores:</strong> W. S. Alverson <strong>Identificadores:</strong> W.S. Alverson, 1989 (WIS)</div>`)[0];
+            popup_28787f8f77a54c55b2be33958cb2f47e.setContent(html_8003b83c0056436ba2195affecbbae7f);
+        
+
+        marker_bf874c4c56b64bafb1fde9f52b075150.bindPopup(popup_28787f8f77a54c55b2be33958cb2f47e)
+        ;
+
+        
+    
+    
+            var marker_230ad9bec6a44402a347512388e96244 = L.marker(
+                [9.633333, -82.769444],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_09b697b78f584c34984912283a173142 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c1ce67d8c3d41ffa6c85aa3813832bd = $(`<div id="html_3c1ce67d8c3d41ffa6c85aa3813832bd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indígena de Cocles.  Talamanca, 3-4 Km SO de Puerto Viejo. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-03-06 00:00:00+00:00 <strong>Recolectores:</strong> Quírico Jiménez|Rafael Á. Ocampo S.|E. Castillo <strong>Identificadores:</strong> Q. Jiménez (INB)</div>`)[0];
+            popup_09b697b78f584c34984912283a173142.setContent(html_3c1ce67d8c3d41ffa6c85aa3813832bd);
+        
+
+        marker_230ad9bec6a44402a347512388e96244.bindPopup(popup_09b697b78f584c34984912283a173142)
+        ;
+
+        
+    
+    
+            var marker_ec834767a3194edb9e2be7142e3ef230 = L.marker(
+                [9.58, -82.65],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_67960796257a4d56bf7542500c2c0bb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ce5723874274224bac6b90b8aba6a8d = $(`<div id="html_8ce5723874274224bac6b90b8aba6a8d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Anai, at headwaters of Quebrada Mata de Limón, west of Mata de Limón (Sixaola region). Forest along upper central fork of Quebrada. <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1985-05-03 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|George E. Schatz <strong>Identificadores:</strong> Brittonia 4:63 (1989)</div>`)[0];
+            popup_67960796257a4d56bf7542500c2c0bb4.setContent(html_8ce5723874274224bac6b90b8aba6a8d);
+        
+
+        marker_ec834767a3194edb9e2be7142e3ef230.bindPopup(popup_67960796257a4d56bf7542500c2c0bb4)
+        ;
+
+        
+    
+    
+            var marker_5ab664e8d43a47078e099ac282e24e2c = L.marker(
+                [9.62, -82.82],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_85045d23f1d141019c90f27300a37bc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32db07131b30462d91fc662c63807d21 = $(`<div id="html_32db07131b30462d91fc662c63807d21" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Talamanca Bosque residual a la orilla del Río Sand box, del puente sobre la carretera a Bribrí ca. 600 m aguas arriba. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-05-06 00:00:00+00:00 <strong>Recolectores:</strong> Jorge Gómez-Laurito|Gustavo Vargas <strong>Identificadores:</strong> J. Gómez-Laurito, V/</div>`)[0];
+            popup_85045d23f1d141019c90f27300a37bc6.setContent(html_32db07131b30462d91fc662c63807d21);
+        
+
+        marker_5ab664e8d43a47078e099ac282e24e2c.bindPopup(popup_85045d23f1d141019c90f27300a37bc6)
+        ;
+
+        
+    
+    
+            var marker_337a516f656d41a8b785a0b4b4b81ec7 = L.marker(
+                [9.63333, -82.82777],
+                {}
+            ).addTo(marker_cluster_a3198b9a299141cf9cc5012727182a90);
+        
+    
+        var popup_e23c9fd567974b52ba86b036b3c661e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73b2a680f3444592b770bd1688d9b16b = $(`<div id="html_73b2a680f3444592b770bd1688d9b16b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bri bri. en potrero <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1996-10-06 00:00:00+00:00 <strong>Recolectores:</strong> Armando Estrada <strong>Identificadores:</strong> A. Estrada, Oct</div>`)[0];
+            popup_e23c9fd567974b52ba86b036b3c661e7.setContent(html_73b2a680f3444592b770bd1688d9b16b);
+        
+
+        marker_337a516f656d41a8b785a0b4b4b81ec7.bindPopup(popup_e23c9fd567974b52ba86b036b3c661e7)
+        ;
+
+        
+    
+    
+            var layer_control_def70cb0edbf41e2944e11abc5075631 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_309f4227d3134b1d914cbf3519dcf4a7,
+                    "ESRI World Imagery" : tile_layer_a496ce11f172494397f92b92f1d4cb2a,
+                },
+                overlays :  {
+                    "macro_element_a3198b9a299141cf9cc5012727182a90" : marker_cluster_a3198b9a299141cf9cc5012727182a90,
+                },
+            };
+            L.control.layers(
+                layer_control_def70cb0edbf41e2944e11abc5075631.base_layers,
+                layer_control_def70cb0edbf41e2944e11abc5075631.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_7359247bf3d841dabdc750df9a7f83b1);
+            tile_layer_a496ce11f172494397f92b92f1d4cb2a.remove();
+        
+</script>

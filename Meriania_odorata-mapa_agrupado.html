@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c949e45de5844b868447c1d728e30328 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c949e45de5844b868447c1d728e30328" ></div>
+        
+</body>
+<script>    
+    
+            var map_c949e45de5844b868447c1d728e30328 = L.map(
+                "map_c949e45de5844b868447c1d728e30328",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_c949e45de5844b868447c1d728e30328);
+
+            
+
+        
+    
+            var tile_layer_e604e17c6ad84e30bf4a85aeb00664f8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c949e45de5844b868447c1d728e30328);
+        
+    
+            var tile_layer_76057229a7164c23a80339045b27fe4d = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c949e45de5844b868447c1d728e30328);
+        
+    
+            var marker_cluster_e396d35e33f64397a1b248e4848028f0 = L.markerClusterGroup(
+                {}
+            );
+            map_c949e45de5844b868447c1d728e30328.addLayer(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+            var marker_72a7ca9c1fe34b92b75067eee80c6882 = L.marker(
+                [9.458333, -83.0],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_5c70dd6eda4d409888f31d29ec65efc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df45c1f8f0dd4c2ba046a47cce0d6856 = $(`<div id="html_df45c1f8f0dd4c2ba046a47cce0d6856" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Tsiurabeta, entre Rios Uren y Lari. <strong>Elevación:</strong> 810.0 m  <strong>Fecha:</strong> 1989-07-25 00:00:00+00:00 <strong>Recolectores:</strong> Abelardo Chacon <strong>Identificadores:</strong> Almeda, Frank</div>`)[0];
+            popup_5c70dd6eda4d409888f31d29ec65efc7.setContent(html_df45c1f8f0dd4c2ba046a47cce0d6856);
+        
+
+        marker_72a7ca9c1fe34b92b75067eee80c6882.bindPopup(popup_5c70dd6eda4d409888f31d29ec65efc7)
+        ;
+
+        
+    
+    
+            var marker_1895494b5557491f80c7460b81e81f84 = L.marker(
+                [9.164719999999999, -82.65305],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_8768fb61c3f643b89840e19dfc0c32cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c8184b1ccd840328d2d2c02c385178e = $(`<div id="html_8c8184b1ccd840328d2d2c02c385178e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Caribbean slopes of Cerro Fábrega at foot of 'Falso Fábrega' in Palo Seco Reserve, second northernmost tributary (on map) of Culubre river: 'Falso Fábrega'. Cloud forest, trunks and canopy with many epiphytes, canopy 12 m, dbhs 30-50 cm, ground very spongy and damp, evidence of frequent storm damage. <strong>Elevación:</strong> 1735.0 m  <strong>Fecha:</strong> 2005-03-24 00:00:00+00:00 <strong>Recolectores:</strong> Alex K. Monro|Steve Cafferty <strong>Identificadores:</strong> Daniel Santamaría</div>`)[0];
+            popup_8768fb61c3f643b89840e19dfc0c32cc.setContent(html_8c8184b1ccd840328d2d2c02c385178e);
+        
+
+        marker_1895494b5557491f80c7460b81e81f84.bindPopup(popup_8768fb61c3f643b89840e19dfc0c32cc)
+        ;
+
+        
+    
+    
+            var marker_c3082cc523a646bba4321ffb00d28ad2 = L.marker(
+                [8.5, -81.166667],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_ab16af1f2b3f4ccfb42414c0c618eaa5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aefd23ffd3694ab9ac30d5ff54aed7ba = $(`<div id="html_aefd23ffd3694ab9ac30d5ff54aed7ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Above Santa Fe and above Alto de Piedra, on ridge-trail to top de Cerro Tute-Arizona. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1988-02-06 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> F. Almeda, 1989 (CAS)</div>`)[0];
+            popup_ab16af1f2b3f4ccfb42414c0c618eaa5.setContent(html_aefd23ffd3694ab9ac30d5ff54aed7ba);
+        
+
+        marker_c3082cc523a646bba4321ffb00d28ad2.bindPopup(popup_ab16af1f2b3f4ccfb42414c0c618eaa5)
+        ;
+
+        
+    
+    
+            var marker_b51dfc2537e240c08be4fd11a9481f91 = L.marker(
+                [9.45, -83.0],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_4bddbd0c8dda4ba992297657a7e16410 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_761ec93dc13d4711be917e8a6528e0d5 = $(`<div id="html_761ec93dc13d4711be917e8a6528e0d5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internac. La Amistad Fila Tsiurábeta, entre Ríos Urén y Lari. <strong>Elevación:</strong> 810.0 m  <strong>Fecha:</strong> 1989-07-25 00:00:00+00:00 <strong>Recolectores:</strong> Abelardo Chacón <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_4bddbd0c8dda4ba992297657a7e16410.setContent(html_761ec93dc13d4711be917e8a6528e0d5);
+        
+
+        marker_b51dfc2537e240c08be4fd11a9481f91.bindPopup(popup_4bddbd0c8dda4ba992297657a7e16410)
+        ;
+
+        
+    
+    
+            var marker_3956a150900c4c738e56bb26a7b8c4ab = L.marker(
+                [8.826667, -82.215],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_c5d6705a378e40698df4946eba17b5df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d16febb8bfc646f7bf04fb9b9c73261b = $(`<div id="html_d16febb8bfc646f7bf04fb9b9c73261b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Fortuna Dam, along road to Chiriqui Grande. [Coordinates on orginal label: 08º50'N, 82º15'W] <strong>Elevación:</strong> 470.0 m  <strong>Fecha:</strong> 1987-09-06 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> F. Almeda, 1993 (CAS)</div>`)[0];
+            popup_c5d6705a378e40698df4946eba17b5df.setContent(html_d16febb8bfc646f7bf04fb9b9c73261b);
+        
+
+        marker_3956a150900c4c738e56bb26a7b8c4ab.bindPopup(popup_c5d6705a378e40698df4946eba17b5df)
+        ;
+
+        
+    
+    
+            var marker_c0405eee794c4a8db80a27989e4eeb18 = L.marker(
+                [8.8333, -82.25],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_9bd0c42f50304142a0d0a69dae3642ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcdf121c526a4fee824042da9838ab20 = $(`<div id="html_fcdf121c526a4fee824042da9838ab20" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of  Fortuna Dam, along road to Chiriqui Grande. <strong>Elevación:</strong> 470.0 m  <strong>Fecha:</strong> 1987-09-06 00:00:00+00:00 <strong>Recolectores:</strong> G. D. McPherson <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9bd0c42f50304142a0d0a69dae3642ab.setContent(html_fcdf121c526a4fee824042da9838ab20);
+        
+
+        marker_c0405eee794c4a8db80a27989e4eeb18.bindPopup(popup_9bd0c42f50304142a0d0a69dae3642ab)
+        ;
+
+        
+    
+    
+            var marker_2bc9b64f701e4382abc422743f9bb442 = L.marker(
+                [8.66, -80.11],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_b065e2405a9a413d88d849f9a7d129d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84cc94d1b8ad4aa58daea5a37bfce95e = $(`<div id="html_84cc94d1b8ad4aa58daea5a37bfce95e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coclé. Cerro Gaital, east slope and ridges leading  to the summit with montane rain forest and elfin woodland. <strong>Elevación:</strong> 1075.0 m  <strong>Fecha:</strong> 1988-02-24 00:00:00+00:00 <strong>Recolectores:</strong> Almeda, Frank <strong>Identificadores:</strong> Almeda, Frank</div>`)[0];
+            popup_b065e2405a9a413d88d849f9a7d129d9.setContent(html_84cc94d1b8ad4aa58daea5a37bfce95e);
+        
+
+        marker_2bc9b64f701e4382abc422743f9bb442.bindPopup(popup_b065e2405a9a413d88d849f9a7d129d9)
+        ;
+
+        
+    
+    
+            var marker_3d1dbcb36faa4dad952365912a6a20f6 = L.marker(
+                [8.833333, -82.25],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_c8733829cffb4a3a821cb1a8d5a7ad9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_483b78bcaa904b18b7c90ba6a9bb4c40 = $(`<div id="html_483b78bcaa904b18b7c90ba6a9bb4c40" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Fortuna Dam, along road to Chiriqui Grande. <strong>Elevación:</strong> 470.0 m  <strong>Fecha:</strong> 1987-09-01 00:00:00+00:00 <strong>Recolectores:</strong> McPherson, G. <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_c8733829cffb4a3a821cb1a8d5a7ad9a.setContent(html_483b78bcaa904b18b7c90ba6a9bb4c40);
+        
+
+        marker_3d1dbcb36faa4dad952365912a6a20f6.bindPopup(popup_c8733829cffb4a3a821cb1a8d5a7ad9a)
+        ;
+
+        
+    
+    
+            var marker_c83d22a22a14444d8b6d4b7b804d8d66 = L.marker(
+                [8.666667, -80.116667],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_1aa2bb713d7148c3b501bda7bf8db503 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f581c91c865349f09c4f8b0ae23b7ae4 = $(`<div id="html_f581c91c865349f09c4f8b0ae23b7ae4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Gaital, east slope and ridges leading to the summit <strong>Elevación:</strong> 1075.0 m  <strong>Fecha:</strong> 1988-02-01 00:00:00+00:00 <strong>Recolectores:</strong> Almeda, Frank; Daniel, T. F.; McPherson, G. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1aa2bb713d7148c3b501bda7bf8db503.setContent(html_f581c91c865349f09c4f8b0ae23b7ae4);
+        
+
+        marker_c83d22a22a14444d8b6d4b7b804d8d66.bindPopup(popup_1aa2bb713d7148c3b501bda7bf8db503)
+        ;
+
+        
+    
+    
+            var marker_634562e75f494704b87f35e6788727ba = L.marker(
+                [8.75, -82.083333],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_ec09bcb1a8ad4702bc4a4dca3299aea5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_722a31e9d04f43a28e70afd8e2d2806e = $(`<div id="html_722a31e9d04f43a28e70afd8e2d2806e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Fortuna Dam, along roadside and in forest between road and reservoir <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1987-12-01 00:00:00+00:00 <strong>Recolectores:</strong> McPherson, Gordon <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ec09bcb1a8ad4702bc4a4dca3299aea5.setContent(html_722a31e9d04f43a28e70afd8e2d2806e);
+        
+
+        marker_634562e75f494704b87f35e6788727ba.bindPopup(popup_ec09bcb1a8ad4702bc4a4dca3299aea5)
+        ;
+
+        
+    
+    
+            var marker_bcde9f032948496e94bf14f9b118156e = L.marker(
+                [8.666667, -80.116667],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_7ca6afde79c844cfa630f13e0f3ca65b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_006f37a4fbd8482ab64ea021f01bf15d = $(`<div id="html_006f37a4fbd8482ab64ea021f01bf15d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills N of El Valle, E slope and ridges leading to Cerro Gaital <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1982-05-01 00:00:00+00:00 <strong>Recolectores:</strong> Knapp, S. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7ca6afde79c844cfa630f13e0f3ca65b.setContent(html_006f37a4fbd8482ab64ea021f01bf15d);
+        
+
+        marker_bcde9f032948496e94bf14f9b118156e.bindPopup(popup_7ca6afde79c844cfa630f13e0f3ca65b)
+        ;
+
+        
+    
+    
+            var marker_5828ff7d236b4a2eaff00b5ef0afd865 = L.marker(
+                [9.458333, -83.0],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_17373f69c53d4aaa8f2ac07d12ad8c14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cafbdf4884964157beae9bf222e38dfe = $(`<div id="html_cafbdf4884964157beae9bf222e38dfe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internac. La Amistad Fila Tsiurábeta, entre Ríos Urén y Lari <strong>Elevación:</strong> 810.0 m  <strong>Fecha:</strong> 1989-07-01 00:00:00+00:00 <strong>Recolectores:</strong> Chacón, Abelardo <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_17373f69c53d4aaa8f2ac07d12ad8c14.setContent(html_cafbdf4884964157beae9bf222e38dfe);
+        
+
+        marker_5828ff7d236b4a2eaff00b5ef0afd865.bindPopup(popup_17373f69c53d4aaa8f2ac07d12ad8c14)
+        ;
+
+        
+    
+    
+            var marker_c31bc48cb0f449d6a6b53d6d71fb9a8c = L.marker(
+                [9.174444, -82.65527800000001],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_daa7bb253f39496fa49bd67973e32abc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbdb1eb442484810b07c2d8b48df29ee = $(`<div id="html_bbdb1eb442484810b07c2d8b48df29ee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 1735.0 m  <strong>Fecha:</strong> 2005-03-24 00:00:00+00:00 <strong>Recolectores:</strong> A.K. Monro & S. Cafferty <strong>Identificadores:</strong> Daniel Santamaria</div>`)[0];
+            popup_daa7bb253f39496fa49bd67973e32abc.setContent(html_bbdb1eb442484810b07c2d8b48df29ee);
+        
+
+        marker_c31bc48cb0f449d6a6b53d6d71fb9a8c.bindPopup(popup_daa7bb253f39496fa49bd67973e32abc)
+        ;
+
+        
+    
+    
+            var marker_07eba258ac0a4f509ebd0ccf1a032bed = L.marker(
+                [8.626667, -80.121667],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_643030798eb24c62b7d0654975fbaa90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a8f27be31c74ccbb7f44b55fdec5f63 = $(`<div id="html_9a8f27be31c74ccbb7f44b55fdec5f63" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills N of El Valle, E slope and ridges leading to Cerro Gaital.[Coordinates on orginal label:08º40'N, 080º07'W] <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1982-05-30 00:00:00+00:00 <strong>Recolectores:</strong> Sandy Knapp <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_643030798eb24c62b7d0654975fbaa90.setContent(html_9a8f27be31c74ccbb7f44b55fdec5f63);
+        
+
+        marker_07eba258ac0a4f509ebd0ccf1a032bed.bindPopup(popup_643030798eb24c62b7d0654975fbaa90)
+        ;
+
+        
+    
+    
+            var marker_47637fd3eca943c7904c3ff0c7870d03 = L.marker(
+                [9.0842, -82.74555],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_b9be7c32878f471a92ce790036311cba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfbddf6453a44357adac836c4a8ac018 = $(`<div id="html_bfbddf6453a44357adac836c4a8ac018" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2004-03-17 00:00:00+00:00 <strong>Recolectores:</strong> A.K. Monro & E. Alfaro <strong>Identificadores:</strong> Daniel Santamaria</div>`)[0];
+            popup_b9be7c32878f471a92ce790036311cba.setContent(html_bfbddf6453a44357adac836c4a8ac018);
+        
+
+        marker_47637fd3eca943c7904c3ff0c7870d03.bindPopup(popup_b9be7c32878f471a92ce790036311cba)
+        ;
+
+        
+    
+    
+            var marker_444414cfe03a4885ba6066ea71dabab0 = L.marker(
+                [8.67, -80.12],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_3aaa93233b954d358bef3e370a0d4785 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58cd08bb2d8a4c97b9d05896912fb465 = $(`<div id="html_58cd08bb2d8a4c97b9d05896912fb465" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coclé Province, Cerro Gaital, east slope and ridges leading to the summit with montane rainforest and elfin woodland. <strong>Elevación:</strong> 1075.0 m  <strong>Fecha:</strong> 1988-02-24 00:00:00+00:00 <strong>Recolectores:</strong> F. Almeda, T. F. Daniel & G. McPherson <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_3aaa93233b954d358bef3e370a0d4785.setContent(html_58cd08bb2d8a4c97b9d05896912fb465);
+        
+
+        marker_444414cfe03a4885ba6066ea71dabab0.bindPopup(popup_3aaa93233b954d358bef3e370a0d4785)
+        ;
+
+        
+    
+    
+            var marker_73a3ac5f75d14f2481ea3d15db0b4b0e = L.marker(
+                [9.084166999999999, -82.74555500000001],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_24be16f2931647598f122d0d1883e1d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b7317bbf8ca4490906ec0e5d7d05925 = $(`<div id="html_2b7317bbf8ca4490906ec0e5d7d05925" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Campamento de Lucho. Bosque Nuboso muy humedo. <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2004-03-17 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro|Alex K. Monro <strong>Identificadores:</strong> D. Santamaria</div>`)[0];
+            popup_24be16f2931647598f122d0d1883e1d5.setContent(html_2b7317bbf8ca4490906ec0e5d7d05925);
+        
+
+        marker_73a3ac5f75d14f2481ea3d15db0b4b0e.bindPopup(popup_24be16f2931647598f122d0d1883e1d5)
+        ;
+
+        
+    
+    
+            var marker_6929371fa2804a41980a5637e0d2966d = L.marker(
+                [8.666667, -80.116667],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_011d71bf04eb476eb54caeca2be0c2e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03c17119edce4b969c2b39f97e8dbdbe = $(`<div id="html_03c17119edce4b969c2b39f97e8dbdbe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills N of El Valle, E slope and ridges leading to Cerro Gaital. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1982-05-30 00:00:00+00:00 <strong>Recolectores:</strong> Knapp, S <strong>Identificadores:</strong> Almeda, F</div>`)[0];
+            popup_011d71bf04eb476eb54caeca2be0c2e8.setContent(html_03c17119edce4b969c2b39f97e8dbdbe);
+        
+
+        marker_6929371fa2804a41980a5637e0d2966d.bindPopup(popup_011d71bf04eb476eb54caeca2be0c2e8)
+        ;
+
+        
+    
+    
+            var marker_7b777f98bf2c4c8a9e16c6a8326497cf = L.marker(
+                [8.625, -80.125],
+                {}
+            ).addTo(marker_cluster_e396d35e33f64397a1b248e4848028f0);
+        
+    
+        var popup_7e2b95a28f8045cc9e03a4f9fe946f0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31ecd84aa9754ef79be5bb58b652bc94 = $(`<div id="html_31ecd84aa9754ef79be5bb58b652bc94" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Gaital, E slope and ridges leading to the summit with montane rainforest and elfin woodland. [Coordinates on original label: 08º40'N, 080º07'W] <strong>Elevación:</strong> 1075.0 m  <strong>Fecha:</strong> 1988-02-24 00:00:00+00:00 <strong>Recolectores:</strong> Frank Almeda|Thomas F. Daniel|Gordon McPherson <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_7e2b95a28f8045cc9e03a4f9fe946f0b.setContent(html_31ecd84aa9754ef79be5bb58b652bc94);
+        
+
+        marker_7b777f98bf2c4c8a9e16c6a8326497cf.bindPopup(popup_7e2b95a28f8045cc9e03a4f9fe946f0b)
+        ;
+
+        
+    
+    
+            var layer_control_8d4aabf4c4504cf59e937a56f4221bf7 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e604e17c6ad84e30bf4a85aeb00664f8,
+                    "ESRI World Imagery" : tile_layer_76057229a7164c23a80339045b27fe4d,
+                },
+                overlays :  {
+                    "macro_element_e396d35e33f64397a1b248e4848028f0" : marker_cluster_e396d35e33f64397a1b248e4848028f0,
+                },
+            };
+            L.control.layers(
+                layer_control_8d4aabf4c4504cf59e937a56f4221bf7.base_layers,
+                layer_control_8d4aabf4c4504cf59e937a56f4221bf7.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c949e45de5844b868447c1d728e30328);
+            tile_layer_76057229a7164c23a80339045b27fe4d.remove();
+        
+</script>

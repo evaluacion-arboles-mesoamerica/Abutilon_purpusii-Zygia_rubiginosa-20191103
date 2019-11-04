@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4be70299277347bd94fd4527d6614f4b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4be70299277347bd94fd4527d6614f4b" ></div>
+        
+</body>
+<script>    
+    
+            var map_4be70299277347bd94fd4527d6614f4b = L.map(
+                "map_4be70299277347bd94fd4527d6614f4b",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_4be70299277347bd94fd4527d6614f4b);
+
+            
+
+        
+    
+            var tile_layer_9a2bdc0b272c4be4b66dc253159a3a10 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4be70299277347bd94fd4527d6614f4b);
+        
+    
+            var tile_layer_7d6b2eb800a14aa390460951ac70f93a = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4be70299277347bd94fd4527d6614f4b);
+        
+    
+            var marker_cluster_759c7ad662294fabab36cfe37e9ba4b9 = L.markerClusterGroup(
+                {}
+            );
+            map_4be70299277347bd94fd4527d6614f4b.addLayer(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+            var marker_ac05c7bd8755444aa9a714575d958fe7 = L.marker(
+                [8.716667, -83.580556],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_c7bb554800ce4aaa89c2a39442470bd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_906e276c66f54c079e054c9a4a7ca067 = $(`<div id="html_906e276c66f54c079e054c9a4a7ca067" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal.  Entrada Chocuaco. <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1997-05-28 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_c7bb554800ce4aaa89c2a39442470bd2.setContent(html_906e276c66f54c079e054c9a4a7ca067);
+        
+
+        marker_ac05c7bd8755444aa9a714575d958fe7.bindPopup(popup_c7bb554800ce4aaa89c2a39442470bd2)
+        ;
+
+        
+    
+    
+            var marker_68e559eebe774c5fbd3625385487dab8 = L.marker(
+                [8.716667, -83.580556],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_5128028963604361ab5c04507032439a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd8ac11c7f624b4ba55757199ead5e9d = $(`<div id="html_bd8ac11c7f624b4ba55757199ead5e9d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal.  Entrada Chocuaco. <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1997-05-28 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_5128028963604361ab5c04507032439a.setContent(html_bd8ac11c7f624b4ba55757199ead5e9d);
+        
+
+        marker_68e559eebe774c5fbd3625385487dab8.bindPopup(popup_5128028963604361ab5c04507032439a)
+        ;
+
+        
+    
+    
+            var marker_2bb5838d482d4edba5a466f404bb2c78 = L.marker(
+                [8.716667, -83.580556],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_b33fd3b8add64dccb03d721852aa43af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bda68ca0588240b6b914f21e6d8b5674 = $(`<div id="html_bda68ca0588240b6b914f21e6d8b5674" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal.  Entrada Chocuaco. <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1997-05-28 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_b33fd3b8add64dccb03d721852aa43af.setContent(html_bda68ca0588240b6b914f21e6d8b5674);
+        
+
+        marker_2bb5838d482d4edba5a466f404bb2c78.bindPopup(popup_b33fd3b8add64dccb03d721852aa43af)
+        ;
+
+        
+    
+    
+            var marker_8e07741311f34b818fa45e392ead3c2e = L.marker(
+                [8.716667, -83.580556],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_e4889d76463c4232afd172b6831bbf8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99c3f16426594b87b2055462bee84031 = $(`<div id="html_99c3f16426594b87b2055462bee84031" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal.  Entrada Chocuaco. <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1997-05-28 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_e4889d76463c4232afd172b6831bbf8b.setContent(html_99c3f16426594b87b2055462bee84031);
+        
+
+        marker_8e07741311f34b818fa45e392ead3c2e.bindPopup(popup_e4889d76463c4232afd172b6831bbf8b)
+        ;
+
+        
+    
+    
+            var marker_ea86c70920eb401db0f0af5fd169bf99 = L.marker(
+                [8.716667, -83.580556],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_fc919cd22c214e1c8303f06e829e454a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eadc77aab21848e0ab10c612bf02ebc6 = $(`<div id="html_eadc77aab21848e0ab10c612bf02ebc6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal.  Entrada Chocuaco. <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1997-05-28 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_fc919cd22c214e1c8303f06e829e454a.setContent(html_eadc77aab21848e0ab10c612bf02ebc6);
+        
+
+        marker_ea86c70920eb401db0f0af5fd169bf99.bindPopup(popup_fc919cd22c214e1c8303f06e829e454a)
+        ;
+
+        
+    
+    
+            var marker_24b0b87bc00f4fd086c38918a61c43f2 = L.marker(
+                [8.716667, -83.580556],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_00f28ade21a348a7a7376b9bcab64795 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_859278e263ef4a37b09ab1bca837b127 = $(`<div id="html_859278e263ef4a37b09ab1bca837b127" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal.  Entrada Chocuaco. <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1997-05-28 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_00f28ade21a348a7a7376b9bcab64795.setContent(html_859278e263ef4a37b09ab1bca837b127);
+        
+
+        marker_24b0b87bc00f4fd086c38918a61c43f2.bindPopup(popup_00f28ade21a348a7a7376b9bcab64795)
+        ;
+
+        
+    
+    
+            var marker_7aa42d4254ae413bab4e26ac30d7ae72 = L.marker(
+                [8.671667, -83.504722],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_defd89ec7206489c91ace68949a04d82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9dfe6e591d174552abb2ab2804d5db2a = $(`<div id="html_9dfe6e591d174552abb2ab2804d5db2a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce. <strong>Elevación:</strong> 49.0 m  <strong>Fecha:</strong> 2006-06-03 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_defd89ec7206489c91ace68949a04d82.setContent(html_9dfe6e591d174552abb2ab2804d5db2a);
+        
+
+        marker_7aa42d4254ae413bab4e26ac30d7ae72.bindPopup(popup_defd89ec7206489c91ace68949a04d82)
+        ;
+
+        
+    
+    
+            var marker_c9fdc4a96f01497ab9fc4adea1f26fc9 = L.marker(
+                [8.671667, -83.504722],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_ae297ac4310549a3bc2580e52c8efa45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af5471310d7b43cfa58e6d31bdd6567f = $(`<div id="html_af5471310d7b43cfa58e6d31bdd6567f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce. <strong>Elevación:</strong> 49.0 m  <strong>Fecha:</strong> 2006-03-29 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar; Daniel Santamaría <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_ae297ac4310549a3bc2580e52c8efa45.setContent(html_af5471310d7b43cfa58e6d31bdd6567f);
+        
+
+        marker_c9fdc4a96f01497ab9fc4adea1f26fc9.bindPopup(popup_ae297ac4310549a3bc2580e52c8efa45)
+        ;
+
+        
+    
+    
+            var marker_5bf8fcc5baef4ac49cb67fb08e53097d = L.marker(
+                [8.736111, -83.466667],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_6d51d70caf964c6d9776b5b3d7000ca9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68791587af784d3c9017b52aacea0ff5 = $(`<div id="html_68791587af784d3c9017b52aacea0ff5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mogos. Bahía Chal. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2013-07-16 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar; Nelson A. Zamora Villalobos ; Soo-Yong Kim ; Guillermo Villalobos ; D. Solorzano <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_6d51d70caf964c6d9776b5b3d7000ca9.setContent(html_68791587af784d3c9017b52aacea0ff5);
+        
+
+        marker_5bf8fcc5baef4ac49cb67fb08e53097d.bindPopup(popup_6d51d70caf964c6d9776b5b3d7000ca9)
+        ;
+
+        
+    
+    
+            var marker_32c7229a8b884160a9e112561a3ef4ee = L.marker(
+                [8.736111, -83.466667],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_c7be713aed2b4b69b4d3ba8779efcd99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd3216f6b9cb447fac5aa894fea96efd = $(`<div id="html_cd3216f6b9cb447fac5aa894fea96efd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mogos. Bahía Chal. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2013-07-16 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar; Nelson A. Zamora Villalobos ; Soo-Yong Kim ; Guillermo Villalobos ; D. Solorzano <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_c7be713aed2b4b69b4d3ba8779efcd99.setContent(html_cd3216f6b9cb447fac5aa894fea96efd);
+        
+
+        marker_32c7229a8b884160a9e112561a3ef4ee.bindPopup(popup_c7be713aed2b4b69b4d3ba8779efcd99)
+        ;
+
+        
+    
+    
+            var marker_7bff6c7a6e4a43d48122c161baf07754 = L.marker(
+                [8.736111, -83.466667],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_9412edca624242c4bea3398e5454a48b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe4f5f867a664f6d9c5448cdcc1864f9 = $(`<div id="html_fe4f5f867a664f6d9c5448cdcc1864f9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mogos. Bahía Chal. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2013-07-16 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar; Nelson A. Zamora Villalobos ; Soo-Yong Kim ; Guillermo Villalobos ; D. Solorzano <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_9412edca624242c4bea3398e5454a48b.setContent(html_fe4f5f867a664f6d9c5448cdcc1864f9);
+        
+
+        marker_7bff6c7a6e4a43d48122c161baf07754.bindPopup(popup_9412edca624242c4bea3398e5454a48b)
+        ;
+
+        
+    
+    
+            var marker_4be97089c3b24a869fdd8a5b48949963 = L.marker(
+                [8.7361, -83.4667],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_663c02db1de94b9985cd49e54b65133c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_006bc9a1506a43b6965ec711a3395f69 = $(`<div id="html_006bc9a1506a43b6965ec711a3395f69" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe.  Reserva Forestal Golfo Dulce; Mogos Bahia Chal (entrada de Chocuaco a 35kmt. de Chacarita) Finca de Carlos Rojas (entre los repastos, charrales y parches de bosque intervenido ) <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1997-05-28 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> R. Aguilar</div>`)[0];
+            popup_663c02db1de94b9985cd49e54b65133c.setContent(html_006bc9a1506a43b6965ec711a3395f69);
+        
+
+        marker_4be97089c3b24a869fdd8a5b48949963.bindPopup(popup_663c02db1de94b9985cd49e54b65133c)
+        ;
+
+        
+    
+    
+            var marker_910fce11bbe84f869033b2bb8a624e1c = L.marker(
+                [8.6717, -83.5047],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_357d9c39586442e7a56b142c12e427fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea1accf05fba424aa45de862d0fabf01 = $(`<div id="html_ea1accf05fba424aa45de862d0fabf01" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce, Los Charcos de Osa. Sendero: Dendrobates. Rincón, cerca de Banegas Los Charcos. 1 km al Este del centtro de pueblo Banegas. Estación Biológica Los Charcos de Osa. <strong>Elevación:</strong> 49.0 m  <strong>Fecha:</strong> 2006-03-29 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_357d9c39586442e7a56b142c12e427fd.setContent(html_ea1accf05fba424aa45de862d0fabf01);
+        
+
+        marker_910fce11bbe84f869033b2bb8a624e1c.bindPopup(popup_357d9c39586442e7a56b142c12e427fd)
+        ;
+
+        
+    
+    
+            var marker_b34f6f95b52f4f278bdbb382707f66fe = L.marker(
+                [8.716667, -83.580556],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_ee1d8678055645b2b7a0b2976b9f27dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad7906af590e4a4c9aacbc360a4921e2 = $(`<div id="html_ad7906af590e4a4c9aacbc360a4921e2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce. Entrada a Chocuaco, por la casa de Moncho. <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1997-05-28 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ee1d8678055645b2b7a0b2976b9f27dc.setContent(html_ad7906af590e4a4c9aacbc360a4921e2);
+        
+
+        marker_b34f6f95b52f4f278bdbb382707f66fe.bindPopup(popup_ee1d8678055645b2b7a0b2976b9f27dc)
+        ;
+
+        
+    
+    
+            var marker_686c35e2aba44672be65589189c30dee = L.marker(
+                [8.716667, -83.580556],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_127ed5bc4bf94dab92fbd628afafdff4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a5519f5bd7f428a9b4ea5a28ef69148 = $(`<div id="html_1a5519f5bd7f428a9b4ea5a28ef69148" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puntarenas: Canton de Osa, R.F. Golfo Dulce, Peninsula de Osa, Entrada a Chocuaco, por la casa de Moncho <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1997-05-01 00:00:00+00:00 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Frank Almeda</div>`)[0];
+            popup_127ed5bc4bf94dab92fbd628afafdff4.setContent(html_1a5519f5bd7f428a9b4ea5a28ef69148);
+        
+
+        marker_686c35e2aba44672be65589189c30dee.bindPopup(popup_127ed5bc4bf94dab92fbd628afafdff4)
+        ;
+
+        
+    
+    
+            var marker_02a6889f488343ff9f70d2e57191a3c2 = L.marker(
+                [8.671667, -83.504722],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_e768ceced2304bb8bd5e11028d1ee388 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_396e275615ad45a38d170e20ee1e3908 = $(`<div id="html_396e275615ad45a38d170e20ee1e3908" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Osa , Sierpe.  Reserva Forestal Golfo Dulce, Los Charcos de Osa, Sendero:  Dendrobates.  Rincón, cerca de Banegas Los Charcos, 1 km al E de centro del pueblo Baregas.  Estación Biológica Los Charcos de Osa <strong>Elevación:</strong> 49.0 m  <strong>Fecha:</strong> 2006-03-01 00:00:00+00:00 <strong>Recolectores:</strong> Aguilar, R.; Santamaria, D. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e768ceced2304bb8bd5e11028d1ee388.setContent(html_396e275615ad45a38d170e20ee1e3908);
+        
+
+        marker_02a6889f488343ff9f70d2e57191a3c2.bindPopup(popup_e768ceced2304bb8bd5e11028d1ee388)
+        ;
+
+        
+    
+    
+            var marker_189eeed0d5e6426a983be4b0fd60b3be = L.marker(
+                [8.671667, -83.504722],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_55aa5000f59346b29f5a6e133c760ec8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_658d109c8e02494bbd030e80a9a8fa94 = $(`<div id="html_658d109c8e02494bbd030e80a9a8fa94" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce. Los Charcos de Osa, Sendero Dendrobates. Rincón, cerca de Banegas, Los Charcos, 1 km al este del centro del pueblo Banegas. Estación Biológica Los Charcos. <strong>Elevación:</strong> 49.0 m  <strong>Fecha:</strong> 2006-03-29 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_55aa5000f59346b29f5a6e133c760ec8.setContent(html_658d109c8e02494bbd030e80a9a8fa94);
+        
+
+        marker_189eeed0d5e6426a983be4b0fd60b3be.bindPopup(popup_55aa5000f59346b29f5a6e133c760ec8)
+        ;
+
+        
+    
+    
+            var marker_86203693e74f4eb99c3533d494edecdb = L.marker(
+                [8.671667, -83.504722],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_b402b9452c7446709dfcb8f32bcda5cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0faa3877c921442792148e525992a146 = $(`<div id="html_0faa3877c921442792148e525992a146" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce. Los Charcos de Osa, Sendero Dendrobates. Rincón, cerca de Banegas, Los Charcos, 1 km al este del centro del pueblo Banegas. Estación Biológica Los Charcos. <strong>Elevación:</strong> 49.0 m  <strong>Fecha:</strong> 2011-06-03 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b402b9452c7446709dfcb8f32bcda5cf.setContent(html_0faa3877c921442792148e525992a146);
+        
+
+        marker_86203693e74f4eb99c3533d494edecdb.bindPopup(popup_b402b9452c7446709dfcb8f32bcda5cf)
+        ;
+
+        
+    
+    
+            var marker_5118444dee724a9d8c9caa546f7a0956 = L.marker(
+                [9.9333, -84.1667],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_e03e661e87054f47ab744098629e5b9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e56659462aa04be680df250d18c95a33 = $(`<div id="html_e56659462aa04be680df250d18c95a33" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San José: Santa Ana. No protegida. Cuenca del Tárcoles. Cerca del Monasterio  Los Toledos <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2002-05-05 00:00:00+00:00 <strong>Recolectores:</strong> R. Kriebel <strong>Identificadores:</strong> R. Kriebel</div>`)[0];
+            popup_e03e661e87054f47ab744098629e5b9b.setContent(html_e56659462aa04be680df250d18c95a33);
+        
+
+        marker_5118444dee724a9d8c9caa546f7a0956.bindPopup(popup_e03e661e87054f47ab744098629e5b9b)
+        ;
+
+        
+    
+    
+            var marker_0c19a46b64c641658e0734f9140fcd3a = L.marker(
+                [8.736111, -83.466667],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_3c683c2456e544328f05acadd02fbba5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c5721950d614342b9bc6ee76c8ccf7d = $(`<div id="html_0c5721950d614342b9bc6ee76c8ccf7d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce. Mogos, Bahía Chal, entrada a Chocuaco a 35 km de Chacarita, finca de Carlos Rojas. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2000-05-18 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> R. Kriebel</div>`)[0];
+            popup_3c683c2456e544328f05acadd02fbba5.setContent(html_0c5721950d614342b9bc6ee76c8ccf7d);
+        
+
+        marker_0c19a46b64c641658e0734f9140fcd3a.bindPopup(popup_3c683c2456e544328f05acadd02fbba5)
+        ;
+
+        
+    
+    
+            var marker_542acc71b64543b0be492c09d34059eb = L.marker(
+                [8.6717, -83.5047],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_a79253f289df4314943d071140fc3d38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6657d50f589b4d8dae03be87308dba4d = $(`<div id="html_6657d50f589b4d8dae03be87308dba4d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe.  Reserva Forestal Golfo Dulce; Rincón, cerca de Banegas Los Charcos, 1 km. al Este del centro del pueblo Banegas, Estación Biológica Los Charcos de Osa <strong>Elevación:</strong> 49.0 m  <strong>Fecha:</strong> 2006-06-03 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> R. Aguilar</div>`)[0];
+            popup_a79253f289df4314943d071140fc3d38.setContent(html_6657d50f589b4d8dae03be87308dba4d);
+        
+
+        marker_542acc71b64543b0be492c09d34059eb.bindPopup(popup_a79253f289df4314943d071140fc3d38)
+        ;
+
+        
+    
+    
+            var marker_60e5d841ce9b4f21868c873235eb231f = L.marker(
+                [8.716667, -83.580556],
+                {}
+            ).addTo(marker_cluster_759c7ad662294fabab36cfe37e9ba4b9);
+        
+    
+        var popup_1c4274fe8cef4d60a47edae5c00a58cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2fdbedc5994444c9b7a387b3885b726 = $(`<div id="html_d2fdbedc5994444c9b7a387b3885b726" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce. Entrada a Chocuaco, por la casa de Moncho. <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1997-05-28 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> R. Kriebel, R. Aguilar & F. Almeda</div>`)[0];
+            popup_1c4274fe8cef4d60a47edae5c00a58cd.setContent(html_d2fdbedc5994444c9b7a387b3885b726);
+        
+
+        marker_60e5d841ce9b4f21868c873235eb231f.bindPopup(popup_1c4274fe8cef4d60a47edae5c00a58cd)
+        ;
+
+        
+    
+    
+            var layer_control_6cccdd3955014cc29ad5f6d409dcd949 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9a2bdc0b272c4be4b66dc253159a3a10,
+                    "ESRI World Imagery" : tile_layer_7d6b2eb800a14aa390460951ac70f93a,
+                },
+                overlays :  {
+                    "macro_element_759c7ad662294fabab36cfe37e9ba4b9" : marker_cluster_759c7ad662294fabab36cfe37e9ba4b9,
+                },
+            };
+            L.control.layers(
+                layer_control_6cccdd3955014cc29ad5f6d409dcd949.base_layers,
+                layer_control_6cccdd3955014cc29ad5f6d409dcd949.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_4be70299277347bd94fd4527d6614f4b);
+            tile_layer_7d6b2eb800a14aa390460951ac70f93a.remove();
+        
+</script>

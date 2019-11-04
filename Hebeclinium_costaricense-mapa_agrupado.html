@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5b067ddec8fb4a639d3af07f3d805a13 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5b067ddec8fb4a639d3af07f3d805a13" ></div>
+        
+</body>
+<script>    
+    
+            var map_5b067ddec8fb4a639d3af07f3d805a13 = L.map(
+                "map_5b067ddec8fb4a639d3af07f3d805a13",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_5b067ddec8fb4a639d3af07f3d805a13);
+
+            
+
+        
+    
+            var tile_layer_2929eec1c19844b2b479ca870a9b4924 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5b067ddec8fb4a639d3af07f3d805a13);
+        
+    
+            var tile_layer_1e46c7405e9849b981379cf2e21fbc82 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5b067ddec8fb4a639d3af07f3d805a13);
+        
+    
+            var marker_cluster_261dcfb393aa4435871762280d5b77c9 = L.markerClusterGroup(
+                {}
+            );
+            map_5b067ddec8fb4a639d3af07f3d805a13.addLayer(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+            var marker_1365a3fe1a3c4323adbcb2a1aedfc3fa = L.marker(
+                [10.28416, -84.80861],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_3e073d2f46ea41ac891d67d5bd357d1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42c7f3fb941a410b82fd7c2d4a333608 = $(`<div id="html_42c7f3fb941a410b82fd7c2d4a333608" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, Río San Luis valley on Pacific slope <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1985-02-26 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> H. Robinson</div>`)[0];
+            popup_3e073d2f46ea41ac891d67d5bd357d1c.setContent(html_42c7f3fb941a410b82fd7c2d4a333608);
+        
+
+        marker_1365a3fe1a3c4323adbcb2a1aedfc3fa.bindPopup(popup_3e073d2f46ea41ac891d67d5bd357d1c)
+        ;
+
+        
+    
+    
+            var marker_89f2c1e2a58d4e27a77b37f69d7fb43a = L.marker(
+                [9.91, -83.6],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_d50beba74e7b46b58b32004f31f89273 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ec88d30760f48f492c826571ea49c5c = $(`<div id="html_8ec88d30760f48f492c826571ea49c5c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 13 km east of Turrialba on the highway to Limón, canyon of Río Chitaría. <strong>Elevación:</strong> 775.0 m  <strong>Fecha:</strong> 1983-05-10 00:00:00+00:00 <strong>Recolectores:</strong> Ronald L. Liesner|Emmet J. Judziewicz|Blanca Pérez G. <strong>Identificadores:</strong> H.Robinson</div>`)[0];
+            popup_d50beba74e7b46b58b32004f31f89273.setContent(html_8ec88d30760f48f492c826571ea49c5c);
+        
+
+        marker_89f2c1e2a58d4e27a77b37f69d7fb43a.bindPopup(popup_d50beba74e7b46b58b32004f31f89273)
+        ;
+
+        
+    
+    
+            var marker_580aed8b07244ff9b1e8e9d6b175c60a = L.marker(
+                [10.49, -84.72],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_0ec79a225caa45e5a2514aa163a541f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a0ffd06d8f248018e4ff22b020f74f8 = $(`<div id="html_6a0ffd06d8f248018e4ff22b020f74f8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán.Volcán Arenal, Fortuna. Faldas Norte Volcán Arenal, Camino a Tabacón. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1994-01-18 00:00:00+00:00 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Valverde, Oscar</div>`)[0];
+            popup_0ec79a225caa45e5a2514aa163a541f8.setContent(html_6a0ffd06d8f248018e4ff22b020f74f8);
+        
+
+        marker_580aed8b07244ff9b1e8e9d6b175c60a.bindPopup(popup_0ec79a225caa45e5a2514aa163a541f8)
+        ;
+
+        
+    
+    
+            var marker_c09b2b0f4ed7430fa870399502e6d53c = L.marker(
+                [9.49, -84.01],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_d847a4c3bcf049e0b6bc111e40926a00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b40912ec4ca46c18438a5afb7be63ec = $(`<div id="html_0b40912ec4ca46c18438a5afb7be63ec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerro Nara Faldas del cerro. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1998-04-14 00:00:00+00:00 <strong>Recolectores:</strong> Valverde, Oscar <strong>Identificadores:</strong> Valverde, Oscar</div>`)[0];
+            popup_d847a4c3bcf049e0b6bc111e40926a00.setContent(html_0b40912ec4ca46c18438a5afb7be63ec);
+        
+
+        marker_c09b2b0f4ed7430fa870399502e6d53c.bindPopup(popup_d847a4c3bcf049e0b6bc111e40926a00)
+        ;
+
+        
+    
+    
+            var marker_1291e9a9fcb74c7fbb90fc0b14fed4b9 = L.marker(
+                [8.67, -80.6],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_adb8cf9407de401fa40e274e833a7a39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bf80bff39b74e329edb09bbfa3e59b9 = $(`<div id="html_7bf80bff39b74e329edb09bbfa3e59b9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Continental Divide near sawmill (whiskey) above El Cope <strong>Elevación:</strong> 775.0 m  <strong>Fecha:</strong> 1982-02-13 00:00:00+00:00 <strong>Recolectores:</strong> S. Knapp & R. L. Dressler <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_adb8cf9407de401fa40e274e833a7a39.setContent(html_7bf80bff39b74e329edb09bbfa3e59b9);
+        
+
+        marker_1291e9a9fcb74c7fbb90fc0b14fed4b9.bindPopup(popup_adb8cf9407de401fa40e274e833a7a39)
+        ;
+
+        
+    
+    
+            var marker_d54d264ca4d548b2be9517674beb197f = L.marker(
+                [8.611667, -80.116667],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_b3e199d44868435bbb7bfa7b2247845f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ee1c80d30d541a3ac839834b3bac8fe = $(`<div id="html_0ee1c80d30d541a3ac839834b3bac8fe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Valle, behind Club Campestre. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1971-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b3e199d44868435bbb7bfa7b2247845f.setContent(html_0ee1c80d30d541a3ac839834b3bac8fe);
+        
+
+        marker_d54d264ca4d548b2be9517674beb197f.bindPopup(popup_b3e199d44868435bbb7bfa7b2247845f)
+        ;
+
+        
+    
+    
+            var marker_79a80c74427d4d2789ac43c6b79793db = L.marker(
+                [8.633333, -80.1],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_ae9f9d3e8fb94c70b9255de6a4ae96b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd65875802df4229a59ff142cf68c650 = $(`<div id="html_fd65875802df4229a59ff142cf68c650" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> North slope and summit of Cerro Pilón. <strong>Elevación:</strong> 1036.5 m  <strong>Fecha:</strong> 1973-03-16 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ae9f9d3e8fb94c70b9255de6a4ae96b6.setContent(html_fd65875802df4229a59ff142cf68c650);
+        
+
+        marker_79a80c74427d4d2789ac43c6b79793db.bindPopup(popup_ae9f9d3e8fb94c70b9255de6a4ae96b6)
+        ;
+
+        
+    
+    
+            var marker_0f09777d646b40f082f9537979a2ef3f = L.marker(
+                [9.43333, -79.61666],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_c3b6ec2cf9e341c5869be18b4df995ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea3b918f0df8460199f8c3f0aaca1521 = $(`<div id="html_ea3b918f0df8460199f8c3f0aaca1521" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rita Ridge, along Río Piedras ca. 8 hour walk (slow) from end of Santa Rita ridge road <strong>Elevación:</strong> 548.64 m  <strong>Fecha:</strong> 1979-03-09 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> H. Robinson</div>`)[0];
+            popup_c3b6ec2cf9e341c5869be18b4df995ee.setContent(html_ea3b918f0df8460199f8c3f0aaca1521);
+        
+
+        marker_0f09777d646b40f082f9537979a2ef3f.bindPopup(popup_c3b6ec2cf9e341c5869be18b4df995ee)
+        ;
+
+        
+    
+    
+            var marker_0f12affd71b5474ba82406fe2ffcea86 = L.marker(
+                [8.620833, -80.11555600000001],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_387b78ba9f454cf3b51176f512fb3a09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f56f0c98a404ea8a18c1bc704a06746 = $(`<div id="html_7f56f0c98a404ea8a18c1bc704a06746" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Caracoral. Below the elfin forest. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1968-04-24 00:00:00+00:00 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_387b78ba9f454cf3b51176f512fb3a09.setContent(html_7f56f0c98a404ea8a18c1bc704a06746);
+        
+
+        marker_0f12affd71b5474ba82406fe2ffcea86.bindPopup(popup_387b78ba9f454cf3b51176f512fb3a09)
+        ;
+
+        
+    
+    
+            var marker_205202839c3341ea99b736a36af0c1a0 = L.marker(
+                [8.621667, -80.108333],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_81e3ca3262a345c48edf5e973f9fb2c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd7fb4214d664e68a04c440665e1e973 = $(`<div id="html_cd7fb4214d664e68a04c440665e1e973" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NE slopes of Cerro Caracoral, N rim of El Valle. <strong>Elevación:</strong> 899.1600000000002 m  <strong>Fecha:</strong> 1981-03-12 00:00:00+00:00 <strong>Recolectores:</strong> Kenneth J. Sytsma <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_81e3ca3262a345c48edf5e973f9fb2c3.setContent(html_cd7fb4214d664e68a04c440665e1e973);
+        
+
+        marker_205202839c3341ea99b736a36af0c1a0.bindPopup(popup_81e3ca3262a345c48edf5e973f9fb2c3)
+        ;
+
+        
+    
+    
+            var marker_72bfabcc78f148ebb50009c995750c68 = L.marker(
+                [8.689444, -79.921389],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_6a69750d03314f778b86bdc699abc774 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5efdb37f5554444e95f50cdae89a94c3 = $(`<div id="html_5efdb37f5554444e95f50cdae89a94c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near summit of Cerro Camapana. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1973-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6a69750d03314f778b86bdc699abc774.setContent(html_5efdb37f5554444e95f50cdae89a94c3);
+        
+
+        marker_72bfabcc78f148ebb50009c995750c68.bindPopup(popup_6a69750d03314f778b86bdc699abc774)
+        ;
+
+        
+    
+    
+            var marker_e3d8c06d3e7a4c56b0bd5b8160c8a08f = L.marker(
+                [8.666667, -80.6],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_6859c7c3331045e185bf3134ff812d3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ccd8e2eed524f8fa2008847b4be4ce3 = $(`<div id="html_9ccd8e2eed524f8fa2008847b4be4ce3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near summit of El Petroso, ca. 7 km north of El Copé. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1977-04-09 00:00:00+00:00 <strong>Recolectores:</strong> William G. D'Arcy <strong>Identificadores:</strong> M. Dillon</div>`)[0];
+            popup_6859c7c3331045e185bf3134ff812d3a.setContent(html_9ccd8e2eed524f8fa2008847b4be4ce3);
+        
+
+        marker_e3d8c06d3e7a4c56b0bd5b8160c8a08f.bindPopup(popup_6859c7c3331045e185bf3134ff812d3a)
+        ;
+
+        
+    
+    
+            var marker_3ca8086caa6f48d2be32ad04b3187a6e = L.marker(
+                [10.5, -84.5],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_14c57563ff60408b863c455d346c948a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21614c47e99f40058461122ee5408ee1 = $(`<div id="html_21614c47e99f40058461122ee5408ee1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1966-02-19 00:00:00+00:00 <strong>Recolectores:</strong> A. Molina R. et al. <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_14c57563ff60408b863c455d346c948a.setContent(html_21614c47e99f40058461122ee5408ee1);
+        
+
+        marker_3ca8086caa6f48d2be32ad04b3187a6e.bindPopup(popup_14c57563ff60408b863c455d346c948a)
+        ;
+
+        
+    
+    
+            var marker_60227b9d1da24d8693d850c84630e987 = L.marker(
+                [10.21, -84.39],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_5acf6833c5874f89b5bfb896b786f421 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_124c70a2b6ee4c95b9c0261bd23ce07c = $(`<div id="html_124c70a2b6ee4c95b9c0261bd23ce07c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near La Laguna, 6 to 8 km south of Villa Quesada, cut over forest area, mountains <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1966-02-19 00:00:00+00:00 <strong>Recolectores:</strong> Antonio Molina R.|Louis O. Williams|William C. Burger|Bruce Wallenta <strong>Identificadores:</strong> R.M. King & H. Robinson, 1972 (US)</div>`)[0];
+            popup_5acf6833c5874f89b5bfb896b786f421.setContent(html_124c70a2b6ee4c95b9c0261bd23ce07c);
+        
+
+        marker_60227b9d1da24d8693d850c84630e987.bindPopup(popup_5acf6833c5874f89b5bfb896b786f421)
+        ;
+
+        
+    
+    
+            var marker_7bc2f7ecbf6d4004b083881fae93b829 = L.marker(
+                [8.675, -80.594444],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_353d26de453a4b7cad471234180e0962 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce2a90e25afd4a0c917a52ecb2a2a8de = $(`<div id="html_ce2a90e25afd4a0c917a52ecb2a2a8de" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along the Atlantic slope of the Continental Divide near sawmill (Whiskey) above El Copé. <strong>Elevación:</strong> 775.0 m  <strong>Fecha:</strong> 1982-02-13 00:00:00+00:00 <strong>Recolectores:</strong> Sandy Knapp|Robert L. Dressler <strong>Identificadores:</strong> H. Robinson, 1984 (US)</div>`)[0];
+            popup_353d26de453a4b7cad471234180e0962.setContent(html_ce2a90e25afd4a0c917a52ecb2a2a8de);
+        
+
+        marker_7bc2f7ecbf6d4004b083881fae93b829.bindPopup(popup_353d26de453a4b7cad471234180e0962)
+        ;
+
+        
+    
+    
+            var marker_f237bd7abc6f4883849f60a0a0e1bbe9 = L.marker(
+                [8.67, -80.12],
+                {}
+            ).addTo(marker_cluster_261dcfb393aa4435871762280d5b77c9);
+        
+    
+        var popup_fb06687002fc444eb061e55c1be7c09a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_769ef6737e1f47d78e0c9cd4afe981f7 = $(`<div id="html_769ef6737e1f47d78e0c9cd4afe981f7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Gaital, east slope and ridges <strong>Elevación:</strong> 1075.0 m  <strong>Fecha:</strong> 1988-02-24 00:00:00+00:00 <strong>Recolectores:</strong> F. Almeda, T. F. Daniel & G. D. McPherson <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fb06687002fc444eb061e55c1be7c09a.setContent(html_769ef6737e1f47d78e0c9cd4afe981f7);
+        
+
+        marker_f237bd7abc6f4883849f60a0a0e1bbe9.bindPopup(popup_fb06687002fc444eb061e55c1be7c09a)
+        ;
+
+        
+    
+    
+            var layer_control_908910d97c2d430fbef2c4a9281da4c9 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_2929eec1c19844b2b479ca870a9b4924,
+                    "ESRI World Imagery" : tile_layer_1e46c7405e9849b981379cf2e21fbc82,
+                },
+                overlays :  {
+                    "macro_element_261dcfb393aa4435871762280d5b77c9" : marker_cluster_261dcfb393aa4435871762280d5b77c9,
+                },
+            };
+            L.control.layers(
+                layer_control_908910d97c2d430fbef2c4a9281da4c9.base_layers,
+                layer_control_908910d97c2d430fbef2c4a9281da4c9.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_5b067ddec8fb4a639d3af07f3d805a13);
+            tile_layer_1e46c7405e9849b981379cf2e21fbc82.remove();
+        
+</script>

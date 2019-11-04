@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ee6a4adc872a46a68f96ca81e1fca58c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ee6a4adc872a46a68f96ca81e1fca58c" ></div>
+        
+</body>
+<script>    
+    
+            var map_ee6a4adc872a46a68f96ca81e1fca58c = L.map(
+                "map_ee6a4adc872a46a68f96ca81e1fca58c",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_ee6a4adc872a46a68f96ca81e1fca58c);
+
+            
+
+        
+    
+            var tile_layer_6bbbefe14dba49ffbe047116b3bb4a6e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ee6a4adc872a46a68f96ca81e1fca58c);
+        
+    
+            var tile_layer_6b839583b8304963aa7be28671ce00b1 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ee6a4adc872a46a68f96ca81e1fca58c);
+        
+    
+            var marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d = L.markerClusterGroup(
+                {}
+            );
+            map_ee6a4adc872a46a68f96ca81e1fca58c.addLayer(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+            var marker_6b8cdfbf6b494224aa11ddd6e6280b35 = L.marker(
+                [9.291667, -83.266667],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_66c33eaaf1e14ed0af29ee6ca38e4a9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c2250a398704fdfa7d8b4a7653375ce = $(`<div id="html_7c2250a398704fdfa7d8b4a7653375ce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forest and savannas at headwaters of Quebrada Dorora (tributary of Rio Kuiye), ca. 9 km NE of Ujarras. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1993-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_66c33eaaf1e14ed0af29ee6ca38e4a9f.setContent(html_7c2250a398704fdfa7d8b4a7653375ce);
+        
+
+        marker_6b8cdfbf6b494224aa11ddd6e6280b35.bindPopup(popup_66c33eaaf1e14ed0af29ee6ca38e4a9f)
+        ;
+
+        
+    
+    
+            var marker_c37b9058529747898c4bb0db6e6a47c2 = L.marker(
+                [9.291667, -83.275],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_021c8cf8a67d4a8bb1ad4c70886452c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2fceeca21f241d58615a4bb991d0eab = $(`<div id="html_a2fceeca21f241d58615a4bb991d0eab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near of the Quebrada Dorora. Secondary dry forest near by the camp. Rio Kuiye. <strong>Elevación:</strong> 1520.0 m  <strong>Fecha:</strong> 1993-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Jens Bittner <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_021c8cf8a67d4a8bb1ad4c70886452c2.setContent(html_a2fceeca21f241d58615a4bb991d0eab);
+        
+
+        marker_c37b9058529747898c4bb0db6e6a47c2.bindPopup(popup_021c8cf8a67d4a8bb1ad4c70886452c2)
+        ;
+
+        
+    
+    
+            var marker_87fd7e6097504e7c8b81804996c9051f = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_9c8488ea4a974b98b1726716094042c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_afb1126b222644639e309dd3b8395859 = $(`<div id="html_afb1126b222644639e309dd3b8395859" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1938-03-15 00:00:00+00:00 <strong>Recolectores:</strong> Ll. Williams <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9c8488ea4a974b98b1726716094042c8.setContent(html_afb1126b222644639e309dd3b8395859);
+        
+
+        marker_87fd7e6097504e7c8b81804996c9051f.bindPopup(popup_9c8488ea4a974b98b1726716094042c8)
+        ;
+
+        
+    
+    
+            var marker_2531aafdf93544f3b5c81c8a7fb959e8 = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_83c3a4d712e443ada577f2beacf69413 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b9cd7694cef48a2ad40d15a45b27964 = $(`<div id="html_9b9cd7694cef48a2ad40d15a45b27964" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1945-02-27 00:00:00+00:00 <strong>Recolectores:</strong> J. A. Steyermark <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_83c3a4d712e443ada577f2beacf69413.setContent(html_9b9cd7694cef48a2ad40d15a45b27964);
+        
+
+        marker_2531aafdf93544f3b5c81c8a7fb959e8.bindPopup(popup_83c3a4d712e443ada577f2beacf69413)
+        ;
+
+        
+    
+    
+            var marker_4e5306fcde90424bbae43705fee68cf4 = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_cf46ae89762f4906b169606ff170fb19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87aaa9b302724950bd9d73b46d0216ef = $(`<div id="html_87aaa9b302724950bd9d73b46d0216ef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1963-07-27 00:00:00+00:00 <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_cf46ae89762f4906b169606ff170fb19.setContent(html_87aaa9b302724950bd9d73b46d0216ef);
+        
+
+        marker_4e5306fcde90424bbae43705fee68cf4.bindPopup(popup_cf46ae89762f4906b169606ff170fb19)
+        ;
+
+        
+    
+    
+            var marker_f14263c99fcb441bace859d3442ad337 = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_e75a117b26a845f58d2b654f9fef9cd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be4d5932d1ee4a879e94d3aaf31aa324 = $(`<div id="html_be4d5932d1ee4a879e94d3aaf31aa324" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1938-03-15 00:00:00+00:00 <strong>Recolectores:</strong> Ll. Williams <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e75a117b26a845f58d2b654f9fef9cd3.setContent(html_be4d5932d1ee4a879e94d3aaf31aa324);
+        
+
+        marker_f14263c99fcb441bace859d3442ad337.bindPopup(popup_e75a117b26a845f58d2b654f9fef9cd3)
+        ;
+
+        
+    
+    
+            var marker_34d5beeeb07a482aa16087016f9b5abb = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_16039f54962640ccb4711ff1adb7a2c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f64e45249e9f4dd786d332f7aa2aa3f0 = $(`<div id="html_f64e45249e9f4dd786d332f7aa2aa3f0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1938-12-15 00:00:00+00:00 <strong>Recolectores:</strong> A. H. G. Alston <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_16039f54962640ccb4711ff1adb7a2c0.setContent(html_f64e45249e9f4dd786d332f7aa2aa3f0);
+        
+
+        marker_34d5beeeb07a482aa16087016f9b5abb.bindPopup(popup_16039f54962640ccb4711ff1adb7a2c0)
+        ;
+
+        
+    
+    
+            var marker_8ffa731f52d04dc7a16268c40462617a = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_5fd3dc5016074e6e89f9be075587c585 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd39235aa38b4419bf03feb091115f82 = $(`<div id="html_cd39235aa38b4419bf03feb091115f82" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1963-07-27 00:00:00+00:00 <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_5fd3dc5016074e6e89f9be075587c585.setContent(html_cd39235aa38b4419bf03feb091115f82);
+        
+
+        marker_8ffa731f52d04dc7a16268c40462617a.bindPopup(popup_5fd3dc5016074e6e89f9be075587c585)
+        ;
+
+        
+    
+    
+            var marker_645ff377621c46b893adf3a8d655d739 = L.marker(
+                [-17.948056, -51.720833],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_a605f94af0dd4ba68dbf4703642f2c42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ce9b3e911e645cfbb77155f00c4ecff = $(`<div id="html_4ce9b3e911e645cfbb77155f00c4ecff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 2007-12-21 00:00:00+00:00 <strong>Recolectores:</strong> Guilherme, F.A.G.; et al. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_a605f94af0dd4ba68dbf4703642f2c42.setContent(html_4ce9b3e911e645cfbb77155f00c4ecff);
+        
+
+        marker_645ff377621c46b893adf3a8d655d739.bindPopup(popup_a605f94af0dd4ba68dbf4703642f2c42)
+        ;
+
+        
+    
+    
+            var marker_71d23dae2816461497cd71e2da84a937 = L.marker(
+                [10.5, -66.91667],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_7278783d34ff43fcb3894cd5bfc2619c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d592860ebc924f3f876fe561900dcf2a = $(`<div id="html_d592860ebc924f3f876fe561900dcf2a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Caracas - Caracas/Distrito Federal <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Linden, J. J. (Coll. HERBIER DE CANDOLLE) <strong>Identificadores:</strong> CAT.HERB.PRODR. (2011)</div>`)[0];
+            popup_7278783d34ff43fcb3894cd5bfc2619c.setContent(html_d592860ebc924f3f876fe561900dcf2a);
+        
+
+        marker_71d23dae2816461497cd71e2da84a937.bindPopup(popup_7278783d34ff43fcb3894cd5bfc2619c)
+        ;
+
+        
+    
+    
+            var marker_d48e1a00123442cebe7e5793e5c7ccd0 = L.marker(
+                [10.5, -67.15],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_fcfd5b3bcf934b6ea195c8e4ffdf9883 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74674fd26098480db5afc659d50fa6b6 = $(`<div id="html_74674fd26098480db5afc659d50fa6b6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dtto. Federal, Carretera El Junquillo-Carayaca <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2003-05-17 00:00:00+00:00 <strong>Recolectores:</strong> R. Riina, B. Manara y C. Reyes <strong>Identificadores:</strong> R. Riina</div>`)[0];
+            popup_fcfd5b3bcf934b6ea195c8e4ffdf9883.setContent(html_74674fd26098480db5afc659d50fa6b6);
+        
+
+        marker_d48e1a00123442cebe7e5793e5c7ccd0.bindPopup(popup_fcfd5b3bcf934b6ea195c8e4ffdf9883)
+        ;
+
+        
+    
+    
+            var marker_caa2a3b3ed8147b2a2814a9936a7db79 = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_3349a2d4de9c4f9ca2ccaa4c5b864999 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a8e52134fde4312872960c4612e5be7 = $(`<div id="html_9a8e52134fde4312872960c4612e5be7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1987-01-07 00:00:00+00:00 <strong>Recolectores:</strong> N. Ramirez <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_3349a2d4de9c4f9ca2ccaa4c5b864999.setContent(html_9a8e52134fde4312872960c4612e5be7);
+        
+
+        marker_caa2a3b3ed8147b2a2814a9936a7db79.bindPopup(popup_3349a2d4de9c4f9ca2ccaa4c5b864999)
+        ;
+
+        
+    
+    
+            var marker_9929ae6e4c7a4260a1c0dd0b7be7f3f0 = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_e9758063db9f46bba1702eff6f9655ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7e78cf6cc9445fd941273e400a2e045 = $(`<div id="html_b7e78cf6cc9445fd941273e400a2e045" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1944-06-19 00:00:00+00:00 <strong>Recolectores:</strong> J. A. Steyermark <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e9758063db9f46bba1702eff6f9655ff.setContent(html_b7e78cf6cc9445fd941273e400a2e045);
+        
+
+        marker_9929ae6e4c7a4260a1c0dd0b7be7f3f0.bindPopup(popup_e9758063db9f46bba1702eff6f9655ff)
+        ;
+
+        
+    
+    
+            var marker_d4719d71e1c44287a56ae93924b5c458 = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_80ce456c07444250b1567adeb7759454 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13d245e21f5144ccbb0c46c1ffbee9c5 = $(`<div id="html_13d245e21f5144ccbb0c46c1ffbee9c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1963-07-27 00:00:00+00:00 <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_80ce456c07444250b1567adeb7759454.setContent(html_13d245e21f5144ccbb0c46c1ffbee9c5);
+        
+
+        marker_d4719d71e1c44287a56ae93924b5c458.bindPopup(popup_80ce456c07444250b1567adeb7759454)
+        ;
+
+        
+    
+    
+            var marker_eb6b60acba3d4e8baad48035a3c9c97c = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_746448c395b841f9b7bb9d03c497fd18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50ac06baea1848b3bff145794aa9a17c = $(`<div id="html_50ac06baea1848b3bff145794aa9a17c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1945-03-20 00:00:00+00:00 <strong>Recolectores:</strong> J. A. Steyermark <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_746448c395b841f9b7bb9d03c497fd18.setContent(html_50ac06baea1848b3bff145794aa9a17c);
+        
+
+        marker_eb6b60acba3d4e8baad48035a3c9c97c.bindPopup(popup_746448c395b841f9b7bb9d03c497fd18)
+        ;
+
+        
+    
+    
+            var marker_e4c115b1aa604fe1973ec8d59c66bc25 = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_b369448a28ab4ccfb8ea38fb761b6ceb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2397d56efb304b56abe9e7a98b1d4369 = $(`<div id="html_2397d56efb304b56abe9e7a98b1d4369" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1940-03-17 00:00:00+00:00 <strong>Recolectores:</strong> C. Vogl <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b369448a28ab4ccfb8ea38fb761b6ceb.setContent(html_2397d56efb304b56abe9e7a98b1d4369);
+        
+
+        marker_e4c115b1aa604fe1973ec8d59c66bc25.bindPopup(popup_b369448a28ab4ccfb8ea38fb761b6ceb)
+        ;
+
+        
+    
+    
+            var marker_116625b28cb94d2cb02d3c234009b0d6 = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_b2acdd380f5147c2ab9207059b84bad1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_372cf4910fdd49ecb39750b1f6359e56 = $(`<div id="html_372cf4910fdd49ecb39750b1f6359e56" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1981-11-28 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse & A. C. Gonzalez <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b2acdd380f5147c2ab9207059b84bad1.setContent(html_372cf4910fdd49ecb39750b1f6359e56);
+        
+
+        marker_116625b28cb94d2cb02d3c234009b0d6.bindPopup(popup_b2acdd380f5147c2ab9207059b84bad1)
+        ;
+
+        
+    
+    
+            var marker_95f231cb419040e0b5af3ba8a32f071f = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_537dbc05f3674eb58d2d5156c1c49a9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e351f0e3421149e59aa2538fd82ae592 = $(`<div id="html_e351f0e3421149e59aa2538fd82ae592" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1943-12-30 00:00:00+00:00 <strong>Recolectores:</strong> J. A. Steyermark <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_537dbc05f3674eb58d2d5156c1c49a9c.setContent(html_e351f0e3421149e59aa2538fd82ae592);
+        
+
+        marker_95f231cb419040e0b5af3ba8a32f071f.bindPopup(popup_537dbc05f3674eb58d2d5156c1c49a9c)
+        ;
+
+        
+    
+    
+            var marker_67c4c1abae7c4669811ac3d63e176a68 = L.marker(
+                [3.8811, -72.8667],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_b79bb3c7c4534a129daa389f41886f6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_645a883d9ef5421ba3c048d25e0693a1 = $(`<div id="html_645a883d9ef5421ba3c048d25e0693a1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> J. W. K. Moritz <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b79bb3c7c4534a129daa389f41886f6d.setContent(html_645a883d9ef5421ba3c048d25e0693a1);
+        
+
+        marker_67c4c1abae7c4669811ac3d63e176a68.bindPopup(popup_b79bb3c7c4534a129daa389f41886f6d)
+        ;
+
+        
+    
+    
+            var marker_842f1bb3ce4e431ba78c60c9701347ca = L.marker(
+                [10.55, -66.9042],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_68329577c1734944958d76f6ff8f109d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04201464af5d47c5b6b3f64efbb9cda7 = $(`<div id="html_04201464af5d47c5b6b3f64efbb9cda7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional El Avila. Topo Infernito: vertiente sur: derrumbes ocasionados por lluvias torrenciales en diciembre 1999 (catastrofe de Vargas). <strong>Elevación:</strong> 1725.0 m  <strong>Fecha:</strong> 2006-03-25 00:00:00+00:00 <strong>Recolectores:</strong> W. Meier <strong>Identificadores:</strong> Meier, W.</div>`)[0];
+            popup_68329577c1734944958d76f6ff8f109d.setContent(html_04201464af5d47c5b6b3f64efbb9cda7);
+        
+
+        marker_842f1bb3ce4e431ba78c60c9701347ca.bindPopup(popup_68329577c1734944958d76f6ff8f109d)
+        ;
+
+        
+    
+    
+            var marker_09f7867bf2e94af29d4e1ed3857860fc = L.marker(
+                [4.576817, -75.722433],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_8cfccc6e06124f9e956737391f37f7d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a926013eb3047c581a2e888b099a6df = $(`<div id="html_5a926013eb3047c581a2e888b099a6df" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda Pinares, Finca La Floresta, Transecto 3 <strong>Elevación:</strong> 1365.0 m  <strong>Fecha:</strong> 2009-12-01 00:00:00+00:00 <strong>Recolectores:</strong> Carlos Alonso Maya Lastra <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_8cfccc6e06124f9e956737391f37f7d1.setContent(html_5a926013eb3047c581a2e888b099a6df);
+        
+
+        marker_09f7867bf2e94af29d4e1ed3857860fc.bindPopup(popup_8cfccc6e06124f9e956737391f37f7d1)
+        ;
+
+        
+    
+    
+            var marker_672b8227532e4936a704602554a36dd5 = L.marker(
+                [10.533333, -66.883333],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_37b2b427084b4014a901fbc6c0ef7b9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f787f9a3fd844f3eac7035306a819acb = $(`<div id="html_f787f9a3fd844f3eac7035306a819acb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro El Avila: vertiente sur: a lo largo de la pica Hotel Humboldt-Papelón, en selva. <strong>Elevación:</strong> 1760.0 m  <strong>Fecha:</strong> 1991-07-24 00:00:00+00:00 <strong>Recolectores:</strong> Winfried Meier|D.G. Kelch|E.B. Tarff <strong>Identificadores:</strong> R. Riina (MICH)</div>`)[0];
+            popup_37b2b427084b4014a901fbc6c0ef7b9c.setContent(html_f787f9a3fd844f3eac7035306a819acb);
+        
+
+        marker_672b8227532e4936a704602554a36dd5.bindPopup(popup_37b2b427084b4014a901fbc6c0ef7b9c)
+        ;
+
+        
+    
+    
+            var marker_ee10c2a520d34fa193d58dc0c658c013 = L.marker(
+                [10.533333, -66.85],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_a04ba65b2abc400a9c47ee318e02261c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20675d8589074090b548b8cae9bc22f1 = $(`<div id="html_20675d8589074090b548b8cae9bc22f1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de la Costa: a lo largo de la pica Sabas Nieves-La Silla en vegetación secundaria. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1991-03-29 00:00:00+00:00 <strong>Recolectores:</strong> Winfried Meier <strong>Identificadores:</strong> R. Riina</div>`)[0];
+            popup_a04ba65b2abc400a9c47ee318e02261c.setContent(html_20675d8589074090b548b8cae9bc22f1);
+        
+
+        marker_ee10c2a520d34fa193d58dc0c658c013.bindPopup(popup_a04ba65b2abc400a9c47ee318e02261c)
+        ;
+
+        
+    
+    
+            var marker_c42905f7137d488fbf5a681935f38579 = L.marker(
+                [9.291667, -83.266667],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_3240c4082d66463d91a9fc609a22e322 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16a40ad8ab3844fb8f0aa1c5c7fc0816 = $(`<div id="html_16a40ad8ab3844fb8f0aa1c5c7fc0816" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forest and savannas at headwaters of Quebrada Dorora (tributary of Río Kuiyé), ca. 9 km NE of Ujarrás, Cordillera de Talamanca. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1993-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> W. Burger (F)</div>`)[0];
+            popup_3240c4082d66463d91a9fc609a22e322.setContent(html_16a40ad8ab3844fb8f0aa1c5c7fc0816);
+        
+
+        marker_c42905f7137d488fbf5a681935f38579.bindPopup(popup_3240c4082d66463d91a9fc609a22e322)
+        ;
+
+        
+    
+    
+            var marker_ec6a67dd04944a8fb7681da091a243ad = L.marker(
+                [8.133333, -77.283333],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_53d6cff45a194edc81c7dbb266637d43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b8ad594a4d24eab8b7e266c688895ba = $(`<div id="html_9b8ad594a4d24eab8b7e266c688895ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Tacarcuna Expedition. Cerro Tacarcuna, south slope, ridge top forest well below summit. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1975-01-26 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Scott A. Mori <strong>Identificadores:</strong> G.L. Webster</div>`)[0];
+            popup_53d6cff45a194edc81c7dbb266637d43.setContent(html_9b8ad594a4d24eab8b7e266c688895ba);
+        
+
+        marker_ec6a67dd04944a8fb7681da091a243ad.bindPopup(popup_53d6cff45a194edc81c7dbb266637d43)
+        ;
+
+        
+    
+    
+            var marker_ec5dbdded2c74911a9fb10b8e8736387 = L.marker(
+                [9.3, -83.27],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_67523e320c0b40f192549bcd671d1c84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e47572037df4cd09f04258b86116137 = $(`<div id="html_5e47572037df4cd09f04258b86116137" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Buenos Aires Off the camp. Dry forest seca CORDILLERA DE TALAMANCA <strong>Elevación:</strong> 1520.0 m  <strong>Fecha:</strong> 1993-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Jens Bittner <strong>Identificadores:</strong> J. Gonzalez (INB)</div>`)[0];
+            popup_67523e320c0b40f192549bcd671d1c84.setContent(html_5e47572037df4cd09f04258b86116137);
+        
+
+        marker_ec5dbdded2c74911a9fb10b8e8736387.bindPopup(popup_67523e320c0b40f192549bcd671d1c84)
+        ;
+
+        
+    
+    
+            var marker_dd730dd9b3ff45c091316ec6073f4836 = L.marker(
+                [10.05, -64.2],
+                {}
+            ).addTo(marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d);
+        
+    
+        var popup_98e686479c6a40f3a70268ae22222eef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e00e28849214955a70b7cd508cb892f = $(`<div id="html_6e00e28849214955a70b7cd508cb892f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito Bolívar: Cafetales above (NE) Buenos Aires, on slopes of Cerro Grande, 18 airline km NE of Bergantín; Serranía de Turimiquire. Shady trails in shade of coffee plantation. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1981-11-28 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|Ángel C. González <strong>Identificadores:</strong> R. Riina (MICH)</div>`)[0];
+            popup_98e686479c6a40f3a70268ae22222eef.setContent(html_6e00e28849214955a70b7cd508cb892f);
+        
+
+        marker_dd730dd9b3ff45c091316ec6073f4836.bindPopup(popup_98e686479c6a40f3a70268ae22222eef)
+        ;
+
+        
+    
+    
+            var layer_control_120502cbba4a4ac586bcc31f583d2241 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6bbbefe14dba49ffbe047116b3bb4a6e,
+                    "ESRI World Imagery" : tile_layer_6b839583b8304963aa7be28671ce00b1,
+                },
+                overlays :  {
+                    "macro_element_605c2c09b4724ea0871eb3a91dc1fd5d" : marker_cluster_605c2c09b4724ea0871eb3a91dc1fd5d,
+                },
+            };
+            L.control.layers(
+                layer_control_120502cbba4a4ac586bcc31f583d2241.base_layers,
+                layer_control_120502cbba4a4ac586bcc31f583d2241.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ee6a4adc872a46a68f96ca81e1fca58c);
+            tile_layer_6b839583b8304963aa7be28671ce00b1.remove();
+        
+</script>
